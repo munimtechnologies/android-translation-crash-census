@@ -1,0 +1,710 @@
+{
+ "taxonomy_version": "0.1.1",
+ "groups": {
+  "all-crash": {
+   "rows": 382,
+   "repos": 99,
+   "by_kind": {
+    "stray-percent": {
+     "rows": 82,
+     "repos": 41,
+     "top_locales": {
+      "ar": 10,
+      "zh": 5,
+      "zh-rCN": 4,
+      "fa-rIR": 4,
+      "ru": 4,
+      "sl": 4,
+      "iw": 3,
+      "ckb": 3
+     }
+    },
+    "malformed-index": {
+     "rows": 65,
+     "repos": 11,
+     "top_locales": {
+      "ug": 52,
+      "az": 2,
+      "eu": 2,
+      "ga": 1,
+      "ru": 1,
+      "es": 1,
+      "sv": 1,
+      "pl": 1
+     }
+    },
+    "conversion-missing": {
+     "rows": 66,
+     "repos": 26,
+     "top_locales": {
+      "sr": 7,
+      "el": 6,
+      "ckb": 5,
+      "sq-rAL": 4,
+      "pl": 4,
+      "ka": 4,
+      "tcy": 4,
+      "sv": 3
+     }
+    },
+    "conversion-native": {
+     "rows": 28,
+     "repos": 8,
+     "top_locales": {
+      "ru": 6,
+      "bg": 5,
+      "ar": 3,
+      "pa": 3,
+      "uk": 3,
+      "el": 2,
+      "zh": 2,
+      "iw-rIL": 1
+     }
+    },
+    "conversion-invalid": {
+     "rows": 10,
+     "repos": 7,
+     "top_locales": {
+      "eu": 3,
+      "oc": 2,
+      "la": 2,
+      "tr": 2,
+      "he": 1
+     }
+    },
+    "flag-mismatch": {
+     "rows": 52,
+     "repos": 22,
+     "top_locales": {
+      "tr": 25,
+      "es": 5,
+      "lt": 3,
+      "fr": 2,
+      "kmr": 2,
+      "ug": 2,
+      "da": 1,
+      "bg": 1
+     }
+    },
+    "argument-not-passed": {
+     "rows": 59,
+     "repos": 20,
+     "top_locales": {
+      "hu": 6,
+      "ko": 6,
+      "qq": 5,
+      "uk": 4,
+      "ru": 4,
+      "bn-rBD": 3,
+      "bn-rIN": 3,
+      "eu": 3
+     }
+    },
+    "wrong-type": {
+     "rows": 20,
+     "repos": 10,
+     "top_locales": {
+      "bn": 3,
+      "is": 3,
+      "vi": 3,
+      "it": 2,
+      "eu": 2,
+      "de": 1,
+      "la": 1,
+      "fr": 1
+     }
+    }
+   },
+   "conversion_native_scripts": {
+    "CYRILLIC": 15,
+    "ARABIC": 3,
+    "GURMUKHI": 3,
+    "GREEK": 2,
+    "CJK": 2,
+    "HEBREW": 1,
+    "BENGALI": 1,
+    "KANNADA": 1
+   },
+   "conversion_native_lookalikes": 15
+  },
+  "formatted-crash": {
+   "rows": 250,
+   "repos": 67,
+   "by_kind": {
+    "stray-percent": {
+     "rows": 45,
+     "repos": 26,
+     "top_locales": {
+      "ar": 6,
+      "zh-rCN": 3,
+      "fa-rIR": 3,
+      "sl": 3,
+      "it": 2,
+      "be-rBY": 2,
+      "el": 2,
+      "ja": 2
+     }
+    },
+    "malformed-index": {
+     "rows": 50,
+     "repos": 5,
+     "top_locales": {
+      "ug": 44,
+      "eu": 2,
+      "sv": 1,
+      "pl": 1,
+      "af": 1,
+      "th": 1
+     }
+    },
+    "conversion-missing": {
+     "rows": 43,
+     "repos": 18,
+     "top_locales": {
+      "sr": 7,
+      "sq-rAL": 4,
+      "ckb": 4,
+      "pl": 3,
+      "sv": 3,
+      "ar": 3,
+      "ka": 3,
+      "gu": 3
+     }
+    },
+    "conversion-native": {
+     "rows": 26,
+     "repos": 6,
+     "top_locales": {
+      "ru": 6,
+      "bg": 5,
+      "ar": 3,
+      "pa": 3,
+      "uk": 3,
+      "el": 2,
+      "zh": 2,
+      "bn": 1
+     }
+    },
+    "conversion-invalid": {
+     "rows": 7,
+     "repos": 4,
+     "top_locales": {
+      "oc": 2,
+      "la": 2,
+      "tr": 2,
+      "he": 1
+     }
+    },
+    "flag-mismatch": {
+     "rows": 34,
+     "repos": 14,
+     "top_locales": {
+      "tr": 22,
+      "lt": 2,
+      "da": 1,
+      "es": 1,
+      "fr": 1,
+      "cs": 1,
+      "sl": 1,
+      "nl": 1
+     }
+    },
+    "argument-not-passed": {
+     "rows": 35,
+     "repos": 15,
+     "top_locales": {
+      "ko": 6,
+      "uk": 4,
+      "ru": 4,
+      "it": 3,
+      "pt": 2,
+      "pt-rBR": 2,
+      "in-rID": 2,
+      "da": 2
+     }
+    },
+    "wrong-type": {
+     "rows": 10,
+     "repos": 5,
+     "top_locales": {
+      "is": 3,
+      "vi": 3,
+      "la": 1,
+      "fr": 1,
+      "br": 1,
+      "cs-rCZ": 1
+     }
+    }
+   },
+   "conversion_native_scripts": {
+    "CYRILLIC": 14,
+    "ARABIC": 3,
+    "GURMUKHI": 3,
+    "GREEK": 2,
+    "CJK": 2,
+    "BENGALI": 1,
+    "KANNADA": 1
+   },
+   "conversion_native_lookalikes": 14
+  }
+ },
+ "examples_formatted": {
+  "conversion-invalid": [
+   {
+    "app": "Briar",
+    "locale": "oc",
+    "key": "groups_invitations_invitation_sent",
+    "source": "You have invited %1$s to join the group \"%2$s\".",
+    "translation": "Avètz convidat %1$s a venir al grop « %2$vs»"
+   },
+   {
+    "app": "Andor's Trail",
+    "locale": "la",
+    "key": "dialog_loot_pickedupitems",
+    "source": "You picked up %1$,d items.",
+    "translation": "%1$D items sustulistis."
+   },
+   {
+    "app": "Anonomi Messenger",
+    "locale": "oc",
+    "key": "groups_invitations_invitation_sent",
+    "source": "You have invited %1$s to join the group \"%2$s\".",
+    "translation": "Avètz convidat %1$s a venir al grop « %2$vs»"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "he",
+    "key": "duration_hours_minutes",
+    "source": "%1$dh %2$dm",
+    "translation": "%1$DH %2$DM"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "la",
+    "key": "duration_hours_minutes",
+    "source": "%1$dh %2$dm",
+    "translation": "%1$h %2$m"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "tr",
+    "key": "duration_hours_minutes",
+    "source": "%1$dh %2$dm",
+    "translation": "%1$dh %2$DM"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "tr",
+    "key": "duration_minutes_seconds",
+    "source": "%1$dm %2$ds",
+    "translation": "%1$DM %2$ds"
+   }
+  ],
+  "argument-not-passed": [
+   {
+    "app": "Bimba",
+    "locale": "uk",
+    "key": "distance_in_gf_cd[few]",
+    "source": "%1$s grafuts",
+    "translation": "%1$s %2$s графути"
+   },
+   {
+    "app": "Bimba",
+    "locale": "uk",
+    "key": "distance_in_gf_cd[many]",
+    "source": "%1$s grafuts",
+    "translation": "%1$s %2$s графутів"
+   },
+   {
+    "app": "Bimba",
+    "locale": "uk",
+    "key": "distance_in_gf_cd[one]",
+    "source": "%1$s grafuts",
+    "translation": "%1$s %2$s графут"
+   },
+   {
+    "app": "Bimba",
+    "locale": "uk",
+    "key": "distance_in_gf_cd[other]",
+    "source": "%1$s grafuts",
+    "translation": "%1$s %2$s графутів"
+   },
+   {
+    "app": "Flashy",
+    "locale": "gl",
+    "key": "farnsworth_unit_length_explanation",
+    "source": "Farnsworth timing makes recognizing the sound patterns easier by increasing the gaps between the characters and words to give more recognition time.\nA Farnsworth unit is longer than a basic unit.\nEnter your desired length of a Farnsworth unit below (must be longer than a basic unit: %d milliseconds).\nLeave blank to use the length of the basic unit plus an additional 25 percent of it.",
+    "translation": "A sincronización Farnsworth facilita o recoñecemento dos patróns de son aumentando os espazos entre os caracteres e as palabras para dar máis tempo de recoñecemento.\nUnha unidade Farnsworth é máis longa que unha unidade básica.\nIntroduce a continuación a lonxitude desexada dunha unidade Farnsworth (debe ser maior que unha unidade básica: %d milisegundos).\nDéixao en branco para utilizar a lonxitude da unidade básica máis un 25% adicional da mesma."
+   },
+   {
+    "app": "Flashy",
+    "locale": "pt",
+    "key": "farnsworth_unit_length_explanation",
+    "source": "Farnsworth timing makes recognizing the sound patterns easier by increasing the gaps between the characters and words to give more recognition time.\nA Farnsworth unit is longer than a basic unit.\nEnter your desired length of a Farnsworth unit below (must be longer than a basic unit: %d milliseconds).\nLeave blank to use the length of the basic unit plus an additional 25 percent of it.",
+    "translation": "O tempo Farnsworth facilita o reconhecimento dos padrões sonoros, aumentando os espaços entre os caracteres e as palavras para proporcionar mais tempo de reconhecimento. \nUma unidade Farnsworth é mais longa que uma unidade básica. \nInsira abaixo o comprimento desejado de uma unidade Farnsworth (deve ser maior que uma unidade básica: %d milissegundos). \nDeixe em branco para usar o comprimento da unidade básica mais 25% adicionais."
+   },
+   {
+    "app": "Flashy",
+    "locale": "pt-rBR",
+    "key": "farnsworth_unit_length_explanation",
+    "source": "Farnsworth timing makes recognizing the sound patterns easier by increasing the gaps between the characters and words to give more recognition time.\nA Farnsworth unit is longer than a basic unit.\nEnter your desired length of a Farnsworth unit below (must be longer than a basic unit: %d milliseconds).\nLeave blank to use the length of the basic unit plus an additional 25 percent of it.",
+    "translation": "O tempo Farnsworth facilita o reconhecimento dos padrões sonoros, aumentando os espaços entre os caracteres e as palavras para proporcionar mais tempo de reconhecimento. \nUma unidade Farnsworth é mais longa que uma unidade básica. \nInsira abaixo o comprimento desejado de uma unidade Farnsworth (deve ser maior que uma unidade básica: %d milissegundos). \nDeixe em branco para usar o comprimento da unidade básica mais 25% adicionais."
+   },
+   {
+    "app": "Moshidon",
+    "locale": "in-rID",
+    "key": "x_new_notifications[other]",
+    "source": "%,d new notifications",
+    "translation": "%,d notifikasi baru %,d notifikasi baru"
+   }
+  ],
+  "flag-mismatch": [
+   {
+    "app": "Who Has My Stuff?",
+    "locale": "da",
+    "key": "calendar_description",
+    "source": "Expecting the return of %1$s from %2$s",
+    "translation": "Forventes afkastet på %1$ s fra %2$s"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "activity_donation_action_share_message",
+    "source": "Hi, take a look at %s",
+    "translation": "Merhaba,% s bölümüne bir göz atın"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "message_backup_creation_failed",
+    "source": "Failure during the creation of the backup. Message: %s",
+    "translation": "Yedeklemenin oluşturulması sırasında hata oluştu. Mesaj:% s"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "message_backup_restoring_failed",
+    "source": "Failure during the restoring of the backup. Message: %s",
+    "translation": "Yedeklemenin geri yüklenmesi sırasında hata oluştu. Mesaj:% s"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "notification_content_backup_error_internal",
+    "source": "There was an internal error during the operation, which is probably a bug. Please report this message to the developer: %s",
+    "translation": "İşlem sırasında muhtemelen bir hata olan dahili bir hata oluştu. Lütfen bu mesajı geliştiriciye bildirin:% s"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "notification_content_error_message",
+    "source": "Error: %s",
+    "translation": "Hata:% s"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "setting_summary_exchange_rate_api_key",
+    "source": "Api-key: %s",
+    "translation": "Api-anahtar:% s"
+   },
+   {
+    "app": "MoneyWallet",
+    "locale": "tr",
+    "key": "setting_summary_exchange_rate_update",
+    "source": "Last update: %s",
+    "translation": "Son güncelleme:% s"
+   }
+  ],
+  "stray-percent": [
+   {
+    "app": "spaRSS DecSync",
+    "locale": "ar",
+    "key": "number_of_new_entries[few]",
+    "source": "%d new entries",
+    "translation": "d% مقالات جديدة"
+   },
+   {
+    "app": "spaRSS DecSync",
+    "locale": "ar",
+    "key": "number_of_new_entries[many]",
+    "source": "%d new entries",
+    "translation": "d% مقالات جديدة"
+   },
+   {
+    "app": "spaRSS DecSync",
+    "locale": "ar",
+    "key": "number_of_new_entries[other]",
+    "source": "%d new entries",
+    "translation": "d% مقالة جديدة"
+   },
+   {
+    "app": "Flashy",
+    "locale": "fr",
+    "key": "farnsworth_unit_length_explanation",
+    "source": "Farnsworth timing makes recognizing the sound patterns easier by increasing the gaps between the characters and words to give more recognition time.\nA Farnsworth unit is longer than a basic unit.\nEnter your desired length of a Farnsworth unit below (must be longer than a basic unit: %d milliseconds).\nLeave blank to use the length of the basic unit plus an additional 25 percent of it.",
+    "translation": "La méthode Farnsworth permet de reconnaître les motifs sonores plus facilement en augmentant le délai entre les lettres et entre les mots, ce qui laisse plus de temps pour les identifier. \nUne unité Farnsworth est plus longue qu'une unité de base. \nÉcrivez ci-contre la longueur voulue pour votre unité Farnsworth (plus longue qu'une unité de base : %d millisecondes). \nLaissez vide pour utiliser la longueur d'une unité de base augmentée de 25%."
+   },
+   {
+    "app": "Flashy",
+    "locale": "it",
+    "key": "farnsworth_unit_length_explanation",
+    "source": "Farnsworth timing makes recognizing the sound patterns easier by increasing the gaps between the characters and words to give more recognition time.\nA Farnsworth unit is longer than a basic unit.\nEnter your desired length of a Farnsworth unit below (must be longer than a basic unit: %d milliseconds).\nLeave blank to use the length of the basic unit plus an additional 25 percent of it.",
+    "translation": "La temporizzazione di Farnsworth facilita il riconoscimento dei pattern sonori aumentando gli intervalli tra caratteri e parole, offrendo così più tempo per il riconoscimento.\nUn'unità Farnsworth è più lunga di un'unità base.\nInserisci qui sotto la durata desiderata per un'unità Farnsworth (deve essere maggiore di un'unità base: %d millisecondi).\nLascia vuoto per utilizzare la durata dell'unità base più un ulteriore 25%."
+   },
+   {
+    "app": "Flashy",
+    "locale": "zh-rCN",
+    "key": "farnsworth_unit_length_explanation",
+    "source": "Farnsworth timing makes recognizing the sound patterns easier by increasing the gaps between the characters and words to give more recognition time.\nA Farnsworth unit is longer than a basic unit.\nEnter your desired length of a Farnsworth unit below (must be longer than a basic unit: %d milliseconds).\nLeave blank to use the length of the basic unit plus an additional 25 percent of it.",
+    "translation": "法恩斯沃斯计时法通过增加字符和单词之间的间隔来给予更多的识别时间，从而使识别声音模式更容易。 \n法恩斯沃斯单位比基本单位长。 \n在下面输入您想要的法恩斯沃斯单位长度(必须大于基本单位：%d 毫秒)。 \n留空，使用基本单位的长度加上额外的 25%。"
+   },
+   {
+    "app": "Inure App Manager (Trial)",
+    "locale": "vi-rVN",
+    "key": "n_disabled",
+    "source": "%d Disabled",
+    "translation": "%D vô hiệu hóa"
+   },
+   {
+    "app": "Tella",
+    "locale": "ar",
+    "key": "Report_Deleted_Confirmation",
+    "source": "%s has been deleted.",
+    "translation": "تم حذف %"
+   }
+  ],
+  "wrong-type": [
+   {
+    "app": "Andor's Trail",
+    "locale": "la",
+    "key": "iteminfo_effect_critical_multiplier",
+    "source": "Enables critical hits with a multiplier of x%1$.1f",
+    "translation": "Hits critica ope multiplicatoris ex x %1$,d.1f *"
+   },
+   {
+    "app": "Baby Name",
+    "locale": "fr",
+    "key": "name_rated_score",
+    "source": "%s rated: %.1f",
+    "translation": "%s noté: %d"
+   },
+   {
+    "app": "OsmAnd~",
+    "locale": "br",
+    "key": "duration_ago",
+    "source": "%1$s ago",
+    "translation": "%1$e 'zo"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "is",
+    "key": "duration_hours_minutes",
+    "source": "%1$dh %2$dm",
+    "translation": "%1$dt %2$tm"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "is",
+    "key": "duration_minutes_seconds",
+    "source": "%1$dm %2$ds",
+    "translation": "%1$tm %2$ts"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "is",
+    "key": "duration_seconds",
+    "source": "%1$ds",
+    "translation": "%1$ts"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "vi",
+    "key": "duration_hours_minutes",
+    "source": "%1$dh %2$dm",
+    "translation": "%1$hg %2$tp"
+   },
+   {
+    "app": "Cashiro",
+    "locale": "vi",
+    "key": "duration_minutes_seconds",
+    "source": "%1$dm %2$ds",
+    "translation": "%1$tp %2$g"
+   }
+  ],
+  "conversion-missing": [
+   {
+    "app": "Moshidon",
+    "locale": "sq-rAL",
+    "key": "x_people_talking[one]",
+    "source": "%d people are talking",
+    "translation": "Po flet %1 person"
+   },
+   {
+    "app": "Moshidon",
+    "locale": "sq-rAL",
+    "key": "x_people_talking[other]",
+    "source": "%d people are talking",
+    "translation": "Po flasin %1 persona"
+   },
+   {
+    "app": "Iris Gallery",
+    "locale": "pl",
+    "key": "filter_videos_count",
+    "source": "%1$d Videos",
+    "translation": "Wideo (%1)"
+   },
+   {
+    "app": "RootlessJamesDSP",
+    "locale": "ko-rKR",
+    "key": "self_update_notice",
+    "source": "New update available (%1$s)",
+    "translation": "새 업데이트 사용 가능 (%1&s)"
+   },
+   {
+    "app": "ntfy - PUT/POST to your phone",
+    "locale": "sv",
+    "key": "settings_backup_restore_backup_failed",
+    "source": "Backup failed: %1$s",
+    "translation": "Säkerhetskopiering%1$ misslyckad: %1$s"
+   },
+   {
+    "app": "Rethink: DNS + Firewall + VPN",
+    "locale": "it",
+    "key": "hop_error_toast_msg_1",
+    "source": "Cannot relay, already %1$s",
+    "translation": "Impossibile trasmettere, già %1$"
+   },
+   {
+    "app": "Commons",
+    "locale": "ar",
+    "key": "depictions_not_found",
+    "source": "No Wikidata items matching %1$s found",
+    "translation": "لا توجد عناصر ويكي بيانات مطابقة لـ s$%1"
+   },
+   {
+    "app": "Commons",
+    "locale": "ar",
+    "key": "no_parent_classes",
+    "source": "%1$s has no parent classes",
+    "translation": "لا يملك تصنيف الأهل s$%1"
+   }
+  ],
+  "malformed-index": [
+   {
+    "app": "Pedometer (PFA)",
+    "locale": "sv",
+    "key": "notification_text_distance",
+    "source": "%1$.2f %2$s walked today.",
+    "translation": "%1 $ .2f %2$s gått idag."
+   },
+   {
+    "app": "Rethink: DNS + Firewall + VPN",
+    "locale": "pl",
+    "key": "local_blocklist_redownload_desc",
+    "source": "On-device blocklists are already at the latest version v%1$s.",
+    "translation": "Listy blokowania na urządzeniu są już w najnowszej wersji v% 1$s."
+   },
+   {
+    "app": "Commons",
+    "locale": "af",
+    "key": "image_uploaded_by",
+    "source": "Uploaded by: %1$s",
+    "translation": "Opgelaai deur:%$1s"
+   },
+   {
+    "app": "Commons",
+    "locale": "th",
+    "key": "categories_not_found",
+    "source": "No categories matching %1$s found",
+    "translation": "ไม่พบหมวดหมู่ที่ตรงกับ %$1s"
+   },
+   {
+    "app": "OsmAnd~",
+    "locale": "eu",
+    "key": "location_sharing_status",
+    "source": "Sharing: %1$s",
+    "translation": "Partekatzen:% 1 $ s"
+   },
+   {
+    "app": "OsmAnd~",
+    "locale": "eu",
+    "key": "share_location_as_description_second_line",
+    "source": "You can create and view the Device ID in the telegram client using the %1$s chat bot. %2$s",
+    "translation": "Telegrama bezeroan gailuaren IDa sortu eta ikusi dezakezu %1$s txat bota erabiliz. % 2 $ s"
+   },
+   {
+    "app": "ownCloud",
+    "locale": "ug",
+    "key": "apply_to_all_conflicts",
+    "source": "Apply to all %1$s conflicts",
+    "translation": "بارلىق% 1 $ s توقۇنۇشقا ئىشلىتىڭ"
+   },
+   {
+    "app": "ownCloud",
+    "locale": "ug",
+    "key": "clipboard_label",
+    "source": "Text copied from %1$s",
+    "translation": "تېكىست% 1 $ دىن كۆچۈرۈلگەن"
+   }
+  ],
+  "conversion-native": [
+   {
+    "app": "FadCam",
+    "locale": "el",
+    "key": "records_delete_header_eta_minutes",
+    "source": "ETA %1$dm %2$02ds",
+    "translation": "Εκτ. %1$δλ %2$02δδ"
+   },
+   {
+    "app": "FadCam",
+    "locale": "el",
+    "key": "records_delete_header_eta_seconds",
+    "source": "ETA %1$ds",
+    "translation": "Εκτ. %1$δδ"
+   },
+   {
+    "app": "Commons",
+    "locale": "zh",
+    "key": "delete_helper_show_deletion_message_if",
+    "source": "Nominated %1$s for deletion.",
+    "translation": "已提出将%1删除"
+   },
+   {
+    "app": "Commons",
+    "locale": "zh",
+    "key": "depictions_not_found",
+    "source": "No Wikidata items matching %1$s found",
+    "translation": "未找到符合%1$的维基数据项目。"
+   },
+   {
+    "app": "LibreTube",
+    "locale": "bn",
+    "key": "videoCount",
+    "source": "%1$d videos",
+    "translation": "%1$টি ভিডিও"
+   },
+   {
+    "app": "p!n",
+    "locale": "ru",
+    "key": "action_snooze",
+    "source": "Snooze %1$s",
+    "translation": "Отложить на %1$с"
+   },
+   {
+    "app": "p!n",
+    "locale": "ru",
+    "key": "toast_pin_background",
+    "source": "Show in %1$s",
+    "translation": "Появится через %1$с"
+   },
+   {
+    "app": "p!n",
+    "locale": "ru",
+    "key": "toast_pin_dismissed",
+    "source": "Snoozed for %1$s",
+    "translation": "Отложено на %1$с"
+   }
+  ]
+ }
+}
