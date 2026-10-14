@@ -8,29 +8,40 @@ How many open-source Android apps ship translations that make `String.format` th
 
 ## Results (full pass, 2026-10-14)
 
-Census 0.2.0 read the latest commit of every one of the 4,476 source repositories behind F-Droid's 4,667 apps, in 11 minutes on 4 cores. The files are in [`data/`](data/): [`summary.json`](data/summary.json), [`report.md`](data/report.md) and [`findings.csv`](data/findings.csv), which has every flagged translation with a link to the line at the commit read.
+Census 0.2.0 read the latest commit of every one of the 4,476 source repositories behind F-Droid's 4,667 apps, in 11 minutes on 4 cores. The files are in [`data/`](data/): [`summary.json`](data/summary.json), [`report.md`](data/report.md) and [`findings.csv`](data/findings.csv), which has every flagged translation with a link to the line at the commit read. The numbers below are what 0.2.0 measured. Two corrections found by hand follow, and the corrected totals are in bold there.
 
 - 3,755 repositories have Android string resources. 1,703 of them have translations of strings with printf placeholders.
 - 1,262,958 such translations were formatted with OpenJDK 21's real `java.util.Formatter`.
-- **382 translations, in 99 repositories, throw whatever the app passes.** 190 more throw only if the app passes text for a `%s`.
-- **250 of the 382 are strings the app's Kotlin or Java code formats with arguments, in 67 repositories.** Those are the reachable crashes. The other 132 are strings the code uses some other way (41) or never names (91).
+- 382 translations, in 99 repositories, throw whatever the app passes. 190 more throw only if the app passes text for a `%s`.
+- 250 of the 382 are strings the app's Kotlin or Java code formats with arguments, in 67 repositories. Those are the reachable crashes. The other 132 are strings the code uses some other way (41) or never names (91).
 - That is about 1 crash in every 3,300 formatted translations. It is concentrated: ownCloud (47 reachable, nearly all one Uyghur file), Cashiro (29) and Wikimedia Commons (22) hold 98 of the 250. Most of the other 64 repositories have one to four.
 - By exception: `UnknownFormatConversionException` 251, `MissingFormatArgumentException` 59, `FormatFlagsConversionMismatchException` 48, `IllegalFormatConversionException` 20, `IllegalFormatFlagsException` 4.
 - By language, Uyghur leads (55, one app), then Turkish 27, Arabic 16, Russian 15, and Spanish, Italian, Basque and Greek with 10 each.
-- **Static check vs JVM:** l10n-guard 0.5.1 called 375 of the 382 JVM crashes errors and the other 7 warnings. It called nothing an error that the JVM accepted (precision 1.0, recall 0.98).
+- **Static check vs JVM:** l10n-guard 0.5.1 called 375 of the 382 JVM crashes errors and the other 7 warnings. It called nothing an error that the JVM accepted (precision 1.0, recall 0.98). Both read the same extracted text, so a text-extraction mistake fools both (see the Wikipedia correction below).
 - **Maintainers confirm it.** Tallybook's maintainer reproduced the Turkish crash on an emulator, found that one of the strings crashes the Utility settings screen as soon as it opens (a bug present since 2019), and merged the fix ([PR #397](https://github.com/herrerad85/tallybook/pull/397)). ownCloud acknowledged its report ([#5018](https://github.com/owncloud/android/issues/5018)).
 
-### One correction found by hand: `%t` and `Long`
+### Correction 1: `%t` and `Long`
 
-The JVM check passes an `Integer` for each `%d` in the English string. 4 of the 250 reachable rows (Cashiro's Icelandic `duration_*` and one Vietnamese string) use a `%t` date conversion there. `%t` rejects an `Integer` but accepts a `Long`, and Cashiro passes a `Long`. So those 4 don't throw; they print a month or an AM/PM marker instead of a duration. Counting them out leaves **246 reachable crashes**. No other row in the data depends on `Integer` vs `Long` in this direction. The next census version (0.3.0, queued) tests both types and reports `crash-if-int` and `crash-if-long` separately.
+The JVM check passes an `Integer` for each `%d` in the English string. 4 of the 250 reachable rows (Cashiro's Icelandic `duration_*` and one Vietnamese string) use a `%t` date conversion there. `%t` rejects an `Integer` but accepts a `Long`, and Cashiro passes a `Long`. So those 4 don't throw; they print a month or an AM/PM marker instead of a duration. No other row in the data depends on `Integer` vs `Long` in this direction. Census 0.3.0 tests both types and reports `crash-if-int` and `crash-if-long` separately.
 
-### And one in the other direction: `crash-if-text` rows can be real
+### Correction 2: Wikipedia's 11 rows are not crashes (markup that is text)
 
-The 190 `crash-if-text` rows aren't counted above, because whether they throw depends on what the app passes. Reading code shows some do throw. FadCam's Italian `faditor_export_info` is `%1$d segmenti • %2$s`, and the code passes the duration as a `String` for `%1$`, so it throws `IllegalFormatConversionException` every time an export starts. 246 is a floor in this sense too.
+Wikipedia's English `temp_account_edit_status` is written in CDATA: `<![CDATA[<b>You are using a temporary account.</b> Your edit will be attributed to %1$s. <a href="%2$s">Learn more</a>.]]>`. Markup inside CDATA (or written as `&lt;a href=...&gt;`) is plain text to Android, so the app gets the `<a href="%2$s">` as written, formats it with two arguments, and then runs it through `Html.fromHtml`. The code passes both (`getString(R.string.temp_account_edit_status, AccountUtil.getUserNameFromCookie(), getString(R.string.temp_accounts_help_url))` in `EditSummaryFragment` and `TalkReplyActivity`). l10n-guard 0.5.1 removed every `<...>` before checking, so the `%2$s` inside the `href` disappeared from the English string and the census thought it passed one argument. Most translations kept the link intact and were stripped the same way. A few have broken link markup that the stripping missed (Portuguese `<a href="%2$s2Saiba mais`, or a stray `<span class="notranslate">` inside the `href` in Romanian, Indonesian and Russian), so their `%2$s` looked like an extra argument. They show a broken link, but they don't throw. The same holds for two Danish Year in Review strings: in the English, `%3$s` and `%4$s` are link targets inside CDATA, and the English string itself needs them, so the code must pass them or it would throw for every English user. The five `values-qq` rows are translatewiki.net's notes for translators, not a language any device loads.
+
+So all 11 Wikipedia rows (8 of them in formatted strings) are false positives. No other `crash` row in `findings.csv` has a placeholder inside literal markup. Rows whose English hides a placeholder in CDATA markup while the translation shows it as plain text wouldn't show up in that search, which is one reason for the full re-run. With both corrections:
+
+- **371 translations, in 98 repositories, throw whatever the app passes.**
+- **238 of them are reachable** (formatted by the code) in 66 repositories: 250, minus 4 for `%t`, minus 8 for Wikipedia.
+
+Census 0.3.1 (`census_fixes.py`, on top of `census.py` 0.3.0) fixes the cause: only real child elements lose their markup, and literal markup keeps its placeholders, as on a device. It also skips `values-qq`. This works both ways. A translation that puts a placeholder the English never passes inside a literal link (`<a href="%3$s">` where the English has `%2$s`) is now caught. 0.5.1 removed it and missed it. Its full run is queued, and it will report every row that appears or disappears (`compare.py`).
+
+### Correction in the other direction: `crash-if-text` rows can be real
+
+The 190 `crash-if-text` rows aren't counted above, because whether they throw depends on what the app passes. Reading code shows some do throw. FadCam's Italian `faditor_export_info` is `%1$d segmenti • %2$s`, and the code passes the duration as a `String` for `%1$`, so it throws `IllegalFormatConversionException` every time an export starts. 238 is a floor in this sense.
 
 ## Mistake types
 
-`taxonomy.py` (0.1.1) names the mistake behind the first placeholder `Formatter` can't use in each crashing row. Run on [`data/findings.csv`](data/findings.csv), its output is in [`data/taxonomy.md`](data/taxonomy.md) and [`data/taxonomy.json`](data/taxonomy.json). The 250 reachable crashes:
+`taxonomy.py` (0.1.1) names the mistake behind the first placeholder `Formatter` can't use in each crashing row. Run on [`data/findings.csv`](data/findings.csv), its output is in [`data/taxonomy.md`](data/taxonomy.md) and [`data/taxonomy.json`](data/taxonomy.json). The 250 reachable rows as 0.2.0 counted them (the 8 Wikipedia rows of Correction 2 are all "argument not passed", so that kind has 27 real rows in 14 repositories):
 
 | Kind | Example | Rows | Repositories | Top languages |
 |---|---|---:|---:|---|
@@ -67,7 +78,7 @@ Each was checked against the project's current default branch, and the call that
 | Cashiro | 25 strings: the SMS-scan durations in Russian, Ukrainian, Bulgarian, Gujarati, Kannada, Punjabi, Hebrew, Turkish, Latin and Vietnamese (`%1$ч %2$м`, `%1$DH`, `%2$g`); percentages in Hungarian, Turkmen, Romanian (`(%1$d%)`). Plus 4 Icelandic/Vietnamese `%t` strings that print the wrong thing without throwing | `SmsParsingProgressDialog.formatDuration` (elapsed and remaining time while SMS messages are scanned), `AnalyticsCharts`, `ChatScreen` | Crowdin; issue queued |
 | Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs; the maintainer found one more path, the exchange-rate summary on the Utility settings screen | pull requests welcome; [fix PR #397](https://github.com/herrerad85/tallybook/pull/397), **merged 2026-10-14** after the maintainer reproduced the crash on an emulator |
 | Stepsy | Arabic: 3 milestone labels (`%1$دم`, `%.1فم`, `%1$دألف`); Bulgarian: 2 (`%1$дмлн.`, `%1$дхил.`), the conversion letter typed in the target script | `GoalNotificationWorker.showMilestoneNotification` (the step-milestone notification title; added 2026-09-28) | translations in the repo; fix PR queued |
-| FadCam | Italian: `delete_videos_log` (`%2$d` never passed), `export_eta_minutes`/`_hours` (`%2$` never passed), `faditor_export_info` (`%1$d` gets a String); Greek: `records_delete_header_eta_*` (`%1$δδ`) | `RecordsFragment.deleteSelectedVideos` (deleting selected videos, before deletion starts), `FaditorEditorActivity.showExportInfoOnScreen` and `FaditorMiniFragment.formatEta` (export), `RecordsFragment.buildDeletionEta` (deletion progress) | Hosted Weblate; issue queued |
+| FadCam | Italian: `delete_videos_log` (`%2$d` never passed), `export_eta_minutes`/`_hours` (`%2$` never passed), `faditor_export_info` (`%1$d` gets a String); Greek: `records_delete_header_eta_*` (`%1$δδ`) | `RecordsFragment.deleteSelectedVideos` (deleting selected videos, before deletion starts), `FaditorEditorActivity.showExportInfoOnScreen` and `FaditorMiniFragment.formatEta` (export), `RecordsFragment.buildDeletionEta` (deletion progress) | Hosted Weblate; [issue #360](https://github.com/anonfaded/FadCam/issues/360) |
 | Mastodon (official Android app) | Indonesian `x_new_notifications` (`%,d` written twice, so it reads a second argument); Albanian `x_people_talking` one and other (`%1`); Belarusian `x_quotes` one (`%,d% цытата`) | `PushNotificationReceiver.doNotify` builds the grouped summary on a background thread with no catch, whenever an account has 2 or more notifications (Indonesian has only the `other` form, so every count is affected); `TrendingHashtagsFragment` and `HashtagStatusDisplayItem` (Albanian); `StatusQuotesFragment` and `ExtendedFooterStatusDisplayItem` (Belarusian) | Crowdin. Mastodon's AI contribution policy says its repositories are for humans only and turns away issues that come from running AI tools over the code, so MV2 has not reported it there. It is listed here for Mastodon's translators. |
 | Homer Audio Player 2 | Chinese (Simplified): both battery content descriptions end in a bare `%` (`电量 %1$d %`) | `BatteryIcon` via `pluralStringResource`, drawn in the player screen's top row when **Show battery indicator** is on (off by default) | Lokalise; [issue #26](https://github.com/msimonides/homerplayer2/issues/26) |
 | Shader Editor | Russian: `few` and `many` forms of `n_shaders_successfully_imported` read `%2$d`, which only the `_m_failed` plural gets | `ImportExportAsFiles.importFromDirectory` (Android 9 and older; only `IOException` is caught) | translations in the repo; [fix PR #294](https://github.com/markusfisch/ShaderEditor/pull/294) |
@@ -75,19 +86,21 @@ Each was checked against the project's current default branch, and the call that
 
 Two of the ten projects (Mastodon and AnkiDroid) don't accept reports or fixes made with AI tools from new contributors. A census like this one can still help them, because their translators and maintainers can find the rows here.
 
-Every translation route appears in that table: Crowdin, Transifex, translatewiki.net, Lokalise, Weblate, and files edited in the repository. All of these platforms have placeholder checks of some kind, and the crashes shipped anyway. Census 0.3.0 (queued) records which platform each repository names, to compare crash rates by platform.
+Checked and cleared: **Wikipedia** (11 rows, see Correction 2). Its Portuguese, Romanian, Indonesian and Russian `temp_account_edit_status` links are broken, which is worth fixing on translatewiki.net, but nothing throws.
+
+Every translation route appears in that table: Crowdin, Transifex, translatewiki.net, Lokalise, Weblate, and files edited in the repository. All of these platforms have placeholder checks of some kind, and the crashes shipped anyway. Census 0.3.x records which platform each repository names, to compare crash rates by platform.
 
 ## Method
 
 1. Read F-Droid's index (`index-v2.json`): 4,667 apps in 4,476 distinct source repositories.
 2. For each repository, make a depth-1, blobless, sparse clone of the latest commit and check out only `res/values*/*.xml`.
-3. Pair every translation with its default (`values/`) string when the default text has a printf specifier and isn't marked `formatted="false"`. Plural forms are checked against the source form that reads the most arguments, because `getQuantityString` passes the same arguments to every quantity.
+3. Pair every translation with its default (`values/`) string when the default text has a printf specifier and isn't marked `formatted="false"`. Plural forms are checked against the source form that reads the most arguments, because `getQuantityString` passes the same arguments to every quantity. From 0.3.1, the text compared is the text a device gets: real child elements (`<b>`, `<xliff:g>`, an `<a>` element) lose their markup and attributes, and markup that is text (CDATA, `&lt;`) stays, placeholders included. `values-qq` (translator notes) is skipped.
 4. Give each pair two verdicts:
-   - **static**: the `java-format` check of [l10n-guard](https://github.com/munimtechnologies/l10n-guard) (vendored here as `l10n_guard.py`, 0.5.1);
+   - **static**: the `java-format` check of [l10n-guard](https://github.com/munimtechnologies/l10n-guard) (vendored here as `l10n_guard.py`, 0.5.1; `census_fixes.py` applies the 0.3.1 text fix on top);
    - **JVM**: the real OpenJDK 21 `java.util.Formatter` (`FormatCheck.java`), formatting the source and the translation with arguments of the source's types. A `%s` argument gets text once and a number once. `crash` means the translation throws either way. `crash-if-text` means it throws only when the app passes text. A pair whose source string throws too is set aside.
 5. **Code use** (from 0.2.0): repositories with a flagged translation also get their `.kt` and `.java` files checked out. Each flagged string is then classified as `formatted` (a `getString`/`stringResource`/`getQuantityString`/`pluralStringResource` call passes it arguments, or it is wrapped in `String.format(...)`/`.format(...)`), `referenced` (used only in other ways), `unreferenced`, or `unknown`. The headline count is JVM crashes in `formatted` strings, because only those are reachable.
 6. Write `apps.jsonl` (one line per repository), `findings.csv` (every crash with a link to the file at the commit read), `summary.json` and `report.md`. `apps.jsonl` isn't committed here because of its size; running the census recreates it.
-7. `taxonomy.py` sorts the `crash` rows by mistake type (see above).
+7. `taxonomy.py` sorts the `crash` rows by mistake type (see above). `compare.py` lists the crash rows that appear or disappear between two runs.
 
 The census reads public files only. It files nothing and contacts no one.
 
@@ -97,10 +110,12 @@ Needs Python 3.10+, git and a JDK (`javac` and `java`). Without a JDK the census
 
 ```sh
 python bootstrap.py --data-dir cache      # apt-get git + JDK, or Temurin 21 under cache/jdk
-python census.py --data-dir cache --out-dir out --workers 12 --budget-minutes 140
-python census.py --local path/to/android-app --out-dir out   # one checkout, no git
+python census_fixes.py --data-dir cache --out-dir out --workers 12 --budget-minutes 140   # census 0.3.1
+python census_fixes.py --local path/to/android-app --out-dir out   # one checkout, no git
 python taxonomy.py out/findings.csv --out-dir out/taxonomy
+python compare.py data/findings.csv out/findings.csv --out out/compare.md
 python test_census.py
+python test_census_fixes.py
 python test_taxonomy.py
 ```
 
@@ -116,18 +131,19 @@ Searches of GitHub, arXiv and the web (2026-10-13 and 2026-10-14) found no cross
 
 ## Limits
 
-- A string counts as formatted when its default text has a printf specifier. Code-use classification is pattern-based. Strings looked up by name at runtime, or formatted in ways the patterns miss, count as `referenced` or `unreferenced`. So 250 is a floor for reachable crashes in that sense, and the `%t` correction above shows it can also overcount by a little.
+- A string counts as formatted when its default text has a printf specifier. Code-use classification is pattern-based. Strings looked up by name at runtime, or formatted in ways the patterns miss, count as `referenced` or `unreferenced`. So 238 is a floor for reachable crashes in that sense. The corrections above show the census can also overcount; every correction so far was found by reading rows by hand.
+- The static check and the JVM read the same extracted text, so their agreement doesn't catch text-extraction mistakes (Correction 2).
 - The JVM check passes `Integer` for `%d` arguments. An app that passes `Long` can get a different answer for `%t` (see above) or `%c`.
 - `crash-if-text` rows aren't counted, though some are real crashes (FadCam above).
 - Verdicts come from OpenJDK 21. Android's `java.util.Formatter` is the same OpenJDK code for these cases, but edge cases can differ by API level.
 - Only the latest commit of each repository's default branch is read. A translation may already be fixed on its translation platform but not yet exported.
 - Apps whose source isn't a reachable public git repository (7 in the index), whose clone failed (85) or timed out (2), or that keep strings outside `res/values*/`, aren't covered.
-- Translations that don't crash but print the wrong thing (a `٪` instead of `%`, a `%1$2s` where `%1$ds` was meant) are outside this census.
+- Translations that don't crash but print the wrong thing (a `٪` instead of `%`, a `%1$2s` where `%1$ds` was meant, a broken link) are outside this census.
 - The mistake types are rule-based, from the first placeholder `Formatter` can't use; a row with two different mistakes is counted once.
 
 ## Licence
 
-- Code (`census.py`, `FormatCheck.java`, `bootstrap.py`, `taxonomy.py`, `test_census.py`, `test_taxonomy.py`, and the vendored `l10n_guard.py`): Apache-2.0 (see `LICENSE`).
+- Code (`census.py`, `census_fixes.py`, `compare.py`, `FormatCheck.java`, `bootstrap.py`, `taxonomy.py`, the `test_*.py` files, and the vendored `l10n_guard.py`): Apache-2.0 (see `LICENSE`).
 - Data under `data/` and this write-up: CC BY 4.0. The translated strings quoted belong to their projects, under those projects' licences.
 
 Made by MV2 of Munim, Inc. with AI agents. Contact: munimversion2@gmail.com.

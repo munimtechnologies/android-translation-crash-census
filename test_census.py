@@ -57,6 +57,10 @@ JAVA = '''class B {
 }
 '''
 
+OK = "OK"
+U = "UnknownFormatConversionException"
+I = "IllegalFormatConversionException"
+
 
 def _write(folder, name, text):
     path = os.path.join(folder, *name.split("/"))
@@ -74,6 +78,8 @@ def _app(d):
     _write(d, "app/src/main/res/values-car/strings.xml", FR)
     _write(d, "app/src/main/res/values-de/broken.xml", "<resources><string name=")
     _write(d, "app/src/main/java/org/example/A.kt", KT)
+    _write(d, "README.md", "# App\n\n[![Translation status](https://hosted.weblate.org/widgets/app/svg-badge.svg)]"
+                           "(https://hosted.weblate.org/engage/app/)\n")
     return d
 
 
@@ -99,6 +105,27 @@ class Index(unittest.TestCase):
         self.assertIsNone(c.repo_of(""))
         self.assertEqual(c.blob_url("https://github.com/o/r", "github.com", "abc", "a/b.xml"),
                          "https://github.com/o/r/blob/abc/a/b.xml")
+
+
+class Platforms(unittest.TestCase):
+    def test_config_file_outranks_readme(self):
+        with tempfile.TemporaryDirectory() as d:
+            _write(d, "README.md", "Translate us on https://hosted.weblate.org/projects/x/")
+            self.assertEqual(c.detect_platforms(d), ["weblate"])
+            _write(d, "crowdin.yml", "files:\n  - source: /app/src/main/res/values/strings.xml\n")
+            self.assertEqual(c.detect_platforms(d), ["crowdin"])
+            _write(d, ".tx/config", "[main]\nhost = https://www.transifex.com\n")
+            self.assertEqual(c.detect_platforms(d), ["crowdin", "transifex"])
+
+    def test_docs_mentions(self):
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(c.detect_platforms(d), [])
+            _write(d, "CONTRIBUTING.md", "Translations happen on translatewiki.net, not here.")
+            _write(d, "docs/README.md", "crowdin.com")  # only root docs count
+            self.assertEqual(c.detect_platforms(d), ["translatewiki"])
+        self.assertEqual(c.platform_label([]), "none named")
+        self.assertEqual(c.platform_label(["weblate"]), "weblate")
+        self.assertEqual(c.platform_label(["crowdin", "weblate"]), "several")
 
 
 class Scan(unittest.TestCase):
@@ -150,15 +177,19 @@ class Scan(unittest.TestCase):
             ("string", "never"): "unreferenced"})
 
     def test_verdict(self):
+        # Answers: source and translation for A (text, Int), B (number, Int),
+        # C (text, Long), D (number, Long).
         self.assertEqual(c.verdict(None), ("no-jvm", ""))
-        self.assertEqual(c.verdict(["OK", "UnknownFormatConversionException", "OK",
-                                    "UnknownFormatConversionException"]),
-                         ("crash", "UnknownFormatConversionException"))
-        self.assertEqual(c.verdict(["OK", "IllegalFormatConversionException", "OK", "OK"]),
-                         ("crash-if-text", "IllegalFormatConversionException"))
-        self.assertEqual(c.verdict(["MissingFormatArgumentException", "OK", "OK", "OK"])[0],
+        self.assertEqual(c.verdict([OK, U, OK, U, OK, U, OK, U]), ("crash", U))
+        self.assertEqual(c.verdict([OK, I, OK, OK, OK, I, OK, OK]), ("crash-if-text", I))
+        # %1$tm where the source has %1$d: a Long prints, an Int throws.
+        self.assertEqual(c.verdict([OK, I, OK, I, OK, OK, OK, OK]), ("crash-if-int", I))
+        # %c where the source has %d: an Int prints, a Long throws.
+        self.assertEqual(c.verdict([OK, OK, OK, OK, OK, I, OK, I]), ("crash-if-long", I))
+        self.assertEqual(c.verdict([OK, OK, OK, I, OK, OK, OK, OK]), ("crash-if-number", I))
+        self.assertEqual(c.verdict(["MissingFormatArgumentException", OK, OK, OK, OK, OK, OK, OK])[0],
                          "source-fails")
-        self.assertEqual(c.verdict(["OK", "OK", "OK", "OK"]), ("ok", ""))
+        self.assertEqual(c.verdict([OK] * 8), ("ok", ""))
 
 
 class Local(unittest.TestCase):
@@ -174,13 +205,18 @@ class Local(unittest.TestCase):
             with open(os.path.join(out, "findings.csv"), encoding="utf-8", newline="") as f:
                 findings = list(csv.DictReader(f))
             with open(os.path.join(out, "report.md"), encoding="utf-8") as f:
-                self.assertIn("Translation-crash census", f.read())
+                text = f.read()
+        self.assertIn("Translation-crash census", text)
+        self.assertIn("| weblate | 1 | 9 |", text)
         self.assertEqual(summary["formatted_translation_pairs"], 9)
         self.assertEqual(summary["repos_with_formatted_translations"], 1)
+        self.assertEqual(list(summary["by_platform"]), ["weblate"])
+        self.assertEqual(summary["by_platform"]["weblate"]["pairs"], 9)
         # The four static crashes, with how A.kt uses each string.
         self.assertEqual({(r["locale"], r["key"]): r["use"] for r in findings},
                          {("fr", "done"): "formatted", ("fr", "size"): "formatted",
                           ("fr", "who"): "referenced", ("fr", "left[other]"): "referenced"})
+        self.assertEqual({r["platform"] for r in findings}, {"weblate"})
         self.assertIn("source form", summary["plural_rule"])
         if summary["jvm"]:
             # The real Formatter agrees on all four, and the self-check passed.
@@ -189,7 +225,11 @@ class Local(unittest.TestCase):
             self.assertEqual(summary["crash_by_code_use"],
                              {"formatted": 2, "referenced": 2, "unreferenced": 0, "unknown": 0})
             self.assertEqual(summary["repos_with_formatted_crash"], 1)
-            self.assertTrue(all(x["expected"] == x["got"] for x in summary["jvm_selfcheck"]))
+            self.assertEqual(summary["by_platform"]["weblate"]["crash"], 4)
+            self.assertEqual(summary["by_platform"]["weblate"]["repos_with_formatted_crash"], 1)
+            self.assertEqual(len(summary["jvm_selfcheck"]), 7)
+            self.assertTrue(all(x["expected"] == x["got"] for x in summary["jvm_selfcheck"]),
+                            summary["jvm_selfcheck"])
 
 
 if __name__ == "__main__":

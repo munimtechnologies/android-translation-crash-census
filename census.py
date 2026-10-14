@@ -7,7 +7,8 @@ each translated string with its source string, and for every string the app
 would pass to String.format checks the translation two ways: l10n-guard's
 static java-format check, and the real java.util.Formatter (FormatCheck.java).
 A translation that throws while its source formats fine crashes the app for
-everyone using that language.
+everyone using that language. It also notes which translation platform each
+repository names in its config files or README (Crowdin, Weblate, Transifex...).
 
   python census/census.py --data-dir /data --out-dir /out
   python census/census.py --local path/to/app --out-dir out   # one tree, no git
@@ -40,11 +41,29 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "ship", "l10n-guard"))
 import l10n_guard as g  # noqa: E402
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 INDEX_URLS = ["https://f-droid.org/repo/index-v2.json", "https://f-droid.org/repo/index-v1.json"]
 USER_AGENT = "mv2-translation-crash-census/%s (Munim, Inc.; munimversion2@gmail.com)" % __version__
 SPARSE_PATTERN = "**/res/values*/*.xml"
+# Root docs and platform config files, read to tell which platform translates the app.
+PLATFORM_PATTERNS = ["/README*", "/Readme*", "/readme*", "/CONTRIBUTING*", "/Contributing*",
+                     "/TRANSLAT*", "/Translat*", "/translat*", "**/crowdin.yml", "**/crowdin.yaml",
+                     "/.tx/config", "/l10n.toml", "/localazy.json", "/lokalise.yml", "/.weblate"]
+# (platform, config files relative to the root, lower-case markers in the root docs).
+# A config file outranks a mention: README badges outlive a move between platforms.
+PLATFORMS = [
+    ("crowdin", ["crowdin.yml", "crowdin.yaml", ".github/crowdin.yml"], ["crowdin.com", "crowdin.net"]),
+    ("weblate", [".weblate"], ["weblate", "translate.codeberg.org", "toolate.othing.xyz"]),
+    ("transifex", [".tx/config"], ["transifex.com"]),
+    ("translatewiki", [], ["translatewiki.net"]),
+    ("lokalise", ["lokalise.yml"], ["lokalise.com"]),
+    ("localazy", ["localazy.json"], ["localazy.com"]),
+    ("poeditor", [], ["poeditor.com"]),
+    ("pontoon", ["l10n.toml"], ["pontoon.mozilla.org"]),
+    ("gitlocalize", [], ["gitlocalize.com"]),
+]
+DOC_RE = re.compile(r"^(readme|contributing|translat)", re.I)
 # values-fr, values-pt-rBR, values-b+sr+Latn. "car" is a UI mode, not a language.
 LOCALE_DIR_RE = re.compile(r"^values-([a-z]{2,3}(?:-r[A-Z]{2})?|b\+[A-Za-z]{2,3}(?:\+[A-Za-z0-9]+)*)$")
 NOT_LOCALES = {"car"}
@@ -53,7 +72,9 @@ GIT_ENV = dict(os.environ, GIT_TERMINAL_PROMPT="0", GIT_ASKPASS="", SSH_ASKPASS=
                GIT_LFS_SKIP_SMUDGE="1")
 FINDING_FIELDS = ["verdict", "exception", "use", "static", "static_detail", "locale", "key",
                   "source_key", "source", "translation", "file", "link", "repo", "commit",
-                  "packages", "app"]
+                  "packages", "app", "platform"]
+# Verdicts written to findings.csv: every way a translation can throw.
+FINDING_VERDICTS = ("crash", "crash-if-int", "crash-if-long", "crash-if-text", "crash-if-number")
 PLURAL_RULE = ("getQuantityString passes every quantity the same arguments, so each translated "
                "plural form is checked against the source form that reads the most of them")
 # Code is fetched only for repositories with a flagged translation.
@@ -70,7 +91,10 @@ SELF_CHECK = [("I", "%1$d%% done", "%1$d % terminé", "crash"),
               ("S", "Hello %s", "Hallo %d", "crash-if-text"),
               ("I", "%d files", "%d fichiers", "ok"),
               ("S,S", "%1$s of %2$s", "%1$s de %3$s", "crash"),
-              ("S", "Saved to %s", "Téléchargé à 50% dans %s", "crash")]
+              ("S", "Saved to %s", "Téléchargé à 50% dans %s", "crash"),
+              # %t takes a Long but not an Integer; %c an Integer but not a Long.
+              ("I", "%1$d min", "%1$tm min", "crash-if-int"),
+              ("I", "Row %d", "Rangée %c", "crash-if-long")]
 
 
 def log(message):
@@ -177,7 +201,8 @@ def git(args, cwd=None, timeout=120):
 
 def fetch(clone, dest, timeout):
     """Clones only the latest commit's tree, then checks out just the values
-    folders. Returns the commit sha."""
+    folders and the files that name a translation platform. Returns the
+    commit sha."""
     start = time.time()
     r = git(["clone", "--quiet", "--depth", "1", "--filter=blob:none", "--no-checkout",
              "--single-branch", clone, dest], timeout=timeout)
@@ -188,7 +213,7 @@ def fetch(clone, dest, timeout):
     info = os.path.join(dest, ".git", "info")
     os.makedirs(info, exist_ok=True)
     with open(os.path.join(info, "sparse-checkout"), "w") as f:
-        f.write(SPARSE_PATTERN + "\n")
+        f.write("".join(p + "\n" for p in [SPARSE_PATTERN] + PLATFORM_PATTERNS))
     r = git(["read-tree", "-mu", "HEAD"], cwd=dest, timeout=left)
     if r.returncode:
         raise RuntimeError("checkout failed: %s" % r.stderr.strip()[-300:])
@@ -202,6 +227,39 @@ def fetch_code(dest, timeout):
     r = git(["read-tree", "-mu", "HEAD"], cwd=dest, timeout=timeout)
     if r.returncode:
         raise RuntimeError("code checkout failed: %s" % r.stderr.strip()[-300:])
+
+
+# ---------------------------------------------------------------- platforms
+
+def detect_platforms(root):
+    """Sorted names of the translation platforms the repository names: by a
+    config file if it has one (crowdin.yml, .tx/config...), else by a mention
+    in its root README, CONTRIBUTING or TRANSLATING file."""
+    by_file = {name for name, files, _ in PLATFORMS
+               if any(os.path.isfile(os.path.join(root, *f.split("/"))) for f in files)}
+    if by_file:
+        return sorted(by_file)
+    text = ""
+    try:
+        names = sorted(os.listdir(root))
+    except OSError:
+        return []
+    for name in names:
+        path = os.path.join(root, name)
+        if DOC_RE.match(name) and os.path.isfile(path):
+            try:
+                with open(path, encoding="utf-8", errors="replace") as f:
+                    text += f.read(300000).lower() + "\n"
+            except OSError:
+                continue
+    return sorted(name for name, _, markers in PLATFORMS if any(m in text for m in markers))
+
+
+def platform_label(found):
+    """One label per repository: the platform, "several", or "none named"."""
+    if not found:
+        return "none named"
+    return found[0] if len(found) == 1 else "several"
 
 
 # --------------------------------------------------------------------- code
@@ -429,7 +487,8 @@ class Jvm:
         return cls(java, classdir)
 
     def check(self, rows):
-        """rows: (types, source, target). Returns [sourceA, targetA, sourceB, targetB] each."""
+        """rows: (types, source, target). Returns, for each, the source and
+        translation answers for argument sets A, B, C and D (eight in all)."""
         results = []
         for start in range(0, len(rows), 200):
             chunk = rows[start:start + 200]
@@ -438,7 +497,7 @@ class Jvm:
             self.proc.stdin.flush()
             for i in range(len(chunk)):
                 parts = self.proc.stdout.readline().rstrip("\n").split("\t")
-                if len(parts) != 5 or parts[0] != str(i):
+                if len(parts) != 9 or parts[0] != str(i):
                     raise RuntimeError("FormatCheck stopped or fell out of step")
                 results.append(parts[1:])
         return results
@@ -452,19 +511,31 @@ class Jvm:
 
 
 def verdict(result):
-    """(verdict, exception) from FormatCheck's four answers. crash: the
-    translation throws whatever the app passes for %s; crash-if-text: only
-    when it passes text; source-fails: the source itself throws, so the pair
-    tells nothing."""
+    """(verdict, exception) from FormatCheck's eight answers (source and
+    translation for sets A: text and Integer, B: number and Integer, C: text
+    and Long, D: number and Long).
+    crash: the translation throws whatever the app passes; crash-if-int: only
+    when the app passes an Int for a %d (a Long works, as with %t);
+    crash-if-long: only for a Long (an Int works, as with %c); crash-if-text:
+    only when it passes text for a %s; crash-if-number: only a number for %s;
+    source-fails: the source itself throws, so the pair tells nothing."""
     if result is None:
         return "no-jvm", ""
-    src_a, tgt_a, src_b, tgt_b = result
+    src_a, tgt_a, src_b, tgt_b, src_c, tgt_c, src_d, tgt_d = result
     if src_a != "OK" or src_b != "OK":
         return "source-fails", src_a if src_a != "OK" else src_b
-    if tgt_a != "OK" and tgt_b != "OK":
+    fails = [t != "OK" for t in (tgt_a, tgt_b, tgt_c, tgt_d)]
+    first = next((t for t in (tgt_a, tgt_b, tgt_c, tgt_d) if t != "OK"), "")
+    if all(fails):
         return "crash", tgt_a
-    if tgt_a != "OK":
-        return "crash-if-text", tgt_a
+    if fails[0] and fails[1]:
+        return "crash-if-int", tgt_a
+    if fails[2] and fails[3]:
+        return "crash-if-long", tgt_c
+    if fails[0] or fails[2]:
+        return "crash-if-text", tgt_a if fails[0] else tgt_c
+    if any(fails):
+        return "crash-if-number", first
     return "ok", ""
 
 
@@ -472,7 +543,7 @@ def verdict(result):
 
 def process_repo(repo, timeout, tmp_root):
     record = {"packages": repo["packages"], "names": repo["names"], "repo": repo["web"],
-              "updated": repo["updated"], "status": "ok", "sha": ""}
+              "updated": repo["updated"], "status": "ok", "sha": "", "platforms": []}
     start = time.time()
     pairs = []
     dest = None
@@ -485,6 +556,7 @@ def process_repo(repo, timeout, tmp_root):
             record["sha"] = fetch(repo["clone"], root, timeout)
         pairs, stats = scan_tree(root)
         record.update(stats)
+        record["platforms"] = detect_platforms(root)
         if not stats.get("res_dirs"):
             record["status"] = "no-android-strings"
         flagged = {_resource(p["key"]) for p in pairs if p["static"] != "ok"}
@@ -523,12 +595,14 @@ class Census:
         self.repos_with = collections.Counter()
         self.crash_repos = []
         self.crash_uses = collections.Counter()
+        self.platforms = collections.defaultdict(collections.Counter)
         self.pairs = 0
 
     def add(self, repo, record, pairs, jvm):
         results = [None] * len(pairs)
         if pairs and jvm is not None:
             results = jvm.check([(p["types"], p["source"], p["target"]) for p in pairs])
+        platform = platform_label(record.get("platforms"))
         counts = collections.Counter()
         for p, result in zip(pairs, results):
             jv, exception = verdict(result)
@@ -541,7 +615,7 @@ class Census:
                 self.crash_uses[p["use"]] += 1
                 if p["use"] == "formatted":
                     counts["crash-formatted"] += 1
-            if jv in ("crash", "crash-if-text") or (jv == "no-jvm" and p["static"] != "ok"):
+            if jv in FINDING_VERDICTS or (jv == "no-jvm" and p["static"] != "ok"):
                 path = "%s/%s" % (p["res"], p["file"]) if p["res"] != "." else p["file"]
                 self.findings.append({
                     "verdict": jv, "exception": exception, "use": p["use"], "static": p["static"],
@@ -550,7 +624,8 @@ class Census:
                     "translation": p["target"], "file": path,
                     "link": blob_url(repo["web"], repo["host"], record["sha"], path),
                     "repo": repo["web"], "commit": record["sha"],
-                    "packages": " ".join(repo["packages"]), "app": "; ".join(repo["names"])})
+                    "packages": " ".join(repo["packages"]), "app": "; ".join(repo["names"]),
+                    "platform": platform})
         record["verdicts"] = dict(counts)
         self.pairs += len(pairs)
         self.status[record["status"]] += 1
@@ -558,11 +633,25 @@ class Census:
             self.repos_with["android_strings"] += 1
         if pairs:
             self.repos_with["formatted_translations"] += 1
+            stats = self.platforms[platform]
+            stats["repos"] += 1
+            stats["pairs"] += len(pairs)
+            stats["crash"] += counts["crash"]
+            stats["crash_formatted"] += counts["crash-formatted"]
+            stats["repos_with_crash"] += 1 if counts["crash"] else 0
+            stats["repos_with_formatted_crash"] += 1 if counts["crash-formatted"] else 0
         if counts["crash"]:
             self.crash_repos.append((counts["crash"], repo["web"], "; ".join(repo["names"]),
                                      repo["updated"], counts["crash-formatted"]))
         self.apps.write(json.dumps(record, ensure_ascii=False) + "\n")
         self.apps.flush()
+
+    def by_platform(self):
+        out = {}
+        for name, s in sorted(self.platforms.items(), key=lambda kv: -kv[1]["pairs"]):
+            out[name] = dict(s)
+            out[name]["crash_per_100k"] = round(s["crash"] * 1e5 / s["pairs"], 1) if s["pairs"] else None
+        return out
 
     def write(self, meta):
         with open(os.path.join(self.out_dir, "findings.csv"), "w", encoding="utf-8",
@@ -590,6 +679,7 @@ class Census:
             "repos_with_formatted_crash": sum(1 for c in self.crash_repos if c[4]),
             "crash_exceptions": dict(self.exceptions.most_common()),
             "crash_locales_top": dict(self.locales.most_common(25)),
+            "by_platform": self.by_platform(),
             "static_vs_jvm": dict(sorted(a.items())),
             "static_crash_precision": round(a["crash/crash"] / static_crash, 4) if static_crash else None,
             "static_crash_recall": round(a["crash/crash"] / jvm_crash, 4) if jvm_crash else None,
@@ -620,8 +710,10 @@ def report(s):
         "- Translations of formatted strings checked: %s, with %s."
         % (s.get("formatted_translation_pairs"), s.get("jvm") or "no JVM (static check only)"),
         "- Real java.util.Formatter verdicts: %s crash whatever the app passes, %s crash if the app "
-        "passes text for a %%s argument, %s fine, %s skipped because the source string itself fails."
-        % (v.get("crash", 0), v.get("crash-if-text", 0), v.get("ok", 0), v.get("source-fails", 0)),
+        "passes text for a %%s argument, %s only if it passes an Int (not a Long) for a %%d, %s only "
+        "if it passes a Long (not an Int), %s fine, %s skipped because the source string itself fails."
+        % (v.get("crash", 0), v.get("crash-if-text", 0), v.get("crash-if-int", 0),
+           v.get("crash-if-long", 0), v.get("ok", 0), v.get("source-fails", 0)),
         "- Repositories with at least one crashing translation: %s (%s of them updated in the last year)."
         % (s.get("repos_with_crash"), s.get("repos_with_crash_updated_within_365_days")),
         "- How the app's Kotlin/Java code uses the strings behind the crashing translations: "
@@ -641,6 +733,17 @@ def report(s):
     lines += ["", "## Languages with the most crashing translations", ""]
     for locale, count in (s.get("crash_locales_top") or {}).items():
         lines.append("- %s: %s" % (locale, count))
+    lines += ["", "## By the translation platform each repository names", "",
+              "Repositories with translated strings the app formats, by the platform their config "
+              "files (crowdin.yml, .tx/config...) or, failing that, their README/CONTRIBUTING name.",
+              "",
+              "| platform | repositories | translations checked | crash | per 100,000 | "
+              "repositories with a crash | crash in strings the code formats |",
+              "|---|---:|---:|---:|---:|---:|---:|"]
+    for name, p in (s.get("by_platform") or {}).items():
+        lines.append("| %s | %s | %s | %s | %s | %s | %s |" % (
+            name, p.get("repos", 0), p.get("pairs", 0), p.get("crash", 0), p.get("crash_per_100k"),
+            p.get("repos_with_crash", 0), p.get("crash_formatted", 0)))
     lines += ["", "## Repositories with the most crashing translations", "",
               "| crashes | in formatted strings | app | repository |", "|---:|---:|---|---|"]
     for row in s.get("top_repos_by_crashes") or []:
@@ -652,12 +755,17 @@ def report(s):
               "crash; one that passes more arguments than the source uses could escape a "
               "MissingFormatArgumentException.",
               "- Plurals: %s." % PLURAL_RULE,
+              "- Integer arguments are tried as both an Int and a Long; a translation counts as "
+              "'crash' only if it throws with both. Which one the app passes is in its code.",
               "- Code use is found by matching R.string.name / R.plurals.name (and Res.string) in "
               "the .kt and .java files, fetched only for repositories with a flagged translation. "
               "'formatted' means a getString/stringResource/getQuantityString/"
               "pluralStringResource call passes arguments, or the string is wrapped in "
               "String.format or .format(). Strings looked up by name at runtime, or formatted "
               "in ways these patterns miss, count as 'referenced' or 'unreferenced'.",
+              "- The platform is what the repository names at its root, not proof that every "
+              "translation came through it; 'none named' mixes in-repository translation with "
+              "platforms these patterns miss.",
               "- Verdicts come from the JDK in the container. Android's java.util.Formatter is "
               "the same OpenJDK code for these cases, but edge cases can differ by API level.",
               "- Only the latest commit of each repository's default branch is read; a "
