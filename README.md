@@ -33,23 +33,29 @@ The first run stopped after 1,523 of the 4,476 repositories. An emoji written as
 Checking these rows by hand turned up two false-positive classes, both fixed in 0.2.0:
 
 - **Plurals.** 58 of the 72 `MissingFormatArgumentException` rows were plural forms that legitimately use arguments only the English `other` form shows (KDE Connect, Zorin Connect, SchildiChat). 0.1.0 compared each form only with the same English form.
-- **Strings no code uses.** 18 of Tella's 19 crashes belong to one string that no Kotlin or Java file names. A crash there can't happen, which is why 0.2.0 classifies code use.
+- **Strings no code uses.** 18 of Tella's 19 crashes belong to one string that no Kotlin or Java file names. A crash there can't happen, which is why 0.2.0 classifies code use. Wire's Russian `%@` in `meeting_repeating_years` is another: no code formats that plural.
 
 So the 253 is an upper bound. The real first-pass count of reachable crashes is lower.
 
 ### Hand-verified cases (2026-10-14)
 
-Each was checked against the project's current default branch, and the call that formats the string was read by hand. None was reproduced on a device.
+Each was checked against the project's current default branch, and the call that formats the string was read by hand. None was reproduced on a device. The same list is in [`data/verified-cases.csv`](data/verified-cases.csv).
 
-| App | Broken translations | Where the code formats them | Translation route |
+| App | Broken translations | Where the code formats them | Translation route and report |
 |---|---|---|---|
-| ownCloud Android | Uyghur: 55 strings with `% 1 $ s`, `% s`, `% @`; Swedish: 1 (`%1$ musikspelare`) | `FileListAdapter` (file-list footer), `DrawerActivity` (storage quota) | Transifex; reported as an issue |
-| Wikimedia Commons | 22 translations of 13 strings in Bengali, Central Kurdish, Georgian, Mingrelian, Polish, Afrikaans, Arabic, Chinese, Burmese, Thai, Indonesian, Tulu and Slovenian (`%1$`, `%1`, `s$%1`, `%$1s`, `%1$ so`) | `UploadWorker` (upload started / finishing / done / failed / paused notifications), search empty states, `DeleteHelper`, `QuizResultActivity`, `WikidataEditService`, `CategoryEditHelper` | translatewiki.net; reported as an issue |
-| Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs | pull requests welcome; fix proposed as a pull request |
+| ownCloud Android | Uyghur: 55 strings with `% 1 $ s`, `% s`, `% @`; Swedish: 1 (`%1$ musikspelare`) | `FileListAdapter` (file-list footer), `DrawerActivity` (storage quota) | Transifex; issue drafted, filing queued |
+| Wikimedia Commons | 22 translations of 13 strings in Bengali, Central Kurdish, Georgian, Mingrelian, Polish, Afrikaans, Arabic, Chinese, Burmese, Thai, Indonesian, Tulu and Slovenian (`%1$`, `%1`, `s$%1`, `%$1s`, `%1$ so`) | `UploadWorker` (upload started / finishing / done / failed / paused notifications), search empty states, `DeleteHelper`, `QuizResultActivity`, `WikidataEditService`, `CategoryEditHelper` | translatewiki.net; issue drafted, filing queued |
+| Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs | pull requests welcome; fix PR queued |
+| Mastodon (official Android app) | Indonesian `x_new_notifications` (`%,d` written twice, so it reads a second argument); Albanian `x_people_talking` one and other (`%1`); Belarusian `x_quotes` one (`%,d% цытата`) | `PushNotificationReceiver.doNotify` builds the grouped summary on a background thread with no catch, whenever an account has 2 or more notifications (Indonesian has only the `other` form, so every count is affected); `TrendingHashtagsFragment` and `HashtagStatusDisplayItem` (Albanian); `StatusQuotesFragment` and `ExtendedFooterStatusDisplayItem` (Belarusian) | Crowdin. Mastodon's AI contribution policy says its repositories are for humans only and turns away issues that come from running AI tools over the code, so MV2 has not reported it there. It is listed here for Mastodon's translators. |
+| Homer Audio Player 2 | Chinese (Simplified): both battery content descriptions end in a bare `%` (`电量 %1$d %`) | `BatteryIcon` via `pluralStringResource`, drawn in the player screen's top row when **Show battery indicator** is on (off by default) | Lokalise; issue queued |
+| Shader Editor | Russian: `few` and `many` forms of `n_shaders_successfully_imported` read `%2$d`, which only the `_m_failed` plural gets | `ImportExportAsFiles.importFromDirectory` (Android 9 and older; only `IOException` is caught) | translations in the repo; fix PR queued |
+| AnkiDroid | Croatian: `pref_milliseconds` is `% ms` | `SliderPreference` runs `String.format(displayFormat, value)`, and the accessibility settings use this string as `app:displayFormat` | Crowdin. AnkiDroid's contributing guide bars new contributors from using AI tools, so MV2 has not reported it there. |
+
+Two of the seven projects (Mastodon and AnkiDroid) don't accept reports or fixes made with AI tools from new contributors. A census like this one can still help them, because their translators and maintainers can find the rows here and in the full results.
 
 ### Full pass (census 0.2.0)
 
-The full run, with code-use classification, is in progress. Its `summary.json`, `findings.csv` and `report.md` will be added under `data/`.
+The full run, with code-use classification, is queued on MV2's shared compute runner. Its `summary.json`, `findings.csv` and `report.md` will be added under `data/`.
 
 ## Run it
 
@@ -65,7 +71,7 @@ python test_census.py
 ## Prior art
 
 - **Android Lint** (`StringFormatInvalid`, `StringFormatMatches`) checks format strings within a project. It runs only where a project runs lint, and translations from a translation platform often arrive after the lint step that matters.
-- **Weblate** has a "Java format" check (`java-printf-format` flag) that catches these. It only applies where a component enables it.
+- **Weblate** has a "Java format" check (`java-printf-format`) that catches these. Its documentation lists Android string resources among the formats that turn it on automatically. By default a failing check warns rather than blocks, unless a component enforces it. Crowdin, Transifex and Lokalise have their own placeholder checks. Even so, the verified cases above include translations that came through Crowdin, Transifex, translatewiki.net and Lokalise.
 - **translate-toolkit / pofilter** has printf checks for gettext-style files.
 - Many single-project reports and fixes exist: Commons #4877/#4653, Firefox for Android (fenix) #1580 (German, `Conversion = '@'`), ConnectBot #2478 (Arabic, trailing `%`), OsmAnd #26194, NuvioTV #3697.
 - Research: Escobar-Velásquez et al., "An Empirical Study of i18n Collateral Changes and Bugs in GUIs of Android apps" (ICSME 2020), studies layout and GUI damage from translation, not format strings. Fan et al., "Large-Scale Analysis of Framework-Specific Exceptions in Android Apps" (ICSE 2018, arXiv:1801.07009), studies crashes from collected exception traces, not translation files.
