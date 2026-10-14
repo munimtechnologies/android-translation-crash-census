@@ -21,7 +21,7 @@ Census 0.2.0 read the latest commit of every one of the 4,476 source repositorie
 
 ### One correction found by hand: `%t` and `Long`
 
-The JVM check passes an `Integer` for each `%d` in the English string. 4 of the 250 reachable rows (Cashiro's Icelandic `duration_*` and one Vietnamese string) use a `%t` date conversion there. `%t` rejects an `Integer` but accepts a `Long`, and Cashiro passes a `Long`. So those 4 don't throw; they print a month or an AM/PM marker instead of a duration. Counting them out leaves **246 reachable crashes**. No other row in the data depends on `Integer` vs `Long` in this direction. The next census version will test both types.
+The JVM check passes an `Integer` for each `%d` in the English string. 4 of the 250 reachable rows (Cashiro's Icelandic `duration_*` and one Vietnamese string) use a `%t` date conversion there. `%t` rejects an `Integer` but accepts a `Long`, and Cashiro passes a `Long`. So those 4 don't throw; they print a month or an AM/PM marker instead of a duration. Counting them out leaves **246 reachable crashes**. No other row in the data depends on `Integer` vs `Long` in this direction. The next census version (0.3.0, running) tests both types and reports `crash-if-int` and `crash-if-long` separately.
 
 ### A pattern worth naming: the placeholder letter gets "translated"
 
@@ -40,18 +40,19 @@ Each was checked against the project's current default branch, and the call that
 
 | App | Broken translations | Where the code formats them | Translation route and report |
 |---|---|---|---|
-| ownCloud Android | Uyghur: 55 strings with `% 1 $ s`, `% s`, `% @`; Swedish: 1 (`%1$ musikspelare`) | `FileListAdapter` (file-list footer), `DrawerActivity` (storage quota) | Transifex; issue drafted, filing queued |
+| ownCloud Android | Uyghur: 55 strings with `% 1 $ s`, `% s`, `% @`; Swedish: 1 (`%1$ musikspelare`) | `FileListAdapter` (file-list footer), `DrawerActivity` (storage quota) | Transifex; [issue #5018](https://github.com/owncloud/android/issues/5018) |
 | Wikimedia Commons | 22 translations of 13 strings in Bengali, Central Kurdish, Georgian, Mingrelian, Polish, Afrikaans, Arabic, Chinese, Burmese, Thai, Indonesian, Tulu and Slovenian (`%1$`, `%1`, `s$%1`, `%$1s`, `%1$ so`) | `UploadWorker` (upload started / finishing / done / failed / paused notifications), search empty states, `DeleteHelper`, `QuizResultActivity`, `WikidataEditService`, `CategoryEditHelper` | translatewiki.net; issue drafted, filing queued |
 | Cashiro | 25 strings: the SMS-scan durations in Russian, Ukrainian, Bulgarian, Gujarati, Kannada, Punjabi, Hebrew, Turkish, Latin and Vietnamese (`%1$ч %2$м`, `%1$DH`, `%2$g`); percentages in Hungarian, Turkmen, Romanian (`(%1$d%)`). Plus 4 Icelandic/Vietnamese `%t` strings that print the wrong thing without throwing | `SmsParsingProgressDialog.formatDuration` (elapsed and remaining time while SMS messages are scanned), `AnalyticsCharts`, `ChatScreen` | Crowdin; issue queued |
-| Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs | pull requests welcome; fix PR queued |
+| Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs | pull requests welcome; [fix PR #397](https://github.com/herrerad85/tallybook/pull/397) |
+| Stepsy | Arabic: 3 milestone labels (`%1$دم`, `%.1فم`, `%1$دألف`); Bulgarian: 2 (`%1$дмлн.`, `%1$дхил.`), the conversion letter typed in the target script | `GoalNotificationWorker.showMilestoneNotification` (the step-milestone notification title; added 2026-09-28) | translations in the repo; fix PR queued |
 | Mastodon (official Android app) | Indonesian `x_new_notifications` (`%,d` written twice, so it reads a second argument); Albanian `x_people_talking` one and other (`%1`); Belarusian `x_quotes` one (`%,d% цытата`) | `PushNotificationReceiver.doNotify` builds the grouped summary on a background thread with no catch, whenever an account has 2 or more notifications (Indonesian has only the `other` form, so every count is affected); `TrendingHashtagsFragment` and `HashtagStatusDisplayItem` (Albanian); `StatusQuotesFragment` and `ExtendedFooterStatusDisplayItem` (Belarusian) | Crowdin. Mastodon's AI contribution policy says its repositories are for humans only and turns away issues that come from running AI tools over the code, so MV2 has not reported it there. It is listed here for Mastodon's translators. |
 | Homer Audio Player 2 | Chinese (Simplified): both battery content descriptions end in a bare `%` (`电量 %1$d %`) | `BatteryIcon` via `pluralStringResource`, drawn in the player screen's top row when **Show battery indicator** is on (off by default) | Lokalise; issue queued |
 | Shader Editor | Russian: `few` and `many` forms of `n_shaders_successfully_imported` read `%2$d`, which only the `_m_failed` plural gets | `ImportExportAsFiles.importFromDirectory` (Android 9 and older; only `IOException` is caught) | translations in the repo; fix PR queued |
 | AnkiDroid | Croatian: `pref_milliseconds` is `% ms` | `SliderPreference` runs `String.format(displayFormat, value)`, and the accessibility settings use this string as `app:displayFormat` | Crowdin. AnkiDroid's contributing guide bars new contributors from using AI tools, so MV2 has not reported it there. |
 
-Two of the eight projects (Mastodon and AnkiDroid) don't accept reports or fixes made with AI tools from new contributors. A census like this one can still help them, because their translators and maintainers can find the rows here.
+Two of the nine projects (Mastodon and AnkiDroid) don't accept reports or fixes made with AI tools from new contributors. A census like this one can still help them, because their translators and maintainers can find the rows here.
 
-Every translation route appears in that table: Crowdin, Transifex, translatewiki.net, Lokalise, and files edited in the repository. All of these platforms have placeholder checks of some kind, and the crashes shipped anyway.
+Every translation route appears in that table: Crowdin, Transifex, translatewiki.net, Lokalise, and files edited in the repository. All of these platforms have placeholder checks of some kind, and the crashes shipped anyway. Census 0.3.0 (running) records which platform each repository names, to compare crash rates by platform.
 
 ## Method
 
