@@ -65,6 +65,18 @@ Two more patterns turned up when reading rows by hand. Neither has its own kind 
 - **A percent sign the English avoided.** In the 0.2.0 data, 10 crashing rows in 4 repositories come from English strings that spell out "percent" so they need no `%%`, translated with a bare `%`: Flashy (6 languages), Homer Audio Player 2 (`电量 %1$d %` for "battery %1$d percent"), and Element X with its fork SchildiChat Next (Japanese `%1$d% パーセント` for "%1$d percents of total votes"). Flashy's English writes "plus an additional 25 percent of it", and six translations write `25%`. In French and Italian `25%.` throws at `%.`. In Galician and Portuguese `25% adicional` is read as `% a`, a valid hex-float conversion with a space flag, which then asks for a second argument the app never passes. Element X fixed the same string's Chinese translation after a crash report (#7596) and added a placeholder check to its Localazy sync script, but the script can't fail the sync (see the table below), so the Japanese one still ships.
 - **Both plural forms pasted into one.** Korean has a single plural category (`other`). pretixSCAN's Korean `other` items hold the English singular and plural forms one after the other, each under a label (`단수형` "singular", `복수형` "plural"), so every item reads `%d` twice and `getQuantityString(id, n, n)` throws for every count. These plurals look like they came from a tool that showed the two English forms with labels, and the translator copied both into the one Korean field.
 
+`patterns.py` (0.1.0) goes one step further and tags each crashing row with how the mistake got in, by comparing it with the English (a dropped escape, a letter in another script, a space typed into a placeholder, ...). Its output over the full data is pending.
+
+## What the free checks can see
+
+Three open-source checks could have looked at every one of these translations before it shipped: Weblate's Java format check (on by itself for Android strings on Weblate), translate-toolkit's `printf` test (`pofilter`), and Android Lint's `StringFormatDetector`. [`CHECKS.md`](CHECKS.md) reads all three at pinned commits, mirrors their rules (`weblate_blind.py`, `checks_blind.py`), and tests the mirrors on the hand-verified cases below. What that shows, before the counts over the full data arrive:
+
+- **Weblate and pofilter pass every stray-percent row** whose real placeholders are intact (Flashy's `25%.` and `25% adicional`, Cashiro's `(%1$d%)`, Element X's `%1$d% パーセント`, Mastodon's `%,d% цытата`). Both only recognise a `%` that a conversion letter directly follows, so a `%` before a space, a period or the end of the string is not a placeholder to them, while it is exactly where `Formatter` throws. That is the census's most widespread mistake.
+- **Lint sees those, but mostly as a side effect**: a stray `%` makes it classify the translation as "not a format string", so it reports an argument-count mismatch (`StringFormatCount`, a warning, with a misleading message). Only when the next word starts with a conversion letter (Flashy's Galician and Portuguese `25% adicional`) does Lint, like `Formatter`, read `% a` as a placeholder, and then it also raises a `StringFormatInvalid` error. Lint ignores a translation whose `%` is followed by a Latin letter it doesn't know (`%D`), and its detector visits `<string>` elements only, never `<plurals>`, so every plural row is outside its reach.
+- **No single check sees all of the verified cases.** The union of the three does, except a literal `%` written before a digit (Turkish `%25`), which only pofilter catches, by accident.
+
+The counts per mistake kind for all 371 crashing rows are what `checks_blind.py` over `data/findings.csv` will add; the table in `CHECKS.md` is the hand-verified subset until then.
+
 ## Earlier partial pass (census 0.1.0)
 
 The first run stopped after 1,523 of the 4,476 repositories. An emoji written as two `\u` escapes broke the hand-off to the JVM; 0.2.0 fixes that. Its summary and report are in [`data/v1-partial/`](data/v1-partial/). Checking its rows by hand turned up two false-positive classes, both fixed in 0.2.0:
@@ -79,12 +91,12 @@ Each was checked against the project's current default branch, and the call that
 | App | Broken translations | Where the code formats them | Translation route and report |
 |---|---|---|---|
 | ownCloud Android | Uyghur: 55 strings with `% 1 $ s`, `% s`, `% @`; Swedish: 1 (`%1$ musikspelare`) | `FileListAdapter` (file-list footer), `DrawerActivity` (storage quota) | Transifex; [issue #5018](https://github.com/owncloud/android/issues/5018), acknowledged ("We will fix it.") |
-| Wikimedia Commons | 22 translations of 13 strings in Bengali, Central Kurdish, Georgian, Mingrelian, Polish, Afrikaans, Arabic, Chinese, Burmese, Thai, Indonesian, Tulu and Slovenian (`%1$`, `%1`, `s$%1`, `%$1s`, `%1$ so`) | `UploadWorker` (upload started / finishing / done / failed / paused notifications), search empty states, `DeleteHelper`, `QuizResultActivity`, `WikidataEditService`, `CategoryEditHelper` | translatewiki.net; issue drafted, filing queued |
+| Wikimedia Commons | 22 translations of 13 strings in Bengali, Central Kurdish, Georgian, Mingrelian, Polish, Afrikaans, Arabic, Chinese, Burmese, Thai, Indonesian, Tulu and Slovenian (`%1$`, `%1`, `s$%1`, `%$1s`, `%1$ so`) | `UploadWorker` (upload started / finishing / done / failed / paused notifications), search empty states, `DeleteHelper`, `QuizResultActivity`, `WikidataEditService`, `CategoryEditHelper` | translatewiki.net; issue filed 2026-10-15 while MV2's GitHub account was hidden, so the maintainers can't see it yet |
 | Cashiro | 25 strings: the SMS-scan durations in Russian, Ukrainian, Bulgarian, Gujarati, Kannada, Punjabi, Hebrew, Turkish, Latin and Vietnamese (`%1$ч %2$м`, `%1$DH`, `%2$g`); percentages in Hungarian, Turkmen, Romanian (`(%1$d%)`). Plus 4 Icelandic/Vietnamese `%t` strings that print the wrong thing without throwing | `SmsParsingProgressDialog.formatDuration` (elapsed and remaining time while SMS messages are scanned), `AnalyticsCharts`, `ChatScreen` | Crowdin; [issue #189](https://github.com/ritesh-kanwar/Cashiro/issues/189) |
 | Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs; the maintainer found one more path, the exchange-rate summary on the Utility settings screen | pull requests welcome; [fix PR #397](https://github.com/herrerad85/tallybook/pull/397), **merged 2026-10-14** after the maintainer reproduced the crash on an emulator |
 | Stepsy | Arabic: 3 milestone labels (`%1$دم`, `%.1فم`, `%1$دألف`); Bulgarian: 2 (`%1$дмлн.`, `%1$дхил.`), the conversion letter typed in the target script | `GoalNotificationWorker.showMilestoneNotification` (the step-milestone notification title; added 2026-09-28) | translations in the repo; fix PR queued |
 | FadCam | Italian: `delete_videos_log` (`%2$d` never passed), `export_eta_minutes`/`_hours` (`%2$` never passed), `faditor_export_info` (`%1$d` gets a String); Greek: `records_delete_header_eta_*` (`%1$δδ`) | `RecordsFragment.deleteSelectedVideos` (deleting selected videos, before deletion starts), `FaditorEditorActivity.showExportInfoOnScreen` and `FaditorMiniFragment.formatEta` (export), `RecordsFragment.buildDeletionEta` (deletion progress) | Hosted Weblate; [issue #360](https://github.com/anonfaded/FadCam/issues/360) |
-| Flashy | French, Italian, Simplified Chinese, Galician, Portuguese, Brazilian Portuguese: `farnsworth_unit_length_explanation` ends with a bare `25%` (`25%.`, `25%。`, `25% adicional`) | `SettingsActivity.SettingsFragment`: tapping the Farnsworth unit length setting calls `getString(..., ditLength)`, with no catch | Hosted Weblate; issue queued |
+| Flashy | French, Italian, Simplified Chinese, Galician, Portuguese, Brazilian Portuguese: `farnsworth_unit_length_explanation` ends with a bare `25%` (`25%.`, `25%。`, `25% adicional`) | `SettingsActivity.SettingsFragment`: tapping the Farnsworth unit length setting calls `getString(..., ditLength)`, with no catch | Hosted Weblate; [issue #384](https://github.com/Crazy-Marvin/Flashy/issues/384), filed 2026-10-15 while MV2's GitHub account was hidden; the one-character fix (`25%%`) on Hosted Weblate is queued |
 | Element X | Japanese: `a11y_polls_percent_of_total` is `総投票数うち%1$d% パーセント` (the Chinese one crashed in [#7596](https://github.com/element-hq/element-x-android/issues/7596) and was fixed) | `PollAnswerView` builds a poll answer's content description with `pluralStringResource` whenever votes are shown and the answer has votes. `tools/localazy/checkForbiddenTerms.py` flags the string, but `downloadStrings.sh` runs it in `xargs` child shells, so the failure never reaches the parent and the sync prints "Success!" | Localazy; issue queued. SchildiChat Next, a fork, ships the same string. |
 | Mastodon (official Android app) | Indonesian `x_new_notifications` (`%,d` written twice, so it reads a second argument); Albanian `x_people_talking` one and other (`%1`); Belarusian `x_quotes` one (`%,d% цытата`) | `PushNotificationReceiver.doNotify` builds the grouped summary on a background thread with no catch, whenever an account has 2 or more notifications (Indonesian has only the `other` form, so every count is affected); `TrendingHashtagsFragment` and `HashtagStatusDisplayItem` (Albanian); `StatusQuotesFragment` and `ExtendedFooterStatusDisplayItem` (Belarusian) | Crowdin. Mastodon's AI contribution policy says its repositories are for humans only and turns away issues that come from running AI tools over the code, so MV2 has not reported it there. It is listed here for Mastodon's translators. |
 | Homer Audio Player 2 | Chinese (Simplified): both battery content descriptions end in a bare `%` (`电量 %1$d %`) | `BatteryIcon` via `pluralStringResource`, drawn in the player screen's top row when **Show battery indicator** is on (off by default) | Lokalise; [issue #26](https://github.com/msimonides/homerplayer2/issues/26) |
@@ -109,7 +121,7 @@ Every translation route appears in that table: Crowdin, Transifex, translatewiki
    - **JVM**: the real OpenJDK 21 `java.util.Formatter` (`FormatCheck.java`), formatting the source and the translation with arguments of the source's types. A `%s` argument gets text once and a number once. `crash` means the translation throws either way. `crash-if-text` means it throws only when the app passes text. A pair whose source string throws too is set aside.
 5. **Code use** (from 0.2.0): repositories with a flagged translation also get their `.kt` and `.java` files checked out. Each flagged string is then classified as `formatted` (a `getString`/`stringResource`/`getQuantityString`/`pluralStringResource` call passes it arguments, or it is wrapped in `String.format(...)`/`.format(...)`), `referenced` (used only in other ways), `unreferenced`, or `unknown`. The headline count is JVM crashes in `formatted` strings, because only those are reachable.
 6. Write `apps.jsonl` (one line per repository), `findings.csv` (every crash with a link to the file at the commit read), `summary.json` and `report.md`. `apps.jsonl` isn't committed here because of its size; running the census recreates it.
-7. `taxonomy.py` sorts the `crash` rows by mistake type (see above). `compare.py` lists the crash rows that appear or disappear between two runs.
+7. `taxonomy.py` sorts the `crash` rows by mistake type (see above). `patterns.py` tags how each mistake got in. `compare.py` lists the crash rows that appear or disappear between two runs. `weblate_blind.py` and `checks_blind.py` run the three free checks over the crash rows (see `CHECKS.md`).
 
 The census reads public files only. It files nothing and contacts no one.
 
@@ -122,21 +134,26 @@ python bootstrap.py --data-dir cache      # apt-get git + JDK, or Temurin 21 und
 python census_fixes.py --data-dir cache --out-dir out --workers 12 --budget-minutes 140   # census 0.3.1
 python census_fixes.py --local path/to/android-app --out-dir out   # one checkout, no git
 python taxonomy.py out/findings.csv --out-dir out/taxonomy
+python patterns.py out/findings.csv --out-dir out/patterns
 python compare.py data/findings.csv out/findings.csv --out out/compare.md
+python checks_deps.py && python checks_blind.py data/findings.csv --out-dir out/checks   # downloads the checks' sources, pinned
 python test_census.py
 python test_census_fixes.py
 python test_taxonomy.py
+python test_patterns.py
+python test_weblate_blind.py
+python test_checks_blind.py
 ```
 
 ## Prior art
 
-- **Android Lint** (`StringFormatInvalid`, `StringFormatMatches`) checks format strings within a project. It runs only where a project runs lint, and translations from a translation platform often arrive after the lint step that matters.
-- **Weblate** has a "Java format" check (`java-printf-format`) that catches these. Its documentation lists Android string resources among the formats that turn it on automatically. By default a failing check warns rather than blocks, unless a component enforces it. Crowdin, Transifex and Lokalise have their own placeholder checks.
-- **translate-toolkit / pofilter** has printf checks for gettext-style files.
+- **Android Lint** (`StringFormatInvalid`, `StringFormatCount`, `StringFormatMatches`) checks format strings within a project. It runs only where a project runs lint, and translations from a translation platform often arrive after the lint step that matters. What it can and can't see of these rows is in `CHECKS.md`.
+- **Weblate** has a "Java format" check (`java-printf-format`). Its documentation lists Android string resources among the formats that turn it on automatically. By default a failing check warns rather than blocks, unless a component enforces it. What it can and can't see is in `CHECKS.md`. Crowdin, Transifex and Lokalise have their own placeholder checks, closed source.
+- **translate-toolkit / pofilter** has a `printf` test; see `CHECKS.md`.
 - Many single-project reports and fixes exist: Commons #4877/#4653, Firefox for Android (fenix) #1580 (German, `Conversion = '@'`), ConnectBot #2478 (Arabic, trailing `%`), OsmAnd #26194, NuvioTV #3697.
 - Research: Escobar-Velásquez et al., "An Empirical Study of i18n Collateral Changes and Bugs in GUIs of Android apps" (ICSME 2020), studies layout and GUI damage from translation, not format strings. Fan et al., "Large-Scale Analysis of Framework-Specific Exceptions in Android Apps" (ICSE 2018, arXiv:1801.07009), studies crashes from collected exception traces, not translation files.
 
-Searches of GitHub, arXiv and the web (2026-10-13 and 2026-10-14) found no cross-project measurement of how often shipped Android translations crash `java.util.Formatter`. None found checks static verdicts against a real JVM, checks which crashing strings the code actually formats, or sorts the crashes by mistake type. That is what's new here.
+Searches of GitHub, arXiv and the web (2026-10-13 to 2026-10-15) found no cross-project measurement of how often shipped Android translations crash `java.util.Formatter`. None found checks static verdicts against a real JVM, checks which crashing strings the code actually formats, sorts the crashes by mistake type, or measures what the free format checks miss on real shipped translations. That is what's new here.
 
 ## Limits
 
@@ -149,10 +166,11 @@ Searches of GitHub, arXiv and the web (2026-10-13 and 2026-10-14) found no cross
 - Apps whose source isn't a reachable public git repository (7 in the index), whose clone failed (85) or timed out (2), or that keep strings outside `res/values*/`, aren't covered.
 - Translations that don't crash but print the wrong thing (a `٪` instead of `%`, a `%1$2s` where `%1$ds` was meant, a broken link) are outside this census.
 - The mistake types are rule-based, from the first placeholder `Formatter` can't use; a row with two different mistakes is counted once.
+- The three checks in `CHECKS.md` are mirrored from their sources and run on extracted text, not run inside Weblate, pofilter or Gradle.
 
 ## Licence
 
-- Code (`census.py`, `census_fixes.py`, `compare.py`, `FormatCheck.java`, `bootstrap.py`, `taxonomy.py`, the `test_*.py` files, and the vendored `l10n_guard.py`): Apache-2.0 (see `LICENSE`).
+- Code (`census.py`, `census_fixes.py`, `compare.py`, `FormatCheck.java`, `bootstrap.py`, `taxonomy.py`, `patterns.py`, `weblate_blind.py`, `weblate_deps.py`, `checks_blind.py`, `checks_deps.py`, the `test_*.py` files, and the vendored `l10n_guard.py`): Apache-2.0 (see `LICENSE`). Weblate's and translate-toolkit's sources are downloaded for their patterns only and are not part of this repository.
 - Data under `data/` and this write-up: CC BY 4.0. The translated strings quoted belong to their projects, under those projects' licences.
 
-Made by MV2 of Munim, Inc. with AI agents. Contact: munimversion2@gmail.com.
+Made by MV2 of Munim, Inc. with AI agents. Contact: mv2@munimtech.com.
