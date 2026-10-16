@@ -1,4 +1,4 @@
-# Audit of `crash` rows in strings the code only "references": 24 reachable crashes the census missed
+# Audit of `crash` rows in strings the code only "references": 25 reachable crashes the census missed
 
 Made by MV2 of Munim, Inc. with AI agents, 2026-10-16. Data: [`referenced-crash-audit.csv`](referenced-crash-audit.csv), CC BY 4.0.
 
@@ -12,16 +12,15 @@ All 40 were looked up by hand on 2026-10-16: the code that names the string was 
 
 | Verdict | Rows | Repositories |
 |---|---:|---:|
-| `crash`: formatted with arguments, nothing catches it | 24 | 16 |
+| `crash`: formatted with arguments, nothing catches it | 25 | 17 |
 | `throws, caught`: formatted, but a `catch` turns it into an error message or a failed job | 8 | 4 |
 | `throws, trigger not confirmed` | 1 | 1 |
 | `safe`: never formatted, never reached, or the census was wrong | 6 | 5 |
-| `unread` | 1 | 1 |
 
-So the census's floor of 232 reachable crashes is at least **256**. The 24 come in six ways the census's call patterns don't see:
+So the census's floor of 232 reachable crashes is at least **257**. The 25 come in six ways the census's call patterns don't see:
 
 1. **A library or project helper that takes the id and the arguments.** MoneyWallet's dialogs go through material-dialogs 0.9.6.0's `MaterialDialog.Builder.content(id, args)`, which calls `String.format(context.getString(id), args)`. SmartCookieWeb's `BrowserDialog.showPositiveNegativeDialog(message = id, messageArguments = ...)` calls `getString(message, *messageArguments)`. NewPipe's (and its fork LearnTube's) `Localization.getQuantity(context, R.plurals.views, ...)` calls `getQuantityString(pluralId, count, formattedCount)`. Lavabit's `VpnStatus.logInfo(id, args)` formats later, in the log screen.
-2. **The id is stored and formatted elsewhere.** Petals keeps `current_thc_concentration` in a `ChartConfig` object; `SymptomsPage` calls `getString(chartConfig.title, ...)`. RxDroid picks `resId` in a `when`-like chain and calls `getString(resId, begin, end)`. ownCloud and Habit-Maker pick the id in an `if` or `when` (file or folder, one or several) and then call `getString(id, arg)` or `stringResource(id, arg)` with the chosen variable.
+2. **The id is stored and formatted elsewhere.** Petals keeps `current_thc_concentration` in a `ChartConfig` object; `SymptomsPage` calls `getString(chartConfig.title, ...)`. RxDroid picks `resId` in a `when`-like chain and calls `getString(resId, begin, end)`. ownCloud and Habit-Maker pick the id in an `if` or `when` (file or folder, one or several) and then call `getString(id, arg)` or `stringResource(id, arg)` with the chosen variable. Suntimes Calendars returns the plural's id from a method that switches on the window's unit (`getAgoStringResID()`) and calls `getQuantityString(getAgoStringResID(), value0, value0)`.
 3. **Fetched without arguments, formatted in a second step.** AdAway, Retro Music and its fork Metro, and Wikimedia Commons call `getString(id)` (or `getText(id).toString()`) first and `String.format(template, ...)` a line or a method later.
 4. **`String.format` around a `getResources().getString(...)` call.** SecondScreen writes `String.format(getResources().getString(R.string.debug_mode_enabling), 10 - clicks)`, and Helsinki Timetables does the same for its screen headers and its delete dialog. The census's wrap pattern doesn't allow the `()` of `getResources()`.
 5. **`String.format` around `getQuantityString`.** HeartBeat writes `String.format(Locale.getDefault(), getResources().getQuantityString(id, n), pulse, n, seconds)`. The census only looks for that wrap around `getString` and `stringResource`.
@@ -29,7 +28,7 @@ So the census's floor of 232 reachable crashes is at least **256**. The 24 come 
 
 Commons is the sharpest case: `WikidataEditService.showSuccessToast` carries `@SuppressLint("StringFormatInvalid")`, so Android Lint was told not to warn about exactly the call that throws in Tulu.
 
-### The 24 crashes
+### The 25 crashes
 
 | App | Locale | String | When it throws |
 |---|---|---|---|
@@ -51,6 +50,7 @@ Commons is the sharpest case: `WikidataEditService.showSuccessToast` carries `@S
 | ownCloud | Uyghur | `file_already_exists_description` | Moving or copying a file into a folder that has one with the same name: `FileDisplayActivity.showConflictDecisionDialog` calls `getString(if (file.isFolder) ... else ..., file.fileName)`. The Uyghur has `% 1 $ s` |
 | Helsinki Timetables | Chinese | `header_trips`, `stations_list_of_trips_header` | Opening a vehicle type's list of trips, or a station's list of trips: the screen's header is built with `String.format(getResources().getString(id), name)` in `addLayoutElements`, which `AbstractView.onCreate` calls inside a `try` that catches only `DatabaseException`. The Chinese items have a bare `%` before a Chinese character (`所有%路線`, `%站牌所有可能路線`) |
 | Helsinki Timetables | Chinese | `dialog_confirm_delete_bookmarks` | Tapping the delete button on a bookmark: `BookmarksDeleteView` runs `String.format(getResources().getString(id), name)` for the confirmation dialog, with no `try`. The Chinese reads `您要刪除%書籤嗎？` |
+| Suntimes Calendars | Dutch | `units_years_ago` (`other`) | Settings, Calendar Window, moving the start of the window to 2 or more years ago: `CalendarWindowPreference.updateViews` (run when the dialog opens and on every seekbar change) and `makeSummary` call `getQuantityString(getAgoStringResID(), value0, value0)`, one argument, and the Dutch `other` item is `%2$s jaren geleden` (`MissingFormatArgumentException`). The `one` item keeps `%1$s`, so the default window (one year back) shows fine. Years is the preference's default unit and the class has no `try` |
 
 ### Throws, but caught
 
@@ -71,21 +71,17 @@ Commons is the sharpest case: `WikidataEditService.showSuccessToast` carries `@S
 - **HeartBeat, Bengali, `measurement_output_template` (`zero`).** Bengali has no `zero` plural category, so Android never picks this item.
 - **ownCloud, Uyghur, `uploader_upload_succeeded_content_single` and `error__upload__local_file_not_copied`.** Both sit in `ErrorMessageAdapter.getMessageFromTransfer`'s upload branches, and its only caller, `DownloadFileWorker`, passes a download. Not reached at the census commit.
 
-### Not read
-
-Suntimes Calendars' Dutch `units_years_ago` (`other`): the code that names it was not among the seven files read, and the repository is not on Sourcegraph.
-
 ## A string the census never checked
 
 Helsinki Timetables' Chinese `header_times` (`%時刻表，站名%`) also throws: `StationsListOfTrips.getHeaderNextScreen` formats it, inside a `catch (Exception e)` that only logs, so a station's list of trips stops filling. It is not in the census at all, because the English is marked `formatted="false"`. aapt2 reads that attribute only to skip its check for several unnumbered placeholders; the text is the same and the app still formats it. Census 0.4.0 skips every such string, as Android Lint's format checks do. A run of the census over just those strings is queued.
 
 ## What a census needs to see these
 
-Follow a string id through assignments and arguments, not only into the call it appears in: treat any call that receives `R.string.x` (or `R.plurals.x`) followed by more arguments as a candidate, follow a variable that holds `getString(id)` or an id chosen by `if`/`when` into a later `format` or `getString`, and allow any receiver chain (`getResources().getString(...)`, `getQuantityString(...)`) inside `String.format(...)`. Each of these finds false candidates too (`Toast.makeText(context, R.string.x, LENGTH_SHORT)` passes an id followed by more arguments), so their hits should be a list to read, not crashes to count. And a `catch` decides whether a throw is a crash, so a census that says "reachable" should also say what catches it.
+Follow a string id through assignments, arguments and return values, not only into the call it appears in: treat any call that receives `R.string.x` (or `R.plurals.x`) followed by more arguments as a candidate, follow a variable that holds `getString(id)` or an id chosen by `if`/`when`/`switch` (or returned by a method) into a later `format`, `getString` or `getQuantityString`, and allow any receiver chain (`getResources().getString(...)`, `getQuantityString(...)`) inside `String.format(...)`. Each of these finds false candidates too (`Toast.makeText(context, R.string.x, LENGTH_SHORT)` passes an id followed by more arguments), so their hits should be a list to read, not crashes to count. And a `catch` decides whether a throw is a crash, so a census that says "reachable" should also say what catches it.
 
 ## Limits
 
-- Code read from source, mostly at the commit the census read; not compiled or run on a device. For 21 of the 24 crash rows the translation was re-read on the current default branch (for MoneyWallet and Lavabit that is the commit the census read).
+- Code read from source, mostly at the commit the census read; not compiled or run on a device. For 22 of the 25 crash rows the translation was re-read on the current default branch (for MoneyWallet and Lavabit that is the commit the census read).
 - `throws, caught` and `safe` were decided from the code paths found; a call site the search missed could still format a `safe` string.
-- None of these has been reported to its project yet. ownCloud's Uyghur file was reported in their issue #5018.
+- None of these has been reported to its project yet. An earlier report about ownCloud's Uyghur file is not publicly visible at present.
 - These rows are not added to the README's totals by hand; the next census version should count them.
