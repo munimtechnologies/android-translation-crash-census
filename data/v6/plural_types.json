@@ -1,0 +1,16 @@
+{
+ "census_version": "0.4.0",
+ "pairs_with_new_types": 163,
+ "verdict_moves": {
+  "crash-if-text -> ok": 96,
+  "ok -> ok": 66,
+  "crash -> crash": 1
+ },
+ "repos_with_verdict_moves": {
+  "https://github.com/jellyfin/jellyfin-android": 56,
+  "https://github.com/Ruan625Br/FileManagerSphere": 23,
+  "https://github.com/jclehner/rxdroid": 15,
+  "https://codeberg.org/timelimit/opentimelimit-android": 1,
+  "https://codeberg.org/timelimit/timelimit-android": 1
+ }
+}
