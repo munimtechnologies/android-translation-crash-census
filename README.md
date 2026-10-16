@@ -6,7 +6,23 @@ How many open-source Android apps ship translations that make `String.format` th
 
 `getString(R.string.x, arg)`, `getQuantityString(...)` and `String.format(getString(...), ...)` hand the translation for the user's language to `java.util.Formatter`. A translator who types `%1$` instead of `%1$s`, `% s`, `%$1s`, or a bare `100%` makes the format string invalid, and the call throws (`UnknownFormatConversionException`, `FormatFlagsConversionMismatchException`, `MissingFormatArgumentException`...). This only happens for people using that language, so developers rarely see it. Wikimedia Commons alone has fixed this crash several times, one string at a time (commons-app/apps-android-commons #4877 Bengali, #4653 Burmese, #2330 Japanese).
 
-## Results (full pass, 2026-10-14)
+## Latest run (census 0.4.0, 2026-10-16)
+
+Census 0.4.0 read the whole F-Droid index again on 2026-10-16, with the plural fix described in [`data/v6/NOTES.md`](data/v6/NOTES.md). Its files are in [`data/v6/`](data/v6/). The sections after this one describe the first full pass (census 0.2.0) and the corrections found by reading its rows by hand; the numbers here already include those corrections.
+
+- 4,476 source repositories attempted: 3,751 have Android string resources, 90 failed to fetch and 1 timed out.
+- 1,269,051 translations of strings with printf placeholders were formatted with OpenJDK 21's real `java.util.Formatter`.
+- **360 translations, in 95 repositories, throw whatever the app passes. 232 of them, in 64 repositories, are strings the app's code formats with arguments**: the reachable crashes.
+- 93 more throw only if the app passes text where the translation has a number (`crash-if-text`), and 4 only if it passes an `Int` instead of a `Long` (Cashiro's Icelandic `%t` durations, which print the wrong text with the `Long` the app passes).
+- A hand audit of the `crash-if-text` rows ([`data/crash-if-text-audit.md`](data/crash-if-text-audit.md)) found 57 that really throw, in 20 repositories. They are not added to the numbers above.
+- By exception: `UnknownFormatConversionException` 249, `MissingFormatArgumentException` 49, `FormatFlagsConversionMismatchException` 39, `IllegalFormatConversionException` 19, `IllegalFormatFlagsException` 4.
+- By language: Uyghur 55 (one app), Turkish 18, Arabic 16, Russian 14, then Spanish, Italian, Basque and Greek with 10 each. Most reachable crashes: ownCloud 47, Wikimedia Commons 26, Cashiro 25, OsmAnd~ 12.
+- Compared with census 0.2.0 ([`data/v6/compare.md`](data/v6/compare.md)): 27 crash rows are gone (Tallybook 9 and NightDream 1 fixed by their projects, Wikipedia 11 as in Correction 2 below, Cashiro 4 now `crash-if-int`, Automation 2 not reached because its server timed out) and 5 are new: 4 real Wikimedia Commons `about_improve` rows, and one false positive in NewPipe's Indonesian (a placeholder inside link markup, which the l10n-guard 0.5.1 used here can't see; the code only references that string, so it isn't one of the 232).
+- The plural fix moved 96 `crash-if-text` rows to fine (Jellyfin 56, FileManagerSphere 23, RxDroid 15, TimeLimit and Open TimeLimit 1 each). No crash moved.
+- l10n-guard 0.5.1's static check agreed with the JVM on 354 of the 360 crashes and called nothing an error that the JVM accepted (precision 1.0, recall 0.983).
+- Crashes per 100,000 checked translations, by the translation platform a repository names: Weblate 25.6 (341 repositories), Crowdin 29.2 (170), Transifex 66.8 (63; most of its 65 crashes are ownCloud's Uyghur file), none named 22.2 (1,108). The platform is read from config files or the README, which doesn't prove every translation came through it, and one large file can dominate a platform's count, so these are not ratings of the platforms.
+
+## First full pass (census 0.2.0, 2026-10-14)
 
 Census 0.2.0 read the latest commit of every one of the 4,476 source repositories behind F-Droid's 4,667 apps, in 11 minutes on 4 cores. The files are in [`data/`](data/): [`summary.json`](data/summary.json), [`report.md`](data/report.md) and [`findings.csv`](data/findings.csv), which has every flagged translation with a link to the line at the commit read. The numbers below are what 0.2.0 measured. Two corrections found by hand follow, and the corrected totals are in bold there.
 
@@ -39,7 +55,7 @@ Census 0.3.1 (`census_fixes.py`, on top of `census.py` 0.3.0) fixes the cause: o
 
 The 190 `crash-if-text` rows aren't counted above, because whether they throw depends on what the app passes. Reading code shows some do throw. FadCam's Italian `faditor_export_info` is `%1$d segmenti • %2$s`, and the code passes the duration as a `String` for `%1$`, so it throws `IllegalFormatConversionException` every time an export starts. 238 is a floor in this sense.
 
-A hand audit of these rows (2026-10-16, [`data/crash-if-text-audit.md`](data/crash-if-text-audit.md) and [`.csv`](data/crash-if-text-audit.csv)) read the call and the argument's declared type for the biggest clusters and the likeliest rows. **50 more rows in 14 repositories throw**: Session, Open Food Facts' Beauty/Products/Pet Food flavors, Tella, KeyMapper, PhoneTrack, Amaze File Manager, mako, SD Maid SE, AURdroid, EweSticker, YTDLnis, DashPay Wallet, VLC for Android, and a Session fork. Two of those projects had already fixed the same kind of crash by hand once (Open Food Facts PR #3558 in 2020, SD Maid SE PR #2162 in 2026), and it came back. The audit also found the census's own false positive: 56 Jellyfin plural rows are safe, because the census compared them with the wrong English plural item. Neither change is added to the totals above by hand; the next census version will count them.
+A hand audit of these rows (2026-10-16, [`data/crash-if-text-audit.md`](data/crash-if-text-audit.md) and [`.csv`](data/crash-if-text-audit.csv)) read the call and the argument's declared type for the biggest clusters and the likeliest rows. **57 more rows in 20 repositories throw**: Session, Open Food Facts' Beauty/Products/Pet Food flavors, Tella, KeyMapper, PhoneTrack, Amaze File Manager, mako, SD Maid SE, AURdroid, EweSticker, YTDLnis, DashPay Wallet, VLC for Android, ownCloud, FileManagerSphere, LightNovelReader, FadCam, J2ME Loader, OpenKeychain, and a Session fork. Two of those projects had already fixed the same kind of crash by hand once (Open Food Facts PR #3558 in 2020, SD Maid SE PR #2162 in 2026), and it came back. The audit also found the census's own false positive: 56 Jellyfin plural rows are safe, because the census compared them with the wrong English plural item. Neither change is added to the totals above by hand; the next census version will count them.
 
 ## Mistake types
 
@@ -88,7 +104,7 @@ The first run stopped after 1,523 of the 4,476 repositories. An emoji written as
 
 ## Hand-verified cases
 
-Each was checked against the project's current default branch, and the call that formats the string was read by hand. MV2 reproduced none of them on a device (Tallybook's maintainer did, on an emulator). The same list is in [`data/verified-cases.csv`](data/verified-cases.csv). The `crash-if-text` audit above adds 50 more rows in 14 repositories; none of those has been reported yet.
+Each was checked against the project's current default branch, and the call that formats the string was read by hand. MV2 reproduced none of them on a device (Tallybook's maintainer did, on an emulator). The same list is in [`data/verified-cases.csv`](data/verified-cases.csv). The `crash-if-text` audit above adds 57 more rows in 20 repositories; none of those has been reported yet.
 
 | App | Broken translations | Where the code formats them | Translation route and report |
 |---|---|---|---|
@@ -162,7 +178,7 @@ Searches of GitHub, arXiv and the web (2026-10-13 to 2026-10-15) found no cross-
 - A string counts as formatted when its default text has a printf specifier. Code-use classification is pattern-based. Strings looked up by name at runtime, or formatted in ways the patterns miss, count as `referenced` or `unreferenced`. So 238 is a floor for reachable crashes in that sense. The corrections above show the census can also overcount; every correction so far was found by reading rows by hand.
 - The static check and the JVM read the same extracted text, so their agreement doesn't catch text-extraction mistakes (Correction 2).
 - The JVM check passes `Integer` for `%d` arguments. An app that passes `Long` can get a different answer for `%t` (see above) or `%c`.
-- `crash-if-text` rows aren't counted, though some are real crashes (FadCam above, and the 50 rows of the audit).
+- `crash-if-text` rows aren't counted, though some are real crashes (the 57 rows of the audit, FadCam's Italian among them).
 - Verdicts come from OpenJDK 21. Android's `java.util.Formatter` is the same OpenJDK code for these cases, but edge cases can differ by API level.
 - Only the latest commit of each repository's default branch is read. A translation may already be fixed on its translation platform but not yet exported.
 - Apps whose source isn't a reachable public git repository (7 in the index), whose clone failed (85) or timed out (2), or that keep strings outside `res/values*/`, aren't covered.

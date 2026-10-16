@@ -1,16 +1,16 @@
-# Audit of `crash-if-text` rows: 50 more real crashes, and one false-positive cluster
+# Audit of `crash-if-text` rows: 57 more real crashes, and one false-positive cluster
 
 Made by MV2 of Munim, Inc. with AI agents, 2026-10-16. Data: [`crash-if-text-audit.csv`](crash-if-text-audit.csv), CC BY 4.0.
 
 ## What was checked
 
-The census gives a `crash-if-text` verdict when the English string has `%s` (or nothing) for an argument and the translation has `%d` there. Whether that throws depends on what the app passes, which the census doesn't know, so these rows are not in its crash totals. In the latest census run (not yet published here) every one of the 189 `crash-if-text` rows has this shape.
+The census gives a `crash-if-text` verdict when the English string has `%s` (or nothing) for an argument and the translation has `%d` there. Whether that throws depends on what the app passes, which the census doesn't know, so these rows are not in its crash totals. In census 0.4.0 ([`v6/findings.csv`](v6/findings.csv)) all 93 `crash-if-text` rows throw `IllegalFormatConversionException`, and 92 have this shape.
 
 For the biggest clusters and the most likely rows, the call that formats the string was read by hand on the project's current default branch, the argument's declared type was looked up, and the translation was re-read on that branch (2026-10-16). A row is `crash` only when a non-null `String` reaches the `%d`. (`java.util.Formatter` prints `null` for `%d` given a null argument, so a nullable value that happens to be null doesn't throw.) Nothing was run on a device.
 
 ## Results
 
-50 rows in 14 repositories throw `IllegalFormatConversionException` (`d != java.lang.String`):
+57 rows in 20 repositories throw `IllegalFormatConversionException` (`d != java.lang.String`):
 
 | App | Locales | String | When it throws |
 |---|---|---|---|
@@ -28,19 +28,29 @@ For the biggest clusters and the most likely rows, the call that formats the str
 | YTDLnis | Indonesian | `waiting_download_delay` | Starting a download with a download delay set in settings: the delay is passed already formatted as text (`"%.2f".format(delaySec)`). The call runs in a coroutine launched under a `SupervisorJob` with no `CoroutineExceptionHandler`, so the worker's own `try` doesn't catch it and, by kotlinx.coroutines' rules, it goes to the thread's uncaught-exception handler. Every other locale keeps `%s` |
 | DashPay Wallet | Japanese, Korean | `wallet_coinjoin_timeskew_dialog_msg` | The clock warning shown when CoinJoin mixing is on and the device time is off: the app passes the word for ahead/behind (a `String`) and then the seconds (a `Long`), and these two translations put an unnumbered `%d` before `%s`, so the text reaches `%d`. The dialog is built inside `lifecycleScope.launch` with no `try`. Unnumbered reorder, as in PhoneTrack, KeyMapper and Amaze. The census found it in the HashEngineeringSolutions copy; checked on dashpay/dash-wallet |
 | VLC for Android | Hindi | `duplicate_three_options_secondary` (`other`) | Adding tracks to an existing playlist when two or more of them, but not all, are already in it. The app passes the duplicate count (`Int`) and then `playlist.title` (a `String`); the Hindi item reads `"%s" ... %d`, an unnumbered reorder of the English `%d ... "%s"`, so the title reaches `%d`. With exactly one duplicate the app passes only the title and uses the `one` item, which is safe. No `try` around the call. The Hindi file was last changed in February 2025. Checked on the GitHub mirror of code.videolan.org/videolan/vlc-android |
+| ownCloud | Lao | `lock_time_try_again` | The passcode lockout countdown: `PassCodeViewModel` posts the time left already formatted as "mm:ss" text (`String.format(Locale.US, "%02d:%02d", ...)`), and `PassCodeActivity` passes it to `getString(R.string.lock_time_try_again, it)`. The English `%1$s` takes the text; the Lao `%1$d` throws |
+| FileManagerSphere | Simplified Chinese | `an_error_message_occurred` (`other`) | Saving a file in the code editor fails: `CodeEditorFragment.saveFile` calls `getQuantityString(R.plurals.an_error_message_occurred, 1, 1, fileName)` with no `try`. Chinese has only the `other` form, and it moves the unnumbered `%s` (the file name) before `%d`, so the name reaches `%d`. The English is `%d errors occurred while saving the file %s`. Repository inactive since September 2024 |
+| LightNovelReader | Traditional Chinese | `plugin_signature_public_key_value` | The plugin signature dialog in the plugin manager: `PluginSignatureDialog` calls `stringResource(R.string.plugin_signature_public_key_value, sig.publicKeyLength, sig.publicKeyAlgorithm)` (`Int`, `String`). The English is `%1$d-bit %2$s`; the translation swaps the types (`%1$s ... %2$d`), so the algorithm name reaches `%2$d`. Checked on the default branch, `dev/1.3` |
+| FadCam | Italian | `faditor_export_info` | Every export from the Faditor video editor: `showExportInfoOnScreen` calls `getString(R.string.faditor_export_info, durationStr, clipCount, audioInfo)` (`String`, `int`, `String`) with no `try`. The Italian `%1$d segmenti • %2$s` reads like a translation of an older English text, so the duration text reaches `%1$d`. Also in the README's hand-verified cases |
+| J2ME Loader | Portuguese | `err_missing_app` | When the app's folder is missing: `ConfigActivity.onCreate` calls `getString(R.string.err_missing_app, storageName)` with no `try`, where `storageName` is a `String` (empty, or the storage volume's name in quotes). The English has `%s`; the Portuguese `Verifique a% de disponibilidade` has a stray `%` that Java reads as `% d` (a `%d` with a space flag), so the text reaches `%d` |
+| OpenKeychain | Serbian | `msg_is_subkey_ok`, `msg_is_subkey_stripped` | Showing the operation log after a secret key is saved (importing a secret key, for example): `KeyWritableRepository.saveCanonicalizedSecretKeyRing` logs each subkey with `KeyFormattingUtils.convertKeyIdToHex(id)`, a `String`, and `NestedLogAdapter.bind` formats every log entry with `getString(msgId, mParameters)` (the adapter shows all entries, at every level). The English has `%s`; the Serbian has `%d`. No `try`. How many taps deep the entry sits in the import log was not checked. Repository inactive since May 2024 |
 
 **False positive, 56 rows:** Jellyfin's `download_remove_description`. The English `one` item is `Do you want to remove "%2$s" ...?` and `other` is `... these %1$d downloads?`. The census compared every translated item with the English `one` item, but the translations follow `other`, and the code passes an `Int` there. Safe. The next census version compares each plural item with the English item of the same quantity, falling back to `other`.
 
-The rows were picked because they looked likeliest, not at random, so 50 out of the rows read is not a rate for the whole bucket. About 68 `crash-if-text` rows haven't been read yet.
+**Read and found safe, 7 strings in 7 apps** (in the CSV as `safe`): N-Zik's French `format_ms` (`GeneralSettings.kt` passes `it.toLong()`); NotallyX's Russian `exported_notes` and German and Romanian `imported_notes` (every call goes through the project's helper `Context.getQuantityString(id, quantity, vararg)` in `UiExtensions.kt`, which passes the quantity, an `Int`, as argument 1); Aucards' Brazilian Portuguese `delete_confirmation` (`ListScreen.kt` passes `listState.selectedList.size`); BoB's French `pregnancy_weeks` (`HomeScreen.kt` passes `pregnancyWeeks.toInt()`); NymVPN's Turkish `server_countries_count_text` (`ServerScreen.kt` passes `uiState.countryCount`, which is also the plural count, so an `Int`); and Delta Chat's and ArcaneChat's Japanese and Korean `ask_send_following_n_files_to`, which no code uses. Those two translations move the unnumbered `%d` and `%s`, so they would print wrongly or throw if the string were ever used.
 
-## Four translator habits behind these rows
+The rows were picked because they looked likeliest, not at random, so 57 out of the rows read is not a rate for the whole bucket. Of census 0.4.0's 93 `crash-if-text` rows, 72 are in strings the code formats or references, and all but one of those have now been read. The one left is Lavabit Encrypted Proxy's Indonesian `using_proxy`: `OpenVpnManagementThread.sendProxyCMD` passes the proxy name, a `String`, as both arguments, so the Indonesian `%2$d` would throw, and `LogItem.getString` doesn't catch `IllegalFormatConversionException`; whether that log line is ever formatted on screen in this app was not confirmed. The other 21 rows are in strings no code names (20) or whose use the census couldn't tell (1).
 
-1. **Unindexed placeholders moved to fit word order** (PhoneTrack, KeyMapper, Amaze, DashPay Wallet, VLC). The English `%d ... %s` becomes `%s ... %d`, so each argument lands in the other's slot. The fix is indexed placeholders in the source (`%1$d ... %2$s`), which let a translator reorder safely.
+## Six translator habits behind these rows
+
+1. **Unindexed placeholders moved to fit word order** (PhoneTrack, KeyMapper, Amaze, DashPay Wallet, VLC, FileManagerSphere). The English `%d ... %s` becomes `%s ... %d`, so each argument lands in the other's slot. The fix is indexed placeholders in the source (`%1$d ... %2$s`), which let a translator reorder safely.
 2. **A quoted name's `%1$s` typed as `%1$d`** (Tella French 4 times, mako Galician twice in one file while a neighbouring string kept `%1$s`, Open Food Facts). It looks like a per-translator habit, not a one-off slip.
-3. **Indexes kept, types swapped** (Session Sinhala and Telugu): the emoji and the count trade places, and each index takes the other's conversion.
-4. **A translation of an older English string kept after its placeholders changed** (EweSticker). English `imported_033` is now `E033: Unsupported format found (%1$s, file: %2$s/%3$s)`, with the MIME type first. The Bengali, Urdu and Traditional Chinese items still translate an earlier text ("some stickers failed to import (%1$d imported)") with `%1$d`. Why the old text is still exported was not checked.
+3. **Indexes kept, types swapped** (Session Sinhala and Telugu, LightNovelReader Traditional Chinese): the emoji and the count trade places, and each index takes the other's conversion.
+4. **A translation of an older English string kept after its placeholders changed** (EweSticker; FadCam's Italian looks the same). English `imported_033` is now `E033: Unsupported format found (%1$s, file: %2$s/%3$s)`, with the MIME type first. The Bengali, Urdu and Traditional Chinese items still translate an earlier text ("some stickers failed to import (%1$d imported)") with `%1$d`. Why the old text is still exported was not checked.
+5. **A number the code formats itself, passed as text** (YTDLnis Indonesian, ownCloud Lao, OpenKeychain Serbian, where it is a key ID in hex). The English `%s` takes the preformatted text; the translator saw a number and wrote `%d`.
+6. **A percent sign in prose that Java reads as a placeholder** (J2ME Loader Portuguese `a% de`, read as `% d`). On its own it would only print a number with a leading space; it throws because the argument that reaches it is text. l10n-guard 0.6.0 reports it as an error, and reports a `% d` that stands for the source's own `%d` only as a warning.
 
-A possible fifth, not verified: in Amaze's Urdu `1%d`, the digit may be left over from a `%1$d` whose `%1$` was broken up, so a reorder that was correct with indexes became a crash without them.
+A possible seventh, not verified: in Amaze's Urdu `1%d`, the digit may be left over from a `%1$d` whose `%1$` was broken up, so a reorder that was correct with indexes became a crash without them.
 
 ## Fixed once, back again
 
@@ -54,5 +64,5 @@ Compare each translated placeholder's conversion type with the source's at the s
 
 - Code read from source on the default branch, not compiled or run on a device. Argument types come from declarations.
 - Row selection is not random.
-- These 50 rows will count in the census totals only once the next census version re-runs and resolves argument types itself. They are not added to the totals in the README by hand.
+- These 57 rows will count in the census totals only once the next census version re-runs and resolves argument types itself. They are not added to the totals in the README by hand.
 - None of these has been reported to its project yet.
