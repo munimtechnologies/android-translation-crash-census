@@ -39,7 +39,7 @@ Census 0.3.1 (`census_fixes.py`, on top of `census.py` 0.3.0) fixes the cause: o
 
 The 190 `crash-if-text` rows aren't counted above, because whether they throw depends on what the app passes. Reading code shows some do throw. FadCam's Italian `faditor_export_info` is `%1$d segmenti • %2$s`, and the code passes the duration as a `String` for `%1$`, so it throws `IllegalFormatConversionException` every time an export starts. 238 is a floor in this sense.
 
-A hand audit of these rows (2026-10-16, [`data/crash-if-text-audit.md`](data/crash-if-text-audit.md) and [`.csv`](data/crash-if-text-audit.csv)) read the call and the argument's declared type for the biggest clusters and the likeliest rows. **43 more rows in 10 repositories throw**: Session, Open Food Facts' Beauty/Products/Pet Food flavors, Tella, KeyMapper, PhoneTrack, Amaze File Manager, mako, SD Maid SE, AURdroid, and a Session fork. Two of those projects had already fixed the same kind of crash by hand once (Open Food Facts PR #3558 in 2020, SD Maid SE PR #2162 in 2026), and it came back. The audit also found the census's own false positive: 56 Jellyfin plural rows are safe, because the census compared them with the wrong English plural item. Neither change is added to the totals above by hand; the next census version will count them.
+A hand audit of these rows (2026-10-16, [`data/crash-if-text-audit.md`](data/crash-if-text-audit.md) and [`.csv`](data/crash-if-text-audit.csv)) read the call and the argument's declared type for the biggest clusters and the likeliest rows. **50 more rows in 14 repositories throw**: Session, Open Food Facts' Beauty/Products/Pet Food flavors, Tella, KeyMapper, PhoneTrack, Amaze File Manager, mako, SD Maid SE, AURdroid, EweSticker, YTDLnis, DashPay Wallet, VLC for Android, and a Session fork. Two of those projects had already fixed the same kind of crash by hand once (Open Food Facts PR #3558 in 2020, SD Maid SE PR #2162 in 2026), and it came back. The audit also found the census's own false positive: 56 Jellyfin plural rows are safe, because the census compared them with the wrong English plural item. Neither change is added to the totals above by hand; the next census version will count them.
 
 ## Mistake types
 
@@ -71,13 +71,13 @@ Two more patterns turned up when reading rows by hand. Neither has its own kind 
 
 ## What the free checks can see
 
-Three open-source checks could have looked at every one of these translations before it shipped: Weblate's Java format check (on by itself for Android strings on Weblate), translate-toolkit's `printf` test (`pofilter`), and Android Lint's `StringFormatDetector`. [`CHECKS.md`](CHECKS.md) reads all three at pinned commits, mirrors their rules (`weblate_blind.py`, `checks_blind.py`), and tests the mirrors on the hand-verified cases below. What that shows, before the counts over the full data arrive:
+Three open-source checks could have looked at every one of these translations before it shipped: Weblate's Java format check (on by itself for Android strings on Weblate), translate-toolkit's `printf` test (`pofilter`), and Android Lint's `StringFormatDetector`. [`CHECKS.md`](CHECKS.md) reads all three at pinned commits, mirrors their rules (`weblate_blind.py`, `checks_blind.py`), and tests the mirrors on the hand-verified cases below. What that shows:
 
 - **Weblate and pofilter pass every stray-percent row** whose real placeholders are intact (Flashy's `25%.` and `25% adicional`, Cashiro's `(%1$d%)`, Element X's `%1$d% パーセント`, Mastodon's `%,d% цытата`). Both only recognise a `%` that a conversion letter directly follows, so a `%` before a space, a period or the end of the string is not a placeholder to them, while it is exactly where `Formatter` throws. That is the census's most widespread mistake.
 - **Lint sees those, but mostly as a side effect**: a stray `%` makes it classify the translation as "not a format string", so it reports an argument-count mismatch (`StringFormatCount`, a warning, with a misleading message). Only when the next word starts with a conversion letter (Flashy's Galician and Portuguese `25% adicional`) does Lint, like `Formatter`, read `% a` as a placeholder, and then it also raises a `StringFormatInvalid` error. Lint ignores a translation whose `%` is followed by a Latin letter it doesn't know (`%D`), and its detector visits `<string>` elements only, never `<plurals>`, so every plural row is outside its reach.
 - **No single check sees all of the verified cases.** The union of the three does, except a literal `%` written before a digit (Turkish `%25`), which only pofilter catches, by accident.
 
-The counts per mistake kind for all 371 crashing rows are what `checks_blind.py` over `data/findings.csv` will add; the table in `CHECKS.md` is the hand-verified subset until then.
+Over the whole census (366 crashing translations once date conversions, rows that print wrong text instead of crashing, and a cleared repository are left out), Weblate's check flags 300, pofilter 322 and Lint 239. 24 pass both Weblate and pofilter, and 12 pass all three. 22 of the 24 are an extra lone `%`. The tables, and a rule that would catch those 22, are in [`CHECKS.md`](CHECKS.md); the rows are in [`data/checks-blind-rows.csv`](data/checks-blind-rows.csv).
 
 ## Earlier partial pass (census 0.1.0)
 
@@ -88,7 +88,7 @@ The first run stopped after 1,523 of the 4,476 repositories. An emoji written as
 
 ## Hand-verified cases
 
-Each was checked against the project's current default branch, and the call that formats the string was read by hand. MV2 reproduced none of them on a device (Tallybook's maintainer did, on an emulator). The same list is in [`data/verified-cases.csv`](data/verified-cases.csv). The `crash-if-text` audit above adds 43 more rows in 10 repositories; none of those has been reported yet.
+Each was checked against the project's current default branch, and the call that formats the string was read by hand. MV2 reproduced none of them on a device (Tallybook's maintainer did, on an emulator). The same list is in [`data/verified-cases.csv`](data/verified-cases.csv). The `crash-if-text` audit above adds 50 more rows in 14 repositories; none of those has been reported yet.
 
 | App | Broken translations | Where the code formats them | Translation route and report |
 |---|---|---|---|
@@ -162,7 +162,7 @@ Searches of GitHub, arXiv and the web (2026-10-13 to 2026-10-15) found no cross-
 - A string counts as formatted when its default text has a printf specifier. Code-use classification is pattern-based. Strings looked up by name at runtime, or formatted in ways the patterns miss, count as `referenced` or `unreferenced`. So 238 is a floor for reachable crashes in that sense. The corrections above show the census can also overcount; every correction so far was found by reading rows by hand.
 - The static check and the JVM read the same extracted text, so their agreement doesn't catch text-extraction mistakes (Correction 2).
 - The JVM check passes `Integer` for `%d` arguments. An app that passes `Long` can get a different answer for `%t` (see above) or `%c`.
-- `crash-if-text` rows aren't counted, though some are real crashes (FadCam above, and the 43 rows of the audit).
+- `crash-if-text` rows aren't counted, though some are real crashes (FadCam above, and the 50 rows of the audit).
 - Verdicts come from OpenJDK 21. Android's `java.util.Formatter` is the same OpenJDK code for these cases, but edge cases can differ by API level.
 - Only the latest commit of each repository's default branch is read. A translation may already be fixed on its translation platform but not yet exported.
 - Apps whose source isn't a reachable public git repository (7 in the index), whose clone failed (85) or timed out (2), or that keep strings outside `res/values*/`, aren't covered.

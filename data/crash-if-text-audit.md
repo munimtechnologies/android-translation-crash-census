@@ -1,4 +1,4 @@
-# Audit of `crash-if-text` rows: 43 more real crashes, and one false-positive cluster
+# Audit of `crash-if-text` rows: 50 more real crashes, and one false-positive cluster
 
 Made by MV2 of Munim, Inc. with AI agents, 2026-10-16. Data: [`crash-if-text-audit.csv`](crash-if-text-audit.csv), CC BY 4.0.
 
@@ -10,7 +10,7 @@ For the biggest clusters and the most likely rows, the call that formats the str
 
 ## Results
 
-43 rows in 10 repositories throw `IllegalFormatConversionException` (`d != java.lang.String`):
+50 rows in 14 repositories throw `IllegalFormatConversionException` (`d != java.lang.String`):
 
 | App | Locales | String | When it throws |
 |---|---|---|---|
@@ -24,18 +24,23 @@ For the biggest clusters and the most likely rows, the call that formats the str
 | mako | Catalan, Spanish, Galician | `filepicker_selected_icon_pack`; Galician also `toast_app_selected` | Icon settings once a pack is selected; picking a clock-tap or date-tap app (`AppEntry.label: String`) |
 | AURdroid | Spanish | `plurals_formatted_package_found` | Every search with results (repository inactive since 2022) |
 | SD Maid SE | Finnish, Georgian | `appcleaner_delete_confirmation_message_x`, `corpsefinder_watcher_notification_delete_result` | App cleaner delete confirmation; the uninstall-watcher notification |
+| EweSticker | Bengali, Urdu, Traditional Chinese | `imported_033` | Importing a sticker folder that holds a file of an unsupported type: its MIME type (`DocumentFile.getType()`, a non-null `String` for any real file) reaches `%1$d`. Only `IOException` is caught there, so the exception also cancels the folder's other imports |
+| YTDLnis | Indonesian | `waiting_download_delay` | Starting a download with a download delay set in settings: the delay is passed already formatted as text (`"%.2f".format(delaySec)`). The call runs in a coroutine launched under a `SupervisorJob` with no `CoroutineExceptionHandler`, so the worker's own `try` doesn't catch it and, by kotlinx.coroutines' rules, it goes to the thread's uncaught-exception handler. Every other locale keeps `%s` |
+| DashPay Wallet | Japanese, Korean | `wallet_coinjoin_timeskew_dialog_msg` | The clock warning shown when CoinJoin mixing is on and the device time is off: the app passes the word for ahead/behind (a `String`) and then the seconds (a `Long`), and these two translations put an unnumbered `%d` before `%s`, so the text reaches `%d`. The dialog is built inside `lifecycleScope.launch` with no `try`. Unnumbered reorder, as in PhoneTrack, KeyMapper and Amaze. The census found it in the HashEngineeringSolutions copy; checked on dashpay/dash-wallet |
+| VLC for Android | Hindi | `duplicate_three_options_secondary` (`other`) | Adding tracks to an existing playlist when two or more of them, but not all, are already in it. The app passes the duplicate count (`Int`) and then `playlist.title` (a `String`); the Hindi item reads `"%s" ... %d`, an unnumbered reorder of the English `%d ... "%s"`, so the title reaches `%d`. With exactly one duplicate the app passes only the title and uses the `one` item, which is safe. No `try` around the call. The Hindi file was last changed in February 2025. Checked on the GitHub mirror of code.videolan.org/videolan/vlc-android |
 
 **False positive, 56 rows:** Jellyfin's `download_remove_description`. The English `one` item is `Do you want to remove "%2$s" ...?` and `other` is `... these %1$d downloads?`. The census compared every translated item with the English `one` item, but the translations follow `other`, and the code passes an `Int` there. Safe. The next census version compares each plural item with the English item of the same quantity, falling back to `other`.
 
-The rows were picked because they looked likeliest, not at random, so 43 out of the rows read is not a rate for the whole bucket. About 75 `crash-if-text` rows haven't been read yet.
+The rows were picked because they looked likeliest, not at random, so 50 out of the rows read is not a rate for the whole bucket. About 68 `crash-if-text` rows haven't been read yet.
 
-## Three translator habits behind these rows
+## Four translator habits behind these rows
 
-1. **Unindexed placeholders moved to fit word order** (PhoneTrack, KeyMapper, Amaze). The English `%d ... %s` becomes `%s ... %d`, so each argument lands in the other's slot. The fix is indexed placeholders in the source (`%1$d ... %2$s`), which let a translator reorder safely.
+1. **Unindexed placeholders moved to fit word order** (PhoneTrack, KeyMapper, Amaze, DashPay Wallet, VLC). The English `%d ... %s` becomes `%s ... %d`, so each argument lands in the other's slot. The fix is indexed placeholders in the source (`%1$d ... %2$s`), which let a translator reorder safely.
 2. **A quoted name's `%1$s` typed as `%1$d`** (Tella French 4 times, mako Galician twice in one file while a neighbouring string kept `%1$s`, Open Food Facts). It looks like a per-translator habit, not a one-off slip.
 3. **Indexes kept, types swapped** (Session Sinhala and Telugu): the emoji and the count trade places, and each index takes the other's conversion.
+4. **A translation of an older English string kept after its placeholders changed** (EweSticker). English `imported_033` is now `E033: Unsupported format found (%1$s, file: %2$s/%3$s)`, with the MIME type first. The Bengali, Urdu and Traditional Chinese items still translate an earlier text ("some stickers failed to import (%1$d imported)") with `%1$d`. Why the old text is still exported was not checked.
 
-A possible fourth, not verified: in Amaze's Urdu `1%d`, the digit may be left over from a `%1$d` whose `%1$` was broken up, so a reorder that was correct with indexes became a crash without them.
+A possible fifth, not verified: in Amaze's Urdu `1%d`, the digit may be left over from a `%1$d` whose `%1$` was broken up, so a reorder that was correct with indexes became a crash without them.
 
 ## Fixed once, back again
 
@@ -49,5 +54,5 @@ Compare each translated placeholder's conversion type with the source's at the s
 
 - Code read from source on the default branch, not compiled or run on a device. Argument types come from declarations.
 - Row selection is not random.
-- These 43 rows will count in the census totals only once the next census version re-runs and resolves argument types itself. They are not added to the totals in the README by hand.
+- These 50 rows will count in the census totals only once the next census version re-runs and resolves argument types itself. They are not added to the totals in the README by hand.
 - None of these has been reported to its project yet.
