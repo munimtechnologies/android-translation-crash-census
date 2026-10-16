@@ -41,7 +41,55 @@ No single check sees all of the hand-verified cases. The union of the three sees
 
 ## Counts over the whole census
 
-Pending: `checks_blind.py` over `data/findings.csv` (compute job `checks-blind-v2`) will add, per mistake kind, how many of the 371 crashing translations (238 reachable) each check flags and how many none of them sees. Until then the table above is the evidence: it is the hand-verified subset, not a sample.
+Compute job `checks-blind-v2` (2026-10-15, 29 of 29 tests passed) ran `checks_blind.py` over the published `data/findings.csv`. Before counting it drops date conversions (`%t`, which need a date argument the census doesn't model), 5 rows that print wrong text instead of crashing, and 11 rows from a repository that has since been cleared. That leaves **366 crashing translations in 98 repositories**; 237 of them, in 66 repositories, are strings the app's code is seen to format ("formatted"). Full tables: [`data/checks-blind.md`](data/checks-blind.md); one row per translation: [`data/checks-blind-rows.csv`](data/checks-blind-rows.csv).
+
+| | Weblate | pofilter | Lint |
+|---|---|---|---|
+| flagged (all 366) | 300 | 322 | 239 |
+| not flagged | 27 | 44 | 2 |
+| depends on the plural form / not visited / ignored | 39 plural-dependent | - | 90 not visited (plurals), 35 ignored |
+| flagged (237 formatted) | 198 | 215 | 176 |
+
+Which checks see each crashing translation:
+
+| seen by | all rows | repos | formatted rows | repos |
+|---|---:|---:|---:|---:|
+| Weblate + pofilter + Lint | 212 | 57 | 164 | 41 |
+| Weblate + pofilter | 68 | 30 | 32 | 16 |
+| pofilter only | 41 | 21 | 18 | 13 |
+| Weblate + Lint | 14 | 1 | 0 | 0 |
+| Weblate only | 6 | 3 | 2 | 2 |
+| pofilter + Lint | 1 | 1 | 1 | 1 |
+| **Lint only** | **12** | **4** | **11** | **3** |
+| **none of the three** | **12** | **9** | **9** | **7** |
+
+So **24 crashing translations pass both Weblate and pofilter**, and **12 of them pass all three checks**. 22 of the 24 are the same mistake: an extra lone `%` in a translation that keeps every real placeholder of the source, followed by a space, punctuation, a non-Latin letter or the end of the string. The other 2 (Material Files eu) rewrite `%1$,d` as `%1$` plus a word starting with `e`, which Formatter reads as a space flag and an `e` conversion given an Integer. pofilter can't parse the source's comma flag (its flag class is `[+#-]*`), so it sees no placeholder on either side.
+
+The 12 that no check sees, and why each misses:
+
+| app | locale | what follows the stray `%` | why Lint misses it |
+|---|---|---|---|
+| Exodus | tr, 2 plural forms | ` (` (read as two flags, then a `%` conversion) | plurals not visited |
+| Element X | ja, plural | ` パ` | plurals not visited |
+| SchildiChat Next | ja, plural | same row, a git-merge fork copy of Element X | plurals not visited |
+| Mastodon | be-rBY, plural | ` ц` | plurals not visited |
+| Moshidon | be-rBY, plural | same row, a git-merge fork copy of Mastodon | plurals not visited |
+| Homer | zh-rCN, 2 plural forms | end of the string | plurals not visited |
+| LibreTorrent | cs, string | ` ú` | its pattern needs an ASCII conversion letter |
+| Commons | sl, string (not referenced in code) | a no-break space (`&nbsp;`) | same: a non-ASCII character after `%` |
+| Material Files | eu, 2 plural forms | `%1$` + ` e…` (see above) | plurals not visited |
+
+10 of the 12 are in `<plurals>`, where Lint never looks; the other 2 have a non-ASCII character right after the `%`. The 12 that only Lint sees are all `<string>` elements: Flashy (6 languages), Cashiro (3), PIA VPN (2) and Petals (1).
+
+By mistake kind ([taxonomy](data/taxonomy.md)), the stray percent is the weakest spot: of its 82 rows Weblate flags 53, pofilter 55 and Lint 41, and 8 are seen by none. The other 4 unseen rows are filed under flag mismatch (Exodus, where the stray `%` before ` (` parses as flags) and wrong type (Material Files). Every malformed index, missing or native-script conversion letter, invalid conversion and argument the app doesn't pass is seen by at least one check.
+
+## A rule that would catch the 22
+
+> If the source string has at least one format placeholder, flag every `%` in the translation that is neither `%%` nor the start of a placeholder the check recognises.
+
+Limiting the rule to strings whose source has a placeholder avoids the false positive the checkers presumably avoid on purpose: French `50 % de remise` in a string that is never formatted. A string with a placeholder is passed to `String.format`, where every `%` must be part of a specifier, so in those strings a lone `%` is never harmless. Two smaller fixes would close the rest: translate-toolkit's flag class could take all of Java's flags (`-#+ 0,(<`), and Lint's `StringFormatDetector` could visit `<plurals>` items. `l10n_guard.py` in this repository parses translations with Java's own grammar instead of a placeholder pattern, so to it, as to Formatter, a stray `%` is either a parse error or one argument too many.
+
+This is a proposal; it has not been filed with Weblate, translate-toolkit or Android Lint yet.
 
 ## Limits
 
@@ -49,6 +97,7 @@ Pending: `checks_blind.py` over `data/findings.csv` (compute job `checks-blind-v
 - Default configurations only. A Weblate project can enforce the check or add flags; a Lint run can raise `StringFormatCount` to an error or suppress it.
 - The checks run on the census's extracted text, not the raw XML, so `formatted="false"`, `tools:ignore` and escaping differences are not modelled.
 - Weblate's plural leniency is approximated (both strict and lenient results are kept); translate-toolkit's `%.0s` leniency is mirrored.
+- The counts are over the published census data (`data/findings.csv`), not over a later rerun; they will move a little when the data is regenerated. "Seen by" means a check reports something about the string, not that its message names the real problem (see finding 2).
 - Crowdin, Transifex, Lokalise and Localazy have closed-source checks; nothing here says anything about them.
 
 ## Corrections
@@ -57,4 +106,4 @@ Pending: `checks_blind.py` over `data/findings.csv` (compute job `checks-blind-v
 
 ## Prior art
 
-Weblate issue #4623 (auto-enabling the Java check for Android), Android Lint's `StringFormatDetectorTest`, and the per-project fixes listed in the README. No comparison of what these checks miss on real shipped translations was found (searches 2026-10-15).
+Weblate issue #4623 (auto-enabling the Java check for Android), Android Lint's `StringFormatDetectorTest`, and the per-project fixes listed in the README. No comparison of what these checks miss on real shipped translations was found, and no report naming the shared stray-`%` / plurals gap across the three checks (searches 2026-10-15 and 2026-10-16).
