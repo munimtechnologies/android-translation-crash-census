@@ -1,4 +1,4 @@
-# Audit of `crash-if-text` rows: 57 more real crashes, and one false-positive cluster
+# Audit of `crash-if-text` rows: 58 more real crashes, and one false-positive cluster
 
 Made by MV2 of Munim, Inc. with AI agents, 2026-10-16. Data: [`crash-if-text-audit.csv`](crash-if-text-audit.csv), CC BY 4.0.
 
@@ -10,7 +10,7 @@ For the biggest clusters and the most likely rows, the call that formats the str
 
 ## Results
 
-57 rows in 20 repositories throw `IllegalFormatConversionException` (`d != java.lang.String`):
+58 rows in 21 repositories throw `IllegalFormatConversionException` (`d != java.lang.String`):
 
 | App | Locales | String | When it throws |
 |---|---|---|---|
@@ -34,12 +34,13 @@ For the biggest clusters and the most likely rows, the call that formats the str
 | FadCam | Italian | `faditor_export_info` | Every export from the Faditor video editor: `showExportInfoOnScreen` calls `getString(R.string.faditor_export_info, durationStr, clipCount, audioInfo)` (`String`, `int`, `String`) with no `try`. The Italian `%1$d segmenti • %2$s` reads like a translation of an older English text, so the duration text reaches `%1$d`. Also in the README's hand-verified cases |
 | J2ME Loader | Portuguese | `err_missing_app` | When the app's folder is missing: `ConfigActivity.onCreate` calls `getString(R.string.err_missing_app, storageName)` with no `try`, where `storageName` is a `String` (empty, or the storage volume's name in quotes). The English has `%s`; the Portuguese `Verifique a% de disponibilidade` has a stray `%` that Java reads as `% d` (a `%d` with a space flag), so the text reaches `%d` |
 | OpenKeychain | Serbian | `msg_is_subkey_ok`, `msg_is_subkey_stripped` | Showing the operation log after a secret key is saved (importing a secret key, for example): `KeyWritableRepository.saveCanonicalizedSecretKeyRing` logs each subkey with `KeyFormattingUtils.convertKeyIdToHex(id)`, a `String`, and `NestedLogAdapter.bind` formats every log entry with `getString(msgId, mParameters)` (the adapter shows all entries, at every level). The English has `%s`; the Serbian has `%d`. No `try`. How many taps deep the entry sits in the import log was not checked. Repository inactive since May 2024 |
+| Lavabit Encrypted Proxy | Indonesian | `using_proxy` | Sending the app's log (Log in the side menu, then its send option), or viewing it with the level slider at 2 or higher, after a connection went through a proxy. When OpenVPN asks for one, `OpenVpnManagementThread.processProxyCMD` takes the connection's proxy or, with the default `usesystemproxy` setting, the device's HTTP proxy, and `sendProxyCMD` logs `VpnStatus.logInfo(R.string.using_proxy, proxyname, proxyname)`: two `String`s. (The code, copied from ics-openvpn, passes the host name twice; the port it was probably meant to pass is a `String` too.) `LogFragment` formats each entry with `LogItem.getString(getActivity())`, which catches only `NotFoundException`, `UnknownFormatConversionException` and `FormatFlagsConversionMismatchException`, and `getLogStr()`, used for sending, formats every stored entry whatever the slider says. The Indonesian `%2$d` throws. Upstream ics-openvpn's own Indonesian (`values-in`) keeps `%2$s`; the broken copy is the app's `values-id/strings-icsopenvpn.xml`. Last commit March 2025 |
 
 **False positive, 56 rows:** Jellyfin's `download_remove_description`. The English `one` item is `Do you want to remove "%2$s" ...?` and `other` is `... these %1$d downloads?`. The census compared every translated item with the English `one` item, but the translations follow `other`, and the code passes an `Int` there. Safe. The next census version compares each plural item with the English item of the same quantity, falling back to `other`.
 
 **Read and found safe, 7 strings in 7 apps** (in the CSV as `safe`): N-Zik's French `format_ms` (`GeneralSettings.kt` passes `it.toLong()`); NotallyX's Russian `exported_notes` and German and Romanian `imported_notes` (every call goes through the project's helper `Context.getQuantityString(id, quantity, vararg)` in `UiExtensions.kt`, which passes the quantity, an `Int`, as argument 1); Aucards' Brazilian Portuguese `delete_confirmation` (`ListScreen.kt` passes `listState.selectedList.size`); BoB's French `pregnancy_weeks` (`HomeScreen.kt` passes `pregnancyWeeks.toInt()`); NymVPN's Turkish `server_countries_count_text` (`ServerScreen.kt` passes `uiState.countryCount`, which is also the plural count, so an `Int`); and Delta Chat's and ArcaneChat's Japanese and Korean `ask_send_following_n_files_to`, which no code uses. Those two translations move the unnumbered `%d` and `%s`, so they would print wrongly or throw if the string were ever used.
 
-The rows were picked because they looked likeliest, not at random, so 57 out of the rows read is not a rate for the whole bucket. Of census 0.4.0's 93 `crash-if-text` rows, 72 are in strings the code formats or references, and all but one of those have now been read. The one left is Lavabit Encrypted Proxy's Indonesian `using_proxy`: `OpenVpnManagementThread.sendProxyCMD` passes the proxy name, a `String`, as both arguments, so the Indonesian `%2$d` would throw, and `LogItem.getString` doesn't catch `IllegalFormatConversionException`; whether that log line is ever formatted on screen in this app was not confirmed. The other 21 rows are in strings no code names (20) or whose use the census couldn't tell (1).
+The rows were picked because they looked likeliest, not at random, so 58 out of the rows read is not a rate for the whole bucket. Of census 0.4.0's 93 `crash-if-text` rows, 72 are in strings the code formats or references, and all 72 have now been read. The last one, Lavabit Encrypted Proxy's Indonesian `using_proxy`, was confirmed on 2026-10-16 (table above). The census counted it as `referenced` because the code hands the string and its arguments to a log helper that formats them later, as OpenKeychain's log does; census 0.4.1 should learn such helpers. The same log line's Vietnamese item, written in Thai script, reads `% 1 $ s% 2 $ s`. It is a `crash` row in census 0.4.0 (`UnknownFormatConversionException`, which `LogItem.getString` catches and throws again), outside the 232 for the same reason, and the same path reaches it. The other 21 rows are in strings no code names (20) or whose use the census couldn't tell (1).
 
 ## Six translator habits behind these rows
 
@@ -47,7 +48,7 @@ The rows were picked because they looked likeliest, not at random, so 57 out of 
 2. **A quoted name's `%1$s` typed as `%1$d`** (Tella French 4 times, mako Galician twice in one file while a neighbouring string kept `%1$s`, Open Food Facts). It looks like a per-translator habit, not a one-off slip.
 3. **Indexes kept, types swapped** (Session Sinhala and Telugu, LightNovelReader Traditional Chinese): the emoji and the count trade places, and each index takes the other's conversion.
 4. **A translation of an older English string kept after its placeholders changed** (EweSticker; FadCam's Italian looks the same). English `imported_033` is now `E033: Unsupported format found (%1$s, file: %2$s/%3$s)`, with the MIME type first. The Bengali, Urdu and Traditional Chinese items still translate an earlier text ("some stickers failed to import (%1$d imported)") with `%1$d`. Why the old text is still exported was not checked.
-5. **A number the code formats itself, passed as text** (YTDLnis Indonesian, ownCloud Lao, OpenKeychain Serbian, where it is a key ID in hex). The English `%s` takes the preformatted text; the translator saw a number and wrote `%d`.
+5. **A number the code formats itself, passed as text** (YTDLnis Indonesian, ownCloud Lao, OpenKeychain Serbian, where it is a key ID in hex, and Lavabit Indonesian, where the port in `Using proxy %1$s %2$s` is a `String`). The English `%s` takes the preformatted text; the translator saw a number and wrote `%d`.
 6. **A percent sign in prose that Java reads as a placeholder** (J2ME Loader Portuguese `a% de`, read as `% d`). On its own it would only print a number with a leading space; it throws because the argument that reaches it is text. l10n-guard 0.6.0 reports it as an error, and reports a `% d` that stands for the source's own `%d` only as a warning.
 
 A possible seventh, not verified: in Amaze's Urdu `1%d`, the digit may be left over from a `%1$d` whose `%1$` was broken up, so a reorder that was correct with indexes became a crash without them.
@@ -64,5 +65,5 @@ Compare each translated placeholder's conversion type with the source's at the s
 
 - Code read from source on the default branch, not compiled or run on a device. Argument types come from declarations.
 - Row selection is not random.
-- These 57 rows will count in the census totals only once the next census version re-runs and resolves argument types itself. They are not added to the totals in the README by hand.
+- These 58 rows will count in the census totals only once the next census version re-runs and resolves argument types itself. They are not added to the totals in the README by hand.
 - None of these has been reported to its project yet.
