@@ -1,0 +1,76 @@
+lang,valid,reordered,rate,repos,unique_rate,repo_mean_rate,81A,85A,86A,87A,90A,iso,wals
+af,599,2,0.00333889816360601,66,0.003875968992248062,0.0021645021645021645,,,,,,afr,
+ar,4727,30,0.006346519991537973,390,0.006151142355008787,0.003184002413798015,conflict,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,ara aao abh abv acm acq acw acx acy adf aeb aec afb apc apd arb arq ars ary arz ,abb abe abh aeg ael ako amr ams anl arg arh arj arl arn arq ars asy atu
+az,930,83,0.08924731182795699,87,0.10526315789473684,0.07709624062796239,SOV,,Genitive-Noun,Adjective-Noun,Mixed,azj aze azb azj,aze azi
+be,1098,10,0.009107468123861567,101,0.011682242990654205,0.0025041255380978335,No dominant order,,Noun-Genitive,Adjective-Noun,Noun-Relative clause,bel,blr
+bg,2005,6,0.0029925187032418953,176,0.004169562195969423,0.0015502016922471467,SVO,Prepositions,No dominant order,Adjective-Noun,Noun-Relative clause,bul,bul
+bn,1786,228,0.1276595744680851,138,0.148659626320065,0.11704999925845287,SOV,,,,,ben,ben
+bs,454,5,0.011013215859030838,53,0.011461318051575931,0.0030397384008314394,,,,,,bos,
+ca,2736,29,0.010599415204678362,240,0.010116337885685382,0.012606978229556687,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,cat,ctl
+cs,3950,60,0.015189873417721518,352,0.01578393546124167,0.007498725622474458,SVO,Prepositions,No dominant order,Adjective-Noun,Noun-Relative clause,ces,cze
+cy,404,6,0.01485148514851485,34,0.007246376811594203,0.009175191815856779,VSO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,cym,wec wel
+da,2265,2,0.0008830022075055188,229,0.0011806375442739079,0.000621141394368318,SVO,Prepositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,dan,dsh
+de,8101,76,0.009381557832366374,775,0.011457987379608103,0.011762945003612496,No dominant order,Prepositions,Noun-Genitive,Adjective-Noun,Noun-Relative clause,deu,gbl ger gha gma gth gti
+el,2651,17,0.006412674462466994,263,0.004970178926441352,0.0038574226787154546,No dominant order,Prepositions,Noun-Genitive,Adjective-Noun,Noun-Relative clause,ell,gcy grk
+en,1568,2,0.0012755102040816326,109,0.0024906600249066002,0.0061162079510703364,SVO,Prepositions,No dominant order,Adjective-Noun,Noun-Relative clause,eng,eng
+eo,921,10,0.010857763300760043,83,0.009302325581395349,0.003033296152970473,,,,,,epo,
+es,8523,22,0.0025812507333098675,700,0.0027981811822315496,0.00375742698736733,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,spa,spa spc
+et,2438,72,0.029532403609515995,188,0.03172737955346651,0.03810864541695162,SVO,Postpositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,ekk est ekk vro,est
+eu,1440,90,0.0625,147,0.06288659793814433,0.06941158918043869,SOV,Postpositions,Genitive-Noun,Noun-Adjective,Relative clause-Noun,eus,bqb bqg bqh bqi bql bqn bqo bqr bqs bqz bso bsq
+fa,2582,74,0.02865995352439969,221,0.029099048684946838,0.022775749321184282,SOV,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,pes fas pes prs,prs
+fi,2827,29,0.010258224266006368,256,0.01270772238514174,0.013936213839060517,SVO,Postpositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,fin,fin
+fil,631,5,0.00792393026941363,55,0.00946969696969697,0.007337662337662338,VSO,,Noun-Genitive,No dominant order,Noun-Relative clause,tgl fil,tag
+fr,7505,67,0.008927381745502998,712,0.008042405410345458,0.007389533203020518,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,fra,fre
+ga,780,7,0.008974358974358974,49,0.009188361408882083,0.004826590500145636,VSO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,gle,ird iri irm
+gl,1674,16,0.009557945041816009,160,0.010212765957446808,0.007282842277454346,,,,,,glg,
+gu,506,91,0.17984189723320157,28,0.18639798488664988,0.10684663229351478,SOV,Postpositions,,Adjective-Noun,,guj,guj
+he,2560,13,0.005078125,221,0.0031529164477141357,0.001539006430184773,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,heb,hba heb
+hi,2360,382,0.16186440677966102,222,0.15618556701030928,0.14739163673472594,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Correlative,hin,hin
+hr,1561,13,0.008327994875080076,153,0.009565217391304347,0.005407679555135113,,,,,,hrv,
+hu,3201,98,0.03061543267728835,284,0.029798422436459245,0.02672632063514611,No dominant order,Postpositions,Genitive-Noun,Adjective-Noun,Mixed,hun,hun
+hy,372,8,0.021505376344086023,41,0.03125,0.005382674516400336,No dominant order,Postpositions,Genitive-Noun,Adjective-Noun,Mixed,hye,arm arz
+id,3767,10,0.002654632333421821,303,0.002640513013956997,0.0018996844739418996,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,ind,ind inj
+is,1284,3,0.002336448598130841,78,0.0036144578313253013,0.0008999621068586586,SVO,Prepositions,Noun-Genitive,Adjective-Noun,Noun-Relative clause,isl,ice
+it,6600,28,0.004242424242424243,589,0.004834980029430313,0.002096508279656234,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,ita,ifi ita
+ja,4868,581,0.11935086277732128,445,0.130779392338177,0.10934736772581373,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Relative clause-Noun,jpn,jpn
+ka,782,17,0.021739130434782608,65,0.03205128205128205,0.02021187477420899,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,kat,geo
+kab,468,0,0.0,39,0.0,0.0,VSO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,kab,kbl
+kk,431,48,0.11136890951276102,42,0.1323943661971831,0.06859477420365569,,,,,,kaz,
+kn,681,123,0.18061674008810572,52,0.18401486988847585,0.2415072694274989,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Mixed,kan,knd
+ko,3976,637,0.1602112676056338,320,0.1592334494773519,0.14949562902804522,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Relative clause-Noun,kor,kor
+lo,576,1,0.001736111111111111,41,0.002890173410404624,0.0008710801393728223,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,lao,lao
+lt,1941,43,0.02215352910870685,151,0.02158273381294964,0.02001202617694963,SVO,Prepositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,lit,lit
+lv,1335,28,0.020973782771535582,95,0.026115342763873776,0.044386975714519813,SVO,Prepositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,lvs lav ltg lvs,lat
+mk,533,2,0.00375234521575985,51,0.0045351473922902496,0.0007002801120448179,SVO,Prepositions,No dominant order,Adjective-Noun,,mkd,mcd
+ml,970,143,0.14742268041237114,81,0.17475728155339806,0.1422012462301804,SOV,,Genitive-Noun,Adjective-Noun,Relative clause-Noun,mal,mym
+mr,573,107,0.18673647469458987,47,0.18859649122807018,0.1254810674436914,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Relative clause-Noun,mar,mhi
+ms,675,3,0.0044444444444444444,63,0.005415162454873646,0.0008503401360544217,conflict,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,zsm msa bjn btj bve bvu coa dup hji ind jak jax kvb kvr kxd lce lcf liw max meo ,ind inj kuy mds min mly mmu myk url
+my,439,95,0.2164009111617312,54,0.20555555555555555,0.1807464553494499,SOV,Postpositions,Genitive-Noun,Noun-Adjective,Relative clause-Noun,mya,brm
+nb,2090,2,0.0009569377990430622,230,0.0013201320132013201,0.000633016824920873,,,,,,nob,
+ne,437,76,0.17391304347826086,50,0.18037135278514588,0.11312329101230116,SOV,Postpositions,Genitive-Noun,Adjective-Noun,,npi nep dty npi,nep
+nl,4811,51,0.01060070671378092,415,0.009699909063352531,0.006706884853739106,No dominant order,Prepositions,Noun-Genitive,Adjective-Noun,Noun-Relative clause,nld,dbr dli dut
+nn,410,1,0.0024390243902439024,51,0.0030581039755351682,0.0065359477124183,,,,,,nno,
+no,706,0,0.0,51,0.0,0.0,SVO,Prepositions,No dominant order,Adjective-Noun,Noun-Relative clause,nob nor nno nob,nor
+or,385,62,0.16103896103896104,26,0.17086834733893558,0.10402682443225901,SOV,,,,Correlative,ory ori ory spv,oya
+pa,795,118,0.14842767295597484,58,0.15372168284789645,0.14041803126298025,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Mixed,pan,pan
+pl,5026,44,0.008754476721050538,477,0.00954147892923403,0.009763429236975926,SVO,Prepositions,Noun-Genitive,Adjective-Noun,Noun-Relative clause,pol,pol
+pt,9434,20,0.00211999152003392,597,0.002284308557371288,0.002530602402320146,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,por,por
+ro,2584,7,0.0027089783281733747,237,0.0026001040041601664,0.0012453650428333972,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,ron,mol rom
+ru,6740,99,0.014688427299703264,643,0.015230383651436284,0.008117407995894006,SVO,Prepositions,Noun-Genitive,Adjective-Noun,Noun-Relative clause,rus,rus
+si,369,48,0.13008130081300814,45,0.13782051282051283,0.09192325093666089,SOV,Postpositions,,Adjective-Noun,Noun-Relative clause,sin,snh
+sk,2434,37,0.015201314708299097,180,0.014534883720930232,0.009807285154335746,,,,,,slk,
+sl,1444,11,0.007617728531855956,138,0.010027347310847767,0.011746296658987373,SVO,Prepositions,No dominant order,Adjective-Noun,,slv,slo
+sq,821,2,0.00243605359317905,78,0.004282655246252677,0.001748251748251748,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,sqi aae aat aln als,alb
+sr,2100,21,0.01,154,0.01021059349074665,0.007754797532062516,,,,,,srp,
+sv,3108,10,0.0032175032175032173,288,0.0035335689045936395,0.0015486867857557513,SVO,Prepositions,Genitive-Noun,Adjective-Noun,Noun-Relative clause,swe,swe swv
+sw,903,6,0.006644518272425249,63,0.008995502248875561,0.0016713581984517945,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,swh swa swc swh,swa
+ta,1752,208,0.1187214611872146,173,0.1247296322999279,0.13464985229629417,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Relative clause-Noun,tam,tml tsp
+te,842,146,0.17339667458432304,60,0.18646616541353384,0.19112296488529246,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Relative clause-Noun,tel,tel
+th,1374,6,0.004366812227074236,134,0.005479452054794521,0.0008391375454817705,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,tha,tha
+tr,4601,530,0.11519234948924147,453,0.12849944008958566,0.1127284272010629,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Relative clause-Noun,tur,tur
+uk,4266,49,0.011486169714017815,395,0.011772192173083042,0.011709209325248743,SVO,Prepositions,,Adjective-Noun,Noun-Relative clause,ukr,ukr
+ur,990,100,0.10101010101010101,68,0.12658227848101267,0.07133767728255855,SOV,Postpositions,Genitive-Noun,Adjective-Noun,Correlative,urd,urd
+uz,408,38,0.09313725490196079,44,0.11356466876971609,0.0725984458331637,SOV,,Genitive-Noun,Adjective-Noun,Relative clause-Noun,uzn uzb uzn uzs,uzb uzn
+vi,3185,22,0.006907378335949764,264,0.006688963210702341,0.00778603188543165,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,vie,vie
+zh,11325,873,0.07708609271523179,657,0.08972103543603921,0.08193062726010927,SVO,No dominant order,Genitive-Noun,Adjective-Noun,Relative clause-Noun,cmn zho cdo cjy cmn cnp cpx csp czh czo gan hak hnm hsn luh lzh mnp nan sjc wuu ,kug mnd
+zu,431,0,0.0,30,0.0,0.0,SVO,Prepositions,Noun-Genitive,Noun-Adjective,Noun-Relative clause,zul,zno zso zul

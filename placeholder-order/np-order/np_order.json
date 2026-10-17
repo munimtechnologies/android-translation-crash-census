@@ -1,0 +1,274 @@
+{
+ "version": "0.1.0",
+ "sources": {
+  "by_language": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/placeholder-order/by_language.csv",
+  "sil_iso": "https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3.tab",
+  "sil_macro": "https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3-macrolanguages.tab",
+  "wals_languages": "https://raw.githubusercontent.com/cldf-datasets/wals/master/cldf/languages.csv",
+  "wals_codes": "https://raw.githubusercontent.com/cldf-datasets/wals/master/cldf/codes.csv",
+  "wals_values": "https://raw.githubusercontent.com/cldf-datasets/wals/master/cldf/values.csv"
+ },
+ "sha256": {
+  "by_language": "9ddd8937f3eb05fa49b20465deaeb06812a2dc55dca1e8f63cdb6659cff67768",
+  "sil_iso": "7a5ac370703ea0897356a8c383f2147865caf479e41c1c7bd96cc4c5f65e6907",
+  "sil_macro": "fb01a86376d9c1abfc96d16be1b6dcffb4776a1f52fa22338d4979e9ffe1822f",
+  "wals_languages": "10e0742f158dadd4ef9484797ef7606a337306ee49a110a58c8e658826d3290e",
+  "wals_codes": "88c402d840ddeaf08545aea8395b593e9a1c44fe18353306a01dc839ea6a49b9",
+  "wals_values": "2d672f80dbe8cf1839061af0301650bde60c326bbb486835c93ab7304b5b06cd"
+ },
+ "min_valid": 300,
+ "min_repos": 10,
+ "languages": 75,
+ "mapping_checks": [
+  {
+   "lang": "ja",
+   "feature": "81A",
+   "want": "SOV",
+   "got": "SOV"
+  },
+  {
+   "lang": "ja",
+   "feature": "86A",
+   "want": "Genitive-Noun",
+   "got": "Genitive-Noun"
+  },
+  {
+   "lang": "fr",
+   "feature": "81A",
+   "want": "SVO",
+   "got": "SVO"
+  },
+  {
+   "lang": "fr",
+   "feature": "86A",
+   "want": "Noun-Genitive",
+   "got": "Noun-Genitive"
+  },
+  {
+   "lang": "tr",
+   "feature": "85A",
+   "want": "Postpositions",
+   "got": "Postpositions"
+  },
+  {
+   "lang": "es",
+   "feature": "85A",
+   "want": "Prepositions",
+   "got": "Prepositions"
+  }
+ ],
+ "mapping_ok": true,
+ "single_feature": {
+  "81A": {
+   "sides": [
+    22,
+    35
+   ],
+   "auc": 0.9922077922077922,
+   "auc_unique": 0.9948051948051948,
+   "auc_repo_mean": 0.987012987012987
+  },
+  "85A": {
+   "sides": [
+    20,
+    37
+   ],
+   "auc": 0.9824324324324324,
+   "auc_unique": 0.9932432432432432,
+   "auc_repo_mean": 0.9702702702702702
+  },
+  "86A": {
+   "sides": [
+    26,
+    28
+   ],
+   "auc": 0.9258241758241759,
+   "auc_unique": 0.9313186813186813,
+   "auc_repo_mean": 0.9189560439560439
+  },
+  "87A": {
+   "sides": [
+    40,
+    22
+   ],
+   "auc": 0.7647727272727273,
+   "auc_unique": 0.7863636363636364,
+   "auc_repo_mean": 0.7670454545454546
+  },
+  "90A": {
+   "sides": [
+    11,
+    41
+   ],
+   "auc": 0.9866962305986696,
+   "auc_unique": 0.9866962305986696,
+   "auc_repo_mean": 0.9933481152993349
+  }
+ },
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "genitive order (86A) separates reorder rates better than verb-final order (81A)",
+   "result": "FAILED",
+   "detail": {
+    "features": [
+     "86A",
+     "81A"
+    ],
+    "languages": 46,
+    "sides": [
+     [
+      24,
+      22
+     ],
+     [
+      18,
+      28
+     ]
+    ],
+    "auc": [
+     0.9242424242424242,
+     0.9880952380952381
+    ],
+    "diff_ci95": [
+     -0.1617903530703092,
+     0.007539100684262001
+    ],
+    "testable": true
+   }
+  },
+  {
+   "id": "P2",
+   "text": "adposition order (85A) separates reorder rates better than verb-final order (81A)",
+   "result": "FAILED",
+   "detail": {
+    "features": [
+     "85A",
+     "81A"
+    ],
+    "languages": 50,
+    "sides": [
+     [
+      18,
+      32
+     ],
+     [
+      17,
+      33
+     ]
+    ],
+    "auc": [
+     0.9826388888888888,
+     0.9946524064171123
+    ],
+    "diff_ci95": [
+     -0.04991087344028522,
+     0.009847803915515985
+    ],
+    "testable": true
+   }
+  },
+  {
+   "id": "P3",
+   "text": "among SOV languages, noun-genitive ones reorder less (median) than genitive-noun ones",
+   "result": "NOT TESTABLE",
+   "detail": {
+    "positive": [
+     "az",
+     "eu",
+     "hi",
+     "ja",
+     "ka",
+     "kn",
+     "ko",
+     "ml",
+     "mr",
+     "my",
+     "ne",
+     "pa",
+     "ta",
+     "te",
+     "tr",
+     "ur",
+     "uz"
+    ],
+    "negative": [
+     "fa"
+    ],
+    "median_positive": 0.14742268041237114,
+    "median_negative": 0.02865995352439969
+   }
+  },
+  {
+   "id": "P4",
+   "text": "among SVO/VSO/VOS languages other than zh and yue, genitive-noun ones reorder more (median) than noun-genitive ones",
+   "result": "HELD",
+   "detail": {
+    "positive": [
+     "da",
+     "et",
+     "fi",
+     "lt",
+     "lv",
+     "sv"
+    ],
+    "negative": [
+     "ca",
+     "cy",
+     "es",
+     "fil",
+     "fr",
+     "ga",
+     "he",
+     "id",
+     "is",
+     "it",
+     "kab",
+     "lo",
+     "pl",
+     "pt",
+     "ro",
+     "ru",
+     "sq",
+     "sw",
+     "th",
+     "vi",
+     "zu"
+    ],
+    "median_positive": 0.015616003518770974,
+    "median_negative": 0.004366812227074236
+   }
+  },
+  {
+   "id": "P5",
+   "text": "genitive order (86A) separates reorder rates better than adjective order (87A)",
+   "result": "HELD",
+   "detail": {
+    "features": [
+     "86A",
+     "87A"
+    ],
+    "languages": 53,
+    "sides": [
+     [
+      26,
+      27
+     ],
+     [
+      31,
+      22
+     ]
+    ],
+    "auc": [
+     0.9259259259259259,
+     0.8211143695014663
+    ],
+    "diff_ci95": [
+     0.008472906403940828,
+     0.22396825396825393
+    ],
+    "testable": true
+   }
+  }
+ ]
+}
