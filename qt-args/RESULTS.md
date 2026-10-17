@@ -41,6 +41,10 @@ What happened to the lost marker, among the 118 rows (a row can have two):
 | a look-alike percent sign (`％1` fullwidth, `٪` Arabic) | 3 |
 | nothing recognisable: the marker was deleted or mistyped (`&1`, `$3`, `1 %2`) | 67 |
 
+Counting all broken rows, not just these 118, the digit-first `1%` form turns up in 3.7% of
+finished right-to-left translations and 0.085% of the others, about 40 times as often (an
+exploratory count): see [RTL.md](RTL.md).
+
 ## Confirmed examples (translation file and calling code both read)
 
 | project, language | source | translation | code | what users see |
@@ -130,5 +134,6 @@ none that separates "value in the wrong place" from "value lost".
 - l10n-guard 0.7.0 (MV2's open checker, built and waiting for its test run) adds a Qt `.ts`
   check that names the wrong-place case ("`%2` shows the value of the source's `%1`") rather
   than only "missing marker". These results suggest a follow-up: report a pure renumbering
-  (the 11 rows above) as a warning, not an error.
+  (the 11 rows above) as a warning, not an error. That change is written as 0.7.1 and is
+  being tested together with 0.7.0.
 - Reports to the projects above, one per project, once MV2's GitHub account is visible again.
