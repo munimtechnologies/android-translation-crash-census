@@ -1,0 +1,2056 @@
+{
+ "version": "0.7.0",
+ "files": [
+  {
+   "repo": "bitcoin/bitcoin",
+   "path": "src/qt/locale/bitcoin_ar.ts",
+   "seen": "٪n in plural forms (49 lines)",
+   "commit": "924f4c4ac78b0cd3b917c694f42c0651a6f3003a",
+   "sha256": "ffbebb0383212e3fc4200407032013edc6a1da77d9c24b3b3bf6d5e4fe109a37",
+   "stats": {
+    "messages": 854,
+    "finished": 850,
+    "unfinished": 0,
+    "untranslated": 4,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-count/error": 66
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "BitcoinGUI: Processed %n block(s) of transaction history."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "BitcoinGUI: Processed %n block(s) of transaction history."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "BitcoinGUI: Processed %n block(s) of transaction history."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "BitcoinGUI: Processed %n block(s) of transaction history."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "BitcoinGUI: Processed %n block(s) of transaction history."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "BitcoinGUI: Processed %n block(s) of transaction history."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (of %n GB needed)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (of %n GB needed)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (of %n GB needed)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (of %n GB needed)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (of %n GB needed)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "Intro: (of %n GB needed)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n day(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n day(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n day(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n day(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n day(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n day(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n hour(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n hour(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n hour(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n hour(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n hour(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n hour(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n minute(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n minute(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n minute(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n minute(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n minute(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n minute(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n week(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n week(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n week(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n week(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n week(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n week(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "QObject: %n year(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "QObject: %n year(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "QObject: %n year(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "QObject: %n year(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "QObject: %n year(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "QObject: %n year(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "SendCoinsDialog: Estimated to begin confirmation within %n block..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "SendCoinsDialog: Estimated to begin confirmation within %n block..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "SendCoinsDialog: Estimated to begin confirmation within %n block..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "SendCoinsDialog: Estimated to begin confirmation within %n block..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "SendCoinsDialog: Estimated to begin confirmation within %n block..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "SendCoinsDialog: Estimated to begin confirmation within %n block..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "TransactionDesc: matures in %n more block(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "TransactionDesc: matures in %n more block(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "TransactionDesc: matures in %n more block(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "TransactionDesc: matures in %n more block(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "TransactionDesc: matures in %n more block(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 6: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "TransactionDesc: matures in %n more block(s)"
+    }
+   ]
+  },
+  {
+   "repo": "bitcoin/bitcoin",
+   "path": "src/qt/locale/bitcoin_zh_TW.ts",
+   "seen": "％n in a plural form (1 line)",
+   "commit": "924f4c4ac78b0cd3b917c694f42c0651a6f3003a",
+   "sha256": "bd06d6a98940b1b4b53c8ae0248b2642049665435e98cd4ef2255701f5ea0df1",
+   "stats": {
+    "messages": 1121,
+    "finished": 1117,
+    "unfinished": 0,
+    "untranslated": 4,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-count/error": 1
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    }
+   ]
+  },
+  {
+   "repo": "bitcoin/bitcoin",
+   "path": "src/qt/locale/bitcoin_zh-Hant.ts",
+   "seen": "％n in a plural form (1 line)",
+   "commit": "924f4c4ac78b0cd3b917c694f42c0651a6f3003a",
+   "sha256": "2aad881ecf862b93a8519b210c36748c2cad70f85a87aacd9f91993d7a69a78f",
+   "stats": {
+    "messages": 664,
+    "finished": 660,
+    "unfinished": 0,
+    "untranslated": 4,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-count/error": 1
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "Intro: (%n GB needed for full chain)"
+    }
+   ]
+  },
+  {
+   "repo": "bitcoin/bitcoin",
+   "path": "src/qt/locale/bitcoin_de.ts",
+   "seen": "control",
+   "commit": "924f4c4ac78b0cd3b917c694f42c0651a6f3003a",
+   "sha256": "257e669ca026807fac05f8e4ad93863ea7bfb49a3d0bcb3ac684d7288f65acdd",
+   "stats": {
+    "messages": 494,
+    "finished": 494,
+    "unfinished": 0,
+    "untranslated": 0,
+    "obsolete": 0
+   },
+   "by_code": {},
+   "issues": []
+  },
+  {
+   "repo": "keepassxreboot/keepassxc",
+   "path": "share/translations/keepassxc_ar.ts",
+   "seen": "٪n in plural forms (30 lines)",
+   "commit": "b05b0dd2e82aa1a9b6e3f1024c1647ec2ada2a54",
+   "sha256": "067bf9b5684b923f2aad9b2c787d3684017ea096ae15a525133ccfc48ab5a1a0",
+   "stats": {
+    "messages": 2501,
+    "finished": 2044,
+    "unfinished": 0,
+    "untranslated": 457,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-arg-missing/error": 44,
+    "qt-count/error": 38
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvImportWidget: [%n more message(s) skipped]"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvImportWidget: [%n more message(s) skipped]"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvImportWidget: [%n more message(s) skipped]"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvImportWidget: [%n more message(s) skipped]"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvImportWidget: [%n more message(s) skipped]"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvParserModel: %n row(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvParserModel: %n row(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvParserModel: %n row(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvParserModel: %n row(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "CsvParserModel: %n row(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed %n encryption key(s) from ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed %n encryption key(s) from ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed %n encryption key(s) from ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed %n encryption key(s) from ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed %n encryption key(s) from ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed permissions from %n entry(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed permissions from %n entry(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed permissions from %n entry(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed permissions from %n entry(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "DatabaseSettingsWidgetBrowser: Successfully removed permissions from %n entry(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetMaintenance: Purged %n icon(s) from the database."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetMaintenance: Purged %n icon(s) from the database."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetMaintenance: Purged %n icon(s) from the database."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetMaintenance: Purged %n icon(s) from the database."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "DatabaseSettingsWidgetMaintenance: Purged %n icon(s) from the database."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "DatabaseWidget: The database file \"%1\" was modified externally"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "DatabaseWidget: The database file \"%1\" was modified externally...."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "DatabaseWidget: The database file \"%1\" was modified externally...."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "EditWidgetIcons: %n icon(s) already exist in the database"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "EditWidgetIcons: %n icon(s) already exist in the database"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪ n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪ n' is shown as written",
+     "key": "EditWidgetIcons: %n icon(s) already exist in the database"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1 (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1 (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1 (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1 (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1 (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FdoSecrets::Service: %n Entry(s) was used by %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "MainWindow: %1 Entry(s) (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "MainWindow: %1 Entry(s) (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: Password for '%1' has been leaked %2 time(s)! (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown",
+     "key": "QObject: Password for '%1' has been leaked %2 time(s)! (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown",
+     "key": "QObject: Password for '%1' has been leaked %2 time(s)! (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: Password for '%1' has been leaked %2 time(s)! (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: Password for '%1' has been leaked %2 time(s)! (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)... (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)... (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)... (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)... (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)... (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: Password is used %1 time(s) (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: Password is used %1 time(s) (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Password expires in %1 day(s) (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Password expires in %1 day(s) (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Password expires in %1 day(s) (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Password expires in %1 day(s) (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Password expires in %1 day(s) (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: about %1 month(s) (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: about %1 month(s) (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: about %1 month(s) (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: about %1 month(s) (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: about %1 month(s) (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: %1 hour(s) (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: %1 hour(s) (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: %1 hour(s) (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: %1 hour(s) (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: %1 hour(s) (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)… (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)… (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)… (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)… (form 4)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Clearing the clipboard in %1 second(s)… (form 5)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: %1 s (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "QObject: %1 s (form 3)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "TotpDialog: Expires in <b>%n</b> second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "TotpDialog: Expires in <b>%n</b> second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 3: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "TotpDialog: Expires in <b>%n</b> second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 4: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "TotpDialog: Expires in <b>%n</b> second(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 5: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "TotpDialog: Expires in <b>%n</b> second(s)"
+    }
+   ]
+  },
+  {
+   "repo": "keepassxreboot/keepassxc",
+   "path": "share/translations/keepassxc_de.ts",
+   "seen": "control",
+   "commit": "b05b0dd2e82aa1a9b6e3f1024c1647ec2ada2a54",
+   "sha256": "3ae0769894a0c22d8ee1063985f68fe351ab3dd2d55d7c386677fd379fff6de2",
+   "stats": {
+    "messages": 2501,
+    "finished": 2500,
+    "unfinished": 1,
+    "untranslated": 0,
+    "obsolete": 0
+   },
+   "by_code": {},
+   "issues": []
+  },
+  {
+   "repo": "pbek/QOwnNotes",
+   "path": "src/languages/QOwnNotes_ur.ts",
+   "seen": "٪n (4 lines)",
+   "commit": "352ce1f4601aba5a0708afab0a7a36766ae3e85b",
+   "sha256": "c6f34edc5a82f60eafe1f3c3227c08f2e4190b4f7b4abaebb2b311633b3fa71d",
+   "stats": {
+    "messages": 2665,
+    "finished": 888,
+    "unfinished": 1774,
+    "untranslated": 3,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-arg-missing/error": 45,
+    "qt-count/error": 4
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "AttachmentDialog: Error while downloading: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "AttachmentDialog: Could not open temporary file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "AttachmentDialog: Could not store downloaded file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "DictionaryManagerDialog: Error while downloading: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "DictionaryManagerDialog: Could not store downloaded file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Unknown option: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "FakeVim: Argument must be positive: %1=%2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Mark \"%1\" not set."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "FakeVim: %1All"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FakeVim: %n lines moved."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FakeVim: %n lines moved."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: File \"%1\" exists (add ! to override)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Cannot open file \"%1\" for writing"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "FakeVim: Cannot open file \"%1\" for reading"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FakeVim: %n lines filtered."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 2: '٪n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '٪n' is shown as written",
+     "key": "FakeVim: %n lines filtered."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Cannot open file %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Not an editor command: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Invalid regular expression: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Pattern not found: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Search hit BOTTOM without match for: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Search hit TOP without match for: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown",
+     "key": "FakeVim: %n lines %1ed %2 time. (form 2)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown",
+     "key": "LocalTrashDialog: File will be restored to: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Bookmarked note position at slot %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Jumped to bookmark position at slot %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Downloading %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Reset font size to %1 pt"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Importing: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Note headline '%1' was copied to the clipboard"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Show %1 panel"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪ 1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Show %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "NavigationWidget: headline %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: Could not store note file: %1 - Error message: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Renamed note-file was removed: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: Could not remove renamed note-file: %1 - Error ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Could not read image file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Unknown action %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "SettingsDialog: The shortcut <strong>%1</strong> is already ass..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "UpdateDialog: Error while downloading: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "UpdateDialog: Could not open temporary file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '1%' looks like %1 written with the % after the number",
+     "key": "UpdateDialog: Could not store downloaded file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Could not find updater file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Updater script '%1' doesn't exist!"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Updater unzip executable '%1' doesn't exist!"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read; '٪2' looks like %2 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Could not copy updater script '%1' to '%2'!"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Couldn't find updater script: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Couldn't find unzip executable: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '٪1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateService: Network reply error: %1"
+    }
+   ]
+  },
+  {
+   "repo": "pbek/QOwnNotes",
+   "path": "src/languages/QOwnNotes_ja.ts",
+   "seen": "％n (6 lines)",
+   "commit": "352ce1f4601aba5a0708afab0a7a36766ae3e85b",
+   "sha256": "72cb064942692d712cbb86d3fb4b75fbe02d5a22e2bddecc0d25988047e04d40",
+   "stats": {
+    "messages": 2665,
+    "finished": 1091,
+    "unfinished": 1571,
+    "untranslated": 3,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-arg-missing/error": 37,
+    "qt-count/error": 6
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "FakeVim: Default: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "LocalTrashDialog: File will be restored to: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "LocalTrashDialog: <strong>%n</strong> note(s) were restored"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "LocalTrashDialog: <strong>%n</strong> note(s) were removed"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Importing: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Note headline '%1' was copied to the clipboard"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "MainWindow: Could not find menu action <code>%1</code>! Did..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "NoteSubFolderTree: Show notes from all note subfolders (%1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "NoteSubFolderTree: Show notes in note root folder (%1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QHotkey: Failed to register %1. Error: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QHotkey: Failed to unregister %1. Error: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3, %4 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read; '％4' looks like %4 written with a percent sign Qt does not read",
+     "key": "QObject: A change of the note path was detected. Would y... (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "QObject: A change of the note path was detected. Would y..."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "QObject: …and %n more note(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Panel <strong>%1</strong> is currently disabled..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: The command <code>%1</code> with arguments <cod..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Folder with name <b>%1</b> can't be created, be..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QObject: Folder with name <b>%1</b> can't be created, be..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QObject: Note was not found, create new note <strong>%1<..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QOwnNotesMarkdownTextEdit: Increased font size to %1 pt"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QOwnNotesMarkdownTextEdit: Decreased font size to %1 pt"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "QOwnNotesMarkdownTextEdit: Result for equation: %1 = %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "QOwnNotesMarkdownTextEdit: No suggestions for %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "ServerBookmarksImportDialog: <strong>%n bookmarks</strong> found on server"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "StoredAttachmentsDialog: Path: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "StoredAttachmentsDialog: The file <strong>%1</strong> doesn't exist, you..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "StoredAttachmentsDialog: File <strong>%1</strong> already exists, you ne..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "StoredAttachmentsDialog: Renaming of file <strong>%1</strong> failed!"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "StoredImagesDialog: Path: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "StoredImagesDialog: The file <strong>%1</strong> doesn't exist, you..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "StoredImagesDialog: Renaming of file <strong>%1</strong> failed!"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "TrashDialog: Deleting trashed note failed with status code: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: The temporary file '%1' could not be made execu..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Your old QOwnNotes executable '%1' could not be..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: Your old QOwnNotes executable '%1' could not be..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateDialog: The app file '%1' could not be made executable!..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "UpdateService: Network reply error: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "WebAppClientService: QOwnNotes is now connected via websocket to %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "WebAppClientService: QOwnNotes is now disconnected from websocket to %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "WebSocketServerService: QOwnNotes server listening on port %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "WebSocketServerService: Could not start QOwnNotes server on port %1!"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "WebSocketServerService: %1 connected to QOwnNotes server!"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "WebSocketServerService: %n bookmark(s) created"
+    }
+   ]
+  },
+  {
+   "repo": "OtterBrowser/otter-browser",
+   "path": "resources/translations/otter-browser_ja.ts",
+   "seen": "％n (3 lines)",
+   "commit": "c72f79215f9e507a2d36ce6d8937d93c0657e016",
+   "sha256": "b9c9fc535b6e48b8b0a9790496b1c11896b9369a1cbc20387d2c2ca8080f30a2",
+   "stats": {
+    "messages": 1925,
+    "finished": 1925,
+    "unfinished": 0,
+    "untranslated": 0,
+    "obsolete": 0
+   },
+   "by_code": {
+    "qt-arg-missing/error": 10,
+    "qt-count/error": 3
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "Otter::AddonsContentsWidget: You are about to irreversibly remove %n addon(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "Otter::PasswordsContentsWidget: You are about to delete %n password(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "Otter::QtWebKitPage: Request blocked by rule from profile %1:<br> %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "Otter::TabBarWidget: You are about to open %n URL(s)."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "Otter::WebContentsWidget: Failed to load requested web backend: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "actions: Set %1 for %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "actions: Reset %1 for %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "actions: Toggle %1 for %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "main: Unable to download update: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "main: Failed to open User Script file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "main: Request blocked by rule from profile %1: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "utils: The owner of <strong>%1</strong> has configured..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "utils: This web page at <strong>%1</strong> has been r..."
+    }
+   ]
+  },
+  {
+   "repo": "OpenOrienteering/mapper",
+   "path": "translations/OpenOrienteering_zh_CN.ts",
+   "seen": "％n (2 lines)",
+   "commit": "7c4455de4b766d9739a12d9fa287d0af65105674",
+   "sha256": "76e49fb4d4c25a03954d9b3ec613a9ebef9661c45d5364873af81c04666e0ff2",
+   "stats": {
+    "messages": 1657,
+    "finished": 1473,
+    "unfinished": 12,
+    "untranslated": 50,
+    "obsolete": 122
+   },
+   "by_code": {
+    "qt-arg-missing/error": 49,
+    "qt-arg-order/error": 2,
+    "qt-count-missing/warning": 2,
+    "qt-count/error": 2
+   },
+   "issues": [
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::CutoutTool: <b>%1</b>: Clip the selected objects."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::DrawPathTool: <b>%1+Drag</b>: Follow existing objects."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::Exporter: Could not write file: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-order",
+     "message": "QString::arg() fills the lowest-numbered marker first, so %3 shows the value of the source's %1",
+     "key": "OpenOrienteering::GeoreferencingDialog: The magnetic declination for the reference poin..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2, %3 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::GeoreferencingDialog: The magnetic declination for the reference poin..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::IconPropertiesWidget: Failed to save the image: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::ImportExport: Error while loading a symbol of type %1 at line..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3, %4 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read; '％4' looks like %4 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::ImportExport: Error while loading a symbol of type %1 at line..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::ImportExport: Malformed symbol ID '%1' at line %2 column %3."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3, %4 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read; '％4' looks like %4 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::ImportExport: Error while loading an object of type %1 at %2:..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::ImportExport: Cannot find a vector data export driver named '%1'"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::Importer: Warnings when loading template '%1': %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::Importer: Unsupported obsolete file format version. Pleas..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::KmzGroundOverlayExport: %1 already exists."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MainWindow: Cannot open file: %1 %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MainWindowController: Cannot export the map as \"%1\" because the forma..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MainWindowController: Cannot export the map as \"%1\" because saving as..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2, %3 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read; '％3' looks like %3 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MapEditorController: Cannot export the map as \"%1\" because saving as..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MapEditorController: Cannot save file %1: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MapEditorController: The scale of the imported data is 1:%1 which is..."
+    },
+    {
+     "level": "warning",
+     "code": "qt-count-missing",
+     "message": "no plural form shows the count (%n)",
+     "key": "OpenOrienteering::MapEditorController: Copied %n object(s)"
+    },
+    {
+     "level": "warning",
+     "code": "qt-count-missing",
+     "message": "no plural form shows the count (%n)",
+     "key": "OpenOrienteering::MapEditorController: Pasted %n object(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "OpenOrienteering::MapEditorController: Duplicated %n object(s)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MapPrinter: Processing separations of page %1..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::MapPrinter: Processing page %1..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: Encoding '%1' is not available. Check the setti..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In area symbol \"%1\", skipping a fill pattern."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In line symbol \"%1\", cannot represent cap/join ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In line symbol \"%1\", neglecting the dash grouping."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In line symbol \"%1\", the number of dashes in a ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In line symbol \"%1\", cannot export the borders ..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In text symbol %1: ignoring underlining"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In text symbol %1: ignoring kerning"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: In combined symbol %1: Unsupported subsymbol at..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OcdFileExport: Unable to export template: file type of \"%1\" is..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileExport: Failed to create dataset: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %2 is never shown; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileExport: Failed to create layer: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileExport: Failed to create feature in layer: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileImport: Unable to load layer %1."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileImport: Unable to load %n objects, reason: %1 (form 1)"
+    },
+    {
+     "level": "error",
+     "code": "qt-count",
+     "message": "form 1: '％n' is not %n; Qt replaces only an ASCII %n or %Ln with the count, so '％n' is shown as written",
+     "key": "OpenOrienteering::OgrFileImport: Unable to load %n objects, reason: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileImport: Can't determine the coordinate transformation: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::OgrFileImport: Cannot use this spatial reference: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::PrintWidget: Failed to save the image: %1"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::SymbolReplacementDialog: Cannot save file: %1 %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::TemplateListWidget: Scale by nominal map scale ratio (%1 %)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::TemplateListWidget: Cannot open template %1: %2"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::TemplateListWidget: Scale by current template scaling (%1 %)"
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::Util: Internal error detected! Please report this iss..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％1' looks like %1 written with a percent sign Qt does not read; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::XMLFileImporter: Unsupported or invalid georeferencing specifica..."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1 is never shown; '％1' looks like %1 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::XMLFileImporter: Could not set knockout property of color '%1'."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-order",
+     "message": "QString::arg() fills the lowest-numbered marker first, so %3 shows the value of the source's %2",
+     "key": "OpenOrienteering::XMLFileImporter: Spot color %1 not found while processing %2 (%3)."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %3 is never shown",
+     "key": "OpenOrienteering::XMLFileImporter: Spot color %1 not found while processing %2 (%3)."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::XMLFileImporter: Expected %1 symbols, found %2."
+    },
+    {
+     "level": "error",
+     "code": "qt-arg-missing",
+     "message": "the value of the source's %1, %2 is never shown; '％2' looks like %2 written with a percent sign Qt does not read",
+     "key": "OpenOrienteering::XMLFileImporter: Expected %1 map parts, found %2."
+    }
+   ]
+  }
+ ]
+}
