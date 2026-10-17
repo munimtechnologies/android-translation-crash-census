@@ -86,8 +86,10 @@ Music forks (PureMusic, EffinMusic, Lost), and others in the `％s` list.
   discusses U+066A as the percent sign used with Arabic-Indic digits. We found
   no write-up, issue or check about look-alike percent signs in
   Android/Java format strings, and no count of them.
-- Not tested: what Android Lint (StringFormatCount, StringFormatMatches) reports
-  for these strings.
+- Android Lint, read in source (not run): see [LINT.md](LINT.md). It flags some
+  `<string>` cases under generic messages when the full `lint` task runs, never
+  names the character, doesn't check plurals or mixed strings, and is skipped
+  by the release-build check.
 - Not claimed: how these strings were made. Some files read like machine
   translation, but we have no evidence of which tool, if any, wrote them.
 
