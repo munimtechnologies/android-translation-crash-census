@@ -1,0 +1,170 @@
+{
+ "meta": {
+  "slint_blind_version": "0.1.0",
+  "slint_version": "0.2.1",
+  "rows_commit": "50cd0ac6baf1e8f31baa05f221eaf803e6f39d63",
+  "rows": 366,
+  "po_errors": [],
+  "xliff_entries": 366,
+  "xliff_drift_findings": 0,
+  "xliff_error": "",
+  "android_extract_entries": 0,
+  "android": {
+   "res-directory": {
+    "findings": 0,
+    "strict_rc": 0,
+    "error": ""
+   },
+   "values-es-strings.xml": {
+    "findings": 0,
+    "strict_rc": 0,
+    "error": ""
+   }
+  },
+  "api_flagged": 323,
+  "po_agrees_with_api": 366
+ },
+ "groups": {
+  "all-crash": {
+   "rows": 366,
+   "repos": 98,
+   "slint_api": {
+    "flagged": 323,
+    "unflagged": 43
+   },
+   "slint_po": {
+    "flagged": 323,
+    "unflagged": 43
+   },
+   "slint_only": 0,
+   "none_of_three": 12,
+   "none_of_four": 12,
+   "by_kind": {
+    "argument-not-passed": {
+     "rows": 48,
+     "slint_flagged": 43,
+     "pofilter_flagged": 43
+    },
+    "conversion-invalid": {
+     "rows": 10,
+     "slint_flagged": 10,
+     "pofilter_flagged": 10
+    },
+    "conversion-missing": {
+     "rows": 66,
+     "slint_flagged": 63,
+     "pofilter_flagged": 66
+    },
+    "conversion-native": {
+     "rows": 28,
+     "slint_flagged": 27,
+     "pofilter_flagged": 28
+    },
+    "flag-mismatch": {
+     "rows": 52,
+     "slint_flagged": 47,
+     "pofilter_flagged": 42
+    },
+    "malformed-index": {
+     "rows": 65,
+     "slint_flagged": 62,
+     "pofilter_flagged": 65
+    },
+    "stray-percent": {
+     "rows": 82,
+     "slint_flagged": 62,
+     "pofilter_flagged": 55
+    },
+    "wrong-type": {
+     "rows": 15,
+     "slint_flagged": 9,
+     "pofilter_flagged": 13
+    }
+   }
+  },
+  "formatted-crash": {
+   "rows": 237,
+   "repos": 66,
+   "slint_api": {
+    "flagged": 206,
+    "unflagged": 31
+   },
+   "slint_po": {
+    "flagged": 206,
+    "unflagged": 31
+   },
+   "slint_only": 0,
+   "none_of_three": 9,
+   "none_of_four": 9,
+   "by_kind": {
+    "argument-not-passed": {
+     "rows": 27,
+     "slint_flagged": 22,
+     "pofilter_flagged": 22
+    },
+    "conversion-invalid": {
+     "rows": 7,
+     "slint_flagged": 7,
+     "pofilter_flagged": 7
+    },
+    "conversion-missing": {
+     "rows": 43,
+     "slint_flagged": 40,
+     "pofilter_flagged": 43
+    },
+    "conversion-native": {
+     "rows": 26,
+     "slint_flagged": 25,
+     "pofilter_flagged": 26
+    },
+    "flag-mismatch": {
+     "rows": 34,
+     "slint_flagged": 30,
+     "pofilter_flagged": 30
+    },
+    "malformed-index": {
+     "rows": 50,
+     "slint_flagged": 49,
+     "pofilter_flagged": 50
+    },
+    "stray-percent": {
+     "rows": 45,
+     "slint_flagged": 29,
+     "pofilter_flagged": 32
+    },
+    "wrong-type": {
+     "rows": 5,
+     "slint_flagged": 4,
+     "pofilter_flagged": 5
+    }
+   }
+  }
+ },
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "android res/ tree and strings.xml named directly: no findings; --strict exits 0",
+   "held": true
+  },
+  {
+   "id": "P2",
+   "text": "XLIFF with <source> and <target>: 0 drift findings",
+   "held": true
+  },
+  {
+   "id": "P3",
+   "text": "the 12 rows no other check sees: 0 flagged",
+   "held": true
+  },
+  {
+   "id": "P4",
+   "text": "fewer than pofilter's 322 of 366 flagged (api)",
+   "held": false
+  },
+  {
+   "id": "P5",
+   "text": "po path agrees with api path on at least 360 of 366 rows",
+   "held": true
+  }
+ ]
+}
