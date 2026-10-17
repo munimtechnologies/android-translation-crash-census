@@ -1,0 +1,120 @@
+repo,commit,file,lang,group,category,reversed_first,hints,context,source,translation
+GoldenCheetah/GoldenCheetah,59a80c92a538d95bb59168fd874880826a427755,src/Resources/translations/gc_zh-cn.ts,zh,other,dropped,1,reversed:1%,MeasuresDownload,%1 Measures,1% 参数
+GoldenCheetah/GoldenCheetah,59a80c92a538d95bb59168fd874880826a427755,src/Resources/translations/gc_zh-cn.ts,zh,other,dropped,1,reversed:1%,MeasuresDownload,%1 Measures download,1%参数下载
+Komet/MediaElch,e60309e6b4917db30001a261ff91ae38ad465a0e,data/i18n/MediaElch_nl_NL.ts,nl,other,dropped,1,reversed:2%,TvShowMultiScrapeDialog,Scraping of %1 and %2 has finished.,Scrapen van %1 en 2% is klaar.
+fooyin/fooyin,55619d9278e174fa50b64003b2134597c055faeb,data/translations/fooyin_zh_CN.ts,zh,other,dropped,1,reversed:1%,Fooyin::ElapsedProgressDialog,Time elapsed: %1,已用时间：1%
+fooyin/fooyin,55619d9278e174fa50b64003b2134597c055faeb,data/translations/fooyin_zh_Hant.ts,zh,other,dropped,1,reversed:1%,QObject,Volume must be between 0 and 100: %1,音量必須介於 0 ~ 100 之間： 1%
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_nb_NO.ts,nb,other,dropped,1,reversed:1%,ActivitiesTab,Failed to get actvities information. Please %1,Mislyktes i å få aktivitets-informasjon. Vennligst 1%
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_pt_BR.ts,pt,other,dropped,1,reversed:1%,DownloadRepoDialog,Your organization disables putting a library outside %1 folder.,Sua organização desabilitou colocando uma biblioteca fora da 1% pasta.
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_es.ts,es,other,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop with the current play position as loop end,Crea un bucle de 1%-beat con la posición de reproducción actual como final del bucle
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_es_419.ts,es,other,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop with the current play position as loop end,Crea un bucle de 1%-beat con la posición de reproducción actual como final del bucle
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_es_AR.ts,es,other,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop with the current play position as loop end,Crea un bucle de 1%-beat con la posición de reproducción actual como final del bucle
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_es_CO.ts,es,other,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop with the current play position as loop end,Crea un bucle de 1%-beat con la posición de reproducción actual como final del bucle
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_es_ES.ts,es,other,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop with the current play position as loop end,Crea un bucle de 1%-beat con la posición de reproducción actual como final del bucle
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_es_MX.ts,es,other,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop with the current play position as loop end,Crea un bucle de 1%-beat con la posición de reproducción actual como final del bucle
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_it.ts,it,other,dropped,1,reversed:1%,SamplerBank,Could not open the sampler bank file '%1'.,Impossibile aprire il file del banco campioni 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_it.ts,it,other,dropped,1,reversed:1%,SamplerBank,Could not write the sampler bank to '%1'.,Impossibile scrivere il banco dei campioni su '1%'.
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_zh.ts,zh,other,wrong_value,1,reversed:1%,Library,"Could not add <b>%1</b> to your library.
+
+%2","无法添加1%11添加到您的库中。
+
+%2"
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_zh_CN.ts,zh,other,wrong_value,1,reversed:1%,Library,"Could not add <b>%1</b> to your library.
+
+%2","无法添加1%11添加到您的库中。
+
+%2"
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_zh_HK.ts,zh,other,wrong_value,1,reversed:1%,Library,"Could not add <b>%1</b> to your library.
+
+%2","无法添加1%11添加到您的库中。
+
+%2"
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_zh_TW.ts,zh,other,wrong_value,1,reversed:1%,Library,"Could not add <b>%1</b> to your library.
+
+%2","无法添加1%11添加到您的库中。
+
+%2"
+mpc-qt/mpc-qt,013fdd11a46097266030369603c18202ba39c751,translations/mpc-qt_ja.ts,ja,other,dropped,1,reversed:1%,StatusTime,Remaining: %1,残り : 1%
+mpc-qt/mpc-qt,013fdd11a46097266030369603c18202ba39c751,translations/mpc-qt_ja.ts,ja,other,dropped,1,reversed:1%,About,Running on %1,1% で実行中
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_da.ts,da,other,dropped,1,reversed:1%,FileManager,Vector Layer %1,Vektor lag 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ro.ts,ro,other,dropped,1,reversed:1%,AboutDialog,Version: %1,Versiune: 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_sl.ts,sl,other,dropped,1,reversed:1%,AboutDialog,Version: %1,Različica: 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_yue.ts,yue,other,dropped,1,reversed:1%,ActionCommands,Are you sure you want to delete layer: %1? This cannot be undone.,您确定要删除图层：1%吗？这无法被撤回。
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_yue.ts,yue,other,dropped,1,reversed:1%;reversed:2%,ActionCommands,"You currently have a total of %1 sound clips. Due to current limitations, you will be unable to export any animation exceeding %2 sound clips. We recommend splitting up larger projects into multiple smaller project to stay within this limit.",当前动画含有1%的音频。基于当前限制，暂时无法导出含有超过2%音频的动画。建议将较大的项目分成多个较小的项目，从而不受限制影响。
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_zh_CN.ts,zh,other,dropped,1,reversed:1%,ActionCommands,Are you sure you want to delete layer: %1? This cannot be undone.,您确定要删除图层：1%吗？这无法被撤回。
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_zh_CN.ts,zh,other,dropped,1,reversed:1%;reversed:2%,ActionCommands,"You currently have a total of %1 sound clips. Due to current limitations, you will be unable to export any animation exceeding %2 sound clips. We recommend splitting up larger projects into multiple smaller project to stay within this limit.",当前动画含有1%的音频。基于当前限制，暂时无法导出含有超过2%音频的动画。建议将较大的项目分成多个较小的项目，从而不受限制影响。
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_zh_TW.ts,zh,other,dropped,1,reversed:1%,ActionCommands,Are you sure you want to delete layer: %1? This cannot be undone.,您确定要删除图层：1%吗？这无法被撤回。
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_zh_TW.ts,zh,other,dropped,1,reversed:1%;reversed:2%,ActionCommands,"You currently have a total of %1 sound clips. Due to current limitations, you will be unable to export any animation exceeding %2 sound clips. We recommend splitting up larger projects into multiple smaller project to stay within this limit.",当前动画含有1%的音频。基于当前限制，暂时无法导出含有超过2%音频的动画。建议将较大的项目分成多个较小的项目，从而不受限制影响。
+qelectrotech/qelectrotech-source-mirror,732017b01595a82522d4b125f01ae63b60f92f6c,lang/qet_cs.ts,cs,other,wrong_value,1,reversed:1%,QETDiagramEditor,Project %1 registered in the directory: %2.,Projekt 1% uložený v adresáři: %2.
+qelectrotech/qelectrotech-source-mirror,732017b01595a82522d4b125f01ae63b60f92f6c,lang/qet_el.ts,el,other,dropped,1,reversed:1%,QETDiagramEditor,It appears the %1 file which you are trying to open does not exist or does not exist anymore.,Φαίνεται ότι το αρχείο 1% που προσπαθείτε να ανοίξετε δεν υπάρχει.
+texstudio-org/texstudio,ab92c06be27d85be956cd182f447a428ba920634,translation/texstudio_es.ts,es,other,dropped,1,reversed:1%,AIChatAssistant,Values between 0 and %1,Valores entre el 0 y 1%
+texstudio-org/texstudio,ab92c06be27d85be956cd182f447a428ba920634,translation/texstudio_pl.ts,pl,other,dropped,1,reversed:1%,AIChatAssistant,Values between 0 and %1,Wartości pomiędzy 0% - 1%
+tomahawk-player/tomahawk,ad59c9acde5bdc6dfc715e09764fd89b476d3d1d,lang/tomahawk_el.ts,el,other,dropped,1,reversed:1%,Tomahawk::RemoteCollection,Collection of %1,Συλλογή από 1%
+tomahawk-player/tomahawk,ad59c9acde5bdc6dfc715e09764fd89b476d3d1d,lang/tomahawk_es.ts,es,other,dropped,1,reversed:1%,Tomahawk::EchonestControl,with a %1 distribution,con una distribución de 1%
+tomahawk-player/tomahawk,ad59c9acde5bdc6dfc715e09764fd89b476d3d1d,lang/tomahawk_pt_PT.ts,pt,other,dropped,1,reversed:2%,Tomahawk::EchonestControl,preset to %1 collection of %2 genre songs,Predefinição para %1 coleção de 2% tipos de música
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_hr.ts,hr,other,dropped,1,reversed:1%,ComputerSelectPanel,Could not write the computer and users list to %1! Please check the file access permissions.,Nisam mogao upisati računalo i popis korisnika na 1%! Molimo provjerite dozvole za pristup datotekama.
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_hr.ts,hr,other,wrong_value,1,reversed:1%,PowerControlFeaturePlugin,"The computer will be powered down in %1 minutes, %2 seconds.
+
+Please save your work and close all programs.","Računalo će biti isključeno za 1% minutu, %2 seconds.
+
+Molimo spremite svoj rad i zatvorite sve programe."
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_hu.ts,hu,other,dropped,1,reversed:1%,LdapConfigurationPage,"Could not find a group with the name ""%1"". Please check the group name or the group tree parameter.","""1%"" nevű csoport nem található. Kérem, ellenőrizd a csoport nevét vagy a csoportfa paramétert."
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_hu.ts,hu,other,wrong_value,1,reversed:2%,ComputerControlServer,Veyon Service %1 at %2:%3,%1 Veyon szolgáltatás: 2%:%3
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_it.ts,it,other,dropped,1,reversed:3%,LdapConfigurationPage,"Could not query any %1. Please check the parameter(s) %2 and enter the name of an existing object.
+
+%3","Impossibile interrogare alcun%1. Controlla i parametro(i)%2 e inserisci il nome di un oggetto esistente.
+
+3%"
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_it.ts,it,other,dropped,1,reversed:3%,LdapConfigurationPage,"Could not query any entries in configured %1. Please check the parameter ""%2"".
+
+%3","Impossibile interrogare le voci configurate %1. Si prega di controllare il parametro ""%2"".
+
+3%"
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_lv.ts,lv,other,dropped,1,reversed:1%,DesktopServicesFeaturePlugin,"Open website ""%1""","Atvērt web adresi ""1%"""
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_nl.ts,nl,other,dropped,1,reversed:1%;reversed:2%;reversed:3%,ComputerControlServer,Veyon Service %1 at %2:%3,Veyon Service 1% bij 2%:3%
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_pt_BR.ts,pt,other,dropped,1,reversed:1%,ComputerManager,%1 days,1% dias
+MatsuriDayo/nekoray,adef6cd4af7dffc77235c524086f3dc4100d8457,translations/fa_IR.ts,fa,rtl,dropped,1,reversed:1%,DialogEditProfile,Network Settings (%1),تنظیمات شبکه (1%)
+OpenBoard-org/OpenBoard,30d120cec100e97e6675d1b9be0c67eafb4c502b,resources/i18n/OpenBoard_iw.ts,he,rtl,dropped,1,reversed:1%,UBDocumentController,Importing file %1...,מייבא קובץ 1%...
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_he_IL.ts,he,rtl,dropped,1,reversed:1%,UninstallHelperDialog,Do you want to remove the %1 account information?,האם אתה רוצה להסיר את פרטי חשבון של 1%?
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_he_IL.ts,he,rtl,dropped,1,reversed:1%,DownloadRepoDialog,"Sync folder ""%1""","סנכרון תיקיית ""1%"""
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_he_IL.ts,he,rtl,dropped,1,reversed:1%,DownloadRepoDialog,"Sync library ""%1""","סנכרון ספריית ""1%"""
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_he_IL.ts,he,rtl,dropped,1,reversed:1%,UninstallHelperDialog,Uninstall %1,הסרת התקנה של 1%
+haiwen/seafile-client,7b5a95acfbd1f7f1a9519341ba1b095fd974682e,i18n/seafile_he_IL.ts,he,rtl,dropped,1,reversed:1%,Configurator,failed to read %1,נכשל בקריאה 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_fa.ts,fa,rtl,dropped,1,reversed:1%,ControlPickerMenu,Microphone %1,میکروفون 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Auxiliary %1,מסייע 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Create %1-beat loop,יצירת לולאה לפי קצב 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Create temporary %1-beat loop roll,גליל יצירת זמני מקצב לולאה 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Effect Rack %1,אפקט משונן 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Microphone %1,מיקרופון 1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Parameter %1,פרמטר1%
+mixxxdj/mixxx,44dc9ed7e8640b1d69b2d63f847d940b5ad688b1,res/translations/mixxx_he.ts,he,rtl,dropped,1,reversed:1%,ControlPickerMenu,Preview Deck %1,תצוגה מקדימה של לוח 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%,ActionCommands,%1 (copy),1% (نسخ) 
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%,CameraContextMenu,Align horizontally to frame %1,قم بالمحاذاة أفقيا إلى الإطار رقم 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%,CameraContextMenu,Align vertically to frame %1,قم بالمحاذاة عموديا إلى الإطار رقم 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%;reversed:2%,CameraContextMenu,Easing: frame %1 to %2,جار المسح: من الإطار رقم 1% إلى 2%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%,CameraContextMenu,Hold to keyframe %1,إعقد حتى الإطار قم 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%,CheckUpdatesDialog,Version %1,الإصدار رقم 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%,AboutDialog,Version: %1,الاصدار: 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_ar.ts,ar,rtl,dropped,1,reversed:1%;reversed:2%,ActionCommands,"You currently have a total of %1 sound clips. Due to current limitations, you will be unable to export any animation exceeding %2 sound clips. We recommend splitting up larger projects into multiple smaller project to stay within this limit.",أنت لديك حاليا ما مجموعه 1% من المقاطع الصوتية. نسبة إلى بعض القيود، لن تكون قادرا على تصدير أي رسوم متحركة تحتوي على ما يتجاوز عدده 2% من المقاطع الصوتية. نحن نقترح تقسيم المشاريع الكبيرة إلى مشاريع صغيرة عديدة للبقاء ضمن هذا الحد. 
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ActionCommands,%1 (copy),(رونوشت) 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Brush Tool (%1),ابزار قلمو (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Eraser Tool (%1),ابزار پاک کن (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Eraser Tool (%1): Erase,ابزار پاک کن (1%): پاک کن
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Eyedropper Tool (%1),ابزار قطره چکان (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,Editor,"File not found at path ""%1"". Please check the image is present at the specified location and try again.","پرونده در مسیر ""1%"" پیدا نشد. لطفا بررسی کنید ببینید آیا نگاره در مسیر مورد نظر وجود دارد ؟ سپس دوباره تلاش کنید."
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Hand Tool (%1),ابزار دست (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,LayerOpacityDialog,Layer: %1,لایه: 1%
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Move Tool (%1),ابزار جابجای (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Paint Bucket Tool (%1),ابزار سطل نقاشی (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Pencil Tool (%1),ابزار مداد (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Select Tool (%1),ابزار برگزیدن (1%)
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,ToolBoxWidget,Select Tool (%1): Select an object,ابزار گزینش (1%) : یک شی برگزینید
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,FileManager,"The path (""%1"") is not writable.",این مسیر ('1%') قابل نوشتن نیست.
+pencil2d/pencil,0ceb25465c5dce776d3a9d37be787354dadc218d,translations/pencil_fa.ts,fa,rtl,dropped,1,reversed:1%,CheckUpdatesDialog,Version %1,نسخه 1%
+ra3xdh/qucs_s,46e47e8fabe852a9d6aab41d8a612ff5a78370c1,translations/qucs_ar.ts,ar,rtl,dropped,1,reversed:1%,SpiceDialog,"Converting SPICE file ""%1"".","تحويل ملف  SPICE ""1%""."
+ra3xdh/qucs_s,46e47e8fabe852a9d6aab41d8a612ff5a78370c1,translations/qucs_ar.ts,ar,rtl,dropped,1,reversed:1%,SpiceFile,"Converting SPICE file ""%1"".","تحويل ملف  SPICE ""1%""."
+veyon/veyon,1cebf45f6c1af8bab2c96278a58db1cf2f56685d,translations/veyon_ar.ts,ar,rtl,dropped,1,reversed:1%;reversed:2%;spaced:% 2;reversed:3%,LdapConfigurationPage,"%1 %2 have been queried successfully:
+
+%3","تم الاستعلام عن 1% 2% بنجاح:
+
+3%"
