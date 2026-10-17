@@ -1,0 +1,158 @@
+{
+ "census_version": "0.4.0",
+ "l10n_guard_version": "0.5.1",
+ "plural_rule": "getQuantityString passes every quantity the same arguments, so each translated plural form is checked against the source form that reads the most of them, with each argument's type taken from any source form that shows it",
+ "index_url": "https://f-droid.org/repo/index-v2.json",
+ "apps_in_index": 4667,
+ "apps_without_git_source": 7,
+ "repos": 4476,
+ "jvm": "openjdk version \"21.0.12.1\" 2026-08-18",
+ "jvm_selfcheck": [
+  {
+   "source": "%1$d%% done",
+   "translation": "%1$d % terminé",
+   "expected": "crash",
+   "got": "crash"
+  },
+  {
+   "source": "Hello %s",
+   "translation": "Hallo %d",
+   "expected": "crash-if-text",
+   "got": "crash-if-text"
+  },
+  {
+   "source": "%d files",
+   "translation": "%d fichiers",
+   "expected": "ok",
+   "got": "ok"
+  },
+  {
+   "source": "%1$s of %2$s",
+   "translation": "%1$s de %3$s",
+   "expected": "crash",
+   "got": "crash"
+  },
+  {
+   "source": "Saved to %s",
+   "translation": "Téléchargé à 50% dans %s",
+   "expected": "crash",
+   "got": "crash"
+  },
+  {
+   "source": "%1$d min",
+   "translation": "%1$tm min",
+   "expected": "crash-if-int",
+   "got": "crash-if-int"
+  },
+  {
+   "source": "Row %d",
+   "translation": "Rangée %c",
+   "expected": "crash-if-long",
+   "got": "crash-if-long"
+  }
+ ],
+ "generated_at": "2026-10-17T01:22:50Z",
+ "repos_attempted": 4476,
+ "repos_not_reached": 0,
+ "partial": false,
+ "elapsed_minutes": 11.8,
+ "repos_by_status": {
+  "ok": 3752,
+  "no-android-strings": 634,
+  "error": 88,
+  "timeout": 2
+ },
+ "repos_with_android_strings": 3752,
+ "repos_with_formatted_translations": 49,
+ "formatted_translation_pairs": 1394,
+ "verdicts": {
+  "ok": 1384,
+  "crash-if-text": 4,
+  "crash": 6
+ },
+ "repos_with_crash": 2,
+ "repos_with_crash_updated_within_365_days": 0,
+ "crash_by_code_use": {
+  "formatted": 0,
+  "referenced": 2,
+  "unreferenced": 4,
+  "unknown": 0
+ },
+ "repos_with_formatted_crash": 0,
+ "crash_exceptions": {
+  "UnknownFormatConversionException": 6
+ },
+ "crash_locales_top": {
+  "ar": 2,
+  "ml": 2,
+  "zh": 2
+ },
+ "by_platform": {
+  "weblate": {
+   "repos": 11,
+   "pairs": 715,
+   "crash": 4,
+   "crash_formatted": 0,
+   "repos_with_crash": 1,
+   "repos_with_formatted_crash": 0,
+   "crash_per_100k": 559.4
+  },
+  "none named": {
+   "repos": 34,
+   "pairs": 507,
+   "crash": 2,
+   "crash_formatted": 0,
+   "repos_with_crash": 1,
+   "repos_with_formatted_crash": 0,
+   "crash_per_100k": 394.5
+  },
+  "crowdin": {
+   "repos": 1,
+   "pairs": 89,
+   "crash": 0,
+   "crash_formatted": 0,
+   "repos_with_crash": 0,
+   "repos_with_formatted_crash": 0,
+   "crash_per_100k": 0.0
+  },
+  "transifex": {
+   "repos": 2,
+   "pairs": 73,
+   "crash": 0,
+   "crash_formatted": 0,
+   "repos_with_crash": 0,
+   "repos_with_formatted_crash": 0,
+   "crash_per_100k": 0.0
+  },
+  "poeditor": {
+   "repos": 1,
+   "pairs": 10,
+   "crash": 0,
+   "crash_formatted": 0,
+   "repos_with_crash": 0,
+   "repos_with_formatted_crash": 0,
+   "crash_per_100k": 0.0
+  }
+ },
+ "static_vs_jvm": {
+  "crash/crash": 6,
+  "maybe/crash-if-text": 4,
+  "ok/ok": 1384
+ },
+ "static_crash_precision": 1.0,
+ "static_crash_recall": 1.0,
+ "top_repos_by_crashes": [
+  {
+   "crashes": 4,
+   "formatted": 0,
+   "repo": "https://github.com/LibreShift/red-moon",
+   "app": "Red Moon"
+  },
+  {
+   "crashes": 2,
+   "formatted": 0,
+   "repo": "https://github.com/w32blaster/helsinki-timetables",
+   "app": "Helsinki Timetables"
+  }
+ ]
+}

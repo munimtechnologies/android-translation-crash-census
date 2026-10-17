@@ -1,0 +1,47 @@
+{
+ "names_marked": 3564,
+ "repos_with_marked": 137,
+ "strings_with_pairs": 192,
+ "repos_with_pairs": 49,
+ "version": "0.1.0",
+ "census_version": "0.4.0",
+ "census_commit": "7d7ee702b04c2bf25fa713e2d7c292f3879ef654",
+ "pairs": 1394,
+ "verdicts": {
+  "ok": 1384,
+  "crash-if-text": 4,
+  "crash": 6
+ },
+ "crash_by_code_use": {
+  "formatted": 0,
+  "referenced": 2,
+  "unreferenced": 4,
+  "unknown": 0
+ },
+ "repos_attempted": 4476,
+ "repos_not_reached": 0,
+ "known_answer": {
+  "repo": "w32blaster/helsinki-timetables",
+  "locale": "zh",
+  "key": "header_times",
+  "verdict": "crash",
+  "held": true
+ },
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "at least 2,000 translations of formatted=\"false\" strings are checked: 1394",
+   "held": false
+  },
+  {
+   "id": "P2",
+   "text": "their crash rate is at least twice census 0.4.0's (28.4 per 100,000): 430.4 per 100,000 (6 crash)",
+   "held": true
+  },
+  {
+   "id": "P3",
+   "text": "at least one crash in a string the code formats, outside Helsinki Timetables: 0",
+   "held": false
+  }
+ ]
+}
