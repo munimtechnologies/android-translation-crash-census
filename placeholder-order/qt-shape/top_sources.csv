@@ -1,0 +1,850 @@
+where,source,shape,translations,reordered,repos
+SOV,Cannot %1 device %2,other,38,9,1
+SOV,Syncing %1 of %2,of,12,8,1
+SOV,%1 of %2,of,16,6,4
+SOV,%1 processed out of %2 selected,other,6,5,1
+SOV,"Enter username and password for ""%1"" at %2.",adposition,6,5,1
+SOV,Multiple import source path to %1 in %2,adposition,5,5,1
+SOV,%1 on %2,adposition,44,4,1
+SOV,%1 in %2,adposition,8,4,1
+SOV,"<qt>Enter username and password for ""%1"" at %2</qt>",adposition,6,4,1
+SOV,"Look up ""%1"" in %2",adposition,6,4,1
+SOV,Results (showing <i>%1</i> out of <i>%2</i>):,of,6,4,1
+SOV,Syncing %1 of %2 (A few seconds left),of,6,4,1
+SOV,Syncing file %1 of %2,of,6,4,1
+SOV,%1 of %2 in use,of,5,4,1
+SOV,-- Using script %1 to read %2,other,5,4,1
+SOV,-- Using script %1 to write %2,other,5,4,1
+SOV,Conflicting export target path %1 in %2,adposition,5,4,1
+SOV,Successfully removed attachment %1 from entry %2.,other,5,4,1
+SOV,SymmetricCipher::init: Invalid IV size of %1 for %2.,adposition,5,4,1
+SOV,Patched %1 of %2 selected instructions.,of,4,4,1
+SOV,requesting alias(%1) for unknown command(%2): ignored,other,8,3,1
+SOV,History size: %1 entries out of maximum %2,other,6,3,1
+SOV,Incorrect update info received for %1 out of %2 plugins.,of,6,3,1
+SOV,"Look up ""%1"" in %2 in &New Tab",adposition,6,3,1
+SOV,Server configuration error: %1 at %2.,adposition,6,3,1
+SOV,%1 of %2 - Stopped,of,5,3,1
+SOV,Cannot create tuplet with ratio %1 for duration %2,other,5,3,1
+SOV,%1 muted and deafened by %2.,other,4,3,1
+SOV,%1 muted by %2.,other,4,3,1
+SOV,Attachment %1 already exists for entry %2.,other,4,3,1
+SOV,Fritzing caught an exception from %1 in event %2,other,4,3,1
+SOV,Go to Page %1 in File %2,other,4,3,1
+SOV,<html><p>The href <b>%1</b> found in <b>%2</b> does not exist (and there may be more). Splitting or merging under these conditions can result in broken links.</p><p>Do you still wish to continue?</p></html>,other,3,3,1
+SOV,"Skipping constraint #%1 of '%2': references unmerged geometry.
+",of,3,3,1
+SOV,You were denied %1 privileges in %2.,other,3,3,1
+SOV,You were moved to %1 by %2.,adposition,3,3,1
+SOV,unexpected end of file in footprint %1 in file %2,other,3,3,1
+SOV,unexpected format (1) in %1 from %2,adposition,3,3,1
+SOV,%1 has been selected for %2,other,14,2,1
+SOV,%1%2%,no_words,12,2,1
+SOV,cannot change meaning of commands. Refused to reuse command %1 to mean %2,other,8,2,1
+SOV,%1 from wallet '%2',other,7,2,1
+SOV,%1 of %2 matches,of,6,2,1
+SOV,Confirming (%1 of %2 recommended confirmations),of,6,2,1
+SOV,Could not add or remove user %1 to access folder %2,other,6,2,1
+SOV,File %1 of %2,of,6,2,1
+SOV,Lock operation on %1 failed with error %2,other,6,2,1
+SOV,This is SMPlayer v. %1 running on %2,other,6,2,1
+SOV,Unlock operation on %1 failed with error %2,other,6,2,1
+SOV,%1 at %2,adposition,5,2,1
+SOV,"This address received %1 monero, with %2 confirmation(s).",other,5,2,1
+SOV,"Add ""%1"" to World ""%2""",other,4,2,1
+SOV,"Partial capo:
+Fret %1 on strings %2",other,4,2,1
+SOV,"Remove ""%1"" from World ""%2""",other,4,2,1
+SOV,%1 suppressed by %2.,other,3,2,1
+SOV,%1 undeafened by %2.,other,3,2,1
+SOV,%1 unmuted and undeafened by %2.,other,3,2,1
+SOV,The command <code>%1</code> with arguments <code>%2</code> failed!,other,3,2,1
+SOV,"Connector %1 on %2 should have both copper top and bottom layers, but the svg only specifies one layer.",adposition,2,2,1
+SOV,Unable to %1 into %2 - Adding the respective access (password) token might grant you access.,adposition,2,2,1
+SOV,Unable to load schematic '%1' for '%2',adposition,2,2,1
+SOV,best so far: %1 of %2 routed,of,2,2,1
+SOV,"Peer ""%1"" is added to torrent ""%2""",other,8,1,1
+SOV,You have been logged out of your account %1 at %2. Please login again.,adposition,6,1,1
+SOV,Downloading favicons (%1/%2)…,no_words,5,1,1
+SOV,"Font %1 has broken metrics in file %2, ignoring metrics",other,5,1,1
+SOV,Unable to start the server to port %1: %2.,no_words,5,1,1
+SOV,"Valid metrics were found for font %1, using metrics in file %2",other,5,1,1
+SOV,Swapped %1 with module %2,other,4,1,1
+SOV,You are already syncing the subfolder %1 at %2.,adposition,4,1,1
+SOV,%1 unmuted by %2.,other,3,1,1
+SOV,%1 unsuppressed by %2.,other,3,1,1
+SOV,Could not open base file %1 for reading: %2,other,3,1,1
+SOV,"Note was not found, create new note <strong>%1</strong> at path <strong>%2</strong>?",other,3,1,1
+SOV,Timeout while trying to connect to %1 at %2.,adposition,3,1,1
+SOV,"""%1"" could not be saved permanently and is lost on restart because %2 does not have a certificate.",other,2,1,1
+SOV,Are you sure you want to remove '%1' from class '%2'? This action cannot be undone.,other,2,1,1
+SOV,Result for equation: %1 = %2,no_words,2,1,1
+SOV,"Sorry, I cannot %1 %2",no_words,2,1,1
+SOV, (#%1 of %2),of,1,1,1
+SOV,%1click to visit %2,other,1,1,1
+SOV,Cannot use tile %1 from tileset %2 because it is reserved as an animation frame.,other,1,1,1
+SOV,"Embedded window ""%1"" for ""%2"" profile.",adposition,1,1,1
+SOV,Found Harper %1 at %2,adposition,1,1,1
+SOV,"Importing map(1) ""%1"" at %2 report",adposition,1,1,1
+SOV,"Input line of ""%1"" window of ""%2"" profile.",other,1,1,1
+SOV,"Loading map(1) ""%1"" at %2 report",adposition,1,1,1
+SOV,No part files with the required prefix '%1' where found inside in the shareable part '%2',other,1,1,1
+SOV,Note folder <b>%1</b> with path <b>%2</b> does not exist anymore!,other,1,1,1
+SOV,"Plugin already at version %1, which is greater than %2",other,1,1,1
+SOV,The file %2 with prefix %1 was not saved.,other,1,1,1
+SOV,"User window ""%1"" for ""%2"" profile.",adposition,1,1,1
+SOV,cannot copy %1 to the temporary location %2 - can you double-check it?,other,1,1,1
+SOV,%1 (%2),no_words,89,0,7
+SOV,%1: %2,no_words,59,0,8
+SOV,%1's %2 has been changed,other,43,0,1
+SOV,%1 and %2,and_or,39,0,5
+SOV,%1 (seeded for %2),other,36,0,1
+SOV,%1 %2,no_words,30,0,6
+SOV,Please enter a new value between %1 and %2:,and_or,28,0,1
+SOV,"File %1 integrity was damaged, cause: %2",other,25,0,1
+SOV,Original path %1 Target path %2,other,25,0,1
+SOV,"%1 file(s), %2 folder(s)",other,24,0,1
+SOV,%1/%2 Sent,no_words,24,0,1
+SOV,"Device (%1) is busy, cannot %2 now.",other,24,0,1
+SOV,"Failed to open the file %1, cause: %2",other,24,0,1
+SOV,"Failed to read the file %1, cause: %2",other,24,0,1
+SOV,"Failed to write the file %1, cause: %2",other,24,0,1
+SOV,%1 file selected (%2),other,23,0,1
+SOV,%1 files selected (%2),other,23,0,1
+SOV,"Failed to delete the file %1, cause: %2",other,23,0,1
+SOV,"Failed to move the file %1 to trash, cause: %2",other,23,0,1
+SOV,"Failed to move the file %1, cause: %2",other,23,0,1
+SOV,%1 folder selected (contains %2),other,22,0,1
+SOV,%1 folders selected (contains %2),other,22,0,1
+SOV,%1d %2h,other,22,0,1
+SOV,%1h %2m,other,22,0,1
+SOV,Contains %1 %2,no_words,22,0,1
+SOV,"Failed to create the directory %1, cause: %2",other,22,0,1
+SOV,"Total size: %1, %2 files",no_words,22,0,1
+SOV,"Device %1 Decrypt failed, please see log for more information.(%2)",other,21,0,1
+SOV,%1 (%2 max),no_words,18,0,1
+SOV,%1 (%2 this session),no_words,18,0,1
+SOV,%1 (%2 total),no_words,18,0,1
+SOV,%1y %2d,other,18,0,1
+SOV,change from %1 (%2),no_words,18,0,1
+SOV,"Device %1 encrypt failed, please see log for more information.(%2)",other,17,0,1
+SOV,%1 (%2 avg.),no_words,16,0,1
+SOV,%1 [%2],no_words,16,0,3
+SOV,"Device %1 preencrypt failed, please see log for more information.(%2)",other,15,0,1
+SOV,"Wrong HTTP code returned by server. Expected 204, but received ""%1 %2"".",no_words,15,0,1
+SOV,%1 (%2 colors),no_words,14,0,1
+SOV,%1 saved to %2,other,14,0,1
+SOV,%L1h %L2m,other,14,0,1
+SOV,%L1m %L2s,other,14,0,1
+SOV,%L2m %L1s,other,14,0,1
+SOV,&%1 %2,no_words,14,0,3
+SOV,"Address ""%1"" already exists as a receiving address with label ""%2"" and so cannot be added as a sending address.",other,14,0,1
+SOV,An expression with an empty %1 clause (e.g. %2),other,14,0,1
+SOV,Press to toggle %1 (%2),no_words,14,0,1
+SOV,%1 (Free space on disk: %2),other,13,0,1
+SOV,"The entered address ""%1"" is already in the address book with label ""%2"".",other,13,0,1
+SOV,%1 - [%2],no_words,12,0,2
+SOV,%1 to %2,adposition,12,0,1
+SOV,Syncing %1 (%2 left),no_words,12,0,1
+SOV,The folder %1 cannot be made read-only: %2,other,12,0,1
+SOV,Argument must be positive: %1=%2,no_words,11,0,1
+SOV,"Cannot read file %1:
+%2.",no_words,11,0,2
+SOV,Could not copy updater script '%1' to '%2'!,adposition,11,0,1
+SOV,"Could not read setting ""%1"", %2.",no_words,11,0,1
+SOV,Position %1: %2,no_words,11,0,1
+SOV,"Unknown. Pre-syncing Headers (%1, %2%)…",no_words,11,0,1
+SOV,%1 was blocked. Reason: %2.,other,10,0,1
+SOV,Can not continue. Object * %1 or %2 not found.,and_or,10,0,1
+SOV,Could not store note file: %1 - Error message: %2,other,10,0,1
+SOV,External IP: %1%2,no_words,10,0,1
+SOV,"External IPs: %1, %2",no_words,10,0,1
+SOV,The shortcut <strong>%1</strong> is already assigned to <strong>%2</strong>! Do you want to jump to the shortcut?,other,10,0,1
+SOV,"Unknown. Syncing Headers (%1, %2%)…",no_words,10,0,1
+SOV,%1 Files (*.%2),other,9,0,2
+SOV,"An I/O error occurred for torrent '%1'.
+ Reason: %2",other,9,0,1
+SOV,"Color1: %1, Color2: %2",other,9,0,1
+SOV,"Controller Port %1
+%2",no_words,9,0,2
+SOV,Could not remove renamed note-file: %1 - Error message: %2,other,9,0,1
+SOV,Couldn't export torrent metadata file '%1'. Reason: %2.,other,9,0,1
+SOV,Couldn't save data to '%1'. Error: %2,other,9,0,1
+SOV,Hold %1 to drag a keyframe vertical only or %2 to drag horizontal only,other,9,0,1
+SOV,Log Window - %1 [%2],no_words,9,0,2
+SOV,"Macro %1
+%2",no_words,9,0,2
+SOV,Page %1 to %2,adposition,9,0,1
+SOV,"X: %1
+Y: %2",other,9,0,1
+SOV,%1 #%2,no_words,8,0,1
+SOV,%1 (*.%2);;All Files (*),no_words,8,0,1
+SOV,%1x%2,other,8,0,2
+SOV,: duplicated command: %1 is already taken by %2,other,8,0,1
+SOV,"<qt>Are you sure you wish to delete %1 ""%2""?</qt>",no_words,8,0,1
+SOV,Area: %1 %2^2,no_words,8,0,1
+SOV,Cannot load file %1: %2,no_words,8,0,2
+SOV,Couldn't save torrent metadata to '%1'. Error: %2.,other,8,0,1
+SOV,"Error opening '%1':
+%2",no_words,8,0,1
+SOV,"Failed to add torrent. Source: ""%1"". Reason: ""%2""",other,8,0,1
+SOV,Failed to copy '%1' to '%2',adposition,8,0,2
+SOV,"From %1
+to %2",adposition,8,0,1
+SOV,"Length: %1
+Angle: %2",other,8,0,1
+SOV,"Logged in as %1
+Token generated %2",other,8,0,1
+SOV,"Plugin ""%1"" is outdated, updating to version %2",other,8,0,1
+SOV,"Printout offset in graph coordinates by (%1, %2)",no_words,8,0,1
+SOV,"Printout offset in paper coordinates by (%1, %2)",no_words,8,0,1
+SOV,"Rows: %1, Cols: %2",other,8,0,1
+SOV,Sends %1 to %2,adposition,8,0,1
+SOV,Specify distance (%1 deg) or [%2],other,8,0,1
+SOV,Specify distance (%1) or [%2],and_or,8,0,1
+SOV,"Torrent errored. Torrent: ""%1"". Error: ""%2""",other,8,0,1
+SOV,Unsupported database version: %1.%2,no_words,8,0,1
+SOV,"Width: %1
+Height: %2",other,8,0,1
+SOV,"Wrong HTTP code returned by server. Expected 201, but received ""%1 %2"".",no_words,8,0,1
+SOV,keycode: %1 (%2),no_words,8,0,1
+SOV,%1 (%2 blocks),no_words,7,0,1
+SOV,%1 KB (%2 MB),other,7,0,1
+SOV,<b>%1</b> (%2),no_words,7,0,1
+SOV,"Are you sure you'd like to remove  %2""%1""?",no_words,7,0,1
+SOV,"Couldn't add torrent '%1', reason: %2.",other,7,0,1
+SOV,Couldn't copy icon file. Source: %1. Destination: %2.,other,7,0,1
+SOV,Couldn't save torrent resume data to '%1'. Error: %2.,other,7,0,1
+SOV,"Download first and last piece first: %1, torrent: '%2'",other,7,0,1
+SOV,"File <strong>%1</strong> already exists, you need to remove it before choosing <strong>%2</strong> as new filename!",other,7,0,1
+SOV,"File read error. File: ""%1"". Error: ""%2""",other,7,0,1
+SOV,Font %1 has broken glyph %2,other,7,0,1
+SOV,Font %1(%2) is broken,no_words,7,0,1
+SOV,"Mounting of <b><nobr>""%1""</nobr></b> failed: %2",other,7,0,1
+SOV,"Removed tracker from torrent. Torrent: ""%1"". Tracker: ""%2""",other,7,0,1
+SOV,"SOCKS5 proxy error. Address: %1. Message: ""%2"".",other,7,0,1
+SOV,The file size (%1) exceeds the download limit (%2),other,7,0,1
+SOV,"Torrent is missing SSL parameters. Torrent: ""%1"". Message: ""%2""",other,7,0,1
+SOV,"Unmounting of <strong><nobr>""%1""</nobr></strong> failed: %2",other,7,0,1
+SOV,"Username: %1
+Login token generated on %2.",other,7,0,1
+SOV,Volume: %1%%2,no_words,7,0,1
+SOV,"WebAPI login failure. Reason: IP has been banned, IP: %1, username: %2",other,7,0,1
+SOV,"Your Python version (%1) is outdated. Please upgrade to latest version for search engines to work.
+Minimum requirement: %2.",other,7,0,1
+SOV,qBittorrent %1 started. Process ID: %2,other,7,0,1
+SOV,"""%1 Failed to unlock encrypted folder %2"".",other,6,0,1
+SOV,%1 as %2,adposition,6,0,1
+SOV,%1 has been moved to %2.,other,6,0,1
+SOV,%1 has been renamed to %2.,other,6,0,1
+SOV,%1 to '%2',adposition,6,0,1
+SOV,%1/%2,no_words,6,0,1
+SOV,%1/%2 time,no_words,6,0,1
+SOV,Account %1: %2,no_words,6,0,1
+SOV,"Added tracker to torrent. Torrent: ""%1"". Tracker: ""%2""",other,6,0,1
+SOV,Author: %1%2,no_words,6,0,1
+SOV,"Bad Http request method, closing socket. IP: %1. Method: ""%2""",other,6,0,1
+SOV,Bytes %1-%2,no_words,6,0,1
+SOV,Cannot open DWG: file is %1; LibreCAD supports %2 and newer. Convert with GNU LibreDWG (dwgread / dwg2dxf) or re-save from a recent CAD tool.,other,6,0,1
+SOV,"Could not encrypt the following folder: ""%1"".
+
+Server replied with error: %2",other,6,0,1
+SOV,"Could not open preferences file ""%1"" for writing: %2",other,6,0,1
+SOV,Couldn't convert '%1' to property type '%2',other,6,0,1
+SOV,Couldn't delete resume data of torrent '%1'. Error: %2,other,6,0,1
+SOV,Couldn't load RSS article '%1#%2'. Invalid data format.,no_words,6,0,1
+SOV,Couldn't load resume data of torrent '%1'. Error: %2,other,6,0,1
+SOV,Couldn't save RSS AutoDownloader data in %1. Error: %2,other,6,0,1
+SOV,Couldn't store resume data for torrent '%1'. Error: %2,other,6,0,1
+SOV,Current Version: %1 (%2),no_words,6,0,1
+SOV,Date: %1%2,no_words,6,0,1
+SOV,"Definition from dictionary ""%1"": %2",no_words,6,0,1
+SOV,"Detected inconsistent data: category is missing from the configuration file. Category will be recovered but its settings will be reset to default. Torrent: ""%1"". Category: ""%2""",other,6,0,1
+SOV,"Detected inconsistent data: invalid category. Torrent: ""%1"". Category: ""%2""",other,6,0,1
+SOV,"Detected inconsistent data: invalid tag. Torrent: ""%1"". Tag: ""%2""",other,6,0,1
+SOV,"Detected inconsistent data: tag is missing from the configuration file. Tag will be recovered. Torrent: ""%1"". Tag: ""%2""",other,6,0,1
+SOV,"Detected mismatch between the save paths of the recovered category and the current save path of the torrent. Torrent is now switched to Manual mode. Torrent: ""%1"". Category: ""%2""",other,6,0,1
+SOV,"Dictionaries active: %1, inactive: %2",other,6,0,1
+SOV,E-mail: %1%2,no_words,6,0,1
+SOV,"Embedded Tracker: Now listening on IP: %1, port: %2",other,6,0,1
+SOV,"Error removing ""%1"": %2",no_words,6,0,1
+SOV,"Error when daemonizing. Reason: ""%1"". Error code: %2.",other,6,0,1
+SOV,"Error: Internal alert queue is full and alerts are dropped, you might see degraded performance. Dropped alert type: ""%1"". Message: ""%2""",other,6,0,1
+SOV,"Expected integer number in environment variable '%1', but got '%2'",other,6,0,1
+SOV,"Failed loading article from %1, reason: %2",other,6,0,1
+SOV,Failed to download RSS feed at '%1'. Reason: %2,other,6,0,1
+SOV,Failed to fetch search providers for '%1'. Error: %2,other,6,0,1
+SOV,"Failed to open prefs file ""%1"": %2",no_words,6,0,1
+SOV,"Failed to parse Categories configuration. File: ""%1"". Error: ""%2""",other,6,0,1
+SOV,Failed to parse RSS feed at '%1'. Reason: %2,other,6,0,1
+SOV,Failed to reload torrent. Torrent: %1. Reason: %2,other,6,0,1
+SOV,"Failed to remove partfile. Torrent: ""%1"". Reason: ""%2"".",other,6,0,1
+SOV,"Failed to remove torrent content. Torrent: ""%1"". Error: ""%2""",other,6,0,1
+SOV,"Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: ""%1"". Reason: ""%2""",other,6,0,1
+SOV,"Failed to resume torrent. Torrent: ""%1"". Reason: ""%2""",other,6,0,1
+SOV,"Failed to run external program. Torrent: ""%1"". Command: `%2`",other,6,0,1
+SOV,"Failed to save Categories configuration. File: ""%1"". Error: ""%2""",other,6,0,1
+SOV,"Failed to set physical memory (RAM) usage limit. Error code: %1. Error message: ""%2""",other,6,0,1
+SOV,File %1 is already locked by %2.,other,6,0,1
+SOV,File details of %1 · %2,no_words,6,0,1
+SOV,"File open error. File: ""%1"". Error: ""%2""",other,6,0,1
+SOV,"Found Python executable. Name: ""%1"". Version: ""%2""",other,6,0,1
+SOV,Free space: %1 (Total: %2),other,6,0,1
+SOV,"Generate resume data failed. Torrent: ""%1"". Reason: ""%2""",other,6,0,1
+SOV,"Http request size exceeds limitation, closing socket. Limit: %1, IP: %2",other,6,0,1
+SOV,IP filter exception thrown for line %1. Exception is: %2,other,6,0,1
+SOV,IP geolocation database loaded. Type: %1. Build time: %2.,other,6,0,1
+SOV,"Ignoring SSL error, URL: ""%1"", errors: ""%2""",other,6,0,1
+SOV,"Invalid value found in configuration file, reverting it to default. Key: ""%1"". Invalid value: ""%2"".",other,6,0,1
+SOV,"JSON parse error at offset %1:
+%2.",no_words,6,0,1
+SOV,"Migrate preferences failed: WebUI https, file: ""%1"", error: ""%2""",other,6,0,1
+SOV,"Moved torrent successfully. Torrent: ""%1"". Destination: ""%2""",other,6,0,1
+SOV,New %1 is available. Please open %2 to download the update.,other,6,0,1
+SOV,New Version: %1 (%2),no_words,6,0,1
+SOV,Performance alert: %1. More info: %2,other,6,0,1
+SOV,Plugin: %1 failed to load: %2,other,6,0,1
+SOV,Power management error. Action: %1. Error: %2,other,6,0,1
+SOV,Power management unexpected error. State: %1. Error: %2,other,6,0,1
+SOV,RSS feed at '%1' updated. Added %2 new articles.,other,6,0,1
+SOV,"Recursive download .torrent file within torrent. Source torrent: ""%1"". File: ""%2""",other,6,0,1
+SOV,"Removed URL seed from torrent. Torrent: ""%1"". URL: ""%2""",other,6,0,1
+SOV,"Rename Python installer failed. Source: ""%1"". Destination: ""%2"".",other,6,0,1
+SOV,Rotate Angle = %1%2,no_words,6,0,1
+SOV,Run macro %1 (Shift+click to edit) keyboard shortcut: %2,other,6,0,1
+SOV,"Running external program. Torrent: ""%1"". Command: `%2`",other,6,0,1
+SOV,SMPlayer is a graphical interface for %1 and %2.,and_or,6,0,1
+SOV,"SSL error, URL: ""%1"", errors: ""%2""",other,6,0,1
+SOV,Saving article... (%1/%2),no_words,6,0,1
+fa,%1%2%,no_words,1,1,1
+fa,Cannot %1 device %2,other,1,1,1
+fa,Result for equation: %1 = %2,no_words,1,1,1
+fa,%1 (%2),no_words,5,0,4
+fa,%1: %2,no_words,4,0,3
+fa,%1 and %2,and_or,3,0,2
+fa,%1 %2,no_words,2,0,2
+fa,%1 (%2 avg.),no_words,2,0,1
+fa,%1 (%2 colors),no_words,2,0,1
+fa,%1 (%2 max),no_words,2,0,1
+fa,%1 (%2 this session),no_words,2,0,1
+fa,%1 (%2 total),no_words,2,0,1
+fa,%1 [%2],no_words,2,0,1
+fa,%1 has been selected for %2,other,2,0,1
+fa,%1 of %2,of,2,0,2
+fa,%1 on %2,adposition,2,0,1
+fa,%1 saved to %2,other,2,0,1
+fa,%1's %2 has been changed,other,2,0,1
+fa,%1d %2h,other,2,0,1
+fa,%1h %2m,other,2,0,1
+fa,%1y %2d,other,2,0,1
+fa,%L1h %L2m,other,2,0,1
+fa,%L1m %L2s,other,2,0,1
+fa,%L2m %L1s,other,2,0,1
+fa,"File <strong>%1</strong> already exists, you need to remove it before choosing <strong>%2</strong> as new filename!",other,2,0,1
+fa,Press to toggle %1 (%2),no_words,2,0,1
+fa,Syncing %1 (%2 left),no_words,2,0,1
+fa,Syncing %1 of %2,of,2,0,1
+fa,The folder %1 cannot be made read-only: %2,other,2,0,1
+fa,"Wrong HTTP code returned by server. Expected 204, but received ""%1 %2"".",no_words,2,0,1
+fa,"""%1 Failed to unlock encrypted folder %2"".",other,1,0,1
+fa,%1 %2 …,no_words,1,0,1
+fa,%1 (%2 blocks),no_words,1,0,1
+fa,%1 (Free space on disk: %2),other,1,0,1
+fa,%1 - [%2],no_words,1,0,1
+fa,%1 Files (*.%2),other,1,0,1
+fa,%1 KB (%2 MB),other,1,0,1
+fa,%1 as %2,adposition,1,0,1
+fa,%1 file selected (%2),other,1,0,1
+fa,"%1 file(s), %2 folder(s)",other,1,0,1
+fa,%1 files selected (%2),other,1,0,1
+fa,%1 folder selected (contains %2),other,1,0,1
+fa,%1 folders selected (contains %2),other,1,0,1
+fa,%1 from wallet '%2',other,1,0,1
+fa,%1 has been moved to %2.,other,1,0,1
+fa,%1 has been renamed to %2.,other,1,0,1
+fa,"%1 image(s) displayed, %2 image(s) filtered",other,1,0,1
+fa,%1 note style has document as range and provide same numbering style as set %2,other,1,0,1
+fa,%1 of %2 matches,of,1,0,1
+fa,%1 to %2,adposition,1,0,1
+fa,%1. Restoration failed: %2,other,1,0,1
+fa,%1/%2,no_words,1,0,1
+fa,%1/%2 Sent,no_words,1,0,1
+fa,: X: %1%2,no_words,1,0,1
+fa,: Y: %1%2,no_words,1,0,1
+fa,"<p align=""center""><b>%1 %2</b></p>",no_words,1,0,1
+fa,"<qt>Are you sure you wish to delete %1 ""%2""?</qt>",no_words,1,0,1
+fa,"A list of all known issues may be found at our %1 at Github. If you discover a bug or security vulnerability within qTox, please report it according to the guidelines in our %2 wiki article.",other,1,0,1
+fa,Account %1: %2,no_words,1,0,1
+fa,All Supported Formats (%1);;%2All Files (*),no_words,1,0,1
+fa,Argument must be positive: %1=%2,no_words,1,0,1
+fa,Author: %1%2,no_words,1,0,1
+fa,Bindings for %1 %2,no_words,1,0,1
+fa,"Click and drag to select a region. Press %1 to hide/show qTox window, or %2 to cancel.",other,1,0,1
+fa,"Color1: %1, Color2: %2",other,1,0,1
+fa,Connected to %1 (%2).,no_words,1,0,1
+fa,Contains %1 %2,no_words,1,0,1
+fa,"Controller Port %1
+%2",no_words,1,0,1
+fa,Copied %1 item(s) on %2 page(s),other,1,0,1
+fa,Copyright: %1%2,no_words,1,0,1
+fa,Could not add or remove user %1 to access folder %2,other,1,0,1
+fa,Could not copy updater script '%1' to '%2'!,adposition,1,0,1
+fa,"Could not encrypt the following folder: ""%1"".
+
+Server replied with error: %2",other,1,0,1
+fa,"Could not open preferences file ""%1"" for writing: %2",other,1,0,1
+fa,"Could not read setting ""%1"", %2.",no_words,1,0,1
+fa,Could not remove renamed note-file: %1 - Error message: %2,other,1,0,1
+fa,Could not store note file: %1 - Error message: %2,other,1,0,1
+fa,Couldn't convert '%1' to property type '%2',other,1,0,1
+fa,Couldn't export torrent metadata file '%1'. Reason: %2.,other,1,0,1
+fa,Couldn't save data to '%1'. Error: %2,other,1,0,1
+fa,"Creating HDD file 
+ %1 / %2 MiB",no_words,1,0,1
+fa,Current Version: %1 (%2),no_words,1,0,1
+fa,Date: %1%2,no_words,1,0,1
+fa,"Definition from dictionary ""%1"": %2",no_words,1,0,1
+fa,"Device %1 Decrypt failed, please see log for more information.(%2)",other,1,0,1
+fa,"Device %1 encrypt failed, please see log for more information.(%2)",other,1,0,1
+fa,"Device %1 preencrypt failed, please see log for more information.(%2)",other,1,0,1
+fa,"Device (%1) is busy, cannot %2 now.",other,1,0,1
+fa,"Dictionaries active: %1, inactive: %2",other,1,0,1
+fa,E-mail: %1%2,no_words,1,0,1
+fa,"Enter username and password for ""%1"" at %2.",adposition,1,0,1
+fa,"Error removing ""%1"": %2",no_words,1,0,1
+fa,"Failed loading article from %1, reason: %2",other,1,0,1
+fa,"Failed to add torrent. Source: ""%1"". Reason: ""%2""",other,1,0,1
+fa,Failed to apply masterpage '%1' on page: %2,other,1,0,1
+fa,Failed to copy '%1' to '%2',adposition,1,0,1
+fa,"Failed to create the directory %1, cause: %2",other,1,0,1
+fa,"Failed to delete the file %1, cause: %2",other,1,0,1
+fa,Failed to fetch search providers for '%1'. Error: %2,other,1,0,1
+fa,"Failed to move the file %1 to trash, cause: %2",other,1,0,1
+fa,"Failed to move the file %1, cause: %2",other,1,0,1
+fa,"Failed to open prefs file ""%1"": %2",no_words,1,0,1
+fa,"Failed to open the file %1, cause: %2",other,1,0,1
+fa,"Failed to read the file %1, cause: %2",other,1,0,1
+fa,Failed to register %1. Error: %2,other,1,0,1
+fa,Failed to unregister %1. Error: %2,other,1,0,1
+fa,"Failed to write the file %1, cause: %2",other,1,0,1
+fa,"File %1 integrity was damaged, cause: %2",other,1,0,1
+fa,File %1 is already locked by %2.,other,1,0,1
+fa,File %1 of %2,of,1,0,1
+fa,File details of %1 · %2,no_words,1,0,1
+fa,Font %1 has broken glyph %2,other,1,0,1
+fa,"Font %1 has broken metrics in file %2, ignoring metrics",other,1,0,1
+fa,"Font %1 is broken, discarding it. Error message: ""%2""",other,1,0,1
+fa,Font %1(%2) is broken,no_words,1,0,1
+fa,"From %1
+to %2",adposition,1,0,1
+fa,"Game: %1 (%2)
+",no_words,1,0,1
+fa,Go to Page %1 in File %2,other,1,0,1
+fa,History size: %1 entries out of maximum %2,other,1,0,1
+fa,Incorrect update info received for %1 out of %2 plugins.,of,1,0,1
+fa,Insufficient storage on the server. The file requires %1 but only %2 are available.,other,1,0,1
+fa,"Length: %1
+Angle: %2",other,1,0,1
+fa,"Link Target is external File.
+File: %1
+Page: %2",other,1,0,1
+fa,Load Slot %1 (%2),no_words,1,0,1
+fa,Lock operation on %1 failed with error %2,other,1,0,1
+fa,Log Window - %1 [%2],no_words,1,0,1
+fa,"Look up ""%1"" in %2",adposition,1,0,1
+fa,"Look up ""%1"" in %2 in &New Tab",adposition,1,0,1
+fa,"Macro %1
+%2",no_words,1,0,1
+fa,"Memory Card ""%1"" converted to ""%2""",other,1,0,1
+fa,New %1 is available. Please open %2 to download the update.,other,1,0,1
+fa,New Version: %1 (%2),no_words,1,0,1
+fa,"Note was not found, create new note <strong>%1</strong> at path <strong>%2</strong>?",other,1,0,1
+fa,Opening the configfile %1 failed! %2,other,1,0,1
+fa,Original path %1 Target path %2,other,1,0,1
+fa,"Overflow Characters: %1 (%2 White Spaces)
+Click to link to existing text frame or auto-create new linked text frame",no_words,1,0,1
+fa,Page %1 to %2,adposition,1,0,1
+fa,"Parsing the configfile %1 failed! Depending on the type of the error render frames might not work correctly!
+%2",other,1,0,1
+fa,Please choose a different location. %1 is already being synced to %2.,other,1,0,1
+fa,Please choose a different location. %1 is already being used as a sync folder for %2.,other,1,0,1
+fa,"Plugin ""%1"" is outdated, updating to version %2",other,1,0,1
+fa,Plugin: %1 failed to load: %2,other,1,0,1
+fa,Position %1: %2,no_words,1,0,1
+fa,Remote folder %1 creation failed with error <tt>%2</tt>.,other,1,0,1
+fa,Rotate Angle = %1%2,no_words,1,0,1
+fa,"Rows: %1, Cols: %2",other,1,0,1
+fa,SMPlayer is a graphical interface for %1 and %2.,and_or,1,0,1
+fa,Save Slot %1 (%2),no_words,1,0,1
+fa,Saving article... (%1/%2),no_words,1,0,1
+fa,Scale H = %1 % V = %2 %,other,1,0,1
+fa,Search has failed for '%1'. Error: %2,other,1,0,1
+fa,Sends %1 to %2,adposition,1,0,1
+fa,Server configuration error: %1 at %2.,adposition,1,0,1
+fa,Syncing %1 of %2 (A few seconds left),of,1,0,1
+fa,Syncing file %1 of %2,of,1,0,1
+fa,"The %1 key sequence is already in use by ""%2""",other,1,0,1
+fa,"The cell %1,%2 does not exist in table",no_words,1,0,1
+fa,The command <code>%1</code> with arguments <code>%2</code> failed!,other,1,0,1
+fa,"The downloaded file does not match the checksum, it will be resumed. ""%1"" != ""%2""",no_words,1,0,1
+fa,"The entered address ""%1"" is already in the address book with label ""%2"".",other,1,0,1
+fa,The folder %1 has surpassed the set folder size limit of %2MB.,other,1,0,1
+fa,The image has %1 pages: cannot switch to page %2.,other,1,0,1
+fa,The server on account %1 runs an unsupported version %2. Using this client with unsupported server versions is untested and potentially dangerous. Proceed at your own risk.,other,1,0,1
+fa,The shortcut <strong>%1</strong> is already assigned to <strong>%2</strong>! Do you want to jump to the shortcut?,other,1,0,1
+fa,The temporary file '%1' could not be made executable! You need to replace '%2' yourself.,other,1,0,1
+fa,The value you have entered is outside the range of page numbers in the current document (%1-%2).,no_words,1,0,1
+fa,There are folders that have grown in size beyond %1MB: %2,other,1,0,1
+fa,Timeout while trying to connect to %1 at %2.,adposition,1,0,1
+fa,Title: %1%2,no_words,1,0,1
+fa,"Total size: %1, %2 files",no_words,1,0,1
+fa,"USB Port %1
+%2",no_words,1,0,1
+fa,"Unique headwords total: %1, filtered(limited): %2",other,1,0,1
+fa,Unlock operation on %1 failed with error %2,other,1,0,1
+fa,Upload of %1 exceeds %2 of space left in personal files.,other,1,0,1
+fa,"Username: %1
+Login token generated on %2.",other,1,0,1
+fa,"Valid metrics were found for font %1, using metrics in file %2",other,1,0,1
+fa,Verified as %1 [%2].,no_words,1,0,1
+fa,Version: %1%2,no_words,1,0,1
+fa,"WebAPI login failure. Reason: IP has been banned, IP: %1, username: %2",other,1,0,1
+fa,Website: %1%2,no_words,1,0,1
+fa,"Width: %1
+Height: %2",other,1,0,1
+fa,"Writing to preferences file ""%1"" failed: QIODevice status code %2",other,1,0,1
+fa,"X: %1
+Y: %2",other,1,0,1
+fa,You are already syncing the subfolder %1 at %2.,adposition,1,0,1
+fa,You have been logged out of your account %1 at %2. Please login again.,adposition,1,0,1
+fa,Your account %1 requires you to accept the terms of service of your server. You will be redirected to %2 to acknowledge that you have read it and agrees with it.,other,1,0,1
+fa,Your old QOwnNotes executable '%1' could not be removed! You need to replace it yourself with '%2'.,other,1,0,1
+fa,Your old QOwnNotes executable '%1' could not be replaced by the new file '%2'! You need to replace it yourself.,other,1,0,1
+fa,change from %1 (%2),no_words,1,0,1
+fa,"found %1 <%2> nodes, need 1.",no_words,1,0,1
+zh,%1 on %2,adposition,6,6,1
+zh,%1 muted and deafened by %2.,other,3,3,1
+zh,%1 unmuted and undeafened by %2.,other,3,3,1
+zh,Incorrect update info received for %1 out of %2 plugins.,of,3,3,1
+zh,"Partial capo:
+Fret %1 on strings %2",other,3,3,1
+zh,You are already syncing the subfolder %1 at %2.,adposition,3,3,1
+zh,You have been logged out of your account %1 at %2. Please login again.,adposition,3,3,1
+zh,You were denied %1 privileges in %2.,other,3,3,1
+zh,%1 of %2,of,7,2,3
+zh,%1 of %2 in use,of,3,2,1
+zh,%1 suppressed by %2.,other,3,2,1
+zh,"Enter username and password for ""%1"" at %2.",adposition,3,2,1
+zh,Results (showing <i>%1</i> out of <i>%2</i>):,of,3,2,1
+zh,Syncing file %1 of %2,of,3,2,1
+zh,Timeout while trying to connect to %1 at %2.,adposition,3,2,1
+zh,You were moved to %1 by %2.,adposition,3,2,1
+zh,%1 at %2,adposition,2,2,1
+zh,%1 of %2 - Stopped,of,2,2,1
+zh,%1 results in %2,other,2,2,1
+zh,%1 unsuppressed by %2.,other,2,2,1
+zh,<html><p>The href <b>%1</b> found in <b>%2</b> does not exist (and there may be more). Splitting or merging under these conditions can result in broken links.</p><p>Do you still wish to continue?</p></html>,other,2,2,1
+zh,Failed to apply masterpage '%1' on page: %2,other,2,2,1
+zh,Go to Page %1 in File %2,other,2,2,1
+zh,"Look up ""%1"" in %2",adposition,2,2,1
+zh,"Look up ""%1"" in %2 in &New Tab",adposition,2,2,1
+zh,"Skipping constraint #%1 of '%2': references unmerged geometry.
+",of,2,2,1
+zh,Successfully removed attachment %1 from entry %2.,other,2,2,1
+zh,SymmetricCipher::init: Invalid IV size of %1 for %2.,adposition,2,2,1
+zh,"The %1 key sequence is already in use by ""%2""",other,2,2,1
+zh,%1 in %2,adposition,6,1,1
+zh,%1 muted by %2.,other,3,1,1
+zh,%1 undeafened by %2.,other,3,1,1
+zh,%1 unmuted by %2.,other,3,1,1
+zh,File %1 of %2,of,3,1,1
+zh,! You have joined %1 as %2,adposition,2,1,1
+zh,%1 processed out of %2 selected,other,2,1,1
+zh,Attachment %1 already exists for entry %2.,other,2,1,1
+zh,Confirming (%1 of %2 recommended confirmations),of,2,1,1
+zh,Conflicting export target path %1 in %2,adposition,2,1,1
+zh,"Failed to synchronize tab ""%1"" with directory ""%2""!",other,2,1,1
+zh,Multiple import source path to %1 in %2,adposition,2,1,1
+zh,Swapped %1 with module %2,other,2,1,1
+zh,This is SMPlayer v. %1 running on %2,other,2,1,1
+zh,requesting alias(%1) for unknown command(%2): ignored,other,2,1,1
+zh,%1 message(s) from %2,other,1,1,1
+zh,%1 message(s) from %2 chats,other,1,1,1
+zh,Are you sure you want to remove '%1' from class '%2'? This action cannot be undone.,other,1,1,1
+zh,"Embedded window ""%1"" for ""%2"" profile.",adposition,1,1,1
+zh,Fritzing caught an exception from %1 in event %2,other,1,1,1
+zh,"Input line of ""%1"" window of ""%2"" profile.",other,1,1,1
+zh,Note folder <b>%1</b> with path <b>%2</b> does not exist anymore!,other,1,1,1
+zh,Patched %1 of %2 selected instructions.,of,1,1,1
+zh,"Remove ""%1"" from World ""%2""",other,1,1,1
+zh,The command <code>%1</code> with arguments <code>%2</code> failed!,other,1,1,1
+zh,Unable to %1 into %2 - Adding the respective access (password) token might grant you access.,adposition,1,1,1
+zh,footprint %1 not found in %2,other,1,1,1
+zh,schematic %1 unexpectedly ends (1) in %2,other,1,1,1
+zh,schematic %1 unexpectedly ends (2) in %2,other,1,1,1
+zh,schematic %1 unexpectedly ends (3) in %2,other,1,1,1
+zh,schematic part %1 not found in %2,other,1,1,1
+zh,unexpected end of file in footprint %1 in file %2,other,1,1,1
+zh,%1 (%2),no_words,31,0,7
+zh,%1 %2,no_words,20,0,6
+zh,%1: %2,no_words,18,0,8
+zh,%1 and %2,and_or,15,0,5
+zh,Please enter a new value between %1 and %2:,and_or,14,0,1
+zh,%1 (seeded for %2),other,12,0,1
+zh,"Building index, %1/%2 items indexed",no_words,9,0,1
+zh,Hold %1 to drag a keyframe vertical only or %2 to drag horizontal only,other,9,0,1
+zh,"Wrong HTTP code returned by server. Expected 204, but received ""%1 %2"".",no_words,9,0,1
+zh,%1 (%2 avg.),no_words,6,0,1
+zh,%1 (%2 colors),no_words,6,0,1
+zh,%1 (%2 max),no_words,6,0,1
+zh,%1 (%2 this session),no_words,6,0,1
+zh,%1 (%2 total),no_words,6,0,1
+zh,%1 (*.%2);;All Files (*),no_words,6,0,1
+zh,%1 has been selected for %2,other,6,0,1
+zh,%1 saved to %2,other,6,0,1
+zh,%1's %2 has been changed,other,6,0,1
+zh,%1d %2h,other,6,0,1
+zh,%1h %2m,other,6,0,1
+zh,%1y %2d,other,6,0,1
+zh,%L1h %L2m,other,6,0,1
+zh,%L1m %L2s,other,6,0,1
+zh,%L2m %L1s,other,6,0,1
+zh,"Add **%1** on Jami!
+ Account ID: ```%2```",other,6,0,1
+zh,An expression with an empty %1 clause (e.g. %2),other,6,0,1
+zh,Are you sure you wish to restore the wallet file <i>%1</i> to <i>%2</i> and migrate it?,adposition,6,0,1
+zh,Cannot %1 device %2,other,6,0,1
+zh,"Cannot read file %1:
+%2.",no_words,6,0,2
+zh,Press to toggle %1 (%2),no_words,6,0,1
+zh,Syncing %1 (%2 left),no_words,6,0,1
+zh,Syncing %1 of %2,of,6,0,1
+zh,"The entered address ""%1"" is already in the address book with label ""%2"".",other,6,0,1
+zh,The folder %1 cannot be made read-only: %2,other,6,0,1
+zh,"Wrong HTTP code returned by server. Expected 201, but received ""%1 %2"".",no_words,6,0,1
+zh,%1 [%2],no_words,5,0,3
+zh,%1 from wallet '%2',other,5,0,1
+zh,&%1 %2,no_words,5,0,3
+zh,"Address ""%1"" already exists as a receiving address with label ""%2"" and so cannot be added as a sending address.",other,5,0,1
+zh,"Could not read setting ""%1"", %2.",no_words,5,0,1
+zh,Sends %1 to %2,adposition,5,0,1
+zh,"Unknown. Pre-syncing Headers (%1, %2%)…",no_words,5,0,1
+zh,"Unknown. Syncing Headers (%1, %2%)…",no_words,5,0,1
+zh,%1 - [%2],no_words,4,0,2
+zh,%1/%2 increase/decrease number of elements,no_words,4,0,1
+zh,%1x%2,other,4,0,2
+zh,Can not continue. Object * %1 or %2 not found.,and_or,4,0,1
+zh,Cannot load file %1: %2,no_words,4,0,2
+zh,Cannot open DWG: file is %1; LibreCAD supports %2 and newer. Convert with GNU LibreDWG (dwgread / dwg2dxf) or re-save from a recent CAD tool.,other,4,0,1
+zh,"Cannot write file %1:
+%2.",no_words,4,0,2
+zh,External IP: %1%2,no_words,4,0,1
+zh,"External IPs: %1, %2",no_words,4,0,1
+zh,Mapper: Cannot find a path from %1 to %2 using known exits.,adposition,4,0,1
+zh,N:%1 S:%2,other,4,0,1
+zh,"""%1 Failed to unlock encrypted folder %2"".",other,3,0,1
+zh,%1 %2 …,no_words,3,0,1
+zh,%1 (Free space on disk: %2),other,3,0,1
+zh,"%1 (skipped due to earlier error, trying again in %2)",other,3,0,1
+zh,%1 Files (*.%2),other,3,0,2
+zh,%1 as %2,adposition,3,0,1
+zh,%1 file selected (%2),other,3,0,1
+zh,"%1 file(s), %2 folder(s)",other,3,0,1
+zh,%1 files selected (%2),other,3,0,1
+zh,%1 folder selected (contains %2),other,3,0,1
+zh,%1 folders selected (contains %2),other,3,0,1
+zh,%1 has been moved to %2.,other,3,0,1
+zh,%1 has been renamed to %2.,other,3,0,1
+zh,%1 head %2,other,3,0,1
+zh,%1 moved to %2.,other,3,0,1
+zh,%1 note = %2,other,3,0,1
+zh,%1 note = %2 note,other,3,0,1
+zh,%1 online (%2 idle),other,3,0,1
+zh,%1 renamed to %2.,other,3,0,1
+zh,%1 was blocked. Reason: %2.,other,3,0,1
+zh,%1. Restoration failed: %2,other,3,0,1
+zh,%1/%2 Sent,no_words,3,0,1
+zh,%1/%2 time,no_words,3,0,1
+zh,(on %1‰ off %2‰),other,3,0,1
+zh,"A new folder larger than %1 MB has been added: %2.
+",other,3,0,1
+zh,Account %1: %2,no_words,3,0,1
+zh,"Added URL seed to torrent. Torrent: ""%1"". URL: ""%2""",other,3,0,1
+zh,"Added marker: ""%1"". Hold %2 and drag to create a range",other,3,0,1
+zh,"Added tracker to torrent. Torrent: ""%1"". Tracker: ""%2""",other,3,0,1
+zh,"An I/O error occurred for torrent '%1'.
+ Reason: %2",other,3,0,1
+zh,"Are you sure you want to download %1?
+%2 of storage will be used",no_words,3,0,1
+zh,"Bad value in '%1'. Expected: %2
+",other,3,0,1
+zh,"Bank %1, preset %2",other,3,0,1
+zh,Cannot create tuplet with ratio %1 for duration %2,other,3,0,1
+zh,Change %1 filter: %2,other,3,0,1
+zh,"Channel: %1
+Value: %2",other,3,0,1
+zh,Connected to %1 (%2).,no_words,3,0,1
+zh,Contains %1 %2,no_words,3,0,1
+zh,Could not add or remove user %1 to access folder %2,other,3,0,1
+zh,"Could not encrypt the following folder: ""%1"".
+
+Server replied with error: %2",other,3,0,1
+zh,Couldn't delete resume data of torrent '%1'. Error: %2,other,3,0,1
+zh,Couldn't export torrent metadata file '%1'. Reason: %2.,other,3,0,1
+zh,Couldn't load RSS article '%1#%2'. Invalid data format.,no_words,3,0,1
+zh,Couldn't load resume data of torrent '%1'. Error: %2,other,3,0,1
+zh,Couldn't save RSS AutoDownloader data in %1. Error: %2,other,3,0,1
+zh,"Couldn't save RSS session configuration. File: ""%1"". Error: ""%2""",other,3,0,1
+zh,"Couldn't save RSS session data. File: ""%1"". Error: ""%2""",other,3,0,1
+zh,Couldn't save data to '%1'. Error: %2,other,3,0,1
+zh,Couldn't save torrent metadata to '%1'. Error: %2.,other,3,0,1
+zh,Couldn't save torrent resume data to '%1'. Error: %2.,other,3,0,1
+zh,Couldn't store Watched Folders configuration to %1. Error: %2,other,3,0,1
+zh,Couldn't store resume data for torrent '%1'. Error: %2,other,3,0,1
+zh,Count: %1 %2,no_words,3,0,1
+zh,"Detected inconsistent data: category is missing from the configuration file. Category will be recovered but its settings will be reset to default. Torrent: ""%1"". Category: ""%2""",other,3,0,1
+zh,"Detected inconsistent data: invalid category. Torrent: ""%1"". Category: ""%2""",other,3,0,1
+zh,"Detected inconsistent data: invalid tag. Torrent: ""%1"". Tag: ""%2""",other,3,0,1
+zh,"Detected inconsistent data: tag is missing from the configuration file. Tag will be recovered. Torrent: ""%1"". Tag: ""%2""",other,3,0,1
+zh,"Detected mismatch between the save paths of the recovered category and the current save path of the torrent. Torrent is now switched to Manual mode. Torrent: ""%1"". Category: ""%2""",other,3,0,1
+zh,"Device %1 Decrypt failed, please see log for more information.(%2)",other,3,0,1
+zh,"Device %1 encrypt failed, please see log for more information.(%2)",other,3,0,1
+zh,"Device %1 preencrypt failed, please see log for more information.(%2)",other,3,0,1
+zh,"Device (%1) is busy, cannot %2 now.",other,3,0,1
+zh,Do you also want to change the Video Mode to %1 x %2?,other,3,0,1
+zh,"Download first and last piece first: %1, torrent: '%2'",other,3,0,1
+zh,Downloading new snapshot from %1 to %2,adposition,3,0,1
+zh,"Embedded Tracker: Now listening on IP: %1, port: %2",other,3,0,1
+zh,"Error opening '%1':
+%2",no_words,3,0,1
+zh,"Error removing ""%1"": %2",no_words,3,0,1
+zh,"Error: Internal alert queue is full and alerts are dropped, you might see degraded performance. Dropped alert type: ""%1"". Message: ""%2""",other,3,0,1
+zh,"Error: Shotcut could not find the %1 plugin on your system.
+
+Please install the %2 plugins.",other,3,0,1
+zh,"Expected integer number in environment variable '%1', but got '%2'",other,3,0,1
+zh,Failed to copy '%1' to '%2',adposition,3,0,2
+zh,Failed to create communication with overlay at %2: %1. No overlay will be available.,no_words,3,0,1
+zh,"Failed to create the directory %1, cause: %2",other,3,0,1
+zh,"Failed to delete the file %1, cause: %2",other,3,0,1
+zh,Failed to download RSS feed at '%1'. Reason: %2,other,3,0,1
+zh,Failed to fetch search providers for '%1'. Error: %2,other,3,0,1
+zh,"Failed to move the file %1 to trash, cause: %2",other,3,0,1
+zh,"Failed to move the file %1, cause: %2",other,3,0,1
+zh,"Failed to open the file %1, cause: %2",other,3,0,1
+zh,"Failed to operate on %1 files, %2",other,3,0,1
+zh,"Failed to parse Categories configuration. File: ""%1"". Error: ""%2""",other,3,0,1
+zh,Failed to parse RSS feed at '%1'. Reason: %2,other,3,0,1
+zh,"Failed to read the file %1, cause: %2",other,3,0,1
+zh,"Failed to restore torrent. Files were probably moved or storage isn't accessible. Torrent: ""%1"". Reason: ""%2""",other,3,0,1
+zh,"Failed to resume torrent. Torrent: ""%1"". Reason: ""%2""",other,3,0,1
+zh,"Failed to save Categories configuration. File: ""%1"". Error: ""%2""",other,3,0,1
+zh,"Failed to save RSS feed in '%1', Reason: %2",other,3,0,1
+zh,"Failed to set physical memory (RAM) usage limit. Error code: %1. Error message: ""%2""",other,3,0,1
+zh,"Failed to write the file %1, cause: %2",other,3,0,1
+zh,"File %1 integrity was damaged, cause: %2",other,3,0,1
+zh,File %1 is already locked by %2.,other,3,0,1
+zh,"File <strong>%1</strong> already exists, you need to remove it before choosing <strong>%2</strong> as new filename!",other,3,0,1
+zh,File details of %1 · %2,no_words,3,0,1
+zh,File “%1” could not be opened for validation. %2,other,3,0,1
+zh,"Generate resume data failed. Torrent: ""%1"". Reason: ""%2""",other,3,0,1
+zh,"Get <a href=""%1"">help</a> with the program or <a href=""%2"">contribute</a> to its development.",other,3,0,1
+zh,"Http request size exceeds limitation, closing socket. Limit: %1, IP: %2",other,3,0,1
+zh,IP filter exception thrown for line %1. Exception is: %2,other,3,0,1
+zh,IP geolocation database loaded. Type: %1. Build time: %2.,other,3,0,1
+zh,"Ignoring SSL error, URL: ""%1"", errors: ""%2""",other,3,0,1
+zh,Insufficient storage on the server. The file requires %1 but only %2 are available.,other,3,0,1
+zh,"Invalid value found in configuration file, reverting it to default. Key: ""%1"". Invalid value: ""%2"".",other,3,0,1
+zh,"Line %1, Column %2",other,3,0,2
+zh,Lock operation on %1 failed with error %2,other,3,0,1
+zh,"Macro %1
+%2",no_words,3,0,2
+zh,"Migrate preferences failed: WebUI https, file: ""%1"", error: ""%2""",other,3,0,1
+zh,Move item from %1 to %2,adposition,3,0,1
+zh,"Moved torrent successfully. Torrent: ""%1"". Destination: ""%2""",other,3,0,1
+zh,New %1 is available. Please open %2 to download the update.,other,3,0,1
+zh,"Only %1 are available, need at least %2 to start",other,3,0,1
+zh,"Opening file
+%1
+failed: %2",other,3,0,1
+zh,Original path %1 Target path %2,other,3,0,1
+zh,"Partition %1 Decrypt failed, please see log for more information.(%2)",other,3,0,1
+zh,"Partition %1 encrypt failed, please see log for more information.(%2)",other,3,0,1
+zh,"Partition %1 preencrypt failed, please see log for more information.(%2)",other,3,0,1
+zh,"Peer ""%1"" is added to torrent ""%2""",other,3,0,1
+zh,Performance alert: %1. More info: %2,other,3,0,1
+zh,"Pixel: %1
+IRE: %2",other,3,0,1
+zh,"Pixel: %1
+Value: %2",other,3,0,1
+zh,Please choose a different location. %1 is already being synced to %2.,other,3,0,1
+zh,Please choose a different location. %1 is already being used as a sync folder for %2.,other,3,0,1
+zh,"Plugin ""%1"" is outdated, updating to version %2",other,3,0,1
+zh,Position %1: %2,no_words,3,0,1
+zh,Public Key: %1 bits %2,other,3,0,1
+zh,RSS feed at '%1' updated. Added %2 new articles.,other,3,0,1
+zh,Range selection; %1; %2,no_words,3,0,1
+zh,"Recursive download .torrent file within torrent. Source torrent: ""%1"". File: ""%2""",other,3,0,1
+zh,Remote folder %1 creation failed with error <tt>%2</tt>.,other,3,0,1
+zh,"Removed URL seed from torrent. Torrent: ""%1"". URL: ""%2""",other,3,0,1
+zh,"Removed tracker from torrent. Torrent: ""%1"". Tracker: ""%2""",other,3,0,1
+zh,"Running external program. Torrent: ""%1"". Command: `%2`",other,3,0,1
+zh,Search has failed for '%1'. Error: %2,other,3,0,1
+zh,Search plugin '%1' contains invalid version string ('%2'),other,3,0,1
+zh,Server configuration error: %1 at %2.,adposition,3,0,1
+zh,Shortcut %1 is reserved for use by %2,other,3,0,1
+zh,Shortcut %1 is used by %2,other,3,0,1
+zh,Staff %1 (%2),no_words,3,0,1
+zh,Start measure: %1; End measure: %2,other,3,0,1
+zh,"Start moving torrent. Torrent: ""%1"". Destination: ""%2""",other,3,0,1
+zh,Syncing %1 of %2 (A few seconds left),of,3,0,1
+zh,"The downloaded file does not match the checksum, it will be resumed. ""%1"" != ""%2""",no_words,3,0,1
+zh,The file size (%1) exceeds the download limit (%2),other,3,0,1
+zh,The server on account %1 runs an unsupported version %2. Using this client with unsupported server versions is untested and potentially dangerous. Proceed at your own risk.,other,3,0,1
+zh,There are folders that have grown in size beyond %1MB: %2,other,3,0,1
+zh,"This connection is encrypted using %1 bit %2.
+",other,3,0,1
+zh,"This grants the %1 privilege. If a privilege is both allowed and denied, it is denied.<br />%2",other,3,0,1
+zh,"This revokes the %1 privilege. If a privilege is both allowed and denied, it is denied.<br />%2",other,3,0,1
+zh,Tie to %1 (m. %2),other,3,0,1
+zh,To %1 (Tree): %2,other,3,0,1
+zh,To %1: %2,no_words,3,0,1
+zh,"To preserve your score, try saving it again. If this message still appears, please save your score as new copy. You can also get help for this issue on %1.<br/><br/>Error details (please cite when asking for support): %2",other,3,0,1
+zh,Top pitch: %1; Bottom pitch: %2,other,3,0,1
+zh,"Torrent errored. Torrent: ""%1"". Error: ""%2""",other,3,0,1
+zh,"Total size: %1, %2 files",no_words,3,0,1
+zh,Track %1 (%2),no_words,3,0,1
+zh,"Track: %1, Clip: %2",other,3,0,1
+zh,"Track: %1, Clip: %2 (transition)",other,3,0,1
+zh,"U: %1
+V: %2",other,3,0,1
+zh,Unlock operation on %1 failed with error %2,other,3,0,1
+zh,Unsupported database version: %1.%2,no_words,3,0,1
+zh,Upload of %1 exceeds %2 of space left in personal files.,other,3,0,1
+zh,"Username: %1
+Login token generated on %2.",other,3,0,1
+zh,"Value: %1
+IRE: %2",other,3,0,1
+zh,"WebAPI login failure. Reason: IP has been banned, IP: %1, username: %2",other,3,0,1
+zh,WebUI: Invalid Host header. Request source IP: '%1'. Received Host header: '%2',other,3,0,1
+zh,"When this instrument is selected, <b>%1</b> will no longer run <b>%2</b>.",other,3,0,1
+zh,You moved %1 to %2.,adposition,3,0,1
+zh,You were kicked and banned from the server by %1: %2.,no_words,3,0,1
+zh,You were kicked from the server by %1: %2.,no_words,3,0,1
+zh,"Your Python version (%1) is outdated. Minimum requirement: %2.
+Do you want to install a newer version now?",other,3,0,1
+zh,"Your Python version (%1) is outdated. Please upgrade to latest version for search engines to work.
+Minimum requirement: %2.",other,3,0,1
+zh,Your account %1 requires you to accept the terms of service of your server. You will be redirected to %2 to acknowledge that you have read it and agrees with it.,other,3,0,1
+zh,"could not delete file %1, error: %2",other,3,0,1
+zh,! %1 has %2 users,other,2,0,1
+zh,! %1 has changed nick to %2,other,2,0,1
+zh,! %1 has joined %2,other,2,0,1
+zh,! %1 has left %2,other,2,0,1
+zh,! %1 has quit (%2),other,2,0,1
+zh,! %1 is away (%2),other,2,0,1
+zh,! %1 replied in %2,other,2,0,1
+zh,! %1 replied in %2 seconds,other,2,0,1
+zh,! %1 time is %2,other,2,0,1
+zh,! %1 version is %2,other,2,0,1
+zh,! The Nickname %1 is reserved. Automatically changing Nickname to: %2,other,2,0,1
