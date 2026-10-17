@@ -1,0 +1,624 @@
+{
+ "started": "2026-10-17T05:06:49+00:00",
+ "census_version": "0.3.1",
+ "placeholder_order_version": "0.1.0",
+ "index_url": "https://f-droid.org/repo/index-v2.json",
+ "apps_in_index": 4667,
+ "finished": "2026-10-17T05:21:42+00:00",
+ "repos_scanned": 4476,
+ "repo_status": {
+  "ok": 4386,
+  "error": 90
+ },
+ "version": "0.1.0",
+ "shape_checks": [
+  {
+   "text": "Page %1$d of %2$d",
+   "want": "of",
+   "got": "of"
+  },
+  {
+   "text": "%1$s: %2$s",
+   "want": "no_words",
+   "got": "no_words"
+  },
+  {
+   "text": "Move %1$s to %2$s",
+   "want": "adposition",
+   "got": "adposition"
+  },
+  {
+   "text": "%1$s and %2$s",
+   "want": "and_or",
+   "got": "and_or"
+  },
+  {
+   "text": "%1$s sent you %2$s",
+   "want": "other",
+   "got": "other"
+  },
+  {
+   "text": "%1$d%% of %2$d",
+   "want": "of",
+   "got": "of"
+  }
+ ],
+ "shape_checks_ok": true,
+ "skipped": {
+  "three_or_more_arguments": 34856,
+  "not_valid": 373
+ },
+ "table": {
+  "all": {
+   "no_words": {
+    "valid": 51054,
+    "reordered": 230,
+    "reorder_rate": 0.004505033885689662,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 50786,
+    "repos": 688,
+    "repo_mean_rate": 0.004830257874507909,
+    "ci_low": 0.0027869492668725813,
+    "ci_high": 0.006598668954205238,
+    "unique_valid": 31533,
+    "unique_reorder_rate": 0.006437700187105572
+   },
+   "of": {
+    "valid": 13432,
+    "reordered": 1654,
+    "reorder_rate": 0.12313877307921382,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 11770,
+    "repos": 298,
+    "repo_mean_rate": 0.07698912941353864,
+    "ci_low": 0.08999733735688294,
+    "ci_high": 0.15363881401617252,
+    "unique_valid": 8523,
+    "unique_reorder_rate": 0.14325941569869763
+   },
+   "adposition": {
+    "valid": 12620,
+    "reordered": 1162,
+    "reorder_rate": 0.09207606973058637,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 11455,
+    "repos": 296,
+    "repo_mean_rate": 0.0702551842297985,
+    "ci_low": 0.07174126686321808,
+    "ci_high": 0.11187260632936907,
+    "unique_valid": 9602,
+    "unique_reorder_rate": 0.09904186627785878
+   },
+   "and_or": {
+    "valid": 4813,
+    "reordered": 1,
+    "reorder_rate": 0.00020777062123415748,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 4812,
+    "repos": 116,
+    "repo_mean_rate": 6.481721545242416e-05,
+    "ci_low": 0.0,
+    "ci_high": 0.0006805807622504537,
+    "unique_valid": 2685,
+    "unique_reorder_rate": 0.00037243947858472997
+   },
+   "other": {
+    "valid": 67044,
+    "reordered": 1986,
+    "reorder_rate": 0.029622337569357438,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 65016,
+    "repos": 725,
+    "repo_mean_rate": 0.021911323227115236,
+    "ci_low": 0.022318047634503332,
+    "ci_high": 0.03786170007088999,
+    "unique_valid": 53530,
+    "unique_reorder_rate": 0.030711750420325052
+   },
+   "total": {
+    "valid": 148963,
+    "reordered": 5033,
+    "reorder_rate": 0.03378691352886287,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 143839,
+    "repos": 1005,
+    "repo_mean_rate": 0.021422542823463526,
+    "ci_low": 0.02761011389979402,
+    "ci_high": 0.04043979780101099,
+    "unique_valid": 105873,
+    "unique_reorder_rate": 0.037970020685160526
+   }
+  },
+  "group:SOV": {
+   "no_words": {
+    "valid": 9576,
+    "reordered": 87,
+    "reorder_rate": 0.009085213032581453,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 9483,
+    "repos": 425,
+    "repo_mean_rate": 0.007509732298212156,
+    "ci_low": 0.005002587545282043,
+    "ci_high": 0.014566320900463474,
+    "unique_valid": 6248,
+    "unique_reorder_rate": 0.012483994878361075
+   },
+   "of": {
+    "valid": 2660,
+    "reordered": 1416,
+    "reorder_rate": 0.5323308270676692,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 1241,
+    "repos": 195,
+    "repo_mean_rate": 0.4414956479039935,
+    "ci_low": 0.42585551330798477,
+    "ci_high": 0.6151486550259556,
+    "unique_valid": 1899,
+    "unique_reorder_rate": 0.5423907319641916
+   },
+   "adposition": {
+    "valid": 2400,
+    "reordered": 718,
+    "reorder_rate": 0.2991666666666667,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 1682,
+    "repos": 197,
+    "repo_mean_rate": 0.2443510419377701,
+    "ci_low": 0.23249872253449158,
+    "ci_high": 0.351775956284153,
+    "unique_valid": 1978,
+    "unique_reorder_rate": 0.3195146612740142
+   },
+   "and_or": {
+    "valid": 923,
+    "reordered": 1,
+    "reorder_rate": 0.0010834236186348862,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 922,
+    "repos": 81,
+    "repo_mean_rate": 0.0004409171075837742,
+    "ci_low": 0.0,
+    "ci_high": 0.003816793893129771,
+    "unique_valid": 556,
+    "unique_reorder_rate": 0.0017985611510791368
+   },
+   "other": {
+    "valid": 12873,
+    "reordered": 1130,
+    "reorder_rate": 0.08778062611667832,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 11733,
+    "repos": 449,
+    "repo_mean_rate": 0.09425888969437732,
+    "ci_low": 0.06926573695970414,
+    "ci_high": 0.10939357907253269,
+    "unique_valid": 10624,
+    "unique_reorder_rate": 0.09092620481927711
+   },
+   "total": {
+    "valid": 28432,
+    "reordered": 3352,
+    "reorder_rate": 0.11789532920652786,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 25061,
+    "repos": 609,
+    "repo_mean_rate": 0.10083765396522772,
+    "ci_low": 0.0942075402635432,
+    "ci_high": 0.1429707950520967,
+    "unique_valid": 21305,
+    "unique_reorder_rate": 0.12705937573339593
+   }
+  },
+  "group:SVO": {
+   "no_words": {
+    "valid": 32579,
+    "reordered": 99,
+    "reorder_rate": 0.0030387673040915926,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 32453,
+    "repos": 634,
+    "repo_mean_rate": 0.004275707673825805,
+    "ci_low": 0.0015286395108353565,
+    "ci_high": 0.005105584884690192,
+    "unique_valid": 19486,
+    "unique_reorder_rate": 0.004670019501180334
+   },
+   "of": {
+    "valid": 8527,
+    "reordered": 198,
+    "reorder_rate": 0.023220358860091474,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 8325,
+    "repos": 282,
+    "repo_mean_rate": 0.02611457732377326,
+    "ci_low": 0.018632742225648934,
+    "ci_high": 0.028624933119315143,
+    "unique_valid": 5171,
+    "unique_reorder_rate": 0.030748404563914138
+   },
+   "adposition": {
+    "valid": 8003,
+    "reordered": 378,
+    "reorder_rate": 0.04723228789204049,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 7623,
+    "repos": 271,
+    "repo_mean_rate": 0.04810719280227849,
+    "ci_low": 0.03469830335501977,
+    "ci_high": 0.060810012988546464,
+    "unique_valid": 5902,
+    "unique_reorder_rate": 0.0452389020670959
+   },
+   "and_or": {
+    "valid": 3084,
+    "reordered": 0,
+    "reorder_rate": 0.0,
+    "unsafe": 0,
+    "unsafe_share": null,
+    "numbered_in_order": 3084,
+    "repos": 104,
+    "repo_mean_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unique_valid": 1667,
+    "unique_reorder_rate": 0.0
+   },
+   "other": {
+    "valid": 42141,
+    "reordered": 690,
+    "reorder_rate": 0.016373602904534774,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 41430,
+    "repos": 670,
+    "repo_mean_rate": 0.013559933264605339,
+    "ci_low": 0.011255707762557078,
+    "ci_high": 0.02297027255309944,
+    "unique_valid": 33344,
+    "unique_reorder_rate": 0.016434740882917468
+   },
+   "total": {
+    "valid": 94334,
+    "reordered": 1365,
+    "reorder_rate": 0.014469862403799267,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 92915,
+    "repos": 920,
+    "repo_mean_rate": 0.012687612806140188,
+    "ci_low": 0.01172799773076881,
+    "ci_high": 0.017627412917927635,
+    "unique_valid": 65570,
+    "unique_reorder_rate": 0.01624218392557572
+   }
+  },
+  "group:VSO": {
+   "no_words": {
+    "valid": 696,
+    "reordered": 2,
+    "reorder_rate": 0.0028735632183908046,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 693,
+    "repos": 79,
+    "repo_mean_rate": 0.0019590114526823387,
+    "ci_low": 0.0,
+    "ci_high": 0.007716049382716049,
+    "unique_valid": 503,
+    "unique_reorder_rate": 0.0019880715705765406
+   },
+   "of": {
+    "valid": 167,
+    "reordered": 0,
+    "reorder_rate": 0.0,
+    "unsafe": 0,
+    "unsafe_share": null,
+    "numbered_in_order": 167,
+    "repos": 54,
+    "repo_mean_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unique_valid": 118,
+    "unique_reorder_rate": 0.0
+   },
+   "adposition": {
+    "valid": 169,
+    "reordered": 3,
+    "reorder_rate": 0.01775147928994083,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 166,
+    "repos": 59,
+    "repo_mean_rate": 0.015536723163841807,
+    "ci_low": 0.0,
+    "ci_high": 0.040983606557377046,
+    "unique_valid": 141,
+    "unique_reorder_rate": 0.014184397163120567
+   },
+   "and_or": {
+    "valid": 90,
+    "reordered": 0,
+    "reorder_rate": 0.0,
+    "unsafe": 0,
+    "unsafe_share": null,
+    "numbered_in_order": 90,
+    "repos": 32,
+    "repo_mean_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unique_valid": 49,
+    "unique_reorder_rate": 0.0
+   },
+   "other": {
+    "valid": 912,
+    "reordered": 15,
+    "reorder_rate": 0.01644736842105263,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 896,
+    "repos": 90,
+    "repo_mean_rate": 0.008830152093825984,
+    "ci_low": 0.005482456140350877,
+    "ci_high": 0.02957906712172924,
+    "unique_valid": 805,
+    "unique_reorder_rate": 0.017391304347826087
+   },
+   "total": {
+    "valid": 2034,
+    "reordered": 20,
+    "reorder_rate": 0.00983284169124877,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 2012,
+    "repos": 123,
+    "repo_mean_rate": 0.004784931431959729,
+    "ci_low": 0.00431266846361186,
+    "ci_high": 0.015638575152041704,
+    "unique_valid": 1616,
+    "unique_reorder_rate": 0.01051980198019802
+   }
+  },
+  "group:no dominant order": {
+   "no_words": {
+    "valid": 4349,
+    "reordered": 23,
+    "reorder_rate": 0.005288572085536905,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 4324,
+    "repos": 506,
+    "repo_mean_rate": 0.004262403953830618,
+    "ci_low": 0.0013711151736745886,
+    "ci_high": 0.011262880421758926,
+    "unique_valid": 2660,
+    "unique_reorder_rate": 0.007894736842105263
+   },
+   "of": {
+    "valid": 1102,
+    "reordered": 32,
+    "reorder_rate": 0.029038112522686024,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 1069,
+    "repos": 246,
+    "repo_mean_rate": 0.01329253310960628,
+    "ci_low": 0.013270142180094787,
+    "ci_high": 0.044444444444444446,
+    "unique_valid": 671,
+    "unique_reorder_rate": 0.037257824143070044
+   },
+   "adposition": {
+    "valid": 1065,
+    "reordered": 36,
+    "reorder_rate": 0.03380281690140845,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 1028,
+    "repos": 246,
+    "repo_mean_rate": 0.02431395685567701,
+    "ci_low": 0.010912698412698412,
+    "ci_high": 0.06082725060827251,
+    "unique_valid": 792,
+    "unique_reorder_rate": 0.03156565656565657
+   },
+   "and_or": {
+    "valid": 404,
+    "reordered": 0,
+    "reorder_rate": 0.0,
+    "unsafe": 0,
+    "unsafe_share": null,
+    "numbered_in_order": 404,
+    "repos": 103,
+    "repo_mean_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unique_valid": 234,
+    "unique_reorder_rate": 0.0
+   },
+   "other": {
+    "valid": 5986,
+    "reordered": 88,
+    "reorder_rate": 0.014700968927497494,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 5891,
+    "repos": 556,
+    "repo_mean_rate": 0.009211026320823905,
+    "ci_low": 0.007678183942580538,
+    "ci_high": 0.02293404094010614,
+    "unique_valid": 4672,
+    "unique_reorder_rate": 0.01348458904109589
+   },
+   "total": {
+    "valid": 12906,
+    "reordered": 179,
+    "reorder_rate": 0.013869518053618472,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 12716,
+    "repos": 752,
+    "repo_mean_rate": 0.008307745355150014,
+    "ci_low": 0.009210526315789473,
+    "ci_high": 0.018902439024390243,
+    "unique_valid": 9029,
+    "unique_reorder_rate": 0.01484106767083841
+   }
+  },
+  "group:unassigned": {
+   "no_words": {
+    "valid": 3854,
+    "reordered": 19,
+    "reorder_rate": 0.004929942916450441,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 3833,
+    "repos": 318,
+    "repo_mean_rate": 0.004399491667085662,
+    "ci_low": 0.002089268755935423,
+    "ci_high": 0.0086687306501548,
+    "unique_valid": 2636,
+    "unique_reorder_rate": 0.004552352048558422
+   },
+   "of": {
+    "valid": 976,
+    "reordered": 8,
+    "reorder_rate": 0.00819672131147541,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 968,
+    "repos": 158,
+    "repo_mean_rate": 0.0038788627241853548,
+    "ci_low": 0.0009578544061302681,
+    "ci_high": 0.02040816326530612,
+    "unique_valid": 664,
+    "unique_reorder_rate": 0.010542168674698794
+   },
+   "adposition": {
+    "valid": 983,
+    "reordered": 27,
+    "reorder_rate": 0.027466937945066123,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 956,
+    "repos": 163,
+    "repo_mean_rate": 0.00620950955682956,
+    "ci_low": 0.009345794392523364,
+    "ci_high": 0.04100946372239748,
+    "unique_valid": 789,
+    "unique_reorder_rate": 0.031685678073510776
+   },
+   "and_or": {
+    "valid": 312,
+    "reordered": 0,
+    "reorder_rate": 0.0,
+    "unsafe": 0,
+    "unsafe_share": null,
+    "numbered_in_order": 312,
+    "repos": 68,
+    "repo_mean_rate": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unique_valid": 179,
+    "unique_reorder_rate": 0.0
+   },
+   "other": {
+    "valid": 5132,
+    "reordered": 63,
+    "reorder_rate": 0.012275915822291504,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 5066,
+    "repos": 361,
+    "repo_mean_rate": 0.007165033891323745,
+    "ci_low": 0.004829621679635095,
+    "ci_high": 0.020928305014504767,
+    "unique_valid": 4085,
+    "unique_reorder_rate": 0.012974296205630355
+   },
+   "total": {
+    "valid": 11257,
+    "reordered": 117,
+    "reorder_rate": 0.010393532912854223,
+    "unsafe": 0,
+    "unsafe_share": 0.0,
+    "numbered_in_order": 11135,
+    "repos": 466,
+    "repo_mean_rate": 0.005004632795692363,
+    "ci_low": 0.005703422053231939,
+    "ci_high": 0.016036021802670036,
+    "unique_valid": 8353,
+    "unique_reorder_rate": 0.011612594277505089
+   }
+  }
+ },
+ "predictions": [
+  {
+   "id": "S1",
+   "text": "in SOV languages, of sources are reordered at least 3x as often as no_words sources",
+   "result": "HELD",
+   "detail": {
+    "of": 0.5323308270676692,
+    "no_words": 0.009085213032581453
+   }
+  },
+  {
+   "id": "S2",
+   "text": "in SOV languages, adposition sources are reordered more often than other sources",
+   "result": "HELD",
+   "detail": {
+    "adposition": 0.2991666666666667,
+    "other": 0.08778062611667832
+   }
+  },
+  {
+   "id": "S3",
+   "text": "in SVO languages, of sources are reordered less than 3% of the time",
+   "result": "HELD",
+   "detail": {
+    "of": 0.023220358860091474
+   }
+  },
+  {
+   "id": "S4",
+   "text": "the SOV/SVO reorder-rate ratio is higher for of+adposition sources than for other sources",
+   "result": "HELD",
+   "detail": {
+    "ratio of+adposition": 12.103034420289854,
+    "ratio other": 5.361106326352089
+   }
+  },
+  {
+   "id": "S5",
+   "text": "in SOV languages, no_words sources are reordered less than 3% of the time",
+   "result": "HELD",
+   "detail": {
+    "no_words": 0.009085213032581453
+   }
+  },
+  {
+   "id": "S6",
+   "text": "of and adposition sources account for more than half of SOV reorders",
+   "result": "HELD",
+   "detail": {
+    "reorders": 3352,
+    "of+adposition": 2134,
+    "share": 0.6366348448687351
+   }
+  }
+ ]
+}

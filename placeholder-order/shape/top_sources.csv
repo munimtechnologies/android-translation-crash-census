@@ -1,0 +1,325 @@
+source,shape,sov_translations,sov_reordered,repos
+%1$d of %2$d,of,395,209,45
+%1$s of %2$s,of,182,122,18
+Page %1$d of %2$d,of,222,112,18
+%1$s in %2$s,adposition,85,40,14
+Step %1$d of %2$d,of,109,35,24
+%1$s on %2$s,adposition,55,33,5
+%1$d of %2$d local stations in the list marked non-existent on the server,of,29,28,1
+Adding %1$d of %2$d,of,28,26,1
+Press %1$s to %2$s,adposition,28,26,1
+Home screen %1$d of %2$d,of,60,25,3
+Downloading %1$d of %2$d,of,28,25,1
+Swipe %1$s with %2$s fingers,adposition,28,25,1
+%1$s of %2$s used,of,51,24,7
+%1$s and hold to %2$s,other,28,23,1
+%1$s to read by %2$s,other,28,23,1
+Currently listening to %1$s by %2$s.,adposition,29,22,4
+Tap %1$s to type the letter %2$s,other,28,22,1
+%1$d shortcuts for %2$s,other,26,22,1
+%1$s free of %2$s,other,29,21,5
+%1$d of %2$d accounts connected,of,25,21,5
+%1$s for %2$s,adposition,29,20,2
+%1$s from %2$s,adposition,28,20,1
+%1$s at %2$s,adposition,98,19,24
+Run %1$s on %2$s,adposition,26,19,1
+%1$d of %2$d on,of,35,18,3
+Showing item %1$d of %2$d.,of,28,18,1
+"Search for %1$s items in ""%2$s""",other,22,18,2
+Scanned %1$d of %2$d files.,of,30,17,4
+"This app occupies %1$s on ""%2$s"".",adposition,22,17,1
+Touch “%2$s” to confirm adding “%1$s”,other,29,16,1
+Downloading still in progress. %1$d of %2$dMB downloaded.,of,28,16,1
+"• section ""%1$s"" in Session ""%2$s""",other,22,16,1
+%1$s in %2$s couldn't be synced after 30 days. The server version will be used. Force Sync to retry.,adposition,17,16,1
+Found %1$d calendar(s) for %2$s.,other,17,16,1
+%1$s to %2$s,adposition,150,15,12
+Check %1$s size on %2$s,other,25,15,5
+You have been banned from %1$s by %2$s,adposition,24,15,3
+%1$s across %2$s couldn't be synced after 30 days. The server version will be used. Force Sync to retry.,adposition,17,15,1
+%1$s in %2$s couldn't be synced. Try Force Sync in Settings.,adposition,17,15,1
+%1$s XP to level %2$d,other,16,15,2
+Screen time: %1$s since %2$s,adposition,22,14,1
+Processing %1$d of %2$d transactions,of,19,14,1
+Processed %1$d of %2$d messages,of,18,14,1
+"Can't add to this collection. You've reached the limit of %2$d articles per collection for ""%1$s"".",other,17,14,1
+Chapter %1$d of %2$d,of,35,13,4
+%1$d of %2$d kinds shown,of,14,13,1
+%1$d of %2$d parts included,of,14,13,1
+%1$d of %2$d used,of,14,13,1
+%1$s on %2$s did not work,adposition,14,13,1
+%1$s on %2$s is waiting for you,adposition,14,13,1
+%1$s typed instead of %2$s,other,14,13,1
+Adding %1$d of %2$d…,of,14,13,1
+Allow %1$s on %2$s?,adposition,14,13,1
+Row %1$d of the %2$s layer has a key that covers more rows than the layer has. The keyboard stops it at the last row.,of,14,13,1
+Row %1$d of the %2$s layer has a key with no width.,of,14,13,1
+Row %1$d of the %2$s layer is empty.,of,14,13,1
+Row %1$d of the %2$s layer is wider than the other rows. The keyboard draws the keys of this row narrower.,of,14,13,1
+"The app can use %1$d of the %2$d style rules in this file. FlorisBoard themes set parts of a keyboard that this app draws in a different way. The app saves the theme but does not turn it on, so that you can look at it first. To change the parts that did not come across, open the theme in the theme editor.",of,14,13,1
+"The app can use %1$d of the %2$d style rules in this theme. Gboard themes set parts of a keyboard that this app draws in a different way. The app saves the theme but does not turn it on, so that you can look at it first.",of,14,13,1
+The last draw used %1$s of %2$s instructions,of,14,13,1
+Used %1$s on %2$s,adposition,14,13,1
+Uses %1$d KB of %2$d KB,other,14,13,1
+Using %1$s on %2$s…,adposition,14,13,1
+WM Keyboard will download %1$s from %2$s.,adposition,14,13,1
+%1$s since %2$s,adposition,42,12,1
+"Can't move to this collection. You've reached the limit of %2$d articles per collection for ""%1$s"".",other,15,12,1
+Converting %1$d of %2$d,of,13,12,1
+Disappearing messages timer set to %1$s days by %2$s.,other,12,12,2
+Disappearing messages timer set to %1$s hours by %2$s.,other,12,12,2
+Disappearing messages timer set to %1$s minutes by %2$s.,other,12,12,2
+Disappearing messages timer set to %1$s seconds by %2$s.,other,12,12,2
+Disappearing messages timer set to %1$s weeks by %2$s.,other,12,12,2
+"Do you also want to use the ""%1$s"" action with the mirrored gesture (%2$s)?",other,28,11,1
+The app saved %1$s with %2$d looks. Open Themes to look at it.,adposition,28,11,1
+File %1$d of %2$d,of,21,11,4
+%1$s on day %2$d,other,17,11,1
+#%1$s of %2$s,of,14,11,1
+Page %2$d of %1$s,of,14,11,1
+Inserted %1$d songs into the playlist %2$s.,other,16,10,3
+Member %1$s added by %2$s.,other,14,10,2
+Member %1$s removed by %2$s.,other,14,10,2
+Photo by %1$s on %2$s,adposition,14,10,1
+"Numbers don't lie, they say. And with only %1$d%% of your %2$d active subscriptions having been played this year, we're probably right.",other,13,10,3
+"You've played episodes from %1$d%% of your %2$d active subscriptions this year. We bet you keep your desk clean, too!",other,13,10,3
+%1$s results in %2$s,other,10,10,1
+%1$s %2$s,no_words,313,9,44
+Out of %1$s %2$s,no_words,28,9,1
+You have been removed from %1$s by %2$s,adposition,24,9,3
+Translated from %1$s using %2$s,other,23,9,4
+Batch %1$d of %2$d,of,15,9,2
+%1$d contacts in group %2$s,other,14,9,1
+"Configure ""%1$s"" for feeds in ""%2$s""",other,13,9,2
+"No file %1$s found in archive ""%2$s""",other,12,9,1
+New version %1$s of %2$s has been installed successfully!,of,10,9,1
+%1$d verses in %2$d translations,other,9,9,1
+"Add label ""%1$s"" to bookmark at %2$s",other,9,9,1
+"Add page ""%1$s"" to My Document %2$s",other,9,9,1
+"Remove label ""%1$s"" from bookmark at %2$s",other,9,9,1
+In %1$s %2$s,no_words,28,8,1
+Added %1$d articles to %2$s,other,20,8,1
+%1$d of %2$d results,of,18,8,2
+%1$s for the first %2$s,other,15,8,1
+Google Play is downloading the offline voice typing part: %1$s of %2$s,of,14,8,1
+The app added %1$s to %2$s.,adposition,14,8,1
+The app is getting photos: %1$d of %2$d,of,14,8,1
+Waiting for %1$s to accept the introduction from %2$s.,other,14,8,1
+%1$d cookies from %2$d websites in total,other,10,8,1
+step %1$d of %2$d,of,42,7,1
+%1$s replaced %2$s,other,28,7,1
+%1$s around %2$s,other,22,7,1
+Added %1$d song(s) to %2$s,other,20,7,2
+That's about %1$s each day until %2$d starts.,other,13,7,3
+"That's about %1$s each day until %2$d starts. Wait, what?",other,13,7,3
+That's about %1$s each day until %2$d starts. You can start the year clean if you skip a few episodes.,other,13,7,3
+blocked %1$s by %2$s,adposition,13,7,1
+%1$d accounts with currency %2$s have been updated.,other,10,7,1
+Unable to create file %1$s in folder %2$s,other,10,7,1
+Use %1$s button to reset all these settings back to %2$s.,other,10,7,1
+Create window with %1$s at %2$s,adposition,9,7,1
+%1$d of %2$d selected,of,8,7,3
+Saving %1$d of %2$d frames,of,8,7,1
+%1$d of %2$d shown,of,7,7,2
+Pausing connection in screen off state: less than %1$s in %2$ss,adposition,7,7,3
+%1$s characters replaced with %2$s characters,other,28,6,1
+Running… (%1$d of %2$d),of,24,6,3
+"Downloading
+%2$s from
+%1$s",adposition,21,6,2
+"Logged in as %1$s on %2$s.
+
+You can choose your synchronization provider again once you have logged out.",adposition,18,6,3
+Could not download %1$s because %2$s.,other,16,6,2
+Google Play is downloading the on-device translation part: %1$s of %2$s,of,14,6,1
+Archiving podcast %1$d of %2$d…,of,13,6,3
+Unsubscribing from podcast %1$d of %2$d…,of,13,6,3
+%1$s via %2$s,adposition,10,6,2
+Restoring podcast %1$d of %2$d…,of,10,6,3
+You are about to %1$s %2$s item(s). Continue?,no_words,10,6,1
+"You are about to install the %1$s firmware on your %2$s.
+
+Your watch will reboot after installing the .zip file.
+
+PROCEED AT YOUR OWN RISK!",other,10,6,2
+"%1$s is required for ""%2$s"" parameters.",other,9,6,1
+Saved to %1$s folder with name %2$s,other,9,6,1
+"You reacted %1$s to ""%2$s""",adposition,8,6,2
+Your apps contacted %1$d tracking companies via %2$d tracker hosts this week!,other,8,6,1
+%1$d of %2$d switched on,of,6,6,1
+Clears to ~%1$dmg by your %2$s bedtime.,other,6,6,1
+Have about %1$dmg around %2$s,other,6,6,1
+%1$s removed %2$s,other,61,5,5
+%1$s by %2$s,adposition,32,5,5
+%1$s left of %2$s,other,19,5,1
+%1$s overspent of %2$s,other,19,5,1
+Last edited %1$s by %2$s,adposition,17,5,1
+Translations · %1$d of %2$d languages,of,14,5,1
+Item %1$d of %2$d,of,11,5,3
+%1$s per %2$s,adposition,10,5,3
+%1$d of %2$d files selected,of,9,5,1
+%1$s of %2$s selected,of,9,5,1
+Extend until %1$s for %2$s,adposition,9,5,1
+I blocked %1$d tracker hosts from %2$d companies this week using TrackerControl! Take back your privacy: https://trackercontrol.org,other,8,5,1
+Preparing %1$d of %2$d…,of,8,5,1
+A minimum of %1$s changes over last two-month period %2$s is required to get access for unlimited hourly map updates.,other,7,5,1
+Get %1$s for %2$s!,adposition,7,5,1
+The first %1$d of %2$d.,of,7,5,1
+"Found %1$d station(s) in %2$s format.
+
+",other,6,5,1
+"Move %2$d station(s) using ""%1$s"" to Other? The genre will be removed from the list.",other,6,5,1
+"You reached %1$s today, above the suggested %2$s. Consider taking a listening break.",other,6,5,1
+%1$d of %2$d engines flagged this file,of,5,5,1
+%1$d weigh-ins over %2$d days,other,5,5,1
+%1$s of %2$d h eating,of,5,5,1
+Discover will update with %1$d new articles each %2$s. Your recommendations are stored locally on your device.,other,5,5,1
+Donation reminders are on. Wikipedia will remind you to donate %1$s every %2$s you read while this experiment runs.,other,5,5,1
+Extracting %1$d of %2$d,of,5,5,1
+"Safe — only %1$d weigh-ins over %2$d days, so the formula was used",other,5,5,1
+Smart — used your %1$d weigh-ins over %2$d days,other,5,5,1
+Thank you! We'll remind you to donate %1$s when you read %2$s while this experiment runs.,other,5,5,1
+Undid %1$s for “%2$s”,adposition,5,5,1
+Your longest visit was %1$s in %2$s.,adposition,5,5,1
+%1$d wide by %2$d high,other,54,4,2
+%1$s of %2$s free,of,26,4,4
+You have asked to introduce %1$s to %2$s.,adposition,20,4,2
+All good! %1$s already contains %2$s.,other,19,4,1
+%1$s by %2$s audiobook cover,adposition,17,4,3
+Day %1$d of %2$d,of,17,4,1
+Day %1$d of %2$d (All day),of,17,4,1
+About to transfer %1$s of data starting from %2$s,other,14,4,2
+Reacted %1$s to: %2$s.,adposition,14,4,1
+Sent %1$s to device %2$s,other,14,4,2
+"Send this text to %1$d chats?
+
+""%2$s""",other,12,4,2
+%1$d of %2$d item(s) activated.,of,10,4,1
+%1$d of %2$d item(s) deactivated.,of,10,4,1
+%1$d of %2$d item(s) deleted.,of,10,4,1
+You found %1$d mines in %2$d seconds.,other,9,4,1
+%1$d messages in %2$d chats,other,8,4,2
+%1$s across %2$s,adposition,8,4,2
+Allow %1$s in %2$s,adposition,8,4,1
+Block %1$s in %2$s,adposition,8,4,1
+Importing note %1$d of %2$d…,of,8,4,1
+Showing %1$d of %2$d image(s),of,8,4,1
+Stage %1$d of %2$d,of,8,4,1
+"%1$s of %2$s scans. Past that, the oldest go first; starred scans always stay. Export a copy to keep them.",of,7,4,1
+Importing board %1$d of %2$d…,of,7,4,1
+Excluding %1$s for %2$s in lockdown mode can cause Internet connectivity issues.,adposition,6,4,1
+%1$s left at %2$s,other,5,4,1
+%1$s of %2$s goal,of,5,4,1
+"Android reported the install as done, but version code %2$d is installed instead of %1$d.",other,5,4,1
+Are you sure you want to delete folder %1$s containing %2$d items?,other,5,4,1
+Colour %1$d of %2$d,of,5,4,1
+Saved as %1$s in %2$s,adposition,5,4,1
+"Saved as %1$s in %2$s, as it was downloaded. Tern checks a file when it installs it.",adposition,5,4,1
+The download stopped after %1$s of %2$s. Try again to resume it.,of,5,4,1
+%1$d of %2$d fonts added,of,4,4,1
+%1$d of %2$d logged,of,4,4,1
+%1$d of %2$d logged today,of,4,4,1
+%1$s a month when you pay %2$s once a year,other,4,4,1
+%1$s across %2$s.,adposition,4,4,1
+%1$s changed the group video for %2$s,other,4,4,4
+"%1$s code for feature ""%2$s""",other,4,4,1
+%1$s ended a voice chat in the group %2$s,other,4,4,4
+%1$s instead of %2$s dots per mm,other,4,4,1
+"%1$s locale for feature ""%2$s""",other,4,4,1
+%1$s of %2$s in referral credit earned,of,4,4,1
+%1$s reacted %2$s to your giveaway,other,4,4,4
+%1$s remaining on %2$s,other,4,4,1
+%1$s started a voice chat in the group %2$s,other,4,4,4
+(%1$s instead of %2$s dpi),other,4,4,1
+All %1$d in %2$s are selected,adposition,4,4,1
+Applied to %1$d of %2$d - this action only covers loaded messages,of,4,4,1
+Approving %1$d of %2$d…,of,4,4,1
+Are you sure you want to add %1$d members to **%2$s**?,other,4,4,4
+Discovered (%1$d of %2$d),of,4,4,1
+Free %1$s of %2$s,of,4,4,4
+Importing %1$d of %2$d...,of,4,4,1
+"Invalid character “%1$s” at position %2$s. Base32 knows only A–Z and 2–7 — the digits 0, 1 and 8 do not occur (mixed up with O, I and B?).",other,4,4,1
+Message download status: %1$d out of %2$d,of,4,4,1
+Received %1$d file(s) from %2$s,other,4,4,1
+Renewing %1$s's cert via %2$s…,other,4,4,1
+Select all %1$d in %2$s,adposition,4,4,1
+"Select all %1$d in %2$s, including every category",adposition,4,4,1
+Sent %1$d knocks in %2$d ms,other,4,4,1
+Sent %1$d-byte SPA packet in %2$d ms,other,4,4,1
+This Savegame contains a different player name (%1$s) than your current player name (%2$s). Are you sure you want to overwrite this savegame?,other,4,4,1
+This action covers the first %1$d of %2$d messages.,of,4,4,1
+This sheet is too big to show in full. Showing the first %1$s of %2$s columns.,of,4,4,1
+This sheet is too big to show in full. Showing the first %1$s of %2$s rows.,of,4,4,1
+Up to %1$s for %2$s,adposition,4,4,4
+Uploading chunk %1$d of %2$d,of,4,4,1
+What would you like to do with %1$s from **%2$s**?,adposition,4,4,4
+What would you like to do with %1$s from your chat with **%2$s**?,other,4,4,4
+"You are about to apply a custom language pack (**%1$s**) that is %2$d%% complete.
+
+This will translate the entire interface. You can suggest corrections via the [translation platform].
+
+You can change your language back at any time in Settings.",other,4,4,4
+"You are about to apply a language pack (**%1$s**) that is %2$d%% complete.
+
+This will translate the entire interface. You can suggest corrections via the [translation platform].
+
+You can change your language back at any time in Settings.",other,4,4,4
+You cannot %1$s %2$s.,no_words,4,4,1
+You favorited %1$s comments on %2$s,other,4,4,1
+You were timed out for %1$s by %2$s,adposition,4,4,1
+You've reached your %1$s limit on the %2$s plan. Upgrade for more.,other,4,4,1
+You've read %1$s since you pledged %2$s!,other,4,4,1
+served %1$d bytes from %2$s,other,4,4,1
+uploaded %1$d bytes via %2$s,other,4,4,1
+"Folder opened, %1$d by %2$d",adposition,60,3,3
+%1$s revoked the invitation for %2$s to join the room,other,50,3,5
+%1$s withdrew %2$s's invitation,other,42,3,3
+%1$s accepted the invitation for %2$s,other,36,3,3
+Match %1$d of %2$d,of,30,3,2
+You added %1$s and removed %2$s as addresses for this room.,other,27,3,3
+Added %1$s to %2$s.,adposition,22,3,1
+%1$s removed from %2$s,other,18,3,1
+Sending file (%1$s / %2$s),no_words,18,3,3
+Sending thumbnail (%1$s / %2$s),no_words,18,3,3
+%1$s is created by %2$s. Buy them a coffee!,other,15,3,1
++ %1$d more on %2$s,other,15,3,2
+Downloading… %1$s of %2$s,of,14,3,1
+Spelling your Bangla words for swiping: %1$d of %2$d,of,14,3,1
+"%1$s has been muted until %2$s.
+ You can unmute this account from their profile page.",other,11,3,1
+"%1$s is muted until %2$s.
+ Tap here to unmute the account.",other,11,3,1
+%1$d of %2$d item(s) uploaded.,of,10,3,1
+Event %1$s of %2$s.,of,10,3,1
+%1$d of %2$d channels,of,9,3,1
+%1$s against %2$s,adposition,9,3,1
+%1$d known trackers(s) found in %2$s,other,7,3,1
+Get “%1$s” as part of the %2$s plan. Comparison:,other,7,3,1
+This will permanently delete saved patch selections for %1$s in source #%2$s,other,7,3,1
+%1$s on %2$s notification channel,adposition,6,3,1
+"Discover and install modules from [bold]%1$d[/bold] trusted repositories, featuring over [bold]%2$d[/bold] modules for your device.",other,6,3,1
+Send message to %1$s via %2$s?,adposition,6,3,1
+%1$d+ server locations in %2$s,other,5,3,1
+Checking %1$d of %2$d,of,5,3,1
+"The new address offers %2$s, not %1$s, so the old address was kept.",other,5,3,1
+"This file is %2$s, not %1$s.",other,5,3,1
+"To level up this skill, you need at least level %1$,d of the %2$s skill.",of,5,3,1
+Uninstalling %1$d of %2$d,of,5,3,1
+Unlock %1$s in %2$s with VPN Plus.,adposition,5,3,1
+%1$d of %2$d modules selected,of,4,3,1
+%1$s used of %2$s,other,4,3,1
+"Activate your new app icon in Settings under App icon. Thank you for investing in the future of free knowledge. Your contributions as %1$s in %2$d are helping pave the way to a world of free information, and as a result you have unlocked a custom contributor icon for Wikipedia on your home screen.",adposition,4,3,1
+Error updating %1$s of schedule %2$d,other,4,3,1
+Removed the %1$s subkey from %2$s,other,4,3,1
+Restored the default %1$s subkey on %2$s,other,4,3,1
+Run %1$d pending cut/copy action(s) in %2$s? Name conflicts will be saved as copies.,other,4,3,1
+"Search for ""%1$s"" on %2$s",adposition,4,3,1
+Switch to %1$s for %2$s,adposition,4,3,1
+"You do not yet have any shortcuts that can be triggered via the Quick Settings tile.
+
+You can enable this feature by editing a shortcut and selecting the checkbox “%1$s” found in “%2$s”.",other,4,3,1
+Your payment did not go through. Access to your %2$s plan is limited after %1$s.,other,4,3,1
+%1$d of %2$d SIMs have MMS enabled by their carrier,of,3,3,1
+%1$d of %2$d enabled for auto-deletion,of,3,3,1
+%1$d of %2$d files done,of,3,3,1
+%1$d of %2$d items could not be pasted,of,3,3,1
