@@ -1,0 +1,97 @@
+{
+ "started": "2026-10-17T00:53:47+00:00",
+ "census_version": "0.3.1",
+ "index_url": "https://f-droid.org/repo/index-v2.json",
+ "apps_in_index": 4667,
+ "finished": "2026-10-17T01:05:52+00:00",
+ "version": "0.1.0",
+ "repos_scanned": 4476,
+ "repo_status": {
+  "ok": 4386,
+  "error": 90
+ },
+ "counted_translations": 189599,
+ "unnumbered_reordered": 13,
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "SOV reorder rate >= 2x SVO (unnumbered_mixed sources): SOV 3.4%, SVO 1.1%",
+   "held": true
+  },
+  {
+   "id": "P2",
+   "text": "SOV reorder rate >= 2x SVO (numbered sources): SOV 12.1%, SVO 1.5%",
+   "held": true
+  },
+  {
+   "id": "P3",
+   "text": "ja and ko both in the top 5 languages (>= 20 repositories) by numbered reorder rate: top 5 = my, mn, ky, mr, kn",
+   "held": false
+  },
+  {
+   "id": "P4",
+   "text": "at least 10% of reorders of mixed-kind unnumbered sources are unsafe: 100.0%",
+   "held": true
+  },
+  {
+   "id": "P5",
+   "text": "in both SOV and SVO, numbered sources are reordered more often than mixed-kind unnumbered ones: SOV 12.1% vs 3.4%, SVO 1.5% vs 1.1%",
+   "held": true
+  },
+  {
+   "id": "P6",
+   "text": "on unnumbered sources, translations numbered in the source order outnumber numbered reorders: 83 vs 7",
+   "held": true
+  }
+ ],
+ "totals": {
+  "numbered": {
+   "valid": 183583,
+   "reordered": 6285,
+   "reorder_rate": 0.034235196069352825,
+   "unsafe": 0,
+   "unsafe_share": 0.0,
+   "numbered_in_order": 177198,
+   "repos": 1061,
+   "repos_with_reorder": 389,
+   "repo_mean_rate": 0.024908226556717292,
+   "ci_low": 0.02796484419586805,
+   "ci_high": 0.04101545864917809,
+   "unique_valid": 133671,
+   "unique_reorder_rate": 0.03823566817035857,
+   "other": 488
+  },
+  "unnumbered_mixed": {
+   "valid": 1011,
+   "reordered": 13,
+   "reorder_rate": 0.012858555885262116,
+   "unsafe": 13,
+   "unsafe_share": 1.0,
+   "numbered_in_order": 1,
+   "repos": 53,
+   "repos_with_reorder": 4,
+   "repo_mean_rate": 0.0127686648913064,
+   "ci_low": 0.0019704433497536944,
+   "ci_high": 0.029715762273901807,
+   "unique_valid": 968,
+   "unique_reorder_rate": 0.012396694214876033,
+   "other": 12
+  },
+  "unnumbered_same": {
+   "valid": 4485,
+   "reordered": 7,
+   "reorder_rate": 0.001560758082497213,
+   "unsafe": 0,
+   "unsafe_share": 0.0,
+   "numbered_in_order": 82,
+   "repos": 142,
+   "repos_with_reorder": 3,
+   "repo_mean_rate": 0.003148699891657638,
+   "ci_low": 0.0,
+   "ci_high": 0.004139715394566624,
+   "unique_valid": 3632,
+   "unique_reorder_rate": 0.0019273127753303965,
+   "other": 20
+  }
+ }
+}
