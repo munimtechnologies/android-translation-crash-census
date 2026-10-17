@@ -1,0 +1,452 @@
+{
+ "referenced_names": 42,
+ "candidate_names": 40,
+ "candidate_names_stored": 13,
+ "candidate_names_fetched": 4,
+ "candidate_names_helper": 15,
+ "candidate_names_wrapped": 8,
+ "version": "0.1.0",
+ "census_version": "0.4.0",
+ "census_commit": "9a05d8e06a31146bbcf8a3a4781cb1271775908e",
+ "pairs": 1271320,
+ "verdicts": {
+  "ok": 1270863,
+  "crash-if-text": 93,
+  "crash": 360,
+  "crash-if-int": 4
+ },
+ "crash_by_code_use": {
+  "formatted": 230,
+  "candidate": 41,
+  "referenced": 1,
+  "unreferenced": 88,
+  "unknown": 0
+ },
+ "crash_candidates_by_rule": {
+  "helper": 16,
+  "wrapped": 11,
+  "stored": 10,
+  "fetched": 4
+ },
+ "repos_attempted": 4476,
+ "repos_not_reached": 0,
+ "audit": [
+  {
+   "repo": "AdAway/AdAway",
+   "locale": "nl",
+   "key": "welcome_sync_error",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "fetched"
+  },
+  {
+   "repo": "AndreAle94/moneywallet",
+   "locale": "tr",
+   "key": "message_data_export_failed",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "AndreAle94/moneywallet",
+   "locale": "tr",
+   "key": "message_data_import_failed",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "AndreAle94/moneywallet",
+   "locale": "tr",
+   "key": "message_error_legacy_upgrade_failed",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "CookieJarApps/SmartCookieWeb",
+   "locale": "es",
+   "key": "message_permission_request",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "CookieJarApps/SmartCookieWeb",
+   "locale": "lt",
+   "key": "message_permission_request",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "LeoColman/Petals",
+   "locale": "in",
+   "key": "current_thc_concentration",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "MuntashirAkon/Metro",
+   "locale": "te-rIN",
+   "key": "could_not_scan_files",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "fetched"
+  },
+  {
+   "repo": "RetroMusicPlayer/RetroMusicPlayer",
+   "locale": "te-rIN",
+   "key": "could_not_scan_files",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "fetched"
+  },
+  {
+   "repo": "TeamNewPipe/NewPipe",
+   "locale": "kmr",
+   "key": "views[one]",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "akshvaishnav21/LearnTube",
+   "locale": "kmr",
+   "key": "views[one]",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "TeamNewPipe/NewPipe",
+   "locale": "in",
+   "key": "sign_in_confirm_not_bot_error",
+   "audit": "safe (census false positive)",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "andstatus/andstatus",
+   "locale": "zh-rTW",
+   "key": "friends_of",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "andstatus/andstatus",
+   "locale": "zh-rTW",
+   "key": "menu_item_user_messages",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "berdosi/HeartBeat",
+   "locale": "bn",
+   "key": "measurement_output_template[one]",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "berdosi/HeartBeat",
+   "locale": "bn",
+   "key": "measurement_output_template[other]",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "berdosi/HeartBeat",
+   "locale": "bn",
+   "key": "measurement_output_template[zero]",
+   "audit": "safe (item never used)",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "commons-app/apps-android-commons",
+   "locale": "nqo",
+   "key": "add_picture_to_wikipedia_article_desc",
+   "audit": "safe (not formatted)",
+   "found": true,
+   "verdict": "crash",
+   "use": "referenced",
+   "callsite": ""
+  },
+  {
+   "repo": "commons-app/apps-android-commons",
+   "locale": "tcy",
+   "key": "successful_wikidata_edit",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "fetched"
+  },
+  {
+   "repo": "dessalines/habit-maker",
+   "locale": "fa",
+   "key": "x_days_completed",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "farmerbb/SecondScreen",
+   "locale": "it",
+   "key": "debug_mode_enabling",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "forrestguice/SuntimesCalendars",
+   "locale": "nl",
+   "key": "units_years_ago[other]",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "jclehner/rxdroid",
+   "locale": "de",
+   "key": "_msg_constraints_date_before",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "lavabit/pahoehoe",
+   "locale": "vi",
+   "key": "using_proxy",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "confirmation_remove_file_alert",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "confirmation_remove_files_alert",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "downloader_download_failed_content",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "downloader_download_succeeded_content",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "error__upload__local_file_not_copied",
+   "audit": "safe (not reached)",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "file_already_exists_description",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "sync_fail_content_unauthorized",
+   "audit": "throws, trigger not confirmed",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "owncloud/android",
+   "locale": "ug",
+   "key": "uploader_upload_succeeded_content_single",
+   "audit": "safe (not reached)",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "helper"
+  },
+  {
+   "repo": "thuryn/your-local-weather",
+   "locale": "ar",
+   "key": "title_activity_license",
+   "audit": "safe (not formatted)",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "w32blaster/helsinki-timetables",
+   "locale": "zh",
+   "key": "dialog_confirm_delete_bookmarks",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "w32blaster/helsinki-timetables",
+   "locale": "zh",
+   "key": "header_one_trip",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "w32blaster/helsinki-timetables",
+   "locale": "zh",
+   "key": "header_trips",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "w32blaster/helsinki-timetables",
+   "locale": "zh",
+   "key": "header_trips_directions",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "w32blaster/helsinki-timetables",
+   "locale": "zh",
+   "key": "stations_list_of_trips_header",
+   "audit": "crash",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "wrapped"
+  },
+  {
+   "repo": "zhanghai/MaterialFiles",
+   "locale": "eu",
+   "key": "file_job_extract_scan_notification_title_format[one]",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  },
+  {
+   "repo": "zhanghai/MaterialFiles",
+   "locale": "eu",
+   "key": "file_job_extract_scan_notification_title_format[other]",
+   "audit": "throws, caught",
+   "found": true,
+   "verdict": "crash",
+   "use": "candidate",
+   "callsite": "stored"
+  }
+ ],
+ "predictions": [
+  {
+   "id": "C1",
+   "text": "at least 80% of the hand-audited rows that throw, still crashing, are formatted or candidate: 34 of 34",
+   "held": true
+  },
+  {
+   "id": "C2",
+   "text": "the hand-audited rows that are not formatted stay referenced: nqo add_picture_to_wikipedia_article_desc=referenced, ar title_activity_license=candidate",
+   "held": false
+  },
+  {
+   "id": "C3",
+   "text": "at most half of the strings census 0.4.0 calls referenced become candidates: 40 of 42",
+   "held": false
+  }
+ ]
+}
