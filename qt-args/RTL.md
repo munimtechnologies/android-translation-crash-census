@@ -9,6 +9,9 @@ This is an **exploratory** result: we saw the pattern while reading the census r
 and then counted it in the same data. No prediction was made in advance, so treat it as a
 finding to test on other data, not as a confirmed law.
 
+**Update (2026-10-17):** a pre-registered test on 40 other Qt projects **replicated** it: right-to-left
+2.1% against 0.056% elsewhere, in 7 projects. See [rtl-replication/RESULTS.md](rtl-replication/RESULTS.md).
+
 ## The pattern
 
 Qt's `QString::arg()` only reads a place marker written `%` then a digit (`%1`). A translation
@@ -87,7 +90,8 @@ who or what wrote these strings.
   rows RESULTS.md takes out of the headline (1 of them, LibreCAD's Hebrew `%12`, is right-to-left).
 - Per-file denominators were not recorded, so a rate that leaves Scribus's Arabic file out
   entirely could not be computed; the 1.6% above is a lower bound.
-- Found after looking at the data. A pre-registered test on another corpus is the next step.
+- Found after looking at the data. The pre-registered test on another corpus has since replicated it
+  ([rtl-replication/RESULTS.md](rtl-replication/RESULTS.md)).
 
 ## Prior work
 
