@@ -1,0 +1,332 @@
+{
+ "guard": "0.10.0",
+ "projects": [
+  {
+   "name": "sonata",
+   "kind": "symfony",
+   "base": "https://raw.githubusercontent.com/sonata-project/SonataAdminBundle/0b36030299107e2069ee249a68ecd8830b37bf93/src/Resources/translations/SonataAdminBundle.%s.xliff",
+   "source": "en"
+  },
+  {
+   "name": "akeneo",
+   "kind": "symfony",
+   "base": "https://raw.githubusercontent.com/akeneo/pim-community-dev/cfc810e6449651b7d3be4c7db3dd09c71011012c/src/Akeneo/Pim/Enrichment/Bundle/Resources/translations/validators.%s.yml",
+   "source": "en_US"
+  },
+  {
+   "name": "opendxp",
+   "kind": "symfony",
+   "base": "https://raw.githubusercontent.com/open-dxp/opendxp/66f8e913af07e69e161d8ca13475537b2bf441fc/bundles/CoreBundle/translations/admin.%s.yaml",
+   "source": "en"
+  },
+  {
+   "name": "govuk",
+   "kind": "rails",
+   "base": "https://raw.githubusercontent.com/alphagov/govuk_publishing_components/05d2fbe80380190b285adba9346e071b0d3a7b57/config/locales/%s.yml",
+   "source": "en"
+  },
+  {
+   "name": "osm",
+   "kind": "rails",
+   "base": "https://raw.githubusercontent.com/openstreetmap/openstreetmap-website/855cda765f5683628bed8a83cdf963958dadc7b7/config/locales/%s.yml",
+   "source": "en"
+  }
+ ],
+ "source_string_messages": {
+  "sonata": 126,
+  "akeneo": 120,
+  "opendxp": 3,
+  "govuk": 296,
+  "osm": 3175
+ },
+ "totals": {
+  "sonata": {
+   "warning untranslated": 130,
+   "error placeholder-missing": 145,
+   "error tags": 3,
+   "warning placeholder-missing": 54,
+   "warning missing-key": 3,
+   "error lookalike-percent": 6
+  },
+  "akeneo": {
+   "warning missing-key": 664,
+   "warning placeholder-extra": 28,
+   "warning extra-key": 21,
+   "warning untranslated": 299,
+   "error placeholder-extra": 6,
+   "error placeholder-missing": 3,
+   "error lookalike-percent": 1
+  },
+  "opendxp": {
+   "warning untranslated": 16,
+   "error placeholder-missing": 4,
+   "error lookalike-percent": 4
+  },
+  "govuk": {
+   "warning missing-key": 7522,
+   "warning extra-key": 317,
+   "warning untranslated": 35,
+   "error placeholder-missing": 27,
+   "warning placeholder-extra": 13,
+   "error lookalike-percent": 7,
+   "error tags": 11
+  },
+  "osm": {
+   "warning missing-key": 1341,
+   "warning placeholder-missing": 72,
+   "warning untranslated": 42,
+   "warning lookalike-percent": 5,
+   "warning empty": 1,
+   "error placeholder-missing": 14,
+   "warning extra-key": 2,
+   "error lookalike-percent": 1
+  }
+ },
+ "lookalikes": [
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%link_end% is written \"％link_end％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "flash_lock_error",
+   "project": "sonata",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%link_start% is written \"％link_start％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "flash_lock_error",
+   "project": "sonata",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%name% is written \"％name％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "flash_lock_error",
+   "project": "sonata",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%link_end% is written \"％link_end％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "flash_lock_error",
+   "project": "sonata",
+   "lang": "zh_CN"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%link_start% is written \"％link_start％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "flash_lock_error",
+   "project": "sonata",
+   "lang": "zh_CN"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%name% is written \"％name％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "flash_lock_error",
+   "project": "sonata",
+   "lang": "zh_CN"
+  },
+  {
+   "level": "error",
+   "code": "placeholder-missing",
+   "message": "placeholder(s) missing: %level%",
+   "key": "pim_catalog.constraint.family_variant_no_axis",
+   "project": "akeneo",
+   "lang": "tr_TR"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%level% is written \"％level％\" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost",
+   "key": "pim_catalog.constraint.family_variant_no_axis",
+   "project": "akeneo",
+   "lang": "zh_TW"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%s is written \"％s\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+   "key": "workflow_change_email_notification_text",
+   "project": "opendxp",
+   "lang": "zh_Hans"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%s is written \"％s\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+   "key": "workflow_change_email_notification_text",
+   "project": "opendxp",
+   "lang": "zh_Hans"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%s is written \"％s\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+   "key": "workflow_change_email_notification_text",
+   "project": "opendxp",
+   "lang": "zh_Hans"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%s is written \"％s\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+   "key": "workflow_change_email_notification_text",
+   "project": "opendxp",
+   "lang": "zh_Hans"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{number} is written \"％{number}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "common.toggle_more",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{title} is written \"％{title}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "components.article_schema.scoped_search_description",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{count} is written \"％{count}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "components.attachment.page.other",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{number} is written \"％{number}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "components.character_count.body",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{type} is written \"％{type}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "components.character_count.body",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{link} is written \"％{link}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "components.cookie_banner.confirmation_message.html",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{organisation} is written \"％{organisation}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "components.organisation_schema.all_content_search_description",
+   "project": "govuk",
+   "lang": "ja"
+  },
+  {
+   "level": "warning",
+   "code": "lookalike-percent",
+   "message": "\"٪ {br}\" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{br}",
+   "key": "site.about.heading_html",
+   "project": "osm",
+   "lang": "ar"
+  },
+  {
+   "level": "warning",
+   "code": "lookalike-percent",
+   "message": "\"٪ {copyright}\" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{copyright}",
+   "key": "site.about.heading_html",
+   "project": "osm",
+   "lang": "ar"
+  },
+  {
+   "level": "warning",
+   "code": "lookalike-percent",
+   "message": "\"٪ {finland}\" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{finland}",
+   "key": "site.copyright.legal_babble.contributors_fi_credit_html",
+   "project": "osm",
+   "lang": "ar"
+  },
+  {
+   "level": "warning",
+   "code": "lookalike-percent",
+   "message": "\"٪ {nlsfi_license_link}\" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{nlsfi_license_link}",
+   "key": "site.copyright.legal_babble.contributors_fi_credit_html",
+   "project": "osm",
+   "lang": "ar"
+  },
+  {
+   "level": "warning",
+   "code": "lookalike-percent",
+   "message": "\"٪ {native_link}\" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{native_link}",
+   "key": "site.copyright.native.html",
+   "project": "osm",
+   "lang": "ar"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-percent",
+   "message": "%{oauth2} is written \"％{oauth2}\" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost",
+   "key": "oauth2_authorized_applications.index.no_applications_html",
+   "project": "osm",
+   "lang": "ja"
+  }
+ ],
+ "parse_errors": [],
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "Sonata: lookalike-percent errors only in ja and zh_CN, only on flash_lock_error, 3 in each",
+   "held": true,
+   "value": "ja 3 ['flash_lock_error']; zh_CN 3 ['flash_lock_error']"
+  },
+  {
+   "id": "P2",
+   "text": "Akeneo: only lookalike-percent error is zh_TW family_variant_no_axis; tr_TR placeholder-missing names %level%",
+   "held": true,
+   "value": "[('zh_TW', 'pim_catalog.constraint.family_variant_no_axis')]; tr_TR missing 1"
+  },
+  {
+   "id": "P3",
+   "text": "OpenDXP: lookalike-percent errors only in zh_Hans, only on workflow_change_email_notification_text, 4",
+   "held": true,
+   "value": "[('zh_Hans', 'workflow_change_email_notification_text')] 4"
+  },
+  {
+   "id": "P4",
+   "text": "GOV.UK: lookalike-percent errors only in ja, 7, on exactly the six keys",
+   "held": true,
+   "value": "7 errors, langs ['ja'], keys ['common.toggle_more', 'components.article_schema.scoped_search_description', 'components.attachment.page.other', 'components.character_count.body', 'components.cookie_banner.confirmation_message.html', 'components.organisation_schema.all_content_search_description']"
+  },
+  {
+   "id": "P5",
+   "text": "OpenStreetMap: ar only warnings, on the three keys; ja one error on no_applications_html",
+   "held": true,
+   "value": "ar [('warning', 'site.about.heading_html'), ('warning', 'site.copyright.legal_babble.contributors_fi_credit_html'), ('warning', 'site.copyright.native.html')]; ja [('error', 'oauth2_authorized_applications.index.no_applications_html')]"
+  },
+  {
+   "id": "P6",
+   "text": "every lookalike-percent error is in a Chinese, Japanese or Arabic-script file",
+   "held": true,
+   "value": "none outside"
+  },
+  {
+   "id": "P7",
+   "text": "every file present parses, and every source has at least 50 string messages",
+   "held": false,
+   "value": "0 parse errors; {'sonata': 126, 'akeneo': 120, 'opendxp': 3, 'govuk': 296, 'osm': 3175}"
+  }
+ ]
+}

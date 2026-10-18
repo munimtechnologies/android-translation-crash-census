@@ -1,0 +1,217 @@
+===== run-01-python: python -B patch_0100.py --out-dir /out/0100
+l10n_guard.py 0.9.0: 81916 bytes, sha256 403a9bfb1be7ef63
+l10n_guard.py 0.10.0: 106439 bytes, sha256 ce6614bf74ace2cd
+
+===== run-02-python: python -B /out/0100/test_l10n_guard.py
+
+===== run-03-python: python -B /out/0100/test_android_text_052.py
+
+===== run-04-python: python -B /out/0100/test_java_060.py
+
+===== run-05-python: python -B /out/0100/test_qt_070.py
+
+===== run-06-python: python -B /out/0100/test_071.py
+
+===== run-07-python: python -B /out/0100/test_072.py
+
+===== run-08-python: python -B /out/0100/test_080.py
+
+===== run-09-python: python -B /out/0100/test_090.py
+
+===== run-10-python: python -B /out/0100/test_0100.py -v
+
+===== run-11-python: python -B eval_0100.py --guard-dir /out/0100 --out-dir /out/0100-eval
+l10n-guard 0.10.0
+sonata en: 126 string messages, sha256 9504acade749962d
+sonata ar: 126 messages, 2 errors, 3 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f9d01a80d17c90ed
+sonata bg: 126 messages, 9 errors, 4 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 882329c3e8b786f1
+sonata bs: 125 messages, 0 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 65cd93be00c931af
+sonata ca: 126 messages, 1 errors, 7 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 0d19b3c3aa26746e
+sonata cs: 126 messages, 7 errors, 7 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f196ce048252060a
+sonata de: 126 messages, 0 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 61ee98f9d6417a9a
+sonata es: 126 messages, 0 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 cf3d6b4199382af3
+sonata eu: 126 messages, 8 errors, 6 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 234e7e9cce36a585
+sonata fa: 126 messages, 0 errors, 4 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 5a55b7153a02e9ac
+sonata fr: 126 messages, 0 errors, 11 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 72ae862fe88772ca
+sonata hr: 126 messages, 9 errors, 3 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e5b7babf19e38955
+sonata hu: 126 messages, 9 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 d1fec2599c969ede
+sonata it: 126 messages, 6 errors, 7 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 823094aa85fc301a
+sonata ja: 126 messages, 12 errors, 3 warnings; lookalike-percent errors 3 on 1 keys, warnings 0; sha256 babe6fb2dba3c668
+sonata lb: 126 messages, 9 errors, 7 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 0cf148162db17eb1
+sonata lt: 126 messages, 8 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 65015956f410a2bd
+sonata lv: 126 messages, 0 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 1c6b84bc2b847125
+sonata nl: 126 messages, 0 errors, 11 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 75a8cf615afe8aef
+sonata no: 126 messages, 0 errors, 7 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 5ab480c783ca35ac
+sonata pl: 126 messages, 0 errors, 4 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2ad814eaa564b4c2
+sonata pt: 126 messages, 10 errors, 4 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 75f49d167cb62683
+sonata pt_BR: 126 messages, 5 errors, 6 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 5d8d15df6efc2df9
+sonata ro: 126 messages, 8 errors, 6 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 407a8d61696b3f78
+sonata ru: 126 messages, 7 errors, 6 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 741e9459703f2f68
+sonata sk: 126 messages, 7 errors, 8 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 25ba4e0e08078369
+sonata sl: 126 messages, 9 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 c54b431121cd7f62
+sonata sr_Cyrl: 125 messages, 0 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 7fecf71ed2dfcb16
+sonata sr_Latn: 125 messages, 0 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 001a221d4c1f4a38
+sonata sv_SE: 126 messages, 7 errors, 7 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 4a18efa082668973
+sonata tr: 126 messages, 0 errors, 6 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 a77cd6451f703513
+sonata uk: 126 messages, 8 errors, 6 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 58a292c7ddd43258
+sonata zh_CN: 126 messages, 12 errors, 4 warnings; lookalike-percent errors 3 on 1 keys, warnings 0; sha256 77cd572db5801941
+sonata zh_HK: 126 messages, 1 errors, 5 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 17dd4e67bb5c7345
+akeneo en_US: 120 string messages, sha256 594d386da6984cbc
+akeneo ca_ES: 120 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e792601e6d1aafdb
+akeneo da_DK: 81 messages, 0 errors, 47 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 12bc16162a9a18c6
+akeneo de_DE: 120 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 bb364c88627149e7
+akeneo en_AU: 100 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 3f2bb2460e8d0b61
+akeneo en_GB: 120 messages, 0 errors, 111 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 3a7205e7df19ae31
+akeneo en_NZ: 78 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2c835d1c73da599f
+akeneo es_ES: 120 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 05f50e0d8b418f6e
+akeneo es_VE: 84 messages, 0 errors, 44 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 0370893e439e8367
+akeneo fi_FI: 120 messages, 1 errors, 10 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 a37adb1812798afc
+akeneo fr_FR: 120 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 bf650acb66adf771
+akeneo hr_HR: 42 messages, 0 errors, 78 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2ab766960abcfae1
+akeneo it_IT: 120 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 c1d5a830bc219027
+akeneo ja_JP: 120 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 683e817b6408d7fc
+akeneo ko_KR: 120 messages, 2 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 66150fa73eb7582f
+akeneo nl_NL: 120 messages, 1 errors, 1 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 bbbc401c607237ba
+akeneo no_NO: 78 messages, 0 errors, 46 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 22254a99be0b9630
+akeneo pl_PL: 120 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 ab1b9440e3714be5
+akeneo pt_BR: 78 messages, 0 errors, 46 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e134755837eaad52
+akeneo pt_PT: 120 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 1e344cf658307fc0
+akeneo ro_RO: 75 messages, 0 errors, 52 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 dcfaf0f59f3de49a
+akeneo ru_RU: 99 messages, 0 errors, 23 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 0f37536fde005628
+akeneo sv_SE: 52 messages, 0 errors, 70 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 93dde216ba59d170
+akeneo tl_PH: 79 messages, 0 errors, 49 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f555a6d4e0eb0b7b
+akeneo tr_TR: 74 messages, 2 errors, 52 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 43924cc470133c64
+akeneo uk_UA: 81 messages, 0 errors, 47 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f8d5a9495c43bc21
+akeneo vi_VN: 73 messages, 0 errors, 51 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2bc5fd28bb61198f
+akeneo zh_CN: 120 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 641b59cbfbe1de88
+akeneo zh_TW: 83 messages, 1 errors, 45 warnings; lookalike-percent errors 1 on 1 keys, warnings 0; sha256 fb66ac95e9e968b4
+opendxp en: 3 string messages, sha256 08408c4c21fd1e16
+opendxp ca: 3 messages, 0 errors, 2 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 3109c95bc5680291
+opendxp cs: 3 messages, 0 errors, 1 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 4ac49397a2c8b38c
+opendxp de: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e4b89533b384b573
+opendxp es: 3 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 976e047bd709a05f
+opendxp fr: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 afd4d6cda73b7016
+opendxp hu: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 b7e3e47eea8cf85c
+opendxp it: 3 messages, 0 errors, 3 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 08408c4c21fd1e16
+opendxp ja: 3 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e3aad95153a8e037
+opendxp nl: 3 messages, 0 errors, 2 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 5f38e2b90baa067d
+opendxp pl: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 3cbfda40d8e94bfb
+opendxp pt: 3 messages, 0 errors, 2 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 713dd85eb24cf9be
+opendxp pt_br: 3 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e3aad95153a8e037
+opendxp ru: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 d6316396236b2049
+opendxp sk: 3 messages, 0 errors, 3 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 08408c4c21fd1e16
+opendxp sv: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 c92fcf646f7c8d1f
+opendxp sv_fi: 3 messages, 0 errors, 3 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 08408c4c21fd1e16
+opendxp th: 3 messages, 1 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 769aaff485aaa174
+opendxp tr: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e0d97d930329c78f
+opendxp uk: 3 messages, 0 errors, 0 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 1338df5150da158c
+opendxp zh_Hans: 3 messages, 4 errors, 0 warnings; lookalike-percent errors 4 on 1 keys, warnings 0; sha256 0eb39a5029b400c0
+govuk en: 296 string messages, sha256 946e5240c38ad65d
+govuk ar: 101 messages, 0 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 ffae1f030a42cd5e
+govuk az: 100 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 cdb61dbbf33bb0fc
+govuk be: 105 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 5b28d0ba89a12a07
+govuk bg: 105 messages, 0 errors, 121 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 23b0e0ec3331118f
+govuk bn: 102 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 aadc11ef2b34f7da
+govuk cs: 105 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 ac85611c6c06cb12
+govuk cy: 120 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 c7bbe9b5cff66dfd
+govuk da: 102 messages, 0 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 85b77f03439f51c9
+govuk de: 106 messages, 0 errors, 121 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 02a2234effbabcd5
+govuk dr: 100 messages, 0 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 63d409472d855506
+govuk el: 101 messages, 1 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f3e90cf07fc8714d
+govuk es-419: 102 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 a41ccf627fcc3e6e
+govuk es: 102 messages, 1 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 dcf647d173f3e96d
+govuk et: 104 messages, 1 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 7ce225ed36566b65
+govuk fa: 99 messages, 0 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 6a8ff7dc234e445b
+govuk fi: 103 messages, 0 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 72788f7a0a7b2fd1
+govuk fr: 102 messages, 0 errors, 122 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 58812860b46f9913
+govuk gd: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 daad2e1b2baf505e
+govuk gu: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e02f77cd9e6ed02b
+govuk he: 101 messages, 2 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 1926e5f6b711428a
+govuk hi: 101 messages, 1 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 6e25cf0c7814c544
+govuk hr: 101 messages, 1 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 d4df1847bb6115ee
+govuk hu: 104 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 23a4056c7b320d73
+govuk hy: 103 messages, 0 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2aa10f747817a308
+govuk id: 101 messages, 0 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 bf168f5fb628de31
+govuk is: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 ce90bcc653aa4889
+govuk it: 101 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f9f3121c34d24a4d
+govuk ja: 97 messages, 8 errors, 117 warnings; lookalike-percent errors 7 on 6 keys, warnings 0; sha256 e3db9370e5fb40e3
+govuk ka: 104 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 ac47dbcd0aea6955
+govuk kk: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 310e2347ca918303
+govuk ko: 6 messages, 0 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 33e99f33879cb1d3
+govuk ku: 153 messages, 3 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 059923fc0da9f067
+govuk ky: 151 messages, 5 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 146b7fdc74fd1e5b
+govuk lt: 105 messages, 1 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f4939e6479a52728
+govuk lv: 105 messages, 0 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 9d2a8ced911482c8
+govuk ms: 100 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 53e4463ab617d01b
+govuk mt: 101 messages, 0 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f368c1db7c2269a4
+govuk ne: 6 messages, 0 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2be053f0e7fbfb15
+govuk nl: 101 messages, 0 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 d90377f7a4fd429e
+govuk no: 101 messages, 1 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 f75cf5ea82778991
+govuk pa-pk: 98 messages, 6 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 59c732e993eeed61
+govuk pa: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 9e6caa8a183e5786
+govuk pl: 104 messages, 1 errors, 120 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 d7b9ae263dbd12b7
+govuk ps: 98 messages, 2 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 4351f3f09281a543
+govuk pt: 101 messages, 1 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 835c89386025217c
+govuk ro: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 d534b2a32d52fd6f
+govuk ru: 104 messages, 1 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 492c6c0e01eb91a6
+govuk si: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 7acd5a838fe448f4
+govuk sk: 105 messages, 0 errors, 121 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 79086c01c06fdb67
+govuk sl: 104 messages, 1 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 79e5e59664e0142d
+govuk so: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 a0efeff0a3e27852
+govuk sq: 101 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 e9b65cfbbf229962
+govuk sr: 101 messages, 1 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 6522f0398eac29c5
+govuk sv: 101 messages, 0 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 ccdf634836d61a4c
+govuk sw: 101 messages, 0 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 748da28c7051d3ec
+govuk ta: 102 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 31fa795fe1f83118
+govuk th: 99 messages, 0 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 a3f9b61a81832706
+govuk ti: 154 messages, 5 errors, 116 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 42278721b338c96e
+govuk tk: 102 messages, 0 errors, 118 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 976ce6438863b109
+govuk tr: 102 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 fd9ac70cd327a0e1
+govuk uk: 106 messages, 1 errors, 122 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 cb06214966ac9b49
+govuk ur: 98 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 cbe84d43de1a5c94
+govuk uz: 103 messages, 1 errors, 119 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 cdac96cd192b0fc4
+govuk vi: 100 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 2deecccfc242a8a9
+govuk zh-hk: 99 messages, 0 errors, 117 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 c78ea24e7c0c0e96
+govuk zh-tw: 99 messages, 0 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 cfd137a80605781b
+govuk zh: 100 messages, 0 errors, 115 warnings; lookalike-percent errors 0 on 0 keys, warnings 0; sha256 8e0962835c42a649
+osm en: 3175 string messages, sha256 b43fabaade9f46f1
+osm ar: 2164 messages, 14 errors, 1205 warnings; lookalike-percent errors 0 on 0 keys, warnings 5; sha256 6ebde6d0fc0f6e7a
+osm ja: 2896 messages, 1 errors, 258 warnings; lookalike-percent errors 1 on 1 keys, warnings 0; sha256 4f219d3aba7b5688
+files: 150 looked for, 150 present, 150 parsed; parse errors 0
+sonata ja error lookalike-percent [flash_lock_error]: %link_end% is written "％link_end％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+sonata ja error lookalike-percent [flash_lock_error]: %link_start% is written "％link_start％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+sonata ja error lookalike-percent [flash_lock_error]: %name% is written "％name％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+sonata zh_CN error lookalike-percent [flash_lock_error]: %link_end% is written "％link_end％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+sonata zh_CN error lookalike-percent [flash_lock_error]: %link_start% is written "％link_start％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+sonata zh_CN error lookalike-percent [flash_lock_error]: %name% is written "％name％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+akeneo tr_TR error placeholder-missing [pim_catalog.constraint.family_variant_no_axis]: placeholder(s) missing: %level%
+akeneo zh_TW error lookalike-percent [pim_catalog.constraint.family_variant_no_axis]: %level% is written "％level％" with the fullwidth percent sign ％ (U+FF05), which Symfony doesn't replace: the text is shown as written and the value is lost
+opendxp zh_Hans error lookalike-percent [workflow_change_email_notification_text]: %s is written "％s" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost
+opendxp zh_Hans error lookalike-percent [workflow_change_email_notification_text]: %s is written "％s" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost
+opendxp zh_Hans error lookalike-percent [workflow_change_email_notification_text]: %s is written "％s" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost
+opendxp zh_Hans error lookalike-percent [workflow_change_email_notification_text]: %s is written "％s" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [common.toggle_more]: %{number} is written "％{number}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [components.article_schema.scoped_search_description]: %{title} is written "％{title}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [components.attachment.page.other]: %{count} is written "％{count}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [components.character_count.body]: %{number} is written "％{number}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [components.character_count.body]: %{type} is written "％{type}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [components.cookie_banner.confirmation_message.html]: %{link} is written "％{link}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+govuk ja error lookalike-percent [components.organisation_schema.all_content_search_description]: %{organisation} is written "％{organisation}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+osm ar warning lookalike-percent [site.about.heading_html]: "٪ {br}" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{br}
+osm ar warning lookalike-percent [site.about.heading_html]: "٪ {copyright}" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{copyright}
+osm ar warning lookalike-percent [site.copyright.legal_babble.contributors_fi_credit_html]: "٪ {finland}" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{finland}
+osm ar warning lookalike-percent [site.copyright.legal_babble.contributors_fi_credit_html]: "٪ {nlsfi_license_link}" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{nlsfi_license_link}
+osm ar warning lookalike-percent [site.copyright.native.html]: "٪ {native_link}" is written with the Arabic percent sign ٪ (U+066A), which Ruby's I18n doesn't read, so it is shown as written; the value itself appears at the ASCII %{native_link}
+osm ja error lookalike-percent [oauth2_authorized_applications.index.no_applications_html]: %{oauth2} is written "％{oauth2}" with the fullwidth percent sign ％ (U+FF05), which Ruby's I18n doesn't read: the text is shown as written and the value is lost
+akeneo totals: error lookalike-percent 1, error placeholder-extra 6, error placeholder-missing 3, warning extra-key 21, warning missing-key 664, warning placeholder-extra 28, warning untranslated 299
+govuk totals: error lookalike-percent 7, error placeholder-missing 27, error tags 11, warning extra-key 317, warning missing-key 7522, warning placeholder-extra 13, warning untranslated 35
+opendxp totals: error lookalike-percent 4, error placeholder-missing 4, warning untranslated 16
+osm totals: error lookalike-percent 1, error placeholder-missing 14, warning empty 1, warning extra-key 2, warning lookalike-percent 5, warning missing-key 1341, warning placeholder-missing 72, warning untranslated 42
+sonata totals: error lookalike-percent 6, error placeholder-missing 145, error tags 3, warning missing-key 3, warning placeholder-missing 54, warning untranslated 130
+P1 HELD: Sonata: lookalike-percent errors only in ja and zh_CN, only on flash_lock_error, 3 in each (ja 3 ['flash_lock_error']; zh_CN 3 ['flash_lock_error'])
+P2 HELD: Akeneo: only lookalike-percent error is zh_TW family_variant_no_axis; tr_TR placeholder-missing names %level% ([('zh_TW', 'pim_catalog.constraint.family_variant_no_axis')]; tr_TR missing 1)
+P3 HELD: OpenDXP: lookalike-percent errors only in zh_Hans, only on workflow_change_email_notification_text, 4 ([('zh_Hans', 'workflow_change_email_notification_text')] 4)
+P4 HELD: GOV.UK: lookalike-percent errors only in ja, 7, on exactly the six keys (7 errors, langs ['ja'], keys ['common.toggle_more', 'components.article_schema.scoped_search_description', 'components.attachment.page.other', 'components.character_count.body', 'components.cookie_banner.confirmation_message.html', 'components.organisation_schema.all_content_search_description'])
+P5 HELD: OpenStreetMap: ar only warnings, on the three keys; ja one error on no_applications_html (ar [('warning', 'site.about.heading_html'), ('warning', 'site.copyright.legal_babble.contributors_fi_credit_html'), ('warning', 'site.copyright.native.html')]; ja [('error', 'oauth2_authorized_applications.index.no_applications_html')])
+P6 HELD: every lookalike-percent error is in a Chinese, Japanese or Arabic-script file (none outside)
+P7 FAILED: every file present parses, and every source has at least 50 string messages (0 parse errors; {'sonata': 126, 'akeneo': 120, 'opendxp': 3, 'govuk': 296, 'osm': 3175})
