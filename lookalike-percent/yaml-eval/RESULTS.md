@@ -75,10 +75,14 @@ next study, not as findings.
 
 Two things in the per-file hashes are worth a look: OpenDXP's `admin.ja.yaml` and `admin.pt_br.yaml`
 are byte-identical (same sha256), and its `it`, `sk` and `sv_fi` files are byte-identical to the
-English, so they are untranslated copies. Sonata's `placeholder-missing` count is spread evenly over
-languages that are otherwise complete, which is the shape a systematic difference (for instance in
-how plural messages are paired) would have rather than translator slips; it should be read by hand
-before anyone files a report.
+English, so they are untranslated copies.
+
+**Update (2026-10-18, later the same evening):** this page first said that Sonata's
+`placeholder-missing` count, spread evenly over otherwise complete languages, looked like a
+systematic difference in how plural messages are paired. That guess was wrong. Four of the files
+were then read by hand ([SONATA-CHECK.md](SONATA-CHECK.md)): the errors are real messages whose
+translation leaves out the item's name, the action or the count, which Symfony allows, so nothing
+breaks. Reading them also showed that Sonata's Japanese file calls every batch action a deletion.
 
 ## Limits
 
@@ -99,6 +103,7 @@ before anyone files a report.
   messages, errors, warnings, look-alike counts, missing-placeholder keys, sha256 prefix).
 - `stdout.txt`: the job's full output, including the per-file lines and every look-alike message.
 - `eval_0100.py`: the evaluation script.
+- `SONATA-CHECK.md`: the by-hand follow-up on Sonata's `placeholder-missing` errors.
 
 l10n-guard 0.10.0 is released at
 [github.com/munimtechnologies/l10n-guard](https://github.com/munimtechnologies/l10n-guard/releases/tag/v0.10.0).
