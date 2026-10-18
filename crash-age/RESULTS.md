@@ -93,8 +93,7 @@ job does not say why each one disappeared, and we did not check every intermedia
   sandbox.
 - **Not found (5 rows)**: four Wikimedia Commons `about_improve` rows (b+nds+NL, haw, hrx, hsb)
   and one NewPipe row (in, `sign_in_confirm_not_bot_error`). The census's text was not matched in
-  the newest version the job read. We did not check why; a difference in how the long text is
-  stored in findings.csv is one possibility.
+  the newest version the job read. Why: these five translations hold escaped link markup, which crash_age 0.1.0 matched with an older text rule; see [NOT-FOUND.md](NOT-FOUND.md).
 
 ## crash-if-text rows (not scored)
 
