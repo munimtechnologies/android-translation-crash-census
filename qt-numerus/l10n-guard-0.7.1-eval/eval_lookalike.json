@@ -1,0 +1,435 @@
+{
+ "version": "0.7.1",
+ "files": [
+  {
+   "repo": "Windscribe/Android-App",
+   "path": "base/src/main/res/values-fa/strings.xml",
+   "source_path": "base/src/main/res/values/strings.xml",
+   "seen": "٪s (3 lines)",
+   "commit": "2c585dd5979ba93655853d56d849ed8ad2c964cb",
+   "sha256_source": "6e4939db264f7c62353c273e95f111c62876fb7dfb874a1cecc45c93d31a849f",
+   "sha256_target": "2be371025253819029957a331f6cf8a36686c4f2eaa88e40127f0ba41708b04f",
+   "by_code": {
+    "extra-key/warning": 2,
+    "lookalike-percent/error": 6,
+    "missing-key/warning": 4,
+    "tags/error": 1,
+    "untranslated/warning": 6
+   },
+   "lookalike": [
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "connected_to"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "connecting_to"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"٪D\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "next_in_up"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"٪D\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "ping_time"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "set_this_protocol_as_preferred"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"٪d\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "trying_next_protocol"
+    }
+   ],
+   "placeholder_missing": []
+  },
+  {
+   "repo": "Windscribe/Android-App",
+   "path": "base/src/main/res/values-ar/strings.xml",
+   "source_path": "base/src/main/res/values/strings.xml",
+   "seen": "٪s (3 lines)",
+   "commit": "2c585dd5979ba93655853d56d849ed8ad2c964cb",
+   "sha256_source": "6e4939db264f7c62353c273e95f111c62876fb7dfb874a1cecc45c93d31a849f",
+   "sha256_target": "c2142f236a6b52ed63d463d9569c7910b612eb8c692b55ba99d7ed1445835322",
+   "by_code": {
+    "empty/warning": 1,
+    "extra-key/warning": 2,
+    "lookalike-percent/error": 5,
+    "missing-key/warning": 4,
+    "untranslated/warning": 6
+   },
+   "lookalike": [
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "connected_to"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "connecting_to"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"٪d\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "next_in_up"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "set_this_protocol_as_preferred"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"٪d\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "trying_next_protocol"
+    }
+   ],
+   "placeholder_missing": []
+  },
+  {
+   "repo": "Windscribe/Android-App",
+   "path": "base/src/main/res/values-de/strings.xml",
+   "source_path": "base/src/main/res/values/strings.xml",
+   "seen": "control",
+   "commit": "2c585dd5979ba93655853d56d849ed8ad2c964cb",
+   "sha256_source": "6e4939db264f7c62353c273e95f111c62876fb7dfb874a1cecc45c93d31a849f",
+   "sha256_target": "26045652766778e66b2044829f5f6d0a965eb5f80aff764fec9d88879585977b",
+   "by_code": {
+    "extra-key/warning": 2,
+    "missing-key/warning": 4,
+    "untranslated/warning": 27
+   },
+   "lookalike": [],
+   "placeholder_missing": []
+  },
+  {
+   "repo": "threema-ch/threema-android",
+   "path": "app/src/main/res/values-zh-rCN/strings.xml",
+   "source_path": "app/src/main/res/values/strings.xml",
+   "seen": "％d in a plural",
+   "commit": "d44a2b53b2ea2c0bf1065bdaa96987570e5b4e6d",
+   "sha256_source": "0f6f849d291a74f5e7f3bb835b8fafafc2e22aef8f74551c986047ec60f9209b",
+   "sha256_target": "2e9cd0e1ea370ebd6c86d109590b973be72113659c86884c1c05137d98e12665",
+   "by_code": {
+    "lookalike-percent/error": 1,
+    "placeholder-missing/error": 1,
+    "tags/error": 1,
+    "untranslated/warning": 3
+   },
+   "lookalike": [
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"％d\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "really_delete_thread_message[other]"
+    }
+   ],
+   "placeholder_missing": [
+    {
+     "level": "error",
+     "code": "placeholder-missing",
+     "message": "placeholder(s) missing: %d",
+     "key": "saving_media[other]"
+    }
+   ]
+  },
+  {
+   "repo": "threema-ch/threema-android",
+   "path": "app/src/main/res/values-de/strings.xml",
+   "source_path": "app/src/main/res/values/strings.xml",
+   "seen": "control",
+   "commit": "d44a2b53b2ea2c0bf1065bdaa96987570e5b4e6d",
+   "sha256_source": "0f6f849d291a74f5e7f3bb835b8fafafc2e22aef8f74551c986047ec60f9209b",
+   "sha256_target": "79565f2990a6a55defa438fa14b0047f2cbc2e418a3543a7ef05f13e98bc3099",
+   "by_code": {
+    "placeholder-missing/warning": 1,
+    "tags/error": 2,
+    "untranslated/warning": 38
+   },
+   "lookalike": [],
+   "placeholder_missing": [
+    {
+     "level": "warning",
+     "code": "placeholder-missing",
+     "message": "placeholder(s) missing: %d",
+     "key": "really_delete_thread_message[one]"
+    }
+   ]
+  },
+  {
+   "repo": "TrackerControl/tracker-control-android",
+   "path": "app/src/main/res/values-ja-rJP/strings.xml",
+   "source_path": "app/src/main/res/values/strings.xml",
+   "seen": "％d in a plural",
+   "commit": "62642862f28d4e156e0319e60d1c7675a7c3318d",
+   "sha256_source": "b1238f03511a17aac3f88c5953219b926ea5e651bdc6fb40f1cfe1e08c7ddb3d",
+   "sha256_target": "73a9de77ef2eafca1f96e447cacaba15fbd125b3ad6bbefe47503e077738d182",
+   "by_code": {
+    "lookalike-percent/error": 1,
+    "missing-key/warning": 20,
+    "untranslated/warning": 5
+   },
+   "lookalike": [
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"％d\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "n_companies_found[other]"
+    }
+   ],
+   "placeholder_missing": []
+  },
+  {
+   "repo": "apk-editor/APK-Explorer-Editor",
+   "path": "app/src/main/res/values-ar-rSA/strings.xml",
+   "source_path": "app/src/main/res/values/strings.xml",
+   "seen": "٪s (25 lines)",
+   "commit": "988401012e90c5bfbcc800726bc6aa0d76e2c3c2",
+   "sha256_source": "b75fb170e2dc7d22cd328ff06ecc7960bfbc4298858af297fc1fa33488595b7a",
+   "sha256_target": "f05f01872ee8b901119f2ce057950840d6bf888bbdb0990bae3f7e0cfcbfcea2",
+   "by_code": {
+    "lookalike-percent/error": 25,
+    "missing-key/warning": 56,
+    "placeholder-missing/error": 4
+   },
+   "lookalike": [
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "android_version"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "bundle_install_question"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "copying"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "decompiling"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "delete_question"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "deleting"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "explore_error_status"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "exploring"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "export_complete_message"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "exporting"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "install_question"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "installing"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "last_modified"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "preparing_apk"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "preparing_bundle_install"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "replace_question"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "resigned_apks_path"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "sdk_compile"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "sdk_minimum"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "signing"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "signing_question"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "signing_select_question"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "size"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "unknown_file_message"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"٪s\" with the Arabic percent sign ٪ (U+066A), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "wrong_extension"
+    }
+   ],
+   "placeholder_missing": [
+    {
+     "level": "error",
+     "code": "placeholder-missing",
+     "message": "placeholder(s) missing: %s",
+     "key": "assembling"
+    },
+    {
+     "level": "error",
+     "code": "placeholder-missing",
+     "message": "placeholder(s) missing: %s",
+     "key": "building"
+    },
+    {
+     "level": "error",
+     "code": "placeholder-missing",
+     "message": "placeholder(s) missing: %s",
+     "key": "export_project_replace"
+    },
+    {
+     "level": "error",
+     "code": "placeholder-missing",
+     "message": "placeholder(s) missing: %s",
+     "key": "failed_smali_message"
+    }
+   ]
+  },
+  {
+   "repo": "Utazukin/Ichaival",
+   "path": "app/src/main/res/values-ja/strings.xml",
+   "source_path": "app/src/main/res/values/strings.xml",
+   "seen": "％d in a plural (2 lines)",
+   "commit": "a59e67db5bf38b812ae284d6a3522333fca6be1c",
+   "sha256_source": "5136074cf837291fefad6d838b6fda1ee17cb4499ee71d36a58f1a1f26a60c37",
+   "sha256_target": "bb3db6ab30bc27fb88c94662f58c7a488c9ead269822a3d78f319dd757c32d40",
+   "by_code": {
+    "lookalike-percent/error": 4,
+    "missing-key/warning": 53,
+    "untranslated/warning": 14
+   },
+   "lookalike": [
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"％d\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "delete_archive_count[one]"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%d is written \"％d\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "delete_archive_count[other]"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"％s\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "fullscreen_timeout_summary"
+    },
+    {
+     "level": "error",
+     "code": "lookalike-percent",
+     "message": "%s is written \"％s\" with the fullwidth percent sign ％ (U+FF05), which no formatter reads: the text is shown as written and the value is lost",
+     "key": "search_delay_summary"
+    }
+   ],
+   "placeholder_missing": []
+  }
+ ]
+}
