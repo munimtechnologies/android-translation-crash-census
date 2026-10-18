@@ -1,0 +1,82 @@
+{
+ "version": "0.1.0",
+ "real_world_rails": "c5e6e6e1d9f74026ca3d7fad449998803dbba9af",
+ "submodules": 214,
+ "fetched": 209,
+ "yaml_files": 4268,
+ "loaded": 4252,
+ "repositories_compared": 69,
+ "locales_compared": 1525,
+ "totals": {
+  "strings": 1557839,
+  "placeholder_strings": 235218,
+  "error_strings": 2224,
+  "lookalike_errors": 135,
+  "lookalike_error_strings": 111,
+  "lookalike_warnings": 6,
+  "missing_errors": 2446,
+  "missing_warnings": 1801,
+  "extra_warnings": 454
+ },
+ "by_kind": {
+  "error placeholder-missing dropped": 1809,
+  "error placeholder-missing renamed": 460,
+  "warning placeholder-extra ": 454,
+  "error placeholder-missing ruby-hash": 1,
+  "error placeholder-missing no-percent": 110,
+  "warning placeholder-missing dropped": 1766,
+  "error lookalike-percent lookalike-percent": 135,
+  "error placeholder-missing spaced": 62,
+  "warning placeholder-missing renamed": 25,
+  "warning placeholder-missing no-percent": 8,
+  "error placeholder-missing other-syntax": 4,
+  "warning lookalike-percent lookalike-percent": 6,
+  "warning placeholder-missing other-syntax": 1,
+  "warning placeholder-missing spaced": 1
+ },
+ "minutes": 1.1,
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "fewer than 2% of compared (repository, locale) pairs have a look-alike placeholder error",
+   "held": true,
+   "value": "7 of 1525 (0.46%)"
+  },
+  {
+   "id": "P2",
+   "text": "every look-alike placeholder error is in a Chinese, Japanese, Korean or Arabic-script locale",
+   "held": true,
+   "value": "135 errors; outside: none"
+  },
+  {
+   "id": "P3",
+   "text": "the share of placeholder strings with a look-alike error is higher in those locales than in all others",
+   "held": true,
+   "value": "111 of 31067 vs 0 of 204151; one-sided Fisher p 2.18e-98"
+  },
+  {
+   "id": "P4",
+   "text": "missing-placeholder errors outnumber look-alike errors at least 10 to 1",
+   "held": true,
+   "value": "2446 vs 135"
+  },
+  {
+   "id": "P5",
+   "text": "at least 95% of the YAML files under config/locales load with PyYAML",
+   "held": true,
+   "value": "4252 of 4268 (99.6%)"
+  },
+  {
+   "id": "P6",
+   "text": "at least 180 of the pinned commits fetch, and at least 40 repositories have a translation compared with English",
+   "held": true,
+   "value": "209 of 214 fetched; 69 repositories compared"
+  },
+  {
+   "id": "P7",
+   "text": "'dropped' is the most common kind of placeholder error",
+   "held": true,
+   "value": "lookalike-percent 135, lookalike-brace 0, spaced 62, ruby-hash 1, no-percent 110, other-syntax 4, renamed 460, dropped 1809"
+  }
+ ]
+}
