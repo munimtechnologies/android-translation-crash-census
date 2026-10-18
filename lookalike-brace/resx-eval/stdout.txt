@@ -1,0 +1,51 @@
+===== run-01-python: python -B patch_080.py --out-dir /out/080
+l10n_guard.py 0.7.2: 70238 bytes, sha256 055a314fcb9474f1
+l10n_guard.py 0.8.0: 73546 bytes, sha256 b80f3474fbbcbf6e
+
+===== run-02-python: python -B /out/080/test_l10n_guard.py
+
+===== run-03-python: python -B /out/080/test_android_text_052.py
+
+===== run-04-python: python -B /out/080/test_java_060.py
+
+===== run-05-python: python -B /out/080/test_qt_070.py
+
+===== run-06-python: python -B /out/080/test_071.py
+
+===== run-07-python: python -B /out/080/test_072.py
+
+===== run-08-python: python -B /out/080/test_080.py -v
+
+===== run-09-python: python -B eval_080.py --guard-dir /out/080 --out-dir /out/080-eval
+l10n-guard 0.8.0 against baseline 0.7.2
+AuditReportResource.resx: 478 entries, sha256 38ac44bceff32bdc
+az-Latn-AZ: 454 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 97c1f762aea97511
+bg: 444 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 e7e68303fc3c3ecf
+cs: 431 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 1 -> 1; error keys 2 -> 2; sha256 067d2812f8ca4d13
+de: 453 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 1 -> 1; error keys 1 -> 1; sha256 ee63a337742f4c9b
+el: 2 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 bda98654619057a8
+es: 453 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 2 -> 2; error keys 3 -> 3; sha256 3c13459a3e8a6df6
+fi: 425 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 1 -> 1; sha256 55c868e6e5b56e77
+fr: 453 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 daeae8c9e0c49f9f
+ga: 9 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 06648b3279792ff0
+hu: 195 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 3 -> 3; error keys 4 -> 4; sha256 07c903a603763ab4
+id: 444 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 1 -> 1; error keys 1 -> 1; sha256 bb55af5ef7aca76b
+it: 449 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 1 -> 1; sha256 310bce5f0c6fd660
+ja: 442 entries, 203 with a fullwidth brace, lookalike-brace errors 242 on 199 keys (mixed 0), warnings 3; placeholder-missing keys 202 -> 3; error keys 202 -> 202; sha256 032dc5f408408f6c
+lv: 433 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 1 -> 1; sha256 08fdf41f649d0b5b
+nl: 427 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 1 -> 1; sha256 d7d4b80882a8b56f
+pl: 429 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 1 -> 1; error keys 1 -> 1; sha256 ffdd526c364ed307
+pt-BR: 453 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 4 -> 4; error keys 4 -> 4; sha256 31df073ad74b1c1e
+ru: 453 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 1 -> 1; sha256 0ba24cd88c895b88
+sk: 431 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 1f6536039166f285
+sl: 407 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 4dccf5e2546c4b09
+sv: 65 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 0 -> 0; error keys 0 -> 0; sha256 a7f355ba89af654d
+tr: 429 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 3 -> 3; error keys 6 -> 6; sha256 e73729a82a59eeb7
+uk: 427 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 7 -> 7; error keys 12 -> 12; sha256 36f1aba927ba7bbb
+vi: 431 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 3 -> 3; error keys 3 -> 3; sha256 d12a371691504267
+zh-CN: 439 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 1 -> 1; error keys 2 -> 2; sha256 c9d19055cb138c6e
+zh-TW: 453 entries, 0 with a fullwidth brace, lookalike-brace errors 0 on 0 keys (mixed 0), warnings 0; placeholder-missing keys 1 -> 1; error keys 1 -> 1; sha256 b8bf8b95a19080e6
+P1 HELD: ja: at least 150 keys get a lookalike-brace error (199)
+P2 HELD: the 23 languages other than ja, zh-CN and zh-TW: no lookalike-brace issue (0)
+P3 HELD: zh-CN and zh-TW: fewer than 10 keys with a lookalike-brace error each (0, 0)
+P4 HELD: ja: fewer than 20 keys still get placeholder-missing from 0.8.0 (3)
