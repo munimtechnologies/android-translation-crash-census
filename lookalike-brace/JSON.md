@@ -83,9 +83,13 @@ against English), the same key has ASCII braces elsewhere, so a per-key comparis
 
 Translation platforms check placeholders (for example Weblate's format checks and the
 placeholder QA checks of Crowdin and Phrase). They compare ASCII placeholders, so they would
-report these strings as missing a placeholder, without naming the look-alike. A web search on
-2026-10-18 for fullwidth braces in i18n placeholders found no bug report or write-up about them. [l10n-guard](https://github.com/munimtechnologies/l10n-guard)
-does not yet have a fullwidth-brace rule; one is planned.
+report these strings as missing a placeholder, without naming the look-alike. A web search on 2026-10-18 for fullwidth braces in i18n placeholders found no bug
+report about them in an open-source project. One tool does name the problem: the free
+[placeholder checker](https://loclint.com/tools/placeholder-checker) of Loclint, a localization QA
+tool for games, warns that a translator typing Japanese can retype a placeholder's braces in
+fullwidth forms that match nothing. We found it after this note was first published.
+[l10n-guard](https://github.com/munimtechnologies/l10n-guard) names the look-alike as its own
+error, `lookalike-brace`, since version 0.8.0.
 
 ## Check your own files
 
