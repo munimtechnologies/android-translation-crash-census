@@ -162,10 +162,15 @@ Look-alike characters (a placeholder written with a character that looks right b
 
 - [lookalike-percent/](lookalike-percent/FINDINGS.md): `٪` or `％` for `%` in Android; the same in
   [Apple](lookalike-percent/APPLE.md), [gettext](lookalike-percent/GETTEXT.md) and
-  [Rails YAML](lookalike-percent/RAILS.md) files; [LINT.md](lookalike-percent/LINT.md).
+  [Rails YAML](lookalike-percent/RAILS.md) and [Symfony](lookalike-percent/SYMFONY.md) files;
+  [LINT.md](lookalike-percent/LINT.md).
 - [lookalike-brace/](lookalike-brace/BRACES.md): `｛0｝` for `{0}`; the same in
   [Java .properties](lookalike-brace/JAVA.md) and [JSON](lookalike-brace/JSON.md) files, and
-  [how common it is per format](lookalike-brace/FORMATS.md).
+  [how common it is per format](lookalike-brace/FORMATS.md); a pre-registered
+  [check of .NET .resx files](lookalike-brace/resx-eval/RESULTS.md) (all four predictions held).
+- [lookalike-colon/](lookalike-colon/LARAVEL.md): `：attribute` for Laravel's `:attribute`; a
+  pre-registered [check of 191 languages](lookalike-colon/laravel-eval/RESULTS.md) in three
+  applications (four of five predictions held).
 
 ## Method
 
