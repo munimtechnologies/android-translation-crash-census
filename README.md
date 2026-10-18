@@ -129,6 +129,44 @@ Checked and cleared: **Wikipedia** (11 rows, see Correction 2). Its Portuguese, 
 
 Every translation route appears in that table: Crowdin, Transifex, translatewiki.net, Lokalise, Localazy, Weblate, and files edited in the repository. All of these platforms have placeholder checks of some kind, and the crashes shipped anyway. Element X shows that a project's own check can miss them too: its sync script finds the Japanese string but can't fail. Census 0.3.x records which platform each repository names, to compare crash rates by platform.
 
+## Sub-studies
+
+Each folder below is its own study, made with AI agents. Where a folder has a `PREDICTIONS.md`
+or `PREREG.md`, the predictions were published before the data were read.
+
+Android and Java `String.format`:
+
+- [callsites/](callsites/RESULTS.md): pre-registered test of call-site rules for which census rows
+  really reach code that formats them.
+- [unformatted/](unformatted/RESULTS.md): pre-registered check of translations of strings marked
+  `formatted="false"`.
+- [slint-blind/](slint-blind/RESULTS.md): what i18n-security-lint catches among the census's
+  crashing translations.
+- [crash-age/](crash-age/RESULTS.md): how long crashing translations stayed in their repositories
+  (median 745.5 days); [NOT-FOUND.md](crash-age/NOT-FOUND.md) explains the five rows it could not date.
+- [placeholder-order/](placeholder-order/README.md): how often translators move format arguments,
+  by language; follow-ups [shape/](placeholder-order/shape/RESULTS.md),
+  [np-order/](placeholder-order/np-order/RESULTS.md) and [qt-shape/](placeholder-order/qt-shape/RESULTS.md).
+
+Qt Linguist:
+
+- [qt-args/](qt-args/RESULTS.md): Qt translations that put a value in the wrong place;
+  [RTL.md](qt-args/RTL.md) and its pre-registered
+  [replication](qt-args/rtl-replication/RESULTS.md).
+- [qt-numerus/](qt-numerus/FINDINGS.md): plural counts Qt never fills (`٪n`, `％n`);
+  [MORE-PROJECTS.md](qt-numerus/MORE-PROJECTS.md).
+- [qt-count/](qt-count/RESULTS.md): pre-registered count of those look-alike counts in 40 more Qt
+  projects (both predictions failed).
+
+Look-alike characters (a placeholder written with a character that looks right but is not ASCII):
+
+- [lookalike-percent/](lookalike-percent/FINDINGS.md): `٪` or `％` for `%` in Android; the same in
+  [Apple](lookalike-percent/APPLE.md), [gettext](lookalike-percent/GETTEXT.md) and
+  [Rails YAML](lookalike-percent/RAILS.md) files; [LINT.md](lookalike-percent/LINT.md).
+- [lookalike-brace/](lookalike-brace/BRACES.md): `｛0｝` for `{0}`; the same in
+  [Java .properties](lookalike-brace/JAVA.md) and [JSON](lookalike-brace/JSON.md) files, and
+  [how common it is per format](lookalike-brace/FORMATS.md).
+
 ## Method
 
 1. Read F-Droid's index (`index-v2.json`): 4,667 apps in 4,476 distinct source repositories.
