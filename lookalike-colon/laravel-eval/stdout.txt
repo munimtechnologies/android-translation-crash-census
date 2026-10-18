@@ -1,0 +1,408 @@
+===== run-01-python: python -B patch_090.py --out-dir /out/090
+l10n_guard.py 0.8.0: 73546 bytes, sha256 b80f3474fbbcbf6e
+l10n_guard.py 0.9.0: 81916 bytes, sha256 403a9bfb1be7ef63
+
+===== run-02-python: python -B /out/090/test_l10n_guard.py
+
+===== run-03-python: python -B /out/090/test_android_text_052.py
+
+===== run-04-python: python -B /out/090/test_java_060.py
+
+===== run-05-python: python -B /out/090/test_qt_070.py
+
+===== run-06-python: python -B /out/090/test_071.py
+
+===== run-07-python: python -B /out/090/test_072.py
+
+===== run-08-python: python -B /out/090/test_080.py
+
+===== run-09-python: python -B /out/090/test_090.py -v
+
+===== run-10-python: python -B eval_090.py --guard-dir /out/090 --out-dir /out/090-eval
+l10n-guard 0.9.0
+akaunting en-GB/validation.php: 115 string keys, sha256 2128e5be77460c66
+akaunting az-AZ validation.php: 69 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 93eda329c7fdd68b
+akaunting bn-BD validation.php: 69 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 b066f81fd8f4c2f4
+akaunting bs-BA validation.php: 97 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 3e9813b65fe5fb23
+akaunting da-DK validation.php: 97 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 6e7c0081a9e7df0b
+akaunting hi-IN validation.php: 115 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 d21a19b67c351f6d
+akaunting hr-HR validation.php: 69 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 51b474261066a3af
+akaunting ja-JP validation.php: 69 keys, lookalike-colon errors 18 on 15 keys, warnings 0; placeholder-missing keys 4; sha256 a9a030d868b8593c
+akaunting ka-GE validation.php: 69 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 1a13be6ab38285dc
+akaunting ko-KR validation.php: 67 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 a7feebb35ecd49bc
+akaunting lv-LV validation.php: 110 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 91d07d3eb60ef878
+akaunting mk-MK validation.php: 115 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 5c997d0fd9d6b574
+akaunting sl-SI validation.php: 110 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 9d68da03788c8904
+akaunting sr-RS validation.php: 67 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 02e5cb581e21082d
+akaunting uk-UA validation.php: 68 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 fd7b382d96ad2c76
+akaunting ur-PK validation.php: 67 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3504a1ebc902b36c
+akaunting uz-UZ validation.php: 68 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 24; sha256 de414c35318a0015
+akaunting zh-TW validation.php: 69 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 4fddbb00ec4b3616
+unit3d en/email.php: 42 string keys, sha256 08c4d803c7dd66ee
+unit3d ar email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 7d8f163aebaa2332
+unit3d az email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 2b342441d1442891
+unit3d be email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 557a5650f11c784b
+unit3d bg email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 616cc3ccdfa6ae64
+unit3d bn email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 52b2b087e61f01f3
+unit3d bs email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 995e5e67d8250bdf
+unit3d ca email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 7766d73e36d15427
+unit3d cs email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ecaecc973c0bdd86
+unit3d cy email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 e5c46b0f11f3ad9a
+unit3d et email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 f4b46c8a01044f01
+unit3d eu email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 fa06b8bb28d10299
+unit3d fa email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ded7163b021a993b
+unit3d fi email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 965cfce5cfa1890f
+unit3d fr email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 d02c364329f7bc41
+unit3d gl email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 31dfc493e7f0794d
+unit3d hi email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 545a5a8b00b11eb0
+unit3d hr email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 589248172dddadfb
+unit3d hu email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 2596c0ff57311929
+unit3d id email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 1ce92447792aea0e
+unit3d is email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 fea595e8430c1f15
+unit3d it email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ff0a2d5227f18fae
+unit3d ja email.php: 42 keys, lookalike-colon errors 4 on 2 keys, warnings 0; placeholder-missing keys 0; sha256 556fdff33c36efd9
+unit3d ka email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 34a8e0ea0588c178
+unit3d kk email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3e1df0c1620ba5e6
+unit3d km email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 2e971259e440a009
+unit3d kn email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 368347d7c1b27835
+unit3d ko email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 e598162e14f14453
+unit3d lt email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 9398be1622305e7d
+unit3d lv email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 8fffb07d89e9e2d9
+unit3d mk email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 67f031036920c4ba
+unit3d mn email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 c9d4374223355d6e
+unit3d ms email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 c9dfd657058ac817
+unit3d ne email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 f183d9429144a9a0
+unit3d nl email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 d4f026575d5830ff
+unit3d pl email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 eec81df8378c3b42
+unit3d pt email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 2adaa5c6968bed27
+unit3d ro email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 13306b01ee6db496
+unit3d ru email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 bd68ddbac4db03e7
+unit3d si email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 52cb44484c1b1438
+unit3d sk email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 03fba6236dddf262
+unit3d sl email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 53e39e8c4a257120
+unit3d sq email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 89cf66ff4579fa65
+unit3d sr email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3de64461b9921ef8
+unit3d sv email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 adbb7327941afdba
+unit3d sw email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 fd9d41a536afa49d
+unit3d tg email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 dfd6191d6374823c
+unit3d th email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 bacda7c68b26ff36
+unit3d tl email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 af83f19af4251205
+unit3d ur email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 43b24a9d2bb2a842
+unit3d uz email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 e4e5b2e8077a9d14
+unit3d vi email.php: 42 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 6a6984ac0f8d42db
+unit3d en/page.php: 22 string keys, sha256 9c971d696989d463
+unit3d ar page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 218a3bfc4b0c1484
+unit3d az page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 4f88bbd77b8f9dcf
+unit3d be page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 8bfd7940f59ab66d
+unit3d bg page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 a9cd7711d5120bf5
+unit3d bn page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 1edeb7946b068fca
+unit3d bs page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 3f9eba821b3f573e
+unit3d ca page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 6ec67c2faaf95bd2
+unit3d cs page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 d2b2db8494047012
+unit3d cy page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 46ab57fb7a3ad1fd
+unit3d da page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 79ae8e56f5465b4e
+unit3d de page.php: 22 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 e26f45ef7bf47f85
+unit3d el page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 e039f09f0bea895e
+unit3d es page.php: 22 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ac51a1c880d3ac42
+unit3d et page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 e683b38a67a4194e
+unit3d eu page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 fc091b22b079b688
+unit3d fa page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 50c2d1d9f59290c7
+unit3d fi page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 8bc5facef9f0f548
+unit3d fr page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 f9894e15d4c11af9
+unit3d gl page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 48784a510f8fb5ed
+unit3d he page.php: 21 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 27053961afe870f7
+unit3d hi page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 1fe5cce3f0036cf7
+unit3d hr page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 7aa7cad18c177a16
+unit3d hu page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 e9b9a11aa4169a3f
+unit3d id page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 757d181aa4d0961a
+unit3d is page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 f3ee9b240c78abd3
+unit3d it page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 692260253b523786
+unit3d ja page.php: 24 keys, lookalike-colon errors 1 on 1 keys, warnings 0; placeholder-missing keys 4; sha256 93fcc5be24d7388d
+unit3d ka page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 6d0e19664785db0a
+unit3d kk page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 f85216f9778f5825
+unit3d km page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 6cf6063c702054a7
+unit3d kn page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 7b88d57f716f5cb1
+unit3d ko page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 745b73b7e06d21b8
+unit3d lt page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 56a85dc24e9be81f
+unit3d lv page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 eba683cf91ca0afb
+unit3d mk page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 66939a6be87ecbec
+unit3d mn page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 6cefba190754e724
+unit3d ms page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 5caf70181b83fa7f
+unit3d ne page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 7aed73b9843ec189
+unit3d nl page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 976679cfadf15c73
+unit3d no page.php: 23 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 08feb1276916e8a0
+unit3d pl page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 81e6caab42a8341c
+unit3d pt page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 2de97a48190c4e52
+unit3d ro page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 da3f2424aeca28cb
+unit3d ru page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 aeafab58ebe92c6d
+unit3d si page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 f55ff5a64c36bb8b
+unit3d sk page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 4368349e36270c07
+unit3d sl page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 2f3686138624ce8b
+unit3d sq page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 6318ef3d37950728
+unit3d sr page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 20a1dba20dce0eb7
+unit3d sv page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 50ccc2f5c9a2638d
+unit3d sw page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 5c9a62065285e289
+unit3d tg page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 7f77c49663935e79
+unit3d th page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 dc78cc9f11b399a3
+unit3d tl page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 30173e53100e1a14
+unit3d uk page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 f2bff04a5a435861
+unit3d ur page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 8faaae5a723805ae
+unit3d uz page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 d47bfd32c9cfd8ae
+unit3d vi page.php: 24 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 89dd8871a702bd9b
+unit3d zh-CN page.php: 22 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 fce8afc1aa739d04
+unit3d zh-TW page.php: 22 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 5d031e00d95621eb
+unit3d en/common.php: 229 string keys, sha256 d4c35c9ebb54883f
+unit3d ar common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 7cf62f067b12bc3a
+unit3d az common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 672ed3fbcfff8f1d
+unit3d be common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 907ac420adcd34c4
+unit3d bg common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 1c9b3cae0c4d68db
+unit3d bn common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 29f4a841270448bd
+unit3d bs common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 6b10b075d1289540
+unit3d ca common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ef01ee24cf419a66
+unit3d cs common.php: 173 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 31b5109dd162e90c
+unit3d cy common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 f2f75273c507a4aa
+unit3d et common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 506d8c4a9bff3bfd
+unit3d eu common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3c58c8a8d328580e
+unit3d fa common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3ef604dfcae77a42
+unit3d fi common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 c05bbfeebb4a8086
+unit3d fr common.php: 224 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 73fc6d455aab6acb
+unit3d gl common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 fbc7f37e4a758f18
+unit3d hi common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ce5ad18c9496d6fc
+unit3d hr common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 b406de764d4d0fd0
+unit3d hu common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 e7cbf152169154a4
+unit3d id common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 6351861c74bc5d9c
+unit3d is common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 6dc6836b810e8ec3
+unit3d it common.php: 229 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 f1b16b626822e741
+unit3d ja common.php: 174 keys, lookalike-colon errors 1 on 1 keys, warnings 0; placeholder-missing keys 1; sha256 e5064d9d1a93e53e
+unit3d ka common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 33124370a95b3157
+unit3d kk common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 07b27b231b77855d
+unit3d km common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 a418bf83342d607c
+unit3d kn common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 91dda338d8fbed99
+unit3d ko common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 4aad22d9c83cbd9d
+unit3d lt common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3dddd78c27061005
+unit3d lv common.php: 178 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 a93ebc5bdb9adbe1
+unit3d mk common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ac3af284821e87ac
+unit3d mn common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 9daefae3f6df25b2
+unit3d ms common.php: 224 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 9ee5a15a4514ce67
+unit3d ne common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 d09a13e33c9912d2
+unit3d nl common.php: 181 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 37808846b1bd6654
+unit3d pl common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 f84fc65358546fa5
+unit3d ro common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 c718dbaeb645098f
+unit3d ru common.php: 176 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 2f56976b0656bd7c
+unit3d si common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 b53c6d58e7dd54b1
+unit3d sk common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 65da48c89dbd3228
+unit3d sl common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 34a14e124bcd40b7
+unit3d sq common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 87cccfa8abb72542
+unit3d sr common.php: 201 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 dbfe05d23319a0ba
+unit3d sv common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 ea1b8f925d43e892
+unit3d sw common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 8d6a8fdd28c16157
+unit3d tg common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 f20bb93394a8d8b3
+unit3d th common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 52e175ed4e5922be
+unit3d tl common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 a63a651a31bfbc79
+unit3d uk common.php: 228 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 e5c0bfc4735a7e97
+unit3d ur common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 2bb94000b3fc0372
+unit3d uz common.php: 174 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 3bc8fdc990c266ea
+unit3d vi common.php: 219 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 0222b55aa1c20757
+unit3d en/user.php: 411 string keys, sha256 203ae4bacd0e5338
+unit3d ar user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 2d33e4b630c86e31
+unit3d az user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 59c34a14d42749ae
+unit3d be user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 51f4a0b15f7fc614
+unit3d bg user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 61a11bd9d3251cd5
+unit3d bn user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 e310a24d97a595fd
+unit3d bs user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 5b59db6671d9fcfc
+unit3d ca user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 eeec97f983362c5e
+unit3d cs user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 be3235e6467d01db
+unit3d cy user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 680925afea65d8e3
+unit3d et user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 cc00146125a716c6
+unit3d eu user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 27dcd0505634e101
+unit3d fa user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 6d1b485ab60c0896
+unit3d fi user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 54b2a9b583778587
+unit3d fr user.php: 395 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 952bbdb1f542d759
+unit3d gl user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 2c13fcbc37dc4779
+unit3d hi user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 f13635b4564ce282
+unit3d hr user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 a57eb7af002f2465
+unit3d hu user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 cba6e681f7d07304
+unit3d id user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 29d84d32c0a43d38
+unit3d is user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 ee2eeb7a49605dcc
+unit3d it user.php: 404 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 4b616f384c39945a
+unit3d ja user.php: 316 keys, lookalike-colon errors 2 on 2 keys, warnings 0; placeholder-missing keys 4; sha256 e8f0e9f3f5faf8d0
+unit3d ka user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 e5402f79d2078285
+unit3d kk user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 0d04013230058b63
+unit3d km user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 ff183288d647bc0c
+unit3d kn user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 e3bc9c6edb70a504
+unit3d ko user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 d226d1aa98a32536
+unit3d lt user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 54dd2e750a54025e
+unit3d lv user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 1c8c5b5b7c7cb934
+unit3d mk user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 782c00d75cb3d272
+unit3d mn user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 4b94e0f0fedecaf3
+unit3d ms user.php: 394 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 5497054162075232
+unit3d ne user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 200ac29c5d059cc7
+unit3d nl user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 c3b0ee6989dd3125
+unit3d pl user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 b3fc34f4f4fd6828
+unit3d pt user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 4d6cad7abae49bc4
+unit3d ro user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 e74bbc75397c5a8a
+unit3d ru user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 9dd101326cc137d6
+unit3d si user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 b754ea67e3b71512
+unit3d sk user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 bccc92a306a3c693
+unit3d sl user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 05e57c5d13fe25a6
+unit3d sq user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 fe2bccc312d26d42
+unit3d sr user.php: 322 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 a03c89ce5600e890
+unit3d sv user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 7b2bf63a3d868154
+unit3d sw user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 59303e69f807ee33
+unit3d tg user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 a8f2cf4fe44cac9e
+unit3d th user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 6b2ba5aed528d4b4
+unit3d tl user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 96c87c9f25d5f235
+unit3d ur user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 0cf88dfef62d16bc
+unit3d uz user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 afb0a7d498f5306c
+unit3d vi user.php: 316 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 60fd1391dd7135bb
+unit3d en/torrent.php: 231 string keys, sha256 74232f04469ad1b9
+unit3d ar torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 6aa0f3ee3490e005
+unit3d az torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 91504b9b38eed807
+unit3d be torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 04bf55234368342f
+unit3d bg torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 c4e20c2332c2cf8f
+unit3d bn torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 3e2816c5e13365f9
+unit3d bs torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 1afe8e4671b27d09
+unit3d ca torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 a3811fca5138c847
+unit3d cs torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 67cd78398a7c6cf7
+unit3d cy torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 0ced27f5feb72695
+unit3d et torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 953527f7d0815111
+unit3d eu torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 3d087d997627a797
+unit3d fa torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 0c17e3cc0f31723b
+unit3d fi torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 7358207424df6d1a
+unit3d gl torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 605f3a124b7d7cb5
+unit3d hi torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 9b57a334fbf3cac8
+unit3d hr torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 49ab1fde1b1a3436
+unit3d hu torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 13784b0ced043b07
+unit3d id torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 2ca0b3282780da84
+unit3d is torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 3f903f7fccf1701d
+unit3d it torrent.php: 229 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 bb06cf66776a34ef
+unit3d ja torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 7ebe7e0a16ca3d68
+unit3d ka torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 71740ddecb331ab6
+unit3d kk torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 6a2dce045101e965
+unit3d km torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 e4a90d1a98dc102f
+unit3d kn torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 2b1f2bd6413602b7
+unit3d ko torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 ecf74b5f6d1d23c9
+unit3d lt torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 bfe6dc66ba305e02
+unit3d lv torrent.php: 192 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 4d2e1f452548fd27
+unit3d mk torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 1700bce6fdf68e3a
+unit3d mn torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 a45737aa925b921b
+unit3d ms torrent.php: 196 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 0eb9f94856a21bcf
+unit3d ne torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 0083fc7d324b4d29
+unit3d nl torrent.php: 192 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 7163382a59505e21
+unit3d no torrent.php: 220 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 c04ca9905c5a6162
+unit3d pl torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 eee25be39db5b3fc
+unit3d pt torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 638bb5f174e1d266
+unit3d ro torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 2c9072a5552a95f1
+unit3d ru torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 8b3f428cd1689841
+unit3d si torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 6ef6cacfc7c852ae
+unit3d sk torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 ab1025ffbd65b014
+unit3d sl torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 70febf3f4b98fafa
+unit3d sq torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 7dd8adaa80aa2dee
+unit3d sr torrent.php: 196 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 039adeeae71a18ff
+unit3d sv torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 1abb6cbe781f700b
+unit3d sw torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 20ada19c4402c7e0
+unit3d tg torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 d3ddfb18f1cbebe1
+unit3d th torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 378c66e3374d355e
+unit3d tl torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 a93916e430d322ba
+unit3d ur torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 89c1620684b327ef
+unit3d uz torrent.php: 191 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 cdd21884f7e09976
+unit3d vi torrent.php: 193 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 cd67a9a8a8937b65
+snipe-it en-US/validation.php: 180 string keys, sha256 e81904ca308037e3
+snipe-it aa-ER validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 155; sha256 188e25ce36c57730
+snipe-it af-ZA validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 19; sha256 ee26282d445f1aeb
+snipe-it ar-SA validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 0c727bf087142c99
+snipe-it bg-BG validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 b97181868d1da7f3
+snipe-it cs-CZ validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 e9097a25b97c71af
+snipe-it da-DK validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 10; sha256 42934a69913be42f
+snipe-it de-DE validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 7; sha256 1db7dd34f4d5156b
+snipe-it de-if validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 8ec531d1b48f60b0
+snipe-it el-GR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 26; sha256 812e759633a0ba8e
+snipe-it en-ID validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 8; sha256 fbd6ef0e592d405d
+snipe-it es-CO validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 df05075ddb532f07
+snipe-it es-ES validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 df05075ddb532f07
+snipe-it es-MX validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 619ed86f476b0e28
+snipe-it et-EE validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 17; sha256 94d030eb332db8cb
+snipe-it fa-IR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 20; sha256 4c00d460704d0948
+snipe-it fi-FI validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 7; sha256 e9ea4fd94d206a38
+snipe-it fil-PH validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 18; sha256 34b36b77ba91a49e
+snipe-it fr-FR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 8; sha256 e0f0b900f3318fa9
+snipe-it ga-IE validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 19; sha256 7fa7e79206508406
+snipe-it he-IL validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 18; sha256 b16ece5a0e388a15
+snipe-it hr-HR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 18; sha256 9c1ebb93edbbf4e1
+snipe-it hu-HU validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 12; sha256 ef952547dade3a9c
+snipe-it hy-AM validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 c2bdf980eeafcf57
+snipe-it id-ID validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 10; sha256 8bb34e06037d4aa2
+snipe-it it-IT validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 9f11241160015e0e
+snipe-it ja-JP validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 4; sha256 77d4d5882ba845af
+snipe-it ka-GE validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 8; sha256 2c772a685ebe0280
+snipe-it km-KH validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 9710fc854ad57eea
+snipe-it ko-KR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 20282fbb01836cef
+snipe-it lt-LT validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 015625d01b483df8
+snipe-it lv-LV validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 18; sha256 ea966d3f080a31db
+snipe-it mi-NZ validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 17; sha256 70fd59a7ba05bf17
+snipe-it mk-MK validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 f2adcb4eec93681a
+snipe-it mn-MN validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 18; sha256 b5ca9770d72a0069
+snipe-it ms-MY validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 c50c74ece7e04e07
+snipe-it nb-NO validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 6; sha256 bf52d17073f3847f
+snipe-it nl-NL validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 1; sha256 30f896d9e4004a83
+snipe-it nn-NO validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 6; sha256 bf52d17073f3847f
+snipe-it no-NO validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 6; sha256 bf52d17073f3847f
+snipe-it pl-PL validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 1be41036a243cbc2
+snipe-it pt-BR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 e49d23a3186f0177
+snipe-it pt-PT validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 10; sha256 c5c393dc658c7bde
+snipe-it ro-RO validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 11; sha256 d11d0c35d1fd3c22
+snipe-it ru-RU validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 9; sha256 0240220661f4bf61
+snipe-it sk-SK validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 3; sha256 aa0f5479d5624e32
+snipe-it sl-SI validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 19; sha256 90a93f3bc524e4d0
+snipe-it so-SO validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 17; sha256 1ae08146620281c0
+snipe-it sr-CS validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 74ca931c7970a7f4
+snipe-it sv-SE validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 2; sha256 8c3430cc089cb166
+snipe-it ta-IN validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 19; sha256 2185ed1bb7e9fb92
+snipe-it th-TH validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 12; sha256 f23b2e41c0837ff5
+snipe-it tr-TR validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 10; sha256 e181ba701014ed48
+snipe-it uk-UA validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 5; sha256 0ff3a79a289f90b3
+snipe-it vi-VN validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 10; sha256 bea912b2697cd535
+snipe-it zh-CN validation.php: 180 keys, lookalike-colon errors 2 on 1 keys, warnings 0; placeholder-missing keys 3; sha256 5592e4ab8d42cc63
+snipe-it zh-TW validation.php: 180 keys, lookalike-colon errors 2 on 1 keys, warnings 0; placeholder-missing keys 6; sha256 b816cdf712a0af59
+snipe-it zu-ZA validation.php: 180 keys, lookalike-colon errors 0 on 0 keys, warnings 0; placeholder-missing keys 19; sha256 7c3001a725dbc100
+files: 445 looked for, 439 present, 434 parsed; parse errors 5
+parse error: unit3d pt_BR email: no return statement in the PHP file
+parse error: unit3d pt_BR page: no return statement in the PHP file
+parse error: unit3d pt_BR common: no return statement in the PHP file
+parse error: unit3d pt_BR user: no return statement in the PHP file
+parse error: unit3d pt_BR torrent: no return statement in the PHP file
+akaunting ja-JP error [validation.different]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.different]: :other is written "：other" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.email]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.ends_with]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.ends_with]: :values is written "：values" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.file]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.filled]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.image]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.integer]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.present]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.regex]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.required]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.size.string]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.size.string]: :size is written "：size" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.string]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.unique]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.uploaded]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+akaunting ja-JP error [validation.url]: :attribute is written "：attribute" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [email.fail-login-line2]: :host is written "：host" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [email.fail-login-line2]: :ip is written "：ip" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [email.fail-login-line2]: :time is written "：time" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [email.footer-link]: :actiontext is written "：actionText" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [page.aboutus-welcome-desc]: :title is written "：title" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [common.achievement-unlocked]: :name is written "：name" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [user.moderated-by]: :mod is written "：mod" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+unit3d ja error [user.profile-desc]: :title is written "：title" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+snipe-it zh-CN error [validation.required_unless]: :other is written "：other" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+snipe-it zh-CN error [validation.required_unless]: :values is written "：values" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+snipe-it zh-TW error [validation.required_unless]: :other is written "：other" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+snipe-it zh-TW error [validation.required_unless]: :values is written "：values" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost
+P1 HELD: Akaunting ja-JP: at least 15 keys and 18 lookalike-colon errors (15 keys, 18 errors)
+P2 HELD: UNIT3D ja: lookalike-colon errors on exactly the six listed keys, 8 errors (['common.achievement-unlocked', 'email.fail-login-line2', 'email.footer-link', 'page.aboutus-welcome-desc', 'user.moderated-by', 'user.profile-desc'], 8 errors)
+P3 HELD: Snipe-IT zh-CN and zh-TW: lookalike-colon errors on required_unless only, 2 each (zh-CN ['validation.required_unless'], 2; zh-TW ['validation.required_unless'], 2)
+P4 HELD: every lookalike-colon error is in a Japanese or Chinese locale (none outside)
+P5 FAILED: every file present parses, and Akaunting en-GB has at least 60 string keys (5 parse errors, 115 keys)

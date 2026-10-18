@@ -1,0 +1,365 @@
+{
+ "guard": "0.9.0",
+ "projects": [
+  {
+   "name": "akaunting",
+   "base": "https://raw.githubusercontent.com/akaunting/akaunting/06dfa473e0d71a5262a58f6f0759c6badf34d5d2/resources/lang/%s/%s.php",
+   "source": "en-GB"
+  },
+  {
+   "name": "unit3d",
+   "base": "https://raw.githubusercontent.com/HDInnovations/UNIT3D/8b88f4c8182eb3d3912ffef425c3224dcfd596f4/lang/%s/%s.php",
+   "source": "en"
+  },
+  {
+   "name": "snipe-it",
+   "base": "https://raw.githubusercontent.com/grokability/snipe-it/d98baec311438e0818988c130eefa8e813a34c22/resources/lang/%s/%s.php",
+   "source": "en-US"
+  }
+ ],
+ "source_string_keys": {
+  "akaunting/validation": 115,
+  "unit3d/email": 42,
+  "unit3d/page": 22,
+  "unit3d/common": 229,
+  "unit3d/user": 411,
+  "unit3d/torrent": 231,
+  "snipe-it/validation": 180
+ },
+ "lookalike_colon": [
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.different",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":other is written \"：other\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.different",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.email",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.ends_with",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":values is written \"：values\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.ends_with",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.file",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.filled",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.image",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.integer",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.present",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.regex",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.required",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.size.string",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":size is written \"：size\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.size.string",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.string",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.unique",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.uploaded",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":attribute is written \"：attribute\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.url",
+   "project": "akaunting",
+   "lang": "ja-JP",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":host is written \"：host\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "email.fail-login-line2",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "email"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":ip is written \"：ip\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "email.fail-login-line2",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "email"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":time is written \"：time\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "email.fail-login-line2",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "email"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":actiontext is written \"：actionText\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "email.footer-link",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "email"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":title is written \"：title\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "page.aboutus-welcome-desc",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "page"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":name is written \"：name\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "common.achievement-unlocked",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "common"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":mod is written \"：mod\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "user.moderated-by",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "user"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":title is written \"：title\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "user.profile-desc",
+   "project": "unit3d",
+   "lang": "ja",
+   "file": "user"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":other is written \"：other\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.required_unless",
+   "project": "snipe-it",
+   "lang": "zh-CN",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":values is written \"：values\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.required_unless",
+   "project": "snipe-it",
+   "lang": "zh-CN",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":other is written \"：other\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.required_unless",
+   "project": "snipe-it",
+   "lang": "zh-TW",
+   "file": "validation"
+  },
+  {
+   "level": "error",
+   "code": "lookalike-colon",
+   "message": ":values is written \"：values\" with the fullwidth colon ： (U+FF1A), which Laravel doesn't replace: the text is shown as written and the value is lost",
+   "key": "validation.required_unless",
+   "project": "snipe-it",
+   "lang": "zh-TW",
+   "file": "validation"
+  }
+ ],
+ "parse_errors": [
+  {
+   "project": "unit3d",
+   "lang": "pt_BR",
+   "file": "email",
+   "error": "no return statement in the PHP file"
+  },
+  {
+   "project": "unit3d",
+   "lang": "pt_BR",
+   "file": "page",
+   "error": "no return statement in the PHP file"
+  },
+  {
+   "project": "unit3d",
+   "lang": "pt_BR",
+   "file": "common",
+   "error": "no return statement in the PHP file"
+  },
+  {
+   "project": "unit3d",
+   "lang": "pt_BR",
+   "file": "user",
+   "error": "no return statement in the PHP file"
+  },
+  {
+   "project": "unit3d",
+   "lang": "pt_BR",
+   "file": "torrent",
+   "error": "no return statement in the PHP file"
+  }
+ ],
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "Akaunting ja-JP: at least 15 keys and 18 lookalike-colon errors",
+   "held": true,
+   "value": "15 keys, 18 errors"
+  },
+  {
+   "id": "P2",
+   "text": "UNIT3D ja: lookalike-colon errors on exactly the six listed keys, 8 errors",
+   "held": true,
+   "value": "['common.achievement-unlocked', 'email.fail-login-line2', 'email.footer-link', 'page.aboutus-welcome-desc', 'user.moderated-by', 'user.profile-desc'], 8 errors"
+  },
+  {
+   "id": "P3",
+   "text": "Snipe-IT zh-CN and zh-TW: lookalike-colon errors on required_unless only, 2 each",
+   "held": true,
+   "value": "zh-CN ['validation.required_unless'], 2; zh-TW ['validation.required_unless'], 2"
+  },
+  {
+   "id": "P4",
+   "text": "every lookalike-colon error is in a Japanese or Chinese locale",
+   "held": true,
+   "value": "none outside"
+  },
+  {
+   "id": "P5",
+   "text": "every file present parses, and Akaunting en-GB has at least 60 string keys",
+   "held": false,
+   "value": "5 parse errors, 115 keys"
+  }
+ ]
+}
