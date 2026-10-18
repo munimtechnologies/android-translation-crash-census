@@ -1,0 +1,33 @@
+format,repo,path,class,note
+arb,zouwei/termex,packages/termex_shared/lib/l10n/app_en.arb,instruction,snippetContentLabel; source language; probably deliberate
+arb,zouwei/termex,packages/termex_shared/lib/l10n/app_zh.arb,instruction,snippetContentLabel; same as English
+resx,ONLYOFFICE/CommunityServer,module/ASC.AuditTrail/AuditReportResource.ja.resx,placeholder,line read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/PublicResources/Resource.ja.resx,placeholder,line read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/PublicResources/ResourceJS.ja.resx,placeholder,line read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/PublicResources/PersonalResource.ja.resx,placeholder,line read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/Products/Files/Resources/FilesJSResource.ja.resx,placeholder,line read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/PublicResources/MonitoringResource.ja.resx,unread,contains U+FF5B; line not read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/Products/Files/Resources/FilesUCResource.ja.resx,unread,contains U+FF5B; line not read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/PublicResources/UserControlsCommonResource.ja.resx,unread,contains U+FF5B; line not read
+resx,ONLYOFFICE/CommunityServer,web/studio/ASC.Web.Studio/Products/Files/Resources/FilesCommonResource.ja.resx,unread,contains U+FF5B; line not read
+resx,shr670377723/CommunityServer-master,(same 9 paths as ONLYOFFICE/CommunityServer),copy,plain copy of ONLYOFFICE/CommunityServer
+resx,arkypita/LaserGRBL,LaserGRBL/Strings.zh-CN.resx,placeholder,line read
+resx,arkypita/LaserGRBL,LaserGRBL/WiFiConfigurator/OrturWiFiConfigPrompt.zh-CN.resx,placeholder,line read
+resx,RandomEngy/VidCoder,VidCoder/Resources/Translations/MiscRes.ja.resx,placeholder,see BRACES.md
+resx,IllusionMods/KKManager,src/KKManager.Core/Properties/Resources.zh-Hans.resx,placeholder,line read
+resx,RayCarrot/RaymanControlPanel,src/RayCarrot.RCP.Metro/Localization/Resources.zh-Hans.resx,placeholder,line read
+resx,liushiyangFrsan/GitHub_WattToolkit,src/ST.Client.Desktop/Properties/SR.ja.resx,placeholder,line read; copy of Watt Toolkit; upstream not checked
+properties,tapdata/tapdata,manager/tm/src/main/resources/messages_zh_CN.properties,placeholder,see JAVA.md
+properties,tapdata/tapdata,manager/tm/src/main/resources/messages_zh_TW.properties,placeholder,see JAVA.md
+properties,tapdata/tapdata,manager/tm-api/src/test/resources/messages_zh_CN.properties,placeholder,see JAVA.md
+properties,tapdata/tapdata,manager/tm-api/src/test/resources/messages_zh_TW.properties,placeholder,see JAVA.md
+properties,portfolio-performance/portfolio,name.abuchen.portfolio.ui/src/name/abuchen/portfolio/ui/messages_zh_TW.properties,placeholder,see JAVA.md
+properties,xwiki/xwiki-platform,xwiki-platform-core/xwiki-platform-oldcore/src/main/resources/ApplicationResources_zh.properties,placeholder,see JAVA.md
+properties,alkacon/opencms-core,modules/org.opencms.locale.zh/resources/system/workplace/locales/zh/messages/org/opencms/i18n/messages_zh.properties,placeholder,see JAVA.md
+properties,alkacon/opencms-core,modules/org.opencms.locale.zh/resources/system/workplace/locales/zh/messages/org/opencms/workplace/commons/messages_zh.properties,placeholder,see JAVA.md
+properties,alkacon/opencms-core,modules/org.opencms.locale.zh/resources/system/workplace/locales/zh/messages/org/opencms/workplace/tools/content/updatexml/messages_zh.properties,placeholder,see JAVA.md
+properties,Multiverse/Multiverse-Inventories,src/main/resources/multiverse-inventories_zh.properties,placeholder,see JAVA.md
+properties,winder/Universal-G-Code-Sender,ugs-core/src/resources/MessagesBundle_zh_CN.properties,instruction,mainWindow.swing.macroInstructions; MacroHelper.java matches ASCII braces only
+properties,PrisonTeam/Prison,prison-core/src/main/resources/lang/ranks/zh-CN.properties,instruction,ranks_commandCommands__command_add_cannot_use_percent_symbols
+properties,pentaho/pentaho-kettle,engine/src/main/resources/org/pentaho/di/trans/steps/memgroupby/messages/messages_ja_JP.properties,not-placeholder,reading of a term in fullwidth braces
+properties,apache/hop,plugins/transforms/memgroupby/src/main/resources/org/apache/hop/pipeline/transforms/memgroupby/messages/messages_ja_JP.properties,not-placeholder,same string as pentaho-kettle
