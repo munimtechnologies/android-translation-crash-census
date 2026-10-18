@@ -162,8 +162,9 @@ Look-alike characters (a placeholder written with a character that looks right b
 
 - [lookalike-percent/](lookalike-percent/FINDINGS.md): `٪` or `％` for `%` in Android; the same in
   [Apple](lookalike-percent/APPLE.md), [gettext](lookalike-percent/GETTEXT.md) and
-  [Rails YAML](lookalike-percent/RAILS.md) and [Symfony](lookalike-percent/SYMFONY.md) files;
-  [LINT.md](lookalike-percent/LINT.md).
+  [Rails YAML](lookalike-percent/RAILS.md) and [Symfony](lookalike-percent/SYMFONY.md) files, with a
+  pre-registered [check of 150 files in five projects](lookalike-percent/yaml-eval/RESULTS.md) (six of
+  seven predictions held); [LINT.md](lookalike-percent/LINT.md).
 - [lookalike-brace/](lookalike-brace/BRACES.md): `｛0｝` for `{0}`; the same in
   [Java .properties](lookalike-brace/JAVA.md) and [JSON](lookalike-brace/JSON.md) files, and
   [how common it is per format](lookalike-brace/FORMATS.md); a pre-registered
@@ -171,6 +172,19 @@ Look-alike characters (a placeholder written with a character that looks right b
 - [lookalike-colon/](lookalike-colon/LARAVEL.md): `：attribute` for Laravel's `:attribute`; a
   pre-registered [check of 191 languages](lookalike-colon/laravel-eval/RESULTS.md) in three
   applications (four of five predictions held).
+
+Rates across many projects:
+
+- [rails-rate/](rails-rate/RESULTS.md): pre-registered measurement, over the 214 apps and engines pinned in
+  Real World Rails, of how often translations lose, misspell or add `%{name}` (all seven predictions held;
+  about 1 in 100 placeholder strings is broken, and every look-alike is in a Chinese, Japanese, Arabic or
+  Sindhi file, a quarter of Loomio's Arabic placeholders among them).
+
+Machine-translation artifacts:
+
+- [mt-artifacts/](mt-artifacts/KATAKANA-READING.md): Japanese translations that ship the word's katakana
+  reading between fullwidth number signs (`削除＃サクジョ＃`), and a pre-registered
+  [rule](mt-artifacts/READING-LEAK-PREREG.md) for an l10n-guard warning on them.
 
 ## Method
 
