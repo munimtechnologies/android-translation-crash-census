@@ -1,0 +1,63 @@
+===== run-01-python: python -B eval_holdout2.py --fetch-guard --guard-dir /out/guard
+HOLDOUT2-PREREG.md: 6019 bytes, sha256 0660e15f1bcb4fe5
+l10n_guard.py 0.12.0: 112711 bytes, sha256 374d8b212929d24b
+
+===== run-02-python: python -B -m unittest -v test_eval_holdout2
+
+===== run-03-python: python -B eval_holdout2.py --guard-dir /out/guard --out-dir /out/holdout2
+l10n-guard 0.12.0
+jellyfin-web @ee8efb41: reference en-us, 105 locale files, 0 unparsed, 31 pairs, 2036 comparisons, 4 warnings, 0 copies, 1.96 per 1,000, identical files [['ar_SA', 'ch', 'ky', 'nds']], consistent True
+  jellyfin-web eo [MAX]: 'LabelSyncPlaySettingsMaxDelaySpeedToSync' / 'LabelSyncPlaySettingsMinDelaySpeedToSync' = 'Minimuma prokrasto de SpeedToSync' used False/False
+  jellyfin-web ro [BEFORE]: 'LabelAirsAfterSeason' / 'LabelAirsBeforeSeason' = 'Emis după sezonul' used False/False
+  jellyfin-web ru [UPLOAD]: 'Download' / 'Upload' = 'Загрузить' used True/False
+  jellyfin-web uk [UPLOAD]: 'Download' / 'Upload' = 'Завантажити' used True/False
+uptime-kuma @b092505f: reference en, 77 locale files, 0 unparsed, 24 pairs, 975 comparisons, 3 warnings, 0 copies, 3.08 per 1,000, identical files [['ab', 'lzh', 'ne', 'ug']], consistent True
+  uptime-kuma bar [ENABLE]: 'confirmDisableTwoFAMsg' / 'confirmEnableTwoFAMsg' = "Bist da sicher, dass d'2FA wirklich ausschoidn wuist?" used True/True
+  uptime-kuma sr [IMPORT]: 'Export Backup' / 'Import Backup' = 'Извези резервну копију' used False/False
+  uptime-kuma ur [IMPORT]: 'Export Backup' / 'Import Backup' = 'بیک اپ درآمد کریں' used False/False
+rocket-chat @ad2047e7: reference en, 67 locale files, 0 unparsed, 308 pairs, 9960 comparisons, 29 warnings, 0 copies, 2.91 per 1,000, identical files [['se', 'tl']], consistent True
+  rocket-chat af [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'Gebruiker is geblokkeer' used True/True
+  rocket-chat az [IN]: 'Custom_Script_Logged_In' / 'Custom_Script_Logged_Out' = 'Daxil olanlar üçün xüsusi skript' used True/True
+  rocket-chat az [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'Otaq arxivləşdirildi' used True/False
+  rocket-chat bg [MUTE]: 'Mute_user' / 'Unmute_user' = 'Заглушаване на потребителя' used True/True
+  rocket-chat bg [MUTE]: 'Unmute_user' / 'mute-user' = 'Заглушаване на потребителя' used True/True
+  rocket-chat cs [ARCHIVE]: 'Message_HideType_room_archived' / 'Message_HideType_room_unarchived' = 'Skrýt zprávy „Místnost archivována“' used True/True
+  rocket-chat da [ARCHIVE]: 'Room_has_been_archived' / 'Room_has_been_unarchived' = 'Værelset er blevet arkiveret' used True/True
+  rocket-chat da [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'Brugeren er blokeret' used True/True
+  rocket-chat el [ARCHIVE]: 'This_room_has_been_archived_by__username_' / 'This_room_has_been_unarchived_by__username_' = 'Αυτό το δωμάτιο έχει αρχειοθετηθεί από το χρήστη {{username}}' used False/False
+  rocket-chat fi [UPLOAD]: 'Download' / 'Upload' = 'Lataa' used True/True
+  rocket-chat fi [UPLOAD]: 'Download_Snippet' / 'Upload' = 'Lataa' used False/True
+  rocket-chat id [ARCHIVE]: 'Channel_Archived' / 'Channel_Unarchived' = 'Channel dengan nama `#{{channelName}}` telah diarsipkan berhasil' used True/True
+  rocket-chat id [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'kamar diarsipkan' used True/False
+  rocket-chat id [ARCHIVE]: 'Room_has_been_archived' / 'Room_has_been_unarchived' = 'Kamar telah diarsipkan' used True/True
+  rocket-chat id [ARCHIVE]: 'This_room_has_been_archived_by__username_' / 'This_room_has_been_unarchived_by__username_' = 'Ruangan ini telah diarsipkan oleh {{username}}' used False/False
+  rocket-chat ka-GE [ADD]: 'Add_custom_oauth' / 'Remove_custom_oauth' = 'დაამატეთ პირადი oauth' used True/True
+  rocket-chat km [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'បន្ទប់ទុក\u200b\u200bក្នុងប័ណ្ណសារ' used True/False
+  rocket-chat km [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'អ្នកប្រើត្រូវបានទប់ស្កាត់' used True/True
+  rocket-chat ku [MAX]: 'Max_length_is' / 'Min_length_is' = 'Mezinahiya {{limit}} e' used True/True
+  rocket-chat ku [ADD]: 'add-user' / 'remove-user' = 'Bikarhêner hilbijêre' used True/True
+  rocket-chat mn [ONLINE]: 'Stats_Offline_Users' / 'Stats_Online_Users' = 'Онлайн хэрэглэгчид' used False/False
+  rocket-chat ms-MY [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'Pengguna disekat' used True/True
+  rocket-chat nn [ARCHIVE]: 'Room_has_been_archived' / 'Room_has_been_unarchived' = 'Rom har blitt arkivert' used True/True
+  rocket-chat nn [MUTE]: 'Unmute_user' / 'mute-user' = 'Slå av brukeren' used True/True
+  rocket-chat th-TH [ARCHIVE]: 'Integrations_Outgoing_Type_RoomArchived' / 'Room_unarchived' = 'ห้องเก็บถาวร' used True/False
+  rocket-chat th-TH [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'ห้องเก็บถาวร' used True/False
+  rocket-chat uk [ARCHIVE]: 'Yes_archive_it' / 'Yes_unarchive_it' = 'Так, архівуйте це!' used False/False
+  rocket-chat vi-VN [IN]: 'Custom_Script_Logged_In' / 'Custom_Script_Logged_Out' = 'Tập lệnh Tuỳ chỉnh cho Người dùng đăng nhập' used True/True
+  rocket-chat zh-HK [ARCHIVE]: 'This_room_has_been_archived_by__username_' / 'This_room_has_been_unarchived_by__username_' = '这个房间已被{{username}}存档' used False/False
+mattermost @57ea425e: reference en, 27 locale files, 0 unparsed, 1083 pairs, 0 comparisons, 0 warnings, 0 copies, 0.00 per 1,000, identical files none, consistent True
+bitwarden-web @9e54ce7b: reference en, 64 locale files, 0 unparsed, 94 pairs, 5965 comparisons, 6 warnings, 0 copies, 1.01 per 1,000, identical files [['km', 'ky', 'lb', 'my', 'or', 'te']], consistent True
+  bitwarden-web ar [IMPORT]: 'confirmVaultExport.message' / 'confirmVaultImport.message' = 'تأكيد تصدير الخزانة' used True/True
+  bitwarden-web ar [IMPORT]: 'dataExportSuccess.message' / 'importSuccess.message' = 'تم استيراد البيانات بنجاح' used True/True
+  bitwarden-web hu [UPLOAD]: 'downloadLicense.message' / 'uploadLicense.message' = 'Licensz letöltése' used True/True
+  bitwarden-web ja [IMPORT]: 'confirmVaultExport.message' / 'confirmVaultImport.message' = '保管庫のエクスポートの確認' used True/True
+  bitwarden-web pt_PT [ENABLE]: 'inviteLinkEventConfirmDisabled.message' / 'inviteLinkEventConfirmEnabled.message' = 'A exigência de aprovação do administrador para o link de convite está desativada' used True/True
+  bitwarden-web ru [UPLOAD]: 'downloadLicense.message' / 'uploadLicense.message' = 'Загрузить лицензию' used True/True
+H0 HELD: all five tarballs download; each project has its reference and >= 10 locale files (locale files {'jellyfin-web': 105, 'uptime-kuma': 77, 'rocket-chat': 67, 'mattermost': 27, 'bitwarden-web': 64})
+H1 HELD: >= 20 warnings, from >= 3 of 5 projects (42 warnings from ['bitwarden-web', 'jellyfin-web', 'rocket-chat', 'uptime-kuma'])
+H4 HELD: >= 50% of the warnings have both keys found as literals in the project's code (25 of 42 (60%))
+H5 FAILED: >= 50% of the UPLOAD-class warnings are in fr*/ar* locales (>= 5 needed) (0 of 6)
+warnings by class: {"ADD": 2, "ARCHIVE": 14, "BEFORE": 1, "BLOCK": 4, "ENABLE": 2, "IMPORT": 5, "IN": 2, "MAX": 2, "MUTE": 3, "ONLINE": 1, "UPLOAD": 6}
+UPLOAD class: 6 warnings; other classes: 36
+check_catalog and _antonym_collisions agree on every file: True
+H2 and H3 are graded by hand from sample-main.csv and sample-upload.csv

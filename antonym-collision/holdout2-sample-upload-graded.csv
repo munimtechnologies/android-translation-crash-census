@@ -1,0 +1,7 @@
+project,locale,key1,key2,classes,verdict,note
+bitwarden-web,hu,downloadLicense.message,uploadLicense.message,UPLOAD,real,"value reads 'license download' (letoltes); Hungarian has a separate word for upload (feltoltes), so the upload button says download"
+bitwarden-web,ru,downloadLicense.message,uploadLicense.message,UPLOAD,not,"value reads 'load the license' (zagruzit); in Russian interfaces this verb is in common use for both directions (Windows names the Downloads folder Zagruzki; sites use it for upload)"
+jellyfin-web,ru,Download,Upload,UPLOAD,not,"value 'Zagruzit' (load); same reasoning as the Russian row above"
+jellyfin-web,uk,Download,Upload,UPLOAD,not,"value 'Zavantazhyty' (load); in Ukrainian interfaces in common use for both directions; borderline (vyvantazhyty exists for upload) and graded not, as fr-CA was in the first test"
+rocket-chat,fi,Download,Upload,UPLOAD,not,"value 'Lataa' (load); Finnish ladata covers both directions in common use"
+rocket-chat,fi,Download_Snippet,Upload,UPLOAD,not,"same value as the row above"

@@ -1,0 +1,7 @@
+project,locale,key1,key2,en1,en2,value,classes,key1_used,key2_used,verdict,note
+bitwarden-web,hu,downloadLicense.message,uploadLicense.message,Download license,Upload license,Licensz letöltése,UPLOAD,True,True,,
+bitwarden-web,ru,downloadLicense.message,uploadLicense.message,Download license,Upload license,Загрузить лицензию,UPLOAD,True,True,,
+jellyfin-web,ru,Download,Upload,Download,Upload,Загрузить,UPLOAD,True,False,,
+jellyfin-web,uk,Download,Upload,Download,Upload,Завантажити,UPLOAD,True,False,,
+rocket-chat,fi,Download,Upload,Download,Upload,Lataa,UPLOAD,True,True,,
+rocket-chat,fi,Download_Snippet,Upload,Download,Upload,Lataa,UPLOAD,False,True,,

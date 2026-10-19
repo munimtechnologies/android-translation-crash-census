@@ -1,0 +1,145 @@
+{
+ "guard": "0.12.0",
+ "consistent": true,
+ "by_class": {
+  "MAX": 2,
+  "BEFORE": 1,
+  "UPLOAD": 6,
+  "ENABLE": 2,
+  "IMPORT": 5,
+  "BLOCK": 4,
+  "IN": 2,
+  "ARCHIVE": 14,
+  "MUTE": 3,
+  "ADD": 2,
+  "ONLINE": 1
+ },
+ "upload_warnings": 6,
+ "other_warnings": 36,
+ "projects": {
+  "jellyfin-web": {
+   "locale_files": 105,
+   "unparsed": [],
+   "reference": "en-us",
+   "pairs": 31,
+   "comparisons": 2036,
+   "copies": 0,
+   "consistent": true,
+   "identical": [
+    [
+     "ar_SA",
+     "ch",
+     "ky",
+     "nds"
+    ]
+   ],
+   "repo": "jellyfin/jellyfin-web",
+   "ref": "master",
+   "commit": "ee8efb417e5377ba444509a68ed22af33e45950b",
+   "code_literals": 11791
+  },
+  "uptime-kuma": {
+   "locale_files": 77,
+   "unparsed": [],
+   "reference": "en",
+   "pairs": 24,
+   "comparisons": 975,
+   "copies": 0,
+   "consistent": true,
+   "identical": [
+    [
+     "ab",
+     "lzh",
+     "ne",
+     "ug"
+    ]
+   ],
+   "repo": "louislam/uptime-kuma",
+   "ref": "master",
+   "commit": "b092505f894d66669b67f46e1da72b51016eceab",
+   "code_literals": 9712
+  },
+  "rocket-chat": {
+   "locale_files": 67,
+   "unparsed": [],
+   "reference": "en",
+   "pairs": 308,
+   "comparisons": 9960,
+   "copies": 0,
+   "consistent": true,
+   "identical": [
+    [
+     "se",
+     "tl"
+    ]
+   ],
+   "repo": "RocketChat/Rocket.Chat",
+   "ref": "develop",
+   "commit": "ad2047e71dbe67aebb21b37ed9e2dc21cf92721b",
+   "code_literals": 79771
+  },
+  "mattermost": {
+   "locale_files": 27,
+   "unparsed": [],
+   "reference": "en",
+   "pairs": 1083,
+   "comparisons": 0,
+   "copies": 0,
+   "consistent": true,
+   "identical": [],
+   "repo": "mattermost/mattermost",
+   "ref": "master",
+   "commit": "57ea425e5a95784d9089b007f671142c5f00182e",
+   "code_literals": 97738
+  },
+  "bitwarden-web": {
+   "locale_files": 64,
+   "unparsed": [],
+   "reference": "en",
+   "pairs": 94,
+   "comparisons": 5965,
+   "copies": 0,
+   "consistent": true,
+   "identical": [
+    [
+     "km",
+     "ky",
+     "lb",
+     "my",
+     "or",
+     "te"
+    ]
+   ],
+   "repo": "bitwarden/clients",
+   "ref": "main",
+   "commit": "9e54ce7b43b14685eec31aaae49b1328f1378f8d",
+   "code_literals": 88440
+  }
+ },
+ "predictions": [
+  {
+   "id": "H0",
+   "text": "all five tarballs download; each project has its reference and >= 10 locale files",
+   "held": true,
+   "value": "locale files {'jellyfin-web': 105, 'uptime-kuma': 77, 'rocket-chat': 67, 'mattermost': 27, 'bitwarden-web': 64}"
+  },
+  {
+   "id": "H1",
+   "text": ">= 20 warnings, from >= 3 of 5 projects",
+   "held": true,
+   "value": "42 warnings from ['bitwarden-web', 'jellyfin-web', 'rocket-chat', 'uptime-kuma']"
+  },
+  {
+   "id": "H4",
+   "text": ">= 50% of the warnings have both keys found as literals in the project's code",
+   "held": true,
+   "value": "25 of 42 (60%)"
+  },
+  {
+   "id": "H5",
+   "text": ">= 50% of the UPLOAD-class warnings are in fr*/ar* locales (>= 5 needed)",
+   "held": false,
+   "value": "0 of 6"
+  }
+ ]
+}

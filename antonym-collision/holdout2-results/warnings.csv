@@ -1,0 +1,43 @@
+project,locale,key1,key2,en1,en2,value,classes,key1_used,key2_used
+jellyfin-web,eo,LabelSyncPlaySettingsMaxDelaySpeedToSync,LabelSyncPlaySettingsMinDelaySpeedToSync,SpeedToSync maximum delay,SpeedToSync minimum delay,Minimuma prokrasto de SpeedToSync,MAX,False,False
+jellyfin-web,ro,LabelAirsAfterSeason,LabelAirsBeforeSeason,Airs after season,Airs before season,Emis după sezonul,BEFORE,False,False
+jellyfin-web,ru,Download,Upload,Download,Upload,Загрузить,UPLOAD,True,False
+jellyfin-web,uk,Download,Upload,Download,Upload,Завантажити,UPLOAD,True,False
+uptime-kuma,bar,confirmDisableTwoFAMsg,confirmEnableTwoFAMsg,Are you sure you want to disable 2FA?,Are you sure you want to enable 2FA?,"Bist da sicher, dass d'2FA wirklich ausschoidn wuist?",ENABLE,True,True
+uptime-kuma,sr,Export Backup,Import Backup,Export Backup,Import Backup,Извези резервну копију,IMPORT,False,False
+uptime-kuma,ur,Export Backup,Import Backup,Export Backup,Import Backup,بیک اپ درآمد کریں,IMPORT,False,False
+rocket-chat,af,User_is_blocked,User_is_unblocked,User is blocked,User is unblocked,Gebruiker is geblokkeer,BLOCK,True,True
+rocket-chat,az,Custom_Script_Logged_In,Custom_Script_Logged_Out,Custom script for logged in users,Custom script for logged out users,Daxil olanlar üçün xüsusi skript,IN,True,True
+rocket-chat,az,Room_archived,Room_unarchived,Room archived,Room unarchived,Otaq arxivləşdirildi,ARCHIVE,True,False
+rocket-chat,bg,Mute_user,Unmute_user,Mute user,Unmute user,Заглушаване на потребителя,MUTE,True,True
+rocket-chat,bg,Unmute_user,mute-user,Unmute user,Mute user,Заглушаване на потребителя,MUTE,True,True
+rocket-chat,cs,Message_HideType_room_archived,Message_HideType_room_unarchived,Room archived,Room unarchived,Skrýt zprávy „Místnost archivována“,ARCHIVE,True,True
+rocket-chat,da,Room_has_been_archived,Room_has_been_unarchived,Room has been archived,Room has been unarchived,Værelset er blevet arkiveret,ARCHIVE,True,True
+rocket-chat,da,User_is_blocked,User_is_unblocked,User is blocked,User is unblocked,Brugeren er blokeret,BLOCK,True,True
+rocket-chat,el,This_room_has_been_archived_by__username_,This_room_has_been_unarchived_by__username_,This room has been archived by {{username}},This room has been unarchived by {{username}},Αυτό το δωμάτιο έχει αρχειοθετηθεί από το χρήστη {{username}},ARCHIVE,False,False
+rocket-chat,fi,Download,Upload,Download,Upload,Lataa,UPLOAD,True,True
+rocket-chat,fi,Download_Snippet,Upload,Download,Upload,Lataa,UPLOAD,False,True
+rocket-chat,id,Channel_Archived,Channel_Unarchived,Channel with name `#{{channelName}}` has been archived successfully,Channel with name `#{{channelName}}` has been unarchived successfully,Channel dengan nama `#{{channelName}}` telah diarsipkan berhasil,ARCHIVE,True,True
+rocket-chat,id,Room_archived,Room_unarchived,Room archived,Room unarchived,kamar diarsipkan,ARCHIVE,True,False
+rocket-chat,id,Room_has_been_archived,Room_has_been_unarchived,Room has been archived,Room has been unarchived,Kamar telah diarsipkan,ARCHIVE,True,True
+rocket-chat,id,This_room_has_been_archived_by__username_,This_room_has_been_unarchived_by__username_,This room has been archived by {{username}},This room has been unarchived by {{username}},Ruangan ini telah diarsipkan oleh {{username}},ARCHIVE,False,False
+rocket-chat,ka-GE,Add_custom_oauth,Remove_custom_oauth,Add custom OAuth,Remove custom OAuth,დაამატეთ პირადი oauth,ADD,True,True
+rocket-chat,km,Room_archived,Room_unarchived,Room archived,Room unarchived,បន្ទប់ទុក​​ក្នុងប័ណ្ណសារ,ARCHIVE,True,False
+rocket-chat,km,User_is_blocked,User_is_unblocked,User is blocked,User is unblocked,អ្នកប្រើត្រូវបានទប់ស្កាត់,BLOCK,True,True
+rocket-chat,ku,Max_length_is,Min_length_is,Max length is {{limit}},Min length is {{limit}},Mezinahiya {{limit}} e,MAX,True,True
+rocket-chat,ku,add-user,remove-user,Add user,Remove user,Bikarhêner hilbijêre,ADD,True,True
+rocket-chat,mn,Stats_Offline_Users,Stats_Online_Users,Offline users,Online users,Онлайн хэрэглэгчид,ONLINE,False,False
+rocket-chat,ms-MY,User_is_blocked,User_is_unblocked,User is blocked,User is unblocked,Pengguna disekat,BLOCK,True,True
+rocket-chat,nn,Room_has_been_archived,Room_has_been_unarchived,Room has been archived,Room has been unarchived,Rom har blitt arkivert,ARCHIVE,True,True
+rocket-chat,nn,Unmute_user,mute-user,Unmute user,Mute user,Slå av brukeren,MUTE,True,True
+rocket-chat,th-TH,Integrations_Outgoing_Type_RoomArchived,Room_unarchived,Room archived,Room unarchived,ห้องเก็บถาวร,ARCHIVE,True,False
+rocket-chat,th-TH,Room_archived,Room_unarchived,Room archived,Room unarchived,ห้องเก็บถาวร,ARCHIVE,True,False
+rocket-chat,uk,Yes_archive_it,Yes_unarchive_it,"Yes, archive it!","Yes, unarchive it!","Так, архівуйте це!",ARCHIVE,False,False
+rocket-chat,vi-VN,Custom_Script_Logged_In,Custom_Script_Logged_Out,Custom script for logged in users,Custom script for logged out users,Tập lệnh Tuỳ chỉnh cho Người dùng đăng nhập,IN,True,True
+rocket-chat,zh-HK,This_room_has_been_archived_by__username_,This_room_has_been_unarchived_by__username_,This room has been archived by {{username}},This room has been unarchived by {{username}},这个房间已被{{username}}存档,ARCHIVE,False,False
+bitwarden-web,ar,confirmVaultExport.message,confirmVaultImport.message,Confirm vault export,Confirm vault import,تأكيد تصدير الخزانة,IMPORT,True,True
+bitwarden-web,ar,dataExportSuccess.message,importSuccess.message,Data successfully exported,Data successfully imported,تم استيراد البيانات بنجاح,IMPORT,True,True
+bitwarden-web,hu,downloadLicense.message,uploadLicense.message,Download license,Upload license,Licensz letöltése,UPLOAD,True,True
+bitwarden-web,ja,confirmVaultExport.message,confirmVaultImport.message,Confirm vault export,Confirm vault import,保管庫のエクスポートの確認,IMPORT,True,True
+bitwarden-web,pt_PT,inviteLinkEventConfirmDisabled.message,inviteLinkEventConfirmEnabled.message,Require admin approval for invite link is enabled,Require admin approval for invite link is disabled,A exigência de aprovação do administrador para o link de convite está desativada,ENABLE,True,True
+bitwarden-web,ru,downloadLicense.message,uploadLicense.message,Download license,Upload license,Загрузить лицензию,UPLOAD,True,True
