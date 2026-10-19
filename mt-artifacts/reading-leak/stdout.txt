@@ -1,0 +1,70 @@
+===== run-01-python: python -B patch_0110.py --out-dir /out/0110
+l10n_guard.py 0.10.0: 106439 bytes, sha256 ce6614bf74ace2cd
+l10n_guard.py 0.11.0: 107754 bytes, sha256 fc917bb2487d09c7
+
+===== run-02-python: python -B /out/0110/test_l10n_guard.py
+
+===== run-03-python: python -B /out/0110/test_android_text_052.py
+
+===== run-04-python: python -B /out/0110/test_java_060.py
+
+===== run-05-python: python -B /out/0110/test_qt_070.py
+
+===== run-06-python: python -B /out/0110/test_071.py
+
+===== run-07-python: python -B /out/0110/test_072.py
+
+===== run-08-python: python -B /out/0110/test_080.py
+
+===== run-09-python: python -B /out/0110/test_090.py
+
+===== run-10-python: python -B /out/0110/test_0100.py
+
+===== run-11-python: python -B /out/0110/test_0110.py -v
+
+===== run-12-python: python -B eval_0110.py --guard-dir /out/0110 --out-dir /out/0110-eval
+l10n-guard 0.11.0
+nostrmo en sha256 e353bd696f07e09d, ja sha256 d79dd0bcd44163f8; 18 Japanese values contain ＃
+nostrmo ja warning [Block]: 制限＃セイゲン＃ | ＃セイゲン＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Blocks]: 制限＃セイゲン＃ | ＃セイゲン＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Custom]: カスタム＃カスタム＃ | ＃カスタム＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Data]: データ＃データ＃ | ＃データ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Delete]: 削除＃サクジョ＃ | ＃サクジョ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Login]: ログイン＃ログイン＃ | ＃ログイン＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Members]: メンバー＃メンバー＃ | ＃メンバー＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Method]: 方法＃ホウホウ＃ | ＃ホウホウ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Note]: 動的＃ドウテキ＃ | ＃ドウテキ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Notes]: 動的＃ドウテキ＃ | ＃ドウテキ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Posts]: 動的＃ドウテキ＃ | ＃ドウテキ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Private]: プライベート＃プライベート＃ | ＃プライベート＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Quote]: 参照＃サンショウ＃ | ＃サンショウ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Setting]: 設定＃セッテイ＃ | ＃セッテイ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Soft]: 適用＃テキヨウ＃ | ＃テキヨウ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Topic]: トピック＃トピック＃ | ＃トピック＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Topics]: トピック＃トピック＃ | ＃トピック＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja warning [Url]: リンク＃リンク＃ | ＃リンク＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign
+nostrmo ja other issues: {'warning missing-key': 14}
+P3 laravel-eval akaunting validation.php: 84 issues, 0 reading-leak, 0 ＃ in the file; sha256 a9a030d868b8593c
+P3 laravel-eval unit3d email.php: 4 issues, 0 reading-leak, 0 ＃ in the file; sha256 556fdff33c36efd9
+P3 laravel-eval unit3d page.php: 7 issues, 0 reading-leak, 0 ＃ in the file; sha256 93fcc5be24d7388d
+P3 laravel-eval unit3d common.php: 58 issues, 0 reading-leak, 0 ＃ in the file; sha256 e5064d9d1a93e53e
+P3 laravel-eval unit3d user.php: 113 issues, 0 reading-leak, 0 ＃ in the file; sha256 e8f0e9f3f5faf8d0
+P3 laravel-eval unit3d torrent.php: 48 issues, 0 reading-leak, 0 ＃ in the file; sha256 7ebe7e0a16ca3d68
+P3 laravel-eval snipe-it validation.php: 9 issues, 0 reading-leak, 0 ＃ in the file; sha256 77d4d5882ba845af
+P3 resx-eval onlyoffice AuditReportResource.ja.resx: 284 issues, 0 reading-leak, 0 ＃ in the file; sha256 032dc5f408408f6c
+P3 yaml-eval sonata SonataAdminBundle.ja.xliff: 15 issues, 0 reading-leak, 0 ＃ in the file; sha256 babe6fb2dba3c668
+P3 yaml-eval akeneo validators.ja_JP.yml: 0 issues, 0 reading-leak, 0 ＃ in the file; sha256 683e817b6408d7fc
+P3 yaml-eval opendxp admin.ja.yaml: 1 issues, 0 reading-leak, 0 ＃ in the file; sha256 e3aad95153a8e037
+P3 yaml-eval govuk ja.yml: 125 issues, 0 reading-leak, 0 ＃ in the file; sha256 e3db9370e5fb40e3
+P3 yaml-eval osm ja.yml: 259 issues, 0 reading-leak, 0 ＃ in the file; sha256 4f219d3aba7b5688
+P4 'load' -> 'ロード＃ロード＃': expected True, flagged True
+P4 'Delete' -> '削除＃サクジョ＃': expected True, flagged True
+P4 'Rule 1' -> 'ルール＃1': expected False, flagged False
+P4 'Tag' -> '＃タグ': expected False, flagged False
+P4 '{count, plural, other {{count} items}}' -> '{count, plural, other {＃件}}': expected False, flagged False
+P4 'Delete' -> '＃サクジョ＃': expected False, flagged False
+P4 'Delete #tag' -> '削除＃サクジョ＃': expected False, flagged False
+P1 HELD: nostrmo ja: reading-leak on exactly the 18 named keys (18 flagged; missing none; extra none)
+P2 HELD: nostrmo Search (検索けんさく) not flagged (Search = '検索けんさく', flagged False)
+P3 HELD: 0 reading-leak warnings on the Japanese files of laravel-eval, resx-eval and yaml-eval (13 files checked, 0 not checked, 0 reading-leak)
+P4 HELD: the seven unit cases (7 of 7 as expected)

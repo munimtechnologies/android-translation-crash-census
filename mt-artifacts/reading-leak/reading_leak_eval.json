@@ -1,0 +1,358 @@
+{
+ "guard": "0.11.0",
+ "nostrmo": {
+  "en_sha256_16": "e353bd696f07e09d",
+  "ja_sha256_16": "d79dd0bcd44163f8",
+  "values_with_fullwidth_number_sign": [
+   "Block",
+   "Blocks",
+   "Custom",
+   "Data",
+   "Delete",
+   "Login",
+   "Members",
+   "Method",
+   "Note",
+   "Notes",
+   "Posts",
+   "Private",
+   "Quote",
+   "Setting",
+   "Soft",
+   "Topic",
+   "Topics",
+   "Url"
+  ],
+  "reading_leak": [
+   {
+    "key": "Block",
+    "value": "制限＃セイゲン＃",
+    "source": "Block",
+    "message": "＃セイゲン＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Blocks",
+    "value": "制限＃セイゲン＃",
+    "source": "Blocks",
+    "message": "＃セイゲン＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Custom",
+    "value": "カスタム＃カスタム＃",
+    "source": "Custom",
+    "message": "＃カスタム＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Data",
+    "value": "データ＃データ＃",
+    "source": "Data",
+    "message": "＃データ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Delete",
+    "value": "削除＃サクジョ＃",
+    "source": "Delete",
+    "message": "＃サクジョ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Login",
+    "value": "ログイン＃ログイン＃",
+    "source": "Login",
+    "message": "＃ログイン＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Members",
+    "value": "メンバー＃メンバー＃",
+    "source": "Members",
+    "message": "＃メンバー＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Method",
+    "value": "方法＃ホウホウ＃",
+    "source": "Method",
+    "message": "＃ホウホウ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Note",
+    "value": "動的＃ドウテキ＃",
+    "source": "Note",
+    "message": "＃ドウテキ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Notes",
+    "value": "動的＃ドウテキ＃",
+    "source": "Notes",
+    "message": "＃ドウテキ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Posts",
+    "value": "動的＃ドウテキ＃",
+    "source": "Posts",
+    "message": "＃ドウテキ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Private",
+    "value": "プライベート＃プライベート＃",
+    "source": "Private",
+    "message": "＃プライベート＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Quote",
+    "value": "参照＃サンショウ＃",
+    "source": "Quote",
+    "message": "＃サンショウ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Setting",
+    "value": "設定＃セッテイ＃",
+    "source": "Setting",
+    "message": "＃セッテイ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Soft",
+    "value": "適用＃テキヨウ＃",
+    "source": "Soft",
+    "message": "＃テキヨウ＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Topic",
+    "value": "トピック＃トピック＃",
+    "source": "Topic",
+    "message": "＃トピック＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Topics",
+    "value": "トピック＃トピック＃",
+    "source": "Topics",
+    "message": "＃トピック＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   },
+   {
+    "key": "Url",
+    "value": "リンク＃リンク＃",
+    "source": "Url",
+    "message": "＃リンク＃: a katakana reading between fullwidth number signs, which users see as text; the source has no number sign"
+   }
+  ],
+  "other_issues": {
+   "warning missing-key": 14
+  },
+  "search_value": "検索けんさく"
+ },
+ "p3_files": [
+  {
+   "study": "laravel-eval",
+   "project": "akaunting",
+   "file": "validation.php",
+   "url": "https://raw.githubusercontent.com/akaunting/akaunting/06dfa473e0d71a5262a58f6f0759c6badf34d5d2/resources/lang/ja-JP/validation.php",
+   "checked": true,
+   "issues": 84,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "a9a030d868b8593c"
+  },
+  {
+   "study": "laravel-eval",
+   "project": "unit3d",
+   "file": "email.php",
+   "url": "https://raw.githubusercontent.com/HDInnovations/UNIT3D/8b88f4c8182eb3d3912ffef425c3224dcfd596f4/lang/ja/email.php",
+   "checked": true,
+   "issues": 4,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "556fdff33c36efd9"
+  },
+  {
+   "study": "laravel-eval",
+   "project": "unit3d",
+   "file": "page.php",
+   "url": "https://raw.githubusercontent.com/HDInnovations/UNIT3D/8b88f4c8182eb3d3912ffef425c3224dcfd596f4/lang/ja/page.php",
+   "checked": true,
+   "issues": 7,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "93fcc5be24d7388d"
+  },
+  {
+   "study": "laravel-eval",
+   "project": "unit3d",
+   "file": "common.php",
+   "url": "https://raw.githubusercontent.com/HDInnovations/UNIT3D/8b88f4c8182eb3d3912ffef425c3224dcfd596f4/lang/ja/common.php",
+   "checked": true,
+   "issues": 58,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "e5064d9d1a93e53e"
+  },
+  {
+   "study": "laravel-eval",
+   "project": "unit3d",
+   "file": "user.php",
+   "url": "https://raw.githubusercontent.com/HDInnovations/UNIT3D/8b88f4c8182eb3d3912ffef425c3224dcfd596f4/lang/ja/user.php",
+   "checked": true,
+   "issues": 113,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "e8f0e9f3f5faf8d0"
+  },
+  {
+   "study": "laravel-eval",
+   "project": "unit3d",
+   "file": "torrent.php",
+   "url": "https://raw.githubusercontent.com/HDInnovations/UNIT3D/8b88f4c8182eb3d3912ffef425c3224dcfd596f4/lang/ja/torrent.php",
+   "checked": true,
+   "issues": 48,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "7ebe7e0a16ca3d68"
+  },
+  {
+   "study": "laravel-eval",
+   "project": "snipe-it",
+   "file": "validation.php",
+   "url": "https://raw.githubusercontent.com/grokability/snipe-it/d98baec311438e0818988c130eefa8e813a34c22/resources/lang/ja-JP/validation.php",
+   "checked": true,
+   "issues": 9,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "77d4d5882ba845af"
+  },
+  {
+   "study": "resx-eval",
+   "project": "onlyoffice",
+   "file": "AuditReportResource.ja.resx",
+   "url": "https://raw.githubusercontent.com/ONLYOFFICE/CommunityServer/fe1fa7babd093969e939ba6ff45a9fee1299dc93/module/ASC.AuditTrail/AuditReportResource.ja.resx",
+   "checked": true,
+   "issues": 284,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "032dc5f408408f6c"
+  },
+  {
+   "study": "yaml-eval",
+   "project": "sonata",
+   "file": "SonataAdminBundle.ja.xliff",
+   "url": "https://raw.githubusercontent.com/sonata-project/SonataAdminBundle/0b36030299107e2069ee249a68ecd8830b37bf93/src/Resources/translations/SonataAdminBundle.ja.xliff",
+   "checked": true,
+   "issues": 15,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "babe6fb2dba3c668"
+  },
+  {
+   "study": "yaml-eval",
+   "project": "akeneo",
+   "file": "validators.ja_JP.yml",
+   "url": "https://raw.githubusercontent.com/akeneo/pim-community-dev/cfc810e6449651b7d3be4c7db3dd09c71011012c/src/Akeneo/Pim/Enrichment/Bundle/Resources/translations/validators.ja_JP.yml",
+   "checked": true,
+   "issues": 0,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "683e817b6408d7fc"
+  },
+  {
+   "study": "yaml-eval",
+   "project": "opendxp",
+   "file": "admin.ja.yaml",
+   "url": "https://raw.githubusercontent.com/open-dxp/opendxp/66f8e913af07e69e161d8ca13475537b2bf441fc/bundles/CoreBundle/translations/admin.ja.yaml",
+   "checked": true,
+   "issues": 1,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "e3aad95153a8e037"
+  },
+  {
+   "study": "yaml-eval",
+   "project": "govuk",
+   "file": "ja.yml",
+   "url": "https://raw.githubusercontent.com/alphagov/govuk_publishing_components/05d2fbe80380190b285adba9346e071b0d3a7b57/config/locales/ja.yml",
+   "checked": true,
+   "issues": 125,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "e3db9370e5fb40e3"
+  },
+  {
+   "study": "yaml-eval",
+   "project": "osm",
+   "file": "ja.yml",
+   "url": "https://raw.githubusercontent.com/openstreetmap/openstreetmap-website/855cda765f5683628bed8a83cdf963958dadc7b7/config/locales/ja.yml",
+   "checked": true,
+   "issues": 259,
+   "reading_leak": 0,
+   "fullwidth_number_signs": 0,
+   "sha256_16": "4f219d3aba7b5688"
+  }
+ ],
+ "p3_reading_leak": [],
+ "p3_unchecked": [],
+ "p4_cases": [
+  {
+   "source": "load",
+   "target": "ロード＃ロード＃",
+   "expected": true,
+   "flagged": true
+  },
+  {
+   "source": "Delete",
+   "target": "削除＃サクジョ＃",
+   "expected": true,
+   "flagged": true
+  },
+  {
+   "source": "Rule 1",
+   "target": "ルール＃1",
+   "expected": false,
+   "flagged": false
+  },
+  {
+   "source": "Tag",
+   "target": "＃タグ",
+   "expected": false,
+   "flagged": false
+  },
+  {
+   "source": "{count, plural, other {{count} items}}",
+   "target": "{count, plural, other {＃件}}",
+   "expected": false,
+   "flagged": false
+  },
+  {
+   "source": "Delete",
+   "target": "＃サクジョ＃",
+   "expected": false,
+   "flagged": false
+  },
+  {
+   "source": "Delete #tag",
+   "target": "削除＃サクジョ＃",
+   "expected": false,
+   "flagged": false
+  }
+ ],
+ "predictions": [
+  {
+   "id": "P1",
+   "text": "nostrmo ja: reading-leak on exactly the 18 named keys",
+   "held": true,
+   "value": "18 flagged; missing none; extra none"
+  },
+  {
+   "id": "P2",
+   "text": "nostrmo Search (検索けんさく) not flagged",
+   "held": true,
+   "value": "Search = '検索けんさく', flagged False"
+  },
+  {
+   "id": "P3",
+   "text": "0 reading-leak warnings on the Japanese files of laravel-eval, resx-eval and yaml-eval",
+   "held": true,
+   "value": "13 files checked, 0 not checked, 0 reading-leak"
+  },
+  {
+   "id": "P4",
+   "text": "the seven unit cases",
+   "held": true,
+   "value": "7 of 7 as expected"
+  }
+ ]
+}
