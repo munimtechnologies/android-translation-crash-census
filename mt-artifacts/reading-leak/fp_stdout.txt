@@ -1,0 +1,66 @@
+===== run-01-python: python -B -m unittest -v test_eval_fp
+
+===== run-02-python: python -B eval_fp.py --pop population.csv --out-dir /out/fp
+l10n-guard 0.11.0, sha256 fc917bb2487d09c7, rule (?<=[^\s＃])＃[ァ-ヺー]+＃
+L1 haorendashu/nostrmo lib/l10n/intl_ja.arb: 360 lines, 18 with ＃, 18 matched (expected 18), 18 with ＃ then katakana; sha256 d79dd0bcd44163f8
+  match line 30: "Block": "制限＃セイゲン＃",
+  match line 31: "Blocks": "制限＃セイゲン＃",
+  match line 64: "Custom": "カスタム＃カスタム＃",
+  match line 70: "Data": "データ＃データ＃",
+  match line 78: "Delete": "削除＃サクジョ＃",
+  match line 164: "Login": "ログイン＃ログイン＃",
+  match line 173: "Members": "メンバー＃メンバー＃",
+  match line 178: "Method": "方法＃ホウホウ＃",
+  match line 197: "Note": "動的＃ドウテキ＃",
+  match line 204: "Notes": "動的＃ドウテキ＃",
+  match line 239: "Posts": "動的＃ドウテキ＃",
+  match line 242: "Private": "プライベート＃プライベート＃",
+  match line 248: "Quote": "参照＃サンショウ＃",
+  match line 277: "Setting": "設定＃セッテイ＃",
+  match line 285: "Soft": "適用＃テキヨウ＃",
+  match line 307: "Topic": "トピック＃トピック＃",
+  match line 308: "Topics": "トピック＃トピック＃",
+  match line 316: "Url": "リンク＃リンク＃",
+L2 GrowthEase/NetEase_Meeting meeting-flutter/meeting_kit/lib/l10n/strings_ja.arb: 802 lines, 1 with ＃, 1 matched (expected 1), 1 with ＃ then katakana; sha256 2b9f2695ce98e85e
+  match line 614: "load": "ロード＃ロード＃",
+L3 GrowthEase/NetEase_Meeting meeting-electron/packages/meeting-kit-core/src/locales/ja.ts: 1488 lines, 2 with ＃, 2 matched (expected 2), 2 with ＃ then katakana; sha256 746f20a6c7aec8ff
+  match line 981: load: 'ロード＃ロード＃',
+  match line 1451: meetingPin: 'ロック＃ロック＃',
+L4 nocobase/nocobase packages/core/client/src/locale/ja-JP.json: 1566 lines, 3 with ＃, 3 matched (expected 3), 3 with ＃ then katakana; sha256 1fe3d9d22890ee39
+  match line 276: "Condition": "条件＃ジョウケン＃",
+  match line 1058: "Properties": "属性＃ゾクセイ＃",
+  match line 1254: "Sort": "ソート＃ソート＃",
+L5 utkabobr/DuckPro-Kobra3 files/app/Translate/LanguageJapanese.ts: 2049 lines, 1 with ＃, 1 matched (expected 1), 1 with ＃ then katakana; sha256 e19bcfb359f376e0
+  match line 1876: <translation>ロード＃ロード＃</translation>
+O01 wwj718/blockly_dev msg/json/ja.json: 365 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 a77049fd8e7a2696
+O02 wwj718/blockly_dev msg/js/ja.js: 425 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 23d0a5eeb9914503
+O03 EinsteinsWorkshop/BlocksCAD blockly/msg/json/ja.json: 328 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 f68acf9ea1a213dd
+O04 EinsteinsWorkshop/BlocksCAD blockly/msg/js/ja.js: 388 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 aebc39a22f8e6df6
+O05 dtube/production DTube_files/lang/ja/ja-JP.json: 354 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 8624b92951e146d6
+O06 PalisadoesFoundation/talawa lang/ja.json: 334 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 8b117e34b0d34955
+O07 VubbiScript/VubbiScript src/web/blockly/msg/json/ja.json: 331 lines, 14 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 21913854da2847eb
+O08 VubbiScript/VubbiScript src/web/blockly/msg/js/ja.js: 747 lines, 14 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 d0f5073743dd1297
+O09 phpk/godoos packages/photoshop/src/js/languages/ja.json: 513 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 2050f5b69dfc2d64
+O10 kwanghoon/MySmallBasic MySmallBasic/blockly/msg/json/ja.json: 355 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 a680d75b9d9f5d9a
+O11 kwanghoon/MySmallBasic MySmallBasic/blockly/msg/js/ja.js: 425 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 32add28fb2eb9bcc
+O12 badvision/lawless-legends OutlawEditor/src/main/resources/mythos/msg/json/ja.json: 354 lines, 14 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 8195dee030db47f2
+O13 badvision/lawless-legends OutlawEditor/src/main/resources/mythos/msg/js/ja.js: 378 lines, 14 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 1342f3c01562efc7
+O14 mijorus/smile data/assets/emoji_locales/ja.json: 17170 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 1b11c8f974139678
+O15 0Tick/a1111-mini-paint miniPaint/src/js/languages/ja.json: 511 lines, 4 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 49a3d60756ceb087
+O16 tu2-atmanand/Task-Board src/utils/lang/locale/ja.json: 203 lines, 2 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 6929295cddacf036
+O17 odoo/odoo addons/purchase/i18n/ja.po: 4294 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 875b0b6241e96374
+O18 odoo/odoo addons/website_crm/i18n/ja.po: 210 lines, 1 with ＃, 0 matched (expected 0), 1 with ＃ then katakana; sha256 1499efa1804f3cc8
+O19 odoo/odoo addons/website_forum/i18n/ja.po: 4450 lines, 4 with ＃, 0 matched (expected 0), 1 with ＃ then katakana; sha256 bb9f36c1afd1b35c
+O20 odoo/odoo addons/website_event_track/i18n/ja.po: 4227 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 fecc133eaf2dd015
+O21 dbeaver/dbeaver plugins/org.jkiss.dbeaver.ext.oracle/OSGI-INF/l10n/bundle_ja.properties: 603 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 88c6a6f8b10e30d8
+O22 dbeaver/dbeaver plugins/org.jkiss.dbeaver.model/OSGI-INF/l10n/bundle_ja.properties: 75 lines, 2 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 3f475ad6a78fb7be
+O23 dbeaver/dbeaver plugins/org.jkiss.dbeaver.model.jdbc/OSGI-INF/l10n/bundle_ja.properties: 32 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 3152f4f386b0aecc
+O24 phoenixctms/ctsms core/src/main/resources/ctsms-criterionproperties_ja.properties: 321 lines, 3 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 1dcbc3b9e90294c9
+O25 phoenixctms/ctsms web/src/main/resources/org/phoenixctms/ctsms/web/trial/labels_ja.properties: 1406 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 49be0691592ec987
+O26 phoenixctms/ctsms web/src/main/resources/org/phoenixctms/ctsms/web/course/labels_ja.properties: 303 lines, 3 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 08ba3278bf1ac72b
+O27 phoenixctms/ctsms web/src/main/resources/org/phoenixctms/ctsms/web/inputfield/labels_ja.properties: 257 lines, 1 with ＃, 0 matched (expected 0), 0 with ＃ then katakana; sha256 3d6b4eb8eae68114
+O28 mit-cml/appinventor-extensions appinventor/appengine/src/com/google/appinventor/client/OdeMessages_ja.properties: 4571 lines, 1 with ＃, 0 matched (expected 0), 1 with ＃ then katakana; sha256 4bf6041582c81a11
+F0 HELD: all 33 files fetch at their pinned commits (33 fetched; missing none)
+F1 HELD: the rule matches exactly the expected lines in the 5 known files and none in the 28 others (known files 25 lines (expected 25), other files 0 lines; differences none)
+F2 HELD: the 28 other files hold at least 80 lines with ＃ (113 lines with ＃ in the other files)
+F3 is graded by hand from lines.csv

@@ -1,0 +1,954 @@
+{
+ "guard": "0.11.0",
+ "guard_sha256_16": "fc917bb2487d09c7",
+ "rule": "(?<=[^\\s＃])＃[ァ-ヺー]+＃",
+ "files": [
+  {
+   "id": "L1",
+   "group": "leak",
+   "repo": "haorendashu/nostrmo",
+   "commit": "94b8c643cc8e7f48b5d13f245695fe5fe99a306e",
+   "path": "lib/l10n/intl_ja.arb",
+   "url": "https://raw.githubusercontent.com/haorendashu/nostrmo/94b8c643cc8e7f48b5d13f245695fe5fe99a306e/lib/l10n/intl_ja.arb",
+   "expected_rule_lines": 18,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "d79dd0bcd44163f8",
+   "bytes": 18591,
+   "lines": 360,
+   "sign_lines": 18,
+   "rule_lines": [
+    {
+     "line": 30,
+     "matches": [
+      "＃セイゲン＃"
+     ],
+     "text": "\"Block\": \"制限＃セイゲン＃\","
+    },
+    {
+     "line": 31,
+     "matches": [
+      "＃セイゲン＃"
+     ],
+     "text": "\"Blocks\": \"制限＃セイゲン＃\","
+    },
+    {
+     "line": 64,
+     "matches": [
+      "＃カスタム＃"
+     ],
+     "text": "\"Custom\": \"カスタム＃カスタム＃\","
+    },
+    {
+     "line": 70,
+     "matches": [
+      "＃データ＃"
+     ],
+     "text": "\"Data\": \"データ＃データ＃\","
+    },
+    {
+     "line": 78,
+     "matches": [
+      "＃サクジョ＃"
+     ],
+     "text": "\"Delete\": \"削除＃サクジョ＃\","
+    },
+    {
+     "line": 164,
+     "matches": [
+      "＃ログイン＃"
+     ],
+     "text": "\"Login\": \"ログイン＃ログイン＃\","
+    },
+    {
+     "line": 173,
+     "matches": [
+      "＃メンバー＃"
+     ],
+     "text": "\"Members\": \"メンバー＃メンバー＃\","
+    },
+    {
+     "line": 178,
+     "matches": [
+      "＃ホウホウ＃"
+     ],
+     "text": "\"Method\": \"方法＃ホウホウ＃\","
+    },
+    {
+     "line": 197,
+     "matches": [
+      "＃ドウテキ＃"
+     ],
+     "text": "\"Note\": \"動的＃ドウテキ＃\","
+    },
+    {
+     "line": 204,
+     "matches": [
+      "＃ドウテキ＃"
+     ],
+     "text": "\"Notes\": \"動的＃ドウテキ＃\","
+    },
+    {
+     "line": 239,
+     "matches": [
+      "＃ドウテキ＃"
+     ],
+     "text": "\"Posts\": \"動的＃ドウテキ＃\","
+    },
+    {
+     "line": 242,
+     "matches": [
+      "＃プライベート＃"
+     ],
+     "text": "\"Private\": \"プライベート＃プライベート＃\","
+    },
+    {
+     "line": 248,
+     "matches": [
+      "＃サンショウ＃"
+     ],
+     "text": "\"Quote\": \"参照＃サンショウ＃\","
+    },
+    {
+     "line": 277,
+     "matches": [
+      "＃セッテイ＃"
+     ],
+     "text": "\"Setting\": \"設定＃セッテイ＃\","
+    },
+    {
+     "line": 285,
+     "matches": [
+      "＃テキヨウ＃"
+     ],
+     "text": "\"Soft\": \"適用＃テキヨウ＃\","
+    },
+    {
+     "line": 307,
+     "matches": [
+      "＃トピック＃"
+     ],
+     "text": "\"Topic\": \"トピック＃トピック＃\","
+    },
+    {
+     "line": 308,
+     "matches": [
+      "＃トピック＃"
+     ],
+     "text": "\"Topics\": \"トピック＃トピック＃\","
+    },
+    {
+     "line": 316,
+     "matches": [
+      "＃リンク＃"
+     ],
+     "text": "\"Url\": \"リンク＃リンク＃\","
+    }
+   ],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 30,
+     "text": "\"Block\": \"制限＃セイゲン＃\","
+    },
+    {
+     "line": 31,
+     "text": "\"Blocks\": \"制限＃セイゲン＃\","
+    },
+    {
+     "line": 64,
+     "text": "\"Custom\": \"カスタム＃カスタム＃\","
+    },
+    {
+     "line": 70,
+     "text": "\"Data\": \"データ＃データ＃\","
+    },
+    {
+     "line": 78,
+     "text": "\"Delete\": \"削除＃サクジョ＃\","
+    },
+    {
+     "line": 164,
+     "text": "\"Login\": \"ログイン＃ログイン＃\","
+    },
+    {
+     "line": 173,
+     "text": "\"Members\": \"メンバー＃メンバー＃\","
+    },
+    {
+     "line": 178,
+     "text": "\"Method\": \"方法＃ホウホウ＃\","
+    },
+    {
+     "line": 197,
+     "text": "\"Note\": \"動的＃ドウテキ＃\","
+    },
+    {
+     "line": 204,
+     "text": "\"Notes\": \"動的＃ドウテキ＃\","
+    },
+    {
+     "line": 239,
+     "text": "\"Posts\": \"動的＃ドウテキ＃\","
+    },
+    {
+     "line": 242,
+     "text": "\"Private\": \"プライベート＃プライベート＃\","
+    },
+    {
+     "line": 248,
+     "text": "\"Quote\": \"参照＃サンショウ＃\","
+    },
+    {
+     "line": 277,
+     "text": "\"Setting\": \"設定＃セッテイ＃\","
+    },
+    {
+     "line": 285,
+     "text": "\"Soft\": \"適用＃テキヨウ＃\","
+    },
+    {
+     "line": 307,
+     "text": "\"Topic\": \"トピック＃トピック＃\","
+    },
+    {
+     "line": 308,
+     "text": "\"Topics\": \"トピック＃トピック＃\","
+    },
+    {
+     "line": 316,
+     "text": "\"Url\": \"リンク＃リンク＃\","
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "L2",
+   "group": "leak",
+   "repo": "GrowthEase/NetEase_Meeting",
+   "commit": "a759b3296412e0be012da2ca16b1d23536f36e17",
+   "path": "meeting-flutter/meeting_kit/lib/l10n/strings_ja.arb",
+   "url": "https://raw.githubusercontent.com/GrowthEase/NetEase_Meeting/a759b3296412e0be012da2ca16b1d23536f36e17/meeting-flutter/meeting_kit/lib/l10n/strings_ja.arb",
+   "expected_rule_lines": 1,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "2b9f2695ce98e85e",
+   "bytes": 55346,
+   "lines": 802,
+   "sign_lines": 1,
+   "rule_lines": [
+    {
+     "line": 614,
+     "matches": [
+      "＃ロード＃"
+     ],
+     "text": "\"load\": \"ロード＃ロード＃\","
+    }
+   ],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 614,
+     "text": "\"load\": \"ロード＃ロード＃\","
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "L3",
+   "group": "leak",
+   "repo": "GrowthEase/NetEase_Meeting",
+   "commit": "a759b3296412e0be012da2ca16b1d23536f36e17",
+   "path": "meeting-electron/packages/meeting-kit-core/src/locales/ja.ts",
+   "url": "https://raw.githubusercontent.com/GrowthEase/NetEase_Meeting/a759b3296412e0be012da2ca16b1d23536f36e17/meeting-electron/packages/meeting-kit-core/src/locales/ja.ts",
+   "expected_rule_lines": 2,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "746f20a6c7aec8ff",
+   "bytes": 83299,
+   "lines": 1488,
+   "sign_lines": 2,
+   "rule_lines": [
+    {
+     "line": 981,
+     "matches": [
+      "＃ロード＃"
+     ],
+     "text": "load: 'ロード＃ロード＃',"
+    },
+    {
+     "line": 1451,
+     "matches": [
+      "＃ロック＃"
+     ],
+     "text": "meetingPin: 'ロック＃ロック＃',"
+    }
+   ],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 981,
+     "text": "load: 'ロード＃ロード＃',"
+    },
+    {
+     "line": 1451,
+     "text": "meetingPin: 'ロック＃ロック＃',"
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "L4",
+   "group": "leak",
+   "repo": "nocobase/nocobase",
+   "commit": "10810697c31f85d6f2ad7eaa0a0e1990970ea93b",
+   "path": "packages/core/client/src/locale/ja-JP.json",
+   "url": "https://raw.githubusercontent.com/nocobase/nocobase/10810697c31f85d6f2ad7eaa0a0e1990970ea93b/packages/core/client/src/locale/ja-JP.json",
+   "expected_rule_lines": 3,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "1fe3d9d22890ee39",
+   "bytes": 92757,
+   "lines": 1566,
+   "sign_lines": 3,
+   "rule_lines": [
+    {
+     "line": 276,
+     "matches": [
+      "＃ジョウケン＃"
+     ],
+     "text": "\"Condition\": \"条件＃ジョウケン＃\","
+    },
+    {
+     "line": 1058,
+     "matches": [
+      "＃ゾクセイ＃"
+     ],
+     "text": "\"Properties\": \"属性＃ゾクセイ＃\","
+    },
+    {
+     "line": 1254,
+     "matches": [
+      "＃ソート＃"
+     ],
+     "text": "\"Sort\": \"ソート＃ソート＃\","
+    }
+   ],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 276,
+     "text": "\"Condition\": \"条件＃ジョウケン＃\","
+    },
+    {
+     "line": 1058,
+     "text": "\"Properties\": \"属性＃ゾクセイ＃\","
+    },
+    {
+     "line": 1254,
+     "text": "\"Sort\": \"ソート＃ソート＃\","
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "L5",
+   "group": "leak",
+   "repo": "utkabobr/DuckPro-Kobra3",
+   "commit": "6b5487a5d9452c95bd7686032d65b61ac9793e6d",
+   "path": "files/app/Translate/LanguageJapanese.ts",
+   "url": "https://raw.githubusercontent.com/utkabobr/DuckPro-Kobra3/6b5487a5d9452c95bd7686032d65b61ac9793e6d/files/app/Translate/LanguageJapanese.ts",
+   "expected_rule_lines": 1,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "e19bcfb359f376e0",
+   "bytes": 114459,
+   "lines": 2049,
+   "sign_lines": 1,
+   "rule_lines": [
+    {
+     "line": 1876,
+     "matches": [
+      "＃ロード＃"
+     ],
+     "text": "<translation>ロード＃ロード＃</translation>"
+    }
+   ],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 1876,
+     "text": "<translation>ロード＃ロード＃</translation>"
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O01",
+   "group": "other",
+   "repo": "wwj718/blockly_dev",
+   "commit": "f25d2d97deb6a32d4f9484e068469e6634660963",
+   "path": "msg/json/ja.json",
+   "url": "https://raw.githubusercontent.com/wwj718/blockly_dev/f25d2d97deb6a32d4f9484e068469e6634660963/msg/json/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "a77049fd8e7a2696",
+   "bytes": 25068,
+   "lines": 365,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O02",
+   "group": "other",
+   "repo": "wwj718/blockly_dev",
+   "commit": "f25d2d97deb6a32d4f9484e068469e6634660963",
+   "path": "msg/js/ja.js",
+   "url": "https://raw.githubusercontent.com/wwj718/blockly_dev/f25d2d97deb6a32d4f9484e068469e6634660963/msg/js/ja.js",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "23d0a5eeb9914503",
+   "bytes": 40895,
+   "lines": 425,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O03",
+   "group": "other",
+   "repo": "EinsteinsWorkshop/BlocksCAD",
+   "commit": "2787505a727c14d0cefdb851594a3841203a6f30",
+   "path": "blockly/msg/json/ja.json",
+   "url": "https://raw.githubusercontent.com/EinsteinsWorkshop/BlocksCAD/2787505a727c14d0cefdb851594a3841203a6f30/blockly/msg/json/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "f68acf9ea1a213dd",
+   "bytes": 23065,
+   "lines": 328,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O04",
+   "group": "other",
+   "repo": "EinsteinsWorkshop/BlocksCAD",
+   "commit": "2787505a727c14d0cefdb851594a3841203a6f30",
+   "path": "blockly/msg/js/ja.js",
+   "url": "https://raw.githubusercontent.com/EinsteinsWorkshop/BlocksCAD/2787505a727c14d0cefdb851594a3841203a6f30/blockly/msg/js/ja.js",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "aebc39a22f8e6df6",
+   "bytes": 32531,
+   "lines": 388,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O05",
+   "group": "other",
+   "repo": "dtube/production",
+   "commit": "9acd27c8a169a84210f3f06b37b9a86ef1eadf31",
+   "path": "DTube_files/lang/ja/ja-JP.json",
+   "url": "https://raw.githubusercontent.com/dtube/production/9acd27c8a169a84210f3f06b37b9a86ef1eadf31/DTube_files/lang/ja/ja-JP.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "8624b92951e146d6",
+   "bytes": 21632,
+   "lines": 354,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O06",
+   "group": "other",
+   "repo": "PalisadoesFoundation/talawa",
+   "commit": "b244868488bdf661149c6e1335b712eb9b824a00",
+   "path": "lang/ja.json",
+   "url": "https://raw.githubusercontent.com/PalisadoesFoundation/talawa/b244868488bdf661149c6e1335b712eb9b824a00/lang/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "8b117e34b0d34955",
+   "bytes": 20774,
+   "lines": 334,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O07",
+   "group": "other",
+   "repo": "VubbiScript/VubbiScript",
+   "commit": "ef9b3e049bf3d21d08312145099f952438d40d73",
+   "path": "src/web/blockly/msg/json/ja.json",
+   "url": "https://raw.githubusercontent.com/VubbiScript/VubbiScript/ef9b3e049bf3d21d08312145099f952438d40d73/src/web/blockly/msg/json/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "21913854da2847eb",
+   "bytes": 23889,
+   "lines": 331,
+   "sign_lines": 14,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O08",
+   "group": "other",
+   "repo": "VubbiScript/VubbiScript",
+   "commit": "ef9b3e049bf3d21d08312145099f952438d40d73",
+   "path": "src/web/blockly/msg/js/ja.js",
+   "url": "https://raw.githubusercontent.com/VubbiScript/VubbiScript/ef9b3e049bf3d21d08312145099f952438d40d73/src/web/blockly/msg/js/ja.js",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "d0f5073743dd1297",
+   "bytes": 60502,
+   "lines": 747,
+   "sign_lines": 14,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O09",
+   "group": "other",
+   "repo": "phpk/godoos",
+   "commit": "3d0b4b7ca1d2a7c1eba4317f79c3065de0e3973d",
+   "path": "packages/photoshop/src/js/languages/ja.json",
+   "url": "https://raw.githubusercontent.com/phpk/godoos/3d0b4b7ca1d2a7c1eba4317f79c3065de0e3973d/packages/photoshop/src/js/languages/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "2050f5b69dfc2d64",
+   "bytes": 24373,
+   "lines": 513,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O10",
+   "group": "other",
+   "repo": "kwanghoon/MySmallBasic",
+   "commit": "430ba14442ce501388705f364923590a60de1bac",
+   "path": "MySmallBasic/blockly/msg/json/ja.json",
+   "url": "https://raw.githubusercontent.com/kwanghoon/MySmallBasic/430ba14442ce501388705f364923590a60de1bac/MySmallBasic/blockly/msg/json/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "a680d75b9d9f5d9a",
+   "bytes": 24621,
+   "lines": 355,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O11",
+   "group": "other",
+   "repo": "kwanghoon/MySmallBasic",
+   "commit": "430ba14442ce501388705f364923590a60de1bac",
+   "path": "MySmallBasic/blockly/msg/js/ja.js",
+   "url": "https://raw.githubusercontent.com/kwanghoon/MySmallBasic/430ba14442ce501388705f364923590a60de1bac/MySmallBasic/blockly/msg/js/ja.js",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "32add28fb2eb9bcc",
+   "bytes": 34728,
+   "lines": 425,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O12",
+   "group": "other",
+   "repo": "badvision/lawless-legends",
+   "commit": "b76af75a61d8bf20ddcf18099be41cc336d0cc17",
+   "path": "OutlawEditor/src/main/resources/mythos/msg/json/ja.json",
+   "url": "https://raw.githubusercontent.com/badvision/lawless-legends/b76af75a61d8bf20ddcf18099be41cc336d0cc17/OutlawEditor/src/main/resources/mythos/msg/json/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "8195dee030db47f2",
+   "bytes": 27223,
+   "lines": 354,
+   "sign_lines": 14,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O13",
+   "group": "other",
+   "repo": "badvision/lawless-legends",
+   "commit": "b76af75a61d8bf20ddcf18099be41cc336d0cc17",
+   "path": "OutlawEditor/src/main/resources/mythos/msg/js/ja.js",
+   "url": "https://raw.githubusercontent.com/badvision/lawless-legends/b76af75a61d8bf20ddcf18099be41cc336d0cc17/OutlawEditor/src/main/resources/mythos/msg/js/ja.js",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "1342f3c01562efc7",
+   "bytes": 31516,
+   "lines": 378,
+   "sign_lines": 14,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O14",
+   "group": "other",
+   "repo": "mijorus/smile",
+   "commit": "93fbe009b3f0b4bb0899aa9099ac555fdbca7b35",
+   "path": "data/assets/emoji_locales/ja.json",
+   "url": "https://raw.githubusercontent.com/mijorus/smile/93fbe009b3f0b4bb0899aa9099ac555fdbca7b35/data/assets/emoji_locales/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "1b11c8f974139678",
+   "bytes": 335628,
+   "lines": 17170,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O15",
+   "group": "other",
+   "repo": "0Tick/a1111-mini-paint",
+   "commit": "5c997d4ff4ab0e99ad6b7137b9b0507db5b61803",
+   "path": "miniPaint/src/js/languages/ja.json",
+   "url": "https://raw.githubusercontent.com/0Tick/a1111-mini-paint/5c997d4ff4ab0e99ad6b7137b9b0507db5b61803/miniPaint/src/js/languages/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "49a3d60756ceb087",
+   "bytes": 23454,
+   "lines": 511,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O16",
+   "group": "other",
+   "repo": "tu2-atmanand/Task-Board",
+   "commit": "56fde93f6b5fd04d791000999bb3e6f2638ce972",
+   "path": "src/utils/lang/locale/ja.json",
+   "url": "https://raw.githubusercontent.com/tu2-atmanand/Task-Board/56fde93f6b5fd04d791000999bb3e6f2638ce972/src/utils/lang/locale/ja.json",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "6929295cddacf036",
+   "bytes": 16724,
+   "lines": 203,
+   "sign_lines": 2,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O17",
+   "group": "other",
+   "repo": "odoo/odoo",
+   "commit": "afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d",
+   "path": "addons/purchase/i18n/ja.po",
+   "url": "https://raw.githubusercontent.com/odoo/odoo/afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d/addons/purchase/i18n/ja.po",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "875b0b6241e96374",
+   "bytes": 163051,
+   "lines": 4294,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O18",
+   "group": "other",
+   "repo": "odoo/odoo",
+   "commit": "afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d",
+   "path": "addons/website_crm/i18n/ja.po",
+   "url": "https://raw.githubusercontent.com/odoo/odoo/afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d/addons/website_crm/i18n/ja.po",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "1499efa1804f3cc8",
+   "bytes": 6829,
+   "lines": 210,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 42,
+     "text": "msgstr \"＃リード\""
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O19",
+   "group": "other",
+   "repo": "odoo/odoo",
+   "commit": "afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d",
+   "path": "addons/website_forum/i18n/ja.po",
+   "url": "https://raw.githubusercontent.com/odoo/odoo/afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d/addons/website_forum/i18n/ja.po",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "bb9f36c1afd1b35c",
+   "bytes": 165771,
+   "lines": 4450,
+   "sign_lines": 4,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 67,
+     "text": "msgstr \"＃ビュー\""
+    }
+   ],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O20",
+   "group": "other",
+   "repo": "odoo/odoo",
+   "commit": "afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d",
+   "path": "addons/website_event_track/i18n/ja.po",
+   "url": "https://raw.githubusercontent.com/odoo/odoo/afbcf79ddf9967cb49d6af3f60b1e76ebef30e7d/addons/website_event_track/i18n/ja.po",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "fecc133eaf2dd015",
+   "bytes": 187659,
+   "lines": 4227,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O21",
+   "group": "other",
+   "repo": "dbeaver/dbeaver",
+   "commit": "a9c14c1cbcb0ddc5ceec6e54b0490760d858dbd4",
+   "path": "plugins/org.jkiss.dbeaver.ext.oracle/OSGI-INF/l10n/bundle_ja.properties",
+   "url": "https://raw.githubusercontent.com/dbeaver/dbeaver/a9c14c1cbcb0ddc5ceec6e54b0490760d858dbd4/plugins/org.jkiss.dbeaver.ext.oracle/OSGI-INF/l10n/bundle_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "88c6a6f8b10e30d8",
+   "bytes": 73009,
+   "lines": 603,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O22",
+   "group": "other",
+   "repo": "dbeaver/dbeaver",
+   "commit": "a9c14c1cbcb0ddc5ceec6e54b0490760d858dbd4",
+   "path": "plugins/org.jkiss.dbeaver.model/OSGI-INF/l10n/bundle_ja.properties",
+   "url": "https://raw.githubusercontent.com/dbeaver/dbeaver/a9c14c1cbcb0ddc5ceec6e54b0490760d858dbd4/plugins/org.jkiss.dbeaver.model/OSGI-INF/l10n/bundle_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "3f475ad6a78fb7be",
+   "bytes": 5081,
+   "lines": 75,
+   "sign_lines": 2,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O23",
+   "group": "other",
+   "repo": "dbeaver/dbeaver",
+   "commit": "a9c14c1cbcb0ddc5ceec6e54b0490760d858dbd4",
+   "path": "plugins/org.jkiss.dbeaver.model.jdbc/OSGI-INF/l10n/bundle_ja.properties",
+   "url": "https://raw.githubusercontent.com/dbeaver/dbeaver/a9c14c1cbcb0ddc5ceec6e54b0490760d858dbd4/plugins/org.jkiss.dbeaver.model.jdbc/OSGI-INF/l10n/bundle_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "3152f4f386b0aecc",
+   "bytes": 3048,
+   "lines": 32,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O24",
+   "group": "other",
+   "repo": "phoenixctms/ctsms",
+   "commit": "9e0496443fb78970c58137600afd21681f9f647f",
+   "path": "core/src/main/resources/ctsms-criterionproperties_ja.properties",
+   "url": "https://raw.githubusercontent.com/phoenixctms/ctsms/9e0496443fb78970c58137600afd21681f9f647f/core/src/main/resources/ctsms-criterionproperties_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "1dcbc3b9e90294c9",
+   "bytes": 16936,
+   "lines": 321,
+   "sign_lines": 3,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O25",
+   "group": "other",
+   "repo": "phoenixctms/ctsms",
+   "commit": "9e0496443fb78970c58137600afd21681f9f647f",
+   "path": "web/src/main/resources/org/phoenixctms/ctsms/web/trial/labels_ja.properties",
+   "url": "https://raw.githubusercontent.com/phoenixctms/ctsms/9e0496443fb78970c58137600afd21681f9f647f/web/src/main/resources/org/phoenixctms/ctsms/web/trial/labels_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "49be0691592ec987",
+   "bytes": 84813,
+   "lines": 1406,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O26",
+   "group": "other",
+   "repo": "phoenixctms/ctsms",
+   "commit": "9e0496443fb78970c58137600afd21681f9f647f",
+   "path": "web/src/main/resources/org/phoenixctms/ctsms/web/course/labels_ja.properties",
+   "url": "https://raw.githubusercontent.com/phoenixctms/ctsms/9e0496443fb78970c58137600afd21681f9f647f/web/src/main/resources/org/phoenixctms/ctsms/web/course/labels_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "08ba3278bf1ac72b",
+   "bytes": 20612,
+   "lines": 303,
+   "sign_lines": 3,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O27",
+   "group": "other",
+   "repo": "phoenixctms/ctsms",
+   "commit": "9e0496443fb78970c58137600afd21681f9f647f",
+   "path": "web/src/main/resources/org/phoenixctms/ctsms/web/inputfield/labels_ja.properties",
+   "url": "https://raw.githubusercontent.com/phoenixctms/ctsms/9e0496443fb78970c58137600afd21681f9f647f/web/src/main/resources/org/phoenixctms/ctsms/web/inputfield/labels_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "3d6b4eb8eae68114",
+   "bytes": 16485,
+   "lines": 257,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [],
+   "replacement_chars": 0
+  },
+  {
+   "id": "O28",
+   "group": "other",
+   "repo": "mit-cml/appinventor-extensions",
+   "commit": "7728c70c18c92d6edf41941a69fa3c5968ef3d61",
+   "path": "appinventor/appengine/src/com/google/appinventor/client/OdeMessages_ja.properties",
+   "url": "https://raw.githubusercontent.com/mit-cml/appinventor-extensions/7728c70c18c92d6edf41941a69fa3c5968ef3d61/appinventor/appengine/src/com/google/appinventor/client/OdeMessages_ja.properties",
+   "expected_rule_lines": 0,
+   "fetched": true,
+   "reason": "",
+   "sha256_16": "4bf6041582c81a11",
+   "bytes": 141395,
+   "lines": 4571,
+   "sign_lines": 1,
+   "rule_lines": [],
+   "value_start": [],
+   "katakana_after_sign": [
+    {
+     "line": 3097,
+     "text": "galleryAppLikeError=＃サーバーエラー：「いいね！」の数を取得できませんでした"
+    }
+   ],
+   "replacement_chars": 0
+  }
+ ],
+ "predictions": [
+  {
+   "id": "F0",
+   "text": "all 33 files fetch at their pinned commits",
+   "held": true,
+   "value": "33 fetched; missing none"
+  },
+  {
+   "id": "F1",
+   "text": "the rule matches exactly the expected lines in the 5 known files and none in the 28 others",
+   "held": true,
+   "value": "known files 25 lines (expected 25), other files 0 lines; differences none"
+  },
+  {
+   "id": "F2",
+   "text": "the 28 other files hold at least 80 lines with ＃",
+   "held": true,
+   "value": "113 lines with ＃ in the other files"
+  }
+ ]
+}
