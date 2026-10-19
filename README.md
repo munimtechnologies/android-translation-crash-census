@@ -164,7 +164,8 @@ Look-alike characters (a placeholder written with a character that looks right b
   [Apple](lookalike-percent/APPLE.md), [gettext](lookalike-percent/GETTEXT.md) and
   [Rails YAML](lookalike-percent/RAILS.md) and [Symfony](lookalike-percent/SYMFONY.md) files, with a
   pre-registered [check of 150 files in five projects](lookalike-percent/yaml-eval/RESULTS.md) (six of
-  seven predictions held); [LINT.md](lookalike-percent/LINT.md).
+  seven predictions held) and a [by-hand read](lookalike-percent/yaml-eval/SONATA-CHECK.md) of
+  SonataAdminBundle's 145 missing-parameter errors (all real); [LINT.md](lookalike-percent/LINT.md).
 - [lookalike-brace/](lookalike-brace/BRACES.md): `｛0｝` for `{0}`; the same in
   [Java .properties](lookalike-brace/JAVA.md) and [JSON](lookalike-brace/JSON.md) files, and
   [how common it is per format](lookalike-brace/FORMATS.md); a pre-registered
@@ -183,8 +184,19 @@ Rates across many projects:
 Machine-translation artifacts:
 
 - [mt-artifacts/](mt-artifacts/KATAKANA-READING.md): Japanese translations that ship the word's katakana
-  reading between fullwidth number signs (`削除＃サクジョ＃`), and a pre-registered
-  [rule](mt-artifacts/READING-LEAK-PREREG.md) for an l10n-guard warning on them.
+  reading between fullwidth number signs (`削除＃サクジョ＃`); a pre-registered
+  [rule](mt-artifacts/READING-LEAK-PREREG.md) for an l10n-guard warning on them, its
+  [results](mt-artifacts/reading-leak/RESULTS.md) (four of four held, found since in NocoBase and
+  DuckPro-Kobra3) and a [false-positive test](mt-artifacts/reading-leak/FP-RESULTS.md) on 33 Japanese
+  files that use `＃` (four of four held: 25 of 25 matches real, 0 of 113 other uses matched).
+
+Stale translations after a source fix:
+
+- [antonym-collision/](antonym-collision/RESULTS.md): pre-registered scan of NocoBase and Mastodon locale
+  files for two keys whose English texts differ by antonyms alone ("Default expanded" vs "Default
+  collapse") but share one translation, the shape a source-string fix leaves when translations are
+  not refreshed; started from NocoBase's "Default expanded" switch, whose label says the opposite
+  in 13 of 16 non-English locales.
 
 ## Method
 
