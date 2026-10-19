@@ -1,0 +1,131 @@
+{
+ "guard": "0.12.0",
+ "consistent": true,
+ "projects": {
+  "nocobase": {
+   "groups": 132,
+   "locale_files": 1614,
+   "unparsed": [],
+   "no_reference": [
+    "packages/plugins/@nocobase/plugin-action-print/src/locale",
+    "packages/plugins/@nocobase/plugin-backup-restore/src/server/locale",
+    "packages/plugins/@nocobase/plugin-client/src/locale",
+    "packages/plugins/@nocobase/plugin-collection-sql/src/locale",
+    "packages/plugins/@nocobase/plugin-collection-tree/src/locale",
+    "packages/plugins/@nocobase/plugin-system-settings/src/locale",
+    "packages/plugins/@nocobase/plugin-ui-schema-storage/src/locale",
+    "packages/plugins/@nocobase/plugin-verification/src/server/locale",
+    "packages/presets/nocobase/src/locale"
+   ],
+   "pairs": 426,
+   "comparisons": 6530,
+   "copies": 2,
+   "consistent": true,
+   "repo": "nocobase/nocobase",
+   "commit": "10810697c31f85d6f2ad7eaa0a0e1990970ea93b"
+  },
+  "mastodon": {
+   "groups": 1,
+   "locale_files": 105,
+   "unparsed": [],
+   "no_reference": [],
+   "pairs": 93,
+   "comparisons": 5672,
+   "copies": 0,
+   "consistent": true,
+   "repo": "mastodon/mastodon",
+   "commit": "cab53a591ec66159c31b4853271fd15f9e2bbb80"
+  },
+  "excalidraw": {
+   "groups": 1,
+   "locale_files": 56,
+   "unparsed": [],
+   "no_reference": [],
+   "pairs": 8,
+   "comparisons": 387,
+   "copies": 0,
+   "consistent": true,
+   "code_literals": 11217,
+   "repo": "excalidraw/excalidraw",
+   "commit": "e1b7aacb356a492aa1e0fc6eb57b8896124027f0"
+  },
+  "immich": {
+   "groups": 1,
+   "locale_files": 87,
+   "unparsed": [],
+   "no_reference": [],
+   "pairs": 52,
+   "comparisons": 2655,
+   "copies": 0,
+   "consistent": true,
+   "code_literals": 25542,
+   "repo": "immich-app/immich",
+   "commit": "53618ff7496ee313d1cff7b3bcdf19c82b765cdf"
+  },
+  "lobe-chat": {
+   "groups": 57,
+   "locale_files": 969,
+   "unparsed": [],
+   "no_reference": [],
+   "pairs": 453,
+   "comparisons": 7701,
+   "copies": 0,
+   "consistent": true,
+   "code_literals": 240154,
+   "repo": "lobehub/lobe-chat",
+   "commit": "5310a6f1d0f2c530819f7328433988ea2b892eae"
+  },
+  "element-web": {
+   "groups": 1,
+   "locale_files": 40,
+   "unparsed": [],
+   "no_reference": [],
+   "pairs": 62,
+   "comparisons": 2070,
+   "copies": 0,
+   "consistent": true,
+   "code_literals": 41025,
+   "repo": "element-hq/element-web",
+   "commit": "fc4d45cce130f3dce0d824ecef87bd948bcef842"
+  },
+  "jitsi-meet": {
+   "groups": 1,
+   "locale_files": 59,
+   "unparsed": [],
+   "no_reference": [],
+   "pairs": 75,
+   "comparisons": 3151,
+   "copies": 0,
+   "consistent": true,
+   "code_literals": 14115,
+   "repo": "jitsi/jitsi-meet",
+   "commit": "f4a1c17e45a7d6d5b8e51a57af276fdcfa2d2473"
+  }
+ },
+ "predictions": [
+  {
+   "id": "G0",
+   "text": "all seven tarballs download; each new project has its reference and >= 10 locale files",
+   "held": true,
+   "value": "locale files {'excalidraw': 56, 'immich': 87, 'lobe-chat': 969, 'element-web': 40, 'jitsi-meet': 59}"
+  },
+  {
+   "id": "G2",
+   "text": "NocoBase and Mastodon warnings = the 27 flagged rows of the published collisions.csv",
+   "held": true,
+   "value": "published 27, guard 27, missing none, extra none"
+  },
+  {
+   "id": "G3",
+   "text": ">= 20 warnings on the new projects, from >= 3 of 5",
+   "held": false,
+   "value": "19 warnings from ['element-web', 'immich', 'jitsi-meet', 'lobe-chat']"
+  },
+  {
+   "id": "G5",
+   "text": ">= 50% of the new warnings have both keys found as literals in the project's code",
+   "held": true,
+   "value": "18 of 19 (95%)"
+  }
+ ]
+}
