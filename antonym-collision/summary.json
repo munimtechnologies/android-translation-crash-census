@@ -1,0 +1,60 @@
+{
+ "projects": {
+  "nocobase": {
+   "dirs": 132,
+   "locale_files": 1614,
+   "unparsed": [],
+   "pairs": 426,
+   "comparisons": 6530,
+   "flagged": 19,
+   "copies": 2,
+   "repo": "nocobase/nocobase",
+   "commit": "10810697c31f85d6f2ad7eaa0a0e1990970ea93b",
+   "selected_files": 1755
+  },
+  "mastodon": {
+   "dirs": 1,
+   "locale_files": 105,
+   "unparsed": [],
+   "pairs": 93,
+   "comparisons": 5672,
+   "flagged": 8,
+   "copies": 0,
+   "repo": "mastodon/mastodon",
+   "commit": "cab53a591ec66159c31b4853271fd15f9e2bbb80",
+   "selected_files": 106
+  }
+ },
+ "predictions": [
+  {
+   "id": "A0",
+   "text": "both tarballs download; >= 100 NocoBase and >= 50 Mastodon locale files parse",
+   "held": true,
+   "value": "locale files {'nocobase': 1614, 'mastodon': 105}; errors {'nocobase': None, 'mastodon': None}"
+  },
+  {
+   "id": "A1",
+   "text": "packages/core/client/src/locale ('Default collapse', 'Default expanded') flagged in exactly the 13 expected locales, copy in exactly ('pt-BR', 'tr-TR')",
+   "held": true,
+   "value": "flagged ['de-DE', 'es-ES', 'fr-FR', 'hu-HU', 'id-ID', 'it-IT', 'ja-JP', 'ko-KR', 'nl-NL', 'ru-RU', 'uk-UA', 'vi-VN', 'zh-TW']; copy ['pt-BR', 'tr-TR']"
+  },
+  {
+   "id": "A2",
+   "text": "the 13 shared values are exactly as expected (NFC)",
+   "held": true,
+   "value": "differing none; equal only after NFC none"
+  },
+  {
+   "id": "A3",
+   "text": "at least 10 NocoBase flagged instances besides A1's pair",
+   "held": false,
+   "value": "6 others"
+  },
+  {
+   "id": "A4",
+   "text": "NocoBase flagged rate >= 5x Mastodon's, with >= 500 Mastodon comparisons",
+   "held": false,
+   "value": "NocoBase 19/6530 = 2.91 per 1,000; Mastodon 8/5672 = 1.41 per 1,000"
+  }
+ ]
+}

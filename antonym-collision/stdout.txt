@@ -1,0 +1,77 @@
+===== run-01-python: python -B -m unittest -v test_antonym_scan
+
+===== run-02-python: python -B antonym_scan.py --out-dir /out/ac
+nocobase @10810697: 1755 files selected, 132 dirs with an English file, 1614 locale files, 0 unparsed, 426 antonym pairs, 6530 comparisons, 19 flagged, 2 copies, 2.91 flagged per 1,000
+  flagged locales id-ID: '@nocobase/client.Required' / '@nocobase/plugin-theme-editor.Optional' = 'Wajib'
+  flagged locales id-ID: '@nocobase/plugin-map.Required' / '@nocobase/plugin-theme-editor.Optional' = 'Wajib'
+  flagged locales zh-CN: '@nocobase/client.Add {{type}} after "{{title}}"' / '@nocobase/client.Add {{type}} before "{{title}}"' = '在 "{{title}}" 前插入{{type}}'
+  flagged locales zh-TW: '@nocobase/client.Add {{type}} after "{{title}}"' / '@nocobase/client.Add {{type}} before "{{title}}"' = '在 "{{title}}" 前插入{{type}}'
+  flagged packages/core/client/src/locale de-DE: 'Default collapse' / 'Default expanded' = 'Standardmäßig eingeklappt'
+  flagged packages/core/client/src/locale es-ES: 'Default collapse' / 'Default expanded' = 'Contraer por defecto'
+  flagged packages/core/client/src/locale fr-FR: 'Default collapse' / 'Default expanded' = 'Développé/réduit par défaut'
+  flagged packages/core/client/src/locale hu-HU: 'Default collapse' / 'Default expanded' = 'Alapértelmezett összecsukás'
+  flagged packages/core/client/src/locale id-ID: 'Default collapse' / 'Default expanded' = 'Ciutkan default'
+  flagged packages/core/client/src/locale it-IT: 'Default collapse' / 'Default expanded' = 'Comprimi di default'
+  flagged packages/core/client/src/locale ja-JP: 'Default collapse' / 'Default expanded' = 'デフォルト閉じる'
+  flagged packages/core/client/src/locale ko-KR: 'Default collapse' / 'Default expanded' = '기본 축소'
+  flagged packages/core/client/src/locale nl-NL: 'Default collapse' / 'Default expanded' = 'Standaard inklappen'
+  flagged packages/core/client/src/locale ru-RU: 'Default collapse' / 'Default expanded' = 'Сворачивание по умолчанию'
+  flagged packages/core/client/src/locale uk-UA: 'Default collapse' / 'Default expanded' = 'Згорнути за замовчуванням'
+  flagged packages/core/client/src/locale vi-VN: 'Default collapse' / 'Default expanded' = 'Thu gọn mặc định'
+  flagged packages/core/client/src/locale zh-CN: 'Add {{type}} after "{{title}}"' / 'Add {{type}} before "{{title}}"' = '在 "{{title}}" 前插入{{type}}'
+  flagged packages/core/client/src/locale zh-TW: 'Add {{type}} after "{{title}}"' / 'Add {{type}} before "{{title}}"' = '在 "{{title}}" 前插入{{type}}'
+  flagged packages/core/client/src/locale zh-TW: 'Default collapse' / 'Default expanded' = '預設展開'
+mastodon @cab53a59: 106 files selected, 1 dirs with an English file, 105 locale files, 0 unparsed, 93 antonym pairs, 5672 comparisons, 8 flagged, 0 copies, 1.41 flagged per 1,000
+  flagged app/javascript/mastodon/locales el: 'account.mute_notifications_short' / 'account.unmute_notifications_short' = 'Σίγαση ειδοποιήσεων'
+  flagged app/javascript/mastodon/locales eu: 'account.menu.hide_reblogs' / 'account.menu.show_reblogs' = 'Ezkutatu bultzadak denbora-lerroan'
+  flagged app/javascript/mastodon/locales it: 'video.mute' / 'video.unmute' = 'Muta'
+  flagged app/javascript/mastodon/locales ku: 'account.mute_notifications_short' / 'account.unmute_notifications_short' = 'Agahdariyan bêdeng bike'
+  flagged app/javascript/mastodon/locales mk: 'account.mute' / 'account.unmute' = 'Зачути го @{name}'
+  flagged app/javascript/mastodon/locales my: 'lightbox.next' / 'lightbox.previous' = 'ရှေ့သို့'
+  flagged app/javascript/mastodon/locales my: 'lightbox.previous' / 'report.next' = 'ရှေ့သို့'
+  flagged app/javascript/mastodon/locales my: 'status.mute_conversation' / 'status.unmute_conversation' = 'စကားဝိုင်းကို ပိတ်ထားရန်'
+A0 HELD: both tarballs download; >= 100 NocoBase and >= 50 Mastodon locale files parse (locale files {'nocobase': 1614, 'mastodon': 105}; errors {'nocobase': None, 'mastodon': None})
+A1 HELD: packages/core/client/src/locale ('Default collapse', 'Default expanded') flagged in exactly the 13 expected locales, copy in exactly ('pt-BR', 'tr-TR') (flagged ['de-DE', 'es-ES', 'fr-FR', 'hu-HU', 'id-ID', 'it-IT', 'ja-JP', 'ko-KR', 'nl-NL', 'ru-RU', 'uk-UA', 'vi-VN', 'zh-TW']; copy ['pt-BR', 'tr-TR'])
+A2 HELD: the 13 shared values are exactly as expected (NFC) (differing none; equal only after NFC none)
+A3 FAILED: at least 10 NocoBase flagged instances besides A1's pair (6 others)
+A4 FAILED: NocoBase flagged rate >= 5x Mastodon's, with >= 500 Mastodon comparisons (NocoBase 19/6530 = 2.91 per 1,000; Mastodon 8/5672 = 1.41 per 1,000)
+A5 is graded by hand from collisions.csv
+
+===== run-03-python: python -B zw_count.py --pop population.csv --out-dir /out/zw
+L1 haorendashu/nostrmo lib/l10n/intl_ja.arb: 0 zero-width, 0 inside Japanese words
+L2 GrowthEase/NetEase_Meeting meeting-flutter/meeting_kit/lib/l10n/strings_ja.arb: 0 zero-width, 0 inside Japanese words
+L3 GrowthEase/NetEase_Meeting meeting-electron/packages/meeting-kit-core/src/locales/ja.ts: 0 zero-width, 0 inside Japanese words
+L4 nocobase/nocobase packages/core/client/src/locale/ja-JP.json: 0 zero-width, 0 inside Japanese words
+L5 utkabobr/DuckPro-Kobra3 files/app/Translate/LanguageJapanese.ts: 4 zero-width, 2 inside Japanese words
+  line 629: <translation>クラウド印刷タスクを受信して<U+200B><U+200B>います。お待ちください。</translation>
+  line 735: <translation>PID を調整中です。お待<U+200B><U+200B>ちください。</translation>
+O01 wwj718/blockly_dev msg/json/ja.json: 0 zero-width, 0 inside Japanese words
+O02 wwj718/blockly_dev msg/js/ja.js: 0 zero-width, 0 inside Japanese words
+O03 EinsteinsWorkshop/BlocksCAD blockly/msg/json/ja.json: 0 zero-width, 0 inside Japanese words
+O04 EinsteinsWorkshop/BlocksCAD blockly/msg/js/ja.js: 0 zero-width, 0 inside Japanese words
+O05 dtube/production DTube_files/lang/ja/ja-JP.json: 0 zero-width, 0 inside Japanese words
+O06 PalisadoesFoundation/talawa lang/ja.json: 0 zero-width, 0 inside Japanese words
+O07 VubbiScript/VubbiScript src/web/blockly/msg/json/ja.json: 0 zero-width, 0 inside Japanese words
+O08 VubbiScript/VubbiScript src/web/blockly/msg/js/ja.js: 0 zero-width, 0 inside Japanese words
+O09 phpk/godoos packages/photoshop/src/js/languages/ja.json: 0 zero-width, 0 inside Japanese words
+O10 kwanghoon/MySmallBasic MySmallBasic/blockly/msg/json/ja.json: 0 zero-width, 0 inside Japanese words
+O11 kwanghoon/MySmallBasic MySmallBasic/blockly/msg/js/ja.js: 0 zero-width, 0 inside Japanese words
+O12 badvision/lawless-legends OutlawEditor/src/main/resources/mythos/msg/json/ja.json: 0 zero-width, 0 inside Japanese words
+O13 badvision/lawless-legends OutlawEditor/src/main/resources/mythos/msg/js/ja.js: 0 zero-width, 0 inside Japanese words
+O14 mijorus/smile data/assets/emoji_locales/ja.json: 308 zero-width, 0 inside Japanese words
+O15 0Tick/a1111-mini-paint miniPaint/src/js/languages/ja.json: 0 zero-width, 0 inside Japanese words
+O16 tu2-atmanand/Task-Board src/utils/lang/locale/ja.json: 2 zero-width, 1 inside Japanese words
+  line 95: "supported-plugin-formats": "サポートされているプラ<U+200B><U+200B>グイン形式",
+O17 odoo/odoo addons/purchase/i18n/ja.po: 0 zero-width, 0 inside Japanese words
+O18 odoo/odoo addons/website_crm/i18n/ja.po: 0 zero-width, 0 inside Japanese words
+O19 odoo/odoo addons/website_forum/i18n/ja.po: 0 zero-width, 0 inside Japanese words
+O20 odoo/odoo addons/website_event_track/i18n/ja.po: 0 zero-width, 0 inside Japanese words
+O21 dbeaver/dbeaver plugins/org.jkiss.dbeaver.ext.oracle/OSGI-INF/l10n/bundle_ja.properties: 0 zero-width, 0 inside Japanese words
+O22 dbeaver/dbeaver plugins/org.jkiss.dbeaver.model/OSGI-INF/l10n/bundle_ja.properties: 0 zero-width, 0 inside Japanese words
+O23 dbeaver/dbeaver plugins/org.jkiss.dbeaver.model.jdbc/OSGI-INF/l10n/bundle_ja.properties: 0 zero-width, 0 inside Japanese words
+O24 phoenixctms/ctsms core/src/main/resources/ctsms-criterionproperties_ja.properties: 0 zero-width, 0 inside Japanese words
+O25 phoenixctms/ctsms web/src/main/resources/org/phoenixctms/ctsms/web/trial/labels_ja.properties: 0 zero-width, 0 inside Japanese words
+O26 phoenixctms/ctsms web/src/main/resources/org/phoenixctms/ctsms/web/course/labels_ja.properties: 0 zero-width, 0 inside Japanese words
+O27 phoenixctms/ctsms web/src/main/resources/org/phoenixctms/ctsms/web/inputfield/labels_ja.properties: 0 zero-width, 0 inside Japanese words
+O28 mit-cml/appinventor-extensions appinventor/appengine/src/com/google/appinventor/client/OdeMessages_ja.properties: 0 zero-width, 0 inside Japanese words
+files with a zero-width character inside a Japanese word: 2 of 33 fetched

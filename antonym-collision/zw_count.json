@@ -1,0 +1,313 @@
+[
+ {
+  "id": "L1",
+  "repo": "haorendashu/nostrmo",
+  "path": "lib/l10n/intl_ja.arb",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "L2",
+  "repo": "GrowthEase/NetEase_Meeting",
+  "path": "meeting-flutter/meeting_kit/lib/l10n/strings_ja.arb",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "L3",
+  "repo": "GrowthEase/NetEase_Meeting",
+  "path": "meeting-electron/packages/meeting-kit-core/src/locales/ja.ts",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "L4",
+  "repo": "nocobase/nocobase",
+  "path": "packages/core/client/src/locale/ja-JP.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "L5",
+  "repo": "utkabobr/DuckPro-Kobra3",
+  "path": "files/app/Translate/LanguageJapanese.ts",
+  "fetched": true,
+  "zero_width": 4,
+  "inside": 2,
+  "samples": [
+   {
+    "line": 629,
+    "text": "<translation>クラウド印刷タスクを受信して<U+200B><U+200B>います。お待ちください。</translation>"
+   },
+   {
+    "line": 735,
+    "text": "<translation>PID を調整中です。お待<U+200B><U+200B>ちください。</translation>"
+   }
+  ]
+ },
+ {
+  "id": "O01",
+  "repo": "wwj718/blockly_dev",
+  "path": "msg/json/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O02",
+  "repo": "wwj718/blockly_dev",
+  "path": "msg/js/ja.js",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O03",
+  "repo": "EinsteinsWorkshop/BlocksCAD",
+  "path": "blockly/msg/json/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O04",
+  "repo": "EinsteinsWorkshop/BlocksCAD",
+  "path": "blockly/msg/js/ja.js",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O05",
+  "repo": "dtube/production",
+  "path": "DTube_files/lang/ja/ja-JP.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O06",
+  "repo": "PalisadoesFoundation/talawa",
+  "path": "lang/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O07",
+  "repo": "VubbiScript/VubbiScript",
+  "path": "src/web/blockly/msg/json/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O08",
+  "repo": "VubbiScript/VubbiScript",
+  "path": "src/web/blockly/msg/js/ja.js",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O09",
+  "repo": "phpk/godoos",
+  "path": "packages/photoshop/src/js/languages/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O10",
+  "repo": "kwanghoon/MySmallBasic",
+  "path": "MySmallBasic/blockly/msg/json/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O11",
+  "repo": "kwanghoon/MySmallBasic",
+  "path": "MySmallBasic/blockly/msg/js/ja.js",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O12",
+  "repo": "badvision/lawless-legends",
+  "path": "OutlawEditor/src/main/resources/mythos/msg/json/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O13",
+  "repo": "badvision/lawless-legends",
+  "path": "OutlawEditor/src/main/resources/mythos/msg/js/ja.js",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O14",
+  "repo": "mijorus/smile",
+  "path": "data/assets/emoji_locales/ja.json",
+  "fetched": true,
+  "zero_width": 308,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O15",
+  "repo": "0Tick/a1111-mini-paint",
+  "path": "miniPaint/src/js/languages/ja.json",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O16",
+  "repo": "tu2-atmanand/Task-Board",
+  "path": "src/utils/lang/locale/ja.json",
+  "fetched": true,
+  "zero_width": 2,
+  "inside": 1,
+  "samples": [
+   {
+    "line": 95,
+    "text": "\"supported-plugin-formats\": \"サポートされているプラ<U+200B><U+200B>グイン形式\","
+   }
+  ]
+ },
+ {
+  "id": "O17",
+  "repo": "odoo/odoo",
+  "path": "addons/purchase/i18n/ja.po",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O18",
+  "repo": "odoo/odoo",
+  "path": "addons/website_crm/i18n/ja.po",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O19",
+  "repo": "odoo/odoo",
+  "path": "addons/website_forum/i18n/ja.po",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O20",
+  "repo": "odoo/odoo",
+  "path": "addons/website_event_track/i18n/ja.po",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O21",
+  "repo": "dbeaver/dbeaver",
+  "path": "plugins/org.jkiss.dbeaver.ext.oracle/OSGI-INF/l10n/bundle_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O22",
+  "repo": "dbeaver/dbeaver",
+  "path": "plugins/org.jkiss.dbeaver.model/OSGI-INF/l10n/bundle_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O23",
+  "repo": "dbeaver/dbeaver",
+  "path": "plugins/org.jkiss.dbeaver.model.jdbc/OSGI-INF/l10n/bundle_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O24",
+  "repo": "phoenixctms/ctsms",
+  "path": "core/src/main/resources/ctsms-criterionproperties_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O25",
+  "repo": "phoenixctms/ctsms",
+  "path": "web/src/main/resources/org/phoenixctms/ctsms/web/trial/labels_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O26",
+  "repo": "phoenixctms/ctsms",
+  "path": "web/src/main/resources/org/phoenixctms/ctsms/web/course/labels_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O27",
+  "repo": "phoenixctms/ctsms",
+  "path": "web/src/main/resources/org/phoenixctms/ctsms/web/inputfield/labels_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ },
+ {
+  "id": "O28",
+  "repo": "mit-cml/appinventor-extensions",
+  "path": "appinventor/appengine/src/com/google/appinventor/client/OdeMessages_ja.properties",
+  "fetched": true,
+  "zero_width": 0,
+  "inside": 0,
+  "samples": []
+ }
+]

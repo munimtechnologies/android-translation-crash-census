@@ -1,0 +1,30 @@
+project,dir,locale,kind,key1,key2,en1,en2,value
+mastodon,app/javascript/mastodon/locales,el,flagged,account.mute_notifications_short,account.unmute_notifications_short,Mute notifications,Unmute notifications,Σίγαση ειδοποιήσεων
+mastodon,app/javascript/mastodon/locales,eu,flagged,account.menu.hide_reblogs,account.menu.show_reblogs,Hide boosts in timeline,Show boosts in timeline,Ezkutatu bultzadak denbora-lerroan
+mastodon,app/javascript/mastodon/locales,it,flagged,video.mute,video.unmute,Mute,Unmute,Muta
+mastodon,app/javascript/mastodon/locales,ku,flagged,account.mute_notifications_short,account.unmute_notifications_short,Mute notifications,Unmute notifications,Agahdariyan bêdeng bike
+mastodon,app/javascript/mastodon/locales,mk,flagged,account.mute,account.unmute,Mute @{name},Unmute @{name},Зачути го @{name}
+mastodon,app/javascript/mastodon/locales,my,flagged,lightbox.next,lightbox.previous,Next,Previous,ရှေ့သို့
+mastodon,app/javascript/mastodon/locales,my,flagged,lightbox.previous,report.next,Previous,Next,ရှေ့သို့
+mastodon,app/javascript/mastodon/locales,my,flagged,status.mute_conversation,status.unmute_conversation,Mute conversation,Unmute conversation,စကားဝိုင်းကို ပိတ်ထားရန်
+nocobase,locales,id-ID,flagged,@nocobase/client.Required,@nocobase/plugin-theme-editor.Optional,Required,Optional,Wajib
+nocobase,locales,id-ID,flagged,@nocobase/plugin-map.Required,@nocobase/plugin-theme-editor.Optional,Required,Optional,Wajib
+nocobase,locales,zh-CN,flagged,"@nocobase/client.Add {{type}} after ""{{title}}""","@nocobase/client.Add {{type}} before ""{{title}}""","Add {{type}} after ""{{title}}""","Add {{type}} before ""{{title}}""","在 ""{{title}}"" 前插入{{type}}"
+nocobase,locales,zh-TW,flagged,"@nocobase/client.Add {{type}} after ""{{title}}""","@nocobase/client.Add {{type}} before ""{{title}}""","Add {{type}} after ""{{title}}""","Add {{type}} before ""{{title}}""","在 ""{{title}}"" 前插入{{type}}"
+nocobase,packages/core/client/src/locale,de-DE,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Standardmäßig eingeklappt
+nocobase,packages/core/client/src/locale,es-ES,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Contraer por defecto
+nocobase,packages/core/client/src/locale,fr-FR,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Développé/réduit par défaut
+nocobase,packages/core/client/src/locale,hu-HU,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Alapértelmezett összecsukás
+nocobase,packages/core/client/src/locale,id-ID,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Ciutkan default
+nocobase,packages/core/client/src/locale,it-IT,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Comprimi di default
+nocobase,packages/core/client/src/locale,ja-JP,flagged,Default collapse,Default expanded,Default collapse,Default expanded,デフォルト閉じる
+nocobase,packages/core/client/src/locale,ko-KR,flagged,Default collapse,Default expanded,Default collapse,Default expanded,기본 축소
+nocobase,packages/core/client/src/locale,nl-NL,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Standaard inklappen
+nocobase,packages/core/client/src/locale,pt-BR,copy,Default collapse,Default expanded,Default collapse,Default expanded,Default collapse
+nocobase,packages/core/client/src/locale,ru-RU,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Сворачивание по умолчанию
+nocobase,packages/core/client/src/locale,tr-TR,copy,Default collapse,Default expanded,Default collapse,Default expanded,Default collapse
+nocobase,packages/core/client/src/locale,uk-UA,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Згорнути за замовчуванням
+nocobase,packages/core/client/src/locale,vi-VN,flagged,Default collapse,Default expanded,Default collapse,Default expanded,Thu gọn mặc định
+nocobase,packages/core/client/src/locale,zh-CN,flagged,"Add {{type}} after ""{{title}}""","Add {{type}} before ""{{title}}""","Add {{type}} after ""{{title}}""","Add {{type}} before ""{{title}}""","在 ""{{title}}"" 前插入{{type}}"
+nocobase,packages/core/client/src/locale,zh-TW,flagged,"Add {{type}} after ""{{title}}""","Add {{type}} before ""{{title}}""","Add {{type}} after ""{{title}}""","Add {{type}} before ""{{title}}""","在 ""{{title}}"" 前插入{{type}}"
+nocobase,packages/core/client/src/locale,zh-TW,flagged,Default collapse,Default expanded,Default collapse,Default expanded,預設展開
