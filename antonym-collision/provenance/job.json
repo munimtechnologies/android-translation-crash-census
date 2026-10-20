@@ -1,0 +1,17 @@
+{
+ "name": "mm-provenance-v1",
+ "kind": "compete",
+ "workdir": "antonym-collision/provenance",
+ "image": "python:3.12",
+ "setup": [],
+ "run": [
+  "python -B -m unittest -v test_provenance",
+  "python -B provenance.py --rows rows.csv --graded graded.csv --out-dir /out/provenance --wait 1200"
+ ],
+ "network": true,
+ "data_urls": [],
+ "data_key": "mm-provenance",
+ "cpu": 1,
+ "memory_gb": 1,
+ "timeout_minutes": 40
+}
