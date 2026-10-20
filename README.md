@@ -201,7 +201,11 @@ Stale translations after a source fix:
   it raised 19 warnings, one short of the 20 predicted, and 13 of the 19 were graded real by AI agents
   ([results](antonym-collision/GUARD-RESULTS.md)); all 6 that were not defects are "Download failed" /
   "Upload failed" in French or Arabic. A second held-out test on five more projects, with a rule fixed
-  in advance for that word class, is [pre-registered](antonym-collision/HOLDOUT2-PREREG.md).
+  in advance for that word class, is [pre-registered](antonym-collision/HOLDOUT2-PREREG.md). It raised
+  42 warnings in four of the five (Mattermost's English file has a layout the check can't read yet);
+  AI agents graded all 36 outside that class real and 5 of its 6 not defects (Russian, Ukrainian and
+  Finnish use one verb for both directions), so l10n-guard 0.13.0 drops the class
+  ([results](antonym-collision/HOLDOUT2-RESULTS.md)).
 
 ## Method
 

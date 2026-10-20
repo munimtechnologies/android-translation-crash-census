@@ -1,0 +1,161 @@
+===== run-01-python: python -B -m unittest -v test_patch_0130
+test_patch (test_patch_0130.GuardTest.test_patch) ... ok
+test_refuses_other_version (test_patch_0130.GuardTest.test_refuses_other_version) ... ok
+test_refuses_twice (test_patch_0130.GuardTest.test_refuses_twice) ... ok
+test_patch (test_patch_0130.IndexTest.test_patch) ... ok
+test_refuses_twice (test_patch_0130.IndexTest.test_refuses_twice) ... ok
+test_refuses_without_anchor (test_patch_0130.IndexTest.test_refuses_without_anchor) ... ok
+test_patch (test_patch_0130.ReadmeTest.test_patch) ... ok
+test_refuses_twice (test_patch_0130.ReadmeTest.test_refuses_twice) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
+
+===== run-02-python: python -B patch_0130.py --out-dir /out/0130
+
+===== run-03-python: python -B /out/0130/test_l10n_guard.py
+..................................................s....
+----------------------------------------------------------------------
+Ran 55 tests in 0.070s
+
+OK (skipped=1)
+
+===== run-04-python: python -B /out/0130/test_android_text_052.py
+test_argument_hidden_in_a_link_is_caught (__main__.AndroidText052Test.test_argument_hidden_in_a_link_is_caught) ... ok
+test_cdata_href_placeholder_is_kept (__main__.AndroidText052Test.test_cdata_href_placeholder_is_kept) ... ok
+test_real_elements_lose_markup_and_attributes (__main__.AndroidText052Test.test_real_elements_lose_markup_and_attributes) ... ok
+test_text_markup_is_kept_literally (__main__.AndroidText052Test.test_text_markup_is_kept_literally) ... ok
+test_version (__main__.AndroidText052Test.test_version) ... ok
+test_wikipedia_translations_do_not_crash (__main__.AndroidText052Test.test_wikipedia_translations_do_not_crash) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK
+
+===== run-05-python: python -B /out/0130/test_java_060.py
+test_android_plural_reorder (__main__.Java060Test.test_android_plural_reorder) ... ok
+test_correct_translations_pass (__main__.Java060Test.test_correct_translations_pass) ... ok
+test_error_position (__main__.Java060Test.test_error_position) ... ok
+test_hint_on_stray_percent_errors (__main__.Java060Test.test_hint_on_stray_percent_errors) ... ok
+test_lone_percent (__main__.Java060Test.test_lone_percent) ... ok
+test_moved_percent (__main__.Java060Test.test_moved_percent) ... ok
+test_no_hint_on_other_errors (__main__.Java060Test.test_no_hint_on_other_errors) ... ok
+test_parse_keeps_matches (__main__.Java060Test.test_parse_keeps_matches) ... ok
+test_percent_read_as_placeholder (__main__.Java060Test.test_percent_read_as_placeholder) ... ok
+test_single_type_change_is_still_a_warning (__main__.Java060Test.test_single_type_change_is_still_a_warning) ... ok
+test_space_flag_on_the_source_placeholder (__main__.Java060Test.test_space_flag_on_the_source_placeholder) ... ok
+test_swapped_numbers (__main__.Java060Test.test_swapped_numbers) ... ok
+test_unnumbered_reorder (__main__.Java060Test.test_unnumbered_reorder) ... ok
+test_version (__main__.Java060Test.test_version) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
+
+===== run-06-python: python -B /out/0130/test_qt_070.py
+.....................
+----------------------------------------------------------------------
+Ran 21 tests in 0.014s
+
+OK
+
+===== run-07-python: python -B /out/0130/test_071.py
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.010s
+
+OK
+
+===== run-08-python: python -B /out/0130/test_072.py
+test_cdata_and_elements_together (__main__.AndroidText072Test.test_cdata_and_elements_together) ... ok
+test_escaped_links_keep_their_closing_tags (__main__.AndroidText072Test.test_escaped_links_keep_their_closing_tags) ... ok
+test_parsed_text_is_unchanged (__main__.AndroidText072Test.test_parsed_text_is_unchanged) ... ok
+test_plain_strings_keep_the_old_rule (__main__.AndroidText072Test.test_plain_strings_keep_the_old_rule) ... ok
+test_plurals_and_arrays (__main__.AndroidText072Test.test_plurals_and_arrays) ... ok
+test_verdicts_are_unchanged (__main__.AndroidText072Test.test_verdicts_are_unchanged) ... ok
+test_version (__main__.AndroidText072Test.test_version) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+
+===== run-09-python: python -B /out/0130/test_080.py
+test_case_of_the_name (__main__.LookalikeBrace080Test.test_case_of_the_name) ... ok
+test_copy_next_to_the_real_one_is_a_warning (__main__.LookalikeBrace080Test.test_copy_next_to_the_real_one_is_a_warning) ... ok
+test_double_braces_in_json (__main__.LookalikeBrace080Test.test_double_braces_in_json) ... ok
+test_fullwidth_braces_in_the_source_are_text (__main__.LookalikeBrace080Test.test_fullwidth_braces_in_the_source_are_text) ... ok
+test_fullwidth_digits (__main__.LookalikeBrace080Test.test_fullwidth_digits) ... ok
+test_icu_argument (__main__.LookalikeBrace080Test.test_icu_argument) ... ok
+test_not_placeholders (__main__.LookalikeBrace080Test.test_not_placeholders) ... ok
+test_one_brace_still_ascii (__main__.LookalikeBrace080Test.test_one_brace_still_ascii) ... ok
+test_percent_verdicts_are_unchanged (__main__.LookalikeBrace080Test.test_percent_verdicts_are_unchanged) ... ok
+test_properties (__main__.LookalikeBrace080Test.test_properties) ... ok
+test_version (__main__.LookalikeBrace080Test.test_version) ... ok
+test_check (__main__.Resx080Test.test_check) ... ok
+test_cli (__main__.Resx080Test.test_cli) ... ok
+test_parse (__main__.Resx080Test.test_parse) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.007s
+
+OK
+
+===== run-10-python: python -B /out/0130/test_090.py
+...............
+----------------------------------------------------------------------
+Ran 15 tests in 0.014s
+
+OK
+
+===== run-11-python: python -B /out/0130/test_0100.py
+..........................
+----------------------------------------------------------------------
+Ran 26 tests in 0.022s
+
+OK
+
+===== run-12-python: python -B /out/0130/test_0110.py
+.............
+----------------------------------------------------------------------
+Ran 13 tests in 0.013s
+
+OK
+
+===== run-13-python: python -B /out/0130/test_0120.py -v
+test_arb (__main__.AntonymCollision0120Test.test_arb) ... ok
+test_cli (__main__.AntonymCollision0120Test.test_cli) ... ok
+test_copy_is_not_a_collision (__main__.AntonymCollision0120Test.test_copy_is_not_a_collision) ... ok
+test_different_values (__main__.AntonymCollision0120Test.test_different_values) ... ok
+test_empty_or_missing (__main__.AntonymCollision0120Test.test_empty_or_missing) ... ok
+test_mastodon_it (__main__.AntonymCollision0120Test.test_mastodon_it) ... ok
+test_nocobase_de (__main__.AntonymCollision0120Test.test_nocobase_de) ... ok
+test_not_pairs (__main__.AntonymCollision0120Test.test_not_pairs) ... ok
+test_three_keys (__main__.AntonymCollision0120Test.test_three_keys) ... ok
+test_version (__main__.AntonymCollision0120Test.test_version) ... ok
+test_whitespace (__main__.AntonymCollision0120Test.test_whitespace) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.008s
+
+OK
+
+===== run-14-python: python -B /out/0130/test_0130.py -v
+test_holdout2_dropped (__main__.AntonymCollision0130Test.test_holdout2_dropped) ... ok
+test_holdout2_kept (__main__.AntonymCollision0130Test.test_holdout2_kept) ... ok
+test_nested_keys (__main__.AntonymCollision0130Test.test_nested_keys) ... ok
+test_other_classes_kept (__main__.AntonymCollision0130Test.test_other_classes_kept) ... ok
+test_upload_class_dropped (__main__.AntonymCollision0130Test.test_upload_class_dropped) ... ok
+test_upload_not_a_pair (__main__.AntonymCollision0130Test.test_upload_not_a_pair) ... ok
+test_version (__main__.AntonymCollision0130Test.test_version) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+OK
+
+===== run-15-python: python -B patch_index6.py --out-dir /out/census

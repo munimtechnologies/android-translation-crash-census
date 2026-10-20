@@ -1,0 +1,30 @@
+{
+ "name": "l10n-guard-0130-v1",
+ "kind": "compete",
+ "workdir": "E:\\MV2-Pursuit\\work\\20261019T192541Z-localization\\build",
+ "image": "python:3.12",
+ "setup": [],
+ "run": [
+  "python -B -m unittest -v test_patch_0130",
+  "python -B patch_0130.py --out-dir /out/0130",
+  "python -B /out/0130/test_l10n_guard.py",
+  "python -B /out/0130/test_android_text_052.py",
+  "python -B /out/0130/test_java_060.py",
+  "python -B /out/0130/test_qt_070.py",
+  "python -B /out/0130/test_071.py",
+  "python -B /out/0130/test_072.py",
+  "python -B /out/0130/test_080.py",
+  "python -B /out/0130/test_090.py",
+  "python -B /out/0130/test_0100.py",
+  "python -B /out/0130/test_0110.py",
+  "python -B /out/0130/test_0120.py -v",
+  "python -B /out/0130/test_0130.py -v",
+  "python -B patch_index6.py --out-dir /out/census"
+ ],
+ "network": true,
+ "data_urls": [],
+ "data_key": "l10n-guard-0130",
+ "cpu": 1,
+ "memory_gb": 1,
+ "timeout_minutes": 30
+}
