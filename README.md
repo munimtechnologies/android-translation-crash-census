@@ -205,7 +205,11 @@ Stale translations after a source fix:
   42 warnings in four of the five (Mattermost's English file has a layout the check can't read yet);
   AI agents graded all 36 outside that class real and 5 of its 6 not defects (Russian, Ukrainian and
   Finnish use one verb for both directions), so l10n-guard 0.13.0 drops the class
-  ([results](antonym-collision/HOLDOUT2-RESULTS.md)).
+  ([results](antonym-collision/HOLDOUT2-RESULTS.md)). l10n-guard 0.14.0 then read Mattermost's
+  FormatJS layout, as [pre-registered](antonym-collision/FORMATJS-PREREG.md): 67 warnings in 25,515
+  comparisons (2.63 per 1,000), all 40 sampled graded real by AI agents; 21 of the 67 are one defect,
+  a permission name English later split into "Convert to private" and "Convert to public" while ten
+  languages kept the old single "Convert channels" ([results](antonym-collision/FORMATJS-RESULTS.md)).
 
 ## Method
 
