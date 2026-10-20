@@ -1,0 +1,68 @@
+locale,key1,key2,graded,group_a,class,detail
+bg,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,INHERITED,both values identical at B and T
+bg,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False,False,INHERITED,both values identical at B and T
+cs,admin.plugin.disabling,admin.plugin.enabling,True,False,UNREADABLE,catalog not readable at B
+cs,change_url.endWithLetter,change_url.startWithLetter,True,False,UNREADABLE,catalog not readable at B
+cs,channel_header.delete,channel_header.unarchive,True,False,UNREADABLE,catalog not readable at B
+cs,channel_header.unarchive,channel_settings.tab.archive,False,False,UNREADABLE,catalog not readable at B
+cs,shortcuts.browser.font_decrease,shortcuts.browser.font_increase,False,False,UNREADABLE,catalog not readable at B
+es,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,False,False,INHERITED,both values identical at B and T
+es,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False,False,INHERITED,both values identical at B and T
+fa,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,False,False,INHERITED,both values identical at B and T
+fa,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False,False,INHERITED,both values identical at B and T
+fi,admin.team_channel_settings.convertConfirmModal.toPrivateTitle,admin.team_channel_settings.convertConfirmModal.toPublicTitle,True,False,UNREADABLE,catalog not readable at B
+fi,api.channel.delete_channel.archived,api.channel.restore_channel.unarchived,True,False,UNREADABLE,catalog not readable at B
+fi,delete_channel.confirm,unarchive_channel.confirm,False,False,UNREADABLE,catalog not readable at B
+hr,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,UNREADABLE,catalog not readable at B
+hr,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False,False,UNREADABLE,catalog not readable at B
+it,admin.channel_settings.channel_details.archiveChannel,admin.channel_settings.channel_details.unarchiveChannel,False,False,INHERITED,both values identical at B and T
+it,admin.channel_settings.channel_details.archiveChannel,channel_header.unarchive,True,False,INHERITED,both values identical at B and T
+it,admin.channel_settings.channel_details.unarchiveChannel,channel_header.delete,True,False,INHERITED,both values identical at B and T
+it,admin.team_channel_settings.convertConfirmModal.toPrivateConfirm,admin.team_channel_settings.convertConfirmModal.toPublicConfirm,True,False,INHERITED,both values identical at B and T
+it,admin.team_channel_settings.convertConfirmModal.toPublicConfirm,convert_channel.confirm,False,False,INHERITED,both values identical at B and T
+it,api.channel.delete_channel.archived,api.channel.restore_channel.unarchived,True,False,INHERITED,both values identical at B and T
+it,channel_header.delete,channel_header.unarchive,False,False,INHERITED,both values identical at B and T
+ko,admin.permissions.group.convert_private_channel_to_public.name,admin.permissions.group.convert_public_channel_to_private.name,False,False,INHERITED,both values identical at B and T
+ko,admin.permissions.group.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,True,True,INHERITED,both values identical at B and T
+ko,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,INHERITED,both values identical at B and T
+ko,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,True,True,INHERITED,both values identical at B and T
+ko,admin.team_channel_settings.convertConfirmModal.toPrivateConfirm,admin.team_channel_settings.convertConfirmModal.toPublicConfirm,True,False,INHERITED,both values identical at B and T
+ko,admin.team_channel_settings.convertConfirmModal.toPublicConfirm,convert_channel.confirm,True,False,INHERITED,both values identical at B and T
+ko,channel_header.mute,channel_header.unmute,False,False,INHERITED,both values identical at B and T
+ko,channel_header.mute,sidebar_left.sidebar_channel_menu.unmuteChannel,False,False,INHERITED,both values identical at B and T
+ko,channel_header.unmute,channel_notifications.muteChannelTitle,True,False,INHERITED,both values identical at B and T
+ko,channel_header.unmute,sidebar_left.sidebar_channel_menu.muteChannel,True,False,INHERITED,both values identical at B and T
+ko,channel_notifications.muteChannelTitle,sidebar_left.sidebar_channel_menu.unmuteChannel,True,False,INHERITED,both values identical at B and T
+ko,mobile.set_status.offline.icon,mobile.set_status.online.icon,True,False,INHERITED,both values identical at B and T
+ko,modal.manual_status.auto_responder.message_offline,modal.manual_status.auto_responder.message_online,True,False,INHERITED,both values identical at B and T
+ko,modal.manual_status.button_offline,modal.manual_status.button_online,False,False,INHERITED,both values identical at B and T
+ko,modal.manual_status.message_offline,modal.manual_status.message_online,False,False,INHERITED,both values identical at B and T
+ko,sidebar_left.sidebar_channel_menu.muteChannel,sidebar_left.sidebar_channel_menu.unmuteChannel,True,False,INHERITED,both values identical at B and T
+lt,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,UNREADABLE,catalog not readable at B
+lt,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,True,True,UNREADABLE,catalog not readable at B
+nl,api.channel.delete_channel.archived,api.channel.restore_channel.unarchived,True,False,INHERITED,both values identical at B and T
+pl,admin.ldap.firstnameAttrDesc,admin.ldap.lastnameAttrDesc,True,False,INHERITED,both values identical at B and T
+pl,admin.team_channel_settings.convertConfirmModal.toPrivateTitle,admin.team_channel_settings.convertConfirmModal.toPublicTitle,True,False,INHERITED,both values identical at B and T
+pl,api.channel.delete_channel.archived,api.channel.restore_channel.unarchived,True,False,INHERITED,both values identical at B and T
+pl,delete_channel.confirm,unarchive_channel.confirm,True,False,INHERITED,both values identical at B and T
+pt-BR,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,True,True,INHERITED,both values identical at B and T
+pt-BR,admin.team_channel_settings.convertConfirmModal.toPrivateTitle,admin.team_channel_settings.convertConfirmModal.toPublicTitle,False,False,INHERITED,both values identical at B and T
+pt-BR,api.channel.delete_channel.archived,api.channel.restore_channel.unarchived,True,False,INHERITED,both values identical at B and T
+ro,admin.ldap.firstnameAttrTitle,admin.ldap.lastnameAttrTitle,False,False,INHERITED,both values identical at B and T
+ro,admin.ldap.firstnameAttrTitle,admin.saml.lastnameAttrTitle,False,False,INHERITED,both values identical at B and T
+ro,admin.ldap.lastnameAttrTitle,admin.saml.firstnameAttrTitle,False,False,INHERITED,both values identical at B and T
+ro,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,INHERITED,both values identical at B and T
+ro,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False,False,INHERITED,both values identical at B and T
+ro,admin.saml.firstnameAttrTitle,admin.saml.lastnameAttrTitle,True,False,INHERITED,both values identical at B and T
+sv,admin.channel_settings.channel_details.archiveChannel,admin.channel_settings.channel_details.unarchiveChannel,False,False,INHERITED,both values identical at B and T
+sv,admin.channel_settings.channel_details.archiveChannel,channel_header.unarchive,False,False,INHERITED,both values identical at B and T
+sv,admin.channel_settings.channel_details.unarchiveChannel,channel_header.delete,True,False,INHERITED,both values identical at B and T
+sv,admin.team_channel_settings.convertAndRemoveConfirmModal.toPrivateConfirm,admin.team_channel_settings.convertAndRemoveConfirmModal.toPublicConfirm,False,False,INHERITED,both values identical at B and T
+sv,channel_header.delete,channel_header.unarchive,False,False,INHERITED,both values identical at B and T
+sv,modal.manual_status.auto_responder.message_offline,modal.manual_status.auto_responder.message_online,True,False,INHERITED,both values identical at B and T
+tr,installed_integrations.hideSecret,installed_integrations.showSecret,True,False,INHERITED,both values identical at B and T
+vi,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,INHERITED,both values identical at B and T
+vi,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False,False,INHERITED,both values identical at B and T
+vi,sidebar_left.sidebar_category_menu.muteCategory,sidebar_left.sidebar_category_menu.unmuteCategory,True,False,INHERITED,both values identical at B and T
+zh-TW,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True,True,INHERITED,both values identical at B and T
+zh-TW,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,True,True,INHERITED,both values identical at B and T

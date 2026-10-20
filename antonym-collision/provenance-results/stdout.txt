@@ -1,0 +1,26 @@
+===== run-01-python: python -B -m unittest -v test_provenance
+
+===== run-02-python: python -B provenance.py --rows rows.csv --graded graded.csv --out-dir /out/provenance --wait 1200
+T be207f89725df343da628e859d1ef25acde02fbc
+B 751b8cb67b946baecb991b6ce5c04a5caecc39fe (2026-10-01T08:06:00Z), first parent of f5b9b0ed4742ffac6dba6bb0f20680fe92b93b87
+cs at 751b8cb6: unreadable (HTTP Error 404: Not Found)
+fi at 751b8cb6: unreadable (HTTP Error 404: Not Found)
+hr at 751b8cb6: unreadable (HTTP Error 404: Not Found)
+lt at 751b8cb6: unreadable (HTTP Error 404: Not Found)
+cs admin.plugin.disabling | admin.plugin.enabling | UNREADABLE: catalog not readable at B
+cs change_url.endWithLetter | change_url.startWithLetter | UNREADABLE: catalog not readable at B
+cs channel_header.delete | channel_header.unarchive | UNREADABLE: catalog not readable at B
+cs channel_header.unarchive | channel_settings.tab.archive | UNREADABLE: catalog not readable at B
+cs shortcuts.browser.font_decrease | shortcuts.browser.font_increase | UNREADABLE: catalog not readable at B
+fi admin.team_channel_settings.convertConfirmModal.toPrivateTitle | admin.team_channel_settings.convertConfirmModal.toPublicTitle | UNREADABLE: catalog not readable at B
+fi api.channel.delete_channel.archived | api.channel.restore_channel.unarchived | UNREADABLE: catalog not readable at B
+fi delete_channel.confirm | unarchive_channel.confirm | UNREADABLE: catalog not readable at B
+hr admin.permissions.group.convert_public_channel_to_private.name | admin.permissions.permission.convert_private_channel_to_public.name | UNREADABLE: catalog not readable at B
+hr admin.permissions.permission.convert_private_channel_to_public.name | admin.permissions.permission.convert_public_channel_to_private.name | UNREADABLE: catalog not readable at B
+lt admin.permissions.group.convert_public_channel_to_private.name | admin.permissions.permission.convert_private_channel_to_public.name | UNREADABLE: catalog not readable at B
+lt admin.permissions.permission.convert_private_channel_to_public.name | admin.permissions.permission.convert_public_channel_to_private.name | UNREADABLE: catalog not readable at B
+R0 FAILED: 67 rows, 40 graded, 12 unreadable or not reproduced, 0 graded unmatched, B dated 2026-10-01T08:06:00Z
+R1 NOT TESTED: 32 of 40 graded rows INHERITED
+R2 NOT TESTED: 9 of 12 Convert Channels rows INHERITED
+R3 NOT TESTED: 0 of 40 graded rows INTRODUCED
+R4 NOT TESTED: 55 of 67 warning rows INHERITED

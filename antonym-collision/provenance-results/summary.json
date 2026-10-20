@@ -1,0 +1,48 @@
+{
+ "t": "be207f89725df343da628e859d1ef25acde02fbc",
+ "b": "751b8cb67b946baecb991b6ce5c04a5caecc39fe",
+ "b_date": "2026-10-01T08:06:00Z",
+ "pipeline_merge": "f5b9b0ed4742ffac6dba6bb0f20680fe92b93b87",
+ "by_class_graded": {
+  "INHERITED": 32,
+  "INTRODUCED": 0,
+  "CHANGED": 0,
+  "UNREADABLE": 8,
+  "NOT_REPRODUCED": 0
+ },
+ "by_class_all": {
+  "INHERITED": 55,
+  "INTRODUCED": 0,
+  "CHANGED": 0,
+  "UNREADABLE": 12,
+  "NOT_REPRODUCED": 0
+ },
+ "unmatched_graded": [],
+ "predictions": [
+  {
+   "id": "R0",
+   "held": false,
+   "value": "67 rows, 40 graded, 12 unreadable or not reproduced, 0 graded unmatched, B dated 2026-10-01T08:06:00Z"
+  },
+  {
+   "id": "R1",
+   "held": null,
+   "value": "32 of 40 graded rows INHERITED"
+  },
+  {
+   "id": "R2",
+   "held": null,
+   "value": "9 of 12 Convert Channels rows INHERITED"
+  },
+  {
+   "id": "R3",
+   "held": null,
+   "value": "0 of 40 graded rows INTRODUCED"
+  },
+  {
+   "id": "R4",
+   "held": null,
+   "value": "55 of 67 warning rows INHERITED"
+  }
+ ]
+}
