@@ -1,0 +1,18 @@
+{
+ "name": "formatjs-eval-v1",
+ "kind": "compete",
+ "workdir": "formatjs",
+ "image": "python:3.12",
+ "setup": [],
+ "run": [
+  "python -B -m unittest -v test_eval_formatjs",
+  "python -B eval_formatjs.py --fetch-guard --guard-dir /out/guard",
+  "python -B eval_formatjs.py --guard-dir /out/guard --out-dir /out/formatjs"
+ ],
+ "network": true,
+ "data_urls": [],
+ "data_key": "formatjs-eval",
+ "cpu": 1,
+ "memory_gb": 2,
+ "timeout_minutes": 40
+}

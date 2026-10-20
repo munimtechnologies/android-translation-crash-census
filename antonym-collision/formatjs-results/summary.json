@@ -1,0 +1,197 @@
+{
+ "guard": "0.14.0",
+ "baseline": "0.13.0",
+ "consistent": true,
+ "mattermost_by_class": {
+  "PUBLIC": 29,
+  "ENABLE": 1,
+  "START": 1,
+  "ARCHIVE": 17,
+  "IN": 1,
+  "MUTE": 7,
+  "ONLINE": 5,
+  "FIRST": 5,
+  "SHOW": 1
+ },
+ "holdout2_expected": 36,
+ "projects": {
+  "mattermost": {
+   "repo": "mattermost/mattermost",
+   "ref": "master",
+   "commit": "be207f89725df343da628e859d1ef25acde02fbc",
+   "role": "test",
+   "new": {
+    "guard": "0.14.0",
+    "locale_files": 27,
+    "unparsed": [],
+    "reference": "en",
+    "descriptor": true,
+    "source_keys": 8657,
+    "pairs": 945,
+    "comparisons": 25515,
+    "consistent": true,
+    "identical": []
+   },
+   "baseline": {
+    "guard": "0.13.0",
+    "locale_files": 27,
+    "unparsed": [],
+    "reference": "en",
+    "descriptor": false,
+    "source_keys": 17314,
+    "pairs": 1065,
+    "comparisons": 0,
+    "consistent": true,
+    "identical": []
+   },
+   "code_literals": 97898,
+   "keys": {
+    "locale": "de",
+    "new": {
+     "guard": "0.14.0",
+     "missing": 18,
+     "extra": 0,
+     "source_keys": 8657
+    },
+    "baseline": {
+     "guard": "0.13.0",
+     "missing": 17299,
+     "extra": 8624,
+     "source_keys": 17314
+    }
+   }
+  },
+  "jellyfin-web": {
+   "repo": "jellyfin/jellyfin-web",
+   "ref": "ee8efb417e5377ba444509a68ed22af33e45950b",
+   "commit": "ee8efb417e5377ba444509a68ed22af33e45950b",
+   "role": "control",
+   "new": {
+    "guard": "0.14.0",
+    "locale_files": 105,
+    "unparsed": [],
+    "reference": "en-us",
+    "descriptor": false,
+    "source_keys": 1947,
+    "pairs": 30,
+    "comparisons": 1972,
+    "consistent": true,
+    "identical": [
+     [
+      "ar_SA",
+      "ch",
+      "ky",
+      "nds"
+     ]
+    ]
+   }
+  },
+  "uptime-kuma": {
+   "repo": "louislam/uptime-kuma",
+   "ref": "b092505f894d66669b67f46e1da72b51016eceab",
+   "commit": "b092505f894d66669b67f46e1da72b51016eceab",
+   "role": "control",
+   "new": {
+    "guard": "0.14.0",
+    "locale_files": 77,
+    "unparsed": [],
+    "reference": "en",
+    "descriptor": false,
+    "source_keys": 1639,
+    "pairs": 24,
+    "comparisons": 975,
+    "consistent": true,
+    "identical": [
+     [
+      "ab",
+      "lzh",
+      "ne",
+      "ug"
+     ]
+    ]
+   }
+  },
+  "rocket-chat": {
+   "repo": "RocketChat/Rocket.Chat",
+   "ref": "ad2047e71dbe67aebb21b37ed9e2dc21cf92721b",
+   "commit": "ad2047e71dbe67aebb21b37ed9e2dc21cf92721b",
+   "role": "control",
+   "new": {
+    "guard": "0.14.0",
+    "locale_files": 67,
+    "unparsed": [],
+    "reference": "en",
+    "descriptor": false,
+    "source_keys": 7670,
+    "pairs": 304,
+    "comparisons": 9902,
+    "consistent": true,
+    "identical": [
+     [
+      "se",
+      "tl"
+     ]
+    ]
+   }
+  },
+  "bitwarden-web": {
+   "repo": "bitwarden/clients",
+   "ref": "9e54ce7b43b14685eec31aaae49b1328f1378f8d",
+   "commit": "9e54ce7b43b14685eec31aaae49b1328f1378f8d",
+   "role": "control",
+   "new": {
+    "guard": "0.14.0",
+    "locale_files": 64,
+    "unparsed": [],
+    "reference": "en",
+    "descriptor": false,
+    "source_keys": 6705,
+    "pairs": 92,
+    "comparisons": 5838,
+    "consistent": true,
+    "identical": [
+     [
+      "km",
+      "ky",
+      "lb",
+      "my",
+      "or",
+      "te"
+     ]
+    ]
+   }
+  }
+ },
+ "predictions": [
+  {
+   "id": "P0",
+   "text": "Mattermost en.json is a descriptor file and >= 20 locale files parse",
+   "held": true,
+   "value": "descriptor True, 27 locale files"
+  },
+  {
+   "id": "P1",
+   "text": "Mattermost: >= 1000 comparisons with 0.14.0 and 0 with 0.13.0",
+   "held": true,
+   "value": "25515 and 0"
+  },
+  {
+   "id": "P2",
+   "text": "Mattermost en.json vs de.json: < 5% of source keys missing with 0.14.0",
+   "held": true,
+   "value": "{'new': (18, 8657), 'baseline': (17299, 17314)}"
+  },
+  {
+   "id": "P3",
+   "text": "Mattermost: >= 1 warning and <= 5.0 per 1,000 comparisons",
+   "held": true,
+   "value": "67 warnings, 2.63 per 1,000"
+  },
+  {
+   "id": "P5",
+   "text": "controls: exactly the 36 holdout2 warnings outside UPLOAD",
+   "held": true,
+   "value": "36 rows; downloaded True; only in new: []; only in holdout2: []"
+  }
+ ]
+}

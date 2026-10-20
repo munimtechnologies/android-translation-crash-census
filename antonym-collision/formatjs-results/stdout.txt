@@ -1,0 +1,129 @@
+===== run-01-python: python -B -m unittest -v test_eval_formatjs
+
+===== run-02-python: python -B eval_formatjs.py --fetch-guard --guard-dir /out/guard
+FORMATJS-PREREG.md: 7081 bytes, sha256 f254b56a976cb360
+l10n_guard.py 0.14.0: 113752 bytes, sha256 7d12df8c469090ae
+l10n_guard.py 0.13.0: 112866 bytes, sha256 7f33af4abe3d599d
+
+===== run-03-python: python -B eval_formatjs.py --guard-dir /out/guard --out-dir /out/formatjs
+l10n-guard 0.14.0 (baseline 0.13.0)
+holdout2 warnings outside UPLOAD: 36
+mattermost @be207f89 with 0.14.0: reference en, descriptor True, 8657 source keys, 27 locale files, 0 unparsed, 945 pairs, 25515 comparisons, 67 warnings, 2.63 per 1,000, identical files none, consistent True
+mattermost @be207f89 with 0.13.0: reference en, descriptor False, 17314 source keys, 27 locale files, 0 unparsed, 1065 pairs, 0 comparisons, 0 warnings, 0.00 per 1,000, identical files none, consistent True
+  mattermost en.json vs de.json with 0.14.0: 8657 source keys, 18 missing-key, 0 extra-key
+  mattermost en.json vs de.json with 0.13.0: 17314 source keys, 17299 missing-key, 8624 extra-key
+  mattermost bg [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'Преобразуване на канали' used True/True
+  mattermost bg [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Преобразуване на канали' used True/True
+  mattermost cs [ENABLE]: 'admin.plugin.disabling' / 'admin.plugin.enabling' = 'Povoluji...' used True/True
+  mattermost cs [START]: 'change_url.endWithLetter' / 'change_url.startWithLetter' = 'URL musí končit písmenem nebo číslem.' used True/True
+  mattermost cs [ARCHIVE]: 'channel_header.delete' / 'channel_header.unarchive' = 'Archivovat kanál' used True/True
+  mattermost cs [ARCHIVE]: 'channel_header.unarchive' / 'channel_settings.tab.archive' = 'Archivovat kanál' used True/True
+  mattermost cs [IN]: 'shortcuts.browser.font_decrease' / 'shortcuts.browser.font_increase' = 'Oddálit:\tCtrl|-' used True/True
+  mattermost es [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'Convertir canales' used True/True
+  mattermost es [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Convertir canales' used True/True
+  mattermost fa [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'تبدیل کانال ها' used True/True
+  mattermost fa [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'تبدیل کانال ها' used True/True
+  mattermost fi [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPrivateTitle' / 'admin.team_channel_settings.convertConfirmModal.toPublicTitle' = 'Muutetaanko {displayName} yksityiskanavaksi?' used True/True
+  mattermost fi [ARCHIVE]: 'api.channel.delete_channel.archived' / 'api.channel.restore_channel.unarchived' = '{username} arkistoi kanavan.' used True/True
+  mattermost fi [ARCHIVE]: 'delete_channel.confirm' / 'unarchive_channel.confirm' = 'Vahvista kanavan ARKISTOINTI' used True/True
+  mattermost hr [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'Pretvori kanale' used True/True
+  mattermost hr [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Pretvori kanale' used True/True
+  mattermost it [ARCHIVE]: 'admin.channel_settings.channel_details.archiveChannel' / 'admin.channel_settings.channel_details.unarchiveChannel' = 'Archivia Canale' used True/True
+  mattermost it [ARCHIVE]: 'admin.channel_settings.channel_details.archiveChannel' / 'channel_header.unarchive' = 'Archivia Canale' used True/True
+  mattermost it [ARCHIVE]: 'admin.channel_settings.channel_details.unarchiveChannel' / 'channel_header.delete' = 'Archivia Canale' used True/True
+  mattermost it [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPrivateConfirm' / 'admin.team_channel_settings.convertConfirmModal.toPublicConfirm' = 'Sì, converti a canale privato' used True/True
+  mattermost it [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPublicConfirm' / 'convert_channel.confirm' = 'Sì, converti a canale privato' used True/True
+  mattermost it [ARCHIVE]: 'api.channel.delete_channel.archived' / 'api.channel.restore_channel.unarchived' = '{username} ha archiviato il canale.' used True/True
+  mattermost it [ARCHIVE]: 'channel_header.delete' / 'channel_header.unarchive' = 'Archivia Canale' used True/True
+  mattermost ko [PUBLIC]: 'admin.permissions.group.convert_private_channel_to_public.name' / 'admin.permissions.group.convert_public_channel_to_private.name' = '채널 변환' used True/True
+  mattermost ko [PUBLIC]: 'admin.permissions.group.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = '채널 변환' used True/True
+  mattermost ko [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = '채널 변환' used True/True
+  mattermost ko [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = '채널 변환' used True/True
+  mattermost ko [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPrivateConfirm' / 'admin.team_channel_settings.convertConfirmModal.toPublicConfirm' = '네, 비공개 채널로 변환하겠습니다' used True/True
+  mattermost ko [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPublicConfirm' / 'convert_channel.confirm' = '네, 비공개 채널로 변환하겠습니다' used True/True
+  mattermost ko [MUTE]: 'channel_header.mute' / 'channel_header.unmute' = '채널 알림 끄기' used True/True
+  mattermost ko [MUTE]: 'channel_header.mute' / 'sidebar_left.sidebar_channel_menu.unmuteChannel' = '채널 알림 끄기' used True/True
+  mattermost ko [MUTE]: 'channel_header.unmute' / 'channel_notifications.muteChannelTitle' = '채널 알림 끄기' used True/True
+  mattermost ko [MUTE]: 'channel_header.unmute' / 'sidebar_left.sidebar_channel_menu.muteChannel' = '채널 알림 끄기' used True/True
+  mattermost ko [MUTE]: 'channel_notifications.muteChannelTitle' / 'sidebar_left.sidebar_channel_menu.unmuteChannel' = '채널 알림 끄기' used True/True
+  mattermost ko [ONLINE]: 'mobile.set_status.offline.icon' / 'mobile.set_status.online.icon' = '오프라인 아이콘' used True/True
+  mattermost ko [ONLINE]: 'modal.manual_status.auto_responder.message_offline' / 'modal.manual_status.auto_responder.message_online' = '상태를 "방해 금지"로 전환하고 자동 회신을 비활성화 하시겠습니까?' used True/True
+  mattermost ko [ONLINE]: 'modal.manual_status.button_offline' / 'modal.manual_status.button_online' = '예, 상태를 "자리 비움"으로 설정' used True/True
+  mattermost ko [ONLINE]: 'modal.manual_status.message_offline' / 'modal.manual_status.message_online' = '상태를 "온라인"으로 전환 하시겠습니까?' used True/True
+  mattermost ko [MUTE]: 'sidebar_left.sidebar_channel_menu.muteChannel' / 'sidebar_left.sidebar_channel_menu.unmuteChannel' = '채널 알림 끄기' used True/True
+  mattermost lt [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'Konvertuoti kanalus' used True/True
+  mattermost lt [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Konvertuoti kanalus' used True/True
+  mattermost nl [ARCHIVE]: 'api.channel.delete_channel.archived' / 'api.channel.restore_channel.unarchived' = '{username} archiveerde het kanaal.' used True/True
+  mattermost pl [FIRST]: 'admin.ldap.firstnameAttrDesc' / 'admin.ldap.lastnameAttrDesc' = '(Opcjonalnie) Atrybut w serwerze AD/LDAP używany do wypełnienia Nazwy użytkownika w Mattermost.' used True/True
+  mattermost pl [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPrivateTitle' / 'admin.team_channel_settings.convertConfirmModal.toPublicTitle' = 'Wykonać konwersję kanału {displayName} do kanału prywatnego?' used True/True
+  mattermost pl [ARCHIVE]: 'api.channel.delete_channel.archived' / 'api.channel.restore_channel.unarchived' = '{username} zarchiwizował kanał.' used True/True
+  mattermost pl [ARCHIVE]: 'delete_channel.confirm' / 'unarchive_channel.confirm' = 'Potwierdź ARCHIWIZACJĘ kanału' used True/True
+  mattermost pt-BR [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Converter Canais' used True/True
+  mattermost pt-BR [PUBLIC]: 'admin.team_channel_settings.convertConfirmModal.toPrivateTitle' / 'admin.team_channel_settings.convertConfirmModal.toPublicTitle' = 'Converter {displayName} para um canal privado?' used True/True
+  mattermost pt-BR [ARCHIVE]: 'api.channel.delete_channel.archived' / 'api.channel.restore_channel.unarchived' = '{username} arquivou o canal.' used True/True
+  mattermost ro [FIRST]: 'admin.ldap.firstnameAttrTitle' / 'admin.ldap.lastnameAttrTitle' = 'Nume:' used True/True
+  mattermost ro [FIRST]: 'admin.ldap.firstnameAttrTitle' / 'admin.saml.lastnameAttrTitle' = 'Nume:' used True/True
+  mattermost ro [FIRST]: 'admin.ldap.lastnameAttrTitle' / 'admin.saml.firstnameAttrTitle' = 'Nume:' used True/True
+  mattermost ro [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'Conversia canalelor' used True/True
+  mattermost ro [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Conversia canalelor' used True/True
+  mattermost ro [FIRST]: 'admin.saml.firstnameAttrTitle' / 'admin.saml.lastnameAttrTitle' = 'Nume:' used True/True
+  mattermost sv [ARCHIVE]: 'admin.channel_settings.channel_details.archiveChannel' / 'admin.channel_settings.channel_details.unarchiveChannel' = 'Arkivera kanaler' used True/True
+  mattermost sv [ARCHIVE]: 'admin.channel_settings.channel_details.archiveChannel' / 'channel_header.unarchive' = 'Arkivera kanaler' used True/True
+  mattermost sv [ARCHIVE]: 'admin.channel_settings.channel_details.unarchiveChannel' / 'channel_header.delete' = 'Arkivera kanaler' used True/True
+  mattermost sv [PUBLIC]: 'admin.team_channel_settings.convertAndRemoveConfirmModal.toPrivateConfirm' / 'admin.team_channel_settings.convertAndRemoveConfirmModal.toPublicConfirm' = 'Ja, konvertera kanalen till privat och ta bort {amount, number} {amount, plural, one {user} other {users}}' used True/True
+  mattermost sv [ARCHIVE]: 'channel_header.delete' / 'channel_header.unarchive' = 'Arkivera kanaler' used True/True
+  mattermost sv [ONLINE]: 'modal.manual_status.auto_responder.message_offline' / 'modal.manual_status.auto_responder.message_online' = 'Vill du ändra din status till "Offline" och inaktivera automatiska svar?' used True/True
+  mattermost tr [SHOW]: 'installed_integrations.hideSecret' / 'installed_integrations.showSecret' = 'Parolayı gizle' used True/True
+  mattermost vi [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = 'Chuyển đổi kênh' used True/True
+  mattermost vi [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = 'Chuyển đổi kênh' used True/True
+  mattermost vi [MUTE]: 'sidebar_left.sidebar_category_menu.muteCategory' / 'sidebar_left.sidebar_category_menu.unmuteCategory' = 'Loại bỏ tiếng' used True/True
+  mattermost zh-TW [PUBLIC]: 'admin.permissions.group.convert_public_channel_to_private.name' / 'admin.permissions.permission.convert_private_channel_to_public.name' = '轉換頻道' used True/True
+  mattermost zh-TW [PUBLIC]: 'admin.permissions.permission.convert_private_channel_to_public.name' / 'admin.permissions.permission.convert_public_channel_to_private.name' = '轉換頻道' used True/True
+jellyfin-web @ee8efb41 with 0.14.0: reference en-us, descriptor False, 1947 source keys, 105 locale files, 0 unparsed, 30 pairs, 1972 comparisons, 2 warnings, 1.01 per 1,000, identical files [['ar_SA', 'ch', 'ky', 'nds']], consistent True
+  jellyfin-web eo [MAX]: 'LabelSyncPlaySettingsMaxDelaySpeedToSync' / 'LabelSyncPlaySettingsMinDelaySpeedToSync' = 'Minimuma prokrasto de SpeedToSync' used -/-
+  jellyfin-web ro [BEFORE]: 'LabelAirsAfterSeason' / 'LabelAirsBeforeSeason' = 'Emis după sezonul' used -/-
+uptime-kuma @b092505f with 0.14.0: reference en, descriptor False, 1639 source keys, 77 locale files, 0 unparsed, 24 pairs, 975 comparisons, 3 warnings, 3.08 per 1,000, identical files [['ab', 'lzh', 'ne', 'ug']], consistent True
+  uptime-kuma bar [ENABLE]: 'confirmDisableTwoFAMsg' / 'confirmEnableTwoFAMsg' = "Bist da sicher, dass d'2FA wirklich ausschoidn wuist?" used -/-
+  uptime-kuma sr [IMPORT]: 'Export Backup' / 'Import Backup' = 'Извези резервну копију' used -/-
+  uptime-kuma ur [IMPORT]: 'Export Backup' / 'Import Backup' = 'بیک اپ درآمد کریں' used -/-
+rocket-chat @ad2047e7 with 0.14.0: reference en, descriptor False, 7670 source keys, 67 locale files, 0 unparsed, 304 pairs, 9902 comparisons, 27 warnings, 2.73 per 1,000, identical files [['se', 'tl']], consistent True
+  rocket-chat af [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'Gebruiker is geblokkeer' used -/-
+  rocket-chat az [IN]: 'Custom_Script_Logged_In' / 'Custom_Script_Logged_Out' = 'Daxil olanlar üçün xüsusi skript' used -/-
+  rocket-chat az [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'Otaq arxivləşdirildi' used -/-
+  rocket-chat bg [MUTE]: 'Mute_user' / 'Unmute_user' = 'Заглушаване на потребителя' used -/-
+  rocket-chat bg [MUTE]: 'Unmute_user' / 'mute-user' = 'Заглушаване на потребителя' used -/-
+  rocket-chat cs [ARCHIVE]: 'Message_HideType_room_archived' / 'Message_HideType_room_unarchived' = 'Skrýt zprávy „Místnost archivována“' used -/-
+  rocket-chat da [ARCHIVE]: 'Room_has_been_archived' / 'Room_has_been_unarchived' = 'Værelset er blevet arkiveret' used -/-
+  rocket-chat da [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'Brugeren er blokeret' used -/-
+  rocket-chat el [ARCHIVE]: 'This_room_has_been_archived_by__username_' / 'This_room_has_been_unarchived_by__username_' = 'Αυτό το δωμάτιο έχει αρχειοθετηθεί από το χρήστη {{username}}' used -/-
+  rocket-chat id [ARCHIVE]: 'Channel_Archived' / 'Channel_Unarchived' = 'Channel dengan nama `#{{channelName}}` telah diarsipkan berhasil' used -/-
+  rocket-chat id [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'kamar diarsipkan' used -/-
+  rocket-chat id [ARCHIVE]: 'Room_has_been_archived' / 'Room_has_been_unarchived' = 'Kamar telah diarsipkan' used -/-
+  rocket-chat id [ARCHIVE]: 'This_room_has_been_archived_by__username_' / 'This_room_has_been_unarchived_by__username_' = 'Ruangan ini telah diarsipkan oleh {{username}}' used -/-
+  rocket-chat ka-GE [ADD]: 'Add_custom_oauth' / 'Remove_custom_oauth' = 'დაამატეთ პირადი oauth' used -/-
+  rocket-chat km [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'បន្ទប់ទុក\u200b\u200bក្នុងប័ណ្ណសារ' used -/-
+  rocket-chat km [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'អ្នកប្រើត្រូវបានទប់ស្កាត់' used -/-
+  rocket-chat ku [MAX]: 'Max_length_is' / 'Min_length_is' = 'Mezinahiya {{limit}} e' used -/-
+  rocket-chat ku [ADD]: 'add-user' / 'remove-user' = 'Bikarhêner hilbijêre' used -/-
+  rocket-chat mn [ONLINE]: 'Stats_Offline_Users' / 'Stats_Online_Users' = 'Онлайн хэрэглэгчид' used -/-
+  rocket-chat ms-MY [BLOCK]: 'User_is_blocked' / 'User_is_unblocked' = 'Pengguna disekat' used -/-
+  rocket-chat nn [ARCHIVE]: 'Room_has_been_archived' / 'Room_has_been_unarchived' = 'Rom har blitt arkivert' used -/-
+  rocket-chat nn [MUTE]: 'Unmute_user' / 'mute-user' = 'Slå av brukeren' used -/-
+  rocket-chat th-TH [ARCHIVE]: 'Integrations_Outgoing_Type_RoomArchived' / 'Room_unarchived' = 'ห้องเก็บถาวร' used -/-
+  rocket-chat th-TH [ARCHIVE]: 'Room_archived' / 'Room_unarchived' = 'ห้องเก็บถาวร' used -/-
+  rocket-chat uk [ARCHIVE]: 'Yes_archive_it' / 'Yes_unarchive_it' = 'Так, архівуйте це!' used -/-
+  rocket-chat vi-VN [IN]: 'Custom_Script_Logged_In' / 'Custom_Script_Logged_Out' = 'Tập lệnh Tuỳ chỉnh cho Người dùng đăng nhập' used -/-
+  rocket-chat zh-HK [ARCHIVE]: 'This_room_has_been_archived_by__username_' / 'This_room_has_been_unarchived_by__username_' = '这个房间已被{{username}}存档' used -/-
+bitwarden-web @9e54ce7b with 0.14.0: reference en, descriptor False, 6705 source keys, 64 locale files, 0 unparsed, 92 pairs, 5838 comparisons, 4 warnings, 0.69 per 1,000, identical files [['km', 'ky', 'lb', 'my', 'or', 'te']], consistent True
+  bitwarden-web ar [IMPORT]: 'confirmVaultExport.message' / 'confirmVaultImport.message' = 'تأكيد تصدير الخزانة' used -/-
+  bitwarden-web ar [IMPORT]: 'dataExportSuccess.message' / 'importSuccess.message' = 'تم استيراد البيانات بنجاح' used -/-
+  bitwarden-web ja [IMPORT]: 'confirmVaultExport.message' / 'confirmVaultImport.message' = '保管庫のエクスポートの確認' used -/-
+  bitwarden-web pt_PT [ENABLE]: 'inviteLinkEventConfirmDisabled.message' / 'inviteLinkEventConfirmEnabled.message' = 'A exigência de aprovação do administrador para o link de convite está desativada' used -/-
+P0 HELD: Mattermost en.json is a descriptor file and >= 20 locale files parse (descriptor True, 27 locale files)
+P1 HELD: Mattermost: >= 1000 comparisons with 0.14.0 and 0 with 0.13.0 (25515 and 0)
+P2 HELD: Mattermost en.json vs de.json: < 5% of source keys missing with 0.14.0 ({'new': (18, 8657), 'baseline': (17299, 17314)})
+P3 HELD: Mattermost: >= 1 warning and <= 5.0 per 1,000 comparisons (67 warnings, 2.63 per 1,000)
+P5 HELD: controls: exactly the 36 holdout2 warnings outside UPLOAD (36 rows; downloaded True; only in new: []; only in holdout2: [])
+Mattermost warnings by class: {"ARCHIVE": 17, "ENABLE": 1, "FIRST": 5, "IN": 1, "MUTE": 7, "ONLINE": 5, "PUBLIC": 29, "SHOW": 1, "START": 1}
+check_catalog and _antonym_collisions agree on every file: True
+P4 is graded by hand from sample.csv
