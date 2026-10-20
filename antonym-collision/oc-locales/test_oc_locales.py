@@ -131,7 +131,8 @@ class StatsTest(unittest.TestCase):
         self.assertTrue(0.40 < low < 0.41)
         low, high = o.wilson(5, 1000)
         self.assertTrue(0.0 < low < 0.005 < high < 0.02)
-        self.assertEqual(o.wilson(100, 100)[1], 1.0)
+        # 1.0 within float rounding (the container's libm gives 0.9999999999999999)
+        self.assertAlmostEqual(o.wilson(100, 100)[1], 1.0, places=9)
 
     def test_overlap(self):
         self.assertTrue(o.intervals_overlap((0.0, 0.1), (0.05, 0.2)))

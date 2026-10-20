@@ -1,5 +1,5 @@
 {
- "name": "oc-locales-v1",
+ "name": "oc-locales-v2",
  "kind": "compete",
  "workdir": "oc-locales",
  "image": "python:3.12",
