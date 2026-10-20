@@ -1,0 +1,4 @@
+locale,group,key1,key2,classes,kind1,kind2,verdict,names,note
+es,agent,collective.archive.title,collective.unarchive.button,ARCHIVE,named,named,real,one side,"Spanish 'Are you sure you want to archive ...' on the Unarchive button; already in lang/es.json at 915c869 (2026-08-25), before the Cursor batch #12371 and the agent workflows #12393, so not made by the agents; first graded in holdout3"
+zh,crowdin,archive.modal.header,unarchive.modal.header,ARCHIVE,named,named,real,one side,"Chinese 'Archive {name}' as the Unarchive dialog header; first graded in holdout3"
+zh,crowdin,collective.archive.title,collective.unarchive.button,ARCHIVE,named,named,real,one side,"Chinese 'Archive ...' on the Unarchive button; first graded in holdout3"

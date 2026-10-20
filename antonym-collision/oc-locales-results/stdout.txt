@@ -1,0 +1,37 @@
+===== run-01-python: python -B -m unittest -v test_oc_locales
+
+===== run-02-python: python -B oc_locales.py --fetch-guard --guard-dir /out/guard
+OC-LOCALES-PREREG.md: 7433 bytes, sha256 c7a98d60c1da9a21
+l10n_guard.py 0.14.0: 113752 bytes, sha256 7d12df8c469090ae
+
+===== run-03-python: python -B oc_locales.py --guard-dir /out/guard --out-dir /out/oc-locales
+l10n-guard 0.14.0
+opencollective/opencollective-frontend @679f61f0: 19 locale files, agent workflows for ['de', 'es', 'fr', 'pt-BR']
+5025 source keys, 58 antonym pairs
+ca (crowdin): 5025 keys, 703 translated, 58 comparisons (4 both translated), 0 warnings, 0.00 per 1,000
+cs (crowdin): 5025 keys, 1022 translated, 58 comparisons (10 both translated), 0 warnings, 0.00 per 1,000
+de (agent): 5025 keys, 4923 translated, 58 comparisons (55 both translated), 0 warnings, 0.00 per 1,000
+es (agent): 5025 keys, 4951 translated, 58 comparisons (57 both translated), 1 warnings, 17.24 per 1,000
+  es [ARCHIVE] named/named: 'collective.archive.title' / 'collective.unarchive.button' = '¿Estás seguro que quieres archivar {type, select, EVENT {este Evento} PROJECT {este Proyecto} FUND {este Fondo} COLLECTIVE {este Colectivo} ORGANIZATION {esta Organización} other {esta Cuenta}}'
+fr (agent): 5025 keys, 4908 translated, 58 comparisons (57 both translated), 0 warnings, 0.00 per 1,000
+he (crowdin): 5025 keys, 1835 translated, 58 comparisons (19 both translated), 0 warnings, 0.00 per 1,000
+it (crowdin): 5025 keys, 1292 translated, 58 comparisons (17 both translated), 0 warnings, 0.00 per 1,000
+ja (crowdin): 5025 keys, 1083 translated, 58 comparisons (11 both translated), 0 warnings, 0.00 per 1,000
+ko (crowdin): 5025 keys, 739 translated, 58 comparisons (10 both translated), 0 warnings, 0.00 per 1,000
+nl (crowdin): 5025 keys, 1524 translated, 58 comparisons (30 both translated), 0 warnings, 0.00 per 1,000
+pl (crowdin): 5025 keys, 2660 translated, 58 comparisons (29 both translated), 0 warnings, 0.00 per 1,000
+pt (crowdin): 5025 keys, 737 translated, 58 comparisons (8 both translated), 0 warnings, 0.00 per 1,000
+pt-BR (agent): 5025 keys, 4957 translated, 58 comparisons (58 both translated), 0 warnings, 0.00 per 1,000
+ru (crowdin): 5025 keys, 1460 translated, 58 comparisons (14 both translated), 0 warnings, 0.00 per 1,000
+sk-SK (crowdin): 5025 keys, 2154 translated, 58 comparisons (19 both translated), 0 warnings, 0.00 per 1,000
+sv-SE (crowdin): 5025 keys, 2331 translated, 58 comparisons (32 both translated), 0 warnings, 0.00 per 1,000
+uk (crowdin): 5025 keys, 1887 translated, 58 comparisons (21 both translated), 0 warnings, 0.00 per 1,000
+zh (crowdin): 5025 keys, 2420 translated, 58 comparisons (26 both translated), 2 warnings, 34.48 per 1,000
+  zh [ARCHIVE] named/named: 'archive.modal.header' / 'unarchive.modal.header' = '归档 {name}'
+  zh [ARCHIVE] named/named: 'collective.archive.title' / 'collective.unarchive.button' = '归档{type, select, EVENT {此活动} PROJECT {此项目} FUND {此资金} COLLECTIVE {此集体} ORGANIZATION {此组织} other {此账号}}'
+Q0 HELD: en.json parses, >= 18 locale files parse, agent group is exactly de, es, fr, pt-BR (18 locale files parsed, agents ['de', 'es', 'fr', 'pt-BR'])
+Q1 FAILED: agent locales carry >= 50% of comparisons (agent locales 232 of 1044 comparisons (22.2%))
+Q2 NOT TESTED: the two groups' 95% Wilson intervals overlap (>= 500 comparisons each, >= 5 warnings) (agent 1/232, crowdin 2/812 warnings/comparisons (too few to test))
+groups: {"agent": {"comparisons": 232, "locales": 4, "per_1000": 4.31, "per_1000_interval": [0.761, 24.008], "warnings": 1}, "crowdin": {"comparisons": 812, "locales": 14, "per_1000": 2.463, "per_1000_interval": [0.676, 8.936], "warnings": 2}}
+warnings by key kind: {"named+named": 3}
+Q3 and Q4 are graded by hand from warnings.csv (every row, none sampled)

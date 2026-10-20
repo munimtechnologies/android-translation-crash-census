@@ -1,0 +1,242 @@
+{
+ "guard": "0.14.0",
+ "repo": "opencollective/opencollective-frontend",
+ "ref": "main",
+ "commit": "679f61f0df6bec345291b1bc08ba5d6b6ac3be40",
+ "agents": [
+  "de",
+  "es",
+  "fr",
+  "pt-BR"
+ ],
+ "source_keys": 5025,
+ "pairs": 58,
+ "unparsed": [],
+ "groups": {
+  "agent": {
+   "locales": 4,
+   "comparisons": 232,
+   "warnings": 1,
+   "per_1000": 4.31,
+   "per_1000_interval": [
+    0.761,
+    24.008
+   ]
+  },
+  "crowdin": {
+   "locales": 14,
+   "comparisons": 812,
+   "warnings": 2,
+   "per_1000": 2.463,
+   "per_1000_interval": [
+    0.676,
+    8.936
+   ]
+  }
+ },
+ "by_kind": {
+  "named+named": 3
+ },
+ "locales": [
+  {
+   "locale": "ca",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 703,
+   "pairs_both_translated": 4,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "cs",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1022,
+   "pairs_both_translated": 10,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "de",
+   "group": "agent",
+   "keys": 5025,
+   "translated": 4923,
+   "pairs_both_translated": 55,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "es",
+   "group": "agent",
+   "keys": 5025,
+   "translated": 4951,
+   "pairs_both_translated": 57,
+   "comparisons": 58,
+   "warnings": 1,
+   "per_1000": 17.241
+  },
+  {
+   "locale": "fr",
+   "group": "agent",
+   "keys": 5025,
+   "translated": 4908,
+   "pairs_both_translated": 57,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "he",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1835,
+   "pairs_both_translated": 19,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "it",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1292,
+   "pairs_both_translated": 17,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "ja",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1083,
+   "pairs_both_translated": 11,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "ko",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 739,
+   "pairs_both_translated": 10,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "nl",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1524,
+   "pairs_both_translated": 30,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "pl",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 2660,
+   "pairs_both_translated": 29,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "pt",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 737,
+   "pairs_both_translated": 8,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "pt-BR",
+   "group": "agent",
+   "keys": 5025,
+   "translated": 4957,
+   "pairs_both_translated": 58,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "ru",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1460,
+   "pairs_both_translated": 14,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "sk-SK",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 2154,
+   "pairs_both_translated": 19,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "sv-SE",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 2331,
+   "pairs_both_translated": 32,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "uk",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 1887,
+   "pairs_both_translated": 21,
+   "comparisons": 58,
+   "warnings": 0,
+   "per_1000": 0.0
+  },
+  {
+   "locale": "zh",
+   "group": "crowdin",
+   "keys": 5025,
+   "translated": 2420,
+   "pairs_both_translated": 26,
+   "comparisons": 58,
+   "warnings": 2,
+   "per_1000": 34.483
+  }
+ ],
+ "predictions": [
+  {
+   "id": "Q0",
+   "text": "en.json parses, >= 18 locale files parse, agent group is exactly de, es, fr, pt-BR",
+   "held": true,
+   "value": "18 locale files parsed, agents ['de', 'es', 'fr', 'pt-BR']"
+  },
+  {
+   "id": "Q1",
+   "text": "agent locales carry >= 50% of comparisons",
+   "held": false,
+   "value": "agent locales 232 of 1044 comparisons (22.2%)"
+  },
+  {
+   "id": "Q2",
+   "text": "the two groups' 95% Wilson intervals overlap (>= 500 comparisons each, >= 5 warnings)",
+   "held": null,
+   "value": "agent 1/232, crowdin 2/812 warnings/comparisons (too few to test)"
+  }
+ ]
+}
