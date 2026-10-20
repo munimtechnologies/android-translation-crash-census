@@ -1,0 +1,136 @@
+{
+ "guard": "0.14.0",
+ "consistent": true,
+ "by_class": {
+  "MUTE": 9,
+  "SHOW": 1,
+  "NEXT": 2,
+  "ARCHIVE": 3
+ },
+ "pooled": {
+  "locale_files": 268,
+  "comparisons": 12037,
+  "warnings": 15,
+  "per_1000": 1.246,
+  "projects_warned": [
+   "bigbluebutton",
+   "mastodon",
+   "open-collective"
+  ]
+ },
+ "projects": {
+  "mastodon": {
+   "repo": "mastodon/mastodon",
+   "ref": "main",
+   "commit": "ff9c250ca6fa7acdf73330f8824c4f9b35d89582",
+   "code_literals": 9511,
+   "scan": {
+    "guard": "0.14.0",
+    "locale_files": 104,
+    "unparsed": [],
+    "reference": "en",
+    "source_keys": 1597,
+    "pairs": 96,
+    "comparisons": 5734,
+    "consistent": true,
+    "identical": []
+   }
+  },
+  "bigbluebutton": {
+   "repo": "bigbluebutton/bigbluebutton",
+   "ref": "develop",
+   "commit": "302f514ff370b8dcf8f1525a713ea939c0414ae7",
+   "code_literals": 17627,
+   "scan": {
+    "guard": "0.14.0",
+    "locale_files": 60,
+    "unparsed": [
+     "ca"
+    ],
+    "reference": "en",
+    "source_keys": 1607,
+    "pairs": 109,
+    "comparisons": 4248,
+    "consistent": true,
+    "identical": []
+   }
+  },
+  "strapi-admin": {
+   "repo": "strapi/strapi",
+   "ref": "develop",
+   "commit": "61d63100af16fe68d073701f999a3dff33a6e8bd",
+   "code_literals": 53922,
+   "scan": {
+    "guard": "0.14.0",
+    "locale_files": 34,
+    "unparsed": [],
+    "reference": "en",
+    "source_keys": 1005,
+    "pairs": 20,
+    "comparisons": 438,
+    "consistent": true,
+    "identical": []
+   }
+  },
+  "umami": {
+   "repo": "umami-software/umami",
+   "ref": "master",
+   "commit": "e92fdab99508a8ed05249f6c5f07e140deab79e1",
+   "code_literals": 8897,
+   "scan": {
+    "guard": "0.14.0",
+    "locale_files": 52,
+    "unparsed": [],
+    "reference": "en-US",
+    "source_keys": 520,
+    "pairs": 12,
+    "comparisons": 573,
+    "consistent": true,
+    "identical": []
+   }
+  },
+  "open-collective": {
+   "repo": "opencollective/opencollective-frontend",
+   "ref": "main",
+   "commit": "679f61f0df6bec345291b1bc08ba5d6b6ac3be40",
+   "code_literals": 28269,
+   "scan": {
+    "guard": "0.14.0",
+    "locale_files": 18,
+    "unparsed": [],
+    "reference": "en",
+    "source_keys": 5025,
+    "pairs": 58,
+    "comparisons": 1044,
+    "consistent": true,
+    "identical": []
+   }
+  }
+ },
+ "predictions": [
+  {
+   "id": "P0",
+   "text": "every reference parses, >= 10 locale files per project, >= 120 in all",
+   "held": true,
+   "value": "{'mastodon': 104, 'bigbluebutton': 60, 'strapi-admin': 34, 'umami': 52, 'open-collective': 18}; 268 locale files"
+  },
+  {
+   "id": "P1",
+   "text": ">= 10000 comparisons pooled",
+   "held": true,
+   "value": "12037 comparisons"
+  },
+  {
+   "id": "P2",
+   "text": "pooled rate within 0.5-5.0 per 1,000 and >= 3 projects warned",
+   "held": true,
+   "value": "15 warnings, 1.25 per 1,000, warned: ['bigbluebutton', 'mastodon', 'open-collective']"
+  },
+  {
+   "id": "P5",
+   "text": ">= 80% of warned rows have both keys in source",
+   "held": true,
+   "value": "15/15 rows with both keys in source, all projects"
+  }
+ ]
+}

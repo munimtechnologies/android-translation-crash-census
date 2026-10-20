@@ -1,0 +1,36 @@
+===== run-01-python: python -B -m unittest -v test_eval_holdout3
+
+===== run-02-python: python -B eval_holdout3.py --fetch-guard --guard-dir /out/guard
+HOLDOUT3-PREREG.md: 6949 bytes, sha256 8390d71389ea4562
+l10n_guard.py 0.14.0: 113752 bytes, sha256 7d12df8c469090ae
+
+===== run-03-python: python -B eval_holdout3.py --guard-dir /out/guard --out-dir /out/holdout3
+l10n-guard 0.14.0
+mastodon @ff9c250c with 0.14.0: reference en, 1597 source keys, 104 locale files, 0 unparsed, 96 pairs, 5734 comparisons, 8 warnings, 1.40 per 1,000, identical files none, consistent True
+  mastodon el [MUTE]: 'account.mute_notifications_short' / 'account.unmute_notifications_short' = 'Σίγαση ειδοποιήσεων' used True/True
+  mastodon eu [SHOW]: 'account.menu.hide_reblogs' / 'account.menu.show_reblogs' = 'Ezkutatu bultzadak denbora-lerroan' used True/True
+  mastodon it [MUTE]: 'video.mute' / 'video.unmute' = 'Muta' used True/True
+  mastodon ku [MUTE]: 'account.mute_notifications_short' / 'account.unmute_notifications_short' = 'Agahdariyan bêdeng bike' used True/True
+  mastodon mk [MUTE]: 'account.mute' / 'account.unmute' = 'Зачути го @{name}' used True/True
+  mastodon my [NEXT]: 'lightbox.next' / 'lightbox.previous' = 'ရှေ့သို့' used True/True
+  mastodon my [NEXT]: 'lightbox.previous' / 'report.next' = 'ရှေ့သို့' used True/True
+  mastodon my [MUTE]: 'status.mute_conversation' / 'status.unmute_conversation' = 'စကားဝိုင်းကို ပိတ်ထားရန်' used True/True
+bigbluebutton @302f514f with 0.14.0: reference en, 1607 source keys, 60 locale files, 1 unparsed, 109 pairs, 4248 comparisons, 4 warnings, 0.94 per 1,000, identical files none, consistent True
+  bigbluebutton bn [MUTE]: 'app.actionsBar.muteLabel' / 'app.actionsBar.unmuteLabel' = 'নিঃশব্দ করুন' used True/True
+  bigbluebutton ml [MUTE]: 'app.userList.menu.muteUserAudio.label' / 'app.userList.menu.unmuteUserAudio.label' = 'ഉപയോക്താവിനെ നിശബ്ദമാക്കുക' used True/True
+  bigbluebutton ta [MUTE]: 'app.actionsBar.muteLabel' / 'app.actionsBar.unmuteLabel' = 'முடக்கு' used True/True
+  bigbluebutton ta [MUTE]: 'app.userList.menu.muteUserAudio.label' / 'app.userList.menu.unmuteUserAudio.label' = 'பயனரை முடக்கு' used True/True
+strapi-admin @61d63100 with 0.14.0: reference en, 1005 source keys, 34 locale files, 0 unparsed, 20 pairs, 438 comparisons, 0 warnings, 0.00 per 1,000, identical files none, consistent True
+umami @e92fdab9 with 0.14.0: reference en-US, 520 source keys, 52 locale files, 0 unparsed, 12 pairs, 573 comparisons, 0 warnings, 0.00 per 1,000, identical files none, consistent True
+open-collective @679f61f0 with 0.14.0: reference en, 5025 source keys, 18 locale files, 0 unparsed, 58 pairs, 1044 comparisons, 3 warnings, 2.87 per 1,000, identical files none, consistent True
+  open-collective es [ARCHIVE]: 'collective.archive.title' / 'collective.unarchive.button' = '¿Estás seguro que quieres archivar {type, select, EVENT {este Evento} PROJECT {este Proyecto} FUND {este Fondo} COLLECTIVE {este Colectivo} ORGANIZATION {esta Organización} other {esta Cuenta}}' used True/True
+  open-collective zh [ARCHIVE]: 'archive.modal.header' / 'unarchive.modal.header' = '归档 {name}' used True/True
+  open-collective zh [ARCHIVE]: 'collective.archive.title' / 'collective.unarchive.button' = '归档{type, select, EVENT {此活动} PROJECT {此项目} FUND {此资金} COLLECTIVE {此集体} ORGANIZATION {此组织} other {此账号}}' used True/True
+P0 HELD: every reference parses, >= 10 locale files per project, >= 120 in all ({'mastodon': 104, 'bigbluebutton': 60, 'strapi-admin': 34, 'umami': 52, 'open-collective': 18}; 268 locale files)
+P1 HELD: >= 10000 comparisons pooled (12037 comparisons)
+P2 HELD: pooled rate within 0.5-5.0 per 1,000 and >= 3 projects warned (15 warnings, 1.25 per 1,000, warned: ['bigbluebutton', 'mastodon', 'open-collective'])
+P5 HELD: >= 80% of warned rows have both keys in source (15/15 rows with both keys in source, all projects)
+warnings by class: {"ARCHIVE": 3, "MUTE": 9, "NEXT": 2, "SHOW": 1}
+warnings by project: {"bigbluebutton": 4, "mastodon": 8, "open-collective": 3, "strapi-admin": 0, "umami": 0}
+check_catalog and _antonym_collisions agree on every file: True
+P3 and P4 are graded by hand from sample.csv
