@@ -210,6 +210,14 @@ Stale translations after a source fix:
   comparisons (2.63 per 1,000), all 40 sampled graded real by AI agents; 21 of the 67 are one defect,
   a permission name English later split into "Convert to private" and "Convert to public" while ten
   languages kept the old single "Convert channels" ([results](antonym-collision/FORMATJS-RESULTS.md)).
+  A third held-out test on Mastodon, BigBlueButton, Strapi, Umami and Open Collective
+  ([pre-registered](antonym-collision/HOLDOUT3-PREREG.md)) raised 15 warnings in 12,037 comparisons
+  (1.25 per 1,000), all 15 graded real; none named neither side, so the "neither" signature of
+  Mattermost's stale split string has been seen in Mattermost only
+  ([results](antonym-collision/HOLDOUT3-RESULTS.md)). Within Open Collective, the four locales kept by
+  AI agent workflows and the fourteen kept on Crowdin raised 1 and 2 warnings, too few to compare,
+  and the agent locale's one defect predates the agents
+  ([results](antonym-collision/OC-LOCALES-RESULTS.md)).
 
 ## Method
 
