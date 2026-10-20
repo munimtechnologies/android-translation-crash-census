@@ -1,0 +1,17 @@
+{
+ "name": "mm-provenance-dropped-v2",
+ "kind": "compete",
+ "workdir": "antonym-collision/provenance",
+ "image": "python:3.12",
+ "setup": [],
+ "run": [
+  "python -B -m unittest -v test_provenance_dropped",
+  "python -B provenance_dropped.py --rows dropped_rows.csv --out-dir /out/dropped --wait 1200"
+ ],
+ "network": true,
+ "data_urls": [],
+ "data_key": "mm-provenance",
+ "cpu": 1,
+ "memory_gb": 1,
+ "timeout_minutes": 40
+}

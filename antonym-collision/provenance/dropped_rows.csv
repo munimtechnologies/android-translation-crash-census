@@ -1,0 +1,13 @@
+locale,key1,key2,graded
+cs,admin.plugin.disabling,admin.plugin.enabling,True
+cs,change_url.endWithLetter,change_url.startWithLetter,True
+cs,channel_header.delete,channel_header.unarchive,True
+cs,channel_header.unarchive,channel_settings.tab.archive,False
+cs,shortcuts.browser.font_decrease,shortcuts.browser.font_increase,False
+fi,admin.team_channel_settings.convertConfirmModal.toPrivateTitle,admin.team_channel_settings.convertConfirmModal.toPublicTitle,True
+fi,api.channel.delete_channel.archived,api.channel.restore_channel.unarchived,True
+fi,delete_channel.confirm,unarchive_channel.confirm,False
+hr,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True
+hr,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,False
+lt,admin.permissions.group.convert_public_channel_to_private.name,admin.permissions.permission.convert_private_channel_to_public.name,True
+lt,admin.permissions.permission.convert_private_channel_to_public.name,admin.permissions.permission.convert_public_channel_to_private.name,True
