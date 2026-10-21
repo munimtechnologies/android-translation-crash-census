@@ -1,0 +1,43 @@
+{
+ "t": "be207f89725df343da628e859d1ef25acde02fbc",
+ "b2": "bbd208cffdc23be2bfd86e2338a1bc4b591247c2",
+ "b2_date": "2026-09-04T15:58:37Z",
+ "removal": "e9379690d5873cbf65049fabaab22f1317696868",
+ "by_class_graded": {
+  "INHERITED": 8,
+  "INTRODUCED": 0,
+  "CHANGED": 0,
+  "UNREADABLE": 0,
+  "NOT_REPRODUCED": 0
+ },
+ "by_class_all": {
+  "INHERITED": 12,
+  "INTRODUCED": 0,
+  "CHANGED": 0,
+  "UNREADABLE": 0,
+  "NOT_REPRODUCED": 0
+ },
+ "predictions": [
+  {
+   "id": "S0",
+   "held": true,
+   "value": "12 rows, 8 graded, 0 unreadable or not reproduced, B2 dated 2026-09-04T15:58:37Z"
+  },
+  {
+   "id": "S1",
+   "held": true,
+   "value": "4 of 4 hr and lt rows INHERITED"
+  },
+  {
+   "id": "S2",
+   "held": true,
+   "value": "5 of 5 cs rows INHERITED"
+  },
+  {
+   "id": "S3",
+   "held": false,
+   "value": "0 of 3 fi rows INTRODUCED or CHANGED"
+  }
+ ],
+ "combined_graded_inherited_post_hoc": 40
+}

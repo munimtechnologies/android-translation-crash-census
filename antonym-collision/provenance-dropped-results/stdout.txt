@@ -1,0 +1,22 @@
+===== run-01-python: python -B -m unittest -v test_provenance_dropped
+
+===== run-02-python: python -B provenance_dropped.py --rows dropped_rows.csv --out-dir /out/dropped --wait 1200
+T be207f89725df343da628e859d1ef25acde02fbc
+B2 bbd208cffdc23be2bfd86e2338a1bc4b591247c2 (2026-09-04T15:58:37Z), first parent of e9379690d5873cbf65049fabaab22f1317696868
+cs admin.plugin.disabling | admin.plugin.enabling | INHERITED: both values identical at B and T
+cs change_url.endWithLetter | change_url.startWithLetter | INHERITED: both values identical at B and T
+cs channel_header.delete | channel_header.unarchive | INHERITED: both values identical at B and T
+cs channel_header.unarchive | channel_settings.tab.archive | INHERITED: both values identical at B and T
+cs shortcuts.browser.font_decrease | shortcuts.browser.font_increase | INHERITED: both values identical at B and T
+fi admin.team_channel_settings.convertConfirmModal.toPrivateTitle | admin.team_channel_settings.convertConfirmModal.toPublicTitle | INHERITED: both values identical at B and T
+fi api.channel.delete_channel.archived | api.channel.restore_channel.unarchived | INHERITED: both values identical at B and T
+fi delete_channel.confirm | unarchive_channel.confirm | INHERITED: both values identical at B and T
+hr admin.permissions.group.convert_public_channel_to_private.name | admin.permissions.permission.convert_private_channel_to_public.name | INHERITED: both values identical at B and T
+hr admin.permissions.permission.convert_private_channel_to_public.name | admin.permissions.permission.convert_public_channel_to_private.name | INHERITED: both values identical at B and T
+lt admin.permissions.group.convert_public_channel_to_private.name | admin.permissions.permission.convert_private_channel_to_public.name | INHERITED: both values identical at B and T
+lt admin.permissions.permission.convert_private_channel_to_public.name | admin.permissions.permission.convert_public_channel_to_private.name | INHERITED: both values identical at B and T
+S0 HELD: 12 rows, 8 graded, 0 unreadable or not reproduced, B2 dated 2026-09-04T15:58:37Z
+S1 HELD: 4 of 4 hr and lt rows INHERITED
+S2 HELD: 5 of 5 cs rows INHERITED
+S3 FAILED: 0 of 3 fi rows INTRODUCED or CHANGED
+post hoc, not a test: 40 of 40 graded rows INHERITED across B and B2
