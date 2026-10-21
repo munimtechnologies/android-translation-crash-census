@@ -217,7 +217,15 @@ Stale translations after a source fix:
   ([results](antonym-collision/HOLDOUT3-RESULTS.md)). Within Open Collective, the four locales kept by
   AI agent workflows and the fourteen kept on Crowdin raised 1 and 2 warnings, too few to compare,
   and the agent locale's one defect predates the agents
-  ([results](antonym-collision/OC-LOCALES-RESULTS.md)).
+  ([results](antonym-collision/OC-LOCALES-RESULTS.md)). A provenance test of Mattermost's 67 warnings
+  found all of them already in its catalogs before its AI translation pipeline began, and unchanged at
+  the graded commit: 55 in 13 locales at the commit before the first fill, and 12 in four locales
+  that were removed in September and restored in October, at the commit before their removal
+  ([pre-registered](antonym-collision/PROVENANCE-PREREG.md),
+  [results](antonym-collision/PROVENANCE-RESULTS.md);
+  [follow-up](antonym-collision/PROVENANCE-DROPPED-PREREG.md),
+  [results](antonym-collision/PROVENANCE-DROPPED-RESULTS.md)). The first test's method check failed
+  and one follow-up prediction failed, so the combined count is descriptive.
 
 ## Method
 
