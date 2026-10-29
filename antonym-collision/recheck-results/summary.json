@@ -1,0 +1,13 @@
+{
+ "guard": "0.14.0",
+ "old_commit": "be207f89",
+ "commit": "b9fd23e542a2f544033e2b385313bc43ab18e490",
+ "i18n_files": 29,
+ "locales_compared": 27,
+ "unparsed": [],
+ "old_rows": 67,
+ "warnings_now": 67,
+ "by_status": {
+  "still": 67
+ }
+}

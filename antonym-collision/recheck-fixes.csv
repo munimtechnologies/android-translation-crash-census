@@ -1,0 +1,66 @@
+locale,key,english,current_value,problem,proposed_value,proposed_from
+bg,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,Преобразуване на канали,shared,,
+bg,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Преобразуване на канали,shared,Преобразуване в публичен,admin.permissions.group.convert_private_channel_to_public.name
+bg,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Преобразуване на канали,shared,,
+cs,admin.plugin.disabling,Disabling...,Povoluji...,opposite,Zakazuji...,admin.plugin.disabling.toggle (+ the ellipsis)
+cs,change_url.startWithLetter,URLs must start with a lowercase letter or number.,URL musí končit písmenem nebo číslem.,opposite,,
+cs,channel_header.unarchive,Unarchive Channel,Archivovat kanál,opposite,Zrušit archivaci kanálu,admin.channel_settings.channel_details.unarchiveChannel
+cs,shortcuts.browser.font_increase,"Zoom in:	Ctrl|+","Oddálit:	Ctrl|-",opposite (word and key),,
+es,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,Convertir canales,shared,,
+es,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Convertir canales,shared,Convertir a público,admin.permissions.group.convert_private_channel_to_public.name
+es,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Convertir canales,shared,,
+fa,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,تبدیل کانال ها,shared,,
+fa,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,تبدیل کانال ها,shared,تبدیل به عمومی,admin.permissions.group.convert_private_channel_to_public.name
+fa,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,تبدیل کانال ها,shared,,
+fi,admin.team_channel_settings.convertConfirmModal.toPublicTitle,Convert {displayName} to a public channel?,Muutetaanko {displayName} yksityiskanavaksi?,opposite,,
+fi,api.channel.restore_channel.unarchived,{username} unarchived the channel.,{username} arkistoi kanavan.,opposite,,
+fi,unarchive_channel.confirm,Confirm UNARCHIVE Channel,Vahvista kanavan ARKISTOINTI,opposite,,
+hr,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,Pretvori kanale,shared,,
+hr,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Pretvori kanale,shared,Pretvori u javne,admin.permissions.group.convert_private_channel_to_public.name
+hr,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Pretvori kanale,shared,,
+it,admin.channel_settings.channel_details.unarchiveChannel,Unarchive Channel,Archivia Canale,opposite,,
+it,admin.team_channel_settings.convertConfirmModal.toPublicConfirm,"Yes, convert to public channel","Sì, converti a canale privato",opposite,,
+it,api.channel.restore_channel.unarchived,{username} unarchived the channel.,{username} ha archiviato il canale.,opposite,,
+it,channel_header.unarchive,Unarchive Channel,Archivia Canale,opposite,,
+ko,admin.permissions.group.convert_private_channel_to_public.name,Convert to public,채널 변환,shared,,
+ko,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,채널 변환,shared,,
+ko,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,채널 변환,shared,,
+ko,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,채널 변환,shared,,
+ko,channel_header.unmute,Unmute Channel,채널 알림 끄기,opposite,,
+ko,mobile.set_status.online.icon,Online,오프라인 아이콘,opposite,온라인,userAccountMenu.onlineMenuItem.label
+ko,modal.manual_status.auto_responder.message_offline,"Would you like to switch your status to ""Offline"" and disable automatic replies?","상태를 ""방해 금지""로 전환하고 자동 회신을 비활성화 하시겠습니까?",wrong status (Do Not Disturb),,
+ko,modal.manual_status.auto_responder.message_online,"Would you like to switch your status to ""Online"" and disable automatic replies?","상태를 ""방해 금지""로 전환하고 자동 회신을 비활성화 하시겠습니까?",wrong status (Do Not Disturb),,
+ko,modal.manual_status.button_offline,"Set status to ""Offline""","예, 상태를 ""자리 비움""으로 설정",wrong status (Away),,
+ko,modal.manual_status.button_online,"Set status to ""Online""","예, 상태를 ""자리 비움""으로 설정",wrong status (Away),,
+ko,modal.manual_status.message_offline,"Would you like to switch your status to ""Offline""?","상태를 ""온라인""으로 전환 하시겠습니까?",opposite,,
+ko,sidebar_left.sidebar_channel_menu.unmuteChannel,Unmute Channel,채널 알림 끄기,opposite,,
+lt,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,Konvertuoti kanalus,shared,,
+lt,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Konvertuoti kanalus,shared,Konvertuoti į viešąjį,admin.permissions.group.convert_private_channel_to_public.name
+lt,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Konvertuoti kanalus,shared,,
+nl,api.channel.restore_channel.unarchived,{username} unarchived the channel.,{username} archiveerde het kanaal.,opposite,,
+pl,admin.ldap.firstnameAttrDesc,(Optional) The attribute in the AD/LDAP server used to populate the first name of users in Mattermost.,(Opcjonalnie) Atrybut w serwerze AD/LDAP używany do wypełnienia Nazwy użytkownika w Mattermost.,wrong field (username),,
+pl,admin.ldap.lastnameAttrDesc,(Optional) The attribute in the AD/LDAP server used to populate the last name of users in Mattermost.,(Opcjonalnie) Atrybut w serwerze AD/LDAP używany do wypełnienia Nazwy użytkownika w Mattermost.,wrong field (username),,
+pl,admin.team_channel_settings.convertConfirmModal.toPublicTitle,Convert {displayName} to a public channel?,Wykonać konwersję kanału {displayName} do kanału prywatnego?,opposite,,
+pl,api.channel.restore_channel.unarchived,{username} unarchived the channel.,{username} zarchiwizował kanał.,opposite,,
+pl,unarchive_channel.confirm,Confirm UNARCHIVE Channel,Potwierdź ARCHIWIZACJĘ kanału,opposite,,
+pt-BR,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Converter Canais,shared,Converter em público,admin.permissions.group.convert_private_channel_to_public.name
+pt-BR,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Converter Canais,shared,Converter para privado,admin.permissions.group.convert_public_channel_to_private.name
+pt-BR,admin.team_channel_settings.convertConfirmModal.toPublicTitle,Convert {displayName} to a public channel?,Converter {displayName} para um canal privado?,opposite,,
+pt-BR,api.channel.restore_channel.unarchived,{username} unarchived the channel.,{username} arquivou o canal.,opposite,,
+ro,admin.ldap.firstnameAttrTitle,First Name Attribute:,Nume:,shared (Nume = surname),,
+ro,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,Conversia canalelor,shared,,
+ro,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Conversia canalelor,shared,Convertiți în public,admin.permissions.group.convert_private_channel_to_public.name
+ro,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Conversia canalelor,shared,,
+ro,admin.saml.firstnameAttrTitle,First Name Attribute:,Nume:,shared (Nume = surname),,
+sv,admin.channel_settings.channel_details.unarchiveChannel,Unarchive Channel,Arkivera kanaler,opposite,,
+sv,admin.team_channel_settings.convertAndRemoveConfirmModal.toPublicConfirm,"Yes, convert channel to public and remove {amount, number} {amount, plural, one {user} other {users}}","Ja, konvertera kanalen till privat och ta bort {amount, number} {amount, plural, one {user} other {users}}",opposite,,
+sv,channel_header.unarchive,Unarchive Channel,Arkivera kanaler,opposite,,
+sv,modal.manual_status.auto_responder.message_online,"Would you like to switch your status to ""Online"" and disable automatic replies?","Vill du ändra din status till ""Offline"" och inaktivera automatiska svar?",opposite,,
+tr,installed_integrations.showSecret,Show Secret,Parolayı gizle,opposite,,
+vi,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,Chuyển đổi kênh,shared,,
+vi,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,Chuyển đổi kênh,shared,Chuyển thành công khai,admin.permissions.group.convert_private_channel_to_public.name
+vi,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,Chuyển đổi kênh,shared,,
+vi,sidebar_left.sidebar_category_menu.unmuteCategory,Unmute Category,Loại bỏ tiếng,opposite,,
+zh-TW,admin.permissions.group.convert_public_channel_to_private.name,Convert to private,轉換頻道,shared,,
+zh-TW,admin.permissions.permission.convert_private_channel_to_public.name,Convert to public,轉換頻道,shared,轉換為公開頻道,admin.permissions.group.convert_private_channel_to_public.name
+zh-TW,admin.permissions.permission.convert_public_channel_to_private.name,Convert to private,轉換頻道,shared,,

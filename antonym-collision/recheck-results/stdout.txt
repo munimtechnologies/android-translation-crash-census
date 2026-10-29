@@ -1,0 +1,108 @@
+===== run-01-python: python -B -m unittest -v test_mm_recheck
+
+===== run-02-python: python -B mm_recheck.py --out-dir /out
+l10n_guard.py 0.14.0: 113752 bytes, sha256 7d12df8c469090ae
+10-20 rows: 67; graded in the sample: 40
+mattermost master @b9fd23e5: 29 i18n files
+still bg admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'Преобразуване на канали' -> 'Преобразуване на канали' / 'Преобразуване на канали'
+   alt2: Преобразуване в публичен (admin.permissions.group.convert_private_channel_to_public.name)
+still bg admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Преобразуване на канали' -> 'Преобразуване на канали' / 'Преобразуване на канали'
+   alt1: Преобразуване в публичен (admin.permissions.group.convert_private_channel_to_public.name)
+still cs admin.plugin.disabling / admin.plugin.enabling: 'Povoluji...' -> 'Povoluji...' / 'Povoluji...'
+   alt1: Zakazuji (admin.plugin.disabling.toggle)
+   alt2: Povoluji (admin.plugin.enabling.toggle)
+still cs change_url.endWithLetter / change_url.startWithLetter: 'URL musí končit písmenem nebo číslem.' -> 'URL musí končit písmenem nebo číslem.' / 'URL musí končit písmenem nebo číslem.'
+still cs channel_header.delete / channel_header.unarchive: 'Archivovat kanál' -> 'Archivovat kanál' / 'Archivovat kanál'
+   alt1: Archivovat Kanál (admin.channel_settings.channel_details.archiveChannel) | Archivovat kanál? (channel_settings.modal.archiveTitle)
+   alt2: Zrušit archivaci kanálu (admin.channel_settings.channel_details.unarchiveChannel)
+still cs channel_header.unarchive / channel_settings.tab.archive: 'Archivovat kanál' -> 'Archivovat kanál' / 'Archivovat kanál'
+   alt1: Zrušit archivaci kanálu (admin.channel_settings.channel_details.unarchiveChannel)
+   alt2: Archivovat Kanál (admin.channel_settings.channel_details.archiveChannel) | Archivovat kanál? (channel_settings.modal.archiveTitle)
+still cs shortcuts.browser.font_decrease / shortcuts.browser.font_increase: 'Oddálit:\tCtrl|-' -> 'Oddálit:\tCtrl|-' / 'Oddálit:\tCtrl|-'
+still es admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'Convertir canales' -> 'Convertir canales' / 'Convertir canales'
+   alt2: Convertir a público (admin.permissions.group.convert_private_channel_to_public.name)
+still es admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Convertir canales' -> 'Convertir canales' / 'Convertir canales'
+   alt1: Convertir a público (admin.permissions.group.convert_private_channel_to_public.name)
+still fa admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'تبدیل کانال ها' -> 'تبدیل کانال ها' / 'تبدیل کانال ها'
+   alt2: تبدیل به عمومی (admin.permissions.group.convert_private_channel_to_public.name)
+still fa admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'تبدیل کانال ها' -> 'تبدیل کانال ها' / 'تبدیل کانال ها'
+   alt1: تبدیل به عمومی (admin.permissions.group.convert_private_channel_to_public.name)
+still fi admin.team_channel_settings.convertConfirmModal.toPrivateTitle / admin.team_channel_settings.convertConfirmModal.toPublicTitle: 'Muutetaanko {displayName} yksityiskanavaksi?' -> 'Muutetaanko {displayName} yksityiskanavaksi?' / 'Muutetaanko {displayName} yksityiskanavaksi?'
+still fi api.channel.delete_channel.archived / api.channel.restore_channel.unarchived: '{username} arkistoi kanavan.' -> '{username} arkistoi kanavan.' / '{username} arkistoi kanavan.'
+still fi delete_channel.confirm / unarchive_channel.confirm: 'Vahvista kanavan ARKISTOINTI' -> 'Vahvista kanavan ARKISTOINTI' / 'Vahvista kanavan ARKISTOINTI'
+still hr admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'Pretvori kanale' -> 'Pretvori kanale' / 'Pretvori kanale'
+   alt2: Pretvori u javne (admin.permissions.group.convert_private_channel_to_public.name)
+still hr admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Pretvori kanale' -> 'Pretvori kanale' / 'Pretvori kanale'
+   alt1: Pretvori u javne (admin.permissions.group.convert_private_channel_to_public.name)
+still it admin.channel_settings.channel_details.archiveChannel / admin.channel_settings.channel_details.unarchiveChannel: 'Archivia Canale' -> 'Archivia Canale' / 'Archivia Canale'
+   alt1: Archivia canale (channel_settings.tab.archive) | Archiviare il canale? (channel_settings.modal.archiveTitle)
+still it admin.channel_settings.channel_details.archiveChannel / channel_header.unarchive: 'Archivia Canale' -> 'Archivia Canale' / 'Archivia Canale'
+   alt1: Archivia canale (channel_settings.tab.archive) | Archiviare il canale? (channel_settings.modal.archiveTitle)
+still it admin.channel_settings.channel_details.unarchiveChannel / channel_header.delete: 'Archivia Canale' -> 'Archivia Canale' / 'Archivia Canale'
+   alt2: Archivia canale (channel_settings.tab.archive) | Archiviare il canale? (channel_settings.modal.archiveTitle)
+still it admin.team_channel_settings.convertConfirmModal.toPrivateConfirm / admin.team_channel_settings.convertConfirmModal.toPublicConfirm: 'Sì, converti a canale privato' -> 'Sì, converti a canale privato' / 'Sì, converti a canale privato'
+still it admin.team_channel_settings.convertConfirmModal.toPublicConfirm / convert_channel.confirm: 'Sì, converti a canale privato' -> 'Sì, converti a canale privato' / 'Sì, converti a canale privato'
+still it api.channel.delete_channel.archived / api.channel.restore_channel.unarchived: '{username} ha archiviato il canale.' -> '{username} ha archiviato il canale.' / '{username} ha archiviato il canale.'
+still it channel_header.delete / channel_header.unarchive: 'Archivia Canale' -> 'Archivia Canale' / 'Archivia Canale'
+   alt1: Archivia canale (channel_settings.tab.archive) | Archiviare il canale? (channel_settings.modal.archiveTitle)
+still ko admin.permissions.group.convert_private_channel_to_public.name / admin.permissions.group.convert_public_channel_to_private.name: '채널 변환' -> '채널 변환' / '채널 변환'
+still ko admin.permissions.group.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: '채널 변환' -> '채널 변환' / '채널 변환'
+still ko admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: '채널 변환' -> '채널 변환' / '채널 변환'
+still ko admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: '채널 변환' -> '채널 변환' / '채널 변환'
+still ko admin.team_channel_settings.convertConfirmModal.toPrivateConfirm / admin.team_channel_settings.convertConfirmModal.toPublicConfirm: '네, 비공개 채널로 변환하겠습니다' -> '네, 비공개 채널로 변환하겠습니다' / '네, 비공개 채널로 변환하겠습니다'
+still ko admin.team_channel_settings.convertConfirmModal.toPublicConfirm / convert_channel.confirm: '네, 비공개 채널로 변환하겠습니다' -> '네, 비공개 채널로 변환하겠습니다' / '네, 비공개 채널로 변환하겠습니다'
+still ko channel_header.mute / channel_header.unmute: '채널 알림 끄기' -> '채널 알림 끄기' / '채널 알림 끄기'
+still ko channel_header.mute / sidebar_left.sidebar_channel_menu.unmuteChannel: '채널 알림 끄기' -> '채널 알림 끄기' / '채널 알림 끄기'
+still ko channel_header.unmute / channel_notifications.muteChannelTitle: '채널 알림 끄기' -> '채널 알림 끄기' / '채널 알림 끄기'
+still ko channel_header.unmute / sidebar_left.sidebar_channel_menu.muteChannel: '채널 알림 끄기' -> '채널 알림 끄기' / '채널 알림 끄기'
+still ko channel_notifications.muteChannelTitle / sidebar_left.sidebar_channel_menu.unmuteChannel: '채널 알림 끄기' -> '채널 알림 끄기' / '채널 알림 끄기'
+still ko mobile.set_status.offline.icon / mobile.set_status.online.icon: '오프라인 아이콘' -> '오프라인 아이콘' / '오프라인 아이콘'
+   alt1: 오프라인 (admin.secure_connections.status_offline; user.settings.notifications.desktopAndMobile.offline; userAccountMenu.offlineMenuItem.label)
+   alt2: 온라인 (userAccountMenu.onlineMenuItem.label)
+still ko modal.manual_status.auto_responder.message_offline / modal.manual_status.auto_responder.message_online: '상태를 "방해 금지"로 전환하고 자동 회신을 비활성화 하시겠습니까?' -> '상태를 "방해 금지"로 전환하고 자동 회신을 비활성화 하시겠습니까?' / '상태를 "방해 금지"로 전환하고 자동 회신을 비활성화 하시겠습니까?'
+still ko modal.manual_status.button_offline / modal.manual_status.button_online: '예, 상태를 "자리 비움"으로 설정' -> '예, 상태를 "자리 비움"으로 설정' / '예, 상태를 "자리 비움"으로 설정'
+still ko modal.manual_status.message_offline / modal.manual_status.message_online: '상태를 "온라인"으로 전환 하시겠습니까?' -> '상태를 "온라인"으로 전환 하시겠습니까?' / '상태를 "온라인"으로 전환 하시겠습니까?'
+still ko sidebar_left.sidebar_channel_menu.muteChannel / sidebar_left.sidebar_channel_menu.unmuteChannel: '채널 알림 끄기' -> '채널 알림 끄기' / '채널 알림 끄기'
+still lt admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'Konvertuoti kanalus' -> 'Konvertuoti kanalus' / 'Konvertuoti kanalus'
+   alt2: Konvertuoti į viešąjį (admin.permissions.group.convert_private_channel_to_public.name)
+still lt admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Konvertuoti kanalus' -> 'Konvertuoti kanalus' / 'Konvertuoti kanalus'
+   alt1: Konvertuoti į viešąjį (admin.permissions.group.convert_private_channel_to_public.name)
+still nl api.channel.delete_channel.archived / api.channel.restore_channel.unarchived: '{username} archiveerde het kanaal.' -> '{username} archiveerde het kanaal.' / '{username} archiveerde het kanaal.'
+still pl admin.ldap.firstnameAttrDesc / admin.ldap.lastnameAttrDesc: '(Opcjonalnie) Atrybut w serwerze AD/LDAP używany do wypełnienia Nazwy użytkownika w Mattermost.' -> '(Opcjonalnie) Atrybut w serwerze AD/LDAP używany do wypełnienia Nazwy użytkownika w Mattermost.' / '(Opcjonalnie) Atrybut w serwerze AD/LDAP używany do wypełnienia Nazwy użytkownika w Mattermost.'
+still pl admin.team_channel_settings.convertConfirmModal.toPrivateTitle / admin.team_channel_settings.convertConfirmModal.toPublicTitle: 'Wykonać konwersję kanału {displayName} do kanału prywatnego?' -> 'Wykonać konwersję kanału {displayName} do kanału prywatnego?' / 'Wykonać konwersję kanału {displayName} do kanału prywatnego?'
+still pl api.channel.delete_channel.archived / api.channel.restore_channel.unarchived: '{username} zarchiwizował kanał.' -> '{username} zarchiwizował kanał.' / '{username} zarchiwizował kanał.'
+still pl delete_channel.confirm / unarchive_channel.confirm: 'Potwierdź ARCHIWIZACJĘ kanału' -> 'Potwierdź ARCHIWIZACJĘ kanału' / 'Potwierdź ARCHIWIZACJĘ kanału'
+still pt-BR admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Converter Canais' -> 'Converter Canais' / 'Converter Canais'
+   alt1: Converter em público (admin.permissions.group.convert_private_channel_to_public.name)
+   alt2: Converter para privado (admin.permissions.group.convert_public_channel_to_private.name)
+still pt-BR admin.team_channel_settings.convertConfirmModal.toPrivateTitle / admin.team_channel_settings.convertConfirmModal.toPublicTitle: 'Converter {displayName} para um canal privado?' -> 'Converter {displayName} para um canal privado?' / 'Converter {displayName} para um canal privado?'
+still pt-BR api.channel.delete_channel.archived / api.channel.restore_channel.unarchived: '{username} arquivou o canal.' -> '{username} arquivou o canal.' / '{username} arquivou o canal.'
+still ro admin.ldap.firstnameAttrTitle / admin.ldap.lastnameAttrTitle: 'Nume:' -> 'Nume:' / 'Nume:'
+still ro admin.ldap.firstnameAttrTitle / admin.saml.lastnameAttrTitle: 'Nume:' -> 'Nume:' / 'Nume:'
+still ro admin.ldap.lastnameAttrTitle / admin.saml.firstnameAttrTitle: 'Nume:' -> 'Nume:' / 'Nume:'
+still ro admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'Conversia canalelor' -> 'Conversia canalelor' / 'Conversia canalelor'
+   alt2: Convertiți în public (admin.permissions.group.convert_private_channel_to_public.name)
+still ro admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Conversia canalelor' -> 'Conversia canalelor' / 'Conversia canalelor'
+   alt1: Convertiți în public (admin.permissions.group.convert_private_channel_to_public.name)
+still ro admin.saml.firstnameAttrTitle / admin.saml.lastnameAttrTitle: 'Nume:' -> 'Nume:' / 'Nume:'
+still sv admin.channel_settings.channel_details.archiveChannel / admin.channel_settings.channel_details.unarchiveChannel: 'Arkivera kanaler' -> 'Arkivera kanaler' / 'Arkivera kanaler'
+   alt1: Arkivera kanalen (channel_settings.tab.archive) | Arkivera kanalen? (channel_settings.modal.archiveTitle)
+still sv admin.channel_settings.channel_details.archiveChannel / channel_header.unarchive: 'Arkivera kanaler' -> 'Arkivera kanaler' / 'Arkivera kanaler'
+   alt1: Arkivera kanalen (channel_settings.tab.archive) | Arkivera kanalen? (channel_settings.modal.archiveTitle)
+still sv admin.channel_settings.channel_details.unarchiveChannel / channel_header.delete: 'Arkivera kanaler' -> 'Arkivera kanaler' / 'Arkivera kanaler'
+   alt2: Arkivera kanalen (channel_settings.tab.archive) | Arkivera kanalen? (channel_settings.modal.archiveTitle)
+still sv admin.team_channel_settings.convertAndRemoveConfirmModal.toPrivateConfirm / admin.team_channel_settings.convertAndRemoveConfirmModal.toPublicConfirm: 'Ja, konvertera kanalen till privat och ta bort {amount, number} {amount, plural, one {user} other {users}}' -> 'Ja, konvertera kanalen till privat och ta bort {amount, number} {amount, plural, one {user} other {users}}' / 'Ja, konvertera kanalen till privat och ta bort {amount, number} {amount, plural, one {user} other {users}}'
+still sv channel_header.delete / channel_header.unarchive: 'Arkivera kanaler' -> 'Arkivera kanaler' / 'Arkivera kanaler'
+   alt1: Arkivera kanalen (channel_settings.tab.archive) | Arkivera kanalen? (channel_settings.modal.archiveTitle)
+still sv modal.manual_status.auto_responder.message_offline / modal.manual_status.auto_responder.message_online: 'Vill du ändra din status till "Offline" och inaktivera automatiska svar?' -> 'Vill du ändra din status till "Offline" och inaktivera automatiska svar?' / 'Vill du ändra din status till "Offline" och inaktivera automatiska svar?'
+still tr installed_integrations.hideSecret / installed_integrations.showSecret: 'Parolayı gizle' -> 'Parolayı gizle' / 'Parolayı gizle'
+still vi admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: 'Chuyển đổi kênh' -> 'Chuyển đổi kênh' / 'Chuyển đổi kênh'
+   alt2: Chuyển thành công khai (admin.permissions.group.convert_private_channel_to_public.name)
+still vi admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: 'Chuyển đổi kênh' -> 'Chuyển đổi kênh' / 'Chuyển đổi kênh'
+   alt1: Chuyển thành công khai (admin.permissions.group.convert_private_channel_to_public.name)
+still vi sidebar_left.sidebar_category_menu.muteCategory / sidebar_left.sidebar_category_menu.unmuteCategory: 'Loại bỏ tiếng' -> 'Loại bỏ tiếng' / 'Loại bỏ tiếng'
+still zh-TW admin.permissions.group.convert_public_channel_to_private.name / admin.permissions.permission.convert_private_channel_to_public.name: '轉換頻道' -> '轉換頻道' / '轉換頻道'
+   alt2: 轉換為公開頻道 (admin.permissions.group.convert_private_channel_to_public.name)
+still zh-TW admin.permissions.permission.convert_private_channel_to_public.name / admin.permissions.permission.convert_public_channel_to_private.name: '轉換頻道' -> '轉換頻道' / '轉換頻道'
+   alt1: 轉換為公開頻道 (admin.permissions.group.convert_private_channel_to_public.name)
+by status: {"still": 67}
