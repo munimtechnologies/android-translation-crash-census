@@ -1,0 +1,487 @@
+{
+ "zwsp_only_rows": 703,
+ "by_kind": {
+  "longer": 22,
+  "none": 38,
+  "pair-after-space": 487,
+  "pair-other": 97,
+  "single": 59
+ },
+ "signature_rows": 487,
+ "signature_share": 0.6927,
+ "by_platform": {
+  "crowdin": {
+   "longer": 10,
+   "none": 3,
+   "pair-after-space": 101,
+   "pair-other": 18,
+   "single": 4
+  },
+  "other": {
+   "longer": 12,
+   "none": 28,
+   "pair-after-space": 258,
+   "pair-other": 58,
+   "single": 47
+  },
+  "transifex": {
+   "none": 2,
+   "pair-after-space": 58,
+   "pair-other": 9,
+   "single": 5
+  },
+  "weblate": {
+   "none": 5,
+   "pair-after-space": 70,
+   "pair-other": 12,
+   "single": 3
+  }
+ },
+ "repos_with_zwsp": 163,
+ "repos_with_signature": 122,
+ "langs_with_signature": 56,
+ "signature_rows_in_top_repo": 41,
+ "signature_rows_in_top5_repos": 117,
+ "top_repos": [
+  [
+   "https://github.com/hanjoongcho/aaf-easydiary",
+   41,
+   41
+  ],
+  [
+   "https://github.com/ramack/ActivityDiary",
+   29,
+   29
+  ],
+  [
+   "https://github.com/d4rken-org/sdmaid-se",
+   19,
+   22
+  ],
+  [
+   "https://github.com/commons-app/apps-android-commons",
+   14,
+   16
+  ],
+  [
+   "https://github.com/openfoodfacts/openfoodfacts-androidapp",
+   14,
+   16
+  ],
+  [
+   "https://github.com/Aryan-Raj3112/episteme",
+   13,
+   14
+  ],
+  [
+   "https://github.com/mohamedaminelouati/Feedora",
+   12,
+   12
+  ],
+  [
+   "https://github.com/firebirdberlin/nightdream",
+   11,
+   13
+  ],
+  [
+   "https://github.com/samyak2403/RepoStore",
+   11,
+   12
+  ],
+  [
+   "https://github.com/wikimedia/apps-android-wikipedia",
+   11,
+   25
+  ],
+  [
+   "https://github.com/olvid-io/olvid-android",
+   10,
+   11
+  ],
+  [
+   "https://github.com/lavabit/pahoehoe",
+   9,
+   18
+  ],
+  [
+   "https://github.com/element-hq/element-x-android",
+   8,
+   11
+  ],
+  [
+   "https://github.com/HashEngineeringSolutions/dash-wallet",
+   8,
+   9
+  ],
+  [
+   "https://github.com/SchildiChat/schildichat-android-next",
+   8,
+   11
+  ]
+ ],
+ "top_langs": [
+  [
+   "ru",
+   62
+  ],
+  [
+   "nl",
+   51
+  ],
+  [
+   "tr",
+   27
+  ],
+  [
+   "vi",
+   25
+  ],
+  [
+   "pt",
+   25
+  ],
+  [
+   "ga",
+   25
+  ],
+  [
+   "iw",
+   22
+  ],
+  [
+   "it",
+   21
+  ],
+  [
+   "be",
+   15
+  ],
+  [
+   "ar",
+   14
+  ],
+  [
+   "da",
+   14
+  ],
+  [
+   "sq",
+   13
+  ],
+  [
+   "uk",
+   11
+  ],
+  [
+   "ko",
+   11
+  ],
+  [
+   "ml",
+   10
+  ],
+  [
+   "hr",
+   10
+  ],
+  [
+   "cs",
+   10
+  ],
+  [
+   "sk",
+   9
+  ],
+  [
+   "bg",
+   7
+  ],
+  [
+   "fr",
+   7
+  ]
+ ],
+ "shared_keys_3plus_langs": 7,
+ "shared_keys": [
+  [
+   "https://github.com/ramack/ActivityDiary",
+   "string:setting_tag_yes",
+   "cs;da;el;es;fr;hu;it;ko;nl;no;pl;pt;sv;tr"
+  ],
+  [
+   "https://github.com/ramack/ActivityDiary",
+   "string:setting_tag_no",
+   "cs;el;es;fr;hu;it;ko;pl;pt;ru;tr"
+  ],
+  [
+   "https://github.com/firebirdberlin/nightdream",
+   "string:background_exif_summary",
+   "ar;ca;fa;hr;pt;ro;tr"
+  ],
+  [
+   "https://git.naxod.com/luca/Kompact",
+   "string:edit_exif_metadata",
+   "bg;hr;hu"
+  ],
+  [
+   "https://github.com/commons-app/apps-android-commons",
+   "string:manage_exif_tags_summary",
+   "ar;ga;pl"
+  ],
+  [
+   "https://github.com/d4rken-org/sdmaid-se",
+   "string:onboarding_welcome_body2",
+   "be;pt;sq"
+  ],
+  [
+   "https://github.com/openfoodfacts/openfoodfacts-androidapp",
+   "array:nutrients_array",
+   "cs;ro;sk"
+  ]
+ ],
+ "examples": [
+  {
+   "repo": "https://0xacab.org/leap/bitmask_android",
+   "lang": "es",
+   "key": "string:sorted_lru",
+   "target": "Perfiles ordenados por última vez usados <U+200B><U+200B>recientemente"
+  },
+  {
+   "repo": "https://0xacab.org/leap/bitmask_android",
+   "lang": "it",
+   "key": "string:osslspeedtest",
+   "target": "OpenSSL Crypto Speed <U+200B><U+200B>test"
+  },
+  {
+   "repo": "https://0xacab.org/leap/bitmask_android",
+   "lang": "nl",
+   "key": "string:add_new_vpn_hint",
+   "target": "Gebruik het pictogram <img src=\\\"ic_menu_add\\\"/> om een <U+200B><U+200B>nieuwe VPN toe te voegen"
+  },
+  {
+   "repo": "https://0xacab.org/leap/bitmask_android",
+   "lang": "nl",
+   "key": "string:vpn_import_hint",
+   "target": "Gebruik het pictogram <img src=\\\"ic_menu_archive\\\"/> om een <U+200B><U+200B>bestaand (.ovpn of .conf) profiel te importeren van uw sdcard."
+  },
+  {
+   "repo": "https://0xacab.org/leap/bitmask_android",
+   "lang": "nl",
+   "key": "string:no_external_app_allowed",
+   "target": "Geen app toegestaan <U+200B><U+200B>om externe API te gebruiken"
+  },
+  {
+   "repo": "https://0xacab.org/leap/bitmask_android",
+   "lang": "nl",
+   "key": "string:faq_android_clients",
+   "target": "Er bestaan <U+200B><U+200B>meerdere OpenVPN-clients voor Android. De meest voorkomende zijn OpenVPN voor Android (deze client), OpenVPN Connect en OpenVPN-inste"
+  },
+  {
+   "repo": "https://code.briarproject.org/briar/briar",
+   "lang": "ru",
+   "key": "string:duplicate_link_dialog_text_3",
+   "target": "%1$s и %2$s отправили вам ту же ссылку.\\n\\nОдин из них, возможно, пытается выяснить, кто ваши контакты.\\n\\nНе говорите им, что вы получили такую <U+200B><U+200B"
+  },
+  {
+   "repo": "https://code.videolan.org/videolan/vlc-android",
+   "lang": "ml",
+   "key": "string:dump_media_db_summary",
+   "target": "ആന്തരിക സംഭരണ <U+200B><U+200B>റൂട്ടിലേക്ക് ഡാറ്റാബേസ് പകർത്തുക"
+  },
+  {
+   "repo": "https://code.videolan.org/videolan/vlc-android",
+   "lang": "ml",
+   "key": "string:dump_db_succes",
+   "target": "ആന്തരിക സംഭരണ <U+200B><U+200B>റൂട്ടിൽ ഡാറ്റാബേസ് ഉപേക്ഷിചിരിക്കുന്നു "
+  },
+  {
+   "repo": "https://git.naxod.com/luca/Kompact",
+   "lang": "bg",
+   "key": "string:edit_exif_metadata",
+   "target": "Редактиране на EXIF <U+200B><U+200B>метаданни"
+  },
+  {
+   "repo": "https://git.naxod.com/luca/Kompact",
+   "lang": "hr",
+   "key": "string:edit_exif_metadata",
+   "target": "Uredite EXIF <U+200B><U+200B>metapodatke"
+  },
+  {
+   "repo": "https://git.naxod.com/luca/Kompact",
+   "lang": "hu",
+   "key": "string:edit_exif_metadata",
+   "target": "Szerkessze az EXIF <U+200B><U+200B>metaadatokat"
+  },
+  {
+   "repo": "https://github.com/AdAway/AdAway",
+   "lang": "be",
+   "key": "string:disable_systemless_magisk",
+   "target": "Адключыць бессістэмную функцыю hosts з мэнэджара Magisk. Сярод яго налад выдаліце <U+200B><U+200B>модуль Бессістемны hosts, затым перазагрузіце вашу прыладу."
+  },
+  {
+   "repo": "https://github.com/AdAway/AdAway",
+   "lang": "be",
+   "key": "string:no_text_editor",
+   "target": "Не знойдзены тэкставы рэдактар <U+200B><U+200B>для адкрыцця файла hosts. Вы можаце ўсталяваць рэдактар <U+200B><U+200B>Jota ці іншай тэкставы рэдактар, каб гэта"
+  },
+  {
+   "repo": "https://github.com/AdAway/AdAway",
+   "lang": "sl",
+   "key": "string:status_failure",
+   "target": "Nekaj <U+200B><U+200B>je šlo narobe"
+  },
+  {
+   "repo": "https://github.com/Aefyr/SAI",
+   "lang": "uk",
+   "key": "string:installer_rootless_error2_install_failed_permission_model_downgrade",
+   "target": "Нова версія пакету не підтримує динамічні дозволи, але вже встановлена <U+200B><U+200B>версія - підтримує"
+  },
+  {
+   "repo": "https://github.com/Aefyr/SAI",
+   "lang": "uk",
+   "key": "string:installer_rootless_error2_install_failed_sandbox_version_downgrade",
+   "target": "Нова версія пакету вимагає більш низьку версію пісочниці ніж встановлена <U+200B><U+200B>версія пакету"
+  },
+  {
+   "repo": "https://github.com/Aefyr/SAI",
+   "lang": "vi",
+   "key": "string:installerx_notice_no_code_for_base",
+   "target": "Có một số phần phân tách cấu hình kiến <U+200B><U+200B>trúc cho APK cơ sở, nhưng không có phần nào trong số chúng được thiết bị của bạn hỗ trợ"
+  },
+  {
+   "repo": "https://github.com/Aefyr/SAI",
+   "lang": "vi",
+   "key": "string:installerx_notice_no_code_for_feature",
+   "target": "Có một số phần phân tách cấu hình kiến <U+200B><U+200B>trúc cho tính năng \\\"%s\\\", nhưng không có phần nào trong số chúng được thiết bị của bạn hỗ trợ"
+  },
+  {
+   "repo": "https://github.com/allentown521/FocusMastodon",
+   "lang": "tr",
+   "key": "string:absolute_date",
+   "target": "Mutlak Tarih <U+200B><U+200B>Kullan"
+  },
+  {
+   "repo": "https://github.com/AndBible/and-bible",
+   "lang": "af",
+   "key": "string:duplicate_custom_repository",
+   "target": "Bewaarplek met naam %s bestaan <U+200B><U+200B>reeds, kan nie \\'n ander byvoeg nie."
+  },
+  {
+   "repo": "https://github.com/AndBible/and-bible",
+   "lang": "it",
+   "key": "string:repeat_passage",
+   "target": "Ripeti il <U+200B><U+200B>passaggio"
+  },
+  {
+   "repo": "https://github.com/AndBible/and-bible",
+   "lang": "pt",
+   "key": "string:journal_description",
+   "target": "Áreas de estudo editáveis <U+200B><U+200B>pelo utilizador, com texto e marcadores personalizados"
+  },
+  {
+   "repo": "https://github.com/AndBible/and-bible",
+   "lang": "pt",
+   "key": "string:my_notes_description",
+   "target": "Notas editáveis <U+200B><U+200B>pelo utilizador, anexadas aos marcadores"
+  },
+  {
+   "repo": "https://github.com/AndBible/and-bible",
+   "lang": "pt",
+   "key": "string:journal_description",
+   "target": "Estudos editáveis <U+200B><U+200B>pelo utilizador, com texto e marcadores personalizados"
+  },
+  {
+   "repo": "https://github.com/AndBible/and-bible",
+   "lang": "pt",
+   "key": "string:my_notes_description",
+   "target": "Notas editáveis <U+200B><U+200B>pelo utilizador, anexadas aos marcadores"
+  },
+  {
+   "repo": "https://github.com/AndreAle94/moneywallet",
+   "lang": "tr",
+   "key": "string:hint_start_date",
+   "target": " \"Başlangıç <U+200B><U+200B>tarihi\" "
+  },
+  {
+   "repo": "https://github.com/AndreAle94/moneywallet",
+   "lang": "tr",
+   "key": "string:error_input_missing_start_date",
+   "target": " \"Bir başlangıç <U+200B><U+200B>tarihi seçin\" "
+  },
+  {
+   "repo": "https://github.com/ankidroid/Anki-Android",
+   "lang": "ml",
+   "key": "string:automatic_sync_choice_summ",
+   "target": "അവസാന സമന്വയം 10 <U+200B><U+200B>ൽ കൂടുതലാണെങ്കിൽ അപ്ലിക്കേഷൻ ആരംഭത്തിൽ / പുറത്തുകടക്കുമ്പോൾ യാന്ത്രികമായി സമന്വയിപ്പിക്കുക"
+  },
+  {
+   "repo": "https://github.com/ankidroid/Anki-Android",
+   "lang": "mr",
+   "key": "string:create_shortcut_failed",
+   "target": "आपली मुख्य स्क्रीन AnkiDroid ला शॉर्टकट जोडण्याची परवानगी देत <U+200B><U+200B>नाही"
+  },
+  {
+   "repo": "https://github.com/ankidroid/Anki-Android",
+   "lang": "pa",
+   "key": "string:intro_short_ankidroid_explanation",
+   "target": "ਅੰਕੀ ਦਾ ਕਾਰਡ ਸ਼ਡਿਊਲਰ ਤੁਹਾਡੀਆਂ ਸਭ ਤੋਂ ਕਮਜ਼ੋਰ ਯਾਦਾਂ ਨੂੰ ਮਜ਼ਬੂਤ <U+200B><U+200B>ਕਰਕੇ ਅਤੇ ਤੁਹਾਡੀਆਂ ਸਭ ਤੋਂ ਮਜ਼ਬੂਤ <U+200B><U+200B>ਯਾਦਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਰੱਖ ਕੇ ਸਮਾਂ ਬਚਾਉ"
+  },
+  {
+   "repo": "https://github.com/ankidroid/Anki-Android",
+   "lang": "sq",
+   "key": "string:answering_error_message",
+   "target": "Shkrimi në koleksion dështoi. Baza e të dhënave mund të jetë e dëmtuar ose mund të mos ketë hapësirë <U+200B><U+200B>boshe të mjaftueshme në disk.\\n\\nNëse kjo n"
+  },
+  {
+   "repo": "https://github.com/ankidroid/Anki-Android",
+   "lang": "sq",
+   "key": "string:no_space_to_downgrade_content",
+   "target": "AnkiDroid ka nevojë për %s hapësirë <U+200B><U+200B>ruajtëse falas për të vazhduar. Ju lutemi lironi pak hapësirë"
+  },
+  {
+   "repo": "https://github.com/ankidroid/Anki-Android",
+   "lang": "sq",
+   "key": "string:integrity_check_insufficient_space",
+   "target": "Kontrollo Baza e të dhënave përdor një sasi të madhe ruajtjeje të përkohshme.\\n\\nRekomandohet fuqimisht që të kesh të paktën %s hapësirë <U+200B><U+200B>të lirë"
+  },
+  {
+   "repo": "https://github.com/anonomi-org/anonomi-android",
+   "lang": "ru",
+   "key": "string:duplicate_link_dialog_text_3",
+   "target": "%1$s и %2$s отправили вам ту же ссылку.\\n\\nОдин из них, возможно, пытается выяснить, кто ваши контакты.\\n\\nНе говорите им, что вы получили такую <U+200B><U+200B"
+  },
+  {
+   "repo": "https://github.com/AnySoftKeyboard/AnySoftKeyboard",
+   "lang": "vi",
+   "key": "string:use_next_words_dictionary",
+   "target": "Đề xuất từ <U+200B><U+200B>tiếp theo"
+  },
+  {
+   "repo": "https://github.com/AnySoftKeyboard/AnySoftKeyboard",
+   "lang": "vi",
+   "key": "string:next_words_dictionary_off",
+   "target": "Không đề xuất từ <U+200B><U+200B>tiếp theo"
+  },
+  {
+   "repo": "https://github.com/Aryan-Raj3112/episteme",
+   "lang": "nl",
+   "key": "string:all_books_in_shelf",
+   "target": "Alle boeken staan <U+200B><U+200B>al in deze plank"
+  },
+  {
+   "repo": "https://github.com/Aryan-Raj3112/episteme",
+   "lang": "nl",
+   "key": "string:sync_folders_desc",
+   "target": "Verbind lokale mappen om een <U+200B><U+200B>live bibliotheek te creëren. Episteme bewaakt bestanden en synchroniseert de voortgang."
+  },
+  {
+   "repo": "https://github.com/Aryan-Raj3112/episteme",
+   "lang": "nl",
+   "key": "string:current_plan",
+   "target": "Huidig <U+200B><U+200B>abonnement"
+  }
+ ],
+ "version": "0.1.0",
+ "hits_sha256": "45476a3d815f2c06dc33c0cafeeb1b16f0ccb54a12355d3bf12c902acd017554",
+ "hits_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/hits.csv"
+}

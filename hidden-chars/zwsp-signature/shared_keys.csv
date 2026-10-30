@@ -1,0 +1,8 @@
+repo,key,langs
+https://github.com/ramack/ActivityDiary,string:setting_tag_yes,cs;da;el;es;fr;hu;it;ko;nl;no;pl;pt;sv;tr
+https://github.com/ramack/ActivityDiary,string:setting_tag_no,cs;el;es;fr;hu;it;ko;pl;pt;ru;tr
+https://github.com/firebirdberlin/nightdream,string:background_exif_summary,ar;ca;fa;hr;pt;ro;tr
+https://git.naxod.com/luca/Kompact,string:edit_exif_metadata,bg;hr;hu
+https://github.com/commons-app/apps-android-commons,string:manage_exif_tags_summary,ar;ga;pl
+https://github.com/d4rken-org/sdmaid-se,string:onboarding_welcome_body2,be;pt;sq
+https://github.com/openfoodfacts/openfoodfacts-androidapp,array:nutrients_array,cs;ro;sk
