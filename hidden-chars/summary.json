@@ -1,0 +1,2203 @@
+{
+ "by_lang": {
+  "aa": {
+   "primary": 0,
+   "units": 1527
+  },
+  "ab": {
+   "primary": 3,
+   "units": 2846,
+   "zwsp": 3
+  },
+  "ace": {
+   "primary": 0,
+   "units": 215
+  },
+  "ach": {
+   "primary": 0,
+   "units": 1527
+  },
+  "ae": {
+   "primary": 0,
+   "units": 84
+  },
+  "aeb": {
+   "primary": 0,
+   "units": 160
+  },
+  "af": {
+   "joiner": 1,
+   "primary": 6,
+   "units": 47526,
+   "wj-bom": 1,
+   "zwsp": 5
+  },
+  "agq": {
+   "primary": 0,
+   "units": 182
+  },
+  "ain": {
+   "primary": 0,
+   "units": 2
+  },
+  "ak": {
+   "primary": 0,
+   "units": 1700
+  },
+  "am": {
+   "primary": 1,
+   "units": 22310,
+   "zwsp": 1
+  },
+  "an": {
+   "primary": 0,
+   "units": 1272
+  },
+  "ann": {
+   "primary": 0,
+   "units": 22
+  },
+  "anp": {
+   "joiner": 7,
+   "primary": 0,
+   "units": 775
+  },
+  "apc": {
+   "primary": 0,
+   "units": 787
+  },
+  "ar": {
+   "bidi": 261,
+   "joiner": 62,
+   "mark": 891,
+   "other-cf": 1,
+   "primary": 284,
+   "shy": 5,
+   "units": 352277,
+   "wj-bom": 1,
+   "zwsp": 16
+  },
+  "arc": {
+   "primary": 0,
+   "units": 1
+  },
+  "arn": {
+   "primary": 0,
+   "units": 11
+  },
+  "arq": {
+   "primary": 0,
+   "units": 604
+  },
+  "ars": {
+   "bidi": 2,
+   "joiner": 2,
+   "primary": 2,
+   "units": 9275
+  },
+  "ary": {
+   "primary": 0,
+   "units": 436
+  },
+  "arz": {
+   "primary": 0,
+   "units": 696
+  },
+  "as": {
+   "joiner": 128,
+   "mark": 1,
+   "primary": 2,
+   "units": 10051,
+   "wj-bom": 1
+  },
+  "asa": {
+   "primary": 0,
+   "units": 5
+  },
+  "ast": {
+   "primary": 1,
+   "shy": 1,
+   "units": 27682
+  },
+  "av": {
+   "primary": 0,
+   "units": 108
+  },
+  "ay": {
+   "primary": 1,
+   "units": 394,
+   "zwsp": 1
+  },
+  "ayc": {
+   "primary": 0,
+   "units": 1
+  },
+  "az": {
+   "primary": 6,
+   "shy": 2,
+   "units": 69948,
+   "wj-bom": 1,
+   "zwsp": 3
+  },
+  "azb": {
+   "joiner": 717,
+   "mark": 6,
+   "primary": 0,
+   "units": 1995
+  },
+  "ba": {
+   "primary": 0,
+   "units": 7340
+  },
+  "bal": {
+   "joiner": 7,
+   "primary": 0,
+   "units": 1608
+  },
+  "ban": {
+   "primary": 0,
+   "units": 1863
+  },
+  "bar": {
+   "primary": 0,
+   "units": 66
+  },
+  "bas": {
+   "primary": 0,
+   "units": 182
+  },
+  "bci": {
+   "primary": 0,
+   "units": 18
+  },
+  "bcl": {
+   "primary": 0,
+   "units": 94
+  },
+  "be": {
+   "primary": 24,
+   "shy": 1,
+   "units": 104029,
+   "wj-bom": 1,
+   "zwsp": 22
+  },
+  "bem": {
+   "primary": 0,
+   "units": 184
+  },
+  "ber": {
+   "primary": 0,
+   "units": 3121
+  },
+  "bew": {
+   "primary": 0,
+   "units": 1474
+  },
+  "bez": {
+   "primary": 0,
+   "units": 5
+  },
+  "bfo": {
+   "primary": 0,
+   "units": 11
+  },
+  "bg": {
+   "primary": 13,
+   "shy": 5,
+   "units": 149481,
+   "wj-bom": 1,
+   "zwsp": 7
+  },
+  "bh": {
+   "primary": 0,
+   "units": 492
+  },
+  "bho": {
+   "primary": 1,
+   "units": 828,
+   "zwsp": 1
+  },
+  "bi": {
+   "primary": 0,
+   "units": 381
+  },
+  "blk": {
+   "primary": 0,
+   "units": 1104
+  },
+  "blo": {
+   "primary": 0,
+   "units": 177
+  },
+  "bm": {
+   "primary": 1,
+   "units": 1966,
+   "zwsp": 1
+  },
+  "bn": {
+   "joiner": 138,
+   "primary": 2,
+   "units": 124740,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "bo": {
+   "primary": 0,
+   "units": 4023,
+   "zwsp": 1
+  },
+  "bqi": {
+   "bidi": 1,
+   "joiner": 118,
+   "mark": 9,
+   "primary": 10,
+   "units": 5775
+  },
+  "br": {
+   "primary": 1,
+   "shy": 1,
+   "units": 23255
+  },
+  "brh": {
+   "primary": 0,
+   "units": 1053
+  },
+  "brx": {
+   "primary": 0,
+   "units": 9
+  },
+  "bs": {
+   "primary": 1,
+   "units": 38797,
+   "wj-bom": 1
+  },
+  "btm": {
+   "primary": 0,
+   "units": 196
+  },
+  "by": {
+   "primary": 0,
+   "units": 77
+  },
+  "ca": {
+   "primary": 5,
+   "shy": 2,
+   "units": 213549,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "cak": {
+   "primary": 0,
+   "units": 3121
+  },
+  "cbk": {
+   "primary": 0,
+   "units": 231
+  },
+  "ce": {
+   "primary": 1,
+   "units": 3393,
+   "zwsp": 1
+  },
+  "ceb": {
+   "primary": 0,
+   "units": 2122
+  },
+  "cgg": {
+   "primary": 0,
+   "units": 178
+  },
+  "ch": {
+   "primary": 0,
+   "units": 377
+  },
+  "chr": {
+   "primary": 0,
+   "units": 1904
+  },
+  "ckb": {
+   "bidi": 6,
+   "joiner": 458,
+   "mark": 2,
+   "primary": 6,
+   "units": 16092
+  },
+  "cmn": {
+   "primary": 0,
+   "units": 218
+  },
+  "cn": {
+   "primary": 0,
+   "units": 1594
+  },
+  "cnh": {
+   "primary": 0,
+   "units": 133
+  },
+  "cnr": {
+   "primary": 0,
+   "units": 21
+  },
+  "co": {
+   "primary": 0,
+   "units": 10151
+  },
+  "cpe": {
+   "primary": 0,
+   "units": 80
+  },
+  "cr": {
+   "primary": 0,
+   "units": 16
+  },
+  "crh": {
+   "primary": 0,
+   "units": 17
+  },
+  "crs": {
+   "primary": 0,
+   "units": 1522
+  },
+  "cs": {
+   "primary": 12,
+   "shy": 1,
+   "units": 308769,
+   "wj-bom": 1,
+   "zwsp": 10
+  },
+  "csb": {
+   "primary": 0,
+   "units": 144
+  },
+  "csw": {
+   "primary": 0,
+   "units": 173
+  },
+  "cu": {
+   "primary": 2,
+   "units": 95,
+   "zwsp": 2
+  },
+  "cv": {
+   "primary": 0,
+   "units": 2195
+  },
+  "cy": {
+   "primary": 0,
+   "units": 40369
+  },
+  "cz": {
+   "primary": 0,
+   "units": 188
+  },
+  "da": {
+   "primary": 23,
+   "shy": 3,
+   "units": 184787,
+   "wj-bom": 1,
+   "zwsp": 19
+  },
+  "dag": {
+   "primary": 0,
+   "units": 1505
+  },
+  "dav": {
+   "primary": 0,
+   "units": 5
+  },
+  "de": {
+   "primary": 65,
+   "shy": 53,
+   "units": 585778,
+   "wj-bom": 5,
+   "zwsp": 8
+  },
+  "dga": {
+   "primary": 0,
+   "units": 1395
+  },
+  "diq": {
+   "primary": 0,
+   "units": 983
+  },
+  "dje": {
+   "primary": 0,
+   "units": 182
+  },
+  "dk": {
+   "primary": 0,
+   "units": 180
+  },
+  "doi": {
+   "primary": 0,
+   "units": 310
+  },
+  "dsb": {
+   "primary": 0,
+   "units": 3453
+  },
+  "dty": {
+   "joiner": 2,
+   "primary": 0,
+   "units": 51
+  },
+  "du": {
+   "primary": 0,
+   "units": 55
+  },
+  "dua": {
+   "primary": 0,
+   "units": 182
+  },
+  "dum": {
+   "primary": 0,
+   "units": 60
+  },
+  "dv": {
+   "primary": 0,
+   "units": 1130
+  },
+  "dyo": {
+   "primary": 0,
+   "units": 177
+  },
+  "dz": {
+   "primary": 0,
+   "units": 1338
+  },
+  "ebu": {
+   "primary": 0,
+   "units": 182
+  },
+  "ee": {
+   "primary": 0,
+   "units": 465
+  },
+  "el": {
+   "joiner": 2,
+   "primary": 6,
+   "units": 215657,
+   "wj-bom": 4,
+   "zwsp": 2
+  },
+  "en": {
+   "mark": 3665,
+   "primary": 3668,
+   "units": 114780,
+   "wj-bom": 3
+  },
+  "enm": {
+   "primary": 0,
+   "units": 178
+  },
+  "eo": {
+   "primary": 0,
+   "units": 73456
+  },
+  "es": {
+   "primary": 23,
+   "shy": 6,
+   "units": 664468,
+   "wj-bom": 7,
+   "zwsp": 10
+  },
+  "et": {
+   "primary": 2,
+   "units": 179285,
+   "zwsp": 2
+  },
+  "eu": {
+   "primary": 1,
+   "units": 117531,
+   "wj-bom": 1
+  },
+  "ewo": {
+   "primary": 0,
+   "units": 182
+  },
+  "ext": {
+   "primary": 0,
+   "units": 517
+  },
+  "fa": {
+   "bidi": 292,
+   "joiner": 60297,
+   "mark": 1193,
+   "primary": 302,
+   "shy": 7,
+   "units": 219581,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "ff": {
+   "primary": 0,
+   "units": 1500
+  },
+  "fi": {
+   "joiner": 1,
+   "primary": 8,
+   "shy": 4,
+   "units": 211479,
+   "wj-bom": 2,
+   "zwsp": 2
+  },
+  "fil": {
+   "primary": 1,
+   "units": 52506,
+   "wj-bom": 1
+  },
+  "fit": {
+   "primary": 0,
+   "units": 1
+  },
+  "fj": {
+   "primary": 0,
+   "units": 382
+  },
+  "fo": {
+   "primary": 0,
+   "units": 2880
+  },
+  "fr": {
+   "bidi": 1,
+   "primary": 16,
+   "shy": 2,
+   "units": 560936,
+   "wj-bom": 1,
+   "zwsp": 12
+  },
+  "fra": {
+   "primary": 0,
+   "units": 11
+  },
+  "frc": {
+   "primary": 0,
+   "units": 17
+  },
+  "frp": {
+   "primary": 0,
+   "units": 13
+  },
+  "frr": {
+   "primary": 0,
+   "units": 130
+  },
+  "fur": {
+   "primary": 0,
+   "units": 3328
+  },
+  "fy": {
+   "primary": 1,
+   "units": 16474,
+   "zwsp": 1
+  },
+  "ga": {
+   "primary": 27,
+   "units": 56023,
+   "zwsp": 27
+  },
+  "gaa": {
+   "primary": 0,
+   "units": 11
+  },
+  "gal": {
+   "primary": 0,
+   "units": 1481
+  },
+  "gcr": {
+   "primary": 0,
+   "units": 195
+  },
+  "gd": {
+   "primary": 0,
+   "units": 18523
+  },
+  "gl": {
+   "primary": 2,
+   "units": 128137,
+   "wj-bom": 2
+  },
+  "glk": {
+   "joiner": 19,
+   "primary": 0,
+   "units": 295
+  },
+  "gn": {
+   "primary": 0,
+   "units": 3832
+  },
+  "gom": {
+   "primary": 0,
+   "units": 14
+  },
+  "got": {
+   "primary": 0,
+   "units": 1924
+  },
+  "gr": {
+   "primary": 0,
+   "units": 83
+  },
+  "gsw": {
+   "primary": 0,
+   "units": 4248
+  },
+  "gu": {
+   "joiner": 4,
+   "primary": 6,
+   "shy": 3,
+   "units": 37548,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "guz": {
+   "primary": 0,
+   "units": 182
+  },
+  "gv": {
+   "primary": 0,
+   "units": 201
+  },
+  "ha": {
+   "primary": 0,
+   "units": 7801
+  },
+  "haw": {
+   "primary": 6,
+   "units": 2046,
+   "zwsp": 6
+  },
+  "he": {
+   "bidi": 21,
+   "joiner": 3,
+   "mark": 261,
+   "primary": 25,
+   "units": 48269,
+   "zwsp": 4
+  },
+  "heb": {
+   "mark": 7,
+   "primary": 7,
+   "units": 1267
+  },
+  "hi": {
+   "joiner": 261,
+   "mark": 4,
+   "primary": 12,
+   "shy": 1,
+   "units": 194131,
+   "wj-bom": 1,
+   "zwsp": 6
+  },
+  "hif": {
+   "primary": 0,
+   "units": 4
+  },
+  "hil": {
+   "primary": 0,
+   "units": 549
+  },
+  "hmn": {
+   "primary": 0,
+   "units": 40
+  },
+  "hn": {
+   "primary": 0,
+   "units": 182
+  },
+  "ho": {
+   "primary": 0,
+   "units": 11
+  },
+  "hoc": {
+   "primary": 0,
+   "units": 1
+  },
+  "hop": {
+   "primary": 0,
+   "units": 5
+  },
+  "hr": {
+   "mark": 1,
+   "primary": 13,
+   "units": 125073,
+   "wj-bom": 1,
+   "zwsp": 11
+  },
+  "hrx": {
+   "primary": 0,
+   "units": 82
+  },
+  "hsb": {
+   "primary": 0,
+   "units": 7972
+  },
+  "ht": {
+   "primary": 1,
+   "units": 2785,
+   "zwsp": 1
+  },
+  "hu": {
+   "joiner": 1,
+   "primary": 13,
+   "shy": 1,
+   "units": 255819,
+   "zwsp": 12
+  },
+  "hus": {
+   "primary": 0,
+   "units": 115
+  },
+  "hy": {
+   "primary": 8,
+   "shy": 2,
+   "units": 30306,
+   "zwsp": 6
+  },
+  "hyw": {
+   "primary": 0,
+   "units": 1
+  },
+  "hz": {
+   "primary": 0,
+   "units": 16
+  },
+  "ia": {
+   "primary": 0,
+   "units": 18115
+  },
+  "id": {
+   "primary": 3,
+   "units": 59220,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "ie": {
+   "primary": 0,
+   "units": 173
+  },
+  "ig": {
+   "primary": 0,
+   "units": 2383
+  },
+  "ii": {
+   "primary": 0,
+   "units": 1514
+  },
+  "ik": {
+   "primary": 0,
+   "units": 5
+  },
+  "ilo": {
+   "primary": 0,
+   "units": 11
+  },
+  "in": {
+   "primary": 7,
+   "shy": 2,
+   "units": 235305,
+   "wj-bom": 1,
+   "zwsp": 4
+  },
+  "ind": {
+   "primary": 0,
+   "units": 1197
+  },
+  "inh": {
+   "primary": 0,
+   "units": 1253
+  },
+  "io": {
+   "primary": 0,
+   "units": 2008
+  },
+  "is": {
+   "primary": 2,
+   "units": 89248,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "isv": {
+   "primary": 0,
+   "units": 2302
+  },
+  "it": {
+   "primary": 27,
+   "shy": 2,
+   "units": 459965,
+   "wj-bom": 2,
+   "zwsp": 23
+  },
+  "iu": {
+   "primary": 0,
+   "units": 1543
+  },
+  "iw": {
+   "bidi": 77,
+   "joiner": 27,
+   "mark": 1290,
+   "primary": 111,
+   "shy": 10,
+   "units": 167541,
+   "wj-bom": 1,
+   "zwsp": 23
+  },
+  "ixl": {
+   "primary": 0,
+   "units": 235
+  },
+  "ja": {
+   "bidi": 1,
+   "mark": 4,
+   "primary": 14,
+   "shy": 3,
+   "units": 372175,
+   "wj-bom": 2,
+   "zwsp": 4
+  },
+  "jbo": {
+   "primary": 0,
+   "units": 93
+  },
+  "jgo": {
+   "primary": 0,
+   "units": 178
+  },
+  "ji": {
+   "bidi": 1,
+   "primary": 1,
+   "units": 2499
+  },
+  "jmc": {
+   "primary": 0,
+   "units": 5
+  },
+  "jp": {
+   "primary": 0,
+   "units": 139
+  },
+  "jpr": {
+   "bidi": 4,
+   "mark": 16,
+   "primary": 16,
+   "units": 259
+  },
+  "jv": {
+   "primary": 0,
+   "units": 4846
+  },
+  "ka": {
+   "primary": 1,
+   "units": 61548,
+   "wj-bom": 1
+  },
+  "kaa": {
+   "primary": 0,
+   "units": 2957
+  },
+  "kab": {
+   "primary": 0,
+   "units": 28083
+  },
+  "kac": {
+   "primary": 0,
+   "units": 1198
+  },
+  "kam": {
+   "primary": 0,
+   "units": 177
+  },
+  "kcg": {
+   "primary": 0,
+   "units": 743
+  },
+  "kde": {
+   "primary": 0,
+   "units": 5
+  },
+  "kdh": {
+   "primary": 0,
+   "units": 11
+  },
+  "kea": {
+   "primary": 0,
+   "units": 169
+  },
+  "kg": {
+   "primary": 0,
+   "units": 11
+  },
+  "kge": {
+   "primary": 0,
+   "units": 4
+  },
+  "kgp": {
+   "primary": 0,
+   "units": 177
+  },
+  "khq": {
+   "primary": 0,
+   "units": 177
+  },
+  "ki": {
+   "primary": 0,
+   "units": 177
+  },
+  "kj": {
+   "primary": 0,
+   "units": 11
+  },
+  "kjp": {
+   "primary": 0,
+   "units": 1
+  },
+  "kk": {
+   "primary": 2,
+   "units": 34554,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "kkj": {
+   "primary": 0,
+   "units": 178
+  },
+  "kl": {
+   "primary": 0,
+   "units": 189
+  },
+  "kln": {
+   "primary": 0,
+   "units": 182
+  },
+  "km": {
+   "joiner": 37,
+   "primary": 1,
+   "units": 22430,
+   "wj-bom": 1,
+   "zwsp": 4331
+  },
+  "kmb": {
+   "primary": 0,
+   "units": 5
+  },
+  "kmr": {
+   "joiner": 2,
+   "primary": 2,
+   "units": 9653,
+   "zwsp": 2
+  },
+  "kn": {
+   "joiner": 10279,
+   "mark": 1,
+   "primary": 2,
+   "units": 51099,
+   "zwsp": 1
+  },
+  "ko": {
+   "mark": 16,
+   "primary": 38,
+   "shy": 6,
+   "units": 289616,
+   "wj-bom": 1,
+   "zwsp": 15
+  },
+  "kok": {
+   "joiner": 14,
+   "primary": 0,
+   "units": 743
+  },
+  "kr": {
+   "primary": 0,
+   "units": 10
+  },
+  "krc": {
+   "primary": 0,
+   "units": 2353
+  },
+  "krl": {
+   "primary": 0,
+   "units": 12
+  },
+  "ks": {
+   "primary": 0,
+   "units": 2063
+  },
+  "ksb": {
+   "primary": 0,
+   "units": 5
+  },
+  "ksf": {
+   "primary": 0,
+   "units": 182
+  },
+  "ksh": {
+   "primary": 0,
+   "units": 393
+  },
+  "ksw": {
+   "primary": 0,
+   "units": 1198
+  },
+  "ku": {
+   "bidi": 2,
+   "joiner": 185,
+   "primary": 2,
+   "units": 11234
+  },
+  "kum": {
+   "primary": 0,
+   "units": 356
+  },
+  "kus": {
+   "primary": 0,
+   "units": 1674
+  },
+  "kv": {
+   "primary": 0,
+   "units": 11
+  },
+  "kw": {
+   "primary": 0,
+   "units": 5756
+  },
+  "kxv": {
+   "joiner": 4,
+   "primary": 0,
+   "units": 708
+  },
+  "ky": {
+   "primary": 1,
+   "units": 15024,
+   "wj-bom": 1
+  },
+  "la": {
+   "primary": 0,
+   "units": 5237
+  },
+  "lag": {
+   "primary": 0,
+   "units": 6
+  },
+  "lb": {
+   "primary": 0,
+   "units": 6746
+  },
+  "lez": {
+   "primary": 0,
+   "units": 2
+  },
+  "lg": {
+   "primary": 40,
+   "units": 2165,
+   "wj-bom": 40
+  },
+  "li": {
+   "primary": 0,
+   "units": 320
+  },
+  "lij": {
+   "primary": 0,
+   "units": 1175
+  },
+  "lkt": {
+   "primary": 0,
+   "units": 1249
+  },
+  "lld": {
+   "primary": 0,
+   "units": 765
+  },
+  "lmo": {
+   "primary": 0,
+   "units": 656
+  },
+  "ln": {
+   "primary": 0,
+   "units": 325
+  },
+  "lo": {
+   "primary": 1,
+   "units": 39669,
+   "wj-bom": 1,
+   "zwsp": 2553
+  },
+  "lol": {
+   "primary": 0,
+   "units": 1578
+  },
+  "lrc": {
+   "primary": 0,
+   "units": 1
+  },
+  "lt": {
+   "primary": 3,
+   "units": 146975,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "ltg": {
+   "primary": 0,
+   "units": 1
+  },
+  "lu": {
+   "primary": 0,
+   "units": 177
+  },
+  "luo": {
+   "primary": 0,
+   "units": 182
+  },
+  "lus": {
+   "primary": 0,
+   "units": 1198
+  },
+  "luy": {
+   "primary": 0,
+   "units": 193
+  },
+  "lv": {
+   "other-cf": 4,
+   "primary": 11,
+   "units": 92324,
+   "wj-bom": 7
+  },
+  "lzh": {
+   "primary": 0,
+   "units": 6984
+  },
+  "mag": {
+   "primary": 0,
+   "units": 1743
+  },
+  "mai": {
+   "primary": 0,
+   "units": 319
+  },
+  "mas": {
+   "primary": 0,
+   "units": 183
+  },
+  "me": {
+   "primary": 0,
+   "units": 11
+  },
+  "meh": {
+   "primary": 0,
+   "units": 1825
+  },
+  "mer": {
+   "primary": 0,
+   "units": 182
+  },
+  "mfe": {
+   "primary": 0,
+   "units": 383
+  },
+  "mg": {
+   "primary": 0,
+   "units": 3305
+  },
+  "mgh": {
+   "primary": 0,
+   "units": 177
+  },
+  "mgo": {
+   "primary": 0,
+   "units": 178
+  },
+  "mh": {
+   "primary": 0,
+   "units": 11
+  },
+  "mhr": {
+   "primary": 0,
+   "units": 802
+  },
+  "mi": {
+   "primary": 0,
+   "units": 2418
+  },
+  "min": {
+   "primary": 0,
+   "units": 267
+  },
+  "mix": {
+   "primary": 0,
+   "units": 328
+  },
+  "mk": {
+   "primary": 3,
+   "shy": 1,
+   "units": 39230,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "ml": {
+   "joiner": 7981,
+   "primary": 13,
+   "units": 77037,
+   "wj-bom": 1,
+   "zwsp": 12
+  },
+  "mn": {
+   "primary": 1,
+   "units": 19390,
+   "wj-bom": 1
+  },
+  "mnc": {
+   "primary": 0,
+   "units": 59
+  },
+  "mni": {
+   "joiner": 1,
+   "primary": 0,
+   "units": 614
+  },
+  "mnw": {
+   "primary": 0,
+   "units": 1334
+  },
+  "mo": {
+   "primary": 0,
+   "units": 1010
+  },
+  "moh": {
+   "primary": 0,
+   "units": 11
+  },
+  "mos": {
+   "primary": 0,
+   "units": 11
+  },
+  "mr": {
+   "joiner": 530,
+   "primary": 3,
+   "units": 46319,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "mrh": {
+   "primary": 0,
+   "units": 105
+  },
+  "ms": {
+   "primary": 1,
+   "units": 45831,
+   "wj-bom": 1
+  },
+  "mt": {
+   "primary": 0,
+   "units": 6792
+  },
+  "mth": {
+   "primary": 0,
+   "units": 31
+  },
+  "mua": {
+   "primary": 0,
+   "units": 5
+  },
+  "my": {
+   "joiner": 48,
+   "primary": 0,
+   "units": 38900,
+   "zwsp": 186
+  },
+  "mzn": {
+   "joiner": 5,
+   "primary": 0,
+   "units": 177
+  },
+  "na": {
+   "primary": 0,
+   "units": 11
+  },
+  "nah": {
+   "primary": 0,
+   "units": 36
+  },
+  "nap": {
+   "primary": 0,
+   "units": 93
+  },
+  "naq": {
+   "primary": 0,
+   "units": 177
+  },
+  "nb": {
+   "primary": 19,
+   "shy": 17,
+   "units": 165858,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "nd": {
+   "primary": 0,
+   "units": 173
+  },
+  "nds": {
+   "primary": 0,
+   "units": 259
+  },
+  "ne": {
+   "joiner": 67,
+   "primary": 1,
+   "units": 33074,
+   "wj-bom": 1
+  },
+  "ng": {
+   "primary": 0,
+   "units": 11
+  },
+  "nia": {
+   "primary": 0,
+   "units": 351
+  },
+  "nl": {
+   "bidi": 1,
+   "primary": 437,
+   "shy": 354,
+   "units": 344350,
+   "wj-bom": 21,
+   "zwsp": 61
+  },
+  "nmg": {
+   "primary": 0,
+   "units": 5
+  },
+  "nn": {
+   "primary": 84,
+   "shy": 84,
+   "units": 34303
+  },
+  "nnh": {
+   "primary": 0,
+   "units": 178
+  },
+  "no": {
+   "primary": 2,
+   "units": 60444,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "nqo": {
+   "primary": 0,
+   "units": 3753
+  },
+  "nr": {
+   "primary": 0,
+   "units": 1906
+  },
+  "ns": {
+   "primary": 0,
+   "units": 11
+  },
+  "nso": {
+   "primary": 0,
+   "units": 427
+  },
+  "nv": {
+   "primary": 0,
+   "units": 13
+  },
+  "ny": {
+   "primary": 0,
+   "units": 3739
+  },
+  "nyn": {
+   "primary": 0,
+   "units": 5
+  },
+  "oc": {
+   "primary": 0,
+   "units": 17222
+  },
+  "oj": {
+   "primary": 0,
+   "units": 16
+  },
+  "olo": {
+   "primary": 0,
+   "units": 247
+  },
+  "om": {
+   "primary": 0,
+   "units": 1156
+  },
+  "or": {
+   "joiner": 751,
+   "primary": 1,
+   "units": 23312,
+   "wj-bom": 1
+  },
+  "os": {
+   "primary": 0,
+   "units": 1368
+  },
+  "ota": {
+   "bidi": 12,
+   "joiner": 7,
+   "primary": 12,
+   "units": 960
+  },
+  "pa": {
+   "bidi": 33,
+   "joiner": 195,
+   "mark": 24,
+   "primary": 44,
+   "shy": 3,
+   "units": 58426,
+   "wj-bom": 2,
+   "zwsp": 2
+  },
+  "pai": {
+   "primary": 0,
+   "units": 121
+  },
+  "pam": {
+   "primary": 0,
+   "units": 112
+  },
+  "pap": {
+   "primary": 0,
+   "units": 396
+  },
+  "pcd": {
+   "primary": 0,
+   "units": 95
+  },
+  "pcm": {
+   "primary": 0,
+   "units": 303
+  },
+  "peo": {
+   "joiner": 48,
+   "primary": 0,
+   "units": 327
+  },
+  "pi": {
+   "primary": 0,
+   "units": 11
+  },
+  "pl": {
+   "mark": 3,
+   "primary": 23,
+   "shy": 12,
+   "units": 399913,
+   "wj-bom": 1,
+   "zwsp": 7
+  },
+  "pms": {
+   "primary": 0,
+   "units": 855
+  },
+  "pnb": {
+   "joiner": 3,
+   "primary": 0,
+   "units": 391
+  },
+  "ppl": {
+   "primary": 0,
+   "units": 259
+  },
+  "prg": {
+   "primary": 0,
+   "units": 177
+  },
+  "ps": {
+   "joiner": 710,
+   "primary": 0,
+   "units": 10403
+  },
+  "pt": {
+   "mark": 1,
+   "primary": 53,
+   "shy": 15,
+   "units": 718669,
+   "wj-bom": 2,
+   "zwsp": 36
+  },
+  "qpv": {
+   "primary": 0,
+   "units": 74
+  },
+  "qq": {
+   "primary": 0,
+   "units": 3548
+  },
+  "qqq": {
+   "primary": 0,
+   "units": 30
+  },
+  "qtq": {
+   "primary": 0,
+   "units": 84
+  },
+  "qu": {
+   "primary": 0,
+   "units": 2475
+  },
+  "quc": {
+   "primary": 0,
+   "units": 260
+  },
+  "quy": {
+   "primary": 0,
+   "units": 100
+  },
+  "qya": {
+   "primary": 0,
+   "units": 11
+  },
+  "rhg": {
+   "primary": 0,
+   "units": 1
+  },
+  "rki": {
+   "joiner": 47,
+   "primary": 4,
+   "units": 1603,
+   "zwsp": 4
+  },
+  "rm": {
+   "primary": 0,
+   "units": 7508
+  },
+  "rn": {
+   "primary": 0,
+   "units": 193
+  },
+  "ro": {
+   "primary": 6,
+   "shy": 1,
+   "units": 215845,
+   "wj-bom": 1,
+   "zwsp": 4
+  },
+  "roa": {
+   "primary": 0,
+   "units": 119
+  },
+  "rof": {
+   "primary": 0,
+   "units": 5
+  },
+  "ru": {
+   "primary": 81,
+   "shy": 7,
+   "units": 517373,
+   "wj-bom": 4,
+   "zwsp": 70
+  },
+  "rw": {
+   "primary": 0,
+   "units": 648
+  },
+  "rwk": {
+   "primary": 0,
+   "units": 5
+  },
+  "ry": {
+   "primary": 0,
+   "units": 11
+  },
+  "ryu": {
+   "primary": 0,
+   "units": 1767
+  },
+  "sa": {
+   "joiner": 5,
+   "primary": 0,
+   "units": 3949
+  },
+  "sah": {
+   "primary": 0,
+   "units": 972
+  },
+  "saq": {
+   "primary": 0,
+   "units": 178
+  },
+  "sat": {
+   "joiner": 7,
+   "primary": 1,
+   "units": 12047,
+   "zwsp": 1
+  },
+  "saz": {
+   "primary": 0,
+   "units": 1
+  },
+  "sbp": {
+   "primary": 0,
+   "units": 182
+  },
+  "sc": {
+   "primary": 2,
+   "shy": 2,
+   "units": 31074
+  },
+  "scn": {
+   "primary": 0,
+   "units": 2895
+  },
+  "sco": {
+   "primary": 0,
+   "units": 1527
+  },
+  "sd": {
+   "joiner": 1,
+   "primary": 0,
+   "units": 3886
+  },
+  "sdc": {
+   "primary": 0,
+   "units": 338
+  },
+  "sdh": {
+   "primary": 0,
+   "units": 404
+  },
+  "se": {
+   "primary": 0,
+   "units": 2498
+  },
+  "seh": {
+   "primary": 0,
+   "units": 173
+  },
+  "ses": {
+   "primary": 0,
+   "units": 169
+  },
+  "sg": {
+   "primary": 0,
+   "units": 1683
+  },
+  "sh": {
+   "primary": 0,
+   "units": 1125
+  },
+  "shn": {
+   "primary": 8,
+   "units": 672,
+   "zwsp": 8
+  },
+  "si": {
+   "joiner": 4551,
+   "primary": 6,
+   "units": 33098,
+   "wj-bom": 1,
+   "zwsp": 5
+  },
+  "sje": {
+   "primary": 0,
+   "units": 4
+  },
+  "sk": {
+   "primary": 14,
+   "shy": 3,
+   "units": 186829,
+   "wj-bom": 1,
+   "zwsp": 10
+  },
+  "skr": {
+   "primary": 0,
+   "units": 6393
+  },
+  "sl": {
+   "primary": 10,
+   "shy": 1,
+   "units": 124201,
+   "wj-bom": 1,
+   "zwsp": 8
+  },
+  "sm": {
+   "primary": 0,
+   "units": 414
+  },
+  "sma": {
+   "primary": 0,
+   "units": 1538
+  },
+  "smn": {
+   "primary": 0,
+   "units": 898
+  },
+  "sms": {
+   "primary": 0,
+   "units": 505
+  },
+  "sn": {
+   "primary": 2,
+   "units": 3584,
+   "zwsp": 2
+  },
+  "so": {
+   "primary": 1,
+   "units": 4503,
+   "zwsp": 1
+  },
+  "son": {
+   "primary": 0,
+   "units": 1530
+  },
+  "sp": {
+   "primary": 0,
+   "units": 25
+  },
+  "sq": {
+   "mark": 2,
+   "primary": 16,
+   "units": 63742,
+   "wj-bom": 1,
+   "zwsp": 13
+  },
+  "sr": {
+   "primary": 6,
+   "units": 182572,
+   "wj-bom": 2,
+   "zwsp": 4
+  },
+  "sro": {
+   "primary": 0,
+   "units": 402
+  },
+  "ss": {
+   "primary": 0,
+   "units": 1906
+  },
+  "st": {
+   "primary": 0,
+   "units": 2167
+  },
+  "su": {
+   "primary": 0,
+   "units": 3956
+  },
+  "sv": {
+   "primary": 20,
+   "shy": 10,
+   "units": 246434,
+   "wj-bom": 1,
+   "zwsp": 9
+  },
+  "sw": {
+   "primary": 1,
+   "units": 62323,
+   "wj-bom": 1
+  },
+  "swg": {
+   "primary": 0,
+   "units": 37
+  },
+  "syc": {
+   "primary": 0,
+   "units": 11
+  },
+  "syl": {
+   "primary": 0,
+   "units": 5
+  },
+  "syr": {
+   "primary": 0,
+   "units": 173
+  },
+  "szl": {
+   "mark": 1,
+   "primary": 1,
+   "units": 9536
+  },
+  "szy": {
+   "primary": 0,
+   "units": 1
+  },
+  "ta": {
+   "joiner": 57,
+   "primary": 7,
+   "units": 154141,
+   "wj-bom": 1,
+   "zwsp": 6
+  },
+  "tat": {
+   "primary": 0,
+   "units": 1599
+  },
+  "tay": {
+   "primary": 0,
+   "units": 11
+  },
+  "tcy": {
+   "joiner": 60,
+   "primary": 0,
+   "units": 762
+  },
+  "te": {
+   "joiner": 16815,
+   "mark": 3,
+   "primary": 5,
+   "units": 67745,
+   "wj-bom": 1,
+   "zwsp": 1
+  },
+  "teo": {
+   "primary": 0,
+   "units": 183
+  },
+  "tg": {
+   "primary": 0,
+   "units": 6080
+  },
+  "tgl": {
+   "primary": 0,
+   "units": 1232
+  },
+  "th": {
+   "primary": 7,
+   "shy": 3,
+   "units": 121820,
+   "wj-bom": 4,
+   "zwsp": 32
+  },
+  "ti": {
+   "primary": 0,
+   "units": 4588
+  },
+  "tk": {
+   "primary": 3,
+   "shy": 3,
+   "units": 4311
+  },
+  "tl": {
+   "primary": 1,
+   "units": 19905,
+   "wj-bom": 1
+  },
+  "tlh": {
+   "primary": 0,
+   "units": 424
+  },
+  "tly": {
+   "primary": 0,
+   "units": 1022
+  },
+  "tn": {
+   "primary": 0,
+   "units": 2133
+  },
+  "to": {
+   "primary": 0,
+   "units": 535
+  },
+  "tok": {
+   "primary": 0,
+   "units": 2010
+  },
+  "tpi": {
+   "primary": 0,
+   "units": 366
+  },
+  "tr": {
+   "joiner": 1,
+   "primary": 38,
+   "shy": 7,
+   "units": 371457,
+   "wj-bom": 1,
+   "zwsp": 30
+  },
+  "trs": {
+   "primary": 0,
+   "units": 2351
+  },
+  "ts": {
+   "primary": 0,
+   "units": 3109
+  },
+  "tsz": {
+   "primary": 0,
+   "units": 199
+  },
+  "tt": {
+   "primary": 1,
+   "units": 9393,
+   "zwsp": 1
+  },
+  "tts": {
+   "primary": 0,
+   "units": 97
+  },
+  "tum": {
+   "primary": 0,
+   "units": 4
+  },
+  "tw": {
+   "primary": 0,
+   "units": 1751
+  },
+  "twq": {
+   "primary": 0,
+   "units": 182
+  },
+  "ty": {
+   "primary": 0,
+   "units": 1526
+  },
+  "tzl": {
+   "primary": 0,
+   "units": 869
+  },
+  "tzm": {
+   "primary": 0,
+   "units": 1671
+  },
+  "ua": {
+   "primary": 0,
+   "units": 449
+  },
+  "ug": {
+   "bidi": 2,
+   "mark": 5,
+   "primary": 2,
+   "units": 12465
+  },
+  "uk": {
+   "joiner": 1,
+   "primary": 14,
+   "shy": 1,
+   "units": 339482,
+   "wj-bom": 1,
+   "zwsp": 12
+  },
+  "umb": {
+   "primary": 0,
+   "units": 5
+  },
+  "und": {
+   "joiner": 28,
+   "primary": 0,
+   "units": 266
+  },
+  "ur": {
+   "bidi": 207,
+   "joiner": 47,
+   "mark": 874,
+   "primary": 210,
+   "units": 67320,
+   "wj-bom": 1,
+   "zwsp": 2
+  },
+  "ute": {
+   "primary": 0,
+   "units": 5
+  },
+  "uz": {
+   "joiner": 7,
+   "primary": 1,
+   "units": 34945,
+   "wj-bom": 1
+  },
+  "val": {
+   "primary": 0,
+   "units": 2083
+  },
+  "ve": {
+   "primary": 0,
+   "units": 1906
+  },
+  "vec": {
+   "primary": 0,
+   "units": 2782
+  },
+  "vi": {
+   "mark": 3,
+   "primary": 41,
+   "shy": 7,
+   "units": 232308,
+   "wj-bom": 1,
+   "zwsp": 30
+  },
+  "vls": {
+   "primary": 0,
+   "units": 2033
+  },
+  "vmf": {
+   "primary": 0,
+   "units": 7
+  },
+  "vun": {
+   "primary": 0,
+   "units": 5
+  },
+  "wa": {
+   "primary": 0,
+   "units": 1590
+  },
+  "wae": {
+   "primary": 0,
+   "units": 178
+  },
+  "war": {
+   "primary": 0,
+   "units": 366
+  },
+  "wo": {
+   "primary": 0,
+   "units": 1857
+  },
+  "xal": {
+   "primary": 0,
+   "units": 179
+  },
+  "xh": {
+   "primary": 0,
+   "units": 4458
+  },
+  "xmf": {
+   "primary": 0,
+   "units": 940
+  },
+  "xnr": {
+   "primary": 0,
+   "units": 177
+  },
+  "xog": {
+   "primary": 0,
+   "units": 178
+  },
+  "yav": {
+   "primary": 0,
+   "units": 182
+  },
+  "yi": {
+   "primary": 0,
+   "units": 402
+  },
+  "yo": {
+   "primary": 0,
+   "units": 5050
+  },
+  "yrl": {
+   "primary": 0,
+   "units": 726
+  },
+  "yua": {
+   "primary": 0,
+   "units": 1009
+  },
+  "yue": {
+   "mark": 2,
+   "primary": 2,
+   "units": 18352
+  },
+  "za": {
+   "primary": 0,
+   "units": 177
+  },
+  "zam": {
+   "primary": 0,
+   "units": 103
+  },
+  "zea": {
+   "primary": 0,
+   "units": 846
+  },
+  "zgh": {
+   "primary": 0,
+   "units": 1142
+  },
+  "zh": {
+   "joiner": 14,
+   "mark": 79,
+   "primary": 169,
+   "shy": 8,
+   "units": 838090,
+   "wj-bom": 3,
+   "zwsp": 79
+  },
+  "zu": {
+   "primary": 1,
+   "units": 31999,
+   "wj-bom": 1
+  },
+  "zxx": {
+   "primary": 0,
+   "units": 9
+  }
+ },
+ "by_platform": {
+  "crowdin": 102,
+  "other": 1724,
+  "transifex": 73,
+  "weblate": 493
+ },
+ "control_rate_ratio_W_over_N": 1.7527899124597264,
+ "index_timestamp": 1793277778529,
+ "index_url": "https://f-droid.org/repo/index-v2.json",
+ "mark_units_all": 8364,
+ "mark_units_rtl": 4522,
+ "minutes": 34.2,
+ "non_weblate": {
+  "control_hits": 2722,
+  "control_rate": 0.0003027769608312062,
+  "repo_share_zwsp": 0.0737230121116377,
+  "repos": 1899,
+  "repos_with_zwsp": 140,
+  "units": 8990116,
+  "zwsp_hits": 618,
+  "zwsp_rate": 6.995669137450975e-05,
+  "zwsp_units": 8834037
+ },
+ "primary_class_hits": {
+  "bidi": 924,
+  "mark": 3842,
+  "other-cf": 5,
+  "shy": 662,
+  "wj-bom": 167,
+  "zwsp": 710
+ },
+ "repo_share_primary": 0.13795986622073578,
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_ok": 2392,
+ "repos_with_primary": 330,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "platform": "weblate",
+   "status": "ok",
+   "units": 56909
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "platform": "weblate",
+   "status": "ok",
+   "units": 29487
+  }
+ },
+ "sensitivity_without_top_zwsp_repo": {
+  "non-weblate": 0.2653203963001623,
+  "weblate": 0.2117500382562506
+ },
+ "status_counts": {
+  "clone-failed": 91,
+  "no-translations": 2210,
+  "ok": 2392
+ },
+ "verdicts": {
+  "P1": "HELD",
+  "P2": "HELD",
+  "P3": "FAILED",
+  "P4": "FAILED"
+ },
+ "version": "0.1.0",
+ "weblate": {
+  "control_hits": 2853,
+  "control_rate": 0.0005307044026701519,
+  "repo_share_zwsp": 0.04665314401622718,
+  "repos": 493,
+  "repos_with_zwsp": 23,
+  "units": 5375874,
+  "zwsp_hits": 92,
+  "zwsp_rate": 1.73461420765934e-05,
+  "zwsp_units": 5303773
+ },
+ "zwsp_rate_ratio_W_over_N": 0.24795543836874262
+}
