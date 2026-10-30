@@ -84,6 +84,8 @@ We can't tell from this data how often "EXIF" is translated *without* the pair: 
 only holds strings with a hidden character. A check over every census translation whose
 English source contains "EXIF" is the natural next step.
 
+That check is now done, pre-registered: [exif-pair results](../exif-pair/RESULTS.md) (40 of 2,517 "EXIF" units carry the pair, about 3,900 times the rate after other capital words; 4 of 5 predictions held).
+
 ## What it means for maintainers
 
 The stray zero-width spaces in shipped Android translations mostly have one shape, and that
