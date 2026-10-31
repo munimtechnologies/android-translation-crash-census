@@ -1,0 +1,177 @@
+{
+ "attributed": {
+  "rows": 90,
+  "share_weblate": 0.0,
+  "weblate": 0
+ },
+ "attributed_repos": 23,
+ "exploratory_by_pair": {
+  "other": {
+   "rows": 15,
+   "share_weblate": 0.0,
+   "weblate": 0
+  },
+  "pair": {
+   "rows": 75,
+   "share_weblate": 0.0,
+   "weblate": 0
+  }
+ },
+ "exploratory_translate_hosts": {},
+ "exploratory_years": {
+  "2016 weblate=0": 4,
+  "2017 weblate=0": 2,
+  "2018 weblate=0": 8,
+  "2019 weblate=0": 1,
+  "2020 weblate=0": 3,
+  "2022 weblate=0": 4,
+  "2023 weblate=0": 4,
+  "2024 weblate=0": 7,
+  "2025 weblate=0": 7,
+  "2026 weblate=0": 50
+ },
+ "hits_sha256": "45476a3d815f2c06dc33c0cafeeb1b16f0ccb54a12355d3bf12c902acd017554",
+ "hits_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/hits.csv",
+ "kinds_non_weblate": {
+  "edited": 5,
+  "folder-created": 24,
+  "key-added": 61
+ },
+ "kinds_weblate": {},
+ "leave_one_repo_out_share_weblate": {
+  "https://codeberg.org/Mental-Math/MentalMath": 0.0,
+  "https://github.com/ArcaneChat/android": 0.0,
+  "https://github.com/Aryan-Raj3112/episteme": 0.0,
+  "https://github.com/Elnix90/Dragon-Launcher": 0.0,
+  "https://github.com/Lastorder-DC/moshidon": 0.0,
+  "https://github.com/LeanBitLab/LeanType": 0.0,
+  "https://github.com/SchildiChat/schildichat-android-next": 0.0,
+  "https://github.com/TrianguloY/UrlChecker": 0.0,
+  "https://github.com/anonomi-org/anonomi-android": 0.0,
+  "https://github.com/brodeurlv/fastnfitness": 0.0,
+  "https://github.com/cmeng-git/atalk-android": 0.0,
+  "https://github.com/cromaguy/Rhythm": 0.0,
+  "https://github.com/deltachat/deltachat-android": 0.0,
+  "https://github.com/keymapperorg/KeyMapperKeyboard": 0.0,
+  "https://github.com/kylecorry31/Trail-Sense": 0.0,
+  "https://github.com/mardous/BoomingMusic": 0.0,
+  "https://github.com/mohamedaminelouati/Feedora": 0.0,
+  "https://github.com/mtotschnig/MyExpenses": 0.0,
+  "https://github.com/nethical6/curbox": 0.0,
+  "https://github.com/nymtech/nym-vpn-client": 0.0,
+  "https://github.com/tipone/seqular-android": 0.0,
+  "https://gitlab.com/CalyxOS/bitmask_android": 0.0,
+  "https://gitlab.com/ultrasonic/ultrasonic": 0.0
+ },
+ "minutes": 9.5,
+ "per_repo_rows_weblate": {
+  "https://codeberg.org/Mental-Math/MentalMath": [
+   1,
+   0
+  ],
+  "https://github.com/ArcaneChat/android": [
+   1,
+   0
+  ],
+  "https://github.com/Aryan-Raj3112/episteme": [
+   14,
+   0
+  ],
+  "https://github.com/Elnix90/Dragon-Launcher": [
+   2,
+   0
+  ],
+  "https://github.com/Lastorder-DC/moshidon": [
+   3,
+   0
+  ],
+  "https://github.com/LeanBitLab/LeanType": [
+   6,
+   0
+  ],
+  "https://github.com/SchildiChat/schildichat-android-next": [
+   11,
+   0
+  ],
+  "https://github.com/TrianguloY/UrlChecker": [
+   1,
+   0
+  ],
+  "https://github.com/anonomi-org/anonomi-android": [
+   1,
+   0
+  ],
+  "https://github.com/brodeurlv/fastnfitness": [
+   1,
+   0
+  ],
+  "https://github.com/cmeng-git/atalk-android": [
+   4,
+   0
+  ],
+  "https://github.com/cromaguy/Rhythm": [
+   6,
+   0
+  ],
+  "https://github.com/deltachat/deltachat-android": [
+   1,
+   0
+  ],
+  "https://github.com/keymapperorg/KeyMapperKeyboard": [
+   1,
+   0
+  ],
+  "https://github.com/kylecorry31/Trail-Sense": [
+   1,
+   0
+  ],
+  "https://github.com/mardous/BoomingMusic": [
+   1,
+   0
+  ],
+  "https://github.com/mohamedaminelouati/Feedora": [
+   12,
+   0
+  ],
+  "https://github.com/mtotschnig/MyExpenses": [
+   2,
+   0
+  ],
+  "https://github.com/nethical6/curbox": [
+   1,
+   0
+  ],
+  "https://github.com/nymtech/nym-vpn-client": [
+   2,
+   0
+  ],
+  "https://github.com/tipone/seqular-android": [
+   3,
+   0
+  ],
+  "https://gitlab.com/CalyxOS/bitmask_android": [
+   13,
+   0
+  ],
+  "https://gitlab.com/ultrasonic/ultrasonic": [
+   2,
+   0
+  ]
+ },
+ "prereg_sha256": "ab241ee280a60c1c4d9022e81434db176683ac57556fbb455ff210366839ecb1",
+ "repo_status_counts": {
+  "ok": 23
+ },
+ "repos_selected": 23,
+ "rows_selected": 90,
+ "rows_total": 90,
+ "status_counts": {
+  "attributed": 90
+ },
+ "verdicts": {
+  "P1": "HELD",
+  "P2": "HELD",
+  "P3": "HELD"
+ },
+ "version": "0.1.0"
+}
