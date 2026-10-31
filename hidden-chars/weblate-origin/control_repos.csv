@@ -1,0 +1,24 @@
+repo,head,status,commits_total,weblate_total,weblate_first,weblate_last,weblate_hosts,seconds
+https://codeberg.org/Mental-Math/MentalMath,150d93c82f734030b05687eb06d32b95e324c5cc,ok,386,36,2026-07-27,2026-10-10,hosted.weblate.org,5.2
+https://github.com/ArcaneChat/android,7be3ea7266a5e94fb5478520caa83a07356a02e9,ok,7642,81,2024-05-06,2026-10-12,hosted.weblate.org translate.codeberg.org,18.1
+https://github.com/Aryan-Raj3112/episteme,792f5bf55cc99e1bb4d44cd5ac24eb86e48fa297,ok,452,163,2026-04-20,2026-09-22,hosted.weblate.org translate.epistemereader.com,12.3
+https://github.com/Elnix90/Dragon-Launcher,b9e6c7aea6a4e79dba1913a2f2e2e2e4e62951a0,ok,2260,85,2026-03-14,2026-10-28,hosted.weblate.org,31.1
+https://github.com/Lastorder-DC/moshidon,2c2941c5a541c0b7d9b635735332810fe43446e5,ok,8731,1894,2022-11-30,2025-05-15,rosette.todz.ynh.fr translate.codeberg.org,9.3
+https://github.com/LeanBitLab/LeanType,a9dc764001a9de03a8e9dc0e5fd9db4c86de16bb,ok,4111,93,2022-02-18,2022-07-12,hosted.weblate.org,24.0
+https://github.com/SchildiChat/schildichat-android-next,588a9cd957e2581d1823f57cd066dbc35a27ca9e,ok,13842,146,2024-02-01,2026-09-09,weblate.spiritcroc.de,21.1
+https://github.com/TrianguloY/UrlChecker,5886dad266f8d685ad2c4537bd36225185881a9b,ok,987,70,2023-03-12,2026-04-02,hosted.weblate.org,2.3
+https://github.com/anonomi-org/anonomi-android,3d8ad36913bc5920373c6747cdb8a55dac0107cb,ok,674,503,2026-02-07,2026-02-18,,14.8
+https://github.com/brodeurlv/fastnfitness,d5a3d4816a8509fe1e4738d0b10f520e384e1ab7,ok,669,32,2021-06-15,2022-02-08,hosted.weblate.org,2.0
+https://github.com/cmeng-git/atalk-android,534cebbf7ed1623e32163f6d4be4aefa687845f4,ok,308,19,2025-02-15,2026-03-14,toolate.othing.xyz,48.6
+https://github.com/cromaguy/Rhythm,85fea209c4d44046192d830faa9181db3ece82ad,ok,1477,164,2026-07-03,2026-10-03,hosted.weblate.org,16.1
+https://github.com/deltachat/deltachat-android,0b9ba6d37c75df42666dfcadb5cb895cc88b43e3,ok,6782,81,2024-05-06,2026-10-12,hosted.weblate.org translate.codeberg.org,14.9
+https://github.com/keymapperorg/KeyMapperKeyboard,23cf64bd7ab670c93573e6e9010dd7a15c663349,ok,462,93,2022-02-18,2022-07-12,hosted.weblate.org,6.3
+https://github.com/kylecorry31/Trail-Sense,bc8207f6b0ee8500f6840c4cf9e0b86d8709c1e2,ok,10989,2942,2020-09-24,2026-10-21,hosted.weblate.org,23.9
+https://github.com/mardous/BoomingMusic,94e723c84669453f25dfdf9f1db8bd5967d19bed,ok,2804,975,2026-03-21,2026-09-28,hosted.weblate.org,6.5
+https://github.com/mohamedaminelouati/Feedora,b3a86016e4c6f17d24b1e819a33bb2b4e7dad1e8,ok,1014,143,2022-08-10,2026-07-03,hosted.weblate.org,4.6
+https://github.com/mtotschnig/MyExpenses,31246c3576ac0668d2e00f7a5fc69f05306c941a,ok,17025,3027,2021-03-16,2026-10-15,hosted.weblate.org,44.5
+https://github.com/nethical6/curbox,09808a4d5c1be9adc1bd43bbf0b726663774dd04,ok,939,5,2024-12-17,2024-12-17,hosted.weblate.org,10.5
+https://github.com/nymtech/nym-vpn-client,02a171675adc2bebf66d21438deb9e7fe83a4a95,ok,5187,34,2024-06-27,2025-03-21,weblate.nymte.ch,130.1
+https://github.com/tipone/seqular-android,659865e55f79ea0a67c1f20ae5b32bc17ac84f2e,ok,8717,1894,2022-11-30,2025-05-15,rosette.todz.ynh.fr translate.codeberg.org,8.4
+https://gitlab.com/CalyxOS/bitmask_android,19740e42a0dd56d4254b3a2313447650dcb0cbd8,ok,3084,12,2021-10-21,2025-01-03,hosted.weblate.org,12.1
+https://gitlab.com/ultrasonic/ultrasonic,d6aff5c9c09650970637e1915824b3b40cb281b8,ok,2298,115,2023-02-11,2026-10-17,hosted.weblate.org,3.5

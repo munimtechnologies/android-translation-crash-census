@@ -19,7 +19,7 @@ That fits what Weblate's source suggests (see PREREG.md): its `RemoveZeroSpace` 
 
 ## What the introducing commits were (exploratory, not pre-registered)
 
-Everything below was tallied by hand from the first lines of the commit messages in [`rows.csv`](rows.csv), after the verdicts were known. Check it against that file. A follow-up job (`weblate-control-v1`, below) recounts the platform names by code from the full commit messages.
+Everything below was tallied by hand from the first lines of the commit messages in [`rows.csv`](rows.csv), after the verdicts were known. Check it against that file. The control job below recounts the platform names by code from the full commit messages.
 
 | Kind of introducing commit | Rows | Apps |
 |---|---|---|
@@ -38,14 +38,30 @@ Other exploratory numbers from `summary.json`:
 - Forks: two Mastodon-app forks (moshidon and seqular) share the same 3 upstream Crowdin commits, and ArcaneChat is a fork of Delta Chat with the same string. Without those 4 duplicated rows, 86 rows remain, still 0 from Weblate.
 - Four apps hold 50 of the 90 rows (Episteme 14, bitmask_android 13, Feedora 12, SchildiChat Next 11; see `per_repo_rows_weblate`). P3 was there for this, and it held.
 
-## Control, queued (exploratory)
+## Control results (exploratory, not pre-registered)
 
-"0 of 90" only means something if Weblate commits do exist in these histories and the classifier finds them. The census put these repositories in the Weblate group because their history has commits by Weblate (by name, email or the "using Weblate" message), but this job did not count them itself. A follow-up job, `weblate-control-v1` ([`control.py`](control.py), tests in `test_control.py`), downloads the published `zwsp_origin.py` unchanged and counts, for the same rows: Weblate commits in each repository and in each row's language folder; Weblate commits to that folder made after the U+200B arrived (which it survived); and which platform, if any, each introducing commit's full message names. It was written after these results were seen, so it is exploratory. Its numbers will be added here when it finishes.
+"0 of 90" only means something if Weblate commits do exist in these histories and the same rule finds them. A follow-up job, `weblate-control-v1` ([`control.py`](control.py), tests in [`test_control.py`](test_control.py)), downloaded the published `zwsp_origin.py` unchanged and ran it again on the same 90 rows, counting Weblate commits as well. It was written after the results above were seen, so it is exploratory. It ran 2026-10-31 09:21-09:28 UTC; its tests passed, all 23 repositories cloned, and all 90 rows were attributed again, with the same split of kinds (24 folder-created, 61 key-added, 5 edited).
+
+| Check | Result |
+|---|---|
+| Repositories with at least one Weblate commit (same rule as P1) on the branch read | **23 of 23** |
+| Weblate commits found in those 23 histories | 12,607 (5 to 3,027 per repository) |
+| Rows whose language folder has at least one Weblate commit | 54 of 90 |
+| Rows whose folder got a Weblate commit **after** the U+200B arrived, and still has it | 36 of 90, in 12 repositories |
+| Platform named anywhere in the introducing commit's full message | none 66, Localazy 9, Crowdin 9, Transifex 5, "weblate" 1 |
+
+What this shows:
+
+- **The rule fires.** It finds Weblate commits in every one of these repositories, thousands in total, so "0 of 90" is not a detector that never matches. In 36 rows, Weblate went on to commit to the same language folder after the U+200B arrived, and the U+200B is still there. That fits Weblate leaving repository text alone, though a later Weblate commit to the folder need not have touched that string.
+- **Platform names.** The code finds Crowdin in 9 introducing commits, 2 more than the hand count, because one Nym VPN cherry-pick commit names Crowdin only in the body of its message (2 rows). The single "weblate" match is the hand-written "quality suggestions from weblate" commit (Mental Math), which the P1 rule correctly did not count as a Weblate commit.
+- Weblate hosts seen in commit trailers: mostly hosted.weblate.org, plus Codeberg's Weblate and several self-hosted instances. One repository (anonomi-android) has 503 Weblate commits but no `Translate-URL:` trailer, so no host is listed for it.
+
+Files: [`control_summary.json`](control_summary.json), [`control_repos.csv`](control_repos.csv) (per repository: commits read, Weblate commits, first and last Weblate date, Weblate hosts), [`control_rows.csv`](control_rows.csv) (per row: introducing commit, kind, platform named, Weblate commits to the folder in total and after the U+200B arrived).
 
 ## Limits
 
 - "Introducing commit" means the newest commit that put U+200B into the string. For the 8 move, refactor and first-commit rows, and for code brought in from another project, the U+200B is older and its real origin wasn't traced.
-- The Weblate test is the commit message ("using Weblate" or a `Translate-URL:` trailer) or a `@weblate.org` email. A Weblate set up to write different commit messages would be missed. The control job checks how often the rule fires in these repositories.
+- The Weblate test is the commit message ("using Weblate" or a `Translate-URL:` trailer) or a `@weblate.org` email. A Weblate set up to write different commit messages would be missed. The control shows the rule finds Weblate commits in all 23 repositories, but it can't show how many it misses.
 - Platform names in commit messages are what the committer wrote, not proof of where the text was made.
 - 90 rows in 23 apps, with a few apps holding most of them. The census labelled these apps Weblate from their commit history, not by asking the projects.
 
@@ -55,5 +71,6 @@ Other exploratory numbers from `summary.json`:
 - [`summary.json`](summary.json): the job's output, with the verdicts, the hits.csv SHA-256 and the per-repository counts.
 - [`rows.csv`](rows.csv): one row per string with the introducing commit, its date, kind and first message line (no author names or emails).
 - [`repos.jsonl`](repos.jsonl): clone status and time per repository.
+- The control job's files, listed in the section above.
 
 Made with AI agents. MV2, Munim, Inc., mv2@munimtech.com

@@ -1,0 +1,132 @@
+{
+ "N": {
+  "any_zwsp": 698,
+  "any_zwsp_rate": 4.931e-05,
+  "pair": 521,
+  "pair_rate": 3.681e-05,
+  "single_after_space": 12,
+  "units": 14155380
+ },
+ "Z": {
+  "any_zwsp": 7102,
+  "any_zwsp_rate": 0.03105039,
+  "pair": 4,
+  "pair_rate": 1.749e-05,
+  "single_after_space": 33,
+  "units": 228725
+ },
+ "exploratory_langs": {
+  "bo": {
+   "any_zwsp": 1,
+   "any_zwsp_rate": 0.00024857,
+   "pair": 1,
+   "pair_rate": 0.00024857,
+   "single_after_space": 0,
+   "units": 4023
+  },
+  "dz": {
+   "any_zwsp": 0,
+   "any_zwsp_rate": 0.0,
+   "pair": 0,
+   "pair_rate": 0.0,
+   "single_after_space": 0,
+   "units": 1338
+  },
+  "km": {
+   "any_zwsp": 4331,
+   "any_zwsp_rate": 0.19308961,
+   "pair": 0,
+   "pair_rate": 0.0,
+   "single_after_space": 21,
+   "units": 22430
+  },
+  "lo": {
+   "any_zwsp": 2553,
+   "any_zwsp_rate": 0.06435756,
+   "pair": 0,
+   "pair_rate": 0.0,
+   "single_after_space": 7,
+   "units": 39669
+  },
+  "my": {
+   "any_zwsp": 186,
+   "any_zwsp_rate": 0.00476825,
+   "pair": 1,
+   "pair_rate": 2.564e-05,
+   "single_after_space": 4,
+   "units": 39008
+  },
+  "th": {
+   "any_zwsp": 31,
+   "any_zwsp_rate": 0.00025356,
+   "pair": 2,
+   "pair_rate": 1.636e-05,
+   "single_after_space": 1,
+   "units": 122257
+  }
+ },
+ "exploratory_pair_repos": {
+  "https://github.com/cromaguy/Rhythm": [
+   2182,
+   2
+  ],
+  "https://github.com/mullvad/mullvadvpn-app": [
+   1190,
+   1
+  ],
+  "https://github.com/snap24/RecorderX": [
+   745,
+   1
+  ]
+ },
+ "exploratory_word_before": [
+  [
+   "ทันสมัย",
+   1
+  ],
+  [
+   "ที่สะอาดตาและทันสมัย",
+   1
+  ],
+  [
+   "དང་།",
+   1
+  ],
+  [
+   "ကို",
+   1
+  ]
+ ],
+ "minutes": 17.5,
+ "prereg_sha256": "a397e8432ff86fa7b0a0e0cd7e65eefadfe14f2deafbe520ee0920983e918559",
+ "ratio_Z_over_N": 0.47514938,
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_ok": 2392,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "status": "ok",
+   "units": 56909
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "status": "ok",
+   "units": 29487
+  }
+ },
+ "status_counts": {
+  "clone-failed": 92,
+  "no-translations": 2209,
+  "ok": 2392
+ },
+ "verdicts": {
+  "P1": "FAILED",
+  "P2": "FAILED",
+  "P3": "FAILED"
+ },
+ "version": "0.1.0",
+ "z_pair_repos": 3,
+ "z_pairs_latin_before": 0,
+ "z_repos": 341
+}

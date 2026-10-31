@@ -1,0 +1,25 @@
+{
+ "exploratory": true,
+ "platform_named": {
+  "crowdin": 9,
+  "localazy": 9,
+  "none": 66,
+  "transifex": 5,
+  "weblate": 1
+ },
+ "repo_status_counts": {
+  "ok": 23
+ },
+ "repos": 23,
+ "repos_weblate_after_intro": 12,
+ "repos_with_weblate_commits": 23,
+ "row_status_counts": {
+  "attributed": 90
+ },
+ "rows": 90,
+ "rows_folder_has_weblate_commits": 54,
+ "rows_weblate_after_intro": 36,
+ "version": "0.1.0",
+ "weblate_commits_total": 12607,
+ "zwsp_origin_version": "0.1.0"
+}
