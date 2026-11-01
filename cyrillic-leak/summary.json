@@ -1,0 +1,108 @@
+{
+ "languages": {
+  "be": {
+   "flagged": 63,
+   "native": 28,
+   "repos": 220,
+   "repos_flagged": 23,
+   "ru_available": 63,
+   "ru_identical": 26,
+   "source_cyrillic_units": 10,
+   "units": 93355
+  },
+  "bg": {
+   "flagged": 15,
+   "native": 0,
+   "repos": 344,
+   "repos_flagged": 6,
+   "ru_available": 15,
+   "ru_identical": 0,
+   "source_cyrillic_units": 9,
+   "units": 126835
+  },
+  "mk": {
+   "flagged": 5,
+   "native": 3,
+   "repos": 127,
+   "repos_flagged": 5,
+   "ru_available": 5,
+   "ru_identical": 0,
+   "source_cyrillic_units": 0,
+   "units": 32683
+  },
+  "ru": {
+   "flagged": 240,
+   "native": 0,
+   "repos": 1313,
+   "repos_flagged": 8,
+   "ru_available": 0,
+   "ru_identical": 0,
+   "source_cyrillic_units": 87,
+   "units": 475756
+  },
+  "sr": {
+   "flagged": 76,
+   "native": 4,
+   "repos": 286,
+   "repos_flagged": 5,
+   "ru_available": 76,
+   "ru_identical": 24,
+   "source_cyrillic_units": 11,
+   "units": 112273
+  },
+  "uk": {
+   "flagged": 54,
+   "native": 28,
+   "repos": 756,
+   "repos_flagged": 39,
+   "ru_available": 49,
+   "ru_identical": 9,
+   "source_cyrillic_units": 50,
+   "units": 302844
+  }
+ },
+ "minutes": 17.4,
+ "parse_failed_files": 1,
+ "positive_control": true,
+ "prereg_sha256": "6503431701226106db9756439aaa07f305a31045b5df6aa21174e02493f7bd45",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "status": "ok",
+   "units": {
+    "be": 822,
+    "bg": 789,
+    "mk": 667,
+    "ru": 819,
+    "sr": 797,
+    "uk": 822
+   }
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "status": "ok",
+   "units": {
+    "be": 452,
+    "bg": 438,
+    "mk": 146,
+    "ru": 475,
+    "sr": 441,
+    "uk": 474
+   }
+  }
+ },
+ "status_counts": {
+  "clone-failed": 98,
+  "no-cyrillic": 3219,
+  "ok": 1376
+ },
+ "verdicts": {
+  "P1": "HELD",
+  "P2": "FAILED",
+  "P3": "HELD",
+  "P4": "FAILED"
+ },
+ "version": "0.1.0"
+}

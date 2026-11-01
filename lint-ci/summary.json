@@ -1,0 +1,143 @@
+{
+ "L": {
+  "errors": 95,
+  "errors_per_10k": 2.174,
+  "exposure": 437006,
+  "repos": 371,
+  "repos_with_error": 27
+ },
+ "O": {
+  "errors": 236,
+  "errors_per_10k": 2.713,
+  "exposure": 869993,
+  "repos": 1434,
+  "repos_with_error": 75
+ },
+ "exploratory_L_gradle_settings": {
+  "StringFormat": 17,
+  "abortOnError = false": 29,
+  "abortOnError false": 24,
+  "isAbortOnError = false": 1,
+  "lint-baseline": 40
+ },
+ "exploratory_O_split": {
+  "check_or_build_no_lint": {
+   "errors": 19,
+   "errors_per_10k": 4.102,
+   "exposure": 46316,
+   "repos": 183,
+   "repos_with_error": 10
+  },
+  "ci_without_either": {
+   "errors": 171,
+   "errors_per_10k": 2.818,
+   "exposure": 606708,
+   "repos": 654,
+   "repos_with_error": 43
+  },
+  "no_ci_files": {
+   "errors": 46,
+   "errors_per_10k": 2.12,
+   "exposure": 216969,
+   "repos": 597,
+   "repos_with_error": 22
+  }
+ },
+ "exploratory_ci_platforms": {
+  ".build.yml": 1,
+  ".builds": 1,
+  ".circleci": 13,
+  ".drone.yml": 3,
+  ".forgejo/workflows": 23,
+  ".gitea/workflows": 5,
+  ".github/workflows": 1005,
+  ".gitlab-ci.yml": 117,
+  ".gitlab/ci": 1,
+  ".travis.yml": 78,
+  ".woodpecker": 12,
+  ".woodpecker.yaml": 1,
+  ".woodpecker.yml": 19,
+  "Jenkinsfile": 5,
+  "appveyor.yml": 1,
+  "bitrise.yml": 1,
+  "codemagic.yaml": 1
+ },
+ "guard_failed_pairs": 0,
+ "l10n_guard": "0.15.0",
+ "minutes": 26.3,
+ "population": {
+  "errors": 331,
+  "errors_per_10k": 2.533,
+  "exposure": 1306999,
+  "repos": 1805,
+  "repos_with_error": 102
+ },
+ "prereg_sha256": "d4cffb941d2b4c748a10ead364f9ff9ca8204d7395ac3bddfaa6259c9b986c50",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "ci_files": 11,
+   "exposure": 5136,
+   "lint": true,
+   "status": "ok"
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "ci_files": 1,
+   "exposure": 3654,
+   "lint": true,
+   "status": "ok"
+  }
+ },
+ "status_counts": {
+  "clone-failed": 91,
+  "no-exposure": 2797,
+  "ok": 1805
+ },
+ "strata": [
+  {
+   "L_lower": false,
+   "L_repos": 110,
+   "L_with_error": 2,
+   "O_repos": 650,
+   "O_with_error": 11,
+   "stratum": [
+    1,
+    50
+   ],
+   "testable": true
+  },
+  {
+   "L_lower": false,
+   "L_repos": 129,
+   "L_with_error": 7,
+   "O_repos": 508,
+   "O_with_error": 25,
+   "stratum": [
+    50,
+    500
+   ],
+   "testable": true
+  },
+  {
+   "L_lower": true,
+   "L_repos": 132,
+   "L_with_error": 18,
+   "O_repos": 276,
+   "O_with_error": 39,
+   "stratum": [
+    500,
+    null
+   ],
+   "testable": true
+  }
+ ],
+ "verdicts": {
+  "P1": "HELD",
+  "P2": "HELD",
+  "P3": "FAILED"
+ },
+ "version": "0.1.0"
+}
