@@ -1,0 +1,107 @@
+{
+ "bad_files": 0,
+ "hanzi_leak_sha256": "70d46c1f48b3d73a2d4bf88ee887800db16025ff8052bf30a98e562680225774",
+ "hanzi_leak_version": "0.1.0",
+ "listing_roots": 4341,
+ "minutes": 12.4,
+ "opencc_sha256": {
+  "HKVariants.txt": "e5cd4345303224587102f2c9e4d2b67d2b7e349c6ce9152e4a118f4656cf7302",
+  "STCharacters.txt": "a0ca1601c70648cf48b33c3c6210ccbecc5c7eead4b4c3daf76587ba2c03582b",
+  "TSCharacters.txt": "737c21c66f55a419dd6956cb3089476cdefc5a36877452631617696df1e5d925",
+  "TWVariants.txt": "e187278e119c427ca561180ac5da5b20e9f8681190458f35c327ce499e95a6a5"
+ },
+ "opencc_tag": "ver.1.4.2",
+ "positive_control": true,
+ "prereg_sha256": "3ea8e78f403000dd04a2fdd08fefa83f54bd5df29aafe7b89a20943ffbfffbde",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "s_size": 3771,
+ "sample_size": 35,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "roots": 1,
+   "status": "ok",
+   "units": {
+    "hans": 804,
+    "hant": 1041
+   }
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "roots": 3,
+   "status": "ok",
+   "units": {
+    "hans": 303,
+    "hant": 358
+   }
+  }
+ },
+ "status_counts": {
+  "clone-failed": 92,
+  "no-chinese-listing": 3944,
+  "ok": 657
+ },
+ "strings_sha256": "4c07d110f66e414260c39657103382a6080befc3adc0dfd8f378331a2bf8bc59",
+ "strings_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hanzi-leak/repos.jsonl",
+ "t_size": 3198,
+ "tables": {
+  "hans": {
+   "available": 0,
+   "flagged": 13,
+   "identical": 0,
+   "kind_flagged": {
+    "changelog": 4,
+    "full_description": 8,
+    "short_description": 1
+   },
+   "kind_units": {
+    "changelog": 20265,
+    "full_description": 8225,
+    "other": 199,
+    "short_description": 613,
+    "title": 197
+   },
+   "repos": 620,
+   "repos_flagged": 9,
+   "units": 29499
+  },
+  "hant": {
+   "available": 279,
+   "flagged": 295,
+   "identical": 14,
+   "kind_flagged": {
+    "changelog": 244,
+    "full_description": 40,
+    "short_description": 8,
+    "title": 3
+   },
+   "kind_units": {
+    "changelog": 8854,
+    "full_description": 4988,
+    "other": 53,
+    "short_description": 323,
+    "title": 119
+   },
+   "repos": 287,
+   "repos_flagged": 25,
+   "units": 14337
+  },
+  "m3": {
+   "strings_clean": {
+    "listing_flagged": 11,
+    "repos": 172
+   },
+   "strings_flagged": {
+    "listing_flagged": 8,
+    "repos": 48
+   }
+  }
+ },
+ "verdicts": {
+  "M1": "PENDING HAND CHECK (sample of 35)",
+  "M2": "FAILED",
+  "M3": "HELD"
+ },
+ "version": "0.1.0"
+}

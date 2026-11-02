@@ -1,0 +1,309 @@
+repo,head,group,path,line,kind,chars,other_dir,available,identical,text
+https://codeberg.org/lanticy/guandan,2bee96980a33b995c5d7ffd780bd554e46823883,hant,fastlane/metadata/android/zh-TW/short_description.txt,1,short_description,掼,zh-CN,True,False,四人兩隊的掼蛋，同一 WiFi 下直連開局，不聯外網、不用帳號。
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,1,full_description,应态构状,zh-CN,True,False,用于 F-Droid 构建状态 API 的 Android 应用程序。
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,5,full_description,显构败,zh-CN,True,True,- 显示失败和成功的构建
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,6,full_description,显构细详,zh-CN,True,False,- 在详细界面显示构建日志
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,7,full_description,发应显,zh-CN,True,False,- 显示已发布的应用程序版本
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,8,full_description,应显,zh-CN,True,False,- 显示应用程序是否需要更新或已禁用
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,9,full_description,为夹将应标记,zh-CN,True,False,- 将应用程序标记为收藏夹以便排序
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,10,full_description,应态择构欢状选,zh-CN,True,False,- 通知新的构建状态，可选择只通知您最喜欢的应用程序
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,14,full_description,应点,zh-CN,True,False,应用程序使用以下 F-Droid API 端点：
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,16,full_description,务当构运进,zh-CN,True,False,- running.json：当前正在运行的 F-Droid 构建服务器进程，https://f-droid.org/repo/status/running.json。
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,17,full_description,务构,zh-CN,True,False,- build.json：上次完成的 F-Droid 构建服务器构建周期，https://f-droid.org/repo/status/build.json
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,18,full_description,务构检,zh-CN,True,False,- update.json：F-Droid 构建服务器最后一次更新检查，https://f-droid.org/repo/status/update.json
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,20,full_description,发软,zh-CN,True,False,- 发布的软件包信息：https://f-droid.org/api/v1/packages/{id}，示例 https://f-droid.org/api/v1/packages/org.fdroid.fdroid
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,22,full_description,术艺,zh-CN,True,False,艺术品
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/full_description.txt,24,full_description,标,zh-CN,True,False,源自 F-Droid 的徽标： https://gitlab.com/fdroid/artwork
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/short_description.txt,1,short_description,态显构状监过,zh-CN,True,False,通过 F-Droid 显示和监控构建状态
+https://codeberg.org/pstorch/F-Droid_Build_Status,8ff949e45d81f6c6fbba81811c028588a3fe9865,hant,fastlane/metadata/android/zh-Hant/title.txt,1,title,态状设,zh-CN,True,False,F-Droid 建设状态
+https://github.com/AlienKevin/wordshk_app,1571375f5daceab45d0393ac5a1a72b6a47067c0,hant,fastlane/metadata/android/zh-TW/full_description.txt,6,full_description,内,zh-CN,True,False,3. 粵英雙語内容
+https://github.com/andstatus/andstatus,963dee802a25a1d3b9e1e70a1787b93fa3fe2225,hant,app/src/main/play/listings/zh-TW/full-description.txt,14,full_description,复,zh-CN,True,False,"以任何“您”的身份進行書寫/回复,"
+https://github.com/Battor/freshmate,8a35cc7f6adc316a9abebc1569bf8484ccf2a708,hans,fastlane/metadata/android/zh-CN/full_description.txt,12,full_description,體,,False,False,• 主题与语言——深浅色主题，应用内语言切换（简体中文、繁體中文、English）
+https://github.com/brandonp2412/Flex,3fa4eab3f74b3d92817071ff31ccf26d1e27374e,hans,fastlane/metadata/android/zh-CN/changelogs/1673.txt,1,changelog,動,,False,False,自動部署窗口
+https://github.com/calcitem/Sanmill,8901a06f088bf49a1602fee8686ed25ac5a33925,hans,fastlane/metadata/android/zh-CN/changelogs/2025.txt,4,changelog,譯體,,False,False,* 增加正體中文翻譯。
+https://github.com/Crazy-Marvin/MetadataRemover,1a48772b3713711add80eedcf8207cddcaeb6fd3,hant,app/src/main/play/listings/zh-TW/full-description.txt,26,full_description,踪,zh-CN,True,False,資料收集者和跟踪者可能會從元資料中發現您的<i>居住或工作地點<i>或者得出您的日常生活<i>結論</i>。
+https://github.com/Crazy-Marvin/MetadataRemover,1a48772b3713711add80eedcf8207cddcaeb6fd3,hant,app/src/main/play/listings/zh-TW/full-description.txt,27,full_description,踪,zh-CN,True,False,跟踪服務可以創建更全面的廣告設定檔並將您的資料出售給其他組織。
+https://github.com/Crazy-Marvin/MetadataRemover,1a48772b3713711add80eedcf8207cddcaeb6fd3,hant,app/src/main/play/listings/zh-TW/full-description.txt,29,full_description,删,zh-CN,True,False,通過我們的App，您可以輕鬆查看所有資料，<i>徹底删除</i>，然後直接分享匿名照片！
+https://github.com/Crazy-Marvin/MetadataRemover,1a48772b3713711add80eedcf8207cddcaeb6fd3,hant,app/src/main/play/listings/zh-TW/full-description.txt,30,full_description,猫,zh-CN,True,False,這樣您就可以在互聯網上保持<i>匿名</i>和<i>安全</i>而你的朋友們仍然可以欣賞您可愛的猫咪。
+https://github.com/d4rken-org/sdmaid-se,95a673f4c1c5c746a622aa842c066782475c8577,hant,fastlane/metadata/android/zh-HK/full_description.txt,51,full_description,琐,zh-CN,True,False,此應用程式具有可選功能，可利用 AccessibilityService API 自動化繁琐的操作。
+https://github.com/deltazefiro/Amarok-Hider,64c1079b960fc516effc820d47816f1f90c35aa2,hant,fastlane/metadata/android/zh-TW/short_description.txt,1,short_description,与应键隐,zh-CN,True,True,一键隐藏你的隐私文件与应用。
+https://github.com/fei0316/snapstreak-alarm,b775d5db11b92097d1e21b8ab5ca4a0e07e8dc4e,hans,fastlane/metadata/android/zh-CN/full_description.txt,29,full_description,專業統網,,False,False,特别感谢 Lokalise 免费提供使用專業網上翻译管理系統。
+https://github.com/fei0316/snapstreak-alarm,b775d5db11b92097d1e21b8ab5ca4a0e07e8dc4e,hans,fastlane/metadata/android/zh-CN/changelogs/26.txt,4,changelog,請,,False,False,更改了发送通知的安排。請查看新的通知安排。
+https://github.com/FossifyOrg/Launcher,957ce3e38b79e3016d9d234e05c4737283856bde,hant,fastlane/metadata/android/zh-TW/full_description.txt,11,full_description,踪,zh-CN,True,False,您的隱私是 Fossify Launcher 的核心。無需訪問互聯網，也沒有侵入性權限，您的資料將保留在您身邊。無跟踪，無廣告 – 只是一個尊重您隱私的啟動器。<br><br>
+https://github.com/HQAnime/AnimeOne,d3bb226a3ab9a1ed252bb005cd8c4fdaf1235b47,hans,fastlane/metadata/android/zh-CN/full_description.txt,7,full_description,紹,,False,False,<li>新番介紹视频</li>
+https://github.com/HQAnime/AnimeOne,d3bb226a3ab9a1ed252bb005cd8c4fdaf1235b47,hans,fastlane/metadata/android/zh-CN/full_description.txt,17,full_description,沒,,False,False,所以 APP 也沒有理由每次打开都重新下载一遍数据。
+https://github.com/HQAnime/AnimeOne,d3bb226a3ab9a1ed252bb005cd8c4fdaf1235b47,hans,fastlane/metadata/android/zh-CN/full_description.txt,20,full_description,決沒級請,,False,False,最近因为某异世界 xxx 评鉴指南的播出，虽然沒有官方的分級审核，但还是決定为 AnimeOne 增加年龄限制。本 App 至少需要 15 岁（建议 18 岁）才可以使用本 App，如果你不到 15 岁請立即删除本 App。
+https://github.com/HQAnime/AnimeOne,d3bb226a3ab9a1ed252bb005cd8c4fdaf1235b47,hans,fastlane/metadata/android/zh-CN/full_description.txt,26,full_description,戶會,,False,False,AnimeOne 本身不會收集用戶的任何数据，
+https://github.com/HQAnime/AnimeOne,d3bb226a3ab9a1ed252bb005cd8c4fdaf1235b47,hant,fastlane/metadata/android/zh-TW/full_description.txt,8,full_description,内,zh-CN,True,False,<li>内置視頻播放器</li>
+https://github.com/HQAnime/AnimeOne,d3bb226a3ab9a1ed252bb005cd8c4fdaf1235b47,hant,fastlane/metadata/android/zh-TW/full_description.txt,16,full_description,并,zh-CN,True,False,這是因爲動畫列表以及新番時間表并不會每天都更新，
+https://github.com/KafuuNeko/RPClient,b6926257772ed03dcfec555960429e73b602364d,hant,fastlane/metadata/android/zh-HK/full_description.txt,26,full_description,并,zh-CN,True,False,RPClient 并非 SillyTavern 官方應用程式，且與 OpenAI、Google、Anthropic、DeepSeek 或 OpenRouter 無任何關聯。
+https://github.com/keepalivedev/KeepAlive,cd829b5f7e29cdc24f1f9e78524af3af7031615d,hans,app/src/fDroidLite/fastlane/metadata/android/zh-CN/full_description.txt,16,full_description,話,,False,False,Keep Alive 要求您的设备已启用蜂窝数据套餐。如果设备支持 WiFi 通话和短信功能，则将使用 WiFi 通話和短信。
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/full_description.txt,8,full_description,译,zh-CN,True,False,"* AI 翻译 (支持 OpenAI, Gemini, Deepseek...)"
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,1,changelog,写动时给议词语,zh-CN,True,True,* 查不到词时给出建议：拼写、拆词、动词短语
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,2,changelog,图频,zh-CN,True,True,* StarDict 图片可用 res.zip，音频包可用 .zip 文件
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,3,changelog,与会体写变尝词试,zh-CN,True,True,* 查词会尝试大小写与假名变体
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,4,changelog,务纯,zh-CN,True,True,* WebDAV 云同步支持纯 HTTP 的本地服务器
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,5,changelog,备复设问题,zh-CN,True,True,* 修复 Mali 设备回到前台后黑屏的问题
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,6,changelog,会导词说败,zh-CN,True,True,* 导入失败会说明原因，Hunspell 失败按词表列出
+https://github.com/mumu-lhl/Ciyue,5ddbf9c126b259646802a427a1631a5b2fb6d270,hant,metadata/zh-HK/changelogs/106.txt,7,changelog,导栏设页,zh-CN,True,True,* 设置页最后一行不再被导航栏遮住
+https://github.com/mysteriumnetwork/mysterium-vpn-mobile,9c16fc0243121a506c1d54e095dfc54f8c2645ea,hans,fastlane/metadata/android/zh-CN/short_description.txt,1,short_description,瀏覽,,False,False,私密、去中心化和安全的瀏覽
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,hant,metadata/zh-Hant/changelogs/926.txt,4,changelog,踪,zh-Hans,True,False,添加：禁用獲取/顯示跟踪器的選項
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/short_description.txt,1,short_description,务称类,zh-CN,True,False,Mastodon和类似服务器的全称用户.
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,1,changelog,点,zh-CN,True,False,新特点包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,3,changelog,时满,zh-CN,True,False,"- 不再增加“空缺”,在您任满时加薪"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,4,changelog,员连额,zh-CN,True,False,- 连接和员额
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,5,changelog,个,zh-CN,True,False,- 5个以上表格
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,6,changelog,体择触选,zh-CN,True,False,- 选择一系列可接触的字体
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,7,changelog,与体参,zh-CN,True,False,- 新媒体参与者
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,9,changelog,单标记,zh-CN,True,False,- “排外”标记清单
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,10,changelog,标识,zh-CN,True,False,- 在表格中添加“标识”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,12,changelog,图,zh-CN,True,False,插图包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,14,changelog,当时标没间,zh-CN,True,False,"- 当心血清或 between子之间时,形象就没有“标准”。"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,16,changelog,变弹药,zh-CN,True,False,未爆弹药的变化包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,18,changelog,视计,zh-CN,True,False,"- 视像更新,新彩色计划"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,19,changelog,产从环题,zh-CN,True,False,- 确定从安的环境下产生的缺省主题
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/1.txt,20,changelog,个单项,zh-CN,True,False,- “通知”是一个菜单项目
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/10.txt,5,changelog,势坠毁现趋,zh-CN,True,False,"- 如果出现趋势表,防止坠毁"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/15.txt,5,changelog,动够,zh-CN,True,False,— 只有能够就地位所附通知采取行动
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,5,changelog,总显账,zh-CN,True,False,- 显示“总账”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,6,changelog,务滤过,zh-CN,True,False,- 哥托巴支助服务器过滤器0.16
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,10,changelog,从优况时,zh-CN,True,False,- 从优惠返回时的最新情况
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,11,changelog,编语辑,zh-CN,True,False,- 编辑身份语言
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,12,changelog,体标签读,zh-CN,True,False,- 提高地位媒体标签的可读性
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,13,changelog,纳负责账马鲁,zh-CN,True,False,- 确保纳夫马鲁账户负责人的行文符合法律
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,14,changelog,创径数过,zh-CN,True,False,—— 捐款不超过所创造的捷径的最大数目
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,15,changelog,内观,zh-CN,True,False,- 在观念中采用“基本”内容描述
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/17.txt,16,changelog,兰译,zh-CN,True,False,- 更新芬兰文、西班牙文和瑞典文译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/19.txt,5,changelog,图审显,zh-CN,True,False,"- 正确定位审查卡图像,显示卡片描述"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,5,changelog,个为择时许选,zh-CN,True,False,- 允许用户在打造一个表格时选择行为
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,6,changelog,体择载选,zh-CN,True,False,- 增加向每台广播台下载媒体的选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,7,changelog,储属择记账选,zh-CN,True,False,- 加入储蓄账户记账人附属物的选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,11,changelog,显误错,zh-CN,True,False,"- 显示通知错误,而不是JSON"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,12,changelog,个没职读阅,zh-CN,True,False,"- 如果没有一个职位可以完全看出,就取消阅读职位"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,13,changelog,译语,zh-CN,True,False,- 更新加利茨基语译文
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/22.txt,14,changelog,兰尔爱译,zh-CN,True,False,- 更新爱尔兰译文
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,5,changelog,击点链长,zh-CN,True,False,- 长期点击链接展台
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,6,changelog,显触,zh-CN,True,False,- 显示接触方言中的“影子”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,7,changelog,择无碍选,zh-CN,True,False,- 增加制表上的无障碍选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,8,changelog,个员时显间额,zh-CN,True,False,- 显示一个排定员额的时间
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,9,changelog,时职认该语,zh-CN,True,False,- 在确认该职位的语言时添加“Don't 再次要求”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,13,changelog,会员对设额,zh-CN,True,False,- 对“社会融合”的“附设员额”支持
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,14,changelog,时测级编职辑验,zh-CN,True,False,- 编辑定级职位时的测验
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,15,changelog,与会则参发没话谈,zh-CN,True,False,"—— 如果谈话没有参与者,则会发生意外事故"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/23.txt,17,changelog,乌兰缅译语,zh-CN,True,False,- 更新缅甸语、芬兰语、立陶宛语、西班牙语、乌克兰语译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,5,changelog,内实选预验,zh-CN,True,False,- 实验室的配制和内容预选
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,6,changelog,发滤账过,zh-CN,True,False,- 通过发送账户初步支持过滤通知
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,7,changelog,区时设,zh-CN,True,False,"- 支持Pleroma返回日期,不设时区"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,8,changelog,动势并显联账趋项额,zh-CN,True,False,"- 显示额外11项趋势联系行动,并提出账户"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,12,changelog,击点,zh-CN,True,False,- 确保11y方言中的物品可以点击
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,13,changelog,图载,zh-CN,True,False,—— 三. 卸载后未消亡的图像/上限
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,14,changelog,坠毁,zh-CN,True,False,- 意外坠毁
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/24.txt,15,changelog,兰尔爱译,zh-CN,True,False,- 更新芬兰、爱尔兰、挪威(Bokmål、Nynorsk)和西班牙文译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,6,changelog,内变滤账过,zh-CN,True,False,- 变更内容和账户过滤器
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,7,changelog,复显职,zh-CN,True,False,- 显示正在答复的职位
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,11,changelog,单,zh-CN,True,False,- “Refresh”菜单
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,12,changelog,时点观,zh-CN,True,False,- 观察哨点时的主角
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,14,changelog,从删误错,zh-CN,True,False,- 从错误中删除“dummy.placeholder”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,16,changelog,轮,zh-CN,True,False,- 轮胎碎裂
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/27.txt,18,changelog,译,zh-CN,True,False,翻译:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,6,changelog,单时显观,zh-CN,True,False,- 观察清单时显示 compos子
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,7,changelog,书仪时显浏览,zh-CN,True,False,- 浏览书目表时显示仪表。
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,11,changelog,内对译,zh-CN,True,False,- 校对翻译内容
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,12,changelog,与关时职计间,zh-CN,True,False,- 准确计算出与情感有关的职位和投票时间
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,14,changelog,审没,zh-CN,True,False,"- 如果审查卡没有作者,"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,15,changelog,况发时没联议误错间,zh-CN,True,False,- 如果在没有联邦议院的情况下发生时间错误
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,16,changelog,况没说账,zh-CN,True,False,"- 如果账户没有“重建”外地,情况说明"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-HK/changelogs/9.txt,17,changelog,译,zh-CN,True,True,- 更新翻译
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/short_description.txt,1,short_description,务称类,zh-CN,True,False,Mastodon和类似服务器的全称用户.
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,1,changelog,点,zh-CN,True,False,新特点包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,3,changelog,时满,zh-CN,True,False,"- 不再增加“空缺”,在您任满时加薪"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,4,changelog,员连额,zh-CN,True,False,- 连接和员额
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,5,changelog,个,zh-CN,True,False,- 5个以上表格
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,6,changelog,体择触选,zh-CN,True,False,- 选择一系列可接触的字体
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,7,changelog,与体参,zh-CN,True,False,- 新媒体参与者
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,9,changelog,单标记,zh-CN,True,False,- “排外”标记清单
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,10,changelog,标识,zh-CN,True,False,- 在表格中添加“标识”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,12,changelog,图,zh-CN,True,False,插图包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,14,changelog,当时标没间,zh-CN,True,False,"- 当心血清或 between子之间时,形象就没有“标准”。"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,16,changelog,变弹药,zh-CN,True,False,未爆弹药的变化包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,18,changelog,视计,zh-CN,True,False,"- 视像更新,新彩色计划"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,19,changelog,产从环题,zh-CN,True,False,- 确定从安的环境下产生的缺省主题
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/1.txt,20,changelog,个单项,zh-CN,True,False,- “通知”是一个菜单项目
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/10.txt,5,changelog,势坠毁现趋,zh-CN,True,False,"- 如果出现趋势表,防止坠毁"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/15.txt,5,changelog,动够,zh-CN,True,False,— 只有能够就地位所附通知采取行动
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,5,changelog,总显账,zh-CN,True,False,- 显示“总账”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,6,changelog,务滤过,zh-CN,True,False,- 哥托巴支助服务器过滤器0.16
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,10,changelog,从优况时,zh-CN,True,False,- 从优惠返回时的最新情况
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,11,changelog,编语辑,zh-CN,True,False,- 编辑身份语言
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,12,changelog,体标签读,zh-CN,True,False,- 提高地位媒体标签的可读性
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,13,changelog,纳负责账马鲁,zh-CN,True,False,- 确保纳夫马鲁账户负责人的行文符合法律
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,14,changelog,创径数过,zh-CN,True,False,—— 捐款不超过所创造的捷径的最大数目
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,15,changelog,内观,zh-CN,True,False,- 在观念中采用“基本”内容描述
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/17.txt,16,changelog,兰译,zh-CN,True,False,- 更新芬兰文、西班牙文和瑞典文译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/19.txt,5,changelog,图审显,zh-CN,True,False,"- 正确定位审查卡图像,显示卡片描述"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,5,changelog,个为择时许选,zh-CN,True,False,- 允许用户在打造一个表格时选择行为
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,6,changelog,体择载选,zh-CN,True,False,- 增加向每台广播台下载媒体的选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,7,changelog,储属择记账选,zh-CN,True,False,- 加入储蓄账户记账人附属物的选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,11,changelog,显误错,zh-CN,True,False,"- 显示通知错误,而不是JSON"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,12,changelog,个没职读阅,zh-CN,True,False,"- 如果没有一个职位可以完全看出,就取消阅读职位"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,13,changelog,译语,zh-CN,True,False,- 更新加利茨基语译文
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/22.txt,14,changelog,兰尔爱译,zh-CN,True,False,- 更新爱尔兰译文
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,5,changelog,击点链长,zh-CN,True,False,- 长期点击链接展台
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,6,changelog,显触,zh-CN,True,False,- 显示接触方言中的“影子”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,7,changelog,择无碍选,zh-CN,True,False,- 增加制表上的无障碍选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,8,changelog,个员时显间额,zh-CN,True,False,- 显示一个排定员额的时间
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,9,changelog,时职认该语,zh-CN,True,False,- 在确认该职位的语言时添加“Don't 再次要求”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,13,changelog,会员对设额,zh-CN,True,False,- 对“社会融合”的“附设员额”支持
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,14,changelog,时测级编职辑验,zh-CN,True,False,- 编辑定级职位时的测验
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,15,changelog,与会则参发没话谈,zh-CN,True,False,"—— 如果谈话没有参与者,则会发生意外事故"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/23.txt,17,changelog,乌兰缅译语,zh-CN,True,False,- 更新缅甸语、芬兰语、立陶宛语、西班牙语、乌克兰语译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,5,changelog,内实选预验,zh-CN,True,False,- 实验室的配制和内容预选
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,6,changelog,发滤账过,zh-CN,True,False,- 通过发送账户初步支持过滤通知
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,7,changelog,区时设,zh-CN,True,False,"- 支持Pleroma返回日期,不设时区"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,8,changelog,动势并显联账趋项额,zh-CN,True,False,"- 显示额外11项趋势联系行动,并提出账户"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,12,changelog,击点,zh-CN,True,False,- 确保11y方言中的物品可以点击
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,13,changelog,图载,zh-CN,True,False,—— 三. 卸载后未消亡的图像/上限
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,14,changelog,坠毁,zh-CN,True,False,- 意外坠毁
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/24.txt,15,changelog,兰尔爱译,zh-CN,True,False,- 更新芬兰、爱尔兰、挪威(Bokmål、Nynorsk)和西班牙文译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,6,changelog,内变滤账过,zh-CN,True,False,- 变更内容和账户过滤器
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,7,changelog,复显职,zh-CN,True,False,- 显示正在答复的职位
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,11,changelog,单,zh-CN,True,False,- “Refresh”菜单
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,12,changelog,时点观,zh-CN,True,False,- 观察哨点时的主角
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,14,changelog,从删误错,zh-CN,True,False,- 从错误中删除“dummy.placeholder”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,16,changelog,轮,zh-CN,True,False,- 轮胎碎裂
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/27.txt,18,changelog,译,zh-CN,True,False,翻译:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,6,changelog,单时显观,zh-CN,True,False,- 观察清单时显示 compos子
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,7,changelog,书仪时显浏览,zh-CN,True,False,- 浏览书目表时显示仪表。
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,11,changelog,内对译,zh-CN,True,False,- 校对翻译内容
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,12,changelog,与关时职计间,zh-CN,True,False,- 准确计算出与情感有关的职位和投票时间
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,14,changelog,审没,zh-CN,True,False,"- 如果审查卡没有作者,"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,15,changelog,况发时没联议误错间,zh-CN,True,False,- 如果在没有联邦议院的情况下发生时间错误
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,16,changelog,况没说账,zh-CN,True,False,"- 如果账户没有“重建”外地,情况说明"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-MO/changelogs/9.txt,17,changelog,译,zh-CN,True,True,- 更新翻译
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/short_description.txt,1,short_description,务称类,zh-CN,True,False,Mastodon和类似服务器的全称用户.
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,1,changelog,点,zh-CN,True,False,新特点包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,3,changelog,时满,zh-CN,True,False,"- 不再增加“空缺”,在您任满时加薪"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,4,changelog,员连额,zh-CN,True,False,- 连接和员额
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,5,changelog,个,zh-CN,True,False,- 5个以上表格
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,6,changelog,体择触选,zh-CN,True,False,- 选择一系列可接触的字体
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,7,changelog,与体参,zh-CN,True,False,- 新媒体参与者
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,9,changelog,单标记,zh-CN,True,False,- “排外”标记清单
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,10,changelog,标识,zh-CN,True,False,- 在表格中添加“标识”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,12,changelog,图,zh-CN,True,False,插图包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,14,changelog,当时标没间,zh-CN,True,False,"- 当心血清或 between子之间时,形象就没有“标准”。"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,16,changelog,变弹药,zh-CN,True,False,未爆弹药的变化包括:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,18,changelog,视计,zh-CN,True,False,"- 视像更新,新彩色计划"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,19,changelog,产从环题,zh-CN,True,False,- 确定从安的环境下产生的缺省主题
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/1.txt,20,changelog,个单项,zh-CN,True,False,- “通知”是一个菜单项目
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/10.txt,5,changelog,势坠毁现趋,zh-CN,True,False,"- 如果出现趋势表,防止坠毁"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/15.txt,5,changelog,动够,zh-CN,True,False,— 只有能够就地位所附通知采取行动
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,5,changelog,总显账,zh-CN,True,False,- 显示“总账”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,6,changelog,务滤过,zh-CN,True,False,- 哥托巴支助服务器过滤器0.16
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,10,changelog,从优况时,zh-CN,True,False,- 从优惠返回时的最新情况
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,11,changelog,编语辑,zh-CN,True,False,- 编辑身份语言
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,12,changelog,体标签读,zh-CN,True,False,- 提高地位媒体标签的可读性
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,13,changelog,纳负责账马鲁,zh-CN,True,False,- 确保纳夫马鲁账户负责人的行文符合法律
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,14,changelog,创径数过,zh-CN,True,False,—— 捐款不超过所创造的捷径的最大数目
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,15,changelog,内观,zh-CN,True,False,- 在观念中采用“基本”内容描述
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/17.txt,16,changelog,兰译,zh-CN,True,False,- 更新芬兰文、西班牙文和瑞典文译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/19.txt,5,changelog,图审显,zh-CN,True,False,"- 正确定位审查卡图像,显示卡片描述"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,5,changelog,个为择时许选,zh-CN,True,False,- 允许用户在打造一个表格时选择行为
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,6,changelog,体择载选,zh-CN,True,False,- 增加向每台广播台下载媒体的选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,7,changelog,储属择记账选,zh-CN,True,False,- 加入储蓄账户记账人附属物的选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,11,changelog,显误错,zh-CN,True,False,"- 显示通知错误,而不是JSON"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,12,changelog,个没职读阅,zh-CN,True,False,"- 如果没有一个职位可以完全看出,就取消阅读职位"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,13,changelog,译语,zh-CN,True,False,- 更新加利茨基语译文
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/22.txt,14,changelog,兰尔爱译,zh-CN,True,False,- 更新爱尔兰译文
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,5,changelog,击点链长,zh-CN,True,False,- 长期点击链接展台
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,6,changelog,显触,zh-CN,True,False,- 显示接触方言中的“影子”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,7,changelog,择无碍选,zh-CN,True,False,- 增加制表上的无障碍选择
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,8,changelog,个员时显间额,zh-CN,True,False,- 显示一个排定员额的时间
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,9,changelog,时职认该语,zh-CN,True,False,- 在确认该职位的语言时添加“Don't 再次要求”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,13,changelog,会员对设额,zh-CN,True,False,- 对“社会融合”的“附设员额”支持
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,14,changelog,时测级编职辑验,zh-CN,True,False,- 编辑定级职位时的测验
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,15,changelog,与会则参发没话谈,zh-CN,True,False,"—— 如果谈话没有参与者,则会发生意外事故"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/23.txt,17,changelog,乌兰缅译语,zh-CN,True,False,- 更新缅甸语、芬兰语、立陶宛语、西班牙语、乌克兰语译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,5,changelog,内实选预验,zh-CN,True,False,- 实验室的配制和内容预选
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,6,changelog,发滤账过,zh-CN,True,False,- 通过发送账户初步支持过滤通知
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,7,changelog,区时设,zh-CN,True,False,"- 支持Pleroma返回日期,不设时区"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,8,changelog,动势并显联账趋项额,zh-CN,True,False,"- 显示额外11项趋势联系行动,并提出账户"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,12,changelog,击点,zh-CN,True,False,- 确保11y方言中的物品可以点击
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,13,changelog,图载,zh-CN,True,False,—— 三. 卸载后未消亡的图像/上限
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,14,changelog,坠毁,zh-CN,True,False,- 意外坠毁
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/24.txt,15,changelog,兰尔爱译,zh-CN,True,False,- 更新芬兰、爱尔兰、挪威(Bokmål、Nynorsk)和西班牙文译本
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,6,changelog,内变滤账过,zh-CN,True,False,- 变更内容和账户过滤器
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,7,changelog,复显职,zh-CN,True,False,- 显示正在答复的职位
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,11,changelog,单,zh-CN,True,False,- “Refresh”菜单
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,12,changelog,时点观,zh-CN,True,False,- 观察哨点时的主角
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,14,changelog,从删误错,zh-CN,True,False,- 从错误中删除“dummy.placeholder”
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,16,changelog,轮,zh-CN,True,False,- 轮胎碎裂
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/27.txt,18,changelog,译,zh-CN,True,False,翻译:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,3,changelog,点,zh-CN,True,False,新特点:
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,6,changelog,单时显观,zh-CN,True,False,- 观察清单时显示 compos子
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,7,changelog,书仪时显浏览,zh-CN,True,False,- 浏览书目表时显示仪表。
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,11,changelog,内对译,zh-CN,True,False,- 校对翻译内容
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,12,changelog,与关时职计间,zh-CN,True,False,- 准确计算出与情感有关的职位和投票时间
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,14,changelog,审没,zh-CN,True,False,"- 如果审查卡没有作者,"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,15,changelog,况发时没联议误错间,zh-CN,True,False,- 如果在没有联邦议院的情况下发生时间错误
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,16,changelog,况没说账,zh-CN,True,False,"- 如果账户没有“重建”外地,情况说明"
+https://github.com/pachli/pachli-android,334fb47ca629831d3f97b13dd48046615e5e98c6,hant,fastlane/metadata/android/zh-TW/changelogs/9.txt,17,changelog,译,zh-CN,True,True,- 更新翻译
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,16,full_description,与区发尝开强试,zh-CN,True,False,* 与社区一起开发和尝试增强功能。
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,17,full_description,别块复装识误释错频,zh-CN,True,False,*更频繁地释放包装器以识别和修复由同步子模块中的更改引起的错误
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,18,full_description,们关够应开强闭,zh-CN,True,False,*可在UI中配置增强功能，用户应能够打开和关闭它们
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,20,full_description,写时较这间,zh-CN,True,False,在写这篇文章时上游和分叉之间的比较：
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,22,full_description,决块进,zh-CN,True,False,*同步功能和可靠性取决于syncthing二进制子模块版本。
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,23,full_description,与们会处时进,zh-CN,True,False,* Fork与上游相处，有时他们会接受我的改进。
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,24,full_description,发频,zh-CN,True,False,*策略和发布频率不同
+https://github.com/researchxxl/syncthing-android,f8819078e7dec1e8a954eec839febd9f7385294e,hant,app/src/main/play/listings/zh-TW/full-description.txt,25,full_description,处装,zh-CN,True,False,*只有包含Android UI的包装器由fork处理。
+https://github.com/resurrectdev1/grove,169ea957116245fdfca8563941d527bfc10f6149,hant,fastlane/metadata/android/zh-TW/full_description.txt,1,full_description,树,zh-CN,True,False,無論您是保持清醒、改掉有害習慣，還是建立積極的習慣，<b>树林</b> 都可以幫助您專注於持續進步。觀察你的連勝記錄不斷增長，追蹤有意義的里程碑，並培育一片由程式生成的分形樹組成的森林，這些樹會隨著你的旅程而不斷演變。每一天的進步都有助於美好的事物紮根。
+https://github.com/scubajeff/lespas,509ad494d4a5209e2d1cd5c833d8cce4bb24bee2,hant,fastlane/metadata/android/zh-HK/changelogs/54.txt,1,changelog,题,zh-CN,True,False,* 极黑深色主题
+https://github.com/scubajeff/lespas,509ad494d4a5209e2d1cd5c833d8cce4bb24bee2,hant,fastlane/metadata/android/zh-HK/changelogs/87.txt,2,changelog,称,zh-CN,True,False,* 新功能： 搜索過濾相冊名称
+https://github.com/scubajeff/lespas,509ad494d4a5209e2d1cd5c833d8cce4bb24bee2,hant,fastlane/metadata/android/zh-TW/changelogs/44.txt,2,changelog,没,zh-CN,True,False,* 修復當没有任何相冊時仍允許搜索相冊的問題
+https://github.com/scubajeff/lespas,509ad494d4a5209e2d1cd5c833d8cce4bb24bee2,hant,fastlane/metadata/android/zh-TW/changelogs/54.txt,1,changelog,题,zh-CN,True,False,* 暗黑深色主题
+https://github.com/scubajeff/lespas,509ad494d4a5209e2d1cd5c833d8cce4bb24bee2,hant,fastlane/metadata/android/zh-TW/changelogs/89.txt,1,changelog,图库,zh-CN,True,False,* 全新的本地图库管理功能，可以管理裝置中的所有媒體檔案，併為每個資料夾進行單獨的備份設定
+https://github.com/ShadowsocksR-Live/ssrDroid,6354e95e222e88b6710686e0e781b0e52884397d,hans,fastlane/metadata/android/zh-CN/full_description.txt,3,full_description,個,,False,False,"支持 OverTLS, 一個新代理，相当于是 SSRoT 去掉 SSR 和 SS, 唯独保留 oT 的 Rust 实现，快如闪电，稳如老狗。"
+https://github.com/Slion/Fulguris,51d211ac838a7d251af71024e5bffe74e450ab61,hant,fastlane/metadata/android/zh-TW/changelogs/265.txt,7,changelog,议,zh-CN,True,False,🐛 修復搜尋建议和啟動時的潛在崩潰
+https://github.com/TeamNewPipe/NewPipe,ca5d1105049060648e698234c2a864f09e5713aa,hant,fastlane/metadata/android/zh_Hant_HK/changelogs/986.txt,11,changelog,晒,zh-Hans,True,False,• 確認多次係咪真係要刪除晒所有下載咗嘅檔案
+https://github.com/TeamNewPipe/NewPipe,ca5d1105049060648e698234c2a864f09e5713aa,hant,fastlane/metadata/android/zh_Hant_HK/changelogs/987.txt,11,changelog,晒,zh-Hans,True,False,• 修正喺播放清單度剷走由頭到尾睇過晒嘅影片
+https://github.com/TeamNewPipe/NewPipe,ca5d1105049060648e698234c2a864f09e5713aa,hant,fastlane/metadata/android/zh_Hant_HK/changelogs/993.txt,4,changelog,晒,zh-Hans,True,False,• 摘要有得收埋未睇晒嘅片
+https://github.com/tfonteyn/Sshd4a,5c329fe6818a72c3f1e1b0dc5cdd60bdc0dcf9da,hans,metadata/zh-CN/changelogs/7.txt,1,changelog,應會現確,,False,False,「com.hardbacknutter.sshd.fg.STOP」意向現在會正確退出應用程式。
+https://github.com/tipone/seqular-android,659865e55f79ea0a67c1f20ae5b32bc17ac84f2e,hant,metadata/zh-TW/full_description.txt,6,full_description,内,zh-CN,True,False,- <b>過濾嘟文！</b>：在被過濾的嘟文上標記敏感内容警告！
+https://github.com/ximeiorg/Xime,002006ea1c8b8a6f499caa48edac7efd68cdef51,hant,fastlane/metadata/android/zh-TW/title.txt,1,title,码输,zh-CN,True,True,曦码输入法
+https://github.com/YuanLiou/TaiwanEbookSearch,90c6f7c65fa3682759c2c847831318840f0a96c5,hant,fastlane/metadata/android/zh-TW/full_description.txt,10,full_description,书电,zh-CN,True,False,<li>HyRead 电子书</li>
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/full_description.txt,1,full_description,与们体关内参对并术机浏点绕络网联见览过还间验,,False,False,"分享我们!Ceno是世界上第一好的Web浏览器。提供常见的互联网浏览体验,它依靠点对点技术在所有参与者之间提供和共享网站。Ceno 还可用于绕过网络限制,并在关机期间浏览内容。"
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/full_description.txt,2,full_description,个册并开无浏览费,,False,False,"Ceno是一个完全免费和开源的浏览器,不需要注册。并且完全无广告。"
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/short_description.txt,1,short_description,对点网访问,,False,False,"访问任何网站,然后按点对点共享。"
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/title.txt,1,title,网,,False,False,分享此网站
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,1,changelog,发,,False,False,官方发布:
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,2,changelog,弹观,,False,False,- 修改Ceno Sources弹出窗口的外观
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,3,changelog,为将库组,,False,False,- 将 Android 组件库版本更新为 v109.2.0
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,5,changelog,删复时条栏键,,False,False,- 修复在键入时删除地址栏中的条目
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,6,changelog,为单导钮,,False,False,- 更改菜单中导航按钮的布局和行为
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,7,changelog,对译轻,,False,False,- 对翻译的轻微更新
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2016000816.txt,1,changelog,发补,,False,False,此补丁发布:
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2016000816.txt,2,changelog,将组,,False,False,- 将Android组件更新至129.0.2
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2016000816.txt,4,changelog,关标链页,,False,False,"- 更新有关页面的UI,其中包含新链接和更新的徽标"
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2016000816.txt,5,changelog,为将栏认设,,False,False,- 将默认工具栏位置设置为 Android 7.1 及更早版本
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2016000816.txt,6,changelog,构资,,False,False,- 重构字符串资源
+https://gitlab.com/ceno-app/ceno-android,76652c22ebe02360d67ed7e6ad78a983549a4ab0,hant,fastlane/metadata/android/zh-TW/changelogs/2016000816.txt,7,changelog,区译,,False,False,- 更新某些区域的翻译
+https://gitlab.com/fdroid/fdroidclient,b4de6fd25dc861544256a63101b59dc2ec533d98,hant,metadata/zh-Hant-HK/changelogs/1000010.txt,15,changelog,踪,zh-CN,True,False,* 改進了針對跟踪的保護（HTTP ETag、TLS 等）
+https://gitlab.com/fdroid/fdroidclient,b4de6fd25dc861544256a63101b59dc2ec533d98,hant,metadata/zh-Hant-HK/changelogs/1000011.txt,15,changelog,踪,zh-CN,True,False,* 改進了針對跟踪的保護（HTTP ETag、TLS 等）
+https://gitlab.com/ninelima/kwikEFIS,94d329cb8b7de440b7d02d6fd5ce0b124840667c,hant,src/lcd/fastlane/metadata/android/zh-Hant/short_description.txt,1,short_description,电统飞,zh-Hans,True,True,电子飞行信息系统 (EFIS)
+https://gitlab.com/proninyaroslav/libretorrent,ae96f20b9852d2140fd704a3f2451ed7679e35a0,hant,fastlane/metadata/android/zh-TW/full_description.txt,1,full_description,给,zh-CN,True,False,* 使用 GPLv3+ 授權條款。你可以使用、查看、修改並再次分發给所有人。

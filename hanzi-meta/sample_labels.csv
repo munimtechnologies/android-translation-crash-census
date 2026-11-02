@@ -1,0 +1,36 @@
+sample,repo,path,line,chars,label,note
+1,https://github.com/pachli/pachli-android,fastlane/metadata/android/zh-MO/changelogs/9.txt,12,与关时职计间,defect,whole line Simplified in a Macau folder (與 關 時 職 計 間)
+2,https://github.com/pachli/pachli-android,fastlane/metadata/android/zh-TW/changelogs/23.txt,8,个员时显间额,defect,whole line Simplified in a Taiwan folder (顯示 個 員額 時間)
+3,https://gitlab.com/proninyaroslav/libretorrent,fastlane/metadata/android/zh-TW/full_description.txt,1,给,defect,one leftover in Traditional text: 給
+4,https://github.com/Crazy-Marvin/MetadataRemover,app/src/main/play/listings/zh-TW/full-description.txt,30,猫,defect,Taiwan's standard form is 貓; 猫 is the Simplified form (also seen as a variant in Taiwan: the least clear defect in this sample)
+5,https://codeberg.org/pstorch/F-Droid_Build_Status,fastlane/metadata/android/zh-Hant/short_description.txt,1,态显构状监过,defect,whole line Simplified in a zh-Hant folder
+6,https://github.com/researchxxl/syncthing-android,app/src/main/play/listings/zh-TW/full-description.txt,22,决块进,defect,Simplified line in a Taiwan listing (決 塊 進)
+7,https://codeberg.org/pstorch/F-Droid_Build_Status,fastlane/metadata/android/zh-Hant/full_description.txt,14,应点,defect,whole line Simplified (應用程式 端點)
+8,https://gitlab.com/ceno-app/ceno-android,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,6,为单导钮,defect,whole line Simplified; this app has no Simplified listing to copy from
+9,https://github.com/Crazy-Marvin/MetadataRemover,app/src/main/play/listings/zh-TW/full-description.txt,27,踪,defect,one leftover: 蹤 (跟蹤) in otherwise Traditional text
+10,https://github.com/deltazefiro/Amarok-Hider,fastlane/metadata/android/zh-TW/short_description.txt,1,与应键隐,defect,whole short description Simplified in a Taiwan folder
+11,https://gitlab.com/ceno-app/ceno-android,fastlane/metadata/android/zh-TW/changelogs/2015894433.txt,7,对译轻,defect,whole line Simplified (對 譯 輕)
+12,https://github.com/resurrectdev1/grove,fastlane/metadata/android/zh-TW/full_description.txt,1,树,defect,app name translated as 树林 in Simplified while the same line writes 樹 elsewhere; English original is Grove
+13,https://gitlab.com/fdroid/fdroidclient,metadata/zh-Hant-HK/changelogs/1000010.txt,15,踪,defect,one leftover: 跟蹤
+14,https://github.com/HQAnime/AnimeOne,fastlane/metadata/android/zh-TW/full_description.txt,8,内,defect,內置 in Traditional; 内 is the Simplified form
+15,https://github.com/researchxxl/syncthing-android,app/src/main/play/listings/zh-TW/full-description.txt,20,写时较这间,defect,whole line Simplified
+16,https://github.com/d4rken-org/sdmaid-se,fastlane/metadata/android/zh-HK/full_description.txt,51,琐,defect,one leftover: 繁瑣
+17,https://github.com/Slion/Fulguris,fastlane/metadata/android/zh-TW/changelogs/265.txt,7,议,defect,one leftover: 建議
+18,https://github.com/mumu-lhl/Ciyue,metadata/zh-HK/changelogs/106.txt,5,备复设问题,defect,whole line Simplified in a Hong Kong folder
+19,https://github.com/mumu-lhl/Ciyue,metadata/zh-HK/changelogs/106.txt,3,与会体写变尝词试,defect,whole line Simplified in a Hong Kong folder
+20,https://github.com/scubajeff/lespas,fastlane/metadata/android/zh-HK/changelogs/54.txt,1,题,defect,whole line Simplified (極黑深色主題); 极 is not in the S set so only 题 is listed
+21,https://gitlab.com/fdroid/fdroidclient,metadata/zh-Hant-HK/changelogs/1000011.txt,15,踪,defect,same leftover as row 13 in the next release's notes
+22,https://github.com/TeamNewPipe/NewPipe,fastlane/metadata/android/zh_Hant_HK/changelogs/987.txt,11,晒,regional,Cantonese particle 晒 (all) written this way in Hong Kong; correct use
+23,https://gitlab.com/ninelima/kwikEFIS,src/lcd/fastlane/metadata/android/zh-Hant/short_description.txt,1,电统飞,defect,whole short description Simplified (電子飛行信息系統)
+24,https://codeberg.org/lanticy/guandan,fastlane/metadata/android/zh-TW/short_description.txt,1,掼,defect,game name 掼蛋 left Simplified in otherwise Traditional text; Traditional writes 摜蛋 (borderline: a game name)
+25,https://github.com/TeamNewPipe/NewPipe,fastlane/metadata/android/zh_Hant_HK/changelogs/986.txt,11,晒,regional,Cantonese particle 晒 (all) in Hong Kong; correct use
+26,https://github.com/tipone/seqular-android,metadata/zh-TW/full_description.txt,6,内,defect,one leftover: 敏感內容
+27,https://github.com/FossifyOrg/Launcher,fastlane/metadata/android/zh-TW/full_description.txt,11,踪,defect,one leftover: 無跟蹤
+28,https://github.com/scubajeff/lespas,fastlane/metadata/android/zh-TW/changelogs/44.txt,2,没,defect,one leftover: 沒有
+29,https://github.com/NeoApplications/Neo-Store,metadata/zh-Hant/changelogs/926.txt,4,踪,defect,one leftover: 跟蹤器
+30,https://github.com/andstatus/andstatus,app/src/main/play/listings/zh-TW/full-description.txt,14,复,defect,one leftover: 回覆
+31,https://github.com/HQAnime/AnimeOne,fastlane/metadata/android/zh-TW/full_description.txt,16,并,defect,並不會: 并 is the Simplified form here
+32,https://github.com/YuanLiou/TaiwanEbookSearch,fastlane/metadata/android/zh-TW/full_description.txt,10,书电,defect,generic word 電子書 after the brand HyRead left in Simplified
+33,https://github.com/ximeiorg/Xime,fastlane/metadata/android/zh-TW/title.txt,1,码输,name_or_quote,the app's own product name as its developer writes it in Simplified; a Traditional listing could write 曦碼輸入法 but labelled as a name
+34,https://github.com/KafuuNeko/RPClient,fastlane/metadata/android/zh-HK/full_description.txt,26,并,defect,並非 in otherwise Traditional text
+35,https://github.com/AlienKevin/wordshk_app,fastlane/metadata/android/zh-TW/full_description.txt,6,内,defect,one leftover: 內容
