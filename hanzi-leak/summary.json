@@ -1,0 +1,92 @@
+{
+ "minutes": 14.9,
+ "opencc_sha256": {
+  "HKVariants.txt": "e5cd4345303224587102f2c9e4d2b67d2b7e349c6ce9152e4a118f4656cf7302",
+  "STCharacters.txt": "a0ca1601c70648cf48b33c3c6210ccbecc5c7eead4b4c3daf76587ba2c03582b",
+  "TSCharacters.txt": "737c21c66f55a419dd6956cb3089476cdefc5a36877452631617696df1e5d925",
+  "TWVariants.txt": "e187278e119c427ca561180ac5da5b20e9f8681190458f35c327ce499e95a6a5"
+ },
+ "opencc_tag": "ver.1.4.2",
+ "parse_failed_files": 0,
+ "positive_control": true,
+ "prereg_sha256": "7b6449e30aa89dec92b6e0345de86861bfd7fd6ba6b9f5b869c8dc2d085486a7",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "s_size": 3771,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "status": "ok",
+   "units": {
+    "hans": 772,
+    "hant": 1491
+   }
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "status": "ok",
+   "units": {
+    "hans": 456,
+    "hant": 653
+   }
+  }
+ },
+ "status_counts": {
+  "clone-failed": 90,
+  "no-chinese": 3346,
+  "ok": 1257
+ },
+ "t_size": 3198,
+ "tables": {
+  "hans": {
+   "flagged": 624,
+   "has_own": 63,
+   "other_available": 591,
+   "other_identical": 482,
+   "repos": 932,
+   "repos_flagged": 61,
+   "source_han_units": 671,
+   "units": 356235
+  },
+  "hant": {
+   "flagged": 2721,
+   "has_own": 419,
+   "other_available": 2417,
+   "other_identical": 1625,
+   "repos": 692,
+   "repos_flagged": 188,
+   "source_han_units": 2036,
+   "units": 313111
+  },
+  "hant_only": {
+   "flagged": 4,
+   "repos": 42,
+   "repos_flagged": 3,
+   "units": 4990
+  },
+  "hant_with_simplified": {
+   "flagged": 2717,
+   "repos": 650,
+   "repos_flagged": 185,
+   "units": 308121
+  },
+  "p2": {
+   "mean_share": 0.3865,
+   "repos": 183,
+   "sum_of_shares": "1454481157456982909674283/20564933937691505011650"
+  },
+  "plain_zh": {
+   "repos": 338,
+   "units": 109717,
+   "with_s": 85699,
+   "with_t": 4474
+  }
+ },
+ "verdicts": {
+  "P1": "HELD",
+  "P2": "FAILED",
+  "P3": "HELD",
+  "P4": "HELD"
+ },
+ "version": "0.1.0"
+}

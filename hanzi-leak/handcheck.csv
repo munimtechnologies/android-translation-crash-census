@@ -1,0 +1,41 @@
+sample,flagged_csv_line,repo,locale_dir,key,other_identical,has_own,label,note
+1,36,https://codeberg.org/labnex/LabNex,values-zh-rTW,string:content_required,False,True,partial,one mainland form left (U+5185 for U+5167) in a converted string
+2,116,https://github.com/allentown521/FocusPodcast,values-zh-rTW,string:pref_feed_playback_speed_sum,True,False,whole_copy,
+3,207,https://github.com/billthefarmer/editor,values-zh-rTW,string:detect,True,False,whole_copy,
+4,282,https://github.com/Chiu-xaH/HFUT-Schedule,values-zh-rTW,string:about_settings_different_supported_description,True,False,whole_copy,
+5,350,https://github.com/Chiu-xaH/HFUT-Schedule,values-zh-rTW,string:appearance_settings_calendar_background_description,True,False,whole_copy,
+6,418,https://github.com/Chiu-xaH/HFUT-Schedule,values-zh-rTW,string:navigation_label_exam,True,False,whole_copy,
+7,486,https://github.com/Chiu-xaH/HFUT-Schedule,values-zh-rTW,string:network_settings_update_data_description,True,False,whole_copy,
+8,556,https://github.com/Crazy-Marvin/ToDont,values-zh-rTW,string:do_you_really_want_to_delete_this,True,False,whole_copy,
+9,628,https://github.com/emansih/FireflyMobile,values-zh-rTW,string:delete_piggy_bank_title,False,True,partial,first character left in Simplified
+10,732,https://github.com/HydeYYHH/litube,values-b+zh+Hant,string:download_snapshot_too_large,False,True,partial,first sentence Simplified and second Traditional
+11,814,https://github.com/lihongxi-g/osmium-authenticator,values-b+zh+Hant,string:camera_permission_desc,False,True,partial,one Simplified character in a Traditional sentence
+12,882,https://github.com/lihongxi-g/osmium-authenticator,values-zh-rTW,string:import_preview_desc,False,True,partial,one Simplified character in a Traditional sentence
+13,967,https://github.com/Monica-Pass/Monica-Fdroid,values-b+zh+Hant,string:language_italian,True,False,whole_copy,
+14,1035,https://github.com/mtotschnig/MyExpenses,values-zh-rHK,string:currency_still_used,True,False,whole_copy,
+15,1103,https://github.com/mtotschnig/MyExpenses,values-zh-rHK,string:menu_reopen,True,False,whole_copy,
+16,1171,https://github.com/mtotschnig/MyExpenses,values-zh-rHK,string:pref_tracking_summary,True,False,whole_copy,
+17,1239,https://github.com/mtotschnig/MyExpenses,values-zh-rHK,string:title_webui,True,False,whole_copy,
+18,1315,https://github.com/OpenArchive/Save-app-android,values-zh-rHK,string:archived_folders,False,False,whole_simplified_no_compare,no Simplified string for this key in the same res folder
+19,1383,https://github.com/OpenArchive/Save-app-android,values-zh-rHK,string:msg_edit_server_success,False,False,whole_simplified_no_compare,no Simplified string for this key in the same res folder
+20,1451,https://github.com/OpenArchive/Save-app-android,values-zh-rHK,string:uploading,False,False,whole_simplified_no_compare,no Simplified string for this key in the same res folder
+21,1519,https://github.com/OpenArchive/Save-app-android,values-zh-rTW,string:info_license_cc0,False,False,whole_simplified_no_compare,no Simplified string for this key in the same res folder
+22,1587,https://github.com/OpenArchive/Save-app-android,values-zh-rTW,string:space_setup_title,False,False,whole_simplified_no_compare,no Simplified string for this key in the same res folder
+23,1661,https://github.com/owncloud/android,values-zh-rHK,string:auth_account_not_the_same,True,False,whole_copy,
+24,1729,https://github.com/owncloud/android,values-zh-rHK,string:pass_code_configure_your_pass_code_explanation,True,False,whole_copy,
+25,1797,https://github.com/owncloud/android,values-zh-rHK,string:unshare_link_file_error,True,False,whole_copy,
+26,1865,https://github.com/owncloud/android,values-zh-rTW,string:prefs_access_document_provider,True,False,whole_copy,
+27,2167,https://github.com/pachli/pachli-android,values-zh-rMO,string:pref_show_self_username_always,False,False,whole_simplified_different,Simplified text that differs from the app's own Simplified string
+28,2252,https://github.com/rosuH/EasyWatermark,values-zh-rTW,string:copy,False,False,whole_simplified_different,Simplified text that differs from the app's own Simplified string
+29,2329,https://github.com/shlusiak/Freebloks-Android,values-zh-rTW,string:rules_scoring_1,False,True,partial,mostly Simplified with one Traditional character
+30,2404,https://github.com/T8RIN/ImageResizer,values-zh-rTW,string:model_watermark_remover,True,False,whole_copy,
+31,2472,https://github.com/T8RIN/ImageResizer,values-zh-rTW,string:shader_error_blank_name,False,False,partial,first word in Taiwan form and the rest Simplified
+32,2541,https://github.com/TeamNewPipe/NewPipe,values-zh-rHK,string:could_not_import_all_files,False,True,correct_use,Cantonese particle conventionally written with U+6652 in Hong Kong; not a defect
+33,2627,https://github.com/vitorpamplona/amethyst,values-zh-rHK,string:nest_mute,True,False,whole_copy,
+34,2700,https://github.com/Windscribe/Android-App,values-zh-rTW,string:caution,False,False,whole_simplified_different,compared with plain values-zh
+35,2768,https://github.com/Windscribe/Android-App,values-zh-rTW,string:feature2,True,False,whole_copy,
+36,2836,https://github.com/Windscribe/Android-App,values-zh-rTW,string:location_permission_is_required_to_use_this_feature_go_to_app_settings_permissions_location_and_select_allow_all_the_time,True,False,whole_copy,
+37,2904,https://github.com/Windscribe/Android-App,values-zh-rTW,string:refer_for_data,False,False,whole_simplified_different,compared with plain values-zh
+38,2972,https://github.com/Windscribe/Android-App,values-zh-rTW,string:text_two_fa,False,False,whole_simplified_different,compared with plain values-zh
+39,3041,https://github.com/yogeshpaliyal/KeyPass,values-zh-rTW,string:change_app_password,False,False,whole_simplified_different,Simplified text that differs from the app's own Simplified string
+40,3345,https://gitlab.com/DrXtreme/anonymousmessenger,values-zh-rHK,string:about,False,True,partial,one Simplified character at the end of a Traditional sentence
