@@ -227,6 +227,43 @@ Stale translations after a source fix:
   [results](antonym-collision/PROVENANCE-DROPPED-RESULTS.md)). The first test's method check failed
   and one follow-up prediction failed, so the combined count is descriptive.
 
+Script and invisible characters in translations:
+
+- [hidden-chars/](hidden-chars/RESULTS.md): pre-registered census of invisible characters in the
+  translations of 2,392 F-Droid apps: 330 (13.8%) ship at least one, and apps translated on
+  Weblate have about a quarter of the others' rate of stray zero-width spaces (two of four
+  predictions held). Follow-ups: [the doubled zero-width space](hidden-chars/zwsp-signature/ZWSP-SIGNATURE.md)
+  (a space, then two U+200B: 487 of the 703 strings whose only stray character is U+200B),
+  [after "EXIF"](hidden-chars/exif-pair/RESULTS.md) (four of five predictions held),
+  [where the ones in Weblate apps came from](hidden-chars/weblate-origin/RESULTS.md) (none of 90
+  from a Weblate commit; three of three held) and
+  [Thai, Lao, Burmese, Khmer, Tibetan and Dzongkha](hidden-chars/zwsp-langs/RESULTS.md) (4 hits;
+  all three failed). After a report, SD Maid SE's maintainer removed the stray zero-width spaces
+  from 20 strings and two store descriptions, kept Khmer's as word breaks, and fixed them in
+  Crowdin too ([commit 8725c6b](https://github.com/d4rken-org/sdmaid-se/commit/8725c6b42f1e22d82ac084f4b6b4095d032a4743),
+  2 November 2026).
+- [cyrillic-leak/](cyrillic-leak/RESULTS.md): pre-registered count of Russian-only letters in
+  Ukrainian and Belarusian translations: 39 apps ship them in Ukrainian, but only 9 of 49 flagged
+  strings are copies of the app's Russian string (two of four predictions held).
+- [ru-copy/](ru-copy/PREREG.md): pre-registered count of Ukrainian and Belarusian strings that
+  are exact copies of the app's Russian string, and how many of them a letter rule catches.
+- [hanzi-leak/](hanzi-leak/RESULTS.md): pre-registered count of Simplified characters in
+  Traditional Chinese translations: 188 of 692 apps (27.2%); 39 of 40 hand-checked strings were
+  real defects (three of four predictions held).
+- [hanzi-meta/](hanzi-meta/RESULTS.md): the same in app-store listings: 25 of 287 apps (8.7%),
+  with one app holding 216 of the 295 flagged lines; 32 of 35 hand-checked lines were real
+  defects (two of three predictions held).
+- [zh-vocab/](zh-vocab/PREREG.md): pre-registered count of mainland vocabulary written in
+  Traditional characters (軟件 for 軟體) in Taiwan translations, with a hand check of how often
+  the word list is right. Its first run stopped on an emoji before grading; the re-run's one
+  change is described in [DEVIATIONS.md](zh-vocab/DEVIATIONS.md).
+
+Build checks:
+
+- [lint-ci/](lint-ci/RESULTS.md): pre-registered comparison of apps that run Android Lint in CI
+  (371 of 1,805) with apps that don't: fewer Java format errors per string, but not fewer apps
+  with one once size is matched (two of three predictions held).
+
 ## Method
 
 1. Read F-Droid's index (`index-v2.json`): 4,667 apps in 4,476 distinct source repositories.
