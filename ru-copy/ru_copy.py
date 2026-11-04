@@ -8,7 +8,7 @@ reads the Android string resources at HEAD and, for each Ukrainian and Belarusia
 finds the strings that are exactly the same as the app's Russian string for the same key. It then
 asks how many of those copies the letter rule of cyrillic-leak (Russian-only letters ы, э, ё, ъ
 in Ukrainian; и, щ, ъ in Belarusian) would have caught. See PREREG.md for the predictions and how
-they are graded.
+they are graded, and DEVIATIONS.md for the one change made in 0.1.1 (a wrong control case).
 
 Imports the published cyrillic_leak.py 0.1.0 (same corpus, clone method, folder rules, parsing and
 letter rule); the job downloads it from main and records its SHA-256. Needs git.
@@ -34,11 +34,13 @@ import xml.etree.ElementTree as ET
 
 import cyrillic_leak as cl
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 BASE = cl.BASE
 REPOS_URL = cl.REPOS_URL
 PREREG_URL = BASE + "ru-copy/PREREG.md"
 PREREG_MARK = "ru-copy PREREG v1"
+DEVIATIONS_URL = BASE + "ru-copy/DEVIATIONS.md"
+DEVIATIONS_MARK = "ru-copy DEVIATION 1"
 LANGS = ("uk", "be")
 # Letters Russian doesn't have. A copy holding one is not Russian text (it is Ukrainian or
 # Belarusian sitting in the Russian file, as in MultiVNC), so it is counted apart.
@@ -271,12 +273,19 @@ def draw_sample(rows, size=SAMPLE_SIZE):
 
 
 def control():
-    """The copy finder must behave on known cases (positive control)."""
+    """The copy finder must behave on known cases (positive control).
+
+    0.1.1 (DEVIATIONS.md, ru-copy DEVIATION 1): 0.1.0 expected the Ukrainian copy
+    "Настройки сохранены" to be letter-free, but сохранены ends in ы, so the letter rule rightly
+    flags it and the control failed before any repository was read. The letter-free Russian copy
+    is now "Удалить файл"; "Настройки сохранены" stays, with its ы."""
     cases = [
         ("uk", "Выберите файл", "Выберите файл", "Choose a file",
          {"words": 2, "multi": True, "not_russian": False, "letters": "ы"}),
-        ("uk", "Настройки сохранены", "Настройки сохранены", "Settings saved",
+        ("uk", "Удалить файл", "Удалить файл", "Delete file",
          {"words": 2, "multi": True, "not_russian": False, "letters": ""}),
+        ("uk", "Настройки сохранены", "Настройки сохранены", "Settings saved",
+         {"words": 2, "multi": True, "not_russian": False, "letters": "ы"}),
         ("uk", "Налаштування", "Настройки", "Settings", None),
         ("uk", "Ключ імпорту", "Ключ імпорту", "Import key",
          {"words": 2, "multi": True, "not_russian": True, "letters": ""}),
@@ -286,6 +295,8 @@ def control():
          {"words": 1, "multi": False, "not_russian": False, "letters": "ы"}),
         ("be", "Настройки сохранены", "Настройки сохранены", "Settings saved",
          {"words": 2, "multi": True, "not_russian": False, "letters": "и"}),
+        ("be", "Удалить файл", "Удалить файл", "Delete file",
+         {"words": 2, "multi": True, "not_russian": False, "letters": "и"}),
         ("uk", "Файл SSH", "Файл SSH", "SSH file",
          {"words": 1, "multi": False, "not_russian": False, "letters": ""}),
         ("uk", "Текст", None, "Text", None),
@@ -293,19 +304,24 @@ def control():
     return all(copy_kind(lang, t, ru, src) == want for lang, t, ru, src, want in cases)
 
 
-def wait_for_prereg(minutes):
+def wait_for(url, mark, minutes):
+    """SHA-256 of the file at `url` once it contains `mark`; None if it doesn't in time."""
     end = time.time() + minutes * 60
     while True:
         try:
-            with urllib.request.urlopen(PREREG_URL, timeout=60) as r:
+            with urllib.request.urlopen(url, timeout=60) as r:
                 text = r.read().decode("utf-8")
-            if PREREG_MARK in text:
+            if mark in text:
                 return hashlib.sha256(text.encode("utf-8")).hexdigest()
         except OSError:
             pass
         if time.time() > end:
             return None
         time.sleep(60)
+
+
+def wait_for_prereg(minutes):
+    return wait_for(PREREG_URL, PREREG_MARK, minutes)
 
 
 def file_sha(path):
@@ -338,11 +354,16 @@ def main(argv=None):
     if cl.VERSION != "0.1.0" or not cl.control() or not control():
         print("positive control failed; stopping", file=sys.stderr)
         return 6
-    prereg_sha = None
+    prereg_sha = deviations_sha = None
     if not a.skip_prereg_check:
         prereg_sha = wait_for_prereg(a.prereg_wait_minutes)
         if not prereg_sha:
             print("PREREG.md not public; stopping before reading any repository", file=sys.stderr)
+            return 4
+        deviations_sha = wait_for(DEVIATIONS_URL, DEVIATIONS_MARK, a.prereg_wait_minutes)
+        if not deviations_sha:
+            print("DEVIATIONS.md not public; stopping before reading any repository",
+                  file=sys.stderr)
             return 4
     if a.repos:
         with open(a.repos, "rb") as f:
@@ -417,8 +438,10 @@ def main(argv=None):
         "verdicts": grade(t, sums), "tables": t,
         "version": VERSION, "cyrillic_leak_version": cl.VERSION,
         "cyrillic_leak_sha256": file_sha(cl.__file__),
+        "ru_copy_sha256": file_sha(os.path.abspath(__file__)),
         "repos_url": REPOS_URL, "repos_sha256": hashlib.sha256(raw).hexdigest(),
-        "prereg_sha256": prereg_sha, "sample_size": len(sample),
+        "prereg_sha256": prereg_sha, "deviations_sha256": deviations_sha,
+        "sample_size": len(sample),
         "repos_listed": len(repos), "repos_not_started": len(skipped),
         "status_counts": dict(collections.Counter(r["status"] for r in results)),
         "parse_failed_files": sum(r.get("parse_failed", 0) for r in results),

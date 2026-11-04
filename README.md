@@ -246,17 +246,20 @@ Script and invisible characters in translations:
   Ukrainian and Belarusian translations: 39 apps ship them in Ukrainian, but only 9 of 49 flagged
   strings are copies of the app's Russian string (two of four predictions held).
 - [ru-copy/](ru-copy/PREREG.md): pre-registered count of Ukrainian and Belarusian strings that
-  are exact copies of the app's Russian string, and how many of them a letter rule catches.
+  are exact copies of the app's Russian string, and how many of them a letter rule catches. Its
+  first job stopped at its own tests before reading any data, because one control case was wrong
+  (Настройки сохранены has a ы); the fix is in [DEVIATIONS.md](ru-copy/DEVIATIONS.md).
 - [hanzi-leak/](hanzi-leak/RESULTS.md): pre-registered count of Simplified characters in
   Traditional Chinese translations: 188 of 692 apps (27.2%); 39 of 40 hand-checked strings were
   real defects (three of four predictions held).
 - [hanzi-meta/](hanzi-meta/RESULTS.md): the same in app-store listings: 25 of 287 apps (8.7%),
   with one app holding 216 of the 295 flagged lines; 32 of 35 hand-checked lines were real
   defects (two of three predictions held).
-- [zh-vocab/](zh-vocab/PREREG.md): pre-registered count of mainland vocabulary written in
-  Traditional characters (軟件 for 軟體) in Taiwan translations, with a hand check of how often
-  the word list is right. Its first run stopped on an emoji before grading; the re-run's one
-  change is described in [DEVIATIONS.md](zh-vocab/DEVIATIONS.md).
+- [zh-vocab/](zh-vocab/RESULTS.md): pre-registered test of OpenCC's Taiwan phrase table as a
+  check for mainland vocabulary (軟件 for 軟體) in Taiwan translations. It flags 602 of 655 apps,
+  but only 16 of 40 hand-checked strings used a mainland word in that meaning: 權限 ("permission")
+  and 項目 ("item") are correct Taiwan usage that the table rewrites. Two of four predictions held.
+  The run's one change from the plan is in [DEVIATIONS.md](zh-vocab/DEVIATIONS.md).
 
 Build checks:
 

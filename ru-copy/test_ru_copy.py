@@ -1,6 +1,9 @@
 # Copyright 2026 MV2, Munim, Inc.
 # SPDX-License-Identifier: Apache-2.0
-"""Tests for ru_copy.py (no network). Made with AI agents."""
+"""Tests for ru_copy.py (no network). Made with AI agents.
+
+0.1.1 (DEVIATIONS.md): the fixture string "b" was "Настройки сохранены", which the 0.1.0 tests
+wrongly took to be free of Russian-only letters (сохранены ends in ы). It is now "Удалить файл"."""
 import collections
 import fractions
 import os
@@ -22,6 +25,13 @@ class TestCopyKind(unittest.TestCase):
         self.assertTrue(r.control())
         self.assertTrue(r.cl.control())
         self.assertEqual(r.cl.VERSION, "0.1.0")
+        self.assertEqual(r.VERSION, "0.1.1")
+
+    def test_gating_marks(self):
+        self.assertTrue(r.PREREG_URL.endswith("ru-copy/PREREG.md"))
+        self.assertTrue(r.DEVIATIONS_URL.endswith("ru-copy/DEVIATIONS.md"))
+        self.assertEqual(r.PREREG_MARK, "ru-copy PREREG v1")
+        self.assertEqual(r.DEVIATIONS_MARK, "ru-copy DEVIATION 1")
 
     def test_words(self):
         self.assertEqual(r.words("Ім'я користувача SSH"), ["Ім", "користувача"])
@@ -33,6 +43,10 @@ class TestCopyKind(unittest.TestCase):
         self.assertEqual(k, {"words": 4, "multi": True, "not_russian": False, "letters": ""})
         k = r.copy_kind("uk", "Не удалось открыть файл", "Не удалось открыть файл", "Not opened")
         self.assertEqual(k["letters"], "ы")
+        k = r.copy_kind("uk", "Настройки сохранены", "Настройки сохранены", "Settings saved")
+        self.assertEqual(k["letters"], "ы")                      # the 0.1.0 control's mistake
+        k = r.copy_kind("uk", "Удалить файл", "Удалить файл", "Delete file")
+        self.assertEqual(k["letters"], "")
         self.assertIsNone(r.copy_kind("uk", "Не вдалося", "Не удалось", "Failed"))
         k = r.copy_kind("uk", "Это файл", "Это файл", "This is a file")
         self.assertEqual(k["letters"], "э")
@@ -67,7 +81,7 @@ class TestScan(unittest.TestCase):
         res = os.path.join(self.root, "app", "src", "main", "res")
         write(os.path.join(res, "values", "strings.xml"),
               '<string name="a">Choose a file</string>\n'
-              '<string name="b">Settings saved</string>\n'
+              '<string name="b">Delete file</string>\n'
               '<string name="c">Server</string>\n'
               '<string name="d">Import key</string>\n'
               '<string name="e">Settings</string>\n'
@@ -78,7 +92,7 @@ class TestScan(unittest.TestCase):
               '<item quantity="other">%d files</item></plurals>\n')
         write(os.path.join(res, "values-ru", "strings.xml"),
               '<string name="a">Выберите файл</string>\n'
-              '<string name="b">Настройки сохранены</string>\n'
+              '<string name="b">Удалить файл</string>\n'
               '<string name="c">Сервер</string>\n'
               '<string name="d">Ключ імпорту</string>\n'
               '<string name="e">Настройки</string>\n'
@@ -88,7 +102,7 @@ class TestScan(unittest.TestCase):
               '<item quantity="other">%d файлов</item></plurals>\n')
         write(os.path.join(res, "values-uk", "strings.xml"),
               '<string name="a">Выберите файл</string>\n'
-              '<string name="b">Настройки сохранены</string>\n'
+              '<string name="b">Удалить файл</string>\n'
               '<string name="c">Сервер</string>\n'
               '<string name="d">Ключ імпорту</string>\n'
               '<string name="e">Налаштування</string>\n'
@@ -98,7 +112,7 @@ class TestScan(unittest.TestCase):
               '<plurals name="p"><item quantity="one">%d файл</item>'
               '<item quantity="other">%d файлів</item></plurals>\n')
         write(os.path.join(res, "values-be", "strings.xml"),
-              '<string name="b">Настройки сохранены</string>\n'
+              '<string name="b">Удалить файл</string>\n'
               '<string name="e">Налады</string>\n')
 
     def tearDown(self):
@@ -125,6 +139,8 @@ class TestScan(unittest.TestCase):
         self.assertEqual(a["letters"], "ы")
         self.assertEqual(a["ru_dir"], "values-ru")
         self.assertEqual(a["res_dir"], "app/src/main/res")
+        self.assertEqual(rows[("uk", "string:b", 0)]["letters"], "")
+        self.assertEqual(rows[("be", "string:b", 0)]["letters"], "и")
         self.assertFalse(rows[("uk", "plurals:p", 0)]["multi"])
         self.assertFalse(rows[("uk", "string:d", 0)]["cand"])
 
