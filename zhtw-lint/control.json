@@ -1,0 +1,42 @@
+[
+ {
+  "text": "這個軟件很好用",
+  "want": "軟件",
+  "found": [
+   "軟件"
+  ],
+  "error": null,
+  "ok": true,
+  "raw": {
+   "exit": 0,
+   "stdout": "{\n  \"file\": \"--\",\n  \"detected_script\": \"traditional\",\n  \"issues\": [\n    {\n      \"offset\": 6,\n      \"length\": 6,\n      \"line\": 1,\n      \"col\": 3,\n      \"found\": \"軟件\",\n      \"suggestions\": [\n        \"軟體\"\n      ],\n      \"rule_type\": \"cross_strait\",\n      \"severity\": \"warning\",\n      \"context\": \"@domain IT\",\n      \"english\": \"software\"\n    }\n  ],\n  \"total\": 1,\n  \"errors\": 0,\n  \"warnings\": 1\n}\n",
+   "stderr": ""
+  }
+ },
+ {
+  "text": "請檢查默認設定",
+  "want": "默認",
+  "found": [
+   "默認"
+  ],
+  "error": null,
+  "ok": true,
+  "raw": {
+   "exit": 0,
+   "stdout": "{\n  \"file\": \"--\",\n  \"detected_script\": \"traditional\",\n  \"issues\": [\n    {\n      \"offset\": 9,\n      \"length\": 6,\n      \"line\": 1,\n      \"col\": 4,\n      \"found\": \"默認\",\n      \"suggestions\": [\n        \"預設\"\n      ],\n      \"rule_type\": \"cross_strait\",\n      \"severity\": \"warning\",\n      \"context\": \"@domain 程式設計。「默認」意指「默許/默示承認」(tacitly approve)，與 default (預設值) 語意不同\",\n      \"english\": \"default\"\n    }\n  ],\n  \"total\": 1,\n  \"errors\": 0,\n  \"warnings\": 1\n}\n",
+   "stderr": ""
+  }
+ },
+ {
+  "text": "這個軟體很好用",
+  "want": null,
+  "found": [],
+  "error": null,
+  "ok": true,
+  "raw": {
+   "exit": 0,
+   "stdout": "{\n  \"file\": \"--\",\n  \"detected_script\": \"traditional\",\n  \"issues\": [],\n  \"total\": 0,\n  \"errors\": 0,\n  \"warnings\": 0\n}\n",
+   "stderr": ""
+  }
+ }
+]

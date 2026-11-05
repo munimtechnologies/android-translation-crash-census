@@ -114,7 +114,7 @@ Each was checked against the project's current default branch, and the call that
 | Tallybook | Turkish: 9 strings with `% s` | `ImportExportActivity` and `BackupListActivity` error dialogs; the maintainer found one more path, the exchange-rate summary on the Utility settings screen | pull requests welcome; [fix PR #397](https://github.com/herrerad85/tallybook/pull/397), **merged 2026-10-14** after the maintainer reproduced the crash on an emulator |
 | Stepsy | Arabic: 3 milestone labels (`%1$دم`, `%.1فم`, `%1$دألف`); Bulgarian: 2 (`%1$дмлн.`, `%1$дхил.`), the conversion letter typed in the target script | `GoalNotificationWorker.showMilestoneNotification` (the step-milestone notification title; added 2026-09-28) | translations in the repo; fix PR queued |
 | FadCam | Italian: `delete_videos_log` (`%2$d` never passed), `export_eta_minutes`/`_hours` (`%2$` never passed), `faditor_export_info` (`%1$d` gets a String); Greek: `records_delete_header_eta_*` (`%1$δδ`) | `RecordsFragment.deleteSelectedVideos` (deleting selected videos, before deletion starts), `FaditorEditorActivity.showExportInfoOnScreen` and `FaditorMiniFragment.formatEta` (export), `RecordsFragment.buildDeletionEta` (deletion progress) | Hosted Weblate; [issue #360](https://github.com/anonfaded/FadCam/issues/360) |
-| Flashy | French, Italian, Simplified Chinese, Galician, Portuguese, Brazilian Portuguese: `farnsworth_unit_length_explanation` ends with a bare `25%` (`25%.`, `25%。`, `25% adicional`) | `SettingsActivity.SettingsFragment`: tapping the Farnsworth unit length setting calls `getString(..., ditLength)`, with no catch | Hosted Weblate; [issue #384](https://github.com/Crazy-Marvin/Flashy/issues/384), filed 2026-10-15 while MV2's GitHub account was hidden. The one-character fix (`25%%`) was saved on Hosted Weblate on 2026-10-15 in all six languages and reaches the app with Weblate's next export |
+| Flashy | French, Italian, Simplified Chinese, Galician, Portuguese, Brazilian Portuguese: `farnsworth_unit_length_explanation` ends with a bare `25%` (`25%.`, `25%。`, `25% adicional`) | `SettingsActivity.SettingsFragment`: tapping the Farnsworth unit length setting calls `getString(..., ditLength)`, with no catch | Hosted Weblate; [issue #384](https://github.com/Crazy-Marvin/Flashy/issues/384), filed 2026-10-15 while MV2's GitHub account was hidden. The one-character fix (`25%%`) was saved on Hosted Weblate on 2026-10-15 in all six languages and is in Weblate's open pull request [#385](https://github.com/Crazy-Marvin/Flashy/pull/385) |
 | Element X | Japanese: `a11y_polls_percent_of_total` is `総投票数うち%1$d% パーセント` (the Chinese one crashed in [#7596](https://github.com/element-hq/element-x-android/issues/7596) and was fixed) | `PollAnswerView` builds a poll answer's content description with `pluralStringResource` whenever votes are shown and the answer has votes. `tools/localazy/checkForbiddenTerms.py` flags the string, but `downloadStrings.sh` runs it in `xargs` child shells, so the failure never reaches the parent and the sync prints "Success!" | Localazy; issue #7942 filed 2026-10-15 while MV2's GitHub account was hidden, so the maintainers can't see it yet. SchildiChat Next, a fork, ships the same string. |
 | Mastodon (official Android app) | Indonesian `x_new_notifications` (`%,d` written twice, so it reads a second argument); Albanian `x_people_talking` one and other (`%1`); Belarusian `x_quotes` one (`%,d% цытата`) | `PushNotificationReceiver.doNotify` builds the grouped summary on a background thread with no catch, whenever an account has 2 or more notifications (Indonesian has only the `other` form, so every count is affected); `TrendingHashtagsFragment` and `HashtagStatusDisplayItem` (Albanian); `StatusQuotesFragment` and `ExtendedFooterStatusDisplayItem` (Belarusian) | Crowdin. Mastodon's AI contribution policy says its repositories are for humans only and turns away issues that come from running AI tools over the code, so MV2 has not reported it there. It is listed here for Mastodon's translators. |
 | Homer Audio Player 2 | Chinese (Simplified): both battery content descriptions end in a bare `%` (`电量 %1$d %`) | `BatteryIcon` via `pluralStringResource`, drawn in the player screen's top row when **Show battery indicator** is on (off by default) | Lokalise; [issue #26](https://github.com/msimonides/homerplayer2/issues/26) |
@@ -173,6 +173,9 @@ Look-alike characters (a placeholder written with a character that looks right b
 - [lookalike-colon/](lookalike-colon/LARAVEL.md): `：attribute` for Laravel's `:attribute`; a
   pre-registered [check of 191 languages](lookalike-colon/laravel-eval/RESULTS.md) in three
   applications (four of five predictions held).
+- [lookalike/](lookalike/PREREG.md): pre-registered census of look-alike letters inside markup tags
+  and format specifiers of Android translations (`</а>` with a Cyrillic а, `%1$ѕ` with a Cyrillic
+  ѕ), started from a broken link in MultiVNC's Russian changelog text. Not yet run.
 
 Rates across many projects:
 
@@ -244,11 +247,15 @@ Script and invisible characters in translations:
   2 November 2026).
 - [cyrillic-leak/](cyrillic-leak/RESULTS.md): pre-registered count of Russian-only letters in
   Ukrainian and Belarusian translations: 39 apps ship them in Ukrainian, but only 9 of 49 flagged
-  strings are copies of the app's Russian string (two of four predictions held).
-- [ru-copy/](ru-copy/PREREG.md): pre-registered count of Ukrainian and Belarusian strings that
-  are exact copies of the app's Russian string, and how many of them a letter rule catches. Its
-  first job stopped at its own tests before reading any data, because one control case was wrong
-  (Настройки сохранены has a ы); the fix is in [DEVIATIONS.md](ru-copy/DEVIATIONS.md).
+  strings are copies of the app's Russian string (two of four predictions held). MultiVNC's
+  maintainer merged a fix for the 22 Ukrainian strings in its Russian file
+  ([PR #321](https://github.com/bk138/multivnc/pull/321), 4 November 2026).
+- [ru-copy/](ru-copy/RESULTS.md): pre-registered count of Ukrainian and Belarusian strings that
+  are exact copies of the app's Russian string. 279 apps ship multi-word Ukrainian copies, but a
+  hand check found only 4 of 40 to be Russian; the rest are phrases written the same way in both
+  languages, so copying is a poor sign of a leak (three of four predictions held, the hand check
+  failed). Its first job stopped at its own tests before reading any data
+  ([DEVIATIONS.md](ru-copy/DEVIATIONS.md)).
 - [hanzi-leak/](hanzi-leak/RESULTS.md): pre-registered count of Simplified characters in
   Traditional Chinese translations: 188 of 692 apps (27.2%); 39 of 40 hand-checked strings were
   real defects (three of four predictions held).
@@ -260,6 +267,10 @@ Script and invisible characters in translations:
   but only 16 of 40 hand-checked strings used a mainland word in that meaning: 權限 ("permission")
   and 項目 ("item") are correct Taiwan usage that the table rewrites. Two of four predictions held.
   The run's one change from the plan is in [DEVIATIONS.md](zh-vocab/DEVIATIONS.md).
+- [zhtw-lint/](zhtw-lint/RESULTS.md): pre-registered test of the zhtw-mcp linter's mainland
+  vocabulary check on the same Taiwan strings. It catches 12 of the 16 known mainland strings and
+  repeats only 2 of OpenCC's 24 false alarms, but only 19 of 40 of its own findings were mainland
+  usage (查看 "view" alone is 7 of the rest); three of four predictions held.
 
 Build checks:
 

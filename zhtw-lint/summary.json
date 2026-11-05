@@ -1,0 +1,451 @@
+{
+ "distinct_texts": 147276,
+ "gate_passed": true,
+ "known": {
+  "errors": [],
+  "z2_caught": [
+   5,
+   6,
+   11,
+   13,
+   17,
+   21,
+   24,
+   30,
+   31,
+   33,
+   34,
+   40
+  ],
+  "z3_repeated": [
+   14,
+   18
+  ]
+ },
+ "known_sha256": {
+  "sample.csv": "45888f6d875b009ec9b9d5bca03a8f60bd14b9171390da3255de1cf72518a623",
+  "sample_labels.csv": "006e83d005c340e5b11f91f70eb317c5277f89e18da3bcac82c18152371ed4e4"
+ },
+ "lint_args": [
+  "lint",
+  "--format",
+  "json",
+  "--profile",
+  "base",
+  "--relaxed",
+  "--content-type",
+  "plain",
+  "--"
+ ],
+ "lint_errors": {},
+ "minutes": 75.7,
+ "opencc_sha256": {
+  "HKVariants.txt": "e5cd4345303224587102f2c9e4d2b67d2b7e349c6ce9152e4a118f4656cf7302",
+  "STCharacters.txt": "a0ca1601c70648cf48b33c3c6210ccbecc5c7eead4b4c3daf76587ba2c03582b",
+  "TSCharacters.txt": "737c21c66f55a419dd6956cb3089476cdefc5a36877452631617696df1e5d925",
+  "TWPhrases.txt": "bcb435b744ee3e522beb9b18fcc5486a36ed4763c6aa642ce18112fb5d604e31",
+  "TWVariants.txt": "e187278e119c427ca561180ac5da5b20e9f8681190458f35c327ce499e95a6a5"
+ },
+ "parse_failed_files": 0,
+ "prereg_sha256": "bea2dfc70a473b88a2ce89d0a646e7dc5ddcfe298ec1b6046c0a1f8f7fe2fde9",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "sample_size": 40,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "status": "ok",
+   "units": 766
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "status": "ok",
+   "units": 435
+  }
+ },
+ "status_counts": {
+  "clone-failed": 93,
+  "no-tw": 3945,
+  "ok": 653,
+  "timeout": 2
+ },
+ "tables": {
+  "both": 12945,
+  "opencc": 22669,
+  "opencc_only": 9724,
+  "repos_both": 535,
+  "repos_opencc": 597,
+  "repos_opencc_only": 565,
+  "repos_units": 650,
+  "repos_zhtw": 572,
+  "repos_zhtw_only": 474,
+  "units": 244340,
+  "zhtw": 18024,
+  "zhtw_only": 5079
+ },
+ "top_zhtw_terms": [
+  [
+   "點擊",
+   2272,
+   241
+  ],
+  [
+   "發送",
+   1162,
+   169
+  ],
+  [
+   "連接",
+   1077,
+   217
+  ],
+  [
+   "設備",
+   844,
+   158
+  ],
+  [
+   "查看",
+   825,
+   259
+  ],
+  [
+   "數據",
+   771,
+   174
+  ],
+  [
+   "圖像",
+   603,
+   68
+  ],
+  [
+   "跟隨",
+   484,
+   138
+  ],
+  [
+   "用戶",
+   419,
+   86
+  ],
+  [
+   "鏈接",
+   369,
+   39
+  ],
+  [
+   "登錄",
+   307,
+   51
+  ],
+  [
+   "禁用",
+   296,
+   98
+  ],
+  [
+   "網絡",
+   248,
+   73
+  ],
+  [
+   "用戶名",
+   243,
+   44
+  ],
+  [
+   "檢測",
+   241,
+   79
+  ],
+  [
+   "消息",
+   231,
+   60
+  ],
+  [
+   "過濾器",
+   231,
+   58
+  ],
+  [
+   "通過",
+   230,
+   55
+  ],
+  [
+   "像素",
+   222,
+   24
+  ],
+  [
+   "發佈",
+   221,
+   79
+  ],
+  [
+   "原始碼",
+   220,
+   162
+  ],
+  [
+   "存儲",
+   208,
+   89
+  ],
+  [
+   "對話框",
+   205,
+   74
+  ],
+  [
+   "密鑰",
+   199,
+   36
+  ],
+  [
+   "閾值",
+   190,
+   31
+  ],
+  [
+   "導入",
+   186,
+   59
+  ],
+  [
+   "自定義",
+   183,
+   63
+  ],
+  [
+   "圖標",
+   166,
+   68
+  ],
+  [
+   "應用程序",
+   165,
+   58
+  ],
+  [
+   "打開",
+   165,
+   83
+  ],
+  [
+   "文本",
+   158,
+   54
+  ],
+  [
+   "導出",
+   155,
+   36
+  ],
+  [
+   "恢復",
+   145,
+   73
+  ],
+  [
+   "默認",
+   143,
+   62
+  ],
+  [
+   "客戶端",
+   137,
+   60
+  ],
+  [
+   "服務器",
+   135,
+   28
+  ],
+  [
+   "優化",
+   135,
+   64
+  ],
+  [
+   "二維碼",
+   131,
+   31
+  ],
+  [
+   "自行車",
+   131,
+   12
+  ],
+  [
+   "加載",
+   130,
+   58
+  ],
+  [
+   "新建",
+   121,
+   66
+  ],
+  [
+   "賬",
+   121,
+   24
+  ],
+  [
+   "文件夾",
+   121,
+   24
+  ],
+  [
+   "調色板",
+   119,
+   14
+  ],
+  [
+   "帖子",
+   108,
+   10
+  ],
+  [
+   "計劃",
+   104,
+   26
+  ],
+  [
+   "屏幕",
+   100,
+   44
+  ],
+  [
+   "圖庫",
+   93,
+   34
+  ],
+  [
+   "反饋",
+   85,
+   36
+  ],
+  [
+   "卸載",
+   84,
+   28
+  ],
+  [
+   "協議",
+   83,
+   37
+  ],
+  [
+   "一次性",
+   83,
+   37
+  ],
+  [
+   "單擊",
+   82,
+   26
+  ],
+  [
+   "在線",
+   81,
+   32
+  ],
+  [
+   "鏈結",
+   80,
+   17
+  ],
+  [
+   "視圖",
+   78,
+   36
+  ],
+  [
+   "模板",
+   78,
+   21
+  ],
+  [
+   "訪問",
+   78,
+   43
+  ],
+  [
+   "轉發",
+   76,
+   32
+  ],
+  [
+   "聯繫客服",
+   76,
+   1
+  ]
+ ],
+ "units_source_han": 846,
+ "verdicts": {
+  "Z1": "PENDING (hand check of sample.csv)",
+  "Z2": "HELD",
+  "Z3": "HELD",
+  "Z4": "HELD"
+ },
+ "version": "0.1.0",
+ "zh_vocab_sha256": "1dfd3a159528ed69f524c489c0b41aed2b61dd8e30bb950296bebe4ceb1dcc12",
+ "zh_vocab_version": "0.1.0",
+ "zhtw_lint_sha256": "f9a2675d57a4af76d3a28bdfcb87ed7f61cb3801d3f73c3d9db36fea34f596f4",
+ "zhtw_mcp_release": {
+  "main": {
+   "date": "2026-11-02T19:37:01Z",
+   "sha": "1927945f06f71174c7ce91d114c19587e66b0b21"
+  },
+  "release": {
+   "assets": [
+    {
+     "digest": "sha256:39e2a0b141b3a9523cd4ec1deca67cabbdd7170bc0122f013ae9e56ebc14952a",
+     "name": "SHA256SUMS",
+     "size": 512,
+     "updated_at": "2026-11-02T19:49:25Z"
+    },
+    {
+     "digest": "sha256:2cfdc5ab6ef4c5a4232fbf2fb22c333614d4dab283f406f7b8ca718241a1077f",
+     "name": "zhtw-mcp-aarch64-apple-darwin.tar.gz",
+     "size": 4194814,
+     "updated_at": "2026-11-02T19:49:25Z"
+    },
+    {
+     "digest": "sha256:d6a49ac34a33de5d6a1762c231e5724a1df245f4807233324d8fdca8c4f4fa35",
+     "name": "zhtw-mcp-aarch64-unknown-linux-gnu.tar.gz",
+     "size": 4645862,
+     "updated_at": "2026-11-02T19:49:25Z"
+    },
+    {
+     "digest": "sha256:c826e0c3b2580d6980fa2608ec7c866e5b9b0c158cafd73627a9a25fb8df4579",
+     "name": "zhtw-mcp-extension.zip",
+     "size": 992562,
+     "updated_at": "2026-11-02T19:49:25Z"
+    },
+    {
+     "digest": "sha256:a22294d1b56976557a207844f7f92c00b5f8fd2f0f05c46b3274dea84f9d9819",
+     "name": "zhtw-mcp-x86_64-pc-windows-msvc.tar.gz",
+     "size": 4658925,
+     "updated_at": "2026-11-02T19:49:25Z"
+    },
+    {
+     "digest": "sha256:dccdc6a3e9e3c22e756a0c7b1f31a5e5765e8ed34065ddad6e160cf20b0c7a4e",
+     "name": "zhtw-mcp-x86_64-unknown-linux-gnu.tar.gz",
+     "size": 4778828,
+     "updated_at": "2026-11-02T19:49:27Z"
+    }
+   ],
+   "created_at": "2026-08-25T06:40:58Z",
+   "name": "latest",
+   "published_at": "2026-08-25T06:46:29Z",
+   "tag_name": "latest",
+   "target_commitish": "0c3b70fa731f192dd8fe7be1ac5a2344cf105d81"
+  }
+ },
+ "zhtw_mcp_sha256": "59386bd50c929def85b52d0992fbcb8c0d69861388a595868c7bd89f3a5e3cb1"
+}

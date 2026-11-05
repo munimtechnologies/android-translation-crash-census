@@ -1,0 +1,41 @@
+n,repo,head,res_dir,locale_dir,file,key,index,letters,text,source
+1,https://github.com/dessalines/thumb-key,c3edab9ae056c5f86854fb1d65c7f8ace898ee40,app/src/main/res,values-uk,strings.xml,string:center,0,,По центру,Center
+2,https://github.com/toolicious/labler,17e56341c63a45716435cc6967f10dea92aaeae8,app/src/main/res,values-uk,strings.xml,string:align_center,0,,По центру,Center
+3,https://github.com/m-froehlich/adaptkey,66de17febf6f9c2ad1e971603faaefd1ab9b2906,app/src/main/res,values-uk,strings.xml,string:c09_title,0,,Ряд цифр,Number row
+4,https://github.com/sweakpl/qralarm-android,24cc8dd65279a545f6c0ebca5fc3edccb0773c99,app/src/main/res,values-uk,strings.xml,string:alarm_date,0,,Дата будильника,Alarm date
+5,https://github.com/renyuneyun/Easer,89d5334590b9da6f72d4670f263a1b28da0d5fc4,app/src/main/res,values-uk,strings.xml,string:title_website,0,,Веб-сайт,Website
+6,https://github.com/nextgis/android_gisapp,6113485be698606240b9bc7f0740a18ecc084aaa,app/src/main/res,values-uk,strings.xml,string:coordinates_format,0,,Формат координат,Coordinates format
+7,https://github.com/Xed-Editor/Xed-Editor,a518e9443c4de78fdbd67b306884df9646fb2b79,core/resources/src/main/res,values-uk,strings.xml,string:status_not_running,0,,Не запущено,Not running
+8,https://github.com/XilinJia/Podcini.X,3ca8596c08cf16115e0d0dec8dffdc9324437c87,app/src/main/res,values-uk,strings.xml,string:synchronization_host_port_label,0,,Порт хоста,Host port
+9,https://github.com/deniscerri/ytdlnis,1278ff0d10362a0c68d04713ed35caba66134e1e,app/src/main/res,values-uk,strings.xml,plurals:finished_runs,0,,Завершено · %d запуск,Finished · %d run Finished · %d runs
+10,https://github.com/owncloud/android,c7237ed97bfd504476b9b2aaee2320dcc909ce8e,owncloudApp/src/main/res,values-uk,strings.xml,string:media_rewind_description,0,,Перемотка назад,Rewind button
+11,https://github.com/sylvek/itracing2,581202fa537f89fce77a9d55004e7bebe3cde798,app/src/main/res,values-uk,strings.xml,array:button_actions,3,,тумблер вибрировать телефон,toggle ring the phone start ring the phone stop ring the phone toggle vibrate the phone start vibrate the phone stop vibrate the phone capture my position toggle AudioManager Play/Pause call a url or 
+12,https://github.com/Jaimies/SkillApp,a46e28811500f3f57c9367266f8954ed419577da,app/src/androidTest/res,values-uk,strings.xml,string:web_design,0,,Веб-дизайн,Web design
+13,https://github.com/connectbot/connectbot,1c02a07c1cb1aa84a66343f10d91549f2dc31462,app/src/main/res,values-uk,strings.xml,string:hostpref_mosh_server_title,0,,Команда для сервера Mosh.,"""Mosh server command"""
+14,https://github.com/jarnedemeulemeester/findroid,013eb5253fd465d2bdfe6dc53ae87a10d77a9489,player/local/src/main/res,values-uk,strings.xml,string:player_controls_skip_back,0,,Перейти назад,Skip back
+15,https://github.com/anonomi-org/anonomi-android,3d8ad36913bc5920373c6747cdb8a55dac0107cb,anonomi-android/src/main/res,values-uk,strings.xml,string:pref_value_not_set,0,,Не задано,Not set
+16,https://github.com/georgernstgraf/zazentimer,eb5eb270c6f6c3ae05e2278acaeb963a3be51511,app/src/main/res,values-uk,strings.xml,string:gong_type,0,,Звук гонга,Gong Sound
+17,https://github.com/RyuzakiKK/NoteCrypt,a8e4452781428f6a44afa23c78605ba7d9c269a3,app/src/main/res,values-uk-rUA,strings.xml,string:hint_field_tags,0,,"Тег1, Тег2, Тег3…","Tag1, Tag2, Tag3…"
+18,https://github.com/PurpleI2P/i2pd-android,df7e2420b6a5108caa7463bde420d3ab48ff2888,app/src/main/res,values-uk,strings_app.xml,string:action_web_console,0,,Веб-консоль,Web console
+19,https://codeberg.org/thomasboom/YAM-Launcher,169eec88553dbeb108dbf8dd1b7d2e80e49d5be6,app/src/main/res,values-uk,arrays.xml,array:h_alignment_options,1,,По центру,Left Center Right
+20,https://github.com/akshvaishnav21/LearnTube,5c073837a4913768465c8fcb1d91ab53e41a7b7e,app/src/main/res,values-uk,strings.xml,string:tablet_mode_title,0,,Режим планшета,Tablet mode
+21,https://github.com/metrodroid/metrodroid,b910c1806fd86aa545223baf1d21fc5afe68eee2,src/androidMain/res,values-uk,strings.xml,string:felica_rom_type,0,,Тип ПЗУ,ROM type
+22,https://github.com/GabryDX/MetaJammer,70489a4609b9aef102fe7d342b92799a98908d10,app/src/main/res,values-uk,strings.xml,string:setting_folder_structure_title,0,,Структура папок,Folder Structure
+23,https://github.com/AndorsTrailRelease/andors-trail,8b91a68bc3dc14181c5f0d89da781dfe5be87b09,AndorsTrail/res,values-uk,strings.xml,string:shop_yourgold,0,,"Ваше золото: %1$,d","Your gold: %1$,d"
+24,https://github.com/httpdispatch/MissedNotificationsReminder,8f8c012f6ebc63c8a6262ac0e7afbbd89f798355,app/src/main/res,values-uk,strings.xml,string:payment_contributions,0,,Ваш вклад: %s,Your contributions: %s
+25,https://github.com/sspanak/tt9,1b88bfda334bf9e0b4dc580500537a12bf420a5c,app/src/main/res,values-uk,strings.xml,string:function_show_command_palette,0,,Список команд,Show Command List
+26,https://github.com/Dimowner/AudioRecorder,28ef142524f38f66a3793f9a4d2f796c981a5067,app/src/main/res,values-uk,strings.xml,string:name_format_preset_date_us,0,,Дата США,Date US
+27,https://github.com/yanus171/Handy-News-Reader,3611801b84ca2c0c91ceedc7090828ea67f15e41,FlymFork/src/main/res,values-uk,strings.xml,string:settings_display_oldest_first,0,,Порядок статей,Articles order
+28,https://github.com/clementine-player/Android-Remote,4ff4379cf09ca0be6221f38d197b61cc713de504,app/src/main/res,values-uk,strings.xml,string:pref_library_grouping_genre_album,0,,Жанр / Альбом,Genre / Album
+29,https://github.com/jaimegonzalezfabregas/lista_de_la_compra,531d1ee13c31d778911b606a0344eae76ec569ab,flutterfiles/android/app/src/main/res,values-uk,strings.xml,string:app_name,0,,Список покупок,Shopping List
+30,https://github.com/Ashinch/ReadYou,d2b979ccad9a3e54b9499929a9dc2824578b0fd9,app/src/main/res,values-uk,strings.xml,string:article_list,0,,Список статей,Article list
+31,https://github.com/dmfs/opentasks,3ccb6f9d0195795bd461c3e634bbb8b22c72932c,opentasks/src/main/res,values-uk,strings.xml,string:task_all_day,0,,Весь день,All Day
+32,https://github.com/norsehorse-dev/PGPonyAndroid,38a721bb01edfac6fa6bcec929717a00c685190e,app/src/main/res,values-uk,strings.xml,string:key_detail_add_subkey_type_label,0,,Тип ключа,Key type
+33,https://github.com/theScrabi/Parakeetype,5b560d5aa715ac0fc75c67a03508c50caa59c36f,app/src/main/res,values-uk,strings.xml,string:pref_position_center,0,,По центру,Center
+34,https://github.com/chr56/Phonograph_Plus,59134580c821934fd04495d5de4b25a407030ad8,app/src/main/res,values-uk,strings.xml,string:label_barcode,0,,Штрих-код,Barcode
+35,https://github.com/impalex/knockonports,446b0b4722e2be476d8fae4276b928e317666914,app/src/main/res,values-uk,strings.xml,string:title_check_access_timeout,0,,Тайм-аут,Timeout
+36,https://github.com/standardsats/valet,8e26f564aa87667cff5dc7fd6307b1598134095e,app/src/main/res,values-uk,strings.xml,string:chan_server_rate,0,,Курс сервера,Server rate
+37,https://github.com/WildeBeast2521/kalimory,6cf0c5ab8e8e174875d753ae1c7929e1310828f2,app/src/main/res,values-uk,catalogue_strings.xml,string:cat_row_archer,0,,Тяга лучника,Archer row
+38,https://github.com/tribixbite/CleverKeys,a31f0289066b85d939905cece0a1c8c27b99cc89,res,values-uk,strings.xml,string:activities_theme_title,0,,Менеджер тем,Theme Manager
+39,https://github.com/IITC-CE/ingress-intel-total-conversion,1e2121351edfb84e1991bd4d45be0a5539388938,mobile/app/src/main/res,values-uk,strings.xml,string:pref_hide_fullscreen_status_bar,0,,Панель статуса IITC,IITC Status Bar
+40,https://github.com/forkgram/forkgram-classic,d1d67743f939be001016501afa8662d51d194c1b,TMessagesProj/src/main/res,values-uk,strings.xml,string:HiddenAccountsStealthMode,0,,Режим невидимки,Stealth mode

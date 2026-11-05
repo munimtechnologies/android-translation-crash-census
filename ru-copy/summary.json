@@ -1,0 +1,96 @@
+{
+ "cyrillic_leak_sha256": "94328e056ef38af711935a6b49afd78b81cb2a2f46533b6abd8d4c26273af9a8",
+ "cyrillic_leak_version": "0.1.0",
+ "deviations_sha256": "6c38e0bd3b63535c4599d0f2d347212e1c76cfc8801aa739b1daf11416aede38",
+ "minutes": 18.1,
+ "parse_failed_files": 0,
+ "positive_control": true,
+ "prereg_sha256": "3b7f5daff825b93c062b8b9d1985faa4ec4519db6f4632a33a7d7762250cfb39",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "ru_copy_sha256": "17b981cbe076f18af7c892abac736961db111089b7b4fa0bbabbab3a5193be73",
+ "sample_size": 40,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "copies": {
+    "be": 18,
+    "uk": 20
+   },
+   "pairs": {
+    "be": 818,
+    "uk": 818
+   },
+   "status": "ok"
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "copies": {
+    "be": 8,
+    "uk": 6
+   },
+   "pairs": {
+    "be": 451,
+    "uk": 474
+   },
+   "status": "ok"
+  }
+ },
+ "status_counts": {
+  "clone-failed": 95,
+  "no-uk-be": 3829,
+  "ok": 766,
+  "timeout": 3
+ },
+ "tables": {
+  "be": {
+   "cand": 138,
+   "cand_flagged": 12,
+   "copies": 2473,
+   "multi": 138,
+   "not_russian": 0,
+   "pairs": 91591,
+   "recall_mean": 0.0302,
+   "recall_repos": 52,
+   "recall_sum": "11/7",
+   "repos_cand": 52,
+   "repos_cand_flagged": 3,
+   "repos_copies": 163,
+   "repos_multi": 52,
+   "repos_not_russian": 0,
+   "repos_pairs": 218,
+   "repos_source_cyrillic": 3,
+   "repos_units": 220,
+   "source_cyrillic": 10,
+   "units": 94279
+  },
+  "uk": {
+   "cand": 877,
+   "cand_flagged": 4,
+   "copies": 11585,
+   "multi": 878,
+   "not_russian": 1,
+   "pairs": 284563,
+   "recall_mean": 0.0076,
+   "recall_repos": 279,
+   "recall_sum": "239/112",
+   "repos_cand": 279,
+   "repos_cand_flagged": 4,
+   "repos_copies": 622,
+   "repos_multi": 280,
+   "repos_not_russian": 1,
+   "repos_pairs": 715,
+   "repos_source_cyrillic": 20,
+   "repos_units": 757,
+   "source_cyrillic": 49,
+   "units": 303492
+  }
+ },
+ "verdicts": {
+  "R1": "HELD",
+  "R2": "HELD",
+  "R3": "HELD",
+  "R4": "PENDING (hand check of sample.csv)"
+ },
+ "version": "0.1.1"
+}

@@ -1,0 +1,41 @@
+n,repo,key,text,label,borderline,note
+1,https://github.com/dessalines/thumb-key,string:center,По центру,both,no,"""по центру"" is used in Ukrainian UI text as well as Russian"
+2,https://github.com/toolicious/labler,string:align_center,По центру,both,no,same as row 1
+3,https://github.com/m-froehlich/adaptkey,string:c09_title,Ряд цифр,both,no,"ряд, цифр: same words in both languages"
+4,https://github.com/sweakpl/qralarm-android,string:alarm_date,Дата будильника,both,no,"будильник is Ukrainian too"
+5,https://github.com/renyuneyun/Easer,string:title_website,Веб-сайт,both,no,same word in both languages
+6,https://github.com/nextgis/android_gisapp,string:coordinates_format,Формат координат,both,no,same words in both languages
+7,https://github.com/Xed-Editor/Xed-Editor,string:status_not_running,Не запущено,both,no,"""не запущено"" is valid Ukrainian"
+8,https://github.com/XilinJia/Podcini.X,string:synchronization_host_port_label,Порт хоста,both,no,same words in both languages
+9,https://github.com/deniscerri/ytdlnis,plurals:finished_runs,Завершено · %d запуск,both,no,"завершено, запуск: valid Ukrainian (only the first plural form was compared)"
+10,https://github.com/owncloud/android,string:media_rewind_description,Перемотка назад,both,yes,"перемотка is in Ukrainian dictionaries; перемотування is the more usual Ukrainian noun"
+11,https://github.com/sylvek/itracing2,array:button_actions,тумблер вибрировать телефон,russian,no,"вибрировать is Russian; Ukrainian is вібрувати"
+12,https://github.com/Jaimies/SkillApp,string:web_design,Веб-дизайн,both,no,"same word in both languages (a test resource)"
+13,https://github.com/connectbot/connectbot,string:hostpref_mosh_server_title,Команда для сервера Mosh.,both,no,valid Ukrainian
+14,https://github.com/jarnedemeulemeester/findroid,string:player_controls_skip_back,Перейти назад,both,no,valid Ukrainian
+15,https://github.com/anonomi-org/anonomi-android,string:pref_value_not_set,Не задано,both,no,valid Ukrainian
+16,https://github.com/georgernstgraf/zazentimer,string:gong_type,Звук гонга,both,yes,"Ukrainian genitive of гонг is usually гонгу; гонга also occurs"
+17,https://github.com/RyuzakiKK/NoteCrypt,string:hint_field_tags,"Тег1, Тег2, Тег3…",both,no,same word in both languages
+18,https://github.com/PurpleI2P/i2pd-android,string:action_web_console,Веб-консоль,both,no,same word in both languages
+19,https://codeberg.org/thomasboom/YAM-Launcher,array:h_alignment_options,По центру,both,no,same as row 1
+20,https://github.com/akshvaishnav21/LearnTube,string:tablet_mode_title,Режим планшета,both,no,valid Ukrainian
+21,https://github.com/metrodroid/metrodroid,string:felica_rom_type,Тип ПЗУ,russian,no,"ПЗУ is the Russian abbreviation for ROM; Ukrainian is ПЗП"
+22,https://github.com/GabryDX/MetaJammer,string:setting_folder_structure_title,Структура папок,both,no,valid Ukrainian
+23,https://github.com/AndorsTrailRelease/andors-trail,string:shop_yourgold,"Ваше золото: %1$,d",both,no,valid Ukrainian
+24,https://github.com/httpdispatch/MissedNotificationsReminder,string:payment_contributions,Ваш вклад: %s,russian,yes,"вклад for a contribution is a Russianism in Ukrainian (Ukrainian: внесок; вклад is a bank deposit)"
+25,https://github.com/sspanak/tt9,string:function_show_command_palette,Список команд,both,no,valid Ukrainian
+26,https://github.com/Dimowner/AudioRecorder,string:name_format_preset_date_us,Дата США,both,no,same words in both languages
+27,https://github.com/yanus171/Handy-News-Reader,string:settings_display_oldest_first,Порядок статей,both,no,"статей is the Ukrainian genitive plural of стаття too"
+28,https://github.com/clementine-player/Android-Remote,string:pref_library_grouping_genre_album,Жанр / Альбом,both,no,same words in both languages
+29,https://github.com/jaimegonzalezfabregas/lista_de_la_compra,string:app_name,Список покупок,both,no,valid Ukrainian
+30,https://github.com/Ashinch/ReadYou,string:article_list,Список статей,both,no,valid Ukrainian
+31,https://github.com/dmfs/opentasks,string:task_all_day,Весь день,both,no,valid Ukrainian
+32,https://github.com/norsehorse-dev/PGPonyAndroid,string:key_detail_add_subkey_type_label,Тип ключа,both,no,same words in both languages
+33,https://github.com/theScrabi/Parakeetype,string:pref_position_center,По центру,both,no,same as row 1
+34,https://github.com/chr56/Phonograph_Plus,string:label_barcode,Штрих-код,both,no,same word in both languages
+35,https://github.com/impalex/knockonports,string:title_check_access_timeout,Тайм-аут,both,no,same word in both languages
+36,https://github.com/standardsats/valet,string:chan_server_rate,Курс сервера,both,no,valid Ukrainian
+37,https://github.com/WildeBeast2521/kalimory,string:cat_row_archer,Тяга лучника,both,yes,"тяга and лучник exist in Ukrainian; a native editor might prefer other words for an exercise name"
+38,https://github.com/tribixbite/CleverKeys,string:activities_theme_title,Менеджер тем,both,no,same words in both languages
+39,https://github.com/IITC-CE/ingress-intel-total-conversion,string:pref_hide_fullscreen_status_bar,Панель статуса IITC,russian,no,"статуса is the Russian genitive; Ukrainian is статусу"
+40,https://github.com/forkgram/forkgram-classic,string:HiddenAccountsStealthMode,Режим невидимки,both,yes,"невидимка exists in Ukrainian; режим невидимки is used in Ukrainian apps"
