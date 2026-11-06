@@ -1,0 +1,15 @@
+repo,head,lang,path,line,kind,letters,native,text
+https://github.com/BlackyHawky/Clock,ace4546da2ca39683582787255ede49479af3524,sr,fastlane/metadata/android/sr/full_description.txt,22,full_description,й,True,<li>Таймер и штоперица укључени;</li>
+https://github.com/d4rken-org/sdmaid-se,cac8e0472b0b6289f547ba247df9a9381be64e9f,mk,fastlane/metadata/android/mk-MK/full_description.txt,40,full_description,й,True,"Изберете папка и прегледете ги датотеките една по една со едноставни повлекувања за чување, бришење или прескокнување. Алатката „Свайпер“ ви овозможува да ги прегледате сите одлуки пред бришењето и можете да зачувате сесија за да продолжите подоцна."
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,1,full_description,иє,True,Швідкі материальний клієнт для F-Droid
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,3,full_description,и,True,Можливості:
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,5,full_description,и,False,* Материальний стыль F-Droid
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,6,full_description,ї,True,* Без картак Чы невідповідної анімації
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,7,full_description,иї,True,* Швідка синхронізація репозиторіїв
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,12,full_description,и,False,- Бразильська португальська
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,24,full_description,ищ,False,- Спрощена китайська
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,27,full_description,ї,False,- Українська
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,31,full_description,є,True,"Копілефтове вільне ПЗ, під ліцензією GPLv3+. \"
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/full_description.txt,32,full_description,и,True,"Використовуйте, вивчайте, змінюйте і шырэй; з усім."
+https://github.com/NeoApplications/Neo-Store,37f8ee314be6d1def7af11b0af5b85a10680645c,be,metadata/be/changelogs/34.txt,6,changelog,и,True,"- Іншыя выпраўлення, твіки і ачысткі"
+https://github.com/RapidAppCoder/mighty-alarm-clock,f105cb4997659f7bb3a6f4e4842e10981afc83dc,sr,fastlane/metadata/android/sr/full_description.txt,22,full_description,й,True,<li>Таймер и штоперица укључени;</li>

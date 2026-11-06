@@ -1,0 +1,167 @@
+{
+ "bad_files": 0,
+ "listing_roots": 4338,
+ "minutes": 35.4,
+ "module_sha256": {
+  "cyrillic_leak.py": "94328e056ef38af711935a6b49afd78b81cb2a2f46533b6abd8d4c26273af9a8",
+  "hanzi_leak.py": "70d46c1f48b3d73a2d4bf88ee887800db16025ff8052bf30a98e562680225774",
+  "hanzi_meta.py": "eb7deee7e3f1dadbd0f131086c6e70ed331662a89ee4417c67697711eebf1458"
+ },
+ "positive_control": true,
+ "prereg_sha256": "4dcffce03d5f29a2a931b1f3815f949bb26d4e3facde8fb3ed6f3ae0a9359e4e",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_read": 4591,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "sample_size": 4,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "roots": 1,
+   "status": "ok",
+   "units": {
+    "be": 40,
+    "bg": 26,
+    "mk": 9,
+    "ru": 754,
+    "sr": 86,
+    "uk": 765
+   }
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "roots": 3,
+   "status": "ok",
+   "units": {
+    "be": 31,
+    "bg": 26,
+    "ru": 285,
+    "sr": 286,
+    "uk": 301
+   }
+  }
+ },
+ "status_counts": {
+  "clone-failed": 94,
+  "no-cyrillic-listing": 3767,
+  "ok": 824,
+  "timeout": 8
+ },
+ "strings_sha256": "ae5377a464b8cabff2e7d4a80f81b792a142054cf1b5cb39259b68bb35ad1d5a",
+ "strings_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/cyrillic-leak/repos.jsonl",
+ "tables": {
+  "be": {
+   "flagged": 11,
+   "kind_flagged": {
+    "changelog": 1,
+    "full_description": 10
+   },
+   "kind_units": {
+    "changelog": 672,
+    "full_description": 760,
+    "other": 30,
+    "short_description": 58,
+    "title": 22
+   },
+   "native": 7,
+   "repos": 63,
+   "repos_flagged": 1,
+   "units": 1542
+  },
+  "bg": {
+   "flagged": 0,
+   "kind_flagged": {},
+   "kind_units": {
+    "changelog": 1206,
+    "full_description": 1594,
+    "other": 41,
+    "short_description": 115,
+    "title": 42
+   },
+   "native": 0,
+   "repos": 121,
+   "repos_flagged": 0,
+   "units": 2998
+  },
+  "c3": {
+   "strings_clean": {
+    "listing_flagged": 1,
+    "repos": 290
+   },
+   "strings_flagged": {
+    "listing_flagged": 0,
+    "repos": 22
+   }
+  },
+  "mk": {
+   "flagged": 1,
+   "kind_flagged": {
+    "full_description": 1
+   },
+   "kind_units": {
+    "changelog": 108,
+    "full_description": 437,
+    "other": 10,
+    "short_description": 27,
+    "title": 14
+   },
+   "native": 1,
+   "repos": 34,
+   "repos_flagged": 1,
+   "units": 596
+  },
+  "ru": {
+   "flagged": 0,
+   "kind_flagged": {},
+   "kind_units": {
+    "changelog": 20747,
+    "full_description": 10678,
+    "other": 242,
+    "short_description": 783,
+    "title": 245
+   },
+   "native": 0,
+   "repos": 786,
+   "repos_flagged": 0,
+   "units": 32695
+  },
+  "sr": {
+   "flagged": 2,
+   "kind_flagged": {
+    "full_description": 2
+   },
+   "kind_units": {
+    "changelog": 2987,
+    "full_description": 1231,
+    "other": 48,
+    "short_description": 73,
+    "title": 25
+   },
+   "native": 2,
+   "repos": 77,
+   "repos_flagged": 2,
+   "units": 4364
+  },
+  "uk": {
+   "flagged": 0,
+   "kind_flagged": {},
+   "kind_units": {
+    "changelog": 13377,
+    "full_description": 5307,
+    "other": 141,
+    "short_description": 390,
+    "title": 112
+   },
+   "native": 0,
+   "repos": 401,
+   "repos_flagged": 0,
+   "units": 19327
+  }
+ },
+ "verdicts": {
+  "C1": "NOT TESTABLE",
+  "C2": "FAILED",
+  "C3": "FAILED",
+  "C4": "HELD"
+ },
+ "version": "0.1.0"
+}
