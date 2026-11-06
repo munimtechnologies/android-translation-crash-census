@@ -1,0 +1,33 @@
+sample,repo,locale_dir,label,borderline,text_language,note
+1,https://github.com/openfoodfacts/openfoodfacts-androidapp,values-be-rBY,defect,no,English,35 of 53 counted strings are English plurals and phrases (e.g. '%d days ago'); 18 are Belarusian
+2,https://github.com/Mahmud0808/ColorBlendr,values-ar-rSA,defect,no,English,all 18 counted strings are English plurals in the devapp module
+3,https://github.com/jellyfin/jellyfin-androidtv,values-kk,fine,yes,Kazakh (Latin script),Kazakh written in the 2021 Latin alphabet ('Qosylu' = Қосылу; 'Kıru' = Кіру); right language; script differs from the Cyrillic default; flip = defect
+4,https://gitlab.com/glucosio/glucosio-android,values-km-rKH,defect,no,English,all 11 counted strings are English (app description)
+5,https://github.com/thunderbird/thunderbird-android,values-ar,defect,no,Welsh,whole folder is an older copy of the Welsh archive-folder strings (values-cy holds the current Welsh); same module also has Corsican in am; Japanese in be; Lithuanian in bg; Romanian in bn (all flagged) and by hand Hungarian in ast; Italian in az; Turkish in br
+6,https://github.com/rosenpin/More-For-GO,values-zh-rCN,defect,no,English,checked at the recorded commit: 44 of 47 strings English (13 read 'Chinese Simplified' as placeholders); 3 Chinese
+7,https://github.com/timschneeb/ShizuStore,values-iw-rIL,defect,no,English,all 15 counted strings are English plurals
+8,https://gitlab.com/eneiluj/moneybuster,values-ar-rSA,defect,no,English,all 12 counted strings are English ('%d selected')
+9,https://github.com/aliasvault/aliasvault,values-ur,defect,yes,English,11 English vs 8 Urdu of 19 counted strings (58%); flip = fine
+10,https://framagit.org/dystopia-project/simple-email,values-iw,defect,no,English,all 10 counted strings are English plurals
+11,https://github.com/jellyfin/jellyfin-android,values-kk,fine,yes,Kazakh (Latin script),Kazakh in the Latin alphabet ('Engızu üşın ... ümıtker'); same translators as row 3; flip = defect
+12,https://github.com/samyak2403/RepoStore,values-hi-rIN,fine,yes,Hindi (Latin script),romanized Hindi ('Iske baare mein'; 'Favorites mein jodein'); right language; Latin script; flip = defect
+13,https://github.com/Myzel394/Alibi,values-ja,defect,no,English,all 10 counted strings English ('Start Recording'); same in values-el and values-he
+14,https://github.com/vitSkalicky/klavesnice,values-am,defect,no,English,825 of 1272 counted strings are English emoji and symbol names in quotes ('Copyright sign'); inherited keyboard code (same as row 18)
+15,https://github.com/FreezeYou/FreezeYou,values-ru-rUA,defect,no,Ukrainian,Ukrainian text in the Russian (Ukraine) folder: 219 strings with і/ї/є/ґ vs 5 with Russian-only letters ('Системні'; 'Сітка'); the known case
+16,https://github.com/knighthat/Kreate,values-te-rIN,defect,no,English,159 of 198 counted strings English plurals ('%d file')
+17,https://github.com/Sav22999/common-voice-android,values-zh-rHK,defect,no,English,all 17 counted strings English
+18,https://github.com/keymapperorg/KeyMapperKeyboard,values-am,defect,no,English,825 of 1254 counted strings English emoji names; same inherited code as row 14
+19,https://github.com/amarradi/leafpad,values-bg,defect,no,English,all 50 counted strings English (no Cyrillic at all); same in values-ce and values-ur
+20,https://github.com/ukanth/afwall,values-ml-rIN,defect,no,English,all 10 counted strings English
+21,https://github.com/mardous/BoomingMusic,values-be-rBY,defect,no,English,42 English vs 40 Belarusian counted; checked at the recorded commit: about 706 of about 746 entries in the file are English
+22,https://github.com/fast4x/RiPlay,values-fa,defect,no,English,27 of 35 counted strings English
+23,https://gitlab.com/ceno-app/ceno-android,values-be,defect,no,English,checked at the recorded commit: 116 of 129 values Latin (mostly English; about 20 are key names such as 'ouinetStatusConnected'); 13 Belarusian
+24,https://github.com/KillerInk/FreeDcam,values-ar,defect,no,English,all 17 counted strings English
+25,https://github.com/Stypox/dicio-android,values-hi,fine,yes,Hindi (Latin script),romanized Hindi ('Sab kuch band hai'; 'Khatam'); flip = defect
+26,https://github.com/osmandapp/Osmand,values-mk,fine,yes,Macedonian (Latin script),Macedonian transliterated into Latin ('Pristap so velosiped'); 3870 of 3907 counted strings; flip = defect
+27,https://github.com/TeamAmaze/AmazeFileUtilities,values-zh-rCN,defect,no,English,all 13 counted strings English
+28,https://github.com/PVOT-OSS/Messages,values-ur,defect,no,English,all 12 counted strings English; same in values-ne
+29,https://github.com/anonfaded/FadCam,values-ps,fine,yes,Pashto (Latin script),romanized Pashto with English and Urdu loanwords ('FadCam bilkul ad-free dai'); flip = defect
+30,https://codeberg.org/pstorch/F-Droid_Build_Status,values-ce,defect,no,Czech,Czech in the Chechen folder ('Poslední aktualizace build.json:'); ce looks like a slip for cs
+31,https://gitlab.com/eneiluj/phonetrack-android,values-ar-rSA,defect,no,English,11 of 12 counted strings English ('%d selected')
+32,https://github.com/DecentralizedAmateurPagingNetwork/DAPNETApp,values-th,defect,no,German,German in the Thai folder ('Einstellungen'; 'Anmelden'); 47 of 61 counted strings; the app also has values-de

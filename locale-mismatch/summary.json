@@ -1,0 +1,312 @@
+{
+ "cyrillic_leak_sha256": "94328e056ef38af711935a6b49afd78b81cb2a2f46533b6abd8d4c26273af9a8",
+ "exploratory": {
+  "eligible": {
+   "cyr": 3553,
+   "folders": 56285,
+   "ja": 1322,
+   "script_checked": 19299,
+   "script_checked_region": 4613,
+   "two_letter": 54002,
+   "zh": 3133
+  },
+  "flag_folders": {
+   "cyrillic-letters": 1,
+   "latin": 105,
+   "not-a-language": 45,
+   "wrong-script": 1,
+   "wrong-script:Kana": 1
+  },
+  "mismatch_folders": 107,
+  "mismatch_folders_region_tagged": 60,
+  "mismatch_langs": {
+   "am": 5,
+   "ar": 5,
+   "as": 2,
+   "av": 1,
+   "ba": 1,
+   "be": 6,
+   "bg": 2,
+   "bn": 2,
+   "bo": 3,
+   "ce": 4,
+   "ckb": 1,
+   "cv": 2,
+   "dz": 1,
+   "el": 2,
+   "fa": 4,
+   "gu": 2,
+   "he": 1,
+   "hi": 3,
+   "hy": 1,
+   "iw": 3,
+   "ja": 2,
+   "ji": 3,
+   "kk": 3,
+   "km": 1,
+   "kn": 1,
+   "ko": 2,
+   "kv": 1,
+   "ky": 1,
+   "lo": 1,
+   "mk": 1,
+   "ml": 3,
+   "ne": 2,
+   "or": 1,
+   "ps": 2,
+   "ru": 1,
+   "sa": 2,
+   "si": 3,
+   "ta": 1,
+   "te": 3,
+   "tg": 2,
+   "th": 3,
+   "ti": 3,
+   "tt": 2,
+   "ug": 2,
+   "uk": 1,
+   "ur": 4,
+   "zh": 5
+  },
+  "not_a_language_codes": {
+   "by": 2,
+   "cn": 7,
+   "cz": 4,
+   "dk": 2,
+   "du": 1,
+   "gr": 1,
+   "hn": 1,
+   "jp": 1,
+   "me": 1,
+   "ns": 1,
+   "qq": 17,
+   "ry": 1,
+   "sp": 1,
+   "ua": 3,
+   "zz": 2
+  }
+ },
+ "known_case": {
+  "flags": [
+   "cyrillic-letters"
+  ],
+  "folder": "values-ru-rUA",
+  "read": true,
+  "repo": "https://github.com/FreezeYou/FreezeYou"
+ },
+ "l1_repos": 32,
+ "l3_repos": 29,
+ "l4_dead_repos": 19,
+ "minutes": 21.1,
+ "parse_failed_files": 5,
+ "positive_control": true,
+ "prereg_sha256": "0393f3fd2e94afc7770ed364a28eb03ad727220aba66af58aad7125dd5416b59",
+ "references": {
+  "https://bitbucket.org/projectmaxs/maxs": {
+   "found": {
+    "qq": false
+   },
+   "head": "7663bb8af7a55cac93c724cd7e41e649f8972b55"
+  },
+  "https://github.com/Alcidauk/CineLog": {
+   "found": {
+    "cn": true
+   },
+   "head": "75a9102db11ecf78e7d882c6017d51182e212529"
+  },
+  "https://github.com/Ammar64/Sharing": {
+   "found": {
+    "du": true
+   },
+   "head": "932caeeb66bb0062b2b56d29796533082ef79aa0"
+  },
+  "https://github.com/DoliCloud/dolidroid": {
+   "found": {
+    "cz": false
+   },
+   "head": "0b9a5a1081ee0311cc9379cb1f61b9c5ccf7e6ee"
+  },
+  "https://github.com/Exodus-Privacy/exodus-android-app": {
+   "found": {
+    "cn": false
+   },
+   "head": "cefc8671f3f294bcd07c1b3833f3817f359eb966"
+  },
+  "https://github.com/KillerInk/FreeDcam": {
+   "found": {
+    "cn": false
+   },
+   "head": "4ce7b6169cbac526df84f2653bc1ecf96abc3d0a"
+  },
+  "https://github.com/RyuzakiKK/NoteCrypt": {
+   "found": {
+    "dk": false,
+    "gr": false
+   },
+   "head": "a8e4452781428f6a44afa23c78605ba7d9c269a3"
+  },
+  "https://github.com/SubhamTyagi/android-ocr": {
+   "found": {
+    "cn": false
+   },
+   "head": "d9547a9a19af84ca600915317daec8de63f5eb66"
+  },
+  "https://github.com/abartov/wikisayit": {
+   "found": {
+    "qq": true
+   },
+   "head": "4100f6c756287dbe6ce1198394b31821f53a457d"
+  },
+  "https://github.com/adolfintel/OpenPods": {
+   "found": {
+    "cz": false
+   },
+   "head": "9cd800875f594fa6eb7325dd33d9216c476a5782"
+  },
+  "https://github.com/arduia/ProExpense": {
+   "found": {
+    "cn": true
+   },
+   "head": "300a8170200fc70f1b6d3d4ab6c1e5c08fc7d98a"
+  },
+  "https://github.com/artyommironov/nanji": {
+   "found": {
+    "cz": false
+   },
+   "head": "6d6771e6ab29be62094708be5d1d45502f467755"
+  },
+  "https://github.com/commons-app/apps-android-commons": {
+   "found": {
+    "qq": false
+   },
+   "head": "e216d7c2bebd766ed4304cac1b4ef3d0de0d6713"
+  },
+  "https://github.com/csicar/Ning": {
+   "found": {
+    "cn": false
+   },
+   "head": "fdc94ada0327607f2921eaa61a7565ebfa68ab69"
+  },
+  "https://github.com/jenspfahl/ANOTHERpass": {
+   "found": {
+    "cn": true
+   },
+   "head": "670ff023cd3cee4c8f0efc6b0ce10223fc0d784a"
+  },
+  "https://github.com/js-labs/WalkieTalkie": {
+   "found": {
+    "sp": false
+   },
+   "head": "24639cb66328f27064f39ee0e49f6406d6177f11"
+  },
+  "https://github.com/kraigs-android/kraigsandroid": {
+   "found": {
+    "ua": false
+   },
+   "head": "8d9f6b898e6c41ade5a7c852fd46d7c723ce51ef"
+  },
+  "https://github.com/max-kammerer/orion-viewer": {
+   "found": {
+    "ua": true
+   },
+   "head": "3c797e277d9d6e92531154e570e4110594c95999"
+  },
+  "https://github.com/pR0Ps/LocationShare": {
+   "found": {
+    "cz": false
+   },
+   "head": "d8a00aae135e62ebb2f4c5f2dbd65a369e0b820d"
+  },
+  "https://github.com/paulwedeck/settlers-remake": {
+   "found": {
+    "dk": false
+   },
+   "head": "6ad8c4230a4aa4cd21840f8cb59a38344e41c3e0"
+  },
+  "https://github.com/poretsky/SmartVoice5": {
+   "found": {
+    "by": false
+   },
+   "head": "e6c8ddd28bf318e3d97d1fe4a7eabf08f090b127"
+  },
+  "https://github.com/poretsky/TuningFork": {
+   "found": {
+    "by": false
+   },
+   "head": "b87426b6331cd3f1198df20e840210cf8567e01f"
+  },
+  "https://github.com/rama-io/mako": {
+   "found": {
+    "jp": true
+   },
+   "head": "db02a11ce9c90bfe349e123fd94af3764fca53bc"
+  },
+  "https://github.com/stargw-net/karma-firewall": {
+   "found": {
+    "ua": false
+   },
+   "head": "47d3a8f68ad65e25a006e11dd08bc25da9a0265a"
+  },
+  "https://github.com/topjohnwu/Magisk": {
+   "found": {
+    "hn": false
+   },
+   "head": "33bfff7ce750c27f157ddb4580e36bf842d6d95b"
+  },
+  "https://github.com/vitSkalicky/klavesnice": {
+   "found": {
+    "zz": true
+   },
+   "head": "e7e675c64256de25d3bc4dc63c5920422c9de5b6"
+  },
+  "https://github.com/wikimedia/apps-android-wikipedia": {
+   "found": {
+    "qq": true
+   },
+   "head": "8ecbc69aa247d8ef54cb50bc54cce24fa6f1c54f"
+  },
+  "https://gitlab.com/glucosio/glucosio-android": {
+   "found": {
+    "me": false,
+    "ns": false,
+    "ry": false
+   },
+   "head": "4443f3c63a79dec63999c0bc7c83bf8c39e1236a"
+  },
+  "https://gitlab.com/indicproject/Indic-Keyboard": {
+   "found": {
+    "zz": true
+   },
+   "head": "e5bee019d57a1d106799dffd6f5d429caa447e07"
+  }
+ },
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_read": 4588,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "repos_with_translations": 2386,
+ "sample_size": 32,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "folders": 110,
+   "status": "ok"
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "folders": 101,
+   "status": "ok"
+  }
+ },
+ "status_counts": {
+  "clone-failed": 105,
+  "no-translations": 2202,
+  "ok": 2386
+ },
+ "verdicts": {
+  "L1": "HELD",
+  "L2": "PENDING HAND CHECK (sample of 32)",
+  "L3": "HELD",
+  "L4": "HELD"
+ },
+ "version": "0.1.0"
+}

@@ -260,10 +260,14 @@ Script and invisible characters in translations:
   apps, and none of 19,327 Ukrainian lines, so Cyrillic store listings rarely carry these slips,
   and the hand check had too few rows to grade (one of four predictions held). Two of the four
   apps share a Serbian "Таймер" spelled with the Russian й.
-- [locale-mismatch/](locale-mismatch/PREREG.md): pre-registered count of Android translation
-  folders whose text is in another language than the folder's tag, and of folders named with a
-  country code instead of a language code (`values-ua`, `values-jp`), which no phone selects; not
-  yet run.
+- [locale-mismatch/](locale-mismatch/RESULTS.md): pre-registered count of Android translation
+  folders whose text is not in the folder's language, and of folders named with a country code
+  instead of a language code (`values-ua`, `values-cz`), which no phone selects. All four
+  predictions held: 107 folders in 32 of 2,386 apps fail the script check, and 26 of 32
+  hand-checked ones are real defects, but 22 of those 26 hold leftover English and only 4 a
+  translation in another language. 45 country-code folders are in 29 apps. The largest case:
+  eight folders of Thunderbird for Android's message-list module hold other languages' strings
+  (Welsh in Arabic, Japanese in Belarusian).
 - [ru-copy/](ru-copy/RESULTS.md): pre-registered count of Ukrainian and Belarusian strings that
   are exact copies of the app's Russian string. 279 apps ship multi-word Ukrainian copies, but a
   hand check found only 4 of 40 to be Russian; the rest are phrases written the same way in both
