@@ -1,0 +1,67 @@
+{
+ "cyrillic_leak_sha256": "94328e056ef38af711935a6b49afd78b81cb2a2f46533b6abd8d4c26273af9a8",
+ "cyrillic_leak_version": "0.1.0",
+ "lookalike_sha256": "0e4c7ddacdcd1bd376503268f5773daa3c96e178a11c149a9fe010e38064754d",
+ "minutes": 38.8,
+ "positive_control": true,
+ "prereg_sha256": "5b00db29508bcffdb59e430c62756c282ac0181746864de0e25b00a6f8e7a097",
+ "repos_listed": 4693,
+ "repos_not_started": 0,
+ "repos_sha256": "4159ab1968fc7a6b80478f4eda053af60923c4e79e5dc91d35c767d5de9b9310",
+ "repos_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/main/hidden-chars/repos.txt",
+ "sample_size": 3,
+ "selftest": {
+  "https://github.com/TeamNewPipe/NewPipe": {
+   "counts": {
+    "ascii_fmt": 5351,
+    "ascii_tag": 73,
+    "locale_files": 111
+   },
+   "status": "ok"
+  },
+  "https://gitlab.com/fdroid/fdroidclient": {
+   "counts": {
+    "ascii_fmt": 3820,
+    "ascii_tag": 2,
+    "locale_files": 101
+   },
+   "status": "ok"
+  }
+ },
+ "status_counts": {
+  "clone-failed": 96,
+  "no-locale": 2188,
+  "ok": 2406,
+  "timeout": 3
+ },
+ "tables": {
+  "ascii_fmt": 1823205,
+  "ascii_tag": 820146,
+  "hit_fmt": 13,
+  "hit_tag": 0,
+  "hits_by_locale": {
+   "ab": 2,
+   "bg": 2,
+   "ru": 5,
+   "uk": 4
+  },
+  "hits_by_script": {
+   "cyrillic": 13
+  },
+  "hits_source_has": 0,
+  "locale_files": 87682,
+  "repos_any": 3,
+  "repos_cyrillic": 3,
+  "repos_fmt": 3,
+  "repos_locale": 2406,
+  "repos_read": 4594,
+  "repos_tag": 0
+ },
+ "verdicts": {
+  "K1": "FAILED",
+  "K2": "HELD",
+  "K3": "FAILED",
+  "K4": "PENDING (hand check of sample.csv)"
+ },
+ "version": "0.1.0"
+}

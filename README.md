@@ -173,9 +173,13 @@ Look-alike characters (a placeholder written with a character that looks right b
 - [lookalike-colon/](lookalike-colon/LARAVEL.md): `：attribute` for Laravel's `:attribute`; a
   pre-registered [check of 191 languages](lookalike-colon/laravel-eval/RESULTS.md) in three
   applications (four of five predictions held).
-- [lookalike/](lookalike/PREREG.md): pre-registered census of look-alike letters inside markup tags
+- [lookalike/](lookalike/RESULTS.md): pre-registered census of look-alike letters inside markup tags
   and format specifiers of Android translations (`</а>` with a Cyrillic а, `%1$ѕ` with a Cyrillic
-  ѕ), started from a broken link in MultiVNC's Russian changelog text. Not yet run.
+  ѕ), started from a broken link in MultiVNC's Russian changelog text, which its maintainer fixed
+  before the run ([PR #322](https://github.com/bk138/multivnc/pull/322), 5 November 2026). In
+  2,406 apps with translations it found no look-alike in any tag and 13 in format specifiers, in 3
+  apps, all already among this census's crashes (one of four predictions held; the hand check had
+  too few rows to grade).
 
 Rates across many projects:
 
@@ -249,7 +253,11 @@ Script and invisible characters in translations:
   Ukrainian and Belarusian translations: 39 apps ship them in Ukrainian, but only 9 of 49 flagged
   strings are copies of the app's Russian string (two of four predictions held). MultiVNC's
   maintainer merged a fix for the 22 Ukrainian strings in its Russian file
-  ([PR #321](https://github.com/bk138/multivnc/pull/321), 4 November 2026).
+  ([PR #321](https://github.com/bk138/multivnc/pull/321), 4 November 2026). Its per-repository
+  counts are in [repos.jsonl](cyrillic-leak/repos.jsonl).
+- [cyrillic-meta/](cyrillic-meta/PREREG.md): the same check on the apps' Cyrillic store listings,
+  text it was never tuned on, with a hand check of 40 flagged lines fixed in advance; pre-registered
+  6 November 2026, not yet run.
 - [ru-copy/](ru-copy/RESULTS.md): pre-registered count of Ukrainian and Belarusian strings that
   are exact copies of the app's Russian string. 279 apps ship multi-word Ukrainian copies, but a
   hand check found only 4 of 40 to be Russian; the rest are phrases written the same way in both

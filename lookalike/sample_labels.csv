@@ -1,0 +1,4 @@
+n,repo,locale_dir,key,token,label,borderline,note
+1,https://github.com/celzero/rethink-app,values-ab,string:bsdl_blocked_desc,%1$с,defect,no,"The default string has %1$s at that place; the Cyrillic с (the letter for the sound s) stands for the Latin s, so the specifier breaks (UnknownFormatConversionException)."
+2,https://github.com/nproth/pin,values-ru,string:toast_pin_dismissed,%1$с,defect,no,"The default string has %1$s at that place; Cyrillic с for Latin s, so the specifier breaks."
+3,https://github.com/ritesh-kanwar/Cashiro,values-bg,string:duration_minutes_seconds,%2$с,defect,yes,"The default string has %2$d followed by the unit s; the translator dropped the d and wrote the Bulgarian unit с (seconds). The specifier breaks, but the letter is a unit, not a look-alike of the conversion letter. Flipped: other."
