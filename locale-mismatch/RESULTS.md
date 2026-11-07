@@ -1,6 +1,6 @@
 # Results: Android translation folders whose text is not in the folder's language
 
-Marker: locale-mismatch RESULTS v1
+Marker: locale-mismatch RESULTS v1 (correction 2026-11-07, see "Corrections" at the end)
 
 Graded on 2026-11-06 against the [pre-registration](PREREG.md) (marker `locale-mismatch PREREG v1`,
 SHA-256 `0393f3fd2e94afc7770ed364a28eb03ad727220aba66af58aad7125dd5416b59`, recorded by the job
@@ -98,8 +98,9 @@ are lower bounds.
   `values-sp` for Spanish (es), `values-du` holding German (de) and `values-jp` for Japanese
   (ja). Hand checks at the recorded commits: Exodus has `values-cn` (67 strings) and no
   `values-zh*` folder; kraigsandroid's alarm clock (`klock`) and Karma Firewall have `values-ua` and no
-  `values-uk`; OpenPods has `values-cz` and no `values-cs`. In these four apps the translation
-  ships and no system language setting ever shows it.
+  `values-uk`; OpenPods has `values-cz` and no `values-cs`. In klock, Karma Firewall and OpenPods
+  the translation ships and no system language setting selects it. Exodus is different; see
+  "Corrections" below.
 - **Referenced codes:** 10 of the 29 repositories mention their code somewhere in the code, so
   an in-app language picker may still reach it (for example `values-jp` in mako, `values-ua` in
   Orion Viewer, `values-cn` in CineLog, ProExpense and ANOTHERpass).
@@ -129,7 +130,8 @@ are lower bounds.
   `values-ast`), and the Cyrillic letter rule covers only ru, uk and be. Every count is a lower
   bound.
 - The code search is textual. A code built at run time is missed, and an unrelated `"cn"` counts
-  as a reference.
+  as a reference. It also does not see a locale list that the build tool generates from the
+  resource folders (Android Gradle Plugin's `generateLocaleConfig`); see "Corrections".
 - One commit per repository (HEAD on 2026-11-06); F-Droid apps only. 105 repositories could not
   be cloned. 5 resource files did not parse.
 - Data note: `sample.csv` is the job's file, unchanged. The hand labels are in `labels.csv`,
@@ -143,3 +145,21 @@ are lower bounds.
 - Real cases go on MV2's paced list of upstream reports, at most one outward action a day, each
   only where the project's rules allow it and each saying it was made with AI agents. Thunderbird
   comes first.
+
+## Corrections
+
+**2026-11-07.** The first version of this file said of Exodus, klock, Karma Firewall and OpenPods:
+"In these four apps the translation ships and no system language setting ever shows it." That was
+wrong for Exodus. Its `app/build.gradle.kts` sets `generateLocaleConfig = true` (checked on
+`master`, 2026-11-07), so the Android Gradle Plugin builds the app's list of supported languages
+from its resource folders, and that list is what Android 13 and later offer in the per-app
+language setting. `values-cn` can therefore end up in that list as the code `cn`, not as
+Chinese. We have not checked a built APK or a phone, so whether and how `cn` is shown there is
+not confirmed. A user who picks it gets the Chinese strings; a user whose phone is set to Chinese
+still does not. The verdicts do not change: L4 counts code references, and Exodus was counted as
+having none, which stays true of its source code.
+
+The other three were checked the same day: klock (`android/alarmclock/klock/build.gradle`),
+Karma Firewall and OpenPods (`app/build.gradle`) have no `generateLocaleConfig`, no
+`resConfigs` and no `android:localeConfig` in their manifests, so the original sentence stands
+for them. We did not check the other repositories in L3 for generated locale lists.
