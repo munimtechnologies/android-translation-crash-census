@@ -1,0 +1,48 @@
+repo files: 58
+before test_0100 exit=0 ran=26
+before test_0110 exit=0 ran=13
+before test_0120 exit=0 ran=11
+before test_0130 exit=0 ran=7
+before test_0140 exit=0 ran=10
+before test_0150 exit=0 ran=13
+before test_0160 exit=0 ran=7
+before test_0170 exit=0 ran=17
+before test_071 exit=0 ran=13
+before test_072 exit=0 ran=7
+before test_080 exit=0 ran=14
+before test_090 exit=0 ran=15
+before test_android_text_052 exit=0 ran=6
+before test_java_060 exit=0 ran=14
+before test_l10n_guard exit=0 ran=55
+before test_packaging exit=0 ran=10
+before test_qt_070 exit=0 ran=21
+hook inserted after line 3061 with indent 8
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.17.0' -> '- uses: munimtechnologies/l10n-guard@v0.18.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.17.0' -> '- uses: munimtechnologies/l10n-guard@v0.18.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.17.0' -> '- uses: munimtechnologies/l10n-guard@v0.18.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.17.0' -> '- uses: munimtechnologies/l10n-guard@v0.18.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.17.0' -> '- uses: munimtechnologies/l10n-guard@v0.18.0'
+version: README.md: 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.17.0"' -> 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.18.0"'
+version: README.md: 'rev: v0.17.0' -> 'rev: v0.18.0'
+lines still mentioning 0.17.0: 3 (see still-0170.txt)
+after test_0100 exit=0 ran=26
+after test_0110 exit=0 ran=13
+after test_0120 exit=0 ran=11
+after test_0130 exit=0 ran=7
+after test_0140 exit=0 ran=10
+after test_0150 exit=0 ran=13
+after test_0160 exit=0 ran=7
+after test_0170 exit=0 ran=17
+after test_0180 exit=0 ran=19
+after test_071 exit=0 ran=13
+after test_072 exit=0 ran=7
+after test_080 exit=0 ran=14
+after test_090 exit=0 ran=15
+after test_android_text_052 exit=0 ran=6
+after test_java_060 exit=0 ran=14
+after test_l10n_guard exit=0 ran=55
+after test_packaging exit=0 ran=10
+after test_qt_070 exit=0 ran=21
+regressions: []; test_0180 pass: True
+imported l10n_guard 0.18.0
+thunderbird 467787fcc43e: 73 folders, folder-script on ['values-am', 'values-ar', 'values-be', 'values-bg', 'values-bn']

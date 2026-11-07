@@ -1,0 +1,75 @@
+# thunderbird/thunderbird-android 467787fcc43e560aae2d670c7cfa5f9036ca486d feature/mail/message/list/internal/src/main/res
+folder	strings	code	message
+values-am	23	folder-script	23 of 23 translated strings in this 'am' folder use only Latin letters and 0 use Ethiopic script; only 0 of them reuse the source's words, so they may be another Latin-script language under the wrong code, or a deliberate Latin spelling of 'am', which belongs in a folder with a script tag (values-b+am+Latn)
+values-ar	23	folder-script	22 of 22 translated strings in this 'ar' folder use only Latin letters and 0 use Arabic script; only 0 of them reuse the source's words, so they may be another Latin-script language under the wrong code, or a deliberate Latin spelling of 'ar', which belongs in a folder with a script tag (values-b+ar+Latn)
+values-ast	10	-	
+values-az	23	-	
+values-be	11	folder-script	10 of 11 translated strings in this 'be' folder are written in Kana script and 0 in Cyrillic: it may hold another language's translation under the wrong code
+values-bg	23	folder-script	22 of 22 translated strings in this 'bg' folder use only Latin letters and 0 use Cyrillic script; only 0 of them reuse the source's words, so they may be another Latin-script language under the wrong code, or a deliberate Latin spelling of 'bg', which belongs in a folder with a script tag (values-b+bg+Latn)
+values-bn	23	folder-script	23 of 23 translated strings in this 'bn' folder use only Latin letters and 0 use Bengali script; only 0 of them reuse the source's words, so they may be another Latin-script language under the wrong code, or a deliberate Latin spelling of 'bn', which belongs in a folder with a script tag (values-b+bn+Latn)
+values-br	26	-	
+values-brh	2	-	
+values-bs	0	-	
+values-ca	0	-	
+values-co	32	-	
+values-cs	32	-	
+values-cy	32	-	
+values-da	0	-	
+values-de	32	-	
+values-el	32	-	
+values-en-rGB	14	-	
+values-enm	0	-	
+values-eo	15	-	
+values-es	32	-	
+values-et	32	-	
+values-eu	0	-	
+values-fa	32	-	
+values-fi	0	-	
+values-fr	32	-	
+values-fy	32	-	
+values-ga	32	-	
+values-gd	0	-	
+values-gl	32	-	
+values-gu	0	-	
+values-hi	0	-	
+values-hr	0	-	
+values-ht	0	-	
+values-hu	0	-	
+values-hy	0	-	
+values-in	32	-	
+values-is	23	-	
+values-it	0	-	
+values-iw	32	-	
+values-ja	30	-	
+values-ka	0	-	
+values-kab	0	-	
+values-kk	0	-	
+values-kn	0	-	
+values-ko	32	-	
+values-lt	0	-	
+values-lv	0	-	
+values-ml	0	-	
+values-mnw	0	-	
+values-nb-rNO	32	-	
+values-nl	32	-	
+values-nn	23	-	
+values-pl	32	-	
+values-ps	0	-	
+values-pt	0	-	
+values-pt-rBR	0	-	
+values-pt-rPT	0	-	
+values-ro	32	-	
+values-ru	32	-	
+values-sk	0	-	
+values-sl	32	-	
+values-sq	32	-	
+values-sr	0	-	
+values-sv	32	-	
+values-sw	0	-	
+values-ta	0	-	
+values-th	0	-	
+values-tr	32	-	
+values-uk	32	-	
+values-vi	0	-	
+values-zh-rCN	32	-	
+values-zh-rTW	0	-	

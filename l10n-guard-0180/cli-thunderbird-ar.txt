@@ -1,0 +1,13 @@
+exit 0
+WARNING missing-key [message_list_state_active_new_message_description]: key missing from translation
+WARNING missing-key [message_list_state_active_read_message_description]: key missing from translation
+WARNING missing-key [message_list_state_active_unread_message_description]: key missing from translation
+WARNING missing-key [message_list_state_new_message_description]: key missing from translation
+WARNING missing-key [message_list_state_read_message_description]: key missing from translation
+WARNING missing-key [message_list_state_selected_new_message_description]: key missing from translation
+WARNING missing-key [message_list_state_selected_read_message_description]: key missing from translation
+WARNING missing-key [message_list_state_selected_unread_message_description]: key missing from translation
+WARNING missing-key [message_list_state_unread_message_description]: key missing from translation
+WARNING untranslated [setup_archive_folder_dialog_create_and_set_new_folder]: translation is identical to source
+WARNING folder-script: 22 of 22 translated strings in this 'ar' folder use only Latin letters and 0 use Arabic script; only 0 of them reuse the source's words, so they may be another Latin-script language under the wrong code, or a deliberate Latin spelling of 'ar', which belongs in a folder with a script tag (values-b+ar+Latn)
+0 error(s), 11 warning(s)
