@@ -1,0 +1,92 @@
+# --- 0.20.0: what counts as translated, and apps whose text is not in res/ ----------------
+# The hand check of 0.19.0 found two gaps: a folder of untranslated English copies counted as
+# a translation (Crowdin and Weblate exports fill missing strings with the source text), and
+# phantom warnings for Flutter, React Native and other apps whose interface text lives in
+# another catalog format:
+# https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0190/RESULTS.md
+_LC_LETTERS2_RE = re.compile(r"[^\W\d_]{2,}")
+_LC_CATALOG_EXT = frozenset([".arb", ".json", ".po", ".yaml", ".yml", ".properties", ".ftl",
+                             ".xlf", ".xliff", ".ts", ".js", ".mjs", ".lang", ".ini", ".toml"])
+_LC_CATALOG_DIR_EXT = frozenset([".arb", ".json", ".po", ".yaml", ".yml", ".properties",
+                                 ".ftl", ".xlf", ".xliff"])
+_LC_CATALOG_PREFIX_RE = re.compile(
+    r"^(?:app|intl|messages|strings|lang|locale|translations?|i18n)[_-]")
+_LC_CATALOG_NAME_RE = re.compile(r"^([a-z]{2,3})(?:[-_](?:[A-Za-z]{4}|[A-Za-z]{2}|[0-9]{3}))*$")
+_LC_CATALOG_SKIP = frozenset(["fastlane", "metadata"])
+
+
+def _lc_count(tr, base):
+    """(counted, differ) for one translated values file against its default file ({name:
+    text} each). differ: strings whose text differs from the default. counted also takes the
+    strings left equal to a default that is one word or has no word ('OK', 'Wi-Fi', '%1$s'),
+    which translations often keep; a sentence left in the default language is an
+    untranslated copy and is not counted."""
+    counted = differ = 0
+    for name, text in tr.items():
+        if name not in base:
+            continue
+        if text != base[name]:
+            differ += 1
+            counted += 1
+        elif len(base[name].split()) <= 1 or not _LC_LETTERS2_RE.search(base[name]):
+            counted += 1
+    return counted, differ
+
+
+def _lc_other_ui(mod, paths):
+    """Why the module's interface text is probably not in Android's res/ folders, or '': the
+    module sits in the android/ folder of a Flutter project (pubspec.yaml) or of a JavaScript
+    project (package.json: React Native, Expo, Capacitor, Cordova), or the project ships
+    Flutter .arb catalogs."""
+    have = set(paths)
+    parts = mod.split("/") if mod else []
+    for i in range(len(parts) - 1, -1, -1):
+        if parts[i] != "android":
+            continue
+        pre = "/".join(parts[:i] + [""]) if i else ""
+        if pre + "pubspec.yaml" in have:
+            return "Flutter app (%spubspec.yaml); its text is not in res/" % pre
+        if pre + "package.json" in have:
+            return ("JavaScript app (%spackage.json: React Native, Expo, Capacitor or Cordova); "
+                    "its text is not in res/" % pre)
+    for p in paths:
+        if p.endswith(".arb"):
+            return "Flutter .arb catalogs (%s); the text is not in res/" % p
+    return ""
+
+
+def _lc_catalog_langs(paths):
+    """{language: first path} of translation catalogs outside Android's res/ folders: files
+    named with a language (fr.json, app_de.arb, messages_pt_BR.properties), files in a folder
+    named with one (locales/ja/translation.json, de/LC_MESSAGES/app.po, moko-resources
+    MR/es/strings.xml) and values-xx folders outside res/ (Compose Multiplatform). Store
+    listings (fastlane, metadata folders) are not catalogs."""
+    found = {}
+    for p in paths:
+        parts = p.split("/")
+        if any(x in _LC_CATALOG_SKIP for x in parts[:-1]):
+            continue
+        stem, dot, ext = parts[-1].rpartition(".")
+        ext = ("." + ext.lower()) if dot else ""
+        langs = []
+        if ext in _LC_CATALOG_EXT:
+            m = _LC_CATALOG_NAME_RE.match(_LC_CATALOG_PREFIX_RE.sub("", stem, count=1))
+            if m:
+                langs.append(m.group(1))
+        if len(parts) >= 2:
+            d = parts[-2]
+            if d == "LC_MESSAGES" and len(parts) >= 3:
+                d = parts[-3]
+            if ext in _LC_CATALOG_DIR_EXT or (ext == ".xml" and len(parts) >= 3
+                                               and parts[-3] == "MR"):
+                m = _LC_CATALOG_NAME_RE.match(d)
+                if m:
+                    langs.append(m.group(1))
+            if (ext == ".xml" and d.startswith("values-")
+                    and (len(parts) < 3 or parts[-3] != "res")):
+                lang = _lc_parse_dir(d)
+                if lang:
+                    langs.append(lang)
+        for lang in langs:
+            found.setdefault(_lc_lang(lang), p)
+    return found

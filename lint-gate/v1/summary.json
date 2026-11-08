@@ -1,0 +1,89 @@
+{
+ "clean": {
+  "abort_on_error_false": 26,
+  "agp_ge_74": 275,
+  "agp_lt_74": 3,
+  "agp_parsed": 278,
+  "at_census_head": 282,
+  "baselined": 0,
+  "check_release_builds_false": 17,
+  "ci_implicit_only": 18,
+  "ci_lint": 76,
+  "ci_lint_or_implicit": 94,
+  "ci_vital_only": 0,
+  "fatal": 14,
+  "filters": 63,
+  "has_ci": 201,
+  "lint_block": 98,
+  "read": 282,
+  "suppressed": 2,
+  "suppressed_or_baselined": 2,
+  "warns_unseen": 80
+ },
+ "clean_repos": 282,
+ "lists_rows": 427,
+ "lists_sha256": "de9e822b4428afaddc211b64d8dfbb1326745004467fc6b422d27c88f80c5d3e",
+ "lists_url": "https://raw.githubusercontent.com/munimtechnologies/android-translation-crash-census/e3da4889b27e1e2a9682b3f9c95af475dc7f8f4a/locale-config/lists.csv",
+ "minutes": 1.8,
+ "orphan": {
+  "abort_on_error_false": 16,
+  "agp_ge_74": 74,
+  "agp_lt_74": 0,
+  "agp_parsed": 74,
+  "at_census_head": 74,
+  "baselined": 0,
+  "check_release_builds_false": 9,
+  "ci_implicit_only": 7,
+  "ci_lint": 16,
+  "ci_lint_or_implicit": 23,
+  "ci_vital_only": 0,
+  "fatal": 0,
+  "filters": 21,
+  "has_ci": 60,
+  "lint_block": 38,
+  "read": 74,
+  "suppressed": 2,
+  "suppressed_or_baselined": 2,
+  "warns_unseen": 23
+ },
+ "orphan_agp_lt_74": [],
+ "orphan_fatal": [],
+ "orphan_repos": 74,
+ "orphan_suppressed_or_baselined": [
+  [
+   "https://github.com/BlackyHawky/Clock",
+   [
+    "app/src/main/AndroidManifest.xml tools:ignore"
+   ],
+   []
+  ],
+  [
+   "https://github.com/RapidAppCoder/mighty-alarm-clock",
+   [
+    "app/src/main/AndroidManifest.xml tools:ignore"
+   ],
+   []
+  ]
+ ],
+ "positive_control": true,
+ "prereg_sha256": "c7a6a87a6fa4bb354c7e7efcd8f2963ffc1953179b2ff5f86ab62a8b0052de76",
+ "sample_size": 12,
+ "script_sha256": "6499741a222fb00c04962040a5a930c08cf7659dfc912c814bef03ae5d26dec5",
+ "status_counts": {
+  "clean": {
+   "ok": 282
+  },
+  "orphan": {
+   "ok": 74
+  }
+ },
+ "verdicts": {
+  "H1": "PENDING HAND CHECK (sample of 12)",
+  "L1": "HELD",
+  "L2": "HELD",
+  "L3": "HELD",
+  "L4": "HELD",
+  "L5": "HELD"
+ },
+ "version": "0.1.0"
+}
