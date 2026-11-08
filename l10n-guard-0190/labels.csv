@@ -1,0 +1,37 @@
+sample,repo,code,language,label,borderline,note
+1,https://github.com/itsPronay/blankee,locale-config-orphan,ta,real,no,values-ta mostly Tamil (about 5% English names); list en hi bn es; no filter; manifest names @xml/locales_config
+1,https://github.com/itsPronay/blankee,locale-config-orphan,th,real,no,values-th mostly Thai; list lacks th; no filter
+1,https://github.com/itsPronay/blankee,locale-config-orphan,zh,real,no,values-zh-rCN mostly Simplified Chinese; list lacks zh; no filter
+2,https://github.com/snikket-im/snikket-android,locale-config-orphan,et,real,no,values-et is Estonian; list (41 tags) lacks et; no filter; flavor res dirs add no list
+2,https://github.com/snikket-im/snikket-android,locale-config-phantom,hi,real,no,list has hi-IN; values-hi-rIN/strings.xml is 52 bytes (empty); no values-hi in src/conversations or src/quicksy res
+3,https://github.com/dessalines/thumb-key,locale-config-orphan,my,real,no,values-my is Burmese; list (14 tags) lacks my; no filter
+3,https://github.com/dessalines/thumb-key,locale-config-orphan,cs,real,no,values-cs mostly Czech; list lacks cs; no filter
+3,https://github.com/dessalines/thumb-key,locale-config-orphan,ar,real,no,values-ar Arabic; list lacks ar; no filter
+4,https://github.com/cromaguy/Rhythm,locale-config-phantom,uz,real,no,list has uz; values-uz/strings.xml is 68 bytes (empty); single app module; no script writes the list
+5,https://github.com/tosdr/tosdr-android,locale-config-orphan,ja,real,no,values-ja-rJP Japanese; list en de nl fr es; no filter
+5,https://github.com/tosdr/tosdr-android,locale-config-orphan,ru,real,no,values-ru-rRU Russian; list lacks ru; no filter
+5,https://github.com/tosdr/tosdr-android,locale-config-orphan,pl,real,no,values-pl-rPL Polish; list lacks pl; no filter
+6,https://github.com/siyuan-note/siyuan-android,locale-config-phantom,fr,not real,no,the per-app language is passed to the SiYuan kernel (PR #13; fallback en-US 'consistent with the kernel'); the kernel's web UI ships French; Android res only has ru and zh because the UI is not in res
+6,https://github.com/siyuan-note/siyuan-android,locale-config-phantom,ko,not real,no,same as fr: Korean reaches the app through the kernel's web UI
+6,https://github.com/siyuan-note/siyuan-android,locale-config-phantom,de,not real,no,same as fr: German reaches the app through the kernel's web UI
+7,https://github.com/BlackyHawky/Clock,locale-config-orphan,th,real,no,values-th Thai (614 of 1209 names present); list (25 tags) lacks th; no filter
+7,https://github.com/BlackyHawky/Clock,locale-config-orphan,id,real,no,values-in Indonesian; list has neither id nor in; no filter
+7,https://github.com/BlackyHawky/Clock,locale-config-orphan,ca,real,no,values-ca Catalan; list lacks ca; no filter
+8,https://github.com/lz233/Tarnhelm,locale-config-phantom,es,real,no,list has es; whole tree (not truncated) has no values-es and no other translation catalog
+9,https://github.com/Crazy-Marvin/ToDont,locale-config-orphan,nl,real,no,values-nl Dutch; list en-US en-GB fr ja zh-Hans-MO zh-Hant-MO; no filter
+9,https://github.com/Crazy-Marvin/ToDont,locale-config-orphan,la,real,yes,values-la is Latin but largely word-by-word machine output with English left in; labelled by the rule (folder translates that language)
+9,https://github.com/Crazy-Marvin/ToDont,locale-config-orphan,ga,real,no,values-ga Irish; list lacks ga; no filter
+10,https://github.com/LemmyNet/jerboa,locale-config-orphan,bs,real,no,values-bs Bosnian; list (22 tags) lacks bs; no filter
+11,https://github.com/pass-with-high-score/universal-installer,locale-config-orphan,pl,real,no,values-pl Polish; list (19 tags) lacks pl; no filter
+11,https://github.com/pass-with-high-score/universal-installer,locale-config-orphan,ro,real,no,values-ro Romanian; list lacks ro; no filter
+12,https://github.com/lollipopkit/flutter_server_box,locale-config-phantom,az,not real,no,Flutter app: lib/l10n/app_az.arb exists and the list's own comment says it mirrors the ARB files; translations are not in Android res
+13,https://github.com/RapidAppCoder/mighty-alarm-clock,locale-config-orphan,ja,real,no,values-ja Japanese; list (22 tags) lacks ja; no filter
+14,https://github.com/aliasvault/aliasvault,locale-config-orphan,fa,not real,no,values-fa/strings.xml is an untranslated English copy (identical blob to values-cs); no Persian text at all
+14,https://github.com/aliasvault/aliasvault,locale-config-orphan,ca,real,yes,values-ca has about 8 of 87 strings in Catalan and the rest English copies; labelled by the rule (folder translates Catalan) but the message's '86 translated' overstates it
+14,https://github.com/aliasvault/aliasvault,locale-config-orphan,bg,real,yes,values-bg has about 17 of 86 strings in Bulgarian and the rest English copies; same caveat as ca
+15,https://github.com/jocmp/capyreader,locale-config-orphan,he,real,no,values-iw Hebrew; list (31 tags) has neither he nor iw; no filter
+15,https://github.com/jocmp/capyreader,locale-config-orphan,be,real,no,values-be Belarusian; list lacks be; no filter
+15,https://github.com/jocmp/capyreader,locale-config-orphan,ja,real,no,values-ja Japanese; list lacks ja; no filter
+16,https://dev.narayana.im/narayana/anotherim,locale-config-phantom,cs,real,no,list (41 tags inherited from Conversations) has cs; no values-cs in src/main src/conversations or src/quicksy res
+16,https://dev.narayana.im/narayana/anotherim,locale-config-phantom,ko,real,no,same: no values-ko anywhere
+16,https://dev.narayana.im/narayana/anotherim,locale-config-phantom,ml,real,no,same: no values-ml anywhere

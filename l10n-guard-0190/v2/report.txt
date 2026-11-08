@@ -1,0 +1,55 @@
+repo files: 60
+before test_0100 exit=0 ran=26
+before test_0110 exit=0 ran=13
+before test_0120 exit=0 ran=11
+before test_0130 exit=0 ran=7
+before test_0140 exit=0 ran=10
+before test_0150 exit=0 ran=13
+before test_0160 exit=0 ran=7
+before test_0170 exit=0 ran=17
+before test_0180 exit=0 ran=19
+before test_071 exit=0 ran=13
+before test_072 exit=0 ran=7
+before test_080 exit=0 ran=14
+before test_090 exit=0 ran=15
+before test_android_text_052 exit=0 ran=6
+before test_java_060 exit=0 ran=14
+before test_l10n_guard exit=0 ran=55
+before test_packaging exit=0 ran=10
+before test_qt_070 exit=0 ran=21
+test_0180.py: 'self.assertEqual(g.__version__, "0.18.0")' -> 'self.assertGreaterEqual(tuple(int(x) for x in g.__version__.split(".")), (0, 18, 0))'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.18.0' -> '- uses: munimtechnologies/l10n-guard@v0.19.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.18.0' -> '- uses: munimtechnologies/l10n-guard@v0.19.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.18.0' -> '- uses: munimtechnologies/l10n-guard@v0.19.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.18.0' -> '- uses: munimtechnologies/l10n-guard@v0.19.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.18.0' -> '- uses: munimtechnologies/l10n-guard@v0.19.0'
+version: README.md: 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.18.0"' -> 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"'
+version: README.md: 'rev: v0.18.0' -> 'rev: v0.19.0'
+version: skills/l10n-guard/SKILL.md: '- `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.18.0"` gives an' -> '- `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"` gives an'
+version: skills/l10n-guard/SKILL.md: '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.18.0` with `kind`, `source`, `target`' -> '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.19.0` with `kind`, `source`, `target`'
+version: skills/l10n-guard/SKILL.md: '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.18.0`, hook id' -> '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.19.0`, hook id'
+lines still mentioning 0.18.0: 4 (see still-0180.txt)
+after test_0100 exit=0 ran=26
+after test_0110 exit=0 ran=13
+after test_0120 exit=0 ran=11
+after test_0130 exit=0 ran=7
+after test_0140 exit=0 ran=10
+after test_0150 exit=0 ran=13
+after test_0160 exit=0 ran=7
+after test_0170 exit=0 ran=17
+after test_0180 exit=0 ran=19
+after test_0190 exit=0 ran=25
+after test_071 exit=0 ran=13
+after test_072 exit=0 ran=7
+after test_080 exit=0 ran=14
+after test_090 exit=0 ran=15
+after test_android_text_052 exit=0 ran=6
+after test_java_060 exit=0 ran=14
+after test_l10n_guard exit=0 ran=55
+after test_packaging exit=0 ran=10
+after test_qt_070 exit=0 ran=21
+regressions: []; test_0190 pass: True
+imported l10n_guard 0.19.0
+prereg sha256 1450ada379eb3ae6048cc49e85b64e32d8df6449278c709b2f2b3dfb56c0ba34
+census drift repos 112, census sample 16, held out 96
+{"R1": "HELD", "R2": "HELD", "R3": "HELD", "H1": "HELD", "H2": "PENDING HAND CHECK (16 repositories)", "H3": "PENDING HAND CHECK (16 repositories)"}

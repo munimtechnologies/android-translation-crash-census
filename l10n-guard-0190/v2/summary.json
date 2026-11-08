@@ -1,0 +1,60 @@
+{
+ "census_drift_repos": 112,
+ "census_sample_repos": 16,
+ "exploratory": {
+  "default_how": {
+   "assumed": 76,
+   "resources.properties": 8,
+   "values-en differs": 13
+  },
+  "filters_none": 74,
+  "filters_read": 19,
+  "filters_unknown": 4,
+  "findings_by_code": {
+   "locale-config-orphan": 253,
+   "locale-config-phantom": 428,
+   "locale-config-tag": 40
+  },
+  "heldout_repos_with_tag_only": 1,
+  "list_status": {
+   "checked": 97
+  },
+  "lists": 97,
+  "orphan_check": {
+   "checked": 93,
+   "skipped: language filter not readable (app/build.gradle)": 1,
+   "skipped: language filter not readable (app/build.gradle.kts)": 3
+  },
+  "phantom_check": {
+   "checked": 96,
+   "skipped: default language not English and not identified": 1
+  }
+ },
+ "guard_version": "0.19.0",
+ "heldout_flagged": 82,
+ "heldout_read": 96,
+ "heldout_repos": 96,
+ "heldout_status": {
+  "ok": 96
+ },
+ "minutes": 0.6,
+ "prereg_sha256": "1450ada379eb3ae6048cc49e85b64e32d8df6449278c709b2f2b3dfb56c0ba34",
+ "regression": {
+  "R1_of": 4,
+  "R1_pass": 4,
+  "R1_read": 4,
+  "R2_of": 12,
+  "R2_pass": 12,
+  "R2_read": 12,
+  "R3_filtered_reported": [],
+  "R3_of": 17
+ },
+ "verdicts": {
+  "H1": "HELD",
+  "H2": "PENDING HAND CHECK (16 repositories)",
+  "H3": "PENDING HAND CHECK (16 repositories)",
+  "R1": "HELD",
+  "R2": "HELD",
+  "R3": "HELD"
+ }
+}

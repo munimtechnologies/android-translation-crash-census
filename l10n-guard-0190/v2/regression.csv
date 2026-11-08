@@ -1,0 +1,17 @@
+repo,commit,status,expect,languages,pass,findings
+https://codeberg.org/comaps/comaps,3d8dd77a81897d8e9528bcdd3442dfd518613c79,ok,absent,orphan:eo orphan:hr orphan:lo,yes,
+https://github.com/Toum404/Croustillapp,0778350e1a4da3460a37a90ff328e46e3ce82dbe,ok,absent,phantom:fr,yes,
+https://github.com/michaelWuensch/BitBanana,a30cbd7fef2d8643fcbbcfa72484a888f4146678,ok,any,orphan:sv,yes,orphan:sv
+https://github.com/Razeeman/Android-SimpleTimeTracker,60ad644f16724dcf0760a0d2019e5b53843a8d8c,ok,absent,all,yes,
+https://codeberg.org/prav/prav,1d5d291c5bf4b57ca98d0fac462dc99b72f54255,ok,any,phantom:hi orphan:et,yes,orphan:et phantom:hi
+https://github.com/DerGoogler/MMRL,6c2b778867f7f66ee2d208ee82887aa2cf9bb0bb,ok,any,orphan:ta,yes,orphan:ta
+https://github.com/juanro49/autu-mandu,068457ef2064ab2c56592cf474f05adb36612535,ok,any,phantom:uk orphan:zh,yes,orphan:zh phantom:uk
+https://github.com/MuntashirAkon/AppManager,dc4154f4c04399602895f31f9390bb66b25ea8a0,ok,any,orphan:nl orphan:sv,yes,orphan:nl orphan:sv
+https://github.com/Crazy-Marvin/Flashy,9e0a426eb2649e97af93c3217c166b7b136ae09a,ok,any,orphan:de orphan:es orphan:ru orphan:sat orphan:zh,yes,orphan:de orphan:es orphan:ru orphan:sat orphan:zh
+https://github.com/urikdev/Urik,d096280c7e0d8b86d3b31e4ca433f44681b5c024,ok,any,orphan:bg,yes,orphan:bg
+https://github.com/MarcusWolschon/osmeditor4android,f018ef2e54aa4bafde49ebe16a9d2f7944fd08e5,ok,any,phantom:kn phantom:oc,yes,phantom:id phantom:kn phantom:oc phantom:pa
+https://github.com/spaceapi-community/my-hackerspace,861dfb6c1384ff8a59fe084fd3e47e27132c10a2,ok,any,code:dk orphan:da,yes,code:dk orphan:da
+https://github.com/sky-map-team/stardroid,dfc35a7f6f4e5acc0848f734cf2d9f0ecbe9c958,ok,any,orphan:gl,yes,orphan:gl phantom:gl
+https://github.com/idunnololz/summit,3346afc4a3d7c2554df6be6cee5f4cbc3bbe48ba,ok,any,orphan:pt orphan:tr,yes,orphan:pt orphan:tr
+https://github.com/demosten-com/SrednaBG,c5038420b10d580aaae36d07181a6f775c598eb7,ok,absent,phantom:bg,yes,
+https://github.com/plainhub/plain-app,ae64c4b9339520cf445a62179d4be2e12726a87a,ok,any,orphan:tr orphan:vi,yes,orphan:tr orphan:vi
