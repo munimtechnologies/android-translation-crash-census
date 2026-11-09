@@ -1,0 +1,13 @@
+sample,repo,commit,group,dir,build,po_file,language,entries,translated,fuzzy,n_listed,label,note
+1,https://github.com/Jeffser/Pigment,cb725a903cd22f60fe1f17ff03dafa48567cf76b,other,po,meson,po/nl.po,nl,41,0,0,10,,
+2,https://github.com/yeKcim/warmux,b7935f3d6662af821e372e913ddbbe8e2f2b064b,none,old/wormux-0.8.1/po,autotools,old/wormux-0.8.1/po/el.po,el,291,235,18,30,,
+3,https://github.com/Nokse22/mini-text,abd06bfdeaf4e8ad628dc12540ee51ecebe8a663,other,po,meson,po/fr.po,fr,27,27,0,13,,
+4,https://github.com/sheep-farm/merkato,7eb5ec3bafd99246a48a4ed76bbd0793d0303a5c,none,po,meson,po/fa.po,fa,71,71,0,25,,
+5,https://github.com/tobagin/tempo,bcacc5ca0035a6dbff8d432832db722cec714a96,none,po,meson,po/it_complete.po,it_complete,142,142,0,8,,
+6,https://github.com/dubstar-04/Design,d19dedd7c186b72bce17d5eb74745bc3543163a5,none,po,meson,po/ko.po,ko,89,72,0,5,,
+7,https://github.com/tobagin/Draughts,972b8dbf71c55825255d6cb20cfe9f1e31375e0c,none,po,meson,po/en_US.po,en_US,512,512,0,5,,
+8,https://github.com/phase1geo/minder,fa7c1a71d8ff7fce484265b90727c8f03290bb2a,none,po,meson,po/fa.po,fa,1109,856,124,13,,
+9,https://github.com/mijorus/whisper,d454feeea973433a8f2dcebf2d4e69286619ab87,none,po,meson,po/pt_BR.po,pt_BR,34,33,0,10,,
+10,https://github.com/marhkb/pods,349be73c8bc2a3340e2b6187df1c0c676b63be82,none,po,meson,po/vi.po,vi,881,881,0,27,,
+11,https://github.com/donadigo/appeditor,8612fc8f8f812bc50002d4086afa304228a72cae,none,po,meson,po/cs.po,cs,119,119,0,13,,
+12,https://github.com/amit9838/mousam,2a2c53c730319cdbac61c63bb45d78f6dd29348e,other,po,meson,po/fi_FI.po,fi_FI,234,126,23,20,,

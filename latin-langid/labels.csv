@@ -1,0 +1,25 @@
+sample,repo,locale_dir,holds,label,language_read,note
+1,https://github.com/TeamNewPipe/NewPipe,values-dum,nl,real (borderline),modern Dutch,"First 10 strings are modern standard Dutch (Annuleren, Zoeken, Instellingen) in a Middle Dutch (dum) folder; Middle Dutch is not in the related list, but it is Dutch's ancestor. Flips to not real if an ancestor counts as related."
+2,https://github.com/georgernstgraf/zazentimer,values-xh,uz,real,Uzbek (Latin),"First 10 strings are Uzbek (tomonidan, muvaffaqiyatli, oʻ/gʻ letters) in the Xhosa folder; values-uz also exists."
+3,https://github.com/HydeYYHH/litube,values-b+ceb,fil,not real,Cebuano,Recorded strings are Cebuano (niini nga; Natangtang ang cache); Cebuano has no profile.
+4,https://github.com/evilbunny2008/MX3ButtonMapper,values-rm,oc,not real,Romansh,Recorded strings are Romansh (utilisescha; dad Android); Romansh has no profile.
+5,https://github.com/connectbot/connectbot,values-tk,tr,not real,Turkmen,"First 10 strings are Turkmen (Sazlamalar, Kömek, Dörediň); some later machine-translated strings slip into Turkish forms."
+6,https://github.com/evilbunny2008/Z2mDash,values-war,fil,not real,Waray,Recorded strings are Waray (Idugang an; nga panel); Waray has no profile.
+7,https://github.com/commons-app/apps-android-commons,values-hrx,de,not real,Hunsrik,Recorded strings are Hunsrik (Verzähl uns; schiefgeloof); a German variety with no profile.
+8,https://github.com/by-architect/Dejavu,values-lij,it,not real,Ligurian,Recorded strings are Ligurian (feuggio sarvou inti segnalibbri).
+9,https://github.com/SecUSo/privacy-friendly-sudoku,values-br,pt,real,Portuguese (Brazil),"First 10 strings are Portuguese (Cancelar, Novo Jogo, Configurações, Ajuda) in the Breton folder; no values-pt folder, so Portuguese phones get English."
+10,https://github.com/Droid-ify/client,values-su,id,not real,Sundanese,Recorded strings are Sundanese (%d poé; aya panganyarna).
+11,https://github.com/d4rken-org/capod,values-rm,ca,not real,Romansh,Recorded strings are Romansh (chargia entira per ils dus auriculars).
+12,https://github.com/juanro49/FeedTV,values-ext,ast,not real,Extremaduran,Recorded strings are Extremaduran (apricación; premiti; leyel); same translator as sample 17.
+13,https://github.com/ElDavoo/ylih,values-b+lij,it,not real,Ligurian,Recorded strings are Ligurian (importâ %d sessioun).
+14,https://github.com/deniscerri/ytdlnis,values-jv,id,not real,Javanese,Recorded strings are Javanese (ngresiki; Babagan; menyang kabeh).
+15,https://github.com/wikimedia/apps-android-wikipedia,values-sro,sc,not real,Campidanese Sardinian,Recorded strings are Campidanese Sardinian (càmbiu de su; Informus).
+16,https://github.com/dkrivoruchko/ScreenStream,values-jv,id,not real,Javanese,"First 10 strings are Javanese (Mulihake, Miwiti nuduhake layar, utawa, iki); a few Indonesian spellings."
+17,https://github.com/juanro49/autu-mandu,values-ext,es,not real,Extremaduran,"8 of the first 10 strings show Extremaduran features (Velsión, Calculaora, Ayua, Abril navegación); the other 2 are spelled as in Spanish."
+18,https://github.com/AndorsTrailRelease/andors-trail,values-la,ia,not real,Latin,Recorded strings are Latin (Auxilium; Auctores; Licentia).
+19,https://code.videolan.org/videolan/vlc-android,values-fo,is,not real,Faroese,Recorded strings are Faroese (útgáva; miðlafíla).
+20,https://github.com/cis-india/Wikisource-Reader,values-b+cbk+zam,es,not real,Chavacano,Recorded strings are Chavacano (Lee maga texto; De Cosa).
+21,https://github.com/KerballOne/SpamBlocker-Extended,values-gal,gl,real,Galician,"First 10 strings (strings_1.xml) are Galician (Non é necesario engadir; Contido) in a folder coded gal (ISO 639-3 Galolen); no values-gl folder, so Galician phones never select it. A wrong-code case rather than wrong text."
+22,https://github.com/GabryDX/MetaJammer,values-la,ia,not real,Latin,Recorded strings are Latin (Adde locum consuetum; Retro).
+23,https://github.com/ritesh-kanwar/Cashiro,values-tk,tr,not real,Turkmen,Recorded strings are Turkmen (faýl; Adamy pozmak?).
+24,https://github.com/jellyfin/jellyfin-android,values-fo,is,not real,Faroese,Recorded strings are Faroese (Royndi; tínum niðurtøkum).

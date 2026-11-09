@@ -1,0 +1,168 @@
+{
+ "control": "https://gitlab.gnome.org/GNOME/gnome-calculator",
+ "counts": {
+  "content_known": 120,
+  "content_substantive": 67,
+  "dropped_files": 140,
+  "dropped_files_read": 120,
+  "dropped_languages": {
+   "af": 2,
+   "af_ZA": 1,
+   "ar": 1,
+   "az": 1,
+   "be": 1,
+   "ca": 1,
+   "cs": 7,
+   "da": 3,
+   "de": 4,
+   "de_FORM": 1,
+   "dum": 1,
+   "ee": 1,
+   "el": 8,
+   "en_US": 2,
+   "es": 4,
+   "eu": 3,
+   "fa": 4,
+   "fi": 2,
+   "fr": 3,
+   "he": 2,
+   "hi": 2,
+   "hr": 2,
+   "it": 6,
+   "ka": 2,
+   "ko": 6,
+   "nl": 4,
+   "pa": 2,
+   "pl": 4,
+   "pt": 2,
+   "pt_BR": 6,
+   "ro": 3,
+   "ru": 3,
+   "sr": 3,
+   "tr": 3,
+   "uk": 3,
+   "vi": 5,
+   "zh_CN": 4,
+   "zh_Hant": 2,
+   "zh_TW": 2,
+   "zh_cn": 2
+  },
+  "dropped_translated_messages": 14980,
+  "flagged_repos": 51,
+  "flagged_share_pct": 9.7,
+  "gnome_flagged": 2,
+  "gnome_governed": 111,
+  "governed_by_build": {
+   "autotools": 14,
+   "meson": 512
+  },
+  "governed_repos": 526,
+  "meson_dropped_repos": 47,
+  "meson_phantom_repos": 0,
+  "other_flagged": 49,
+  "other_governed": 415,
+  "read": 2238
+ },
+ "exploratory": {
+  "autotools_phantom_repos": [],
+  "by_translate_group": {
+   "gnome": {
+    "flagged": 2,
+    "governed": 111
+   },
+   "none": {
+    "flagged": 25,
+    "governed": 215
+   },
+   "other": {
+    "flagged": 20,
+    "governed": 136
+   },
+   "transifex": {
+    "flagged": 1,
+    "governed": 2
+   },
+   "weblate": {
+    "flagged": 3,
+    "governed": 62
+   }
+  },
+  "dirs_by_build": {
+   "autotools": {
+    "dirs": 33,
+    "with_dropped": 7,
+    "with_phantom": 0
+   },
+   "meson": {
+    "dirs": 542,
+    "with_dropped": 50,
+    "with_phantom": 0
+   },
+   "meson-explicit": {
+    "dirs": 3,
+    "with_dropped": 1,
+    "with_phantom": 0
+   },
+   "other": {
+    "dirs": 72,
+    "with_dropped": 8,
+    "with_phantom": 0
+   }
+  },
+  "repos_with_linguas_dir": 594,
+  "spelling_variants": []
+ },
+ "flathub_list_apps": 3394,
+ "flathub_list_sha256": "b32b5e8087ae40906656b76c8f2d7c2b726dcc25715de2bb783a490334af7368",
+ "minutes": 13.2,
+ "population": {
+  "apps_fetched": 3394,
+  "apps_listed": 3394,
+  "apps_with_repo": 2275,
+  "by_source": {
+   "homepage": 461,
+   "vcs_browser": 1814
+  },
+  "unrecognised_hosts": {
+   "altlinux.space": 5,
+   "app.zdechov.net": 8,
+   "apps.kde.org": 79,
+   "code.qt.io": 3,
+   "code.tryton.org": 3,
+   "commits.kde.org": 3,
+   "edu.kde.org": 4,
+   "git.do.srb2.org": 3,
+   "github.com": 8,
+   "gitlab.futo.org": 3,
+   "gottcode.org": 11,
+   "help.sugarlabs.org": 19,
+   "hhoney.net": 3,
+   "indomitusgroup.com": 3,
+   "kde.org": 5,
+   "software.sil.org": 4,
+   "sourceforge.net": 34,
+   "terminaltwo.com": 7,
+   "userbase.kde.org": 5,
+   "wiki.gnome.org": 8,
+   "www.gov.br": 8,
+   "www.jetbrains.com": 9,
+   "www.kde.org": 4,
+   "www.xnview.com": 4,
+   "zetsubou.games": 5
+  }
+ },
+ "prereg_sha256": "25c24ed64c8c29f5d6009fcb7bb9ace965852b4bfd4e3ba18be066b984916c53",
+ "repositories": 2243,
+ "status": {
+  "error": 5,
+  "ok": 2238
+ },
+ "verdicts": {
+  "G": "PASSED",
+  "H1": "PENDING HAND CHECK (12 repositories)",
+  "P1": "HELD",
+  "P2": "HELD",
+  "P3": "HELD",
+  "P4": "HELD"
+ }
+}

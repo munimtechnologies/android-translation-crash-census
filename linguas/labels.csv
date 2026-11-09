@@ -1,0 +1,13 @@
+sample,repo,po_file,label,listed_at_commit,note
+1,https://github.com/Jeffser/Pigment,po/nl.po,real (borderline),"ar es te de bn hi cs oc pt_BR fa","po/meson.build: i18n.gettext('pigment', preset: 'glib') with no languages:; nl not listed. Borderline: the file has 0 of 41 messages translated (a stub), so nothing is lost today. Flips to not real if a file with no translated message is not 'a translation'."
+2,https://github.com/yeKcim/warmux,old/wormux-0.8.1/po/el.po,not real,(not read),"The directory is an archived copy of an old release under old/; the app is built from trunk/. Fails (b): the build that ships the app does not read this LINGUAS. The census's excluded-directory list has no 'old'."
+3,https://github.com/Nokse22/mini-text,po/fr.po,real,"bg es et he hi it nl oc ru tr cs sr sr@latin","i18n.gettext('mini-text', preset: 'glib'); fr (27/27 translated) not listed."
+4,https://github.com/sheep-farm/merkato,po/fa.po,real,"25 codes incl. ar cs de ... zh_TW; no fa","i18n.gettext('merkato', preset: 'glib'); fa (71/71) not listed."
+5,https://github.com/tobagin/tempo,po/it_complete.po,not real,"en it tr pt_BR pt_PT es ga mi","Fails (d): Italian is listed (it); it_complete.po is an extra working file whose stem happens to match the language pattern."
+6,https://github.com/dubstar-04/Design,po/ko.po,real,"es it nl tr pt_BR","i18n.gettext('design', preset: 'glib'); ko (72/89) not listed."
+7,https://github.com/tobagin/Draughts,po/en_US.po,real (borderline),"en_GB es pt pt_BR ru (others commented out)","i18n.gettext(meson.project_name(), preset: 'glib'); en_US not listed. Borderline: an English-variant file in an English-source app, so the loss to users is small."
+8,https://github.com/phase1geo/minder,po/fa.po,real,"cs es fr it ka nl pl pt_BR pt ru sv de zh_CN","i18n.gettext(meson.project_name(), args: [...]) with no languages:; fa (856/1,109) not listed."
+9,https://github.com/mijorus/whisper,po/pt_BR.po,real,"bg de es fr hi it nl tr ru uk","i18n.gettext('whisper', preset: 'glib'); pt_BR (33/34) not listed."
+10,https://github.com/marhkb/pods,po/vi.po,real,"27 codes ar ... zh_Hans; no vi, cs or zh_Hant","i18n.gettext(gettext_package, args: [...], preset: 'glib'); vi (881/881) not listed. Still true at main on 2026-11-09; LINGUAS last changed 2023-05-26, vi.po added via Weblate 2025-11."
+11,https://github.com/donadigo/appeditor,po/cs.po,real,"ca de es fr ja nl_NL pt pt_BR ru sv tr lt it","i18n.gettext(meson.project_name(), preset: 'glib'); cs (119/119) not listed."
+12,https://github.com/amit9838/mousam,po/fi_FI.po,real,"ca cs de es fr hi hu it ko nl ro ru tr pt_PT pt_BR pl uk th zh_CN zh_TW","i18n.gettext('mousam', preset: 'glib'); neither fi nor fi_FI listed."
