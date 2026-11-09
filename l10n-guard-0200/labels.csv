@@ -1,0 +1,34 @@
+sample,repo,code,language,label,borderline,note
+1,https://codeberg.org/bg443/JetBird,locale-config-orphan,sl,real,no,list (22 tags) has no sl; values-sl strings.xml is Slovenian ('Dodaj pot')
+2,https://github.com/clementwzk/OpenCalc,locale-config-phantom,ti,real,no,list has ti; app/build.gradle.kts resourceConfigurations has no ti (it has 'it')
+3,https://github.com/s4nj1th/Slauncher,locale-config-orphan,uk,real,no,list has 8 tags (en in it es-ES es-US fr-FR pt-BR ru-RU); no uk
+3,https://github.com/s4nj1th/Slauncher,locale-config-orphan,ja,real,no,same list; no ja
+3,https://github.com/s4nj1th/Slauncher,locale-config-orphan,tr,real,no,same list; no tr
+4,https://github.com/GPLaider/KeliBoard,locale-config-phantom,dv,real,no,list has dv; values-dv/strings.xml is 63 bytes (empty resources)
+5,https://github.com/Crustack/NotallyX,locale-config-phantom,sl,real,no,locales.xml has sl; localeFilters in app/build.gradle.kts has no sl
+5,https://github.com/Crustack/NotallyX,locale-config-orphan,ar,real,no,localeFilters has ar; locales.xml (29 tags) has no ar
+6,https://gitlab.com/narektor/gugal,locale-config-orphan,es,real,no,list (13 tags) has no es
+6,https://gitlab.com/narektor/gugal,locale-config-orphan,pt,real,no,same list; no pt or pt-*
+7,https://github.com/georgernstgraf/zazentimer,locale-config-phantom,lg,real,no,list (129 tags) has lg; app/src/main/res has no values-lg
+7,https://github.com/georgernstgraf/zazentimer,locale-config-phantom,yo,real,no,list has yo; no values-yo
+7,https://github.com/georgernstgraf/zazentimer,locale-config-phantom,si,real,no,list has si; no values-si
+8,https://github.com/mstcgalis/scratchpad-launcher,locale-config-orphan,he,real,no,list has the same 8 tags as Slauncher; no he or iw
+8,https://github.com/mstcgalis/scratchpad-launcher,locale-config-orphan,hr,real,no,same list; no hr
+8,https://github.com/mstcgalis/scratchpad-launcher,locale-config-orphan,sv,real,no,same list; no sv
+9,https://github.com/mlm-games/CLauncher,locale-config-orphan,ja,real,no,list has the same 8 tags as Slauncher; no ja
+9,https://github.com/mlm-games/CLauncher,locale-config-orphan,ar,real,no,same list; no ar
+9,https://github.com/mlm-games/CLauncher,locale-config-orphan,uk,real,no,same list; no uk
+10,https://github.com/ounben/AMARadio,locale-config-orphan,rm,real,no,list (74 tags) has no rm; values-rm is Romansh ('Pajais'; 'Linguatg')
+10,https://github.com/ounben/AMARadio,locale-config-orphan,lo,real,no,same list; no lo
+10,https://github.com/ounben/AMARadio,locale-config-orphan,mn,real,no,same list; no mn
+11,https://github.com/hushenghao/AndroidEasterEggs,locale-config-phantom,fa,real,no,list (37 tags) has fa; no values-fa in core/resources or app res (other modules not opened; the tool read the whole project)
+11,https://github.com/hushenghao/AndroidEasterEggs,locale-config-phantom,sq,real,no,list has sq; no values-sq in the same two res folders
+12,https://github.com/Kin69/Athena,locale-config-phantom,ca,real,no,list (en ca de es fr) has ca; app res has no values-ca
+13,https://github.com/quillpad/quillpad,locale-config-orphan,ar,real,no,list (18 tags) has no ar
+14,https://gitlab.com/shosetsuorg/shosetsu,locale-config-phantom,fr,real,no,list has fr; android/src/main/res/values-fr/strings.xml is an empty resources element; only module is android/
+14,https://gitlab.com/shosetsuorg/shosetsu,locale-config-phantom,ko,real,no,values-ko/strings.xml empty
+14,https://gitlab.com/shosetsuorg/shosetsu,locale-config-phantom,hi,real,no,values-hi/strings.xml empty
+15,https://codeberg.org/Krixec/Rosarium,locale-config-orphan,sl,real,no,list is de en lt; no sl
+15,https://codeberg.org/Krixec/Rosarium,locale-config-orphan,pl,real,no,same list; no pl
+15,https://codeberg.org/Krixec/Rosarium,locale-config-orphan,my,real,no,same list; values-my is Burmese (rosary prayers)
+16,https://codeberg.org/tusky/Tusky,locale-config-orphan,da,real,no,list (59 entries) has no da

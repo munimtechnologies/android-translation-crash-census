@@ -1,0 +1,21 @@
+sample,package,key,class,label,note
+1,org.adaway,es-rMX,android-r,english,description is the en-US text unchanged (same_as_en yes)
+2,org.navitproject.navit,de_DE,underscore,empty,key has screenshots only; no text field
+3,com.flasskamp.energize,nb_NO,underscore,empty,key has screenshots only; no text field
+4,org.openpetfoodfacts.scanner,opff,unregistered-language,english,"summary is English (""Let's collect information on all the pet food in the world""); opff is a product flavour (Open Pet Food Facts), not a language"
+5,dummydomain.yetanothercallblocker,nb_NO,underscore,translation,Norwegian Bokmal description
+6,barilyuk.texetescribe,pt_BR,underscore,translation,Brazilian Portuguese description
+7,superfreeze.tool.android,en_US,underscore,english,"meant language is English, so English text is correct here; identical to en-US"
+8,com.danefinlay.ttsutil,zh-rCN,android-r,translation,Simplified Chinese description
+9,ru.yanus171.feedexfork,fi_FI,underscore,english,description is the en-US text unchanged (same_as_en yes)
+10,org.isoron.uhabits,zh-rCN,android-r,translation,Simplified Chinese summary
+11,barilyuk.mobilosignal,pt_BR,underscore,translation,Brazilian Portuguese description
+12,org.schabi.newpipe,en_GB,underscore,english,"meant language is English, so English text is correct here; identical to en-US"
+13,com.infomaniak.drive,sp,unregistered-language,translation,Spanish description under 'sp'
+14,org.koreader.launcher.fdroid,pt_BR,underscore,translation,Brazilian Portuguese description
+15,com.ferrarid.converterpro,nl_NL,underscore,translation,"Dutch description (two short English phrases such as 'It is' left in)"
+16,io.github.friesi23.mhabit,pt_br,underscore,translation,Brazilian Portuguese description
+17,org.y20k.escapepod,nb_NO,underscore,translation,Norwegian Bokmal summary
+18,org.kde.kdeconnect_tp,zh_CN,underscore,translation,Simplified Chinese description
+19,com.tmendes.birthdaydroid,de-rDE,android-r,translation,German description
+20,openfoodfacts.github.scrachx.openfood,opff,unregistered-language,empty,key has an icon only; no text field

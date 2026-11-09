@@ -1,5 +1,7 @@
 # Tests for lproj_census.py (ios-lproj census). Made with AI agents by MV2 of Munim, Inc.
 # Licence: Apache-2.0.
+# v2 (2026-11-09): test_unknown builds its bytes with .encode("utf-8"); a bytes literal with
+# a non-ASCII letter was a SyntaxError that stopped ios-lproj-v1 (see DEVIATIONS.md).
 import json
 import os
 import shutil
@@ -119,7 +121,8 @@ class Contents(unittest.TestCase):
         self.assertEqual(got["holds_translation"], "yes")
 
     def test_unknown(self):
-        files = {"X/cz.lproj/Main.strings": b'"1" = "Ano"; "2" = "Ne"; "3" = "Zrušit";'}
+        files = {"X/cz.lproj/Main.strings":
+                 '"1" = "Ano"; "2" = "Ne"; "3" = "Zrušit";'.encode("utf-8")}
         folders = c.classify(sorted(files))
         got = c.folder_content(folder(folders, "cz"), files.get, folders)
         self.assertEqual(got["holds_translation"], "unknown")

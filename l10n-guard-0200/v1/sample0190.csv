@@ -1,0 +1,37 @@
+repo,commit,status,code,language,label,borderline,reported_0190,reported_0200
+https://github.com/itsPronay/blankee,206b2c8af38cd98e72c9d209bffc9186cfdbdfec,ok,locale-config-orphan,ta,real,no,yes,yes
+https://github.com/itsPronay/blankee,206b2c8af38cd98e72c9d209bffc9186cfdbdfec,ok,locale-config-orphan,th,real,no,yes,yes
+https://github.com/itsPronay/blankee,206b2c8af38cd98e72c9d209bffc9186cfdbdfec,ok,locale-config-orphan,zh,real,no,yes,yes
+https://github.com/snikket-im/snikket-android,e9e512bede754a8ebc3b1d19b1f9b1a6dd4eaa37,ok,locale-config-orphan,et,real,no,yes,yes
+https://github.com/snikket-im/snikket-android,e9e512bede754a8ebc3b1d19b1f9b1a6dd4eaa37,ok,locale-config-phantom,hi,real,no,yes,yes
+https://github.com/dessalines/thumb-key,28b17d75eb6f1ca9587b9a592a3e3462a5563c04,ok,locale-config-orphan,my,real,no,yes,yes
+https://github.com/dessalines/thumb-key,28b17d75eb6f1ca9587b9a592a3e3462a5563c04,ok,locale-config-orphan,cs,real,no,yes,yes
+https://github.com/dessalines/thumb-key,28b17d75eb6f1ca9587b9a592a3e3462a5563c04,ok,locale-config-orphan,ar,real,no,yes,yes
+https://github.com/cromaguy/Rhythm,85fea209c4d44046192d830faa9181db3ece82ad,ok,locale-config-phantom,uz,real,no,yes,yes
+https://github.com/tosdr/tosdr-android,f6898f7716fe0de914a634f6df742267a57db5ee,ok,locale-config-orphan,ja,real,no,yes,yes
+https://github.com/tosdr/tosdr-android,f6898f7716fe0de914a634f6df742267a57db5ee,ok,locale-config-orphan,ru,real,no,yes,yes
+https://github.com/tosdr/tosdr-android,f6898f7716fe0de914a634f6df742267a57db5ee,ok,locale-config-orphan,pl,real,no,yes,yes
+https://github.com/siyuan-note/siyuan-android,2931589701dab9538597d2e9e0c03fe1700daca6,ok,locale-config-phantom,fr,not real,no,yes,yes
+https://github.com/siyuan-note/siyuan-android,2931589701dab9538597d2e9e0c03fe1700daca6,ok,locale-config-phantom,ko,not real,no,yes,yes
+https://github.com/siyuan-note/siyuan-android,2931589701dab9538597d2e9e0c03fe1700daca6,ok,locale-config-phantom,de,not real,no,yes,yes
+https://github.com/BlackyHawky/Clock,4899ab538d18e2453dcbaeff9d435689295a2a08,ok,locale-config-orphan,th,real,no,yes,no
+https://github.com/BlackyHawky/Clock,4899ab538d18e2453dcbaeff9d435689295a2a08,ok,locale-config-orphan,id,real,no,yes,yes
+https://github.com/BlackyHawky/Clock,4899ab538d18e2453dcbaeff9d435689295a2a08,ok,locale-config-orphan,ca,real,no,yes,no
+https://github.com/lz233/Tarnhelm,e5f0bdc4b69e392d264bb9f048c6a532e111fb62,ok,locale-config-phantom,es,real,no,yes,yes
+https://github.com/Crazy-Marvin/ToDont,4a35a8759f1438f979cd61dba86c7487f14033b6,ok,locale-config-orphan,nl,real,no,yes,yes
+https://github.com/Crazy-Marvin/ToDont,4a35a8759f1438f979cd61dba86c7487f14033b6,ok,locale-config-orphan,la,real,yes,yes,yes
+https://github.com/Crazy-Marvin/ToDont,4a35a8759f1438f979cd61dba86c7487f14033b6,ok,locale-config-orphan,ga,real,no,yes,yes
+https://github.com/LemmyNet/jerboa,e41bbda3cca4a60f551d6a22bd9a83df0fd3a9c9,ok,locale-config-orphan,bs,real,no,yes,yes
+https://github.com/pass-with-high-score/universal-installer,5da02717c37539a034f12b41b855b8c265283466,ok,locale-config-orphan,pl,real,no,yes,yes
+https://github.com/pass-with-high-score/universal-installer,5da02717c37539a034f12b41b855b8c265283466,ok,locale-config-orphan,ro,real,no,yes,yes
+https://github.com/lollipopkit/flutter_server_box,dc164185caab0f6a00dd91d79d92c1a1ec572e44,ok,locale-config-phantom,az,not real,no,yes,no
+https://github.com/RapidAppCoder/mighty-alarm-clock,f105cb4997659f7bb3a6f4e4842e10981afc83dc,ok,locale-config-orphan,ja,real,no,yes,no
+https://github.com/aliasvault/aliasvault,5a401ec376eb6097b91b4b300afcc3ff414d3787,ok,locale-config-orphan,fa,not real,no,yes,no
+https://github.com/aliasvault/aliasvault,5a401ec376eb6097b91b4b300afcc3ff414d3787,ok,locale-config-orphan,ca,real,yes,yes,no
+https://github.com/aliasvault/aliasvault,5a401ec376eb6097b91b4b300afcc3ff414d3787,ok,locale-config-orphan,bg,real,yes,yes,no
+https://github.com/jocmp/capyreader,7b8ea0c26022ad5ceae5fb4f1877f13e26bbb8da,ok,locale-config-orphan,he,real,no,yes,yes
+https://github.com/jocmp/capyreader,7b8ea0c26022ad5ceae5fb4f1877f13e26bbb8da,ok,locale-config-orphan,be,real,no,yes,yes
+https://github.com/jocmp/capyreader,7b8ea0c26022ad5ceae5fb4f1877f13e26bbb8da,ok,locale-config-orphan,ja,real,no,yes,yes
+https://dev.narayana.im/narayana/anotherim,dda05850a721ab6cf2d6064d445c77a8bcb6e2e9,ok,locale-config-phantom,cs,real,no,yes,yes
+https://dev.narayana.im/narayana/anotherim,dda05850a721ab6cf2d6064d445c77a8bcb6e2e9,ok,locale-config-phantom,ko,real,no,yes,yes
+https://dev.narayana.im/narayana/anotherim,dda05850a721ab6cf2d6064d445c77a8bcb6e2e9,ok,locale-config-phantom,ml,real,no,yes,yes

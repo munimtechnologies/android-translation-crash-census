@@ -1,0 +1,244 @@
+{
+ "control": true,
+ "indexes": {
+  "fdroid": {
+   "exploratory": {
+    "class_packages": {
+     "android-r": 17,
+     "malformed": 22,
+     "underscore": 43,
+     "unregistered-language": 49,
+     "unregistered-subtag": 26
+    },
+    "distinct_keys": 472,
+    "invalid_keys_top": {
+     "Images (unregistered-language)": 1,
+     "android (unregistered-language)": 11,
+     "bn_BD (underscore)": 2,
+     "ca_ES (underscore)": 2,
+     "changelogs (malformed)": 1,
+     "cz (unregistered-language)": 2,
+     "cz-CZ (unregistered-language)": 1,
+     "de-rDE (android-r)": 2,
+     "de_DE (underscore)": 2,
+     "du-NL (unregistered-language)": 1,
+     "el-EL (unregistered-subtag)": 1,
+     "en-UK (unregistered-subtag)": 1,
+     "en_GB (underscore)": 3,
+     "en_US (underscore)": 6,
+     "es-rES (android-r)": 2,
+     "es_ES (underscore)": 2,
+     "fa_IR (underscore)": 1,
+     "featureGraphic (malformed)": 3,
+     "fi-FL (unregistered-subtag)": 1,
+     "geteduroam (malformed)": 1,
+     "getgovroam (malformed)": 1,
+     "gr (unregistered-language)": 1,
+     "icon (unregistered-language)": 2,
+     "images (unregistered-language)": 2,
+     "io-EN (unregistered-subtag)": 1,
+     "it_IT (underscore)": 3,
+     "jp-JP (unregistered-language)": 2,
+     "ko-rKR (android-r)": 2,
+     "ko_KR (underscore)": 2,
+     "kor-KR (unregistered-language)": 1,
+     "metadata (unregistered-language)": 4,
+     "nb_NO (underscore)": 11,
+     "nl_NL (underscore)": 2,
+     "obf (unregistered-language)": 3,
+     "off (unregistered-language)": 3,
+     "opf (unregistered-language)": 3,
+     "opff (unregistered-language)": 3,
+     "pa_PK (underscore)": 1,
+     "phoneScreenshots (malformed)": 8,
+     "play (unregistered-language)": 2,
+     "pt-rBR (android-r)": 7,
+     "pt-rPT (android-r)": 2,
+     "pt_BR (underscore)": 16,
+     "pt_PT (underscore)": 4,
+     "sp (unregistered-language)": 5,
+     "sr-SP (unregistered-subtag)": 19,
+     "sr_Cyrl (underscore)": 1,
+     "srp (unregistered-language)": 3,
+     "tr_description.txt (malformed)": 1,
+     "ua (unregistered-language)": 4,
+     "uk-UK (unregistered-subtag)": 1,
+     "zh-rCN (android-r)": 7,
+     "zh-rTW (android-r)": 8,
+     "zh_CN (underscore)": 10,
+     "zh_Hans (underscore)": 10,
+     "zh_Hant (underscore)": 4,
+     "zh_Hant_HK (underscore)": 2,
+     "zh_TW (underscore)": 3,
+     "zh_rCN (malformed)": 1,
+     "zz (unregistered-language)": 4
+    },
+    "invalid_packages": 152,
+    "invalid_rows": 292,
+    "k3_known_lost": [
+     16,
+     16
+    ],
+    "noncanonical_case_valid_keys": {
+     "de-De": 1,
+     "de-ch": 1,
+     "en-SHAW": 1,
+     "en-au": 1,
+     "en-ca": 2,
+     "en-us": 4,
+     "es-Es": 2,
+     "es-ar": 1,
+     "pa-pk": 1,
+     "pt-br": 1,
+     "ru-Ru": 1,
+     "sl-rSI": 1,
+     "sr-cyrl": 1,
+     "sr-latn": 1
+    },
+    "packages": 4988,
+    "packages_localized": 2848,
+    "reach_by_class": {
+     "android-r/fallback-en": 71,
+     "malformed/fallback-en": 20,
+     "malformed/only-key": 4,
+     "underscore/fallback-en": 106,
+     "underscore/no-en": 6,
+     "underscore/only-key": 2,
+     "unregistered-language/fallback-en": 53,
+     "unregistered-language/no-en": 10,
+     "unregistered-language/only-key": 9,
+     "unregistered-subtag/fallback-en": 30
+    },
+    "suspect_registered_codes": {
+     "ch": {
+      "note": "zh or de-CH (ch is Chamorro)",
+      "packages": 0
+     },
+     "ee": {
+      "note": "et (ee is Ewe)",
+      "packages": 0
+     },
+     "kr": {
+      "note": "ko (kr is Kanuri)",
+      "packages": 0
+     },
+     "se": {
+      "note": "sv (se is Northern Sami)",
+      "packages": 0
+     }
+    },
+    "unregistered_language_same_as_en": 3
+   },
+   "repo_timestamp": 1794191307195,
+   "sha256": "fedbc90ff6fc9bb9e16fe4e66db74b8fd8213f32fb9e9df7bd743e6b26e7f3f6",
+   "url": "https://f-droid.org/repo/index-v2.json"
+  },
+  "izzyondroid": {
+   "exploratory": {
+    "class_packages": {
+     "android-r": 7,
+     "malformed": 3,
+     "underscore": 8,
+     "unregistered-language": 4,
+     "unregistered-subtag": 6
+    },
+    "distinct_keys": 273,
+    "invalid_keys_top": {
+     "ar_LY (underscore)": 1,
+     "bn_BD (underscore)": 1,
+     "cn (unregistered-language)": 1,
+     "en-UK (unregistered-subtag)": 1,
+     "en-XW-Shaw (malformed)": 1,
+     "en-rGB (android-r)": 1,
+     "en@pirate (malformed)": 1,
+     "en_GB (underscore)": 2,
+     "es_SV (underscore)": 1,
+     "fr-rFR (android-r)": 1,
+     "ia-INT (unregistered-subtag)": 1,
+     "io-EN (unregistered-subtag)": 1,
+     "nb_NO (underscore)": 2,
+     "pt-rBR (android-r)": 3,
+     "pt_BR (underscore)": 1,
+     "pt_PT (underscore)": 1,
+     "pt_br (underscore)": 1,
+     "ro-rRO (android-r)": 1,
+     "sr-SP (unregistered-subtag)": 4,
+     "srp (unregistered-language)": 1,
+     "ua (unregistered-language)": 2,
+     "uk-UK (unregistered-subtag)": 1,
+     "zh-SIMPLIFIED (malformed)": 1,
+     "zh-rCN (android-r)": 3,
+     "zh-rTW (android-r)": 5,
+     "zh_CN (underscore)": 1,
+     "zh_Hans (underscore)": 2,
+     "zh_Hant (underscore)": 2,
+     "zh_Hant_HK (underscore)": 2
+    },
+    "invalid_packages": 27,
+    "invalid_rows": 46,
+    "k3_known_lost": [
+     3,
+     3
+    ],
+    "noncanonical_case_valid_keys": {
+     "de-De": 1,
+     "en-SHAW": 1,
+     "en-us": 1
+    },
+    "packages": 1405,
+    "packages_localized": 739,
+    "reach_by_class": {
+     "android-r/fallback-en": 14,
+     "malformed/fallback-en": 3,
+     "underscore/fallback-en": 17,
+     "unregistered-language/fallback-en": 4,
+     "unregistered-subtag/fallback-en": 8
+    },
+    "suspect_registered_codes": {
+     "ch": {
+      "note": "zh or de-CH (ch is Chamorro)",
+      "packages": 0
+     },
+     "ee": {
+      "note": "et (ee is Ewe)",
+      "packages": 0
+     },
+     "kr": {
+      "note": "ko (kr is Kanuri)",
+      "packages": 0
+     },
+     "se": {
+      "note": "sv (se is Northern Sami)",
+      "packages": 0
+     }
+    },
+    "unregistered_language_same_as_en": 1
+   },
+   "repo_timestamp": 1794164529000,
+   "sha256": "b177b12963fcbd27ccfa1d426087cef4cb1af40e601a6c4adde902e2e2de7df7",
+   "url": "https://apt.izzysoft.de/fdroid/repo/index-v2.json"
+  }
+ },
+ "minutes": 10.1,
+ "prereg_sha256": "ed683eff6d004c92df3d13af144e108d4d97515fc7948f34cb514061f5f3b3d0",
+ "registry": {
+  "file_date": "2026-09-17",
+  "languages": 8276,
+  "sha256": "755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1",
+  "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+ },
+ "sample_size": 20,
+ "selftest": {
+  "description_keys": 62,
+  "has_en_US": true,
+  "package": "org.fdroid.fdroid"
+ },
+ "verdicts": {
+  "H1": "PENDING HAND CHECK (sample of 20)",
+  "K1": "HELD",
+  "K2": "HELD",
+  "K3": "HELD",
+  "K4": "FAILED"
+ },
+ "version": "0.1.0"
+}
