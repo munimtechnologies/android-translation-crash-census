@@ -1,0 +1,87 @@
+prereg sha256 138232833eba340b79c5a3d76af8b0a4564077bed4eb8c845650928dcc30617a
+repo files: 63
+before test_0100 exit=0 ran=26
+before test_0110 exit=0 ran=13
+before test_0120 exit=0 ran=11
+before test_0130 exit=0 ran=7
+before test_0140 exit=0 ran=10
+before test_0150 exit=0 ran=13
+before test_0160 exit=0 ran=7
+before test_0170 exit=0 ran=17
+before test_0180 exit=0 ran=19
+before test_0190 exit=0 ran=25
+before test_0200 exit=0 ran=11
+before test_0201 exit=0 ran=6
+before test_071 exit=0 ran=13
+before test_072 exit=0 ran=7
+before test_080 exit=0 ran=14
+before test_090 exit=0 ran=15
+before test_android_text_052 exit=0 ran=6
+before test_java_060 exit=0 ran=14
+before test_l10n_guard exit=0 ran=55
+before test_packaging exit=0 ran=10
+before test_qt_070 exit=0 ran=21
+replaced: l10n_guard.py version
+replaced: l10n_guard.py docstring
+replaced: l10n_guard.py parser
+replaced: l10n_guard.py dispatch
+replaced: README.md feature list
+replaced: README.md use section
+replaced: README.md action note
+replaced: README.md action step
+replaced: skills/l10n-guard/SKILL.md description
+replaced: skills/l10n-guard/SKILL.md table row
+replaced: skills/l10n-guard/SKILL.md warning advice
+replaced: skills/l10n-guard/SKILL.md ci note
+replaced: skills/l10n-guard/SKILL.md limits
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.20.1' -> '- uses: munimtechnologies/l10n-guard@v0.21.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.20.1' -> '- uses: munimtechnologies/l10n-guard@v0.21.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.20.1' -> '- uses: munimtechnologies/l10n-guard@v0.21.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.20.1' -> '- uses: munimtechnologies/l10n-guard@v0.21.0'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.20.1' -> '- uses: munimtechnologies/l10n-guard@v0.21.0'
+version: README.md: 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"' -> 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"'
+version: README.md: 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"' -> 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"'
+version: README.md: 'rev: v0.20.1' -> 'rev: v0.21.0'
+version: skills/l10n-guard/SKILL.md: 'version: "0.20.1"' -> 'version: "0.21.0"'
+version: skills/l10n-guard/SKILL.md: '- `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"` gives an' -> '- `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"` gives an'
+version: skills/l10n-guard/SKILL.md: '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.20.1` with `kind`, `source`, `target`' -> '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.21.0` with `kind`, `source`, `target`'
+version: skills/l10n-guard/SKILL.md: 'use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"`' -> 'use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"`'
+version: skills/l10n-guard/SKILL.md: '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.20.1`, hook id' -> '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.21.0`, hook id'
+lines still mentioning 0.20.1: 5 (see still-0201.txt)
+after test_0100 exit=0 ran=26
+after test_0110 exit=0 ran=13
+after test_0120 exit=0 ran=11
+after test_0130 exit=0 ran=7
+after test_0140 exit=0 ran=10
+after test_0150 exit=0 ran=13
+after test_0160 exit=0 ran=7
+after test_0170 exit=0 ran=17
+after test_0180 exit=0 ran=19
+after test_0190 exit=0 ran=25
+after test_0200 exit=0 ran=11
+after test_0201 exit=0 ran=6
+after test_0210 exit=0 ran=14
+after test_071 exit=0 ran=13
+after test_072 exit=0 ran=7
+after test_080 exit=0 ran=14
+after test_090 exit=0 ran=15
+after test_android_text_052 exit=0 ran=6
+after test_java_060 exit=0 ran=14
+after test_l10n_guard exit=0 ran=55
+after test_packaging exit=0 ran=10
+after test_qt_070 exit=0 ran=21
+T: HELD; failing after: []
+regression R2 https://github.com/Jeffser/Pigment po/nl.po: ok not reported
+regression R2 https://github.com/yeKcim/warmux old/wormux-0.8.1/po/el.po: ok not reported
+regression R1 https://github.com/Nokse22/mini-text po/fr.po: ok reported
+regression R1 https://github.com/sheep-farm/merkato po/fa.po: ok reported
+regression R2 https://github.com/tobagin/tempo po/it_complete.po: ok not reported
+regression R1 https://github.com/dubstar-04/Design po/ko.po: ok reported
+regression  https://github.com/tobagin/Draughts po/en_US.po: ok reported
+regression R1 https://github.com/phase1geo/minder po/fa.po: ok reported
+regression R1 https://github.com/mijorus/whisper po/pt_BR.po: ok reported
+regression R1 https://github.com/marhkb/pods po/vi.po: ok reported
+regression R1 https://github.com/donadigo/appeditor po/cs.po: ok reported
+regression R1 https://github.com/amit9838/mousam po/fi_FI.po: ok reported
+population: 549 repositories ({"gitlab.gnome.org/GNOME": 246, "gitlab.gnome.org/World": 104, "gitlab.xfce.org/xfce": 19, "gitlab.xfce.org/apps": 16, "gitlab.xfce.org/panel-plugins": 32, "gitlab.xfce.org/thunar-plugins": 4, "github.com/elementary": 128})
+{"T": "HELD", "R1": "HELD (8 of 8 reported, 8 read)", "R2": "HELD", "H1": "PENDING HAND CHECK (6 repositories)", "P1": "HELD (3 of 123)"}

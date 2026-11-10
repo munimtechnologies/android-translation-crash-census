@@ -1,0 +1,86 @@
+{
+ "counts": {
+  "by_group": {
+   "github.com/elementary": {
+    "governed": 72,
+    "read": 128,
+    "with_missing": 0,
+    "with_unlisted": 1
+   },
+   "gitlab.gnome.org/GNOME": {
+    "governed": 123,
+    "read": 246,
+    "with_missing": 0,
+    "with_unlisted": 3
+   },
+   "gitlab.gnome.org/World": {
+    "governed": 27,
+    "read": 104,
+    "with_missing": 0,
+    "with_unlisted": 2
+   },
+   "gitlab.xfce.org/apps": {
+    "governed": 16,
+    "read": 16,
+    "with_missing": 0,
+    "with_unlisted": 0
+   },
+   "gitlab.xfce.org/panel-plugins": {
+    "governed": 32,
+    "read": 32,
+    "with_missing": 0,
+    "with_unlisted": 0
+   },
+   "gitlab.xfce.org/thunar-plugins": {
+    "governed": 4,
+    "read": 4,
+    "with_missing": 0,
+    "with_unlisted": 0
+   },
+   "gitlab.xfce.org/xfce": {
+    "governed": 17,
+    "read": 19,
+    "with_missing": 0,
+    "with_unlisted": 0
+   }
+  },
+  "flagged": 6,
+  "gnome_group_governed": 123,
+  "gnome_group_with_unlisted": 3,
+  "governed": 291,
+  "missing_findings": 0,
+  "read": 549,
+  "unlisted_findings": 6,
+  "with_unlisted": 6
+ },
+ "guard_version": "0.21.0",
+ "minutes": 2.8,
+ "population": {
+  "by_group": {
+   "github.com/elementary": 128,
+   "gitlab.gnome.org/GNOME": 246,
+   "gitlab.gnome.org/World": 104,
+   "gitlab.xfce.org/apps": 16,
+   "gitlab.xfce.org/panel-plugins": 32,
+   "gitlab.xfce.org/thunar-plugins": 4,
+   "gitlab.xfce.org/xfce": 19
+  },
+  "empty": 2,
+  "errors": [],
+  "forks": 28,
+  "in_flathub_census": 123,
+  "listed": 672
+ },
+ "prereg_sha256": "138232833eba340b79c5a3d76af8b0a4564077bed4eb8c845650928dcc30617a",
+ "repositories": 549,
+ "status": {
+  "ok": 549
+ },
+ "verdicts": {
+  "H1": "PENDING HAND CHECK (6 repositories)",
+  "P1": "HELD (3 of 123)",
+  "R1": "HELD (8 of 8 reported, 8 read)",
+  "R2": "HELD",
+  "T": "HELD"
+ }
+}
