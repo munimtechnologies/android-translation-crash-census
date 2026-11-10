@@ -1,0 +1,322 @@
+--- a/README.md
++++ b/README.md
+@@ -331,7 +331,7 @@
+ 
+ ```yaml
+ - uses: actions/checkout@v4
+-- uses: munimtechnologies/l10n-guard@v0.21.0
++- uses: munimtechnologies/l10n-guard@v0.21.1
+   with:
+     kind: json
+     source: locales/en.json
+@@ -342,17 +342,17 @@
+ only `target`):
+ 
+ ```yaml
+-- uses: munimtechnologies/l10n-guard@v0.21.0
++- uses: munimtechnologies/l10n-guard@v0.21.1
+   with:
+     kind: properties
+     source: src/main/resources/messages.properties
+     target: src/main/resources/messages_fr.properties
+-- uses: munimtechnologies/l10n-guard@v0.21.0
++- uses: munimtechnologies/l10n-guard@v0.21.1
+   with:
+     kind: android
+     source: app/src/main/res/values/strings.xml
+     target: app/src/main/res/values-fr/strings.xml
+-- uses: munimtechnologies/l10n-guard@v0.21.0
++- uses: munimtechnologies/l10n-guard@v0.21.1
+   with:
+     kind: xcstrings
+     target: App/Localizable.xcstrings
+@@ -361,19 +361,30 @@
+ A whole translated folder:
+ 
+ ```yaml
+-- uses: munimtechnologies/l10n-guard@v0.21.0
++- uses: munimtechnologies/l10n-guard@v0.21.1
+   with:
+     kind: dir
+     source: docs
+     target: docs/de
+ ```
+ 
+-The Action takes a source and a target, so the `locale-config` and `linguas` kinds run as a plain step for now:
++Project-folder kinds (`locale-config`, `linguas`) take only `target` (since 0.21.1):
++
++```yaml
++- uses: actions/checkout@v4
++- uses: munimtechnologies/l10n-guard@v0.21.1
++  with:
++    kind: linguas
++    target: .
++    strict: "true"
++```
++
++Or run them as a plain step:
+ 
+ ```yaml
+ - uses: actions/checkout@v4
+ - run: |
+-    pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"
++    pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"
+     l10n-guard --strict locale-config .
+     l10n-guard --strict linguas .
+ ```
+@@ -384,7 +395,7 @@
+ `l10n-guard` command (pip needs Python 3.9 or newer for this; the file itself still runs on 3.8):
+ 
+ ```sh
+-pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"
++pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"
+ l10n-guard android values/strings.xml values-fr/strings.xml
+ ```
+ 
+@@ -397,7 +408,7 @@
+ ```yaml
+ repos:
+   - repo: https://github.com/munimtechnologies/l10n-guard
+-    rev: v0.21.0
++    rev: v0.21.1
+     hooks:
+       - id: l10n-guard
+         name: l10n-guard (de)
+--- a/action.yml
++++ b/action.yml
+@@ -6,14 +6,14 @@
+   color: blue
+ inputs:
+   kind:
+-    description: "html, md, json, properties, arb, android, strings, resx, laravel, rails, symfony, dir (a whole locale folder against its source folder), or a single-file format: po, xliff, xcstrings, qt"
++    description: "html, md, json, properties, arb, android, strings, resx, laravel, rails, symfony, dir (a whole locale folder against its source folder), a single-file format: po, xliff, xcstrings, qt, or a project folder: locale-config, linguas"
+     required: true
+   source:
+-    description: "Source-language file or folder (not used for po, xliff, xcstrings, qt)"
++    description: "Source-language file or folder (not used for po, xliff, xcstrings, qt, locale-config, linguas)"
+     required: false
+     default: ""
+   target:
+-    description: "Translated file or folder"
++    description: "Translated file or folder (the project folder for locale-config and linguas)"
+     required: true
+   strict:
+     description: "Treat warnings as errors (true/false)"
+@@ -33,7 +33,7 @@
+         args=()
+         if [ "$L10N_STRICT" = "true" ]; then args+=(--strict); fi
+         case "$L10N_KIND" in
+-          po|xliff|xcstrings|qt)
++          po|xliff|xcstrings|qt|locale-config|linguas)
+             python3 "$L10N_SCRIPT" "${args[@]}" "$L10N_KIND" "$L10N_TARGET" ;;
+           *)
+             python3 "$L10N_SCRIPT" "${args[@]}" "$L10N_KIND" "$L10N_SOURCE" "$L10N_TARGET" ;;
+--- a/l10n_guard.py
++++ b/l10n_guard.py
+@@ -42,7 +42,7 @@
+ from collections import Counter
+ from html.parser import HTMLParser
+ 
+-__version__ = "0.21.0"
++__version__ = "0.21.1"
+ 
+ ERROR = "error"
+ WARNING = "warning"
+@@ -3756,7 +3756,8 @@
+         listed = _lg_meson_linguas(text) if build == "meson" else _lg_gnu_linguas(text)
+         listed_set = set(listed)
+         rel = prefix + "LINGUAS"
+-        tool = "Meson" if build == "meson" else "gettext's build rules"
++        tool = ("Meson never compiles or installs it" if build == "meson"
++                else "gettext's build rules never compile or install it")
+         spelled = {}
+         for t in listed:
+             spelled.setdefault(t.lower().replace("-", "_"), t)
+@@ -3774,13 +3775,17 @@
+             if same:
+                 fix = ("%s lists '%s', and the name must match the file name exactly"
+                        % (rel, same))
++            elif "-" in stem:
++                gt = stem.replace("-", "_")
++                fix = ("gettext locale names use '_', so a catalog installed as '%s' is never "
++                       "looked up; rename %s%s to %s%s.po and add '%s' to %s if the "
++                       "translation is ready" % (stem, prefix, po[stem], prefix, gt, gt, rel))
+             else:
+                 fix = "add '%s' to %s if the translation is ready" % (stem, rel)
+             problems.append(issue(
+                 WARNING, "linguas-unlisted",
+-                "%s%s has %d of %d messages translated, but %s does not list '%s', so %s never "
+-                "compiles or installs it; %s" % (prefix, po[stem], done, total, rel, stem, tool,
+-                                                 fix), stem))
++                "%s%s has %d of %d messages translated, but %s does not list '%s', so %s; %s"
++                % (prefix, po[stem], done, total, rel, stem, tool, fix), stem))
+         for lang in sorted(listed_set):
+             if lang not in po:
+                 problems.append(issue(
+--- a/skills/l10n-guard/SKILL.md
++++ b/skills/l10n-guard/SKILL.md
+@@ -4,7 +4,7 @@
+ license: Apache-2.0
+ metadata:
+   author: MV2 of Munim, Inc.
+-  version: "0.21.0"
++  version: "0.21.1"
+   source: https://github.com/munimtechnologies/l10n-guard
+ ---
+ 
+@@ -22,7 +22,7 @@
+ ## Steps
+ 
+ 1. **Get the tool** (pinned release; pick one):
+-   - `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"` gives an
++   - `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"` gives an
+      `l10n-guard` command (Python 3.9+).
+    - Or use the single file `l10n_guard.py` from that release with `python3 l10n_guard.py ...`
+      (Python 3.8+). If the project already vendors `l10n_guard.py` or runs the GitHub Action or
+@@ -102,11 +102,12 @@
+ 
+ ## CI options (when the user wants it enforced)
+ 
+-- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.21.0` with `kind`, `source`, `target`
+-  (single-file kinds `po`, `xliff`, `xcstrings`, `qt` take only `target`). For `locale-config`,
+-  use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.0"`
++- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.21.1` with `kind`, `source`, `target`
++  (single-file kinds `po`, `xliff`, `xcstrings`, `qt` and the project-folder kinds
++  `locale-config` and `linguas` take only `target`). Or use a plain step:
++  `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"`
+   then `l10n-guard --strict locale-config .` (the `linguas` kind runs the same way).
+-- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.21.0`, hook id
++- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.21.1`, hook id
+   `l10n-guard`, `args: [json, locales/en.json, locales/de.json]`, one hook entry per pair (or the
+   `dir` kind for a folder).
+ 
+--- a/test_0211.py
++++ b/test_0211.py
+@@ -0,0 +1,127 @@
++#!/usr/bin/env python3
++"""Tests for l10n-guard 0.21.1: linguas-unlisted names the gettext spelling for a file named
++with a hyphen, autotools messages use "compile or install", and the GitHub Action passes only
++`target` to the project-folder kinds locale-config and linguas.
++
++Licensed under the Apache License, Version 2.0 (Apache-2.0).
++Made by MV2 of Munim, Inc. with AI agents.
++"""
++
++import os
++import shutil
++import subprocess
++import tempfile
++import unittest
++
++import l10n_guard as g
++
++HERE = os.path.dirname(os.path.abspath(__file__))
++MESON = "i18n.gettext(meson.project_name(), preset: 'glib')\n"
++HEADER = 'msgid ""\nmsgstr ""\n"Content-Type: text/plain; charset=UTF-8\\n"\n\n'
++
++
++def po_text(done=1):
++    return HEADER + "".join('msgid "a%d"\nmsgstr "b%d"\n\n' % (i, i) for i in range(done))
++
++
++def check(files):
++    data = dict((k, v.encode("utf-8")) for k, v in files.items())
++    return g.check_linguas(sorted(data), data.get)
++
++
++def action_script():
++    """The bash script of the Action's single run step, dedented."""
++    with open(os.path.join(HERE, "action.yml"), encoding="utf-8") as fh:
++        lines = fh.read().splitlines()
++    at = [i for i, x in enumerate(lines) if x.strip() == "run: |"]
++    if len(at) != 1:
++        raise AssertionError("action.yml has %d run blocks" % len(at))
++    indent = len(lines[at[0]]) - len(lines[at[0]].lstrip())
++    body = []
++    for line in lines[at[0] + 1:]:
++        if line.strip() and len(line) - len(line.lstrip()) <= indent:
++            break
++        body.append(line)
++    pad = min(len(x) - len(x.lstrip()) for x in body if x.strip())
++    return "\n".join(x[pad:] for x in body) + "\n"
++
++
++class MessageTest(unittest.TestCase):
++    def test_version(self):
++        self.assertGreaterEqual(tuple(int(x) for x in g.__version__.split(".")), (0, 21, 1))
++
++    def test_hyphen_name_gets_the_gettext_spelling(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++            "po/nb-NO.po": po_text(3)})
++        self.assertEqual([(p["code"], p["key"]) for p in problems],
++                         [("linguas-unlisted", "nb-NO")])
++        msg = problems[0]["message"]
++        self.assertIn("po/nb-NO.po has 3 of 3 messages translated", msg)
++        self.assertIn("rename po/nb-NO.po to po/nb_NO.po and add 'nb_NO' to po/LINGUAS", msg)
++        self.assertNotIn("add 'nb-NO'", msg)
++
++    def test_listed_spelling_still_wins(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "pt_BR\n", "po/pt-BR.po": po_text()})
++        unlisted = [p for p in problems if p["code"] == "linguas-unlisted"]
++        self.assertEqual(len(unlisted), 1)
++        self.assertIn("po/LINGUAS lists 'pt_BR'", unlisted[0]["message"])
++        self.assertNotIn("rename", unlisted[0]["message"])
++
++    def test_autotools_wording(self):
++        problems, _ = check({
++            "configure.ac": "AC_INIT([x], [1])\nAM_GNU_GETTEXT([external])\n",
++            "po/LINGUAS": "de\n", "po/de.po": po_text(), "po/cs.po": po_text()})
++        self.assertEqual([(p["code"], p["key"]) for p in problems], [("linguas-unlisted", "cs")])
++        self.assertIn("so gettext's build rules never compile or install it; add 'cs' to "
++                      "po/LINGUAS", problems[0]["message"])
++
++    def test_meson_message_is_unchanged(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++            "po/cs.po": po_text(2)})
++        self.assertEqual(len(problems), 1)
++        self.assertEqual(problems[0]["message"],
++                         "po/cs.po has 2 of 2 messages translated, but po/LINGUAS does not "
++                         "list 'cs', so Meson never compiles or installs it; add 'cs' to "
++                         "po/LINGUAS if the translation is ready")
++
++
++@unittest.skipUnless(shutil.which("bash") and shutil.which("python3"),
++                     "needs bash and python3, as the Action does")
++class ActionTest(unittest.TestCase):
++    def setUp(self):
++        self.root = tempfile.mkdtemp()
++        files = {"po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++                 "po/cs.po": po_text(2)}
++        for rel, text in files.items():
++            path = os.path.join(self.root, *rel.split("/"))
++            os.makedirs(os.path.dirname(path), exist_ok=True)
++            with open(path, "w", encoding="utf-8") as fh:
++                fh.write(text)
++
++    def tearDown(self):
++        shutil.rmtree(self.root, ignore_errors=True)
++
++    def run_action(self, kind, strict):
++        env = dict(os.environ, L10N_KIND=kind, L10N_SOURCE="", L10N_TARGET=self.root,
++                   L10N_STRICT=strict, L10N_SCRIPT=os.path.join(HERE, "l10n_guard.py"))
++        return subprocess.run(["bash", "-e", "-c", action_script()], env=env,
++                              capture_output=True, text=True, timeout=120)
++
++    def test_linguas_takes_only_target(self):
++        p = self.run_action("linguas", "false")
++        self.assertEqual(p.returncode, 0, p.stdout + p.stderr)
++        self.assertIn("linguas-unlisted [cs]", p.stdout)
++        p = self.run_action("linguas", "true")
++        self.assertEqual(p.returncode, 1, p.stdout + p.stderr)
++
++    def test_locale_config_takes_only_target(self):
++        p = self.run_action("locale-config", "false")
++        self.assertNotEqual(p.returncode, 2, p.stdout + p.stderr)
++        self.assertNotIn("unrecognized arguments", p.stderr)
++
++
++if __name__ == "__main__":
++    unittest.main()

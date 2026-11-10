@@ -1,0 +1,3 @@
+README.md:218: - **gettext LINGUAS** (0.21.0, new `linguas` kind, codes `linguas-unlisted`,
+README.md:233: [0.21.0 check](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0210/RESULTS.md)).
+l10n_guard.py:3625: # --- 0.21.0: linguas ------------------------------------------------------------------

@@ -1,0 +1,86 @@
+21:41:43 l10n-guard 0.21.0 on main is live
+21:41:43 repo files: 64
+21:41:43 before test_0100 exit=0 ran=26 skipped=0
+21:41:44 before test_0110 exit=0 ran=13 skipped=0
+21:41:44 before test_0120 exit=0 ran=11 skipped=0
+21:41:44 before test_0130 exit=0 ran=7 skipped=0
+21:41:44 before test_0140 exit=0 ran=10 skipped=0
+21:41:45 before test_0150 exit=0 ran=13 skipped=0
+21:41:45 before test_0160 exit=0 ran=7 skipped=0
+21:41:45 before test_0170 exit=0 ran=17 skipped=0
+21:41:46 before test_0180 exit=0 ran=19 skipped=0
+21:41:46 before test_0190 exit=0 ran=25 skipped=0
+21:41:46 before test_0200 exit=0 ran=11 skipped=0
+21:41:47 before test_0201 exit=0 ran=6 skipped=0
+21:41:47 before test_0210 exit=0 ran=14 skipped=0
+21:41:47 before test_071 exit=0 ran=13 skipped=0
+21:41:48 before test_072 exit=0 ran=7 skipped=0
+21:41:48 before test_080 exit=0 ran=14 skipped=0
+21:41:49 before test_090 exit=0 ran=15 skipped=0
+21:41:49 before test_android_text_052 exit=0 ran=6 skipped=0
+21:41:49 before test_java_060 exit=0 ran=14 skipped=0
+21:41:50 before test_l10n_guard exit=0 ran=55 skipped=0
+21:41:50 before test_packaging exit=0 ran=10 skipped=0
+21:41:50 before test_qt_070 exit=0 ran=21 skipped=0
+21:41:50 replaced: l10n_guard.py version
+21:41:50 replaced: l10n_guard.py autotools wording
+21:41:50 replaced: l10n_guard.py hyphen advice
+21:41:50 replaced: l10n_guard.py message
+21:41:50 replaced: action.yml case line
+21:41:50 replaced: action.yml kind description
+21:41:50 replaced: action.yml source description
+21:41:50 replaced: action.yml target description
+21:41:50 version: README.md: 7 x '@v0.21.0' -> '@v0.21.1'
+21:41:50 version: README.md: 1 x 'rev: v0.21.0' -> 'rev: v0.21.1'
+21:41:50 replaced: README.md action folder kinds
+21:41:50 version: skills/l10n-guard/SKILL.md: 1 x 'version: "0.21.0"' -> 'version: "0.21.1"'
+21:41:50 version: skills/l10n-guard/SKILL.md: 3 x '@v0.21.0' -> '@v0.21.1'
+21:41:50 version: skills/l10n-guard/SKILL.md: 1 x 'rev: v0.21.0' -> 'rev: v0.21.1'
+21:41:50 replaced: skills/l10n-guard/SKILL.md ci note
+21:41:50 lines still mentioning 0.21.0: 3 (see still-0210.txt)
+21:41:51 after test_0100 exit=0 ran=26 skipped=0
+21:41:51 after test_0110 exit=0 ran=13 skipped=0
+21:41:51 after test_0120 exit=0 ran=11 skipped=0
+21:41:52 after test_0130 exit=0 ran=7 skipped=0
+21:41:52 after test_0140 exit=0 ran=10 skipped=0
+21:41:52 after test_0150 exit=0 ran=13 skipped=0
+21:41:52 after test_0160 exit=0 ran=7 skipped=0
+21:41:53 after test_0170 exit=0 ran=17 skipped=0
+21:41:53 after test_0180 exit=0 ran=19 skipped=0
+21:41:54 after test_0190 exit=0 ran=25 skipped=0
+21:41:54 after test_0200 exit=0 ran=11 skipped=0
+21:41:54 after test_0201 exit=0 ran=6 skipped=0
+21:41:55 after test_0210 exit=0 ran=14 skipped=0
+21:41:56 after test_0211 exit=0 ran=7 skipped=0
+21:41:56 after test_071 exit=0 ran=13 skipped=0
+21:41:57 after test_072 exit=0 ran=7 skipped=0
+21:41:57 after test_080 exit=0 ran=14 skipped=0
+21:41:57 after test_090 exit=0 ran=15 skipped=0
+21:41:58 after test_android_text_052 exit=0 ran=6 skipped=0
+21:41:58 after test_java_060 exit=0 ran=14 skipped=0
+21:41:59 after test_l10n_guard exit=0 ran=55 skipped=0
+21:41:59 after test_packaging exit=0 ran=10 skipped=0
+21:41:59 after test_qt_070 exit=0 ran=21 skipped=0
+21:41:59 T: HELD; failing after: []
+21:41:59 A: HELD
+21:41:59 PREREG.md is live
+21:41:59 prereg sha256 6a6d704bf8b34c50801eece0367eb7875d5e8b936128dd501047515f739d76bf
+21:42:01 compare https://gitlab.gnome.org/GNOME/NetworkManager-openconnect po: 0.21.0 [('linguas-unlisted', 'en_US')], 0.21.1 [('linguas-unlisted', 'en_US')]
+21:42:02 compare https://gitlab.gnome.org/GNOME/gnome-terminal po: 0.21.0 [('linguas-unlisted', 'mjw')], 0.21.1 [('linguas-unlisted', 'mjw')]
+21:42:03 compare https://gitlab.gnome.org/World/ShellExtensions/desktop-icons po: 0.21.0 [('linguas-unlisted', 'ko')], 0.21.1 [('linguas-unlisted', 'ko')]
+21:42:04 compare https://gitlab.gnome.org/GNOME/Incubator/resources po: 0.21.0 [('linguas-unlisted', 'af_ZA')], 0.21.1 [('linguas-unlisted', 'af_ZA')]
+21:42:07 compare https://github.com/elementary/flatpak-platform platform-data/po: 0.21.0 [('linguas-unlisted', 'sco')], 0.21.1 [('linguas-unlisted', 'sco')]
+21:42:08 compare https://gitlab.gnome.org/World/tootle po: 0.21.0 [('linguas-unlisted', 'nb-NO')], 0.21.1 [('linguas-unlisted', 'nb-NO')]
+21:42:09 compare https://github.com/Jeffser/Pigment po: 0.21.0 [], 0.21.1 []
+21:42:10 compare https://github.com/yeKcim/warmux old/wormux-0.8.1/po: 0.21.0 [], 0.21.1 []
+21:42:11 compare https://github.com/Nokse22/mini-text po: 0.21.0 [('linguas-unlisted', 'de'), ('linguas-unlisted', 'fr'), ('linguas-unlisted', 'pt_BR')], 0.21.1 [('linguas-unlisted', 'de'), ('linguas-unlisted', 'fr'), ('linguas-unlisted', 'pt_BR')]
+21:42:14 compare https://github.com/sheep-farm/merkato po: 0.21.0 [('linguas-unlisted', 'el'), ('linguas-unlisted', 'fa')], 0.21.1 [('linguas-unlisted', 'el'), ('linguas-unlisted', 'fa')]
+21:42:14 compare https://github.com/tobagin/tempo po: 0.21.0 [], 0.21.1 []
+21:42:15 compare https://github.com/dubstar-04/Design po: 0.21.0 [('linguas-unlisted', 'ko')], 0.21.1 [('linguas-unlisted', 'ko')]
+21:42:16 compare https://github.com/tobagin/Draughts po: 0.21.0 [('linguas-unlisted', 'en_US')], 0.21.1 [('linguas-unlisted', 'en_US')]
+21:42:18 compare https://github.com/phase1geo/minder po: 0.21.0 [('linguas-unlisted', 'eu'), ('linguas-unlisted', 'fa')], 0.21.1 [('linguas-unlisted', 'eu'), ('linguas-unlisted', 'fa')]
+21:42:19 compare https://github.com/mijorus/whisper po: 0.21.0 [('linguas-unlisted', 'pt_BR')], 0.21.1 [('linguas-unlisted', 'pt_BR')]
+21:42:21 compare https://github.com/marhkb/pods po: 0.21.0 [('linguas-unlisted', 'cs'), ('linguas-unlisted', 'ko'), ('linguas-unlisted', 'vi'), ('linguas-unlisted', 'zh_Hant')], 0.21.1 [('linguas-unlisted', 'cs'), ('linguas-unlisted', 'ko'), ('linguas-unlisted', 'vi'), ('linguas-unlisted', 'zh_Hant')]
+21:42:22 compare https://github.com/donadigo/appeditor po: 0.21.0 [('linguas-unlisted', 'cs')], 0.21.1 [('linguas-unlisted', 'cs')]
+21:42:23 compare https://github.com/amit9838/mousam po: 0.21.0 [('linguas-unlisted', 'fi_FI')], 0.21.1 [('linguas-unlisted', 'fi_FI')]
+21:42:23 {"A": "HELD", "M1": "HELD", "M2": "HELD", "M3": "HELD (20 of 20 identical)", "S": "HELD (18 of 18 folders read, same findings)", "T": "HELD"}
