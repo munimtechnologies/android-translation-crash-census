@@ -1,0 +1,539 @@
+--- a/README.md
++++ b/README.md
+@@ -208,9 +208,13 @@
+   14 of 16 sampled apps and 31 of 36 sampled findings to be real
+   ([results](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0190/RESULTS.md),
+   [census](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/locale-config/RESULTS.md)).
+-  Known limits from that test: **ignore phantom warnings in apps whose text isn't in `res/`**
+-  (Flutter `.arb`, React Native, web-view apps), and know that a folder's size counts every string
+-  it holds, so a folder of untranslated English copies can still be reported as an orphan.
++  Since 0.20.1 the check closes the two gaps that test found. A string counts as translated
++  only when it differs from the default text or keeps a one-word or wordless default (`OK`,
++  `%1$s`), so a folder of untranslated English copies is no longer an orphan; and phantom
++  checks are skipped in Flutter and JavaScript apps (React Native, Expo, Capacitor, Cordova)
++  and for languages with a catalog outside `res/`. Files named `donottranslate*.xml` are left
++  out of the counts, as Android Lint treats them
++  ([0.20.1 check](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0201/RESULTS.md)).
+ - **Apple `.strings` and String Catalogs**: `.strings` files in UTF-8 or UTF-16, with `/* */`
+   and `//` comments, and Xcode `.xcstrings` catalogs, where every language's values, plural and
+   device variations and substitutions are checked against the source language. `%@`, `%lld`
+@@ -310,7 +314,7 @@
+ 
+ ```yaml
+ - uses: actions/checkout@v4
+-- uses: munimtechnologies/l10n-guard@v0.19.0
++- uses: munimtechnologies/l10n-guard@v0.20.1
+   with:
+     kind: json
+     source: locales/en.json
+@@ -321,17 +325,17 @@
+ only `target`):
+ 
+ ```yaml
+-- uses: munimtechnologies/l10n-guard@v0.19.0
++- uses: munimtechnologies/l10n-guard@v0.20.1
+   with:
+     kind: properties
+     source: src/main/resources/messages.properties
+     target: src/main/resources/messages_fr.properties
+-- uses: munimtechnologies/l10n-guard@v0.19.0
++- uses: munimtechnologies/l10n-guard@v0.20.1
+   with:
+     kind: android
+     source: app/src/main/res/values/strings.xml
+     target: app/src/main/res/values-fr/strings.xml
+-- uses: munimtechnologies/l10n-guard@v0.19.0
++- uses: munimtechnologies/l10n-guard@v0.20.1
+   with:
+     kind: xcstrings
+     target: App/Localizable.xcstrings
+@@ -340,7 +344,7 @@
+ A whole translated folder:
+ 
+ ```yaml
+-- uses: munimtechnologies/l10n-guard@v0.19.0
++- uses: munimtechnologies/l10n-guard@v0.20.1
+   with:
+     kind: dir
+     source: docs
+@@ -352,7 +356,7 @@
+ ```yaml
+ - uses: actions/checkout@v4
+ - run: |
+-    pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"
++    pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"
+     l10n-guard --strict locale-config .
+ ```
+ 
+@@ -362,7 +366,7 @@
+ `l10n-guard` command (pip needs Python 3.9 or newer for this; the file itself still runs on 3.8):
+ 
+ ```sh
+-pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"
++pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"
+ l10n-guard android values/strings.xml values-fr/strings.xml
+ ```
+ 
+@@ -375,7 +379,7 @@
+ ```yaml
+ repos:
+   - repo: https://github.com/munimtechnologies/l10n-guard
+-    rev: v0.19.0
++    rev: v0.20.1
+     hooks:
+       - id: l10n-guard
+         name: l10n-guard (de)
+--- a/l10n_guard.py
++++ b/l10n_guard.py
+@@ -41,7 +41,7 @@
+ from collections import Counter
+ from html.parser import HTMLParser
+ 
+-__version__ = "0.19.0"
++__version__ = "0.20.1"
+ 
+ ERROR = "error"
+ WARNING = "warning"
+@@ -3145,6 +3145,112 @@
+     return files
+ 
+ 
++# --- 0.20.0: what counts as translated, and apps whose text is not in res/ ----------------
++# The hand check of 0.19.0 found two gaps: a folder of untranslated English copies counted as
++# a translation (Crowdin and Weblate exports fill missing strings with the source text), and
++# phantom warnings for Flutter, React Native and other apps whose interface text lives in
++# another catalog format:
++# https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0190/RESULTS.md
++_LC_LETTERS2_RE = re.compile(r"[^\W\d_]{2,}")
++_LC_CATALOG_EXT = frozenset([".arb", ".json", ".po", ".yaml", ".yml", ".properties", ".ftl",
++                             ".xlf", ".xliff", ".ts", ".js", ".mjs", ".lang", ".ini", ".toml"])
++_LC_CATALOG_DIR_EXT = frozenset([".arb", ".json", ".po", ".yaml", ".yml", ".properties",
++                                 ".ftl", ".xlf", ".xliff"])
++_LC_CATALOG_PREFIX_RE = re.compile(
++    r"^(?:app|intl|messages|strings|lang|locale|translations?|i18n)[_-]")
++_LC_CATALOG_NAME_RE = re.compile(r"^([a-z]{2,3})(?:[-_](?:[A-Za-z]{4}|[A-Za-z]{2}|[0-9]{3}))*$")
++_LC_CATALOG_SKIP = frozenset(["fastlane", "metadata"])
++
++
++def _lc_count(tr, base):
++    """(counted, differ) for one translated values file against its default file ({name:
++    text} each). differ: strings whose text differs from the default. counted also takes the
++    strings left equal to a default that is one word or has no word ('OK', 'Wi-Fi', '%1$s'),
++    which translations often keep; a sentence left in the default language is an
++    untranslated copy and is not counted."""
++    counted = differ = 0
++    for name, text in tr.items():
++        if name not in base:
++            continue
++        if text != base[name]:
++            differ += 1
++            counted += 1
++        elif len(base[name].split()) <= 1 or not _LC_LETTERS2_RE.search(base[name]):
++            counted += 1
++    return counted, differ
++
++
++def _lc_other_ui(mod, paths):
++    """Why the module's interface text is probably not in Android's res/ folders, or '': the
++    module sits in the android/ folder of a Flutter project (pubspec.yaml) or of a JavaScript
++    project (package.json: React Native, Expo, Capacitor, Cordova), or the project ships
++    Flutter .arb catalogs."""
++    have = set(paths)
++    parts = mod.split("/") if mod else []
++    for i in range(len(parts) - 1, -1, -1):
++        if parts[i] != "android":
++            continue
++        pre = "/".join(parts[:i] + [""]) if i else ""
++        if pre + "pubspec.yaml" in have:
++            return "Flutter app (%spubspec.yaml); its text is not in res/" % pre
++        if pre + "package.json" in have:
++            return ("JavaScript app (%spackage.json: React Native, Expo, Capacitor or Cordova); "
++                    "its text is not in res/" % pre)
++    for p in paths:
++        if p.endswith(".arb"):
++            return "Flutter .arb catalogs (%s); the text is not in res/" % p
++    return ""
++
++
++def _lc_catalog_langs(paths):
++    """{language: first path} of translation catalogs outside Android's res/ folders: files
++    named with a language (fr.json, app_de.arb, messages_pt_BR.properties), files in a folder
++    named with one (locales/ja/translation.json, de/LC_MESSAGES/app.po, moko-resources
++    MR/es/strings.xml) and values-xx folders outside res/ (Compose Multiplatform). Store
++    listings (fastlane, metadata folders) are not catalogs."""
++    found = {}
++    for p in paths:
++        parts = p.split("/")
++        if any(x in _LC_CATALOG_SKIP for x in parts[:-1]):
++            continue
++        stem, dot, ext = parts[-1].rpartition(".")
++        ext = ("." + ext.lower()) if dot else ""
++        langs = []
++        if ext in _LC_CATALOG_EXT:
++            m = _LC_CATALOG_NAME_RE.match(_LC_CATALOG_PREFIX_RE.sub("", stem, count=1))
++            if m:
++                langs.append(m.group(1))
++        if len(parts) >= 2:
++            d = parts[-2]
++            if d == "LC_MESSAGES" and len(parts) >= 3:
++                d = parts[-3]
++            if ext in _LC_CATALOG_DIR_EXT or (ext == ".xml" and len(parts) >= 3
++                                               and parts[-3] == "MR"):
++                m = _LC_CATALOG_NAME_RE.match(d)
++                if m:
++                    langs.append(m.group(1))
++            if (ext == ".xml" and d.startswith("values-")
++                    and (len(parts) < 3 or parts[-3] != "res")):
++                lang = _lc_parse_dir(d)
++                if lang:
++                    langs.append(lang)
++        for lang in langs:
++            found.setdefault(_lc_lang(lang), p)
++    return found
++
++
++# --- 0.20.1: files Android Lint treats as untranslatable -----------------------------------
++# Android Lint's MissingTranslation check treats every string in a values file whose name
++# starts with "donottranslate" as translatable="false". The locale-config check now leaves
++# those files out of a module's string count and out of each translation's count. Before,
++# an alarm clock with 126 fixed strings in donottranslate.xml held its near-complete Thai
++# and Catalan folders to a higher bar, and they were no longer reported as orphans:
++# https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0200/RESULTS.md
++def _lc_dnt(name):
++    """True for a values file that Android Lint treats as untranslatable (donottranslate*.xml)."""
++    return name.startswith("donottranslate")
++
++
+ def _lc_coverage(paths, read):
+     """Returns (folders, files, strings): folders is {res_dir: {"default": n, "locales":
+     {folder: (lang, translated)}}} for every translation folder that shares a file name with
+@@ -3165,15 +3271,19 @@
+             continue
+         lang = _lc_parse_dir(d)
+         default_names = files.get((res_dir, "values"), set())
+-        shared = sorted(names & default_names)
++        shared = sorted(fn for fn in names & default_names if not _lc_dnt(fn))
+         if not lang or not shared:
+             continue
+         if res_dir not in folders:
+             folders[res_dir] = {"default": sum(len(strings(res_dir, "values", fn, True))
+-                                               for fn in sorted(default_names)), "locales": {}}
+-        n = sum(len(set(strings(res_dir, d, fn, False)) & set(strings(res_dir, "values", fn, True)))
+-                for fn in shared)
++                                               for fn in sorted(default_names)
++                                               if not _lc_dnt(fn)), "locales": {},
++                               "differ": {}}
++        counts = [_lc_count(strings(res_dir, d, fn, False), strings(res_dir, "values", fn, True))
++                  for fn in shared]
++        n = sum(c[0] for c in counts)
+         folders[res_dir]["locales"][d] = (lang, n)
++        folders[res_dir]["differ"][d] = sum(c[1] for c in counts)
+     return folders, files, strings
+ 
+ 
+@@ -3381,18 +3491,27 @@
+                 "%s lists '%s' in resource-folder spelling; locale-config names are language "
+                 "tags, such as '%s-%s'" % (rel, t, folder_style.group(1), folder_style.group(2)),
+                 lang))
+-    if not default:
++    other_ui = _lc_other_ui(mod, paths)
++    if other_ui:
++        rep["phantoms"] = "skipped: " + other_ui
++    elif not default:
+         rep["phantoms"] = "skipped: default language not English and not identified"
+     else:
++        elsewhere = _lc_catalog_langs(paths)
+         for lang in sorted(listed_langs - bad - default):
+             kept = translated.get(lang, set())
+             if kept and (not isinstance(filt, frozenset) or lang in filt):
++                continue
++            if not kept and lang in elsewhere:
++                rep.setdefault("phantoms_elsewhere", []).append(
++                    "%s (%s)" % (lang, elsewhere[lang]))
+                 continue
+             if kept:
+                 why = ("the build's language filter (%s) leaves its translation out of the app"
+                        % ", ".join(where))
+             elif lang in present:
+-                why = ("its %s strings files have no translated strings"
++                why = ("its %s strings files have no translated strings "
++                       "(empty, or copies of the default text)"
+                        % ", ".join(sorted(present[lang])))
+             else:
+                 why = "no values-%s folder in the project has translated strings" % lang
+@@ -3425,7 +3544,8 @@
+             continue
+         problems.append(issue(
+             WARNING, "locale-config-orphan",
+-            "%s has %d of this module's %d strings translated, but %s does not list '%s', so "
++            "%s has %d of this module's %d strings translated (untranslated copies of default "
++            "sentences not counted), but %s does not list '%s', so "
+             "Android's per-app language setting never offers it" % (d, n, den, rel, lang), lang))
+     return rep
+ 
+@@ -3446,7 +3566,7 @@
+     for res_dir in folders:
+         for d, (lang, n) in folders[res_dir]["locales"].items():
+             present.setdefault(lang, set()).add(d)
+-            if n:
++            if folders[res_dir]["differ"][d]:
+                 translated.setdefault(lang, set()).add(d)
+     reports = []
+     for p in paths:
+--- a/skills/l10n-guard/SKILL.md
++++ b/skills/l10n-guard/SKILL.md
+@@ -4,7 +4,7 @@
+ license: Apache-2.0
+ metadata:
+   author: MV2 of Munim, Inc.
+-  version: "0.19.0"
++  version: "0.20.1"
+   source: https://github.com/munimtechnologies/l10n-guard
+ ---
+ 
+@@ -22,7 +22,7 @@
+ ## Steps
+ 
+ 1. **Get the tool** (pinned release; pick one):
+-   - `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"` gives an
++   - `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"` gives an
+      `l10n-guard` command (Python 3.9+).
+    - Or use the single file `l10n_guard.py` from that release with `python3 l10n_guard.py ...`
+      (Python 3.8+). If the project already vendors `l10n_guard.py` or runs the GitHub Action or
+@@ -96,11 +96,11 @@
+ 
+ ## CI options (when the user wants it enforced)
+ 
+-- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.19.0` with `kind`, `source`, `target`
++- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.20.1` with `kind`, `source`, `target`
+   (single-file kinds `po`, `xliff`, `xcstrings`, `qt` take only `target`). For `locale-config`,
+-  use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"`
++  use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"`
+   then `l10n-guard --strict locale-config .`.
+-- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.19.0`, hook id
++- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.20.1`, hook id
+   `l10n-guard`, `args: [json, locales/en.json, locales/de.json]`, one hook entry per pair (or the
+   `dir` kind for a folder).
+ 
+@@ -111,10 +111,11 @@
+   not detected.
+ - `folder-script` covers only languages written in one script; Serbian, Uzbek, Azerbaijani,
+   Punjabi, Kurdish, Mongolian and Sindhi folders are skipped.
+-- `locale-config` sizes a translation by the strings a folder holds, untranslated copies
+-  included, and reads only Android `res/` folders. In its pre-registered test 31 of 36 sampled
+-  findings were real; the misses were phantoms in apps whose text isn't in `res/` and one folder
+-  of English copies
++- `locale-config` reads only Android `res/` folders. Since 0.20.1 it counts a string as
++  translated only when it differs from the default (or keeps a one-word default such as `OK`),
++  skips phantom checks in Flutter and JavaScript apps, and leaves `donottranslate*.xml` out, as
++  Android Lint does. In the 0.19.0 test 31 of 36 sampled findings were real; the misses were
++  phantoms in apps whose text isn't in `res/` and one folder of English copies
+   ([results](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0190/RESULTS.md)).
+ - `java-format` was measured against OpenJDK 21's `Formatter` on 1,262,958 translated Android
+   strings from F-Droid apps: precision 1.0 and recall 0.98 for errors
+--- a/test_0200.py
++++ b/test_0200.py
+@@ -0,0 +1,120 @@
++# Tests for l10n-guard 0.20.0: the locale-config check counts only real translations (not
++# untranslated copies of the default text) and does not report phantom languages for apps
++# whose interface text lives outside Android's res/ folders.
++# Made with AI agents by MV2 of Munim, Inc. Apache-2.0.
++import unittest
++
++import l10n_guard as g
++from test_0190 import EN, RES, UK, check, found, project, strings
++
++
++def moved(files, pre):
++    """The same Android project inside a folder (android/ of a Flutter or JavaScript app)."""
++    return {pre + k: v for k, v in files.items()}
++
++
++def report(files):
++    return g.locale_config_lists(sorted(files), files.get)[0]
++
++
++class Version(unittest.TestCase):
++    def test_version(self):
++        self.assertGreaterEqual(tuple(int(x) for x in g.__version__.split(".")), (0, 20, 0))
++
++
++class WhatCountsAsTranslated(unittest.TestCase):
++    def test_count_function(self):
++        self.assertEqual(g._lc_count({"a": "Hallo Welt", "b": "Open settings", "c": "OK",
++                                      "d": "Extra"},
++                                     {"a": "Hello world", "b": "Open settings", "c": "OK"}),
++                         (2, 1))
++        self.assertEqual(g._lc_count({"x": "%1$s – %2$s"}, {"x": "%1$s – %2$s"}), (1, 0))
++        self.assertEqual(g._lc_count({}, {"a": "Hello world"}), (0, 0))
++
++    def test_english_copy_is_not_an_orphan(self):
++        problems, _ = check(project({RES + "values-fa/strings.xml": strings(EN)}))
++        self.assertEqual(problems, [])
++
++    def test_english_copy_listed_is_a_phantom(self):
++        problems, _ = check(project({RES + "values-fa/strings.xml": strings(EN)},
++                                    listed=("en", "de", "fr", "fa")))
++        self.assertEqual(found(problems), [("locale-config-phantom", "fa")])
++        self.assertIn("its values-fa strings files have no translated strings "
++                      "(empty, or copies of the default text)", problems[0]["message"])
++
++    def test_partly_translated_counts_only_translated_strings(self):
++        # 5 Ukrainian strings, 5 English sentences left as they were, and the one-word
++        # "Cancel" and "Done" left equal: 7 of 12 count.
++        problems, _ = check(project({RES + "values-uk/strings.xml": strings(UK[:5] + EN[5:])}))
++        self.assertEqual(found(problems), [("locale-config-orphan", "uk")])
++        self.assertIn("values-uk has 7 of this module's 12 strings translated",
++                      problems[0]["message"])
++        self.assertIn("(untranslated copies of default sentences not counted)",
++                      problems[0]["message"])
++        less, _ = check(project({RES + "values-uk/strings.xml": strings(UK[:3] + EN[3:])}))
++        self.assertEqual(less, [])
++
++
++class TextOutsideRes(unittest.TestCase):
++    def test_flutter_app_skips_phantoms(self):
++        files = moved(project(listed=("en", "de", "fr", "az")), "android/")
++        self.assertEqual(found(check(files)[0]), [("locale-config-phantom", "az")])
++        files["pubspec.yaml"] = b"name: demo\n"
++        problems, stats = check(files)
++        self.assertEqual(problems, [])
++        self.assertEqual(stats["phantom checks skipped"], 1)
++        self.assertTrue(report(files)["phantoms"].startswith(
++            "skipped: Flutter app (pubspec.yaml)"))
++
++    def test_javascript_app_skips_phantoms_but_not_orphans(self):
++        files = moved(project({RES + "values-uk/strings.xml": strings(UK)},
++                              listed=("en", "de", "fr", "ja")), "apps/mobile/android/")
++        files["apps/mobile/package.json"] = b"{}\n"
++        problems, stats = check(files)
++        self.assertEqual(found(problems), [("locale-config-orphan", "uk")])
++        self.assertEqual(stats["phantom checks skipped"], 1)
++        self.assertTrue(report(files)["phantoms"].startswith(
++            "skipped: JavaScript app (apps/mobile/package.json"))
++
++    def test_arb_catalogs_skip_phantoms(self):
++        files = project(listed=("en", "de", "fr", "az"))
++        files["lib/l10n/app_az.arb"] = b"{}\n"
++        problems, stats = check(files)
++        self.assertEqual(problems, [])
++        self.assertEqual(stats["phantom checks skipped"], 1)
++
++    def test_catalog_for_the_language_elsewhere(self):
++        files = project(listed=("en", "de", "fr", "ja", "ko", "it"))
++        files["app/src/main/assets/locales/ja/translation.json"] = b"{}\n"
++        files["i18n/ko.json"] = b"{}\n"
++        files["shared/src/commonMain/composeResources/values-it/strings.xml"] = strings(["Apri"])
++        problems, stats = check(files)
++        self.assertEqual(problems, [])
++        self.assertEqual(stats["phantom checks skipped"], 0)
++        rep = report(files)
++        self.assertEqual(rep["phantoms"], "checked")
++        self.assertEqual(rep["phantoms_elsewhere"],
++                         ["it (shared/src/commonMain/composeResources/values-it/strings.xml)",
++                          "ja (app/src/main/assets/locales/ja/translation.json)",
++                          "ko (i18n/ko.json)"])
++
++    def test_store_listings_and_docs_are_not_catalogs(self):
++        files = project(listed=("en", "de", "fr", "ja"))
++        files["fastlane/metadata/android/ja-JP/full_description.txt"] = b"x\n"
++        files["fastlane/metadata/android/ja/strings.json"] = b"{}\n"
++        files["docs/ja/index.md"] = b"x\n"
++        self.assertEqual(found(check(files)[0]), [("locale-config-phantom", "ja")])
++
++    def test_catalog_langs(self):
++        got = g._lc_catalog_langs([
++            "po/fr.po", "locale/de/LC_MESSAGES/app.po", "lib/l10n/intl_pt_BR.arb",
++            "web/i18n/zh-Hans.json", "src/main/java/de/x/Y.java", "README.md", "assets/index.js",
++            "MR/es/strings.xml", "app/src/main/res/values-sv/strings.xml"])
++        self.assertEqual({k: v for k, v in got.items() if k in g._LC_ISO639_1},
++                         {"fr": "po/fr.po", "de": "locale/de/LC_MESSAGES/app.po",
++                          "pt": "lib/l10n/intl_pt_BR.arb", "zh": "web/i18n/zh-Hans.json",
++                          "es": "MR/es/strings.xml"})
++
++
++if __name__ == "__main__":
++    unittest.main()
+--- a/test_0201.py
++++ b/test_0201.py
+@@ -0,0 +1,67 @@
++# Tests for l10n-guard 0.20.1: the locale-config check leaves values files named
++# donottranslate*.xml (which Android Lint treats as untranslatable) out of its string counts.
++# Made with AI agents by MV2 of Munim, Inc. Apache-2.0.
++import unittest
++
++import l10n_guard as g
++from test_0190 import EN, RES, UK, check, found, project, strings
++
++
++def fixed(texts, prefix="fixed"):
++    """A values file of strings named fixed1, fixed2, ... (no clash with strings())."""
++    rows = "".join('<string name="%s%d">%s</string>' % (prefix, i + 1, t)
++                   for i, t in enumerate(texts))
++    return ('<?xml version="1.0" encoding="utf-8"?>\n<resources>%s</resources>\n'
++            % rows).encode("utf-8")
++
++
++FIXED_EN = ["Fixed text number %d" % (i + 1) for i in range(12)]
++FIXED_UK = ["Фіксований текст номер %d" % (i + 1) for i in range(12)]
++PART_UK = UK[:5] + EN[5:]   # counts 7 of 12 (see test_0200)
++
++
++class Version(unittest.TestCase):
++    def test_version(self):
++        self.assertGreaterEqual(tuple(int(x) for x in g.__version__.split(".")), (0, 20, 1))
++
++
++class DoNotTranslateFiles(unittest.TestCase):
++    def test_name_rule(self):
++        self.assertTrue(g._lc_dnt("donottranslate.xml"))
++        self.assertTrue(g._lc_dnt("donottranslate-cities.xml"))
++        self.assertFalse(g._lc_dnt("strings.xml"))
++        self.assertFalse(g._lc_dnt("constants.xml"))
++
++    def test_left_out_of_the_module_count(self):
++        problems, _ = check(project({RES + "values/donottranslate.xml": fixed(FIXED_EN),
++                                     RES + "values-uk/strings.xml": strings(PART_UK)}))
++        self.assertEqual(found(problems), [("locale-config-orphan", "uk")])
++        self.assertIn("values-uk has 7 of this module's 12 strings translated",
++                      problems[0]["message"])
++
++    def test_other_files_still_counted(self):
++        # The same fixed strings in a file with another name raise the module's count to 24,
++        # and 7 translated strings are less than half of that.
++        problems, _ = check(project({RES + "values/constants.xml": fixed(FIXED_EN),
++                                     RES + "values-uk/strings.xml": strings(PART_UK)}))
++        self.assertEqual(problems, [])
++
++    def test_left_out_of_the_translation_count(self):
++        problems, _ = check(project({RES + "values/donottranslate.xml": fixed(FIXED_EN),
++                                     RES + "values-uk/donottranslate.xml": fixed(FIXED_UK),
++                                     RES + "values-uk/strings.xml": strings(PART_UK)}))
++        self.assertEqual(found(problems), [("locale-config-orphan", "uk")])
++        self.assertIn("values-uk has 7 of this module's 12 strings translated",
++                      problems[0]["message"])
++
++    def test_only_donottranslate_shared_is_not_a_translation(self):
++        # A folder that shares only donottranslate.xml with the default folder is not counted
++        # as a translation, so its listed language is a phantom.
++        problems, _ = check(project({RES + "values/donottranslate.xml": fixed(FIXED_EN),
++                                     RES + "values-uk/donottranslate.xml": fixed(FIXED_UK)},
++                                    listed=("en", "de", "fr", "uk")))
++        self.assertEqual(found(problems), [("locale-config-phantom", "uk")])
++
++
++if __name__ == "__main__":
++    unittest.main()
+--- a/test_packaging.py
++++ b/test_packaging.py
+@@ -75,7 +75,9 @@
+         self.text = text
+ 
+     def test_pip_line_names_this_version(self):
+-        self.assertEqual(re.findall(r"l10n-guard@v([\d.]+)\"", self.text), [g.__version__])
++        found = re.findall(r"l10n-guard@v([\d.]+)\"", self.text)
++        self.assertTrue(found)
++        self.assertEqual(set(found), {g.__version__})
+ 
+     def test_hook_rev_names_this_version(self):
+         self.assertEqual(re.findall(r"rev: v([\d.]+)", self.text), [g.__version__])

@@ -1,0 +1,34 @@
+sample,repo,code,language,label,borderline,note
+1,https://github.com/osmandapp/Osmand,locale-config-phantom,fur,real,no,list (100 tags) has fur; OsmAnd/res/values-fur holds only strings.xml (62 bytes) = empty <resources></resources>
+1,https://github.com/osmandapp/Osmand,locale-config-phantom,rup,real,no,list has rup; values-rup holds only strings.xml (62 bytes; empty resources)
+1,https://github.com/osmandapp/Osmand,locale-config-phantom,gn,real,no,list has gn; values-gn holds strings.xml and phrases.xml (66 bytes each; same blob; empty placeholders)
+2,https://gitlab.com/CalyxOS/bitmask_android,locale-config-orphan,it,real,no,list (23 tags) has no it; values-it/strings.xml is Italian ('Riprova'); app/build.gradle has no language filter
+2,https://gitlab.com/CalyxOS/bitmask_android,locale-config-orphan,et,real,no,same list; no et; values-et/strings.xml is Estonian ('Proovi uuesti')
+2,https://gitlab.com/CalyxOS/bitmask_android,locale-config-orphan,ro,real,no,same list; no ro; values-ro/strings.xml is Romanian ('Reâncearcă')
+3,https://github.com/RetroMusicPlayer/RetroMusicPlayer,locale-config-orphan,or,real,no,list (42 tags) has no or/or-IN; values-or-rIN/strings.xml is Odia (3 strings left in English); app/build.gradle.kts has no language filter
+3,https://github.com/RetroMusicPlayer/RetroMusicPlayer,locale-config-orphan,ca,real,no,same list; no ca/ca-ES; values-ca-rES/strings.xml is Catalan ('Temporitzador d'aturada')
+3,https://github.com/RetroMusicPlayer/RetroMusicPlayer,locale-config-phantom,da,real,no,list has da-DK; values-da-rDK/strings.xml (34 KB) is an untranslated English copy ('Add to favorites')
+4,https://codeberg.org/iNPUTmice/lttrs-android,locale-config-orphan,zh,real,no,list (17 tags) has no zh; values-zh-rCN/strings.xml is Simplified Chinese; app/build.gradle has no language filter
+4,https://codeberg.org/iNPUTmice/lttrs-android,locale-config-orphan,cs,real,no,same list; no cs; values-cs/strings.xml is Czech ('Vyprázdnit koš?')
+4,https://codeberg.org/iNPUTmice/lttrs-android,locale-config-orphan,ja,real,no,same list; no ja; values-ja/strings.xml is Japanese
+5,https://github.com/TeamAmaze/AmazeFileManager,locale-config-phantom,bs,real,no,list (105 tags) has bs-BA; values-bs-rBA/strings.xml (1826 bytes) is a Crowdin export with comments only and no strings
+5,https://github.com/TeamAmaze/AmazeFileManager,locale-config-phantom,fy,real,no,list has fy-NL; values-fy-rNL/strings.xml is the same 1826-byte comment-only file
+5,https://github.com/TeamAmaze/AmazeFileManager,locale-config-phantom,br,real,no,list has br-FR; values-br-rFR/strings.xml is the same 1826-byte comment-only file
+6,https://github.com/AppFuton/Futon,locale-config-phantom,gu,real,no,list (49 tags) has gu; values-gu: strings.xml 62 bytes and plurals.xml 63 bytes (empty); arrays.xml holds one string 'Keiyoushi' (a name; not a translation)
+7,https://codeberg.org/toz/MediLog,locale-config-phantom,fa,real,no,list (24 tags) has fa; values-fa/strings.xml is a licence comment and empty <resources></resources>
+8,https://github.com/QuantumBadger/RedReader,locale-config-phantom,mr,real,no,list (42 tags) has mr; values-mr holds only strings.xml (62 bytes; empty)
+9,https://github.com/cvzi/WallpaperExport,locale-config-orphan,hi,real,no,list (12 tags) has no hi; values-hi/strings.xml is Hindi (18 of 18 strings); app/build.gradle.kts has no language filter
+9,https://github.com/cvzi/WallpaperExport,locale-config-orphan,th,real,no,same list; no th; values-th/strings.xml is Thai (18 strings)
+10,https://codeberg.org/Starfish/Imagepipe,locale-config-orphan,es,real,no,list (24 tags) has no es; values-es/strings.xml is Spanish ('Procesando imagen…'); app/build.gradle has no language filter. (The list also uses folder-style tags nb-rNO pt-rBR zh-rCN pa-rPK; not in this sample's findings)
+11,https://gitlab.com/Atharok/BarcodeScanner,locale-config-orphan,th,real,no,list (38 tags) has no th; values-th/strings.xml is Thai; app/build.gradle.kts has no language filter
+11,https://gitlab.com/Atharok/BarcodeScanner,locale-config-phantom,ia,real,no,list has ia; values-ia/strings.xml is empty <resources></resources>
+11,https://gitlab.com/Atharok/BarcodeScanner,locale-config-orphan,et,real,no,same list; no et; values-et/strings.xml is Estonian ('Triipkoodi skanner')
+12,https://github.com/msimonides/homerplayer2,locale-config-orphan,uk,real,no,list has 3 tags (en-US pl zh-CN); values-uk/strings.xml is Ukrainian; app/build.gradle sets no resConfigs (a comment says the app should support all languages)
+12,https://github.com/msimonides/homerplayer2,locale-config-orphan,ru,real,no,same list; no ru; values-ru/strings.xml is Russian ('Аудиокниг пока нет')
+13,https://github.com/chr56/Phonograph_Plus,locale-config-phantom,bg,real,no,list (31 tags) has bg; app/src/main/res has no values-bg folder (32 values* folders listed)
+13,https://github.com/chr56/Phonograph_Plus,locale-config-phantom,hr,real,no,same list has hr; no values-hr folder
+14,https://github.com/owncloud/android,locale-config-phantom,br,real,no,list (145 tags) has br; values-br/strings.xml (64 bytes) is empty <resources>
+14,https://github.com/owncloud/android,locale-config-phantom,dv,real,no,list has dv; no values-dv folder in owncloudApp/src/main/res
+14,https://github.com/owncloud/android,locale-config-phantom,prs,real,no,list has prs; no values-prs folder
+15,https://github.com/GlassOnTin/Haven,locale-config-orphan,sr,real,no,list (12 tags) has no sr; values-sr/strings.xml is Serbian Cyrillic ('Откажи')
+16,https://github.com/pachli/pachli-android,locale-config-phantom,tzm,real,no,list has tzm-Tfng; no values-tzm or values-b+tzm+Tfng folder. A values-ber folder holds 27 strings in Tifinagh; Android picks resources by language code and ber is not tzm, so they are not shown for this listed language (post-hoc note)

@@ -1,0 +1,73 @@
+repo files: 61
+before test_0100 exit=0 ran=26
+before test_0110 exit=0 ran=13
+before test_0120 exit=0 ran=11
+before test_0130 exit=0 ran=7
+before test_0140 exit=0 ran=10
+before test_0150 exit=0 ran=13
+before test_0160 exit=0 ran=7
+before test_0170 exit=0 ran=17
+before test_0180 exit=0 ran=19
+before test_0190 exit=0 ran=25
+before test_071 exit=0 ran=13
+before test_072 exit=0 ran=7
+before test_080 exit=0 ran=14
+before test_090 exit=0 ran=15
+before test_android_text_052 exit=0 ran=6
+before test_java_060 exit=0 ran=14
+before test_l10n_guard exit=0 ran=55
+before test_packaging exit=1 ran=10
+before test_qt_070 exit=0 ran=21
+replaced: coverage dict
+replaced: coverage count
+replaced: phantom start
+replaced: phantom message
+replaced: orphan message
+replaced: translated set
+replaced: donottranslate files out of the module count
+replaced: donottranslate files out of each translation's count
+replaced: README.md known limits
+replaced: skills/l10n-guard/SKILL.md skill version
+replaced: skills/l10n-guard/SKILL.md skill limits
+replaced: test_packaging pip-line test
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'
+version: README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'
+version: README.md: 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"' -> 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"'
+version: README.md: 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"' -> 'pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"'
+version: README.md: 'rev: v0.19.0' -> 'rev: v0.20.1'
+version: skills/l10n-guard/SKILL.md: '- `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"` gives an' -> '- `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"` gives an'
+version: skills/l10n-guard/SKILL.md: '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.19.0` with `kind`, `source`, `target`' -> '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.20.1` with `kind`, `source`, `target`'
+version: skills/l10n-guard/SKILL.md: 'use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.19.0"`' -> 'use a plain step instead: `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.20.1"`'
+version: skills/l10n-guard/SKILL.md: '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.19.0`, hook id' -> '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.20.1`, hook id'
+lines still mentioning 0.19.0: 5 (see still-0190.txt)
+after test_0100 exit=0 ran=26
+after test_0110 exit=0 ran=13
+after test_0120 exit=0 ran=11
+after test_0130 exit=0 ran=7
+after test_0140 exit=0 ran=10
+after test_0150 exit=0 ran=13
+after test_0160 exit=0 ran=7
+after test_0170 exit=0 ran=17
+after test_0180 exit=0 ran=19
+after test_0190 exit=0 ran=25
+after test_0200 exit=0 ran=11
+after test_0201 exit=0 ran=6
+after test_071 exit=0 ran=13
+after test_072 exit=0 ran=7
+after test_080 exit=0 ran=14
+after test_090 exit=0 ran=15
+after test_android_text_052 exit=0 ran=6
+after test_java_060 exit=0 ran=14
+after test_l10n_guard exit=0 ran=55
+after test_packaging exit=0 ran=10
+after test_qt_070 exit=0 ran=21
+T: HELD; failing after: []
+loaded new 0.20.1, old 0.19.0; 16 repositories from the 0.20.0 sample moved last
+prereg sha256 5a22cb258b85b095ec43cfb299de5efcc75b84daaa31825905b63ea19a557aea
+census drift repos 112, census sample 16, held out 96
+0.19.0 sample repos 16, label rows 36
+{"R1": "HELD", "R2": "HELD", "R3": "HELD", "R4": "HELD", "R5": "HELD", "H2": "PENDING HAND CHECK (16 repositories)", "H3": "PENDING HAND CHECK (16 repositories)"}
+R6: HELD

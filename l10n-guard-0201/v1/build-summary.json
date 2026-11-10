@@ -1,0 +1,451 @@
+{
+ "baseline": {
+  "test_0100": {
+   "exit": 0,
+   "ran": 26,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 26 tests in 0.027s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0110": {
+   "exit": 0,
+   "ran": 13,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 0.013s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0120": {
+   "exit": 0,
+   "ran": 11,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 0.010s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0130": {
+   "exit": 0,
+   "ran": 7,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 0.005s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0140": {
+   "exit": 0,
+   "ran": 10,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 10 tests in 0.002s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0150": {
+   "exit": 0,
+   "ran": 13,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 0.003s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0160": {
+   "exit": 0,
+   "ran": 7,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 0.001s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0170": {
+   "exit": 0,
+   "ran": 17,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 17 tests in 0.053s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0180": {
+   "exit": 0,
+   "ran": 19,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 19 tests in 0.027s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0190": {
+   "exit": 0,
+   "ran": 25,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 25 tests in 0.038s",
+    "",
+    "OK"
+   ]
+  },
+  "test_071": {
+   "exit": 0,
+   "ran": 13,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 0.015s",
+    "",
+    "OK"
+   ]
+  },
+  "test_072": {
+   "exit": 0,
+   "ran": 7,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 0.002s",
+    "",
+    "OK"
+   ]
+  },
+  "test_080": {
+   "exit": 0,
+   "ran": 14,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 14 tests in 0.011s",
+    "",
+    "OK"
+   ]
+  },
+  "test_090": {
+   "exit": 0,
+   "ran": 15,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 15 tests in 0.019s",
+    "",
+    "OK"
+   ]
+  },
+  "test_android_text_052": {
+   "exit": 0,
+   "ran": 6,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 6 tests in 0.003s",
+    "",
+    "OK"
+   ]
+  },
+  "test_java_060": {
+   "exit": 0,
+   "ran": 14,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 14 tests in 0.003s",
+    "",
+    "OK"
+   ]
+  },
+  "test_l10n_guard": {
+   "exit": 0,
+   "ran": 55,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 55 tests in 0.202s",
+    "",
+    "OK"
+   ]
+  },
+  "test_packaging": {
+   "exit": 1,
+   "ran": 10,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 10 tests in 0.003s",
+    "",
+    "FAILED (failures=1)"
+   ]
+  },
+  "test_qt_070": {
+   "exit": 0,
+   "ran": 21,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 21 tests in 0.029s",
+    "",
+    "OK"
+   ]
+  }
+ },
+ "changed": [
+  "README.md",
+  "l10n_guard.py",
+  "skills/l10n-guard/SKILL.md",
+  "test_0200.py",
+  "test_0201.py",
+  "test_packaging.py"
+ ],
+ "version_changes": [
+  "README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'",
+  "README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'",
+  "README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'",
+  "README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'",
+  "README.md: '- uses: munimtechnologies/l10n-guard@v0.19.0' -> '- uses: munimtechnologies/l10n-guard@v0.20.1'",
+  "README.md: 'pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.19.0\"' -> 'pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.20.1\"'",
+  "README.md: 'pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.19.0\"' -> 'pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.20.1\"'",
+  "README.md: 'rev: v0.19.0' -> 'rev: v0.20.1'",
+  "skills/l10n-guard/SKILL.md: '- `pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.19.0\"` gives an' -> '- `pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.20.1\"` gives an'",
+  "skills/l10n-guard/SKILL.md: '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.19.0` with `kind`, `source`, `target`' -> '- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.20.1` with `kind`, `source`, `target`'",
+  "skills/l10n-guard/SKILL.md: 'use a plain step instead: `pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.19.0\"`' -> 'use a plain step instead: `pip install \"git+https://github.com/munimtechnologies/l10n-guard@v0.20.1\"`'",
+  "skills/l10n-guard/SKILL.md: '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.19.0`, hook id' -> '- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.20.1`, hook id'"
+ ],
+ "patch": "ok",
+ "after": {
+  "test_0100": {
+   "exit": 0,
+   "ran": 26,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 26 tests in 0.031s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0110": {
+   "exit": 0,
+   "ran": 13,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 0.011s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0120": {
+   "exit": 0,
+   "ran": 11,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 0.011s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0130": {
+   "exit": 0,
+   "ran": 7,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 0.005s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0140": {
+   "exit": 0,
+   "ran": 10,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 10 tests in 0.002s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0150": {
+   "exit": 0,
+   "ran": 13,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 0.003s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0160": {
+   "exit": 0,
+   "ran": 7,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 0.001s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0170": {
+   "exit": 0,
+   "ran": 17,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 17 tests in 0.071s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0180": {
+   "exit": 0,
+   "ran": 19,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 19 tests in 0.039s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0190": {
+   "exit": 0,
+   "ran": 25,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 25 tests in 0.039s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0200": {
+   "exit": 0,
+   "ran": 11,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 11 tests in 0.010s",
+    "",
+    "OK"
+   ]
+  },
+  "test_0201": {
+   "exit": 0,
+   "ran": 6,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 6 tests in 0.004s",
+    "",
+    "OK"
+   ]
+  },
+  "test_071": {
+   "exit": 0,
+   "ran": 13,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 13 tests in 0.019s",
+    "",
+    "OK"
+   ]
+  },
+  "test_072": {
+   "exit": 0,
+   "ran": 7,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 7 tests in 0.002s",
+    "",
+    "OK"
+   ]
+  },
+  "test_080": {
+   "exit": 0,
+   "ran": 14,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 14 tests in 0.010s",
+    "",
+    "OK"
+   ]
+  },
+  "test_090": {
+   "exit": 0,
+   "ran": 15,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 15 tests in 0.017s",
+    "",
+    "OK"
+   ]
+  },
+  "test_android_text_052": {
+   "exit": 0,
+   "ran": 6,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 6 tests in 0.002s",
+    "",
+    "OK"
+   ]
+  },
+  "test_java_060": {
+   "exit": 0,
+   "ran": 14,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 14 tests in 0.003s",
+    "",
+    "OK"
+   ]
+  },
+  "test_l10n_guard": {
+   "exit": 0,
+   "ran": 55,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 55 tests in 0.165s",
+    "",
+    "OK"
+   ]
+  },
+  "test_packaging": {
+   "exit": 0,
+   "ran": 10,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 10 tests in 0.002s",
+    "",
+    "OK"
+   ]
+  },
+  "test_qt_070": {
+   "exit": 0,
+   "ran": 21,
+   "tail": [
+    "----------------------------------------------------------------------",
+    "Ran 21 tests in 0.016s",
+    "",
+    "OK"
+   ]
+  }
+ },
+ "failing_after": [],
+ "T": "HELD",
+ "excluded_from_draw": [
+  "https://codeberg.org/Krixec/Rosarium",
+  "https://codeberg.org/bg443/JetBird",
+  "https://codeberg.org/tusky/Tusky",
+  "https://github.com/Crustack/NotallyX",
+  "https://github.com/GPLaider/KeliBoard",
+  "https://github.com/Kin69/Athena",
+  "https://github.com/clementwzk/OpenCalc",
+  "https://github.com/georgernstgraf/zazentimer",
+  "https://github.com/hushenghao/AndroidEasterEggs",
+  "https://github.com/mlm-games/CLauncher",
+  "https://github.com/mstcgalis/scratchpad-launcher",
+  "https://github.com/ounben/AMARadio",
+  "https://github.com/quillpad/quillpad",
+  "https://github.com/s4nj1th/Slauncher",
+  "https://gitlab.com/narektor/gugal",
+  "https://gitlab.com/shosetsuorg/shosetsu"
+ ],
+ "holdout_exit": 0,
+ "R6": "HELD"
+}

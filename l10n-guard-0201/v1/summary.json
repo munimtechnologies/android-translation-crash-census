@@ -1,0 +1,70 @@
+{
+ "census_drift_repos": 112,
+ "census_sample_repos": 16,
+ "exploratory": {
+  "findings": {
+   "code": {
+    "0190": 0,
+    "0200": 0
+   },
+   "orphan": {
+    "0190": 151,
+    "0200": 138
+   },
+   "phantom": {
+    "0190": 401,
+    "0200": 387
+   }
+  },
+  "lists": 81,
+  "lists_with_phantoms_elsewhere": 0,
+  "phantom_check_0200": {
+   "checked": 78,
+   "skipped: Flutter app": 2,
+   "skipped: default language not English and not identified": 1
+  }
+ },
+ "guard_versions": [
+  "0.20.1",
+  "0.19.0"
+ ],
+ "heldout_flagged_0190": 66,
+ "heldout_flagged_0200": 63,
+ "heldout_read": 80,
+ "heldout_repos": 80,
+ "heldout_status": {
+  "ok": 80
+ },
+ "minutes": 0.8,
+ "prereg_sha256": "5a22cb258b85b095ec43cfb299de5efcc75b84daaa31825905b63ea19a557aea",
+ "regression": {
+  "R1_of": 4,
+  "R1_pass": 4,
+  "R1_read": 4,
+  "R2_of": 12,
+  "R2_pass": 12,
+  "R2_read": 12,
+  "R3_filtered_reported": [],
+  "R3_of": 17
+ },
+ "sample0190": {
+  "R4_kept": 28,
+  "R4_missing": [],
+  "R4_read": 28,
+  "R5_absent": [
+   true,
+   true
+  ]
+ },
+ "sample0190_read": 16,
+ "sample0190_repos": 16,
+ "verdicts": {
+  "H2": "PENDING HAND CHECK (16 repositories)",
+  "H3": "PENDING HAND CHECK (16 repositories)",
+  "R1": "HELD",
+  "R2": "HELD",
+  "R3": "HELD",
+  "R4": "HELD",
+  "R5": "HELD"
+ }
+}
