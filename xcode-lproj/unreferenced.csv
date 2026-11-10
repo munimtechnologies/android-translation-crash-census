@@ -1,0 +1,348 @@
+repo,commit,path,dir,table,lang,listed,in_known_regions,entries,compared,differs,reference,substantive
+https://github.com/adblockplus/adblockplussafariios,6d08e1b7706ae0a5de57f672c81ab463f762411c,AdblockPlusSafari/en-GB.lproj/InfoPlist.strings,AdblockPlusSafari,InfoPlist.strings,en-GB,22,False,1,0,0,,unknown
+https://github.com/adblockplus/adblockplussafariios,6d08e1b7706ae0a5de57f672c81ab463f762411c,AdblockPlusSafari/en-GB.lproj/Localizable.strings,AdblockPlusSafari,Localizable.strings,en-GB,23,False,4,4,2,Base,yes
+https://github.com/adblockplus/adblockplussafariios,6d08e1b7706ae0a5de57f672c81ab463f762411c,AdblockPlusSafari/en-GB.lproj/Main.strings,AdblockPlusSafari,Main.strings,en-GB,22,False,30,0,0,,unknown
+https://github.com/adblockplus/adblockplussafariios,6d08e1b7706ae0a5de57f672c81ab463f762411c,AdblockPlusSafariExtension/en-GB.lproj/InfoPlist.strings,AdblockPlusSafariExtension,InfoPlist.strings,en-GB,22,False,1,0,0,,unknown
+https://github.com/adblockplus/adblockplussafariios,6d08e1b7706ae0a5de57f672c81ab463f762411c,AdblockPlusSafariTests/en-GB.lproj/InfoPlist.strings,AdblockPlusSafariTests,InfoPlist.strings,en-GB,22,False,0,0,0,,no
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/ActionExtension/bg.lproj/MainInterface.strings,AdguardExtension/ActionExtension,MainInterface.strings,bg,28,False,6,6,6,en,yes
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdGuardTodayExtension/bg.lproj/TodayExtension.strings,AdguardExtension/AdGuardTodayExtension,TodayExtension.strings,bg,28,False,2,2,2,en,yes
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/bg.lproj/Localizable.strings,AdguardExtension/AdguardApp,Localizable.strings,bg,28,False,14,12,12,en,yes
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/Activity/bg.lproj/Activity.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/Activity,Activity.strings,bg,28,False,0,0,0,en,no
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/ComplexProtection/bg.lproj/Protection.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/ComplexProtection,Protection.strings,bg,28,False,0,0,0,en,no
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/ComplexProtection/DnsSettings/bg.lproj/DnsSettings.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/ComplexProtection/DnsSettings,DnsSettings.strings,bg,28,False,8,3,3,en,yes
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/ComplexProtection/Filters/bg.lproj/Filters.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/ComplexProtection/Filters,Filters.strings,bg,28,False,5,5,5,en,yes
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/bg.lproj/MainMenu.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu,MainMenu.strings,bg,28,False,5,5,5,en,yes
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/About/bg.lproj/About.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/About,About.strings,bg,28,False,0,0,0,en,no
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/License/bg.lproj/License.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/License,License.strings,bg,28,False,6,0,0,en,unknown
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/ListOfRules/bg.lproj/UserFilter.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/ListOfRules,UserFilter.strings,bg,28,False,,,,,unknown
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/Settings/bg.lproj/Settings.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainMenu/Settings,Settings.strings,bg,28,False,,,,,unknown
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainPage/bg.lproj/MainPage.strings,AdguardExtension/AdguardApp/UI/ViewControllers/MainTabBar/MainPage,MainPage.strings,bg,28,False,,,,,unknown
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/Onboarding/bg.lproj/Onboarding.strings,AdguardExtension/AdguardApp/UI/ViewControllers/Onboarding,Onboarding.strings,bg,28,False,,,,,unknown
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,AdguardExtension/AdguardApp/UI/ViewControllers/RateApp/bg.lproj/RateApp.strings,AdguardExtension/AdguardApp/UI/ViewControllers/RateApp,RateApp.strings,bg,28,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/zh-Hant-TW.lproj/InfoPlist.strings,AudioKitSynthOne,InfoPlist.strings,zh-Hant-TW,8,False,3,3,0,en,no
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/zh-Hant-TW.lproj/Localizable.strings,AudioKitSynthOne,Localizable.strings,zh-Hant-TW,8,False,82,0,0,en,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/zh-Hant-TW.lproj/Main.strings,AudioKitSynthOne,Main.strings,zh-Hant-TW,7,False,45,0,0,en,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/About/zh-Hant-TW.lproj/About.strings,AudioKitSynthOne/About,About.strings,zh-Hant-TW,7,False,18,0,0,en,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/About/Mailing List/de.lproj/MailingList.strings,AudioKitSynthOne/About/Mailing List,MailingList.strings,de,7,False,4,4,3,en,yes
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/About/Mailing List/zh-Hant-TW.lproj/MailingList.strings,AudioKitSynthOne/About/Mailing List,MailingList.strings,zh-Hant-TW,7,False,5,5,0,en,no
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Developer/Base.lproj/zh-Hant-TW.lproj/Dev.strings,AudioKitSynthOne/Developer/Base.lproj,Dev.strings,zh-Hant-TW,7,False,17,0,0,en,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Developer/pt-BR.lproj/zh-Hans.lproj/Dev.strings,AudioKitSynthOne/Developer/pt-BR.lproj,Dev.strings,zh-Hans,3,True,17,0,0,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Developer/pt-BR.lproj/zh-Hant-TW.lproj/Dev.strings,AudioKitSynthOne/Developer/pt-BR.lproj,Dev.strings,zh-Hant-TW,3,False,17,0,0,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Effects/zh-Hant-TW.lproj/Effects.strings,AudioKitSynthOne/Effects,Effects.strings,zh-Hant-TW,7,False,25,0,0,en,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Envelopes/zh-Hant-TW.lproj/Envelopes.strings,AudioKitSynthOne/Envelopes,Envelopes.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Generators/zh-Hant-TW.lproj/Generators.strings,AudioKitSynthOne/Generators,Generators.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Header/zh-Hant-TW.lproj/Header.strings,AudioKitSynthOne/Header,Header.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Presets/de.lproj/Presets.strings,AudioKitSynthOne/Presets,Presets.strings,de,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Presets/zh-Hant-TW.lproj/Presets.strings,AudioKitSynthOne/Presets,Presets.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Sequencer/zh-Hant-TW.lproj/Sequencer.strings,AudioKitSynthOne/Sequencer,Sequencer.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/TouchPad/zh-Hant-TW.lproj/TouchPad.strings,AudioKitSynthOne/TouchPad,TouchPad.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,AudioKitSynthOne/Tunings/zh-Hant-TW.lproj/Tunings.strings,AudioKitSynthOne/Tunings,Tunings.strings,zh-Hant-TW,7,False,,,,,unknown
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,OneSignalNotificationServiceExtension/zh-Hant-TW.lproj/InfoPlist.strings,OneSignalNotificationServiceExtension,InfoPlist.strings,zh-Hant-TW,8,False,,,,,unknown
+https://github.com/avdyushin/Velik,9a22f773cd3b4ee9c2c71a745872381e1dcef124,Velik/Resources/de.lproj/Localizable.strings,Velik/Resources,Localizable.strings,de,3,False,1,0,0,en,unknown
+https://github.com/bither/bither-ios,4ca7b12e5630fd94a50e8a3919abf357988588f4,bither-ios/Base.lproj/MainStoryboard.strings,bither-ios,MainStoryboard.strings,Base,3,True,75,73,2,en,no
+https://github.com/BitStore/BitStore-iOS,6a45fa0668ca53df1083da2386a66e3984260815,BitStore/Localizable/es.lproj/Localizable.strings,BitStore/Localizable,Localizable.strings,es,2,True,57,57,55,en,yes
+https://github.com/BitStore/BitStore-iOS,6a45fa0668ca53df1083da2386a66e3984260815,BitStore/Localizable/ja.lproj/Localizable.strings,BitStore/Localizable,Localizable.strings,ja,2,True,57,57,57,en,yes
+https://github.com/BitStore/BitStore-iOS,6a45fa0668ca53df1083da2386a66e3984260815,BitStore/Localizable/ko.lproj/Localizable.strings,BitStore/Localizable,Localizable.strings,ko,2,True,57,57,57,en,yes
+https://github.com/BitStore/BitStore-iOS,6a45fa0668ca53df1083da2386a66e3984260815,BitStore/Localizable/nl.lproj/Localizable.strings,BitStore/Localizable,Localizable.strings,nl,2,True,57,57,56,en,yes
+https://github.com/BitStore/BitStore-iOS,6a45fa0668ca53df1083da2386a66e3984260815,BitStore/Localizable/zh-Hans.lproj/Localizable.strings,BitStore/Localizable,Localizable.strings,zh-Hans,2,True,57,57,57,en,yes
+https://github.com/bitwarden/mobile,b543459f8d71324aa11914da1e6f6ad3d7abce54,src/watchOS/bitwarden/bitwarden WatchKit Extension/Localization/mr.lproj/Localizable.strings,src/watchOS/bitwarden/bitwarden WatchKit Extension/Localization,Localizable.strings,mr,61,False,10,10,3,en,no
+https://github.com/catrobat/catty,ba4cdafba2a4312290a1f0c96064200b32b20510,src/CattyTests/de.lproj/InfoPlist.strings,src/CattyTests,InfoPlist.strings,de,1,True,0,0,0,en,no
+https://github.com/catrobat/catty,ba4cdafba2a4312290a1f0c96064200b32b20510,src/CattyTests/es.lproj/InfoPlist.strings,src/CattyTests,InfoPlist.strings,es,1,True,0,0,0,en,no
+https://github.com/catrobat/catty,ba4cdafba2a4312290a1f0c96064200b32b20510,src/CattyTests/fr.lproj/InfoPlist.strings,src/CattyTests,InfoPlist.strings,fr,1,True,0,0,0,en,no
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVAppearancePreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVAppearancePreferencesViewController.strings,ko,10,True,19,19,19,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVBehaviorPreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVBehaviorPreferencesViewController.strings,ko,10,True,20,20,20,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVFileTransferPreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVFileTransferPreferencesViewController.strings,ko,10,True,23,23,23,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVGeneralPreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVGeneralPreferencesViewController.strings,ko,10,True,6,6,6,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVInterfacePreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVInterfacePreferencesViewController.strings,ko,10,True,35,35,34,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVNotificationPreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVNotificationPreferencesViewController.strings,ko,10,True,11,11,11,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Mac-Old/Mac-Old/Preferences/ko.lproj/JVTranscriptPreferencesViewController.strings,Mac-Old/Mac-Old/Preferences,JVTranscriptPreferencesViewController.strings,ko,10,True,15,15,15,en,yes
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,Resources/Languages/ko.lproj/Localizable.strings,Resources/Languages,Localizable.strings,ko,11,True,430,381,376,en,yes
+https://github.com/confirmedcode/lockdown-ios,e456e0974a78aa2e44b3e07f2022f98d26d615f0,Lockdown Firewall Today/de.lproj/MainInterface.strings,Lockdown Firewall Today,MainInterface.strings,de,4,True,3,3,0,en,no
+https://github.com/corona-warn-app/cwa-app-ios,02c629b695e64643b3d8a06dff290eb59ae14ad3,src/xcode/ENA/ENA/Resources/Localization/pt.lproj/InfoPlist.strings,src/xcode/ENA/ENA/Resources/Localization,InfoPlist.strings,pt,7,False,1,1,1,en,yes
+https://github.com/corona-warn-app/cwa-app-ios,02c629b695e64643b3d8a06dff290eb59ae14ad3,src/xcode/ENA/ENA/Resources/Localization/pt_PT.lproj/InfoPlist.strings,src/xcode/ENA/ENA/Resources/Localization,InfoPlist.strings,pt_PT,7,False,1,1,1,en,yes
+https://github.com/corona-warn-app/cwa-app-ios,02c629b695e64643b3d8a06dff290eb59ae14ad3,src/xcode/ENA/ENA/Resources/Localization/pt.lproj/Localizable.strings,src/xcode/ENA/ENA/Resources/Localization,Localizable.strings,pt,7,False,458,340,332,en,yes
+https://github.com/corona-warn-app/cwa-app-ios,02c629b695e64643b3d8a06dff290eb59ae14ad3,src/xcode/ENA/ENA/Resources/Localization/pt_PT.lproj/Localizable.strings,src/xcode/ENA/ENA/Resources/Localization,Localizable.strings,pt_PT,7,False,458,340,332,en,yes
+https://github.com/D-32/OnTime,7610db511fc053eb502d031817435008068a8d0f,AppleWatchSBB WatchKit App/Base.lproj/Interface.strings,AppleWatchSBB WatchKit App,Interface.strings,Base,1,True,34,0,0,,unknown
+https://github.com/duckduckgo/ios,7b3f6010d27a3a69fe92a2ad698543f2e67c8900,ShareExtension/id.lproj/InfoPlist.strings,ShareExtension,InfoPlist.strings,id,25,True,1,1,1,en,yes
+https://github.com/duckduckgo/ios,7b3f6010d27a3a69fe92a2ad698543f2e67c8900,ShareExtension/ja.lproj/InfoPlist.strings,ShareExtension,InfoPlist.strings,ja,25,True,1,1,1,en,yes
+https://github.com/duckduckgo/ios,7b3f6010d27a3a69fe92a2ad698543f2e67c8900,ShareExtension/ko.lproj/InfoPlist.strings,ShareExtension,InfoPlist.strings,ko,25,True,1,1,1,en,yes
+https://github.com/duckduckgo/ios,7b3f6010d27a3a69fe92a2ad698543f2e67c8900,ShareExtension/zh-Hans.lproj/InfoPlist.strings,ShareExtension,InfoPlist.strings,zh-Hans,25,True,1,1,1,en,yes
+https://github.com/duckduckgo/ios,7b3f6010d27a3a69fe92a2ad698543f2e67c8900,ShareExtension/zh-Hant.lproj/InfoPlist.strings,ShareExtension,InfoPlist.strings,zh-Hant,25,True,1,1,1,en,yes
+https://github.com/FriesI23/mhabit,141ba7c5f38ed1e68fa1e20c90db3b8dcba8b0fb,ios/Localizations/zh.lproj/dev-InfoPlist.strings,ios/Localizations,dev-InfoPlist.strings,zh,22,True,1,1,0,en,no
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/bn_IN.lproj/Localizable.strings,glucosio,Localizable.strings,bn_IN,242,True,82,79,79,en,yes
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/bo_BT.lproj/Localizable.strings,glucosio,Localizable.strings,bo_BT,242,True,0,0,0,en,no
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/br_FR.lproj/Localizable.strings,glucosio,Localizable.strings,br_FR,242,True,40,40,40,en,yes
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/dsb_DE.lproj/Localizable.strings,glucosio,Localizable.strings,dsb_DE,242,True,0,0,0,en,no
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/el_CY.lproj/Localizable.strings,glucosio,Localizable.strings,el_CY,242,True,0,0,0,en,no
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/en_GB.lproj/Localizable.strings,glucosio,Localizable.strings,en_GB,242,True,87,79,0,en,no
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/en_US.lproj/Localizable.strings,glucosio,Localizable.strings,en_US,242,True,103,79,1,en,no
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/es_CL.lproj/Localizable.strings,glucosio,Localizable.strings,es_CL,242,True,201,79,79,en,yes
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/es_CO.lproj/Localizable.strings,glucosio,Localizable.strings,es_CO,242,True,190,78,78,en,yes
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/es_DO.lproj/Localizable.strings,glucosio,Localizable.strings,es_DO,242,True,190,78,78,en,yes
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/es_ES.lproj/Localizable.strings,glucosio,Localizable.strings,es_ES,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/es_MX.lproj/Localizable.strings,glucosio,Localizable.strings,es_MX,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/es_VE.lproj/Localizable.strings,glucosio,Localizable.strings,es_VE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/fa_AF.lproj/Localizable.strings,glucosio,Localizable.strings,fa_AF,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/fr-QC.lproj/Localizable.strings,glucosio,Localizable.strings,fr-QC,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/fra_DE.lproj/Localizable.strings,glucosio,Localizable.strings,fra_DE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/fur_IT.lproj/Localizable.strings,glucosio,Localizable.strings,fur_IT,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/fy_NL.lproj/Localizable.strings,glucosio,Localizable.strings,fy_NL,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/ga_IE.lproj/Localizable.strings,glucosio,Localizable.strings,ga_IE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/gu_IN.lproj/Localizable.strings,glucosio,Localizable.strings,gu_IN,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/hsb_DE.lproj/Localizable.strings,glucosio,Localizable.strings,hsb_DE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/hy_AM.lproj/Localizable.strings,glucosio,Localizable.strings,hy_AM,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/kmr.lproj/Localizable.strings,glucosio,Localizable.strings,kmr,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/ks_PK.lproj/Localizable.strings,glucosio,Localizable.strings,ks_PK,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/la_LA.lproj/Localizable.strings,glucosio,Localizable.strings,la_LA,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/ml_IN.lproj/Localizable.strings,glucosio,Localizable.strings,ml_IN,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/ne_NP.lproj/Localizable.strings,glucosio,Localizable.strings,ne_NP,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/nn_NO.lproj/Localizable.strings,glucosio,Localizable.strings,nn_NO,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/no.lproj/Localizable.strings,glucosio,Localizable.strings,no,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/pa_IN.lproj/Localizable.strings,glucosio,Localizable.strings,pa_IN,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/pa_PK.lproj/Localizable.strings,glucosio,Localizable.strings,pa_PK,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/pt_BR.lproj/Localizable.strings,glucosio,Localizable.strings,pt_BR,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/pt_PT.lproj/Localizable.strings,glucosio,Localizable.strings,pt_PT,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/qya_AA.lproj/Localizable.strings,glucosio,Localizable.strings,qya_AA,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/rm_CH.lproj/Localizable.strings,glucosio,Localizable.strings,rm_CH,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/ry_UA.lproj/Localizable.strings,glucosio,Localizable.strings,ry_UA,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/si_LK.lproj/Localizable.strings,glucosio,Localizable.strings,si_LK,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/sr_CS.lproj/Localizable.strings,glucosio,Localizable.strings,sr_CS,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/sr_Cyrl_ME.lproj/Localizable.strings,glucosio,Localizable.strings,sr_Cyrl_ME,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/sv_FI.lproj/Localizable.strings,glucosio,Localizable.strings,sv_FI,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/sv_SE.lproj/Localizable.strings,glucosio,Localizable.strings,sv_SE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/sw_KE.lproj/Localizable.strings,glucosio,Localizable.strings,sw_KE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/sw_TZ.lproj/Localizable.strings,glucosio,Localizable.strings,sw_TZ,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/tl.lproj/Localizable.strings,glucosio,Localizable.strings,tl,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/tt_RU.lproj/Localizable.strings,glucosio,Localizable.strings,tt_RU,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/tw.lproj/Localizable.strings,glucosio,Localizable.strings,tw,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/ur_PK.lproj/Localizable.strings,glucosio,Localizable.strings,ur_PK,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/val_ES.lproj/Localizable.strings,glucosio,Localizable.strings,val_ES,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/vls_BE.lproj/Localizable.strings,glucosio,Localizable.strings,vls_BE,242,True,,,,,unknown
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,glucosio/zh_Hans.lproj/Localizable.strings,glucosio,Localizable.strings,zh_Hans,242,True,,,,,unknown
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/cmn.lproj/InfoPlist.strings,HabitRPG,InfoPlist.strings,cmn,18,True,2,0,0,en,unknown
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/ar.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,ar,18,False,0,0,0,Base,no
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/en-GB.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,en-GB,18,False,1373,1373,164,Base,no
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/es-419.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,es-419,18,False,194,194,192,Base,yes
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/hu.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,hu,18,False,1256,1256,1253,Base,yes
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/id.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,id,18,False,1243,1243,1229,Base,yes
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/ko.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,ko,18,False,1371,1371,1369,Base,yes
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/pt.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,pt,18,False,1128,1128,1118,Base,yes
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/sk.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,sk,18,False,0,0,0,Base,no
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/sr.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,sr,18,False,0,0,0,Base,no
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/sv.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,sv,18,False,,,,,unknown
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/tr.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,tr,18,False,,,,,unknown
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabitRPG/Strings/zh-Hant.lproj/Mainstrings.strings,HabitRPG/Strings,Mainstrings.strings,zh-Hant,18,False,,,,,unknown
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,HabiticaTests/cmn.lproj/InfoPlist.strings,HabiticaTests,InfoPlist.strings,cmn,17,True,,,,,unknown
+https://github.com/hukun01/Runner-Stats,04265b39a9e9bfefccbba0f6a2b6caa0d4bc5343,Runner Stats/Base.lproj/Main.strings,Runner Stats,Main.strings,Base,7,True,25,19,0,en,no
+https://github.com/Lax/Learn-iOS-Swift-by-Examples,b4b52dd94aaa018a1429a042afadd467f46df4c3,CallJS/Japanese.lproj/InfoPlist.strings,CallJS,InfoPlist.strings,Japanese,1,False,1,0,0,,unknown
+https://github.com/lionheart/Pushpin,6947a88276f8fc208b4adbb91d832d1d4ce076f0,Localizations/pt_BR.lproj/Localizable.strings,Localizations,Localizable.strings,pt_BR,8,False,92,91,86,en,yes
+https://github.com/mapsme/omim,1892903b63f2c85b16ed4966d21fe76aba06b9ba,iphone/Maps/LocalizedStrings/fa.lproj/InfoPlist.strings,iphone/Maps/LocalizedStrings,InfoPlist.strings,fa,29,False,7,7,1,en,no
+https://github.com/mapsme/omim,1892903b63f2c85b16ed4966d21fe76aba06b9ba,iphone/Maps/LocalizedStrings/fa.lproj/Localizable.strings,iphone/Maps/LocalizedStrings,Localizable.strings,fa,29,False,2592,2592,1900,en,yes
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/an.lproj/Intents.strings,MastodonIntent,Intents.strings,an,29,True,26,26,24,en,yes
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/cy.lproj/Intents.strings,MastodonIntent,Intents.strings,cy,29,False,26,26,22,en,yes
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/da.lproj/Intents.strings,MastodonIntent,Intents.strings,da,29,True,26,26,24,en,yes
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/en-US.lproj/Intents.strings,MastodonIntent,Intents.strings,en-US,29,True,26,26,0,en,no
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/et.lproj/Intents.strings,MastodonIntent,Intents.strings,et,29,True,26,26,25,en,yes
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/he.lproj/Intents.strings,MastodonIntent,Intents.strings,he,29,True,26,26,0,en,no
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/hi.lproj/Intents.strings,MastodonIntent,Intents.strings,hi,29,True,26,26,0,en,no
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/hy.lproj/Intents.strings,MastodonIntent,Intents.strings,hy,29,True,26,26,4,en,no
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/hy-AM.lproj/Intents.strings,MastodonIntent,Intents.strings,hy-AM,29,False,0,0,0,en,no
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/id.lproj/Intents.strings,MastodonIntent,Intents.strings,id,29,True,26,26,22,en,yes
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/is.lproj/Intents.strings,MastodonIntent,Intents.strings,is,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/ko.lproj/Intents.strings,MastodonIntent,Intents.strings,ko,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/lt.lproj/Intents.strings,MastodonIntent,Intents.strings,lt,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/lv.lproj/Intents.strings,MastodonIntent,Intents.strings,lv,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/my.lproj/Intents.strings,MastodonIntent,Intents.strings,my,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/pl.lproj/Intents.strings,MastodonIntent,Intents.strings,pl,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/pt.lproj/Intents.strings,MastodonIntent,Intents.strings,pt,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/pt-BR.lproj/Intents.strings,MastodonIntent,Intents.strings,pt-BR,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/ro.lproj/Intents.strings,MastodonIntent,Intents.strings,ro,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/si.lproj/Intents.strings,MastodonIntent,Intents.strings,si,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,MastodonIntent/uk.lproj/Intents.strings,MastodonIntent,Intents.strings,uk,29,True,,,,,unknown
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,WidgetExtension/hy-AM.lproj/WidgetExtension.strings,WidgetExtension,WidgetExtension.strings,hy-AM,29,False,,,,,unknown
+https://github.com/MiniKeePass/MiniKeePass,9b42e000a0925a40c7fbf11454316784703065cb,sv.lproj/InfoPlist.strings,,InfoPlist.strings,sv,10,False,0,0,0,en,no
+https://github.com/MiniKeePass/MiniKeePass,9b42e000a0925a40c7fbf11454316784703065cb,sv.lproj/Localizable.strings,,Localizable.strings,sv,10,False,129,129,111,en,yes
+https://github.com/mozilla-mobile/focus-ios,a2832521c1daa0c23419c73705ae043ed60c9791,focus-ios/focus-ios-tests/ScreenshotTests/kn.lproj/InfoPlist.strings,focus-ios/focus-ios-tests/ScreenshotTests,InfoPlist.strings,kn,64,True,0,0,0,en,no
+https://github.com/mozilla-mobile/focus-ios,a2832521c1daa0c23419c73705ae043ed60c9791,focus-ios/focus-ios-tests/XCUITest/kn.lproj/InfoPlist.strings,focus-ios/focus-ios-tests/XCUITest,InfoPlist.strings,kn,64,True,2,2,0,en,no
+https://github.com/music4kid/TKeyboard,429f955199caad24a8c6e3fc6311f3f735b7f568,EasyTextForiOS/EasyTextForiOS/en.lproj/LaunchScreen.strings,EasyTextForiOS/EasyTextForiOS,LaunchScreen.strings,en,1,True,0,0,0,,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/af.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,af,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/an.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,an,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ar.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ar,49,False,8,8,5,en,yes
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ast.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ast,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/az.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,az,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/be.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,be,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/bg_BG.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,bg_BG,49,False,8,8,5,en,yes
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/bn_BD.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,bn_BD,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/br.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,br,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/bs.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,bs,49,False,8,8,0,en,no
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/cy_GB.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,cy_GB,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/eo.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,eo,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/es-AR.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,es-AR,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/fa.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,fa,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/fi-FI.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,fi-FI,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/fo.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,fo,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ga.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ga,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/gd.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,gd,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/he.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,he,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/hi_IN.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,hi_IN,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/hsb.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,hsb,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/hy.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,hy,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ia.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ia,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/id.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,id,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ig.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ig,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ka.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ka,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/kab.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,kab,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/km.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,km,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/kn.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,kn,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/la.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,la,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/lb.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,lb,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/lt_LT.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,lt_LT,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/lv.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,lv,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/mk.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,mk,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/mn.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,mn,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/mr.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,mr,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ms_MY.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ms_MY,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/my.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,my,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ne.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ne,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/nn_NO.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,nn_NO,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/oc.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,oc,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ps.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ps,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ro.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ro,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/sc.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,sc,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/si.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,si,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/sq.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,sq,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/sr@latin.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,sr@latin,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/sw.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,sw,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/ta.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,ta,49,False,,,,,unknown
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,iOSClient/Supporting Files/th_TH.lproj/InfoPlist.strings,iOSClient/Supporting Files,InfoPlist.strings,th_TH,49,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/ast.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,ast,29,False,6,6,4,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/be.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,be,29,False,6,6,6,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/bg_BG.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,bg_BG,29,False,6,6,6,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/en-GB.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,en-GB,29,False,6,6,0,en,no
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/es-EC.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,es-EC,29,False,6,6,6,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/et_EE.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,et_EE,29,False,6,6,6,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/fa.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,fa,29,False,6,6,1,en,no
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/fi-FI.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,fi-FI,29,False,6,6,2,en,no
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/he.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,he,29,False,6,6,3,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/lt_LT.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,lt_LT,29,False,6,6,6,en,yes
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/pt-PT.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,pt-PT,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/ro.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,ro,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/sc.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,sc,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/ug.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,ug,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/uz.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,uz,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/zh-Hant-TW.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,zh-Hant-TW,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/zh_HK.lproj/InfoPlist.strings,NextcloudTalk,InfoPlist.strings,zh_HK,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/ast.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,ast,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/be.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,be,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/bg_BG.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,bg_BG,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/en-GB.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,en-GB,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/es-EC.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,es-EC,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/et_EE.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,et_EE,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/fa.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,fa,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/fi-FI.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,fi-FI,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/is.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,is,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/lt_LT.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,lt_LT,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/pt-PT.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,pt-PT,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/ro.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,ro,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/sc.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,sc,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/ug.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,ug,29,False,,,,,unknown
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,NextcloudTalk/zh_HK.lproj/Localizable.strings,NextcloudTalk,Localizable.strings,zh_HK,29,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/ar.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,ar,17,False,89,89,89,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/et.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,et,17,False,89,89,89,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/eu.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,eu,17,False,89,89,89,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/fa.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,fa,17,False,89,89,89,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/fi.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,fi,17,False,74,74,74,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/fy.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,fy,17,False,89,89,88,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/id.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,id,17,False,89,89,84,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/ja.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,ja,17,False,89,89,88,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/ko.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,ko,17,False,0,0,0,en,no
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/lo.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,lo,17,False,89,89,89,en,yes
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/lt.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,lt,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/nn.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,nn,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/pt.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,pt,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/sk.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,sk,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/sq.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,sq,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/ta.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,ta,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/uk.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,uk,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/vi.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,vi,17,False,,,,,unknown
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,Nio/Supporting Files/zh-Hant.lproj/Localizable.strings,Nio/Supporting Files,Localizable.strings,zh-Hant,17,False,,,,,unknown
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/Base.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,Base,123,True,1,1,1,en,yes
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/kaa.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,kaa,123,False,1,1,0,en,no
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/no.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,no,123,True,1,1,0,en,no
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/pt_BR.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,pt_BR,123,False,1,1,1,en,yes
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/tl.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,tl,123,True,1,1,0,en,no
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/tw.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,tw,123,True,1,1,0,en,no
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,packages/smooth_app/ios/Runner/zh_CN.lproj/InfoPlist.strings,packages/smooth_app/ios/Runner,InfoPlist.strings,zh_CN,123,False,1,1,1,en,yes
+https://github.com/pointspy/shlist,26eaf5aa60d7f0aef48097695f8d3b0f4e733886,Shlist/ru.lproj/Main.strings,Shlist,Main.strings,ru,1,True,0,0,0,en,no
+https://github.com/raaxis/nds4ios,ccc7633344ded00679282814e43e1d559b1c8fbf,nds4ios/de.lproj/Localizable.strings,nds4ios,Localizable.strings,de,6,True,41,41,35,en,yes
+https://github.com/raaxis/nds4ios,ccc7633344ded00679282814e43e1d559b1c8fbf,nds4ios/ko.lproj/Localizable.strings,nds4ios,Localizable.strings,ko,6,True,41,41,38,en,yes
+https://github.com/raaxis/nds4ios,ccc7633344ded00679282814e43e1d559b1c8fbf,nds4ios/vi.lproj/Localizable.strings,nds4ios,Localizable.strings,vi,6,True,41,41,38,en,yes
+https://github.com/RadarCOVID/radar-covid-ios,c5f58f559cfb618486a9c2951cdd67d9528ae027,RadarCovid/Localization/va-ES.lproj/Localizable.strings,RadarCovid/Localization,Localizable.strings,va-ES,7,False,308,308,20,en,no
+https://github.com/rafsoh/dimeApp,0463cb8caba237de781ae02e70a2ec82ae900c67,app/Localizations/fr.lproj/Localizable.strings,app/Localizations,Localizable.strings,fr,1,False,279,279,268,en,yes
+https://github.com/rafsoh/dimeApp,0463cb8caba237de781ae02e70a2ec82ae900c67,app/Localizations/ru.lproj/Localizable.strings,app/Localizations,Localizable.strings,ru,1,False,281,279,275,en,yes
+https://github.com/robbiehanson/AlarmClock,64219e341430db5fae92561ae6ef31bd1a8f6926,zh_TW.lproj/InfoPlist.strings,,InfoPlist.strings,zh_TW,1,True,1,0,0,,unknown
+https://github.com/sallar/lunchify-swift,ea38197213a7458e41eb751dbcd01619791f927a,Lunchify/en.lproj/Localizable.strings,Lunchify,Localizable.strings,en,3,True,1,1,0,Base,no
+https://github.com/Say-Their-Name/say-their-names-ios,e9d9f7a4c529ca3769a0f3bce4b16c4f33145321,SayTheirNames/Resources/en.lproj/Localizable.strings,SayTheirNames/Resources,Localizable.strings,en,9,True,49,49,0,Base,no
+https://github.com/Say-Their-Name/say-their-names-ios,e9d9f7a4c529ca3769a0f3bce4b16c4f33145321,SayTheirNames/Resources/ko.lproj/Localizable.strings,SayTheirNames/Resources,Localizable.strings,ko,9,False,49,49,25,en,yes
+https://github.com/securityfirst/Umbrella_ios,23f55c86da1cbfa3e660ea7c0a52565e1f8fbc10,Umbrella/Storyboards/es.lproj/Main.strings,Umbrella/Storyboards,Main.strings,es,3,True,7,0,0,,unknown
+https://github.com/SherlockQi/HeavenMemoirs,6400b8fb94998c1b7a939b4d3d3f93adf53ec11d,HeavenMemoirs/Party/PermissionScope/en.lproj/Localizable.strings,HeavenMemoirs/Party/PermissionScope,Localizable.strings,en,1,True,0,0,0,,no
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,OnThisDay/fr.lproj/InfoPlist.strings,OnThisDay,InfoPlist.strings,fr,2,True,1,1,0,en,no
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,OnThisDay/it.lproj/InfoPlist.strings,OnThisDay,InfoPlist.strings,it,2,True,1,1,0,en,no
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,OnThisDay/nl.lproj/InfoPlist.strings,OnThisDay,InfoPlist.strings,nl,2,True,1,1,0,en,no
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,OnThisDay/fr.lproj/Localizable.strings,OnThisDay,Localizable.strings,fr,2,True,44,43,1,en,no
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,OnThisDay/it.lproj/Localizable.strings,OnThisDay,Localizable.strings,it,2,True,44,43,1,en,no
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,OnThisDay/nl.lproj/Localizable.strings,OnThisDay,Localizable.strings,nl,2,True,44,43,1,en,no
+https://github.com/soramitsu/fearless-iOS,dce8790cde9730689a8a9d37b03e0c269a3e4f9b,fearless/pt.lproj/Localizable.strings,fearless,Localizable.strings,pt,8,False,1367,1367,1238,en,yes
+https://github.com/Taehan-Kim/AppSlate,677aabed367eb8b958e2896841719bf3d6fa5394,AppSlate/ko.lproj/InfoPlist.strings,AppSlate,InfoPlist.strings,ko,1,True,0,0,0,en,no
+https://github.com/tpgoffline/tpg-offline-iOS,da848659bdb876bfb5779d5f66efb1464fd45474,tpg offline/UI/en.lproj/Departures.strings,tpg offline/UI,Departures.strings,en,1,True,17,0,0,,unknown
+https://github.com/TrustWallet/trust-wallet-ios,b673b977122f235cdd00f6dde8257d10391fe67e,Trust/Localization/pt-BR.lproj/Localizable.strings,Trust/Localization,Localizable.strings,pt-BR,11,False,311,311,196,en,yes
+https://github.com/TrustWallet/trust-wallet-ios,b673b977122f235cdd00f6dde8257d10391fe67e,Trust/Localization/th.lproj/Localizable.strings,Trust/Localization,Localizable.strings,th,11,False,311,311,42,en,no
+https://github.com/TrustWallet/trust-wallet-ios,b673b977122f235cdd00f6dde8257d10391fe67e,Trust/Localization/tr.lproj/Localizable.strings,Trust/Localization,Localizable.strings,tr,11,False,311,311,241,en,yes
+https://github.com/TrustWallet/trust-wallet-ios,b673b977122f235cdd00f6dde8257d10391fe67e,Trust/Localization/uk.lproj/Localizable.strings,Trust/Localization,Localizable.strings,uk,11,False,311,311,15,en,no
+https://github.com/TrustWallet/trust-wallet-ios,b673b977122f235cdd00f6dde8257d10391fe67e,Trust/Localization/wo.lproj/Localizable.strings,Trust/Localization,Localizable.strings,wo,11,False,311,311,0,en,no
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/ar.lproj/Localizable.strings,App/Resources,Localizable.strings,ar,12,False,5,5,5,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/cs.lproj/Localizable.strings,App/Resources,Localizable.strings,cs,12,False,18,18,18,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/da.lproj/Localizable.strings,App/Resources,Localizable.strings,da,12,False,5,5,4,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/fa.lproj/Localizable.strings,App/Resources,Localizable.strings,fa,12,False,5,5,5,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/gl.lproj/Localizable.strings,App/Resources,Localizable.strings,gl,12,False,5,5,4,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/hi.lproj/Localizable.strings,App/Resources,Localizable.strings,hi,12,False,5,5,5,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/hu.lproj/Localizable.strings,App/Resources,Localizable.strings,hu,12,False,5,5,5,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/ko.lproj/Localizable.strings,App/Resources,Localizable.strings,ko,12,False,5,5,5,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/nb-NO.lproj/Localizable.strings,App/Resources,Localizable.strings,nb-NO,12,False,5,5,4,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/oc.lproj/Localizable.strings,App/Resources,Localizable.strings,oc,12,False,5,5,4,en,yes
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/pl.lproj/Localizable.strings,App/Resources,Localizable.strings,pl,12,False,,,,,unknown
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/pt.lproj/Localizable.strings,App/Resources,Localizable.strings,pt,12,False,,,,,unknown
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/ro.lproj/Localizable.strings,App/Resources,Localizable.strings,ro,12,False,,,,,unknown
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/sv.lproj/Localizable.strings,App/Resources,Localizable.strings,sv,12,False,,,,,unknown
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/th.lproj/Localizable.strings,App/Resources,Localizable.strings,th,12,False,,,,,unknown
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,App/Resources/uk.lproj/Localizable.strings,App/Resources,Localizable.strings,uk,12,False,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/be.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,be,20,True,129,129,0,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/bg.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,bg,20,True,129,129,0,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/bn.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,bn,20,True,129,129,8,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/ca.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,ca,20,True,129,129,12,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/cs.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,cs,20,True,129,129,73,Base,yes
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/el.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,el,20,True,129,129,13,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/eu.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,eu,20,True,129,129,0,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/fa.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,fa,20,True,129,129,62,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/he.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,he,20,True,129,129,0,Base,no
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/hr.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,hr,20,True,129,129,115,Base,yes
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/hu.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,hu,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/id.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,id,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/is.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,is,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/ka.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,ka,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/ko.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,ko,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/lv.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,lv,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/ms.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,ms,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/my.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,my,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/no.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,no,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/pt.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,pt,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/ro.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,ro,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/sk.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,sk,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/sr.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,sr,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/sr-Latn.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,sr-Latn,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/sv.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,sv,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/th.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,th,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/ur.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,ur,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-request-strategy/Resources/vi.lproj/Push.strings,wire-ios-request-strategy/Resources,Push.strings,vi,20,True,,,,,unknown
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,wire-ios-sync-engine/Resources/en.lproj/ZMLocalizable.strings,wire-ios-sync-engine/Resources,ZMLocalizable.strings,en,20,True,,,,,unknown
+https://github.com/yavuz/Tenere,6c7dd019e89f44bf384f288e80b580f09d2d947a,News/tr.lproj/Localizable.strings,News,Localizable.strings,tr,1,True,18,18,16,en,yes
