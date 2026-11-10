@@ -1,0 +1,127 @@
+{
+ "counts": {
+  "content_known": 0,
+  "content_translation": 0,
+  "flagged_folders": 0,
+  "flagged_repos": 0,
+  "flagged_share_pct": 0.0,
+  "folders_by_code": {},
+  "read": 1633,
+  "translated": 334,
+  "unreachable_repos": 0
+ },
+ "exploratory": {
+  "region_uk_names": [],
+  "suspect_codes": {
+   "br": {
+    "correct_present": 27,
+    "expected_script_majority": 0,
+    "folders": 27
+   },
+   "ch": {
+    "correct_present": 1,
+    "expected_script_majority": 0,
+    "folders": 1
+   },
+   "ee": {
+    "correct_present": 1,
+    "expected_script_majority": 0,
+    "folders": 1
+   },
+   "se": {
+    "correct_present": 5,
+    "expected_script_majority": 0,
+    "folders": 6
+   },
+   "si": {
+    "correct_present": 30,
+    "expected_script_majority": 0,
+    "folders": 33
+   }
+  },
+  "top_lproj_names": {
+   "Base": 1007,
+   "English": 18,
+   "af": 19,
+   "ar": 84,
+   "az": 16,
+   "be": 26,
+   "bg": 41,
+   "bn": 21,
+   "bs": 20,
+   "ca": 49,
+   "cs": 70,
+   "cy": 18,
+   "da": 71,
+   "de": 195,
+   "el": 57,
+   "en": 445,
+   "en-GB": 30,
+   "es": 175,
+   "et": 25,
+   "eu": 26,
+   "fa": 39,
+   "fi": 55,
+   "fil": 16,
+   "fr": 180,
+   "gl": 23,
+   "he": 56,
+   "hi": 35,
+   "hr": 45,
+   "hu": 59,
+   "id": 66,
+   "is": 21,
+   "it": 133,
+   "ja": 141,
+   "ka": 18,
+   "ko": 102,
+   "lt": 30,
+   "lv": 26,
+   "mr": 16,
+   "ms": 22,
+   "nb": 47,
+   "nl": 111,
+   "pl": 102,
+   "pt": 73,
+   "pt-BR": 75,
+   "pt-PT": 38,
+   "ro": 61,
+   "ru": 139,
+   "si": 17,
+   "sk": 50,
+   "sl": 30,
+   "sq": 26,
+   "sr": 22,
+   "sv": 80,
+   "ta": 19,
+   "th": 48,
+   "tr": 99,
+   "uk": 77,
+   "vi": 58,
+   "zh-Hans": 150,
+   "zh-Hant": 93
+  },
+  "vendored_codes": {},
+  "vendored_country_folders": 0,
+  "vendored_country_repos": 0,
+  "xcstrings_country_codes": {},
+  "xcstrings_repos": 105
+ },
+ "list_commit": "8018bb2ac8b9cc32631d4d8f086c7e998fc116fd",
+ "list_projects": 1745,
+ "minutes": 2.4,
+ "population": 1688,
+ "prereg_sha256": "9fec06e0c2bccc487ac24e0884bda6843afce05a4c1ebcffae9ab40c1f8acd1e",
+ "status": {
+  "error": 55,
+  "ok": 1633
+ },
+ "verdicts": {
+  "G": "PASSED",
+  "H1": "NOT TESTABLE (sample of 0)",
+  "P1": "FAILED",
+  "P2": "NOT TESTABLE (0 flagged repositories)",
+  "P3": "NOT TESTABLE (0 folders)",
+  "P4": "NOT TESTABLE (0 folders with known content)"
+ }
+}

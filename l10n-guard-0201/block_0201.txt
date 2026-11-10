@@ -1,0 +1,10 @@
+# --- 0.20.1: files Android Lint treats as untranslatable -----------------------------------
+# Android Lint's MissingTranslation check treats every string in a values file whose name
+# starts with "donottranslate" as translatable="false". The locale-config check now leaves
+# those files out of a module's string count and out of each translation's count. Before,
+# an alarm clock with 126 fixed strings in donottranslate.xml held its near-complete Thai
+# and Catalan folders to a higher bar, and they were no longer reported as orphans:
+# https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0200/RESULTS.md
+def _lc_dnt(name):
+    """True for a values file that Android Lint treats as untranslatable (donottranslate*.xml)."""
+    return name.startswith("donottranslate")

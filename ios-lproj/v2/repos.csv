@@ -1,0 +1,1689 @@
+repo,commit,status,seconds,n_paths,n_lproj,languages,translated,country_folders,xcstrings
+https://github.com/0xCUB3/wBlock,0ad3586beb30a7d4098e685c5ed7dd190a73da6c,ok,0.6,905,36,ar de el en es fa fr hu it ja ko pl pt ro ru tr zh,yes,,0
+https://github.com/100mango/Celluloid,4470f6668a61dced97dccf8421a064dc550fbc65,ok,0.5,536,6,en zh,yes,,0
+https://github.com/256Arts/My-Assets,d598e47c2215070b88d286c1ef4f753eabdf4938,ok,0.9,115,0,,no,,5
+https://github.com/256Arts/Space-UI,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/256Arts/Space-UI/'"")",0.3,0,0,,no,,0
+https://github.com/256Arts/Sprite-Catalog,598fb5bb1072f7cdc1bbe4f454dac347efe9887e,ok,1.2,6991,0,,no,,5
+https://github.com/256Arts/Sprite-Cutter,0c391c27e5bc8df45d9a48330c6199111f60e3a0,ok,0.9,41,0,,no,,3
+https://github.com/256Arts/Sprite-Fonts,fe24fd4b62c8f65dd1621d309c84efb1df840c4c,ok,0.6,112,0,,no,,0
+https://github.com/256Arts/Sprite-Pencil,91b3fc9ca758a243c5a3503b763b3fb11fe47c98,ok,1.0,119,1,en,no,,6
+https://github.com/256Arts/Symbol-Code,9d74533dc26e00ede32c749ade24d4c0859fe82d,ok,0.4,41,0,,no,,0
+https://github.com/2city/2CITY-iOS,3fcc986d2c0729137531242a1a2df1d22b29e220,ok,0.4,1051,10,en,no,,0
+https://github.com/3003h/Eros-FE,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/3003h/Eros-FE/'"")",0.3,0,0,,no,,0
+https://github.com/4np/UitzendingGemist,4166d6987bff5b9760f0dc578942a7c8ebf00513,ok,0.6,1437,1,,no,,0
+https://github.com/5calls/ios,8d83bd70e7f18fba89892a8592155ff46f56fcf3,ok,0.9,179,0,,no,,1
+https://github.com/6/StonksPro,37b75f1fa1ffec2907eb15749ea27dd90cb6015c,ok,0.5,33,0,,no,,0
+https://github.com/7kfpun/FinanceReactNative,b590af66a7f1747aeba69b74738a0ccc3e6a7dd5,ok,0.4,101,1,,no,,0
+https://github.com/87kangsw/GitTime,0c44275539a072caa824f6bd9bcbdc91f71f797c,ok,0.4,399,2,ko,yes,,0
+https://github.com/a2/arex,67991967659913356ac08bfd01ee7c91320d44a9,ok,0.4,71,1,,no,,0
+https://github.com/a2/TrollDrop,e274297f1882d104aa12b718ab8dd3dde9ecdf99,ok,0.4,20,1,,no,,0
+https://github.com/aanon4/tweedie,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/aanon4/tweedie/'"")",0.2,0,0,,no,,0
+https://github.com/Aaron-A/Orbit7,4e826251b78700c1996d1312212cf11c6069ac97,ok,0.4,58,1,,no,,0
+https://github.com/Aaron-A/Project-RainMan,3385addf6a565e01d034acaf21bc30563a605854,ok,0.4,74,2,en,no,,0
+https://github.com/Aaron-A/Tripletz,d6249f7615645fa8ced6dfd0ea0a2e0c3a8f36ec,ok,0.5,28,1,,no,,0
+https://github.com/aaronoe/FlutterCinematic,3929f7052eba1d6907505a607656c8fa421f8a06,ok,0.5,104,1,,no,,0
+https://github.com/aaronpearce/SF-Viewer,0636db39cb2bb127db8f698c7d5a3871494159bf,ok,0.4,80,1,,no,,0
+https://github.com/AaronRandall/Megabite,5b86bfcf7fc70ed626d79a9d754de319f2705802,ok,0.5,449,32,,no,,0
+https://github.com/abdorizak/Expense-Tracker-App,4dfa91809f9f9680c8d8c813b500ca1f8b996bb0,ok,0.5,124,1,,no,,0
+https://github.com/AbinGanlary/yt-music,26f20da569c5e19bfa5260b710cfed97a81d7709,ok,0.6,56,0,,no,,0
+https://github.com/AbstractedSheep/Shuttle-Tracker,40c27ea5bd6f4c9a7f436d50c7ab960afd2326ec,ok,0.4,698,1,en,no,,0
+https://github.com/acani/Chats,5f72a0918941beec3a4659cb8008582a36d89e41,ok,0.4,38,0,,no,,0
+https://github.com/achubnet/Tuber,acf4f25c5bb8140f4a2928103c9cbd5a8cafb381,ok,0.7,50,0,,no,,2
+https://github.com/aciidb0mb3r/Swiflytics,ac4bd867b253abdf18d2d27d9fdc679446abc3d9,ok,0.5,43,1,,no,,0
+https://github.com/aclissold/the-oakland-post,cc5019ffa5cd24941fe3fbbf23760d88dac3a48d,ok,0.5,481,4,en,no,,0
+https://github.com/acmacalister/Github-Swift,2739b6695444ac9d9e3bb02f7eaa98abf21e0f7c,ok,0.4,18,0,,no,,0
+https://github.com/actorapp/actor-platform,5123c1584757c6eeea0ed2a0e7e043629871a0c6,ok,0.6,5418,17,en es ja pt ru zh,yes,,0
+https://github.com/adafruit/Basic-Chat,8280b26375ecbdd5a229721eb302a4422a115d4c,ok,0.4,17,1,,no,,0
+https://github.com/adamlyttleapps/OpenAI-Wrapper-SwiftUI,4e7b16483e5528f80b72504a8ce20c2054d34597,ok,0.4,26,0,,no,,0
+https://github.com/adamrushy/social-swiftui-app,2fa9c87e93cc6e63cc5d599d17695d7a9cc4ccc8,ok,0.4,53,0,,no,,0
+https://github.com/adamwulf/loose-leaf,86c33a5ecfbf8d1dc5bfc9fa92667a6171ed7b0b,ok,0.6,2437,114,af ar bn cs da de el en es fi fil fr gu he hi hr hu id it ja kn ko ml mr ms nb nl pa pl pt ru sk sv ta te th tr vi zh,yes,,0
+https://github.com/adamwulf/spare-parts-app,7cce82fda5d637a5eed3cbdc7d24e2c197a3dca9,ok,0.4,108,0,,no,,0
+https://github.com/adblockplus/adblockplussafariios,6d08e1b7706ae0a5de57f672c81ab463f762411c,ok,0.4,375,71,ar bn cs de el en es fr hr it ja nb nl pl pt ro ru th vi zh,yes,,0
+https://github.com/AdguardTeam/AdguardForiOS,d72211b5103796a5302d53baa842a5226931d625,ok,0.6,2952,566,be bg cs da de en es fa fr hr hu id it ja ko nb nl pl pt ro ru sk sl sr tr uk vi zh,yes,,0
+https://github.com/Adlai-Holler/SwiftRACGoogleImages,8a1e9c220e4a5735c1d1f25697772da48833b763,ok,1.2,16,1,,no,,0
+https://github.com/admin-ch/CovidCertificate-App-iOS,885d7764d101b1a793c5006d7bfc479ab6a01d34,ok,0.5,1256,5,de en fr it rm,yes,,0
+https://github.com/AdnanZahid/Math-Quest-iOS,8c979922264a23eb215f9f50c06c234b2ea46233,ok,0.4,173,0,,no,,0
+https://github.com/adrbn/aura,29206caea864f7ab67bd051601b421407ab88029,ok,0.8,298,9,ca de en es fr it nl ru zh,yes,,1
+https://github.com/AdrienVillez/LOST-Location,da14e357caf759b21041d1180f0fd6602f889af4,ok,0.5,810,1,,no,,0
+https://github.com/aerlinn13/planc,69ee5e3b684dc0c269dba500abb17f15e9384158,ok,0.4,49,0,,no,,0
+https://github.com/aharren/CardDecks,378584bc0ec11c5045bf64e709aa4c1c63133a30,ok,0.4,240,0,,no,,0
+https://github.com/aheze/OpenFind,db1eede9cf4d9fa54d1e01972ea9388faf2842e6,ok,0.5,1959,51,en zh,yes,,0
+https://github.com/aheze/ProgressGif,d321e1fc13dcfdeca4da708d1c9cb2387fb988da,ok,0.4,501,1,,no,,0
+https://github.com/aheze/RealityKitLaunchScreen,0cec29e92f7d35e1e16bfbf5c5800c53413e56c8,ok,0.4,16,0,,no,,0
+https://github.com/aheze/SwiftUICraft,01d6fcea2e1ee0ce42e6545046b58ab814b5ea61,ok,0.3,148,0,,no,,0
+https://github.com/airbnb/HorizonCalendar,6f8494b88c49cf82055a1d072a76a7f5e6fd5206,ok,0.4,131,1,,no,,0
+https://github.com/akarataev/gleam-ios,9c2731ef93a5940bffdf27cffd7a72309b074a20,ok,0.4,114,1,,no,,0
+https://github.com/albertopeam/Podcasts,0bf7ac3ce53a55a0b58a624465b5239915143306,ok,0.5,53,1,,no,,0
+https://github.com/alecgorge/PhishOD-iOS,afd7ba95284650c80ad3e54308de0aa334755f17,ok,0.4,622,2,en,no,,0
+https://github.com/aleksanderwozniak/deer,5d8fce120da1365febabbf15ea8a41e716a37b1f,ok,0.5,150,1,,no,,0
+https://github.com/AlexCatch/Oak,9896da29c925d1278cb06c35d60c1925db83d460,ok,0.5,142,0,,no,,0
+https://github.com/AlexeyVoronov96/NewsApp-With-SwiftUI-And-Combine,17d4040951322215ee3b581cf2ad8b3585146f2a,ok,0.6,127,2,ru,yes,,0
+https://github.com/alexissan/ReactNativeWorkshop,ebe8dbaac80047f828f1f4dc1524dac23de6edd8,ok,0.8,33152,4,,no,,0
+https://github.com/alexjlockwood/compose-multiplatform-2048,a6943ee63884cf48b36b6f4ce2ff0c0cadf5e33d,ok,0.5,78,0,,no,,0
+https://github.com/alexkirsz/rn-pokevision,fef51bcf03e41a21b239742d7a1030fb030ffd68,ok,0.5,354,1,,no,,0
+https://github.com/alexlee2046/yihu-ios,913b88f48531f31a894c6993e8e9ca3320329315,ok,0.8,490,6,en zh,yes,,1
+https://github.com/alexliubj/SwiftUI-Currency-Converter,13100d8d64ad0f8cabe764c08f0f034231cff76a,ok,0.4,27,1,,no,,0
+https://github.com/alexruperez/MADBike,2025950c9e7c669c0ae255ea2695e45bf6a56c64,ok,0.6,2849,284,es,yes,,0
+https://github.com/alexsosn/AssociationBot,2b11bc63af11e75f93878237d4bff0e926bb4594,ok,0.4,246,20,ar de en es fr he it ja ko nl pl pt ro ru th tr zh,yes,,0
+https://github.com/alfianlosari/CoronaVirusTrackerFlutter,5d32aed483a6bd4c2ecd4170b4474c4aea9c48f1,ok,0.4,139,2,,no,,0
+https://github.com/alfianlosari/CoronaVirusTrackerSwiftUI,ed5e688aff6e23f182470709b2e4204d7f3dc396,ok,0.5,47,2,,no,,0
+https://github.com/alfianlosari/ImageFilterSwiftUICompleted,2d9f26a642e417484635c39b49bb84fc6c74747a,ok,0.4,274,2,,no,,0
+https://github.com/alfianlosari/KanbanDragDropiOS,ce394639d112a6b8920479f7d19f004873faf2f6,ok,0.5,16,1,,no,,0
+https://github.com/alfianlosari/SwiftUI-MovieDB,d5ca76c507f7d8a532833bd26d9fcf5860e8f680,ok,0.4,33,1,,no,,0
+https://github.com/alfianlosari/SwiftUIAuthenticationCompleted,0a2fac8611cf3966c2b74ff071b4f5d2b8e4039f,ok,0.4,552,1,,no,,0
+https://github.com/alfianlosari/SwiftUICDExpenseTrackerCompleted,44e77cde5cc7edc88e86f10223173527e48deb55,ok,0.4,38,1,,no,,0
+https://github.com/Alfresco/alfresco-ios-app,b9bc0712691789aff1d83bb4aba9d1b0aef81e44,ok,0.5,1293,31,de en es fr it ja zh,yes,,0
+https://github.com/aliasvault/aliasvault,c3982e1a8f634b6147f5ab24801db5aac81751e9,ok,0.5,3340,85,bg ca cs da de en es fa fi fr ga he hu id it ko my nl pl pt ro ru sv tr uk ur vi zh,yes,,0
+https://github.com/alienblue/AlienBlue,fcb0b0f95122456de01994d6ebd43f6b290cc0ce,ok,0.4,119,0,,no,,0
+https://github.com/alikaragoz/Flickr-Search,ddd73617b9e6c6bd0bcc94904d082fe7a81a6cfc,ok,0.4,32,1,en,no,,0
+https://github.com/aliumujib/FancyNews,76460bb39e874a7d53bc09ea1e589a21ffd1a461,ok,0.4,210,1,,no,,0
+https://github.com/alltheflow/iCopyPasta,1f3b2098ee0853a75c71b1e35b1bf8aa3f7c72f1,ok,0.5,2574,5,,no,,0
+https://github.com/almormd/Learning,0fb3b7f71ee9121857048a7e561c00fc4d1337db,ok,0.5,1579,74,de en,yes,,0
+https://github.com/almormd/Splito,11dd8a04fab38530df0e6e03b77c385b63503dec,ok,0.4,141,1,,no,,0
+https://github.com/aloth/origin-lens,491b327c9670e751032ae7c337f6ce453d107ef5,ok,0.4,256,2,,no,,0
+https://github.com/AlphaWallet/alpha-wallet-ios,e4e5cc89edc459b3d266cd7124ab09b7f096b80d,ok,0.5,2367,6,en es fi ja ko zh,yes,,0
+https://github.com/altstoreio/AltStore,56854e66fef2eac32dad88dcbad1dc131d430e60,ok,0.9,917,79,mul,yes,,7
+https://github.com/amahi/ios,b93b2b10f5a9f17c79aea59493e5b868ce68cdb5,ok,0.8,496,1,,no,,0
+https://github.com/amake/orgro,7ee73f365d11d0242a79b68770f933f49e252d81,ok,0.5,1010,1,,no,,0
+https://github.com/amikhaylin/pompaddo,30aa024874ba24b9c28201e97788ba6f9f41e749,ok,0.9,261,0,,no,,3
+https://github.com/amitburst/HackerNews,98b9f6443faea187ff1ed6e47d3370e899463534,ok,0.4,26,1,,no,,0
+https://github.com/amitburst/reddit-demo,39c106ee871d9ceedf2725a8078346cea68795bf,ok,0.4,14,1,,no,,0
+https://github.com/analogcode/Swift-Radio-Pro,2a6b47c5735f5c84824f6630158ee507e436e1f2,ok,0.7,158,0,,no,,1
+https://github.com/ananasDDA/pocket-ai-lab,63bbdf8f355b77d716d9efdd60909c8147b56104,ok,0.4,216,0,,no,,0
+https://github.com/AndrewBennet/iStockcheck,15ad12bba52fd5b9b5e1df66e186b00be44a804b,ok,0.5,34,0,,no,,0
+https://github.com/AndrewBennet/ReadingListV1,46b32b5b223df7f5a9acb14f4eec0c121eb05ed9,ok,0.4,470,5,en,no,,0
+https://github.com/andrewcbancroft/BlogIdeaList-SwiftUI,d71ed0493569a14ae9e4d1a29080b8db273add13,ok,0.4,17,1,,no,,0
+https://github.com/anikaseibezeder/SwiftUISpeedrunChallenge,ad2029821f7bbce1fb5a93005382a2d09d43cd40,ok,0.4,14,0,,no,,0
+https://github.com/anitab-org/powerup-iOS,15d641e053585200a7d9bd38eb590677b7770faf,ok,0.6,777,1,,no,,0
+https://github.com/anonrig/zeplin-ios,f722ed7451f8554dfeeb0700394a45b6e2bc4a4e,ok,0.4,174,1,,no,,0
+https://github.com/anthonya1999/GoodNight,d66bcef17d2dd2aab31effe6273ea1f441e6d933,ok,0.4,353,84,de fr ja nl,yes,,0
+https://github.com/anthonygeranio/CloudKit-To-Do-List,a9845f10db07e5e439b2288b7e6bb4f61bef48c2,ok,0.4,19,1,,no,,0
+https://github.com/AnthonyH93/GoCycling,12f0cfdf37d03b90672a1a1f20b24459962c5e94,ok,0.4,281,0,,no,,0
+https://github.com/AnthonyH93/HexaCalc,603ead6ca33979b5f240e0daa9cf85f3d371006c,ok,0.5,172,1,,no,,0
+https://github.com/AnthonyH93/NHLTracker,8aa3516d310dbd7182585a2e23ccf49ddf54d8a7,ok,0.5,54,1,,no,,0
+https://github.com/Antidote-for-Tox/Antidote,ffc5ae25f001fe1d6c46c427ce34d91c7a82c899,ok,1.5,616,16,ar br cs da de en es fr lt nl pl pt ru zh,yes,,0
+https://github.com/antranapp/IndieApps,0590de3030e434d6ab201544c08023766d97cf83,ok,0.4,320,1,,no,,0
+https://github.com/antranapp/SwiftUIMindBlowing,a6635c779ba9b657e4691400b37d8aeadc9241b5,ok,0.6,148,1,,no,,0
+https://github.com/Anuken/Mindustry,1a22b880576d2f8f97550280f76bfdd0d0069543,ok,1.4,4265,1,,no,,0
+https://github.com/AnupAmmanavar/Mvi-SwiftUI,b40fb3bd109d9968d1af2ab7e62367a2fe828372,ok,0.4,20,1,,no,,0
+https://github.com/anzfactory/QiitaCollection,8f3f2a18539f51b87bff64ac44ac1e45f81717bf,ok,0.5,661,1,,no,,0
+https://github.com/apiaryio/polls-app,c753c4c25a49dc3d77e862f8ba666edc4771401e,ok,0.5,43,1,en,no,,0
+https://github.com/apoorvdarshan/fud-ai,01a2f05c56aa61d36345fc1ad41e05f6bc8da415,ok,1.7,9138,0,,no,,11
+https://github.com/apoorvdarshan/scowld,3137e6ebbf61f35dfe34ba2330f653814d339619,ok,0.6,658,22,ar de en es fil fr hi id it ja ko nl pl pt ru sv th tr uk vi zh,yes,,0
+https://github.com/apoorvdarshan/verceltics,4572023142d7b774c1f30764235b3f18a9c29d10,ok,0.5,983,0,,no,,0
+https://github.com/appbrewery/BMI-Calculator-iOS13,6625465825efe2e919b54703af31c4fa74dba16a,ok,0.5,43,2,,no,,0
+https://github.com/appbrewery/Flash-Chat-iOS13,88a2bb6ebe4ae6bdc6167f213c1dd7394b351cbe,ok,0.4,54,2,,no,,0
+https://github.com/appbrewery/Xylophone-iOS13,88c53d3597f7b7b35a6f67cfae7794f925a3b8b3,ok,0.6,38,1,,no,,0
+https://github.com/appcoda/TextScanner,1dff8a7ec5808255252d6b8c9bd848fdd1005160,ok,0.5,22,0,,no,,0
+https://github.com/apple/sample-backyard-birds,1843d5655bf884b501e2889ad9862ec58978fdbe,ok,1.0,479,0,,no,,11
+https://github.com/apple/sample-food-truck,3954a769e99f3cc53297d94f2b960ceb2665b3d6,ok,0.6,553,5,ar en,yes,,0
+https://github.com/applidium/Vim,7c3e33a455ee2ffd33bacdf6afac514018d47730,ok,0.9,2874,0,,no,,0
+https://github.com/apps-fab/exercism-app,3ceb552c1b2eaed8c60e27771f84773aedbd1d3f,ok,1.1,137,0,,no,,1
+https://github.com/appsquickly/Typhoon-Swift-Example,ed406b8dca76f00e738de36cadfaf4301a91f3f8,ok,0.6,1290,2,en,no,,0
+https://github.com/aranja/rakning-c19-app,8503ebbb7cc2cd93bb015e6ad3e962b6accdbce4,ok,0.5,478,1,,no,,0
+https://github.com/archagon/good-spirits,991bfa46daf2758334794f810710d909a4a7737f,ok,0.7,890,13,,no,,0
+https://github.com/argent-os/argent-ios,6cac94d386ac698ce060fdced219f6361589d77c,ok,0.7,1197,3,,no,,0
+https://github.com/ArnaudRinquin/sk-react-native,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ArnaudRinquin/sk-react-native/'"")",0.5,0,0,,no,,0
+https://github.com/arnoappenzeller/PiPifier,110ac3b65d9664b4314bc671fcefd008747032a6,ok,0.6,282,2,,no,,0
+https://github.com/artem-shimanski/Neocom,b79277aa6b514597463867aab5dd87ec08fa6edc,ok,1.4,588,0,,no,,2
+https://github.com/artemnovichkov/iOS-11-by-Examples,d39d069a9d1e96289de974729e4fdf7bc470d711,ok,0.7,117,2,,no,,0
+https://github.com/arthurhammer/FrameGrabber,2203e6eb1087adc7b4d51fc1804c32314476a1fb,ok,0.7,277,19,de,yes,,0
+https://github.com/ArtifexSoftware/mupdf,6e3c0ffd08b42257e92c900882d3e9fb1100e81f,ok,0.6,1439,0,,no,,0
+https://github.com/artsy/eidolon,44486ed9149f16b3eb3a5e687f99ae078309f4fe,ok,0.7,328,0,,no,,0
+https://github.com/artsy/eigen,ded775be1ce8048922a3af3f5df53e99c38e95c7,ok,1.1,4169,2,en,no,,0
+https://github.com/artsy/Emergence,43c881d3cb115824143ef04bd71ab284647b295a,ok,0.6,142,1,,no,,0
+https://github.com/artsy/energy-legacy,83c5a1fbfaf7983c7935178029700bcc1b999bbc,ok,0.7,1252,1,en,no,,0
+https://github.com/asamiller/den,fceb1c47034c7654f4039aaefb0d061b7837083a,ok,0.6,170,1,,no,,0
+https://github.com/ashfurrow/C-41,58a32d069329b2a017a3a25b2785a4fbd671fd66,ok,0.9,74,4,en,no,,0
+https://github.com/ashfurrow/yourfirstswiftapp,73a5675dec4449da670c382ee19122a20a53a81d,ok,0.6,31,2,fr,yes,,0
+https://github.com/ashwinpreet/ReactNativeExamples,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ashwinpreet/ReactNativeExamples/'"")",0.3,0,0,,no,,0
+https://github.com/aslanyanhaik/Quick-Chat,01715734439ee8512565b013f28aebe82ffc11e9,ok,0.6,125,0,,no,,0
+https://github.com/aslanyanhaik/youtube-iOS,d5b1d7d544dc748d2af5f2b8f12227d8b3a63e9f,ok,0.6,185,1,,no,,0
+https://github.com/astraen-dev/RainVu,8e09c04fd8000189b22bc63ecf8b1963fb041c57,ok,0.5,380,2,en,no,,0
+https://github.com/asuc-octo/berkeley-mobile-ios,8b3a25f88f5fa3276fbbf6ddd2adc04ff3be6b32,ok,0.8,7421,39,,no,,0
+https://github.com/ateymoori/pomelu,457e02110b66e36a841670fbb0b6994d467c0674,ok,0.6,1143,1,,no,,0
+https://github.com/atrinh0/buttoncraft,fe0bbb84bc62fdf84f3f3ed97ba1bf194e4e13b8,ok,0.6,47,0,,no,,0
+https://github.com/atrinh0/covid19,3ce74c9ccd3b04cc0e4a7fc99d0738e690cb367c,ok,0.5,70,0,,no,,0
+https://github.com/atrinh0/sfsymbols,6a06d0e0292bc808ed1f0e8608cc33b970a474bb,ok,0.4,49,0,,no,,0
+https://github.com/atrinh0/spiro,6d57f6ca16c485cd7e779ca4ef87d6c6d3b17b1e,ok,0.5,80,0,,no,,0
+https://github.com/AU-COVIDSafe/mobile-ios,cab6cb15108b11533f0dbd08a2b65fa9aa788419,ok,0.4,501,15,ar el en hu is it ko pa tr vi zh,yes,,0
+https://github.com/audiokit/AudioKit,c358c15fdcdd0e78c4b4988f5c532c7cfb5c2eeb,ok,0.4,229,0,,no,,0
+https://github.com/AudioKit/AudioKitSynthOne,6466a3715c96b7ecf1dd255a218cbd571408a314,ok,0.5,769,202,de en fr ja pt tr zh,yes,,0
+https://github.com/AudioKit/ROMPlayer,252d2c06e2ddd78968d9cbfa55b2f114b169a858,ok,0.5,130,1,,no,,0
+https://github.com/Aufree/phphub-ios,28af43bb3c12331561d51a9d1781cd61fbd8dfd0,ok,0.7,322,1,,no,,0
+https://github.com/Augustyniak/FileExplorer,8c1fda45596b974252479032721f0c622ec9e2fc,ok,0.6,180,2,,no,,0
+https://github.com/austinzheng/iOS-2048,7c0840a0f7bd77b01d6a36778a253f8f4b2e6529,ok,0.5,44,3,en,no,,0
+https://github.com/austinzheng/swift-2048,169a0f84ee962d8a547cc0a8caeea1b4911c75ae,ok,0.5,21,1,,no,,0
+https://github.com/austrianredcross/stopp-corona-ios,d995660084ad3bff681587887bda00ef27360f35,ok,1.0,693,3,de en,yes,,0
+https://github.com/automat-berlin/afone,4363d2ebe7ac15879453dbd75e9eec928993063a,ok,0.6,228,6,en,no,,0
+https://github.com/Automattic/pocket-casts-ios,f42f86a2d80e9ff01f38c3ce7a6d30d0fa679aae,ok,1.2,5689,19,ca de en es fr it ja nl pt ru sv zh,yes,,2
+https://github.com/automattic/simplenote-ios,736ca765da75645f6ae5fb077dd1c3f0e06bf9d8,ok,0.4,936,42,ar cy de el en es fa fr he id it ja ko nl pt ru sv tr zh,yes,,0
+https://github.com/avdyushin/Velik,9a22f773cd3b4ee9c2c71a745872381e1dcef124,ok,0.9,194,6,de en nl ru,yes,,0
+https://github.com/awaseem/foqos,23dada7160318ab739e72a761e83fd8e7f4143dc,ok,0.4,415,0,,no,,0
+https://github.com/aweconf/iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/aweconf/iOS/'"")",0.3,0,0,,no,,0
+https://github.com/awkward/beam,759623fae6df021d9a04ab5ef63cb6520029fba6,ok,0.5,1053,10,de en es fr zh,yes,,0
+https://github.com/ay8s/ConfFriends,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ay8s/ConfFriends/'"")",0.2,0,0,,no,,0
+https://github.com/ayunav/MeetupOrganizer,8d46987f5a7635c804499da7540a75ad1d830668,ok,0.7,225,1,,no,,0
+https://github.com/ayunav/Neverlate,b7a719daa2457579fdd569f4e10c396c8fdc2cbe,ok,0.5,1024,2,,no,,0
+https://github.com/ayush221b/newsline,088e5293f40b7fb96e7e50800fcd9fd88a2b8fee,ok,0.4,114,1,,no,,0
+https://github.com/ayushgoel/LinkKeyboard,ad5e8fd95501613dbc64ede3522e691870b30a75,ok,0.4,109,2,,no,,0
+https://github.com/azamsharp/BudgetApp,1be433244f5a8a0b157bc5006fe0fa001cda5007,ok,0.5,28,0,,no,,0
+https://github.com/azamsharp/WatchNotes,8018ab5d0b86c82a921ca0c425f5c65ea2265ef3,ok,0.5,29,1,,no,,0
+https://github.com/Azoft/CollageMaker-iOS,75eba17ed71e74c616c814fefcfb135b8d739fc9,ok,0.5,428,6,en es pt ru,yes,,0
+https://github.com/azzoor/WWDCTV,e8e66c1b047cac4da02c38aaa390cc5c8469abad,ok,0.5,63,1,,no,,0
+https://github.com/b3ll/ClickWheelKeyboard,0f6dcf69f9df853fdf4733648a30f0c7c79f73dd,ok,0.5,50,1,en,no,,0
+https://github.com/b5i/Atwy,37b47c3c3e87b90cc338b11249d2e396ae2bcfd5,ok,0.5,297,0,,no,,0
+https://github.com/bakery/pokemon-map,ac328b00815af57dcba3699838d50a3c2b8aca4b,ok,0.6,431,1,,no,,0
+https://github.com/bakkenbaeck/daylight-ios,5003d51cb02d7efd09edc80856f6c40e38fdc116,ok,0.5,120,3,en,no,,0
+https://github.com/BalestraPatrick/AppleWatchCalculator,1f8fc5cba386ceb499d6077b403a57a5187a26d0,ok,0.5,33,1,,no,,0
+https://github.com/BalestraPatrick/AppleWatchProductHunt,e1325e54681bf9d67a1a424435a52a64c3cb4dd2,ok,0.5,390,3,,no,,0
+https://github.com/BalestraPatrick/FlightUtilities,4fab2714e606ca1147df276c6b20fdda8897c497,ok,0.4,33,1,,no,,0
+https://github.com/BalestraPatrick/OpenIt,fcd423fe29e3e4155e49bde25a7843853b513a9a,ok,0.4,111,1,,no,,0
+https://github.com/BalestraPatrick/RealmVideo,bc1b46a61f205f07853e7115dcdade7d0545044b,ok,0.4,122,1,,no,,0
+https://github.com/BalestraPatrick/SwiftBlog,1229a6fafac826487c15acda1f26d1c0e5a81c15,ok,0.4,20,1,,no,,0
+https://github.com/BalestraPatrick/Tweetometer,a11c20244a37eacd4a36586f679f3ba184c66f86,ok,0.6,4005,114,en it,yes,,0
+https://github.com/barisozgenn/NetflixVisionPro,088eb9fae0f4db1432f9e629091f3ffb3b599b5b,ok,0.5,80,0,,no,,0
+https://github.com/bartonhammond/snowflake,a71a4321ff3df34f43f6f53126f9a79365b669fa,ok,0.5,181,1,,no,,0
+https://github.com/basarsubasi/simplefitnessapp,b5eb7b499fae286a0cffb84185086bec0b11a145,ok,0.7,155,0,,no,,0
+https://github.com/bastienFalcou/Portfolio,ec0ad4610db33c497b03947bf6c2267bd1de91aa,ok,0.5,39,1,,no,,0
+https://github.com/BBBInc/AlzPrevent-ios,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/BBBInc/AlzPrevent-ios/'"")",0.3,0,0,,no,,0
+https://github.com/bcye/whathaveiread,7c1d9b6e8efddc0ad62b3a3a6aff6365ef8c5468,ok,0.4,187,20,de en fr pt ru sv tr,yes,,0
+https://github.com/belm/BaiduFM-Swift,844b073ed0bb8365ebc7746e5eb3a535df2cdb7b,ok,0.4,114,3,en zh,yes,,0
+https://github.com/below/CarSample,9a00c564116efcd05467001d618b15bdc98731a7,ok,0.4,20,1,,no,,0
+https://github.com/ben-milanko/dart-pdf,7ad17e6e25df54090f7b5c932fbe3a577f191eb4,ok,0.7,5190,4,,no,,0
+https://github.com/Benetos/Mamoot,fd57687cb0ad4e55b35f7456c348611c7027c4c6,ok,0.4,38,1,,no,,0
+https://github.com/bennyguitar/News-YC---iPhone,21962f99681d7b26726156bc2ce2430346cad94e,ok,0.4,71,0,,no,,0
+https://github.com/benoitvallon/react-native-nw-react-calculator,4f9628fa75d5ad2c2b8d29b611768990087abc15,ok,0.4,123,1,,no,,0
+https://github.com/betzerra/Fecapp,89505331981a98e30787f88481f247718706dc05,ok,0.5,112,1,,no,,0
+https://github.com/bgryszko/react-native-example,ef705f8a5014979e124297e585e4957ae7b496a9,ok,0.6,52,1,,no,,0
+https://github.com/bigjermaine/SwiftTracker,fda02fefc4a9845add69111019b7cc5f7b146b76,ok,0.4,484,0,,no,,0
+https://github.com/bimsina/notes-app,2772b940ca7cb1df3148188bb3c3776e2a32d4d4,ok,0.4,144,2,,no,,0
+https://github.com/bimsina/wallpaper,b59aaaf03e9bc51c8a04e9bd19ad664ebc74409b,ok,0.4,80,1,,no,,0
+https://github.com/binarylevel/Tinylog-iOS,7688935cbca0eb32b0cc5f13f77776ffea3ce828,ok,0.5,1457,0,,no,,0
+https://github.com/biou/DrugsNRock,dd266743fc5df8ed818b898dc5f9d8551df4825f,ok,0.4,751,0,,no,,0
+https://github.com/birkir/kvikmyndr-app,6b139ba06a12a9d4cc48a85fc6a7445b4ac4ad2c,ok,0.4,314,1,,no,,0
+https://github.com/bitbill/bittool-signer-ios,5f4f439293669c8bab3040c3ceeb109d75d0d19d,ok,0.9,962,21,ar de en es fil fr id it ja ko pl pt ru th tr uk vi zh,yes,,0
+https://github.com/bither/bither-ios,4ca7b12e5630fd94a50e8a3919abf357988588f4,ok,0.6,1529,14,en zh,yes,,0
+https://github.com/BitStore/BitStore-iOS,6a45fa0668ca53df1083da2386a66e3984260815,ok,0.5,1334,77,de en es ja ko nl pt zh,yes,,0
+https://github.com/bitwarden/ios,97f511f6723a93ec56893fceb27bd37241e2b63d,ok,6.2,4869,202,af ar az be bg bn bs ca cs cy da de el en es et eu fa fi fil fr gl he hi hr hu id it ja ka kn ko ky lb lt lv ml mr my nb ne nl nn or pl pt ro ru si sk sl sr sv ta te th tr uk vi zh,yes,,0
+https://github.com/bitwarden/mobile,b543459f8d71324aa11914da1e6f6ad3d7abce54,ok,1.2,1735,62,af ar az be bg bn bs ca cs cy da de el en es et eu fa fi fil fr gl he hi hr hu id it ja ka kn ko lt lv ml mr my nb ne nl nn or pl pt ro ru si sk sl sr sv ta te th tr uk vi zh,yes,,0
+https://github.com/Blackjacx/Gasoline,8638c56062520aa11782f539e42de6e521e044eb,ok,0.4,69,2,de,yes,,0
+https://github.com/Blakexx/CryptoTracker,80cbaeb3a29371bb7ca12244d5a9c1e82c0bec48,ok,0.5,82,1,,no,,0
+https://github.com/blinksh/blink,66691814d05f96d8338d4cbb5d081415ac481d67,ok,0.4,657,4,,no,,0
+https://github.com/bluemix/tourism-demo,b7bafc81a07baeba8b74faba009008a22f6ed053,ok,0.4,131,1,,no,,0
+https://github.com/bluesky-social/social-app,456d588adea7c0fca964d9067e3adb4a3167a8d9,ok,0.5,3903,0,,no,,0
+https://github.com/bonzoq/hniosreader,c2c5211a1c18e2107d6bd23eab6e7578814f35d2,ok,0.4,148,11,da de en es fr ja pt zh,yes,,0
+https://github.com/boostcode/ResearchKit-ColorBlind,9c7c7ac02bb04c5fd5f15639b9ff6c05c0069c7b,ok,0.4,60,1,,no,,0
+https://github.com/BoostIO/boostnote-mobile,8f94f8fbafb1282479d718006de3bda5f3fd3422,ok,0.4,154,1,,no,,0
+https://github.com/bouk/HTTPS4All,6b25234286b827763a30e80e22205bfd7426e3bf,ok,0.8,46,1,,no,,0
+https://github.com/bracketltd/BreadBuddy,23918057a736515e7c88aef006e23a6dd31aa594,ok,0.5,134,0,,no,,0
+https://github.com/bradley/iOSSwiftMetalCamera,cd3dc0553d51eaae0ba0e66bcdacf1dcd439c408,ok,0.5,33,1,,no,,0
+https://github.com/bradley/iOSSwiftOpenGL,f9e37bd70973d8bb88f3cc08c83f81b1560fe117,ok,0.4,20,1,,no,,0
+https://github.com/bradoyler/newswatch-react-native,7a3af01421fd3b11fbdd5bd84d670972a0948721,ok,0.8,21,0,,no,,0
+https://github.com/brave/brave-ios,398f8b763aa88cdc23289138863d62f05b2c2a23,ok,0.5,3073,219,de en es fr id it ja ko ms nb pl pt ru sv tr uk zh,yes,,0
+https://github.com/breadwallet/breadwallet-ios,a81bc58dde76a6c621db50df46a5e038880fea0b,ok,0.5,846,27,da de en es fr it ja ko nl pt ru sv zh,yes,,0
+https://github.com/brentsimmons/Vesper,2b05a1ccd2629c1eb757620186823418ac68bee6,ok,0.4,598,5,en,no,,0
+https://github.com/brentvatne/react-native-login,679168afd6f6b717256caa5dcb09d752127aeed3,ok,0.8,36,1,,no,,0
+https://github.com/brettalcox/logU-swift,ec6620f62bb1938896162acde4e34de8bf2e717a,ok,0.4,662,17,de en es fr,yes,,0
+https://github.com/brewfactory/BrewMobile,0b8e359d7866b4d2cc0ff3a2111c4a2c1a9d5a08,ok,0.4,967,4,,no,,0
+https://github.com/brianmichel/ESCapey,8509b16a8c4e9ae17512abf7cc71c7a43d8cee81,ok,0.4,67,2,,no,,0
+https://github.com/bridger/NumberPad,de2f2285144d16346bffdd37b94af75eb6fa2d13,ok,0.4,153,2,,no,,0
+https://github.com/Brimizer/Slidden,ddc23d6df447967eb86b9e1d2da7027a5624bd32,ok,0.4,55,1,,no,,0
+https://github.com/brittanyarima/MovieDB,ffdf0de15533f3e7e06258b9d5447c5a8f7e2ec6,ok,0.4,50,0,,no,,0
+https://github.com/brittanyarima/Sketchy,376dd87b06473dd9c96c9f65bc4f2c6aa0c50371,ok,0.4,14,0,,no,,0
+https://github.com/brittanyarima/Steps,e395cdd03955fbe21641b128c65ba8853d7abbe7,ok,1.2,114,0,,no,,1
+https://github.com/bryceredd/CastleHassle,a66a2d9e4c8c2a486b49828587633395fef96cbc,ok,0.4,1082,0,,no,,0
+https://github.com/Buglife/Buglife-iOS,df889123f9a046383d85f9114f752ed235149e5d,ok,0.4,296,1,,no,,0
+https://github.com/buildreactnative/assemblies,ec85386856a91b4e800fecb68d79f80a74e84956,ok,0.5,146,1,,no,,0
+https://github.com/burhanrashid52/WhatTodo,db6ba701a4b71cf15ee6c53646c05cbff247863f,ok,0.5,188,2,,no,,0
+https://github.com/BurntCaramel/CollectedApp,7f11a50cb8408f7c1055730a92b6a9a56f2d7b66,ok,0.4,35,1,,no,,0
+https://github.com/bustoutsolutions/siesta,4fcc9422d4994467bb185bfe45fec7f673269915,ok,0.5,150,1,,no,,0
+https://github.com/ByCyril/iSpy-Game,8c69d94957a6dc06892debd82808c6b06601ef1c,ok,0.5,20,1,,no,,0
+https://github.com/c-villain/SneakerShop,07391adc615b9663fbf6aefc6b200cbc340dd5f1,ok,0.9,85,0,,no,,1
+https://github.com/c/Pokemon,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/c/Pokemon/'"")",0.4,0,0,,no,,0
+https://github.com/cagnulein/qdomyos-zwift,6d6bb41fa58ba2485d5e6f30385cf71809717aa7,ok,0.7,2597,58,,no,,0
+https://github.com/caiobzen/water-reminder-swiftui,3c252d31b20e1958dc12e91b5792940cbaf8076e,ok,0.7,40,1,,no,,0
+https://github.com/caleb0/SwiftSnake,d414f2f438ff547e449b5f2af76562c8bc02f4c1,ok,0.7,42,1,,no,,0
+https://github.com/calebd/SimpleAuth,838aa6d6c20a81924aec99cf9fb27e4b13bf7a30,ok,0.6,109,2,en,no,,0
+https://github.com/callzhang/Eat-Now,4ab928353ce4648ec753e53b632caab560472b38,ok,1.7,3353,33,en,no,,0
+https://github.com/camiloibarrayepes/AlamofireStarWarsExample,35f099b00d19474c25464d60793b1a9f22c5802b,ok,0.5,20,1,,no,,0
+https://github.com/campezzi/react-native-spacepics,36daeb17bd243a848dcb9efe0c74ae560949c96a,ok,0.5,23,1,,no,,0
+https://github.com/can4hou6joeng4/Sonar,6482e350b0f4fc396645ce384896809ffdff6f10,ok,0.4,161,0,,no,,0
+https://github.com/CarGuo/gsy_github_app_flutter,f5e6565a60be06af28ea06c0202cbc85c26e81f6,ok,0.5,596,1,,no,,0
+https://github.com/carson-katri/reddit-swiftui,cc71ae8b677c835d098ec0e0dfa293ec5e76b55c,ok,0.5,113,3,,no,,0
+https://github.com/CastIrony/Fivey,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/CastIrony/Fivey/'"")",0.3,0,0,,no,,0
+https://github.com/catalinmiron/react-native-dribbble-app,45c1634752c4ff9ac85fa15b8ffb56bc7f6c3a33,ok,0.5,51,1,,no,,0
+https://github.com/CatchChat/Yep,0e90d7a2a6dabb1cb3fe25c973e8d106b2cc5afc,ok,0.6,940,38,ar bg cs da de en es fi fr gre he hu is it ja ko lv nb nl pl pt ro ru sq sv th tr uk vi zh,yes,,0
+https://github.com/catrobat/catty,ba4cdafba2a4312290a1f0c96064200b32b20510,ok,3.5,2926,79,af ar az bg bn bs ca chr cs da de el en es eu fa fi fr gl gu ha he hi hr hu id ig it ja ka kab kk kn ko lt mk ml ms nl no pa pl ps pt ro ru sd si sk sl sq sr sv sw ta te th tl tr tw uk ur uz vi yo zh,yes,,0
+https://github.com/cds-snc/covid-alert-app,3f79e220cc4235365207d5146d2784f4622503ab,ok,0.6,603,3,en fr,yes,,0
+https://github.com/cfdrake/easy-diceware,70527840384dfdd29c2568b0789956393a8a6644,ok,0.5,28,1,,no,,0
+https://github.com/cfdrake/hexclock,be2d655e9f053825fc015a8560a04a1ba39bf204,ok,0.4,45,0,,no,,0
+https://github.com/cfdrake/lobsters-reader,49dc52834d2cff4d5b8211ee738766b5ded8e428,ok,0.5,170,1,,no,,0
+https://github.com/chadaustin/passdrop,26cc21f960ef4d28c0119486651b5fd5a13e93c4,ok,0.5,299,0,,no,,0
+https://github.com/chadkeck/Natural-Language-Clock,0b5b0d9f5004857e48af6d887f118f2573a9c674,ok,0.8,45,2,,no,,0
+https://github.com/chanify/chanify-ios,890a8290a67a1b6547135e93aed0c365fa9dc4f2,ok,0.8,647,14,en zh,yes,,0
+https://github.com/ChatSecure/ChatSecure-iOS,38d6abba3e1c21156095ac3a1096d5e829df4b96,ok,0.8,798,37,ar bo ca cs da de el en es fa fr he hu id it ja mr nb nl pl pt ro ru sk sl sv tr uk uz vi zh,yes,,0
+https://github.com/chatwoot/chatwoot-mobile-app,c32a8662863f748a4c440532ba94fa4b1958d90a,ok,0.7,1066,0,,no,,0
+https://github.com/chauvincent/CodeSprint-iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/chauvincent/CodeSprint-iOS/'"")",0.4,0,0,,no,,0
+https://github.com/cheeaun/hackerweb-native-2,f67b3204506f99f6d39f7833ee42fcfe12575332,ok,0.6,72,0,,no,,0
+https://github.com/chockenberry/NowPlayingPlus,e741a953779d822d2552f302856e620595e5e560,ok,0.7,32,0,,no,,0
+https://github.com/ChoiysApple/Asteroids-Plus,24f40bbba48057650cc4b9103558df40530153a7,ok,0.7,48,0,,no,,0
+https://github.com/ChoiysApple/My-Little-Popcat,02a8d7f8c45a74e89b5bad8ae7aff595292c098b,ok,0.8,332,3,en ko,yes,,0
+https://github.com/chris-swift-dev/Beers,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/chris-swift-dev/Beers/'"")",0.7,0,0,,no,,0
+https://github.com/chrisamanse/savings-assistant,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/chrisamanse/savings-assistant/'"")",0.6,0,0,,no,,0
+https://github.com/chrisballinger/BLEMeshChat,5f01ea9be2ca792192fb366f4c031a7eb33708de,ok,0.7,75,2,en,no,,0
+https://github.com/chrisballinger/Tether-iOS,1f239a97cbbf850a9f6c0fc373519ff9b99c5816,ok,0.8,50,2,en,no,,0
+https://github.com/ChrisChares/swift-alarm,f66b73fed326a71e795ccfe7d33d9d7683a428ca,ok,0.5,24,1,,no,,0
+https://github.com/chriseidhof/github-issues,4ccea2bb919ad067196af09d3ff6c7af059944bb,ok,0.9,30,0,,no,,0
+https://github.com/chrisheninger/matchimals.fun,0393c72e8bb3ed080f3e5b07bb4e486cf18e9853,ok,1.0,799,0,,no,,0
+https://github.com/chrishulbert/SkeletonKey,214ef7dc2344ce59d45539e882437dc586c1d4b2,ok,0.5,230,1,en,no,,0
+https://github.com/chrismiles/OrganisingCoreData,6b9d3f9ab0658496e42ff5a7eb24eba029c84786,ok,0.6,41,2,en,no,,0
+https://github.com/christianampe/film-ios,de831978a1d17fdf8ab1c92f7d2845823ee9bd66,ok,0.5,72,1,,no,,0
+https://github.com/christianroman/Doppio,4f99b3d6a3ae19bb9d6346351e1be7709a84bed9,ok,0.8,70,1,en,no,,0
+https://github.com/christianselig/Amplosion,0bed340f2a29ee47d3d5640adca3ee5f51f98387,ok,0.5,1,0,,no,,0
+https://github.com/christopherdro/react-native-rss-reader,213e93b3369adf0be0917baab029ba96edb0f244,ok,0.4,31,1,,no,,0
+https://github.com/christopherdro/react-native-sudoku,2d95da8ae2b36e75333d8a3a40fbfef5c27b432e,ok,0.4,18,1,,no,,0
+https://github.com/chromium/chromium,e831213868e31d235b9d2298501459be3735ba56,ok,6.1,517851,10,en,no,,0
+https://github.com/chsxf/SKTetris,47ff245c2a06975b558f06f0c9f07bea09d35b02,ok,0.6,161,2,,no,,0
+https://github.com/Chubby-Apps/SafeTimer,b133c10a82c9a3187e41207f94ad36f1d0f496b5,ok,0.6,179,11,ca en es eu fr gl ru,yes,,0
+https://github.com/chunkyguy/PhotoApp,9cf22ea86a3db369ca2a234494f02d48a9d80a1c,ok,0.5,1870,12,en,no,,0
+https://github.com/chuongtrh/palette-from-image,65d4b0cef50a70dd4aa8da1f837bfab7b973a4ac,ok,0.4,38,1,,no,,0
+https://github.com/Ciechan/Revolved,c817c1533519ca528e34c56662416c686ce71f9b,ok,0.4,385,2,en,no,,0
+https://github.com/cinderella-project/iMast,761bd2b7d0882f4b6489a2646af8a12db7f0f854,ok,0.6,379,20,en ja ko zh,yes,,0
+https://github.com/Ckitakishi/MetaX,a44093e58b86e5af63d72ac52e2fb6610e57af72,ok,1.0,126,0,,no,,2
+https://github.com/cl7/Sakura-Fly,dcd56ebd184020765816a4bc466847f9564df6fe,ok,0.5,49,1,en,no,,0
+https://github.com/claration/Feather,31ab6de455f2a6108f6830e343dee826310c03be,ok,1.4,225,0,,no,,1
+https://github.com/Clean-Swift/CleanStore,e13b868bda3ad1a5987aadbff249b557c1e82d27,ok,0.6,59,1,,no,,0
+https://github.com/CliffsDover/crawl,c15d2f016316ec47db37acecbb0bab2e6fa10eaa,ok,0.8,7058,0,,no,,0
+https://github.com/clintonwoo/ciao,fd8378972662c024682b7bef5fb4428f20af8964,ok,0.6,220,2,en,no,,0
+https://github.com/cloverstudio/Spika,37de62b3829d8311e0c83bc8543e465e7961bdc5,ok,0.6,1133,4,en hr,yes,,0
+https://github.com/cmicali/vibe,11729a3cea2208f22dbd29c9bda341095a905941,ok,1.1,1073,0,,no,,4
+https://github.com/cocoa-mhlw/cocoa,19bb840727f290863c6af88852e3e2981d1b441e,ok,0.6,1018,3,ja zh,yes,,0
+https://github.com/codecombat/codecombat-ios,e8a2500955ce0e333ebef88a6f45ebc445c17f5a,ok,0.5,250,14,,no,,0
+https://github.com/CodeHubApp/CodeHub,7c7df03cdee9f60de64a33b551d0fbc2ac9979d6,ok,0.6,527,0,,no,,0
+https://github.com/Codelaby/IphoneDuo,ffb1e8f4499351b0031579870b875543025be1bd,ok,0.4,19,0,,no,,0
+https://github.com/coderyi/Monkey,043f062adf19b427efb1ef2075d70aa49c909d21,ok,0.5,342,27,de en fr ja ko zh,yes,,0
+https://github.com/codexu/note-gen,ef932ee2c0cf1c52f7404796ff57161fb9bae03f,ok,0.7,1363,0,,no,,0
+https://github.com/Coding/Coding-iOS,16101616aad39ec04aea7a9f19b0f1ce82eff689,ok,0.6,2436,10,en zh,yes,,0
+https://github.com/ColdGrub1384/LibTerm,ea42de030d81281c8502b57f385542d16d599143,ok,0.6,1551,2,,no,,0
+https://github.com/ColdGrub1384/Pisth,384ba55f7b4cfff4bba8a7031ba696054f5ae432,ok,0.6,485,18,en es fr,yes,,0
+https://github.com/ColinEberhardt/ReactiveSwiftFlickrSearch,39306508d8d2facc862c18f7545600cd12afcc73,ok,0.5,42,0,,no,,0
+https://github.com/ColinEberhardt/ReactNative-PropertyFinder,b1ebded95c3921a2fecf4a6f4e68b70e6805ef21,ok,0.5,20,1,,no,,0
+https://github.com/colloquy/colloquy,e3ba2328e81d9adcf883caf3a3aa1629a037dc30,ok,0.6,1532,51,de en es fr it ja ko nb nl nn pt zh,yes,,0
+https://github.com/comyar/Sol,709f85ec784b632ffe1b8485e9b114d3bf4a0871,ok,0.5,71,1,en,no,,0
+https://github.com/confirmedcode/lockdown-ios,e456e0974a78aa2e44b3e07f2022f98d26d615f0,ok,0.6,995,21,de en es fr ja,yes,,0
+https://github.com/contentful-graveyard/Wunderschnell,65d36dc26d4d5520652b202a79846b48022dd452,ok,0.6,54,2,,no,,0
+https://github.com/contentful/ContentfulWatchKitExample,0f295655cd4b1b363faac72569481543181850fe,ok,0.6,58,1,,no,,0
+https://github.com/contentful/product-catalogue-swift,e1d90adf0ae5d3c7ad33e7fa795788b0463940c0,ok,0.6,79,1,,no,,0
+https://github.com/coolioxlr/watchOS-2-heartrate,03a40b09c99dec17be704850387432a5fcd3f6cf,ok,0.7,26,2,,no,,0
+https://github.com/corona-warn-app/cwa-app-ios,02c629b695e64643b3d8a06dff290eb59ae14ad3,ok,1.3,3546,14,ar bg de en pl pt ro ru tr uk,yes,,0
+https://github.com/covid19cz/erouska-ios,e5d98a2c780ea45f2f5d4dff0918cc49de17ef40,ok,0.7,447,6,cs en sk,yes,,0
+https://github.com/CovidShield/mobile,f27957f906f3bdded00a4c1d5a1b4cdbc923d42b,ok,0.8,301,3,en fr,yes,,0
+https://github.com/CovidTrackerFr/vitemadose-ios,62b849836d79f03599930ae2c216f85545cae9c6,ok,0.7,253,2,fr,yes,,0
+https://github.com/covidwatchorg/covidwatch-ios-en,9d75493412637c99d409c51fb3fd7036a3993a19,ok,0.7,313,1,,no,,0
+https://github.com/CovidWorld/ios,45eb1296cf6128a7bc4c280c4304156113184f11,ok,0.7,236,5,en sk,yes,,0
+https://github.com/CoyoteLab/Studies-Siri-Shortcut-iOS-13,61457627185f0c9f4dc5ce4a77ccdc42a14c70e8,ok,0.7,348,89,,no,,0
+https://github.com/cpo007/S.C.P-Asylum-Fail,99c9a95b96f00dd0a87bbba5cf05338a4866fa8c,ok,0.6,182,1,,no,,0
+https://github.com/crafterm/swiftui-app-switcher,2d6d69be91d32f4041d76767b116d23d3f420cbf,ok,0.7,21,0,,no,,0
+https://github.com/cranci1/Sora,28f55f3d273b0dd32338e564324054287e500ff9,ok,0.8,164,19,ar as bos cs de en es fr hi it kk mn nl nn ro ru sk sv,yes,,0
+https://github.com/crashlytics/cannonball-ios,8e3056db48566f8a95f106c85c1110a6a169ae2e,ok,0.8,475,87,,no,,0
+https://github.com/criticalmaps/criticalmaps-ios,ef2e06dbbddaae49a82bb66999d5983c1053c6e0,ok,2.5,355,9,de en es fr it pl pt tr,yes,,1
+https://github.com/croossin/Malendar,3139d76152b39870ad0d0708ad935d8543fa7d10,ok,0.7,105,1,,no,,0
+https://github.com/crspybits/SharedImages,e3f78f4cf689fcb544753ab98c9f3f2cd29d473e,ok,1.3,1922,89,en,no,,0
+https://github.com/CrunchyBagel/TracePrivately,efff85016ce0d48db11b5043a90ab37a31b494b8,ok,1.2,137,22,ar ca de en es et fr he hi hr it ja lv nl pt sr uk zh,yes,,0
+https://github.com/csprasad/Mr-Tip,09986195165855e422ba446127ff6c2fbe8226f1,ok,0.8,83,1,,no,,0
+https://github.com/cuappdev/podcast-ios,43d0aa4e94011851018fda8257447b758a560581,ok,0.7,808,2,,no,,0
+https://github.com/cyanzhong/TodayMind,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/cyanzhong/TodayMind/'"")",0.5,0,0,,no,,0
+https://github.com/cyrildiagne/ar-cutpaste,155fddc9b16d5e6ab4f67864c87875d832626feb,ok,1.2,22,0,,no,,0
+https://github.com/D-32/OnTime,7610db511fc053eb502d031817435008068a8d0f,ok,0.9,1051,8,de en,yes,,0
+https://github.com/D-32/WatchPics,cc39162e0c9d9b13e0ca3599f5cf2be9b507491c,ok,0.6,848,2,,no,,0
+https://github.com/da3x/GeoLicious,5f1267a08d7347d0ad4ab1c3f3e40f9721d671c5,ok,0.7,1217,2,de en,yes,,0
+https://github.com/DaidoujiChen/Dai-Hentai,36128517801825b033a9c1963f76dd42d81f9ca4,ok,1.1,286,1,,no,,0
+https://github.com/dailin/wesnoth_ios,51d69e5f943e31d2f24ecd88f88eb6eb30f288f5,ok,1.7,71929,30,en,no,,0
+https://github.com/damoonrashidi/bitalarm,c70aad7e3cfdbf0c50f1855c62a6f19fdd1206c8,ok,0.6,100,1,,no,,0
+https://github.com/danbeck/green-mahjong,80d94414f234bdbe12823bde71f239314d2688b4,ok,0.6,132,0,,no,,0
+https://github.com/daneden/Broadcast,c5e01dff527714ef499195df87176674383bcbdf,ok,0.6,79,0,,no,,0
+https://github.com/daneden/Solstice,1b9acee9261f3f9e75829c04c6c9387d78437f50,ok,1.4,229,0,,no,,5
+https://github.com/daneden/Zeitgeist,89011a960825f6d1561fb43c9149a50166fe7e1f,ok,2.0,136,0,,no,,1
+https://github.com/DanilaVladi/codinator,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/DanilaVladi/codinator/'"")",0.3,0,0,,no,,0
+https://github.com/danqing/2048,6f89eab8f3e5e044f66c381095a9f5402bacaab5,ok,0.4,52,3,en,no,,0
+https://github.com/DanToml/Watchman,725867ec69cf45a447bc0cd3330be8cb97f8fa7e,ok,0.5,117,2,,no,,0
+https://github.com/danylokos/AfishaLviv-iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/danylokos/AfishaLviv-iOS/'"")",0.3,0,0,,no,,0
+https://github.com/danylokos/FS-Player,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/danylokos/FS-Player/'"")",0.2,0,0,,no,,0
+https://github.com/danylokos/popcorntime-ios,555aff8d10e38870ef58e75c1af35e5494547c98,ok,0.5,82,0,,no,,0
+https://github.com/Darktt/HealthKit-Swift,84a88a1915c3f8332bed5f9880990e8564476794,ok,0.4,31,2,en,no,,0
+https://github.com/darvin/SparkleShare-iOS,d5ac6382644d22611234cabc1a29bd6d9cc3a1e5,ok,0.6,111,3,en,no,,0
+https://github.com/dasdom/Jupp,9aa728836abcb85a15bb9b256e971fc533cceff0,ok,0.6,60,1,,no,,0
+https://github.com/dasdom/Tomate,ad0b7a70b229725f59fd23dba1aa122520accda7,ok,0.6,430,1,,no,,0
+https://github.com/davedelong/MVCTodo,f0ddf3e9d157fe3b441ccbf3264a147b000e3047,ok,0.5,43,1,,no,,0
+https://github.com/davejacobsen/HapticHaven,b73e94147b601cdc94f314e8b61f1d5986389ab2,ok,0.8,61,1,,no,,0
+https://github.com/davidcairns/-WatchSnake,44643c910e0668c905939ee3fa9b098bb567a96b,ok,0.6,18,1,,no,,0
+https://github.com/davidjb/pass-ios,e439d0641ec43b5701de6626d2e8fb54f6049a9a,ok,0.6,32,0,,no,,0
+https://github.com/dees91/posato,b4c47e754a12d5bc2445f183a629aee16bf4ba29,ok,0.8,2225,12,de en es fr pl pt,yes,,0
+https://github.com/dejager/atmos,44a5c8bc1b652a086bec216c58a2dc6ff968a8a5,ok,0.6,28,0,,no,,0
+https://github.com/deltachat/deltachat-ios,d126ed95f22abac92d2caf148863c74319096213,ok,0.7,555,53,ar az be bg bqi ca ckb cs da de el en eo es et eu fa fi fr gl he hr hu id it ja kab ko lt mt my nb nl pl pt ro ru sc sk sq sr sv ta te tr uk vi zh,yes,,0
+https://github.com/DeluxeAlonso/UpcomingMovies,d07c8853630c853d4d4cb8f3defb783bb664e48a,ok,0.8,898,5,en es,yes,,0
+https://github.com/dempseyatgithub/MemeMaker,8d160db7d271a374b6f69cd3fcffdf863ff09219,ok,0.5,16,1,,no,,0
+https://github.com/dempseyatgithub/UnofficialSandwiches,515fd8d8ebbcc7f974e02bd75cdcdf13064b91bf,ok,0.6,152,0,,no,,0
+https://github.com/denis-kolchev/Paint-Anytime,36e819cc92f158f9a800a945975a7e5a5837be39,ok,1.0,198,0,,no,,3
+https://github.com/denissimon/Cryptocurrency-Info,e976300104ee8490227e04abf1969d3c788c185f,ok,0.9,82,5,en es mul,yes,,2
+https://github.com/denissimon/distributed-model-training,5d8b5bee17c803e79eebb8fb7849c4bdb85bf876,ok,0.6,124,1,,no,,0
+https://github.com/denissimon/iOS-MVVM-Clean-Architecture,ca5e270faa0ad0ede0ba4950c81f866e42526179,ok,0.6,91,3,en es,yes,,0
+https://github.com/dennisreimann/ioctocat,17238bdf900d884ec43fce735fd07b8b8e8446bb,ok,0.6,5,0,,no,,0
+https://github.com/denoni/SpotifyClone,bd016f95fea583f29484eb837a728295df611cb8,ok,0.5,362,0,,no,,0
+https://github.com/der1598c/SmartThing,c93dd794225621f46ecd957b5872a29922d8822e,ok,0.4,111,1,,no,,0
+https://github.com/DerekSelander/yacd,261219da08eafde2d61076d54edbab65e54499b2,ok,0.4,128,1,,no,,0
+https://github.com/DerLobi/Depressed,2288de243cad05941d1f0b16a8760e0c8046bcbc,ok,0.4,215,9,de en fr,yes,,0
+https://github.com/DesktopWebAnalytics/DWA_Mobile,b1fdae21739632be940ec7abd507a3e20eaf29dd,ok,0.4,106,0,,no,,0
+https://github.com/devindazzle/SceneKitFrogger,5da7da0c7e7dc9f914aa30f65350e90cab35bafd,ok,0.5,243,4,,no,,0
+https://github.com/devxoul/Drrrible,9da646be36dae6db25f56804ab928784782f07a7,ok,0.5,207,3,en ko,yes,,0
+https://github.com/devxoul/graygram-ios,a1ba891010dea3a623f6146a5cad7c17093811bd,ok,0.4,71,1,,no,,0
+https://github.com/devxoul/RxTodo,b49911074f5fc9f9c7f678eb0bc7a3ec1dc3d2a8,ok,0.4,46,1,,no,,0
+https://github.com/devxoul/SwiftUITodo,907eb95832cc7fe247398da6efd22a53331ea905,ok,0.4,19,1,,no,,0
+https://github.com/Dimillian/ACHNBrowserUI,7bcb4e383a740fd81ae3ef6498a3f1757de24460,ok,0.5,1389,11,de en es fr it ja ru zh,yes,,0
+https://github.com/Dimillian/FoundationChat,10f46eb4954a994368d76c0273164e4f8da512f2,ok,0.4,37,0,,no,,0
+https://github.com/Dimillian/GrailerApp,ce056d5b6c909086b66ccc5aac9ea953292cedc8,ok,0.4,35,0,,no,,0
+https://github.com/Dimillian/IceCubesApp,98098b9c4b5928f89f338203193c2bf40ab7f38c,ok,0.8,760,12,be ca en es eu ko nb pl uk zh,yes,,1
+https://github.com/Dimillian/IcySky,03560c6a30277175ea91a6bfc63b50380542017c,ok,0.4,125,0,,no,,0
+https://github.com/Dimillian/MortyUI,76fe6db750bf20392e293e977d4edbf7c420c71e,ok,0.5,55,0,,no,,0
+https://github.com/Dimillian/MovieSwiftUI,72eb4ae7117fbf893be533c9a277c47a7287d87e,ok,0.5,183,2,,no,,0
+https://github.com/Dimillian/OSRSUI,f5854b1041b12451e9eadfe2e84c07c04e79e1e6,ok,0.4,30,1,,no,,0
+https://github.com/Dimillian/SwiftHN,e015de71e3d8cdbef043083a6b5e213fd2104dea,ok,0.4,108,2,,no,,0
+https://github.com/Dimillian/The-Roundtable,5ce6f5301d0ad44220cef100f4bd8bbc572b9069,ok,0.4,73,0,,no,,0
+https://github.com/DinnerRollApp/iOS,f12c0905d40d94c736d5ff7df608576cdb194945,ok,0.5,117,6,en sv,yes,,0
+https://github.com/diogot/MyWeight,fc0633fe0ee1a74aab8ed400ce423fe131697f33,ok,0.5,175,8,en nl pt,yes,,0
+https://github.com/dkhamsing/covid19.swift,aa78c0976267c4c60f4543e603628469e2fd7d22,ok,0.4,44,1,,no,,0
+https://github.com/dkhamsing/fastmdb,a2ed1c77bd4d4fda30874e193e99b8148f2173ba,ok,0.4,81,1,,no,,0
+https://github.com/dkhamsing/how-much,dc5a5b0cc6869ba4879ed74f394dfcc6e761a14c,ok,0.5,74,4,,no,,0
+https://github.com/dkhamsing/listapp.ios,d6997366049e326aaa319fc94f121a62d2b96da0,ok,0.5,96,8,,no,,0
+https://github.com/dkhamsing/news,8aeac80fcae474a86f52088513b283d4b7104e7d,ok,0.5,197,3,,no,,0
+https://github.com/dkhamsing/open-source-ios-apps,8018bb2ac8b9cc32631d4d8f086c7e998fc116fd,ok,0.5,28,0,,no,,0
+https://github.com/dkhamsing/osia,5ee1daf8bfc1b3c214e2dd5570f2b4d90ba4e2fa,ok,0.5,28,1,,no,,0
+https://github.com/dkhamsing/stocks,4d811918a4c5cb006e291a2ef8cf3088947287a3,ok,0.5,48,1,,no,,0
+https://github.com/dkhamsing/TabDump,a197bce6afd3d671a08c0a8c020cad5869248f94,ok,0.5,492,10,en,no,,0
+https://github.com/dkhamsing/upcomingtv,a91416ce294d99781714f8e1d6595fe19293c9ae,ok,0.5,38,1,,no,,0
+https://github.com/dl-alexandre/SymbolGrid,cd3325ef6af357a53d1f04c03ec7c62945f5e99f,ok,0.8,108,0,,no,,1
+https://github.com/DominatorVbN/DevSpotlight,9d9c5ae09e350e1544efc0fbbd1d2d6abdf58e36,ok,0.5,33,0,,no,,0
+https://github.com/donbytyqi/PapersSwiftUI,7c6b9c5fe7970ff5058c96c978ee320b41e97221,ok,0.4,23,1,,no,,0
+https://github.com/dopebase/messenger-iOS-chat-swift-firestore,5f39f5b7450092816bba126d6d6b8712cb9c726b,ok,0.5,546,2,,no,,0
+https://github.com/draese/TwitterSentiment,10e9f8cdbaaba968ab7117e06bf35b009d97ba9f,ok,0.4,43,1,,no,,0
+https://github.com/DreamingInBinary/Custom-ViewController-Transitions,d02c66c7e86b897fae503f0200af66195974f968,ok,0.5,23,1,,no,,0
+https://github.com/DreamingInBinary/Spend-Stack-Public,9a23fe5573d40220d332272df2a44de433d37815,ok,0.6,857,3,de en id,yes,,0
+https://github.com/dredfort42/dredfit,acefc6fad92c2b4367214c6e147e4211327e763b,ok,1.0,911,0,,no,,5
+https://github.com/dropbox/PhotoWatch,c4ee0914aa37c1fb233a33801d3726d60b10ab72,ok,0.5,40,2,,no,,0
+https://github.com/drpeterrohde/MoodSnap,304454c3ee18417a2cc8adad2869fc82ef0aa45f,ok,0.6,169,5,de en es fr nl,yes,,0
+https://github.com/dsgriffin/vegan-lists-uk,e218bc1b74e63003433d2104ef9fb80f981d09b2,ok,0.6,64,0,,no,,0
+https://github.com/duckduckgo/apple-browsers,3b56fa903a9c51065b4220f3708e9e79e3715e05,ok,2.5,15257,380,bg cs da de el en es et fi fr hr hu it ja lt lv nb nl pl pt ro ru sk sl sv tr,yes,,19
+https://github.com/duckduckgo/ios,7b3f6010d27a3a69fe92a2ad698543f2e67c8900,ok,0.7,4078,208,bg cs da de el en es et fi fr hr hu id it ja ko lt lv nb nl pl pt ro ru sk sl sv tr zh,yes,,0
+https://github.com/duquewu/FanFanSwift,df3ea1aeb0e64473c440ae6348936bf1a63ca96e,ok,0.5,70,1,,no,,0
+https://github.com/e-mission/e-mission-phone,dd02ec2c6b663dd5fa3424ebe534d1039634bc1e,ok,0.6,281,0,,no,,0
+https://github.com/e7711bbear/Simplistic,c95d11abdfa5d2df42558908d81669a892f8680d,ok,0.5,90,4,,no,,0
+https://github.com/Eason828/Longboxed-iOS,b5d195db4dd160498699a5be7bf32efde1e26980,ok,0.6,259,2,en,no,,0
+https://github.com/ecrichlow/LootRaideriOS_OS,72188405c3e69c07a3170bb1d2803f60c3aeb571,ok,0.6,318,1,,no,,0
+https://github.com/eerimoq/moblin,ed0c4bd672433448859cd362023824b14d3b9ce5,ok,1.8,1494,7,de it nl tr zh,yes,,7
+https://github.com/efremidze/Alarm,d9c5c14ef5b66b55dd34f677fa5fbf9bc1b31fd3,ok,0.6,139,2,,no,,0
+https://github.com/EhPanda-Team/EhPanda,37b979965cf7c4778877c795e8df60c2c0ff6eb3,ok,0.6,362,8,de en ja ko zh,yes,,0
+https://github.com/eleev/compositional-layouts-kit,c149755db0522e52bee657e572a06d7ffb2b90e9,ok,0.6,89,1,,no,,0
+https://github.com/eleev/flappy-fly-bird,488f4ec23d9137c87a81e8d223e57454a70c1183,ok,1.0,462,1,,no,,0
+https://github.com/eleev/swiftui-2048,9c63bd59f7b46a5a6c71535fbcb86e50debc2862,ok,0.6,138,0,,no,,0
+https://github.com/eleev/tic-tac-toe,8a04317701f650c1e117c232f2182da1d64c0012,ok,0.6,867,1,,no,,0
+https://github.com/element-hq/element-ios,7ba8beb088978786a6fc0aa3c9324a33ee77c38a,ok,5.4,4668,57,ar be bg bs ca cs cy da de en enm eo es et eu fa fi fr he hu id is it ja ka kab ko lo lt lv nb nl nn peo pl pr pt ro ru si sk sl sq sv szl th tr tzm uk uz vi vls zh,yes,,0
+https://github.com/element-hq/element-x-ios,931e3866d40c52842b288f2bd5736d2e27afd689,ok,0.6,4421,67,ar be bg ca cs cy da de el en es et eu fa fi fr hi hr hu id it ja ka ko lt nb nl pl pt ro ru sk sv th tr uk ur uz vi zh,yes,,0
+https://github.com/elkiwy/KHabit,930b4f7c63db7999260d4544192769358703a783,ok,0.4,94,2,,no,,0
+https://github.com/elpassion/DropColour-iOS,14c6fd59cd5bb04594734a07174bb150ac99e09f,ok,0.4,183,5,en es pl,yes,,0
+https://github.com/emcro/SwiftUI-Keyboard-Demo,6514d30a2f8941d74ba50cd1a76640f62d5cf7ce,ok,0.4,18,1,,no,,0
+https://github.com/EmergeTools/hackernews,779a2ceb936c4a5bf5f08d468f35a21c26c06a9c,ok,1.0,229,0,,no,,1
+https://github.com/emlavankhoahienma-hue/ai-smart-framing-camera,485a284f392813277c0f69a136014d973931f128,ok,0.7,309,0,,no,,0
+https://github.com/emlavankhoahienma-hue/DevHardware,d7f6c1a6323d3908972d93ab407de0a6fc07cf69,ok,0.6,21,0,,no,,0
+https://github.com/emlavankhoahienma-hue/PureLibrary,dedbf6dda021784c4f85ce6bad04a62e048577bc,ok,0.6,47,0,,no,,0
+https://github.com/emlavankhoahienma-hue/SafeRedact,0086ac047548dfef7f0074867c456c664a51ee94,ok,0.6,23,0,,no,,0
+https://github.com/emoncms/emoncms-ios,9c25a81b688eac13089188df11877b2ceed13434,ok,0.6,250,3,en,no,,0
+https://github.com/emredurukn/betcalsa,8e7b926fce723047596e595b940ab70f20ffc2b1,ok,0.5,130,7,,no,,0
+https://github.com/emrepbu/CosmicDaily,4e624184b9d84c2f61d854d19160e34ab39df98f,ok,0.5,52,0,,no,,0
+https://github.com/emufreak/iAmiga,6ef4ad449ea5e9001424c3607182acaf93ba9309,ok,0.6,1013,0,,no,,0
+https://github.com/enochng1/RaceMe,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/enochng1/RaceMe/'"")",0.3,0,0,,no,,0
+https://github.com/eonist/summon,e6318c43fe6a2dbc9d4efa157b58e5d07f5541e6,ok,0.6,42,1,,no,,0
+https://github.com/ericjohnson/canabalt-ios,ef43b7d522d744a19bf687bb0575e18fbf3d8e96,ok,0.5,471,0,,no,,0
+https://github.com/ericlewis/DeltaUI,2f51d4efa1986abfb249e766b5df6071bea85643,ok,0.4,82,1,,no,,0
+https://github.com/ericlewis/ShoppingList,bb842c18383ecec3fd5e5ff6643954c0b933d7e9,ok,0.5,24,1,,no,,0
+https://github.com/erikmartens/nearbyweather-legacy,6e132ae752a37c57d9947536b81ca9e2d5d81a37,ok,0.5,317,10,de en fr zh,yes,,0
+https://github.com/essentiaone/Essentia-iOS,19fd8b8d28fd9f463fded02086e9ca84a3a22b9e,ok,0.5,1716,6,en ko zh,yes,,0
+https://github.com/etamity/AlienBlast,584b2e37acfc21feab1a5a7bf085de3ac678b112,ok,0.5,1442,6,en,no,,0
+https://github.com/etchsaleh/Listr,396b8f9df0fc43e277bc0216f5fa63850c9b30b4,ok,0.4,33,1,,no,,0
+https://github.com/ethanhuang13/blahker,f467a93bfc0dfec3ff2f2cbdfbdffa85839b1bdd,ok,0.4,123,2,,no,,0
+https://github.com/ethanhuang13/knil,29c4b9762a0d22ddf31b0078bb14207b1f66a90b,ok,0.5,114,1,,no,,0
+https://github.com/ethanhuang13/ladybug,4085e27899a6f889e699671b2afbcb5dd5bece01,ok,0.4,101,3,zh,yes,,0
+https://github.com/ethanswift/DiscussIt,cfb1aa70b99f06380d4e3c34e31fbf327ebd3b6c,ok,0.5,4513,1,,no,,0
+https://github.com/ethanswift/NewsAnalyzer,c502109cf1c9133a3e99523833642d000860658e,ok,0.4,275,1,,no,,0
+https://github.com/eugenebokhan/Awesome-ML,36a49a3f4356a7627d84a08789510f3e45639e76,ok,1.6,570,1,,no,,0
+https://github.com/eugenepyvovarov/CodeAgentsMobile,e815702e7f313fd313f75aef692a88cc305e2f1e,ok,0.4,472,0,,no,,0
+https://github.com/eugenpirogoff/pathlogger,548f1ff1579249e952ef37ea39a584ffab3a3a37,ok,0.5,127,2,de,yes,,0
+https://github.com/eugenpirogoff/swifteroid,6522b3480e3e96950a890fbd4cb31f9c1be9add0,ok,0.5,51,1,,no,,0
+https://github.com/EverestOpenSource/Everest-iOS,228e061a685a87f19f888ae4a0fa3ae3bf12c852,ok,0.5,831,2,en,no,,0
+https://github.com/evermeer/Quadrim,c591195b9029bb228e24d1ed57eb0dacc77d8f7f,ok,0.5,435,1,,no,,0
+https://github.com/evgeniyd/Giraffe,d5b53b7f2e00deacac17a6ee6e83c33812745b24,ok,0.4,110,2,en,no,,0
+https://github.com/EvgenyKarkan/Feeds4U,ec0cd9de413061cdd05d6cdb1b335936e28a596f,ok,0.8,215,23,ar be bn de en es fil fr hi id it ja ko pa pl pt ru sq th tr uk zh,yes,,1
+https://github.com/EvgenyKarkan/ScaryFlight,ed7b3ac460fcf80aca1cefa3a2fc194ed6f9e1f3,ok,0.4,105,2,en,no,,0
+https://github.com/EvgenyKarkan/TrackMyTime,431c2210405a3b679e5e89c65f5ed67857e0f7a9,ok,0.5,216,3,en,no,,0
+https://github.com/Evolution-App/iOS,5b3caddf9db454eb79054e731dc7bac30c3fa107,ok,0.5,282,1,,no,,0
+https://github.com/exantech/exa-wallet-ios,350a439a3bdc70e588c0e3b26342dba9498e17f8,ok,0.5,464,2,en,no,,0
+https://github.com/ExistOrLive/GithubClient,7969212a8b6c938f93391d6e37666cc2c4a4c207,ok,0.6,616,7,en zh,yes,,0
+https://github.com/expo/expo,62faa9f7003d860e00e59dee0ec899e38f4e6daf,ok,1.3,23663,2,,no,,0
+https://github.com/ezefranca/watchpresenter,46370e1fd10637e7568109f392b4e121d4768857,ok,0.4,129,3,,no,,0
+https://github.com/fabiensanglard/Shmup,e33e4d36356596e4580b44f65f9cb130f7ebc1d1,ok,0.5,505,2,en,no,,0
+https://github.com/fabienwarniez/Vie,9593710580e50e3107b1eafdad928d50887e4a36,ok,0.5,306,4,en fr,yes,,0
+https://github.com/fabio914/BeatmapVisionPro,d7e39d6254a067deb16a4d45ed12d4e63628e739,ok,0.5,131,0,,no,,0
+https://github.com/facebook/react-native,546c71ca7ecdf43f203a09a2171f1baf64ec8c55,ok,0.9,8243,37,ar cs da de el en es fi fr he hi hr hu id it ja ko ms nb nl pl pt ro ru sk sv th tr uk vi zh zu,yes,,0
+https://github.com/falkolab/LVMC-Demo-Alloy-App,d2157e09c61c1775c8b8f10134cf61fe83405fc8,ok,0.5,80,0,,no,,0
+https://github.com/FancyPixel/done-swift,7ffd6de34a088a875625c8b6b5f209789503cf0c,ok,0.6,87,2,,no,,0
+https://github.com/FancyPixel/gulps,949a1b4b10fde9e9fdc81db9c1374306657a4872,ok,0.8,1143,13,en it ru tr,yes,,0
+https://github.com/fangwei716/30-days-of-react-native,66af6134cb05473289983efba3e1bd8b97f04281,ok,0.6,165,1,,no,,0
+https://github.com/fatih-gursoy/Projector,a2ac3f4101b4a5d57fe6b80ed7cb78c8fa2a7987,ok,0.7,296,1,,no,,0
+https://github.com/fborges/4pets,429347480c65195ba8806cf02998c71104129f7a,ok,0.9,532,2,,no,,0
+https://github.com/fbsamples/f8app,119f062943c9d7dfa2892a178199435d6854a06f,ok,0.7,679,1,,no,,0
+https://github.com/filipealva/Cepp,d2773cb4135f33fd4470231babd5e3db6713c0f5,ok,1.0,52,1,,no,,0
+https://github.com/fimuxd/BringMyOwnBeer-,b5fe9b6b68b8e1b0deefc6bccc9a7e6af4ef8114,ok,0.8,766,1,,no,,0
+https://github.com/fimuxd/BringMyOwnBeer-Combine,fe80bbac24ec13d057db23d305944ccf6a5b132a,ok,0.7,44,1,,no,,0
+https://github.com/fimuxd/GITGET,98e05788bddacca7ff0b511f3e5dff38d7e8094b,ok,1.0,255,2,en ko,yes,,0
+https://github.com/Finb/Bark,967f289a9c6e4d1e6ccf49c0bc3d348b0a4a9f3b,ok,1.0,408,2,,no,,1
+https://github.com/findmybusnj/findmybusnj-swift,2cf1e67b5a3e2d39b692022273eb6dadad63f32f,ok,0.5,352,2,,no,,0
+https://github.com/firebase/friendlyeats-ios,53b7ea26cf3da841d3279d6f70cea95ce9dcaae8,ok,0.5,44,1,,no,,0
+https://github.com/firebase/quickstart-ios,892ecac8dee09313b5b0c18b8313484ef4651c23,ok,0.6,856,9,,no,,0
+https://github.com/flappy-royale/flappy-royale,857a6368ae06f615752c3c14e438e13ced7610ab,ok,1.3,772,1,,no,,0
+https://github.com/flexih/ABU,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/flexih/ABU/'"")",0.4,0,0,,no,,0
+https://github.com/flexih/Cafe,23713daf1beeace9f541d788dde7db378c59510b,ok,0.4,53,2,zh,yes,,0
+https://github.com/FlexMonkey/Filterpedia,7a0d4a7070894eb77b9d1831f689f9d8765c12ca,ok,0.5,120,1,,no,,0
+https://github.com/FlexMonkey/ForceSketch,d25019487b0593fc429eea034026d2eb15c9e9f6,ok,0.5,12,1,,no,,0
+https://github.com/FlexMonkey/Plum-O-Meter,eb49325ccb541f40c011e23bd7ddfcb48a3c78fe,ok,0.5,11,1,,no,,0
+https://github.com/FlexMonkey/SwiftSpace,957360de32896b8f127c578f596cad744ebcdeef,ok,0.5,18,1,,no,,0
+https://github.com/FlineDev/Prayer,7965f031ad1796aa36fe6b8bea385d8e399e9fc4,ok,0.6,404,14,de en tr,yes,,0
+https://github.com/florent37/OCiney-iOS,6e3df1b75dae8ce8b0ccd951651213df30bfbab0,ok,0.5,401,4,en,no,,0
+https://github.com/FloWritesCode/DesignRemakes,5b07013f20cca497ea08bb8eadcf14c8daf2c12f,ok,0.4,21,0,,no,,0
+https://github.com/fokkezb/tracker,43985b28f6dbfe1a48c097c6cb5f458d70849146,ok,0.4,79,0,,no,,0
+https://github.com/Foreverland/ios,134d373e51360e56d19ba7784ceb0a636e7838b6,ok,0.5,1095,253,,no,,0
+https://github.com/fossasia/open-event-attendee-ios,c11e8f34c3464f2093aec00cdc1ac99765cdde2a,ok,0.4,240,1,,no,,0
+https://github.com/fossasia/open-event-organizer-ios,677249b6377bd1b01e5d1e899d2fbc36fb71ca42,ok,0.4,244,0,,no,,0
+https://github.com/fossasia/susi_iOS,6166cc523ccbf723f9090afa1601e2b8de926e6e,ok,0.4,279,4,en ru,yes,,0
+https://github.com/FranckNdame/swiftui.builds,bc5e2e4cd766f10e3aa664d1a8fdd6d2dfc08368,ok,0.5,344,0,,no,,0
+https://github.com/FredericJacobs/fudge,f972a1084c249ef73916330eef5b5f799ec833c2,ok,0.4,131,1,en,no,,0
+https://github.com/freeotp/freeotp-ios,78b973ce4275ed818fd198312be3cf6b3f505b1b,ok,0.4,95,2,en,no,,0
+https://github.com/FreeRDP/FreeRDP,0668870d0a8d777a9a77e5caec602683e6e6b0b1,ok,0.6,3113,3,en,no,,0
+https://github.com/freesuraj/TLDR,7a68cfa9aec892d467e13612ac0e4e7f5d3b5c3f,ok,0.6,5581,2,,no,,0
+https://github.com/FriesI23/mhabit,141ba7c5f38ed1e68fa1e20c90db3b8dcba8b0fb,ok,0.8,2331,69,ar cs de en es eu fa fr he hu it ja nb nl pl pt ru tr uk vi zh,yes,,0
+https://github.com/frogatto/frogatto,5ae22a16048795b4c1f049022c158b51c5d83a2c,ok,0.8,4949,0,,no,,0
+https://github.com/fromkk/FreeTimePicker,81aec1d7484a2918a6da6ce5baa5e7025ca3c443,ok,0.5,208,10,en ja,yes,,0
+https://github.com/fromkk/iOSDCRC,e6e128ce63b725ff75991704010b3b2392bdfc72,ok,0.4,110,3,en ja,yes,,0
+https://github.com/frostland/GPS-Stone,26d53938481ecbe8a4172e3a8205e7980e5890d5,ok,0.5,109,3,en,no,,0
+https://github.com/fulldecent/8-ball-answer,706718361ac3e51a6cfb84997722ee00be810d9a,ok,0.4,83,0,,no,,0
+https://github.com/fulldecent/echo,642d79780468d2300ca5895ca14a4dab9df6f60e,ok,0.4,103,0,,no,,0
+https://github.com/fulldecent/impostor,52dc22dfffa7b268706e8206ba020abb9ec8f661,ok,0.8,521,40,ar ca cs da de el en es fi fr he hi hr hu id it ja ko ms nb nl pl pt ro ru sk sv th tr uk vi zh,yes,,1
+https://github.com/fulldecent/pizzaman,5e52678c9116b7021f9541cf93486e9a398729e6,ok,0.4,84,1,,no,,0
+https://github.com/fulldecent/vowel-practice,85065a4c3a6cbedfc7250b6eafc33c2f9e5e540f,ok,0.4,91,0,,no,,0
+https://github.com/fusetools/FuseCloud,95befb9b894c32811f0a462780f5b9e684b67e5a,ok,0.4,158,0,,no,,0
+https://github.com/G2Jose/ReactNative-HackerNews,1a70da5a8b4551e5d0e54cfc402e1b3cdeeb3454,ok,0.4,100,2,,no,,0
+https://github.com/G2Jose/WatchStocks,2ec517b191321ce7006dbbb2a9c315fa676850b5,ok,0.5,40,2,,no,,0
+https://github.com/gabrieloc/GIOVANNI,a50f4acf9474c7f81ed196bfe1a8bc12313497a4,ok,0.5,96,2,,no,,0
+https://github.com/gamechina/GoldenWar,763d2bddb6310983da4bed0e80d514b674c2c177,ok,0.5,15,1,,no,,0
+https://github.com/gamechina/GrubbyWorm,07b19bd5fd052278c08526364c42531ba5cb7f91,ok,0.5,109,1,,no,,0
+https://github.com/gao0122/ARKit-Example-by-Apple,ffcbab7d6dbc3f8e0031a9960e3d8218033786ae,ok,0.4,126,1,,no,,0
+https://github.com/gdombiak/OctoPod,dfca281b8c759195cb8db9c78533859460d3297d,ok,0.5,962,110,cs de en es fr it lt nb nl ru sv zh,yes,,0
+https://github.com/geberl/swift-localstorage,9d235fe2364c68ee5783f451a39561bbc6defa27,ok,0.5,192,15,de,yes,,0
+https://github.com/gematik/E-Rezept-App-iOS,ecdc4712aaeb707cd45bef9e0d912c441e870005,ok,0.7,4004,64,ar bg cs da de en es ga he it nl pl ro ru tr uk,yes,,0
+https://github.com/genadyo/WWDC,f1d8ba96460e0a23727b86c0a7757adc6b1492bb,ok,0.4,265,1,,no,,0
+https://github.com/GeoTappy/GeoTappy-iOS,64cb4a9d8d4c2691126ad4dca7029f6d98190ad8,ok,0.4,913,15,en,no,,0
+https://github.com/GetHighstreet/HighstreetWatchApp,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/GetHighstreet/HighstreetWatchApp/'"")",0.3,0,0,,no,,0
+https://github.com/GetStream/purposeful-ios-animations,113d394864c504d5f2e0fa8a5ef1604dea6d1adc,ok,0.5,355,0,,no,,0
+https://github.com/ghewgill/puzzles,01c3e382d9c7013f0bb4eb9f1ff2d19bb05d4241,ok,0.4,439,1,en,no,,0
+https://github.com/ghostery/user-agent-ios,96a5bad8dd19dcf508eadf68ffd18afd91baf257,ok,0.6,1600,37,de en,yes,,0
+https://github.com/gideonrotich/LivescoreApp,ba9dfbf88133a7ccfcbf12cd286506e4bfb48beb,ok,0.4,213,0,,no,,0
+https://github.com/GigaDuckAI/conduck,a14eb116913dde10e27d37786752db0648ee983b,ok,1.2,1622,0,,no,,9
+https://github.com/git-up/GitUp,ba6013f0e31959f2524b947ce8f24ee53a25868e,ok,0.4,1089,10,en,no,,0
+https://github.com/GitHawkApp/GitHawk,36f6fa2850bbfce767a903ba93e960dd2222633f,ok,0.7,3128,21,,no,,0
+https://github.com/gitpoint/git-point,3f01534440ab5bda689209f50b3e08891b3e87dd,ok,0.5,345,1,,no,,0
+https://github.com/gizmosachin/Steps,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/gizmosachin/Steps/'"")",0.2,0,0,,no,,0
+https://github.com/Glucosio/glucosio-ios,6332142d0ba73a9b6c6e78987562bd338f0e1065,ok,2.0,1304,294,aa ach ae af agq ak am an ar arn as ast av ay az ba bal ban be bfo bg bi bm bn bo br bs ca ce ceb ch chr ckb co cr crs cs csb cv cy da de dsb dv dz ee el en eo es et eu fa ff fi fil fj fo fr fra frp fur fy ga gaa gd gl gn gu gv ha haw he hi hil hmn ho hr hsb ht hu hy hz id ig ii ilo is it iu ja jbo jv ka kab kdh kg kj kk kl km kmr kn ko kok ks ku kv kw ky la lb lg li lij ln lo lt luy lv mai mg mh mi mk ml mn moh mos mr ms mt my na nb nds ne ng nl nn no nr nso ny oc oj om or os pa pam pap pcm pi pl ps pt qu quc qya rm rn ro ru rw ry sa sat sc sco sd se sg sh si sk sl sma sn so sq sr ss st su sv sw syc ta tay te tg th ti tk tl tn tr ts tt tw ty ug uk ur uz val ve vec vi vls wa wo xh yi yo zea zh zu,yes,,0
+https://github.com/gluonfield/enchanted,dc9bff882411a1317ff0cc5869de7e0515897df0,ok,0.4,141,0,,no,,0
+https://github.com/glushchenko/fsnotes,c8a6aee44d4f497112dac21aa930cfd576492172,ok,1.7,869,14,es fr mul nl pt ru uk zh,yes,,6
+https://github.com/gnithin/appceleratorOMDB,6e72db034c5cfe51d06a26615f8511b1ce7176e0,ok,0.4,80,0,,no,,0
+https://github.com/gonchar/VisionProVacuumDemo,1b85a2ad863475fe40fce15c075c084add439975,ok,0.4,34,0,,no,,0
+https://github.com/google/mechahamster,9ee186dfe48a35bb4e26369a78e8c350942098c3,ok,0.4,1014,0,,no,,0
+https://github.com/googlearchive/science-journal-ios,ecf32a37c6cd98c67b9a1b658adf00172b77e3d5,ok,0.6,1754,77,ar bg bs ca cs da de el en es fi fil fr gsw he hi hr hu id in it ja ko ln lt lv mo nb nl pl pt ro ru sk sl sr sv th tr uk vi zh,yes,,0
+https://github.com/googlecast/CastVideos-ios,96ebf2640bddf81836744ae24788ac2557358aee,ok,0.5,111,1,en,no,,0
+https://github.com/googlevr/poly-sample-ios,e2e05f254e83132da65235d102ba7c61e0161b4a,ok,0.4,38,2,,no,,0
+https://github.com/gregheo/CoinTracker,6fad0d5cb46f4cc0e66b3b93eab7ce5bb97abfb9,ok,0.5,42,2,,no,,0
+https://github.com/groue/GRDBCombine,080d5ddfd9193392b77bf2dac90dc78201d4616a,ok,0.5,3,0,,no,,0
+https://github.com/GroupeMINASTE/FMobile-iOS,72573c448934e0e5799b2b5592bdcf76acc4459e,ok,0.5,1301,44,bs de en es fr hr nl sr,yes,,0
+https://github.com/grp/newsyc,fd758306ff4451917a1272ad9bd40717ffb86f3b,ok,0.6,258,1,en,no,,0
+https://github.com/gtokman/Restaurant-Viewing-App,ad2a044660217b67e918dcb220640b633da67f19,ok,0.7,139,1,,no,,0
+https://github.com/guardianproject/orbot-apple,65c98f393da1038ce958085e17b1df3f129875f1,ok,0.6,432,26,ar de en es fa fr hr ko pt ru uk zh,yes,,0
+https://github.com/haawa799/-WaniKani2,a67cef9fa451c93b158ccefeded74a45bbbecc41,ok,0.5,305,1,,no,,0
+https://github.com/HabitRPG/habitica-ios,293ae318c7b1163e0e75e8cdc11e28ae159a4ad1,ok,0.8,3051,90,ar bg cmn cs da de en es fr he hr hu id it ja ko nl pl pt ro ru sk sr sv tr uk zh,yes,,0
+https://github.com/hACKbUSTER/UberGuide-iOS,6e9d145f8688498fdd77288dc275f51560d5dc68,ok,0.6,325,1,,no,,0
+https://github.com/HackCancer/iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/HackCancer/iOS/'"")",0.4,0,0,,no,,0
+https://github.com/hackfoldr/hackfoldr-iOS,859c1c451feb69a9b4a7140c8397bd5c07593827,ok,0.6,82,3,en zh,yes,,0
+https://github.com/hadobedo/FunkiniOS,a1e213898d1c83977422c917df232a883eb33d49,ok,0.7,624,0,,no,,0
+https://github.com/haiwen/seafile-iOS,742bf415acde43d26c769c58ed10063f2d5d3afb,ok,0.6,900,52,ar bs ca cs de en es fr hu is it ja ko lt nb pl pt ru tr zh,yes,,0
+https://github.com/hamed8080/LeitnerBox,5ec62460ad314cf77291445e9445c8246fbafc70,ok,0.6,942,1,,no,,0
+https://github.com/hanton/Fisheye,71e8e9394a0af3b340ed8e0a59fa2d5a2852a9b8,ok,0.6,84,1,,no,,0
+https://github.com/Haoest/SudokuResolv,ac235232df5a9a4a01bfc34ac444199c01a63275,ok,0.6,116,2,en,no,,0
+https://github.com/haolloyin/MrCode,3630c785d6d105417b051f1ab54d9bde39959f5b,ok,0.5,678,41,,no,,0
+https://github.com/happier-dev/happier,7b37d65ca75e58560f8f3ca850958ac5407d2e75,ok,1.3,22441,0,,no,,0
+https://github.com/Haptic-Apps/Slide-iOS,5494fd25240c86064ac19254993b8686d77b74e7,ok,1.0,1083,3,,no,,0
+https://github.com/haqu/climbers,12b592832213c453137e7400d78f519c85160a82,ok,0.4,277,0,,no,,0
+https://github.com/haqu/tiny-wings,7a66ec876ad8b36086d2702c7f1156293fa1ce38,ok,0.5,353,1,en,no,,0
+https://github.com/haqu/tweejump,541457cef9c3506618c3bb3c0cbd2e26648ca9be,ok,0.4,213,0,,no,,0
+https://github.com/haranicle/AlcatrazTour,847ccb50f46daabf0d80cd41b1dddba55ff69562,ok,0.4,574,2,en,no,,0
+https://github.com/HassanElDesouky/VoiceMemosClone,4a8b10300013818507c2948659e8fadeb60c7efe,ok,0.4,29,1,,no,,0
+https://github.com/hbmartin/Directory-SwiftUI,fcf744f79038b5333eca905ecd98bad1deec673b,ok,0.5,738,1,,no,,0
+https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI,aa66b507d65b3c8d0877e690d3ee510e251b38f5,ok,0.4,50,1,,no,,0
+https://github.com/helio-fm/helio-workstation,10f31dd4a83a11f8e27d453ecebbb129a30bb612,ok,0.5,984,0,,no,,0
+https://github.com/henriquevelloso/StreetMusicMap,e39cf499243f1a5a0f8e29f002df4d4271baf6a1,ok,0.4,232,1,,no,,0
+https://github.com/herrkaefer/CaseAssistant,83d8b8dde4469ffaaae85dde0650971e201c3fb8,ok,0.4,200,1,,no,,0
+https://github.com/herzbube/littlego,8e2a7b80ec900e437673e37b5ede4655f079ffc9,ok,0.5,1152,0,,no,,0
+https://github.com/heyrahulrs/ASETimerSwiftUI,22c5ebe17f9d3736bd3a3a61a8a3a875fb1f96cb,ok,0.4,52,0,,no,,0
+https://github.com/hishd/RicketyRick-iOS,ed839bcd5e5131c7f29c31784a77023aed485922,ok,0.4,181,1,,no,,0
+https://github.com/hishd/SkyWizard-SwiftUI,afaa94f05a2004cbe32c1a6ba7e866244b43c979,ok,0.5,287,0,,no,,0
+https://github.com/hkalexling/Buck_Tracker,711850d917d230ae7fc97350d6e06a14b009dd2d,ok,0.5,273,4,en zh,yes,,0
+https://github.com/hkalexling/KonaBot-iOS,b18584ae74c2fcf49dbb0497ee4d9aceee4bef3e,ok,0.4,227,3,zh,yes,,0
+https://github.com/HOCKULUS/BoxHelper,7d59046cd0f759c42e47779bbb46bc638b3f4b7f,ok,1.1,468,0,,no,,3
+https://github.com/holzschu/a-shell,f2475995978dd10021b8d2674ff9a3d8e02be8b0,ok,0.8,20509,25,de en es fr it ja ko zh,yes,,0
+https://github.com/home-assistant/iOS,f160c758cce93fa87531b91cfa7e65fd8a524032,ok,0.6,5535,71,bg ca cs cy da de el en es et fi fr he hu id it ja ko ml nb nl pl pt ru sl sv tr uk vi zh,yes,,0
+https://github.com/hooosberg/Rushi,bda9d95a2876aec4dc4d8b60b2594d9de79a1062,ok,0.5,111,0,,no,,0
+https://github.com/horizontalsystems/unstoppable-wallet-ios,1da5adb4d72308b873bbefe5ee33aeb8e04745de,ok,1.3,3379,19,de en es fr ko pt ru tr zh,yes,,2
+https://github.com/hrscy/DanTang,fa1dac0b65c68e7e1bda542db2c341d9954be3ec,ok,0.5,707,0,,no,,0
+https://github.com/hrydgard/ppsspp,2f4bd6b9d086144272a5cc7f2448ce2e99963baf,ok,0.6,3093,0,,no,,0
+https://github.com/HSEIreland/covid-tracker-app,5684a05a14de649fc04ecbba2e349a75189e4645,ok,0.5,599,9,ar en fr ga lt lv pl pt,yes,,0
+https://github.com/huggingface/swift-coreml-transformers,47cb600b46f89f966907f999556cfd1335b4ad25,ok,0.5,97,2,,no,,0
+https://github.com/huijimuhe/prankPro,d5cdf9e4799f83779ce162c742d8827763884d62,ok,0.5,296,1,,no,,0
+https://github.com/hukun01/Runner-Stats,04265b39a9e9bfefccbba0f6a2b6caa0d4bc5343,ok,0.6,277,8,de en es fr ja zh,yes,,0
+https://github.com/hungps/flutter_pokedex,7e2b6d491bc3db5730398a84beff2bf64c0d7bcd,ok,0.6,321,2,,no,,0
+https://github.com/huygithub/hoxChess,1de1ef9b93d465ae7e94e2b44ccf6fe2829a0b7f,ok,0.6,485,4,en fr vi zh,yes,,0
+https://github.com/hyperoslo/BarcodeScanner,72b8b72aa1330918ef1340487c69e11045982550,ok,0.6,69,11,de en fr ja nl pl pt ru tr zh,yes,,0
+https://github.com/hyya-dev/hYYa-Digital-Footprint-Check,94a9ff7179879788a35fed177f9d64e55bbeb632,ok,0.6,448,0,,no,,0
+https://github.com/iAlexander/Homepok,6c9965c8c8e719cc73cef5360e55aa67ca195bd5,ok,0.5,188,4,en ru uk,yes,,0
+https://github.com/IanKeen/TweetleDumb,1552019420967b2280a15e69f208b682a85a0e93,ok,0.4,75,1,,no,,0
+https://github.com/iAugux/Phonetic,298b1a61cf259d93c242f58e4c66874c309b1abe,ok,0.4,216,3,zh,yes,,0
+https://github.com/ibhavikmakwana/Fluttery-Filmy,cbdd3d70b16980b918bb61259d2ea7ff854bcc14,ok,0.5,83,1,,no,,0
+https://github.com/iBurnApp/iBurn-iOS,3064a223dfa5c5dcf11771a616e250d2813620c4,ok,0.5,911,2,en,no,,0
+https://github.com/icanzilb/EventBlankApp,1268bd1e19c2c46f1c36a4d3f78c52f06fbb07fc,ok,0.5,725,15,,no,,0
+https://github.com/iCepa/iCepa,a820c7260f8914a2cc5ee1c668e8413fd7a35225,ok,0.9,91,2,,no,,0
+https://github.com/iCHAIT/awesome-macOS,651d7ab32fff14590571399c04721146b1851d7d,ok,0.4,9,0,,no,,0
+https://github.com/id-Software/DOOM-iOS,3bf2af22f381441faccb13652bcf992a43bb8eb5,ok,0.5,642,0,,no,,0
+https://github.com/id-Software/DOOM-IOS2,5b1ff23e0f7ead9dde6fa9561b1f801bb786ee23,ok,0.4,759,0,,no,,0
+https://github.com/id-Software/Wolf3D-iOS,d7fff51d7d3bc7f3c0d44d58f91ba2ba3b4a7951,ok,0.6,1517,0,,no,,0
+https://github.com/IFours/react-native-twitch,b5d22d1b029220c34d3075119c3591846e095e56,ok,0.6,63,1,,no,,0
+https://github.com/ifrotz/iosfrotz,c7f9541610f725f425af273fc7e197d7beff97bf,ok,0.7,989,1,en,no,,0
+https://github.com/ignotusverum/1w-flappy,ae1ff65275373480c672941774bdffb7884151ad,ok,0.5,1229,4,,no,,0
+https://github.com/igorkulman/iOSSampleApp,75e0d38706e5ec8eedaecc4c701cbd5c7e7f9c3f,ok,0.8,110,1,,no,,1
+https://github.com/IGRSoft/exTVPlayer,03da1d136ad3136488bbf124a90689a9ba3ce192,ok,0.6,240,16,en ru uk,yes,,0
+https://github.com/ihvou/subskills,8106176d93ec45ffc721897c32fedc82112663eb,ok,0.5,263,0,,no,,0
+https://github.com/ijoshsmith/swift-ascii-art,9079a07c679ca2fa6110ae0b0082f48724e471da,ok,0.4,19,1,,no,,0
+https://github.com/ijoshsmith/swift-morse-code,4611610a67fb5c97f88b980780e19be7d8d1a0db,ok,0.4,19,1,,no,,0
+https://github.com/ijoshsmith/swift-tic-tac-toe,2f3967890dbfffff815e70fb6f3caa1fe532e708,ok,0.5,59,1,,no,,0
+https://github.com/iKenndac/Tofu,b993d46749558d64d191a4ff9229457d1030a7cc,ok,0.5,659,1,,no,,0
+https://github.com/il1ane/StoicQuotes,83fc5eb0e43260ec746bac505ce2733bcb919b4d,ok,0.4,23,0,,no,,0
+https://github.com/illu/moonwalk,e86805b321c4b5b223144653e53b74214b8191e9,ok,0.5,300,0,,no,,0
+https://github.com/ilTofa/rposx,e147946820762446fa8b5fd43be5b89fbfd63d0f,ok,0.5,55,1,en,no,,0
+https://github.com/Imaginea/pancake-ios,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/Imaginea/pancake-ios/'"")",0.2,0,0,,no,,0
+https://github.com/immich-app/immich,f3de6f242c32b2ea3b3bc065b57c392dc9d557c1,ok,0.5,3639,2,,no,,0
+https://github.com/immuni-app/immuni-app-ios,44963c5ef98a9e03200587005b7ff2f6e2074080,ok,0.5,847,5,de en es fr it,yes,,0
+https://github.com/imod/MyAwesomeChecklist,89f2214fdfcb71eab35b35b869337c9f5eb31a06,ok,0.4,16,0,,no,,0
+https://github.com/inamiy/Harvest-SwiftUI-Gallery,dc2a2b2e69053f1ca30835921d9422d4001c664f,ok,0.4,60,1,,no,,0
+https://github.com/inaturalist/INaturalistIOS,2f12912c0715823ba0bb2a440ac8dcab9f70b3fa,ok,1.7,1130,38,ar bg ca cs da de el en es fi fr he hu id it ja kk ko lt lv nb nl pl pt ro ru si sv th tr uk zh,yes,,0
+https://github.com/incipher/einmal,fba4caaa0b0e8b7b762f365d1f8a6d4ac9f1ecd5,ok,0.5,158,1,,no,,0
+https://github.com/infinitepower18/Homepage-MobileSafari,044256a71af277aa4d390835cf90d6d43c60ef2a,ok,0.7,62,1,en,no,,1
+https://github.com/infinitered/ChainReactApp2017,272026c0380f586b5d691bea9b559e03698b49fe,ok,0.6,783,0,,no,,0
+https://github.com/Infomaniak/ios-kDrive,1c258510f8a4f1d17990f0120146f6e57a005146,ok,0.5,1180,21,da de el en es fi fr it nb nl pl pt sv,yes,,0
+https://github.com/inkyfox/RxCurrency_iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/inkyfox/RxCurrency_iOS/'"")",0.2,0,0,,no,,0
+https://github.com/insidegui/AnimojiStudio,306e0cdcb8bf84f73c4511fe102d3a8344ff252b,ok,0.4,135,1,,no,,0
+https://github.com/insurgentgames/Aeropack,90c1819856f84c4caa9cb4646c2d6f13aee6c79f,ok,0.5,868,0,,no,,0
+https://github.com/insurgentgames/Alphabet-Blocks,bf73d97573cf27c52487c8a3f0d316a842cc3278,ok,0.4,423,0,,no,,0
+https://github.com/insurgentgames/Cryptose,ef704315c262fc1944ad66970564b61d8696c63a,ok,0.4,453,0,,no,,0
+https://github.com/insurgentgames/Skeleton-Key-iOS,d843aa2962dea467cae61a7ad462fd06a2413025,ok,0.4,548,0,,no,,0
+https://github.com/insurgentgames/teh-internets,8ff70902d08f0698c61321b81c559d9aed74409d,ok,0.5,1436,0,,no,,0
+https://github.com/intere/retro-skate-tvOS,4c8afee53cce15f8e647fe856e5496bc56fb29db,ok,0.4,240,1,,no,,0
+https://github.com/intrepidkarthi/dailyvox,8d9569f545f6bd3a49968cbc915336ad0e994617,ok,1.2,2486,0,,no,,1
+https://github.com/invoiceninja/admin-portal,6774daba09809e2576c815140356107869503375,ok,0.5,1255,2,,no,,0
+https://github.com/irace/BlogQuest,867da97dc3cbdd2a4e373d7a18cd517e2aec22a9,ok,0.4,316,3,en,no,,0
+https://github.com/irccloud/ios,5f32eb33834a8b3ecb361a944fb0559035362216,ok,0.5,615,2,en,no,,0
+https://github.com/ISBX/apprtc-ios,bdd8f2b173145894144f98010d4bf515c7911147,ok,0.4,198,1,,no,,0
+https://github.com/ischys-app/Ischys,1d021dafc08f51996a7d286a8ac7981db6405f21,ok,0.7,913,0,,no,,0
+https://github.com/ish-app/ish,ce96e698f1820b9d8db47e87c501ecb89119d7ce,ok,0.5,461,1,,no,,0
+https://github.com/iSimar/HackerNews-React-Native,4ab83c05b863a142bba58bf63036f54e46c85d89,ok,0.4,65,1,,no,,0
+https://github.com/istornz/iPokeGo,9ed6b6356a472d20ad875ba7562c9eb3ab05b1ca,ok,0.5,485,13,de en es fr it ja nl pt ru zh,yes,,0
+https://github.com/itsliamdowd/Project-Democracy,d83fe499afae6067ab15a05c137e1c6492b6d881,ok,0.4,77,1,,no,,0
+https://github.com/ivan-magda/Californication,0cc5c5da9ece1a2b069a99dd9b785856da82c862,ok,0.5,86,1,,no,,0
+https://github.com/ivan-magda/ios-demo,b04a56ab4ca79d46e0093a40b176480ddd053831,ok,0.5,180,10,,no,,0
+https://github.com/ivan-magda/MVVM-Example,026e8d286ca0ad0cb40cbae6fb2957837556b8b0,ok,0.4,62,3,,no,,0
+https://github.com/ivan-magda/News,ed02cee5459a2521849b5b06ee5190c2e22fab6a,ok,0.4,85,2,,no,,0
+https://github.com/ivan-magda/Popular-Movies,d6d3597187d3d52acac7d0a333ec6a07040167f2,ok,0.4,150,1,,no,,0
+https://github.com/ivan-magda/Tagger,3772e334da9192895bc28872bfa0e008f104d032,ok,0.4,220,1,,no,,0
+https://github.com/ivan-magda/ToThePenny,7c765fea566c34567f72931d079be4d2a392238b,ok,0.5,432,40,ar bn cs da de el en es fa fr he hi id it ja ko mk nl no pa pl pt ru sk sl sv th tr uk ur vi zh,yes,,0
+https://github.com/ivan-magda/UpcomingMovies,b11ffe3c82b309604b82d127e1a88754ca88199a,ok,0.4,48,1,,no,,0
+https://github.com/IvanBogdantsev/Toilet-Radar-Paris,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/IvanBogdantsev/Toilet-Radar-Paris/'"")",0.2,0,0,,no,,0
+https://github.com/ivanbruel/SwipeIt,c46b6a99a41570a4baea65183f72beddbdcd7696,ok,0.5,1241,41,en,no,,0
+https://github.com/ivanvorobei/SwiftUI,b6cfb6d084b78a39c29587d0e071ed52dc3e4e01,ok,0.7,1431,34,,no,,0
+https://github.com/Ivaskuu/travel-guide_app,58c4bc21e933a8fbe83a0969a2bc96269d185f78,ok,0.4,75,1,,no,,0
+https://github.com/ivirtex/networkarch-old,5c982b90990bc4c7d3205125fba70d9838c3d89f,ok,0.4,196,0,,no,,0
+https://github.com/ivpn/ios-app,470afb580b82fa1e1476231ebbbc7a5b24c3f791,ok,0.6,1038,1,,no,,0
+https://github.com/ivsall2012/AHPinterest,09244352f179680ec777ebfba5c5566abec3aed0,ok,0.4,212,1,,no,,0
+https://github.com/iziuqo/compresso,db76763dac8311d1331e2f961934e67bd11d31eb,ok,0.5,547,0,,no,,0
+https://github.com/Jaennaet/pISSStream,11f73f186d1d611c9c74f4558007dd9a62593a2b,ok,0.4,91,0,,no,,0
+https://github.com/JakeLin/ChineseZodiac,f45434e5162127f38958259de178a23d2f529d3a,ok,0.4,56,1,,no,,0
+https://github.com/JakeLin/IBCalculator,0ef226cef990fbd7c885148a48b9ca310d3dcf0c,ok,0.4,15,1,,no,,0
+https://github.com/JakeLin/ReactNativeWeather,1ac7742d1bc3381d79cef1768fd054198e10881e,ok,0.4,53,1,,no,,0
+https://github.com/JakeLin/SaveTheDot,ee8190ca38870dcb9f7de544a8976b91c4108243,ok,0.4,14,1,,no,,0
+https://github.com/JakeLin/SwiftLanguageWeather,57faf3d6b5e07b633a99bc1fbbdd00dc8d6ee13d,ok,0.4,74,1,,no,,0
+https://github.com/JakeLin/Todo,b8d24615e38eb9cf563f5b2631bc31b84ab605e6,ok,0.4,71,1,,no,,0
+https://github.com/jakublipinski/Silent-Bell,f5555cf0b0751304ec98a68249711507e9119f42,ok,0.7,49,0,,no,,1
+https://github.com/jamfly/SwiftUI-Combine-todo-example,afbd84fb717bfc0169c56d2c40853b313a834334,ok,0.4,29,1,,no,,0
+https://github.com/jamiely/ios-balloon-burst,a25811e1867e063133419fd5c26fd210de3c8f5f,ok,0.4,287,0,,no,,0
+https://github.com/jaredwolff/swift-bluetooth-particle-rgb,4580dce7c3312dd6e55dadc75af7f82754e48ecf,ok,0.4,39,1,,no,,0
+https://github.com/jareksedy/Elseweather,5d74a984bc0a7ba001f6825fb8464213499e033f,ok,0.4,82,0,,no,,0
+https://github.com/Jasdev/Impulse,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/Jasdev/Impulse/'"")",0.2,0,0,,no,,0
+https://github.com/Jasonette/JASONETTE-iOS,44849b19e275251f40398de5462fe80b7590cb4b,ok,0.5,1190,0,,no,,0
+https://github.com/jasudev/FabulaItemsProvider,af08a0815e21889db8251578ec28c2c27e5b27b1,ok,0.4,377,0,,no,,0
+https://github.com/jayhickey/thatmoviewith,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/jayhickey/thatmoviewith/'"")",0.3,0,0,,no,,0
+https://github.com/jazzychad/FlickrWatch,3bdcc222a7ab1bbefe85c450365da9456936ea84,ok,0.4,59,3,,no,,0
+https://github.com/jazzychad/iCloudCoreDataStarter,30ed02f8d38d86ef73435ae447743562684860ff,ok,0.5,43,2,,no,,0
+https://github.com/jbarr21/flews,bbc65972bf0112300ab6115649f7453a059c7518,ok,0.5,151,2,,no,,0
+https://github.com/jbkuczma/NBAreact,5949f4e67f09848f759ba32e6be724e9bd3e796b,ok,0.4,211,1,,no,,0
+https://github.com/jc4p/abby-healthkit,cf9149db360ca28cb26f24e2ab60b66729fefe8a,ok,0.4,38,1,,no,,0
+https://github.com/jcs/endless,c23e86127ea8f172e8682c89e49efeb90012fd68,ok,0.5,165,5,de en,yes,,0
+https://github.com/jdg/packlog,3a7154652ec4e808fd1a5b6528f6a3564161cb3e,ok,0.5,77,0,,no,,0
+https://github.com/jdisho/Papr,c9464b1bf95f2144b96fc68dcc474186c24c855f,ok,0.4,183,1,,no,,0
+https://github.com/jefferyleo/f.lux,142f86d31280e916700163cd245ed2477f07ea96,ok,0.4,27,2,en,no,,0
+https://github.com/jeffkreeftmeijer/UitzendingGemist,ae8d94afa67716f09b50b3e3592db54c0d4fcc46,ok,0.4,68,1,,no,,0
+https://github.com/jeffreybergier/Hipstapaper,2632929a3a65dc9dc8ee4a8b67dfd03cb268c436,ok,0.8,232,3,en,no,,0
+https://github.com/jegnux/SwiftUICameraAppSpeedrunChallenge,27d357fd8cd411429215dad936ced443042fa510,ok,0.4,18,0,,no,,0
+https://github.com/jellyfin/Swiftfin,e3cbfcd3caa573eebfa6fd3c05acfe455e1e6cf4,ok,0.5,1224,58,af ar bg ca cs da de el en enm eo es et eu fa fi fr gl he hi hr hu id it ja ka kk km ko lb lt lv mk ml mn nb nl nn peo pl ps pt ro ru sk sl sq sv ta th tr uk vi yue zh,yes,,0
+https://github.com/jenduf/GenericSocialApp,a92b3a41a96a8d606d38a4622d7946fffd072395,ok,0.5,1171,20,en,no,,0
+https://github.com/jenduf/SwiftFanorona,296219c6270d8f009734c21683a62161cbc6856e,ok,0.4,50,1,,no,,0
+https://github.com/JensRavens/ReactiveKitten,cac2cbbbf4f4930e47a401368df63a63fe0dbe0b,ok,0.4,37,1,,no,,0
+https://github.com/jerald-jacob/Flutter-Apps,dab623bd34ecc2a9955b4281a656ce7eff30671b,ok,0.5,185,1,,no,,0
+https://github.com/jeroensmeets/11t,6bb1662ecfa1ad9fa84b695fc31120a9aa106da4,ok,0.4,96,1,,no,,0
+https://github.com/JerryHDev/1Trackr,fd9339f5a4b0354033c42fd08e29dbb101b5fcc9,ok,0.4,225,1,,no,,0
+https://github.com/jessegrosjean/letters.iphone,5446b809351ac702ce42bac0066830237a68d342,ok,0.4,38,1,en,no,,0
+https://github.com/jessegrosjean/NOTTaskPaperForIOS,455ff0ea1768f6ed0abfc731bc7f5ce8e73c0314,ok,0.4,737,0,,no,,0
+https://github.com/jesusrp98/spacex-go,e797faead94125b1aee0ee750c9b0be53bac1d0d,ok,0.4,343,2,,no,,0
+https://github.com/jhatin94/tempatlas-swiftui,b3ca718715fbe8801a6324d82d7ca54e1a967f8b,ok,0.4,30,1,,no,,0
+https://github.com/jitsi/jitsi-meet,ec8ed338f4dd8378dddf5589e930286740e448ba,ok,1.0,3270,1,,no,,0
+https://github.com/jkandzi/Monotone-Delay,e242b6d6b9f5407902235f6f91339eb948405165,ok,0.8,58,1,,no,,0
+https://github.com/jmfieldman/Light-Jockey,c2f34376a1febe1e0e98846a01899a8df5cb218c,ok,0.4,109,0,,no,,0
+https://github.com/jnordberg/triggy,283e9ac3791eee4d9d927a657fd0855fc503b009,ok,0.4,149,2,,no,,0
+https://github.com/joeldavidw/Chronos,ef2d0a855fdad1bbbc7377690e720d6ec23b9931,ok,0.5,105,0,,no,,0
+https://github.com/joemaddalone/react-native-todo,80145d4487a7fb84d94460a01d6bc9b0ad102a4f,ok,0.4,53,1,,no,,0
+https://github.com/joemasilotti/PebCiti,bbe97b88acd75482f8348c112e0ec118ad777876,ok,0.5,32,0,,no,,0
+https://github.com/JoeStanton/london-react,2f9d2904693fed2b911e44ecbca10aac174f748a,ok,0.5,27,1,,no,,0
+https://github.com/joexk1/JoeBro-Mobile,c9fc9438a929bdf30f0ab16094f833ea7f7200f2,ok,0.4,189,0,,no,,0
+https://github.com/joforsell/Cocktails,5233a6b143944207dbfd45a3caf53ea09f9c35dd,ok,0.4,78,1,,no,,0
+https://github.com/jogboms/tailor_made,d7055c9dc8071b0f91292fe6074d61a5ddd79291,ok,0.4,389,1,,no,,0
+https://github.com/jogendra/gravityBlocks,ff9a6e05523eaf7566acb61411a9468253a7207a,ok,0.4,21,1,,no,,0
+https://github.com/jogendra/phimpme-iOS,c600e8f2b50befab30c7abec1a77b9731edf1bdc,ok,0.8,159,1,,no,,0
+https://github.com/jogendra/technex-ios,b3a997a234f4dafe8ff18b7c128beb4cacd1c3ef,ok,0.7,493,5,,no,,0
+https://github.com/johnmahlon/Coffee-Ratio,213dba80018b12b5eb2dd23ccc9a9e16afbdeb35,ok,0.5,34,1,,no,,0
+https://github.com/johnmci/Scratch.app.for.iOS,a4c16b665ded7baa08026f67c7a4cd6d6c9bda2d,ok,0.6,2473,19,de en fr ja,yes,,0
+https://github.com/JohnWong/bus-today,7da91556832493761ef848f7065186cd7c0c1c2d,ok,0.5,333,1,,no,,0
+https://github.com/JohnWong/textbook,c841f72751bc1a54fe5afd93c084a6d5a6755753,ok,0.8,649,1,,no,,0
+https://github.com/JohnYezub/NewsFeed_SwiftUI_MVVM,815e32dcaf4e4f2172782a5b678c229476d0eb85,ok,0.4,81,0,,no,,0
+https://github.com/Joker462/COVID-19_SwiftUI_Demo,bcae21585f015bbd439d33a0533db59554b0fdd2,ok,0.4,73,1,,no,,0
+https://github.com/jonaspoxleitner/minimalistic_push,c317961b46ee70504e94d23bf843bd4946520b5c,ok,0.4,135,2,,no,,0
+https://github.com/jonluca/PasteBinApp,e39302fd511a20f36dc2dd40c17330161199fc4a,ok,0.4,150,1,,no,,0
+https://github.com/jonomuller/Hodor-Keyboard,1d1dfe6085beedfb5b18293b6411bee3d20d6589,ok,0.4,15,0,,no,,0
+https://github.com/jonrobinsdev/MedKeeper,4a451baba5e5dedc41860733f7038c07fde5a430,ok,0.4,85,1,,no,,0
+https://github.com/jordansinger/lil-news-app,66adfff19f52afedd97938cb2726f5b17c9a778e,ok,0.4,13,0,,no,,0
+https://github.com/jordansinger/lil-wallet,d6d035f90d81a1dd136564eccd7ede882522bf1f,ok,0.4,136,0,,no,,0
+https://github.com/jordansinger/SwiftUI-Kit,1211aa6b1aee07a3860e4f45d5cd5efcfec64509,ok,0.4,110,0,,no,,0
+https://github.com/jordibruin/Dynamic-Islands,38ea32ebf38e3bfa89c03e3fa3ec5b060f11ac85,ok,0.4,64,0,,no,,0
+https://github.com/jordibruin/Swift-Charts-Examples,5134bcfff65ce169ef0b23412d95daef383ea537,ok,0.4,115,0,,no,,0
+https://github.com/joreilly/BikeShare,689c6952e50795909e79bb900a75bb6c377c8923,ok,0.4,730,1,,no,,0
+https://github.com/joreilly/PeopleInSpace,2db46a039837989b3a9337a56bab832318c05fa4,ok,0.5,204,0,,no,,0
+https://github.com/joreilly/StarWars,81bf5cac5026162843d65707590c159e0d3b5d95,ok,0.4,79,0,,no,,0
+https://github.com/joreilly/WordMasterKMP,d08dfdd7fe6610b946bd43a1bb667a5a1d2ebb20,ok,0.4,45,0,,no,,0
+https://github.com/joseph6377/J7seven,2e02d3966ab9fbc34fb248f435db5448a79b0f26,ok,0.5,356,0,,no,,0
+https://github.com/JosephDuffy/Overamped,2d527154f10b88e12e04202d89d42b8d9cb7a4a5,ok,0.4,209,4,en,no,,0
+https://github.com/jpsim/CardsAgainst,e28334f2f2a53b59997579a7a52cd1166e29eb6e,ok,0.4,55,0,,no,,0
+https://github.com/jpsim/DeckRocket,010668fca08667705079cbebb06484934334fb64,ok,0.4,84,2,,no,,0
+https://github.com/jpsim/Milestones,55f12be2879b398588af3a462146d048f572e5cb,ok,0.4,98,1,,no,,0
+https://github.com/jpsim/ZenTuner,74b6862009189f02747c69538e7422c62639b961,ok,0.4,307,1,en,no,,0
+https://github.com/JRock007/Tob,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/JRock007/Tob/'"")",0.3,0,0,,no,,0
+https://github.com/jsdf/ReactNativeHackerNews,8a28faea87f4674c490308cb8a98be057d72b4c2,ok,0.4,48,1,,no,,0
+https://github.com/jspahrsummers/GroceryList,17b83a1563cae1ce0bf3d2f2d8340b58de2ecdf6,ok,0.4,81,2,en,no,,0
+https://github.com/jsphkhan/ReactNativeExamples,c630f0763e41e57793d3dcc639b31385680823b7,ok,0.5,413,9,,no,,0
+https://github.com/jtbandes/SpacePOD,e15633d3896f53f1f443523561997823b5aab31d,ok,0.4,72,0,,no,,0
+https://github.com/jtrivedi/Apple-Cash-Animation,ebc049741b8bfb3fc36fc550efd16fe06f5f96b1,ok,0.4,20,1,,no,,0
+https://github.com/jtrivedi/Mesh-Transform-Animation,73f1cb87e546ee0074bb8b160248a4dce2e6935d,ok,0.7,19,0,,no,,0
+https://github.com/jtsaeed/Hour-Blocks,79a18ba24bb5a005d9e54ff4a1071265a9ec5152,ok,0.5,413,0,,no,,0
+https://github.com/julianschiavo/Covidcheck,0fc1be9fca24d245dde4cc3fb0f2837559553b9c,ok,0.5,755,2,,no,,0
+https://github.com/julianschiavo/Playerly,f4625725f5da1dc612996ff2a65e2e77333af733,ok,0.4,38,1,,no,,0
+https://github.com/JuneDomingo/movieapp,9ccad16770ff0bdc5c656bad35b2f5336b66b941,ok,0.4,99,1,,no,,0
+https://github.com/JustinFincher/GitHubContributionsiOS,50ca2d08b081ada61c0fd50d3b444fd465cc7f98,ok,0.4,594,66,en ja zh,yes,,0
+https://github.com/jzzocc/crystal-clipboard-ios,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/jzzocc/crystal-clipboard-ios/'"")",0.2,0,0,,no,,0
+https://github.com/k-lpmg/GiTiny,4aa75a2587295961ae026f804d4d138a55618297,ok,0.4,219,3,en ko,yes,,0
+https://github.com/kabrapratik28/ThumbFree,b79ce24c87bbdefcf0a5d3ccc3e30a36bef760f2,ok,0.4,770,0,,no,,0
+https://github.com/kahopoon/QR-Blank,909f4497e2d4a2d50b3b05b7b82fe10eb3414044,ok,0.4,132,1,,no,,0
+https://github.com/kaikai2/luminesk5,3b3cf5eb46cc7e4e0474eae8a9149c66e580e651,ok,0.5,453,0,,no,,0
+https://github.com/kalismeras61/flutter_wallet_ui,c280bbedd2eceebb121e76d8420cd4f5f96f5701,ok,0.5,82,1,,no,,0
+https://github.com/Kapeli/Dash-iOS,d47f6e99bacf48f59ffc50ebaa33fa655e3ca11e,ok,0.5,1774,20,en,no,,0
+https://github.com/Karambirov/GitHubSearch,239399d8d724594d13f834e89885d9334a461fe9,ok,0.5,144,3,en ru,yes,,0
+https://github.com/kartaview/ios,dff6d7b0200511e0a748920f8644866d7171bd20,ok,0.6,672,3,en ro,yes,,0
+https://github.com/keepassium/KeePassium,e651df4f89b0b8550371566ca9aa55a964d2904e,ok,0.6,2373,315,ar cs de en es fr it ja ko nl pl pt ru sk sv th tr uk zh,yes,,0
+https://github.com/keitaito/NCCBF-iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/keitaito/NCCBF-iOS/'"")",0.2,0,0,,no,,0
+https://github.com/keitaito/RealmSantaTracker,0709ba06daec35046cd24f606785b4748fdadd62,ok,0.4,427,1,,no,,0
+https://github.com/Keith-43/MuVis-Experimentation,2f1d643e01e3d259e0c3a12b78133e5e93b8df9f,ok,0.4,73,0,,no,,0
+https://github.com/kenmickles/unh_tvos,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/kenmickles/unh_tvos/'"")",0.2,0,0,,no,,0
+https://github.com/kenshin03/Cherry,1f594507cf8f5e37e66f99189851a996d3188ec8,ok,0.4,89,2,en,no,,0
+https://github.com/kenshin03/KTPomodoro,18d66de5d70cbd32f1f23d152d0252bb24e342b7,ok,0.4,101,3,en,no,,0
+https://github.com/kevinvanderlugt/Swift-Walk-Tracker,825d5f56111c27b18b704fbf78633a4206ce9cd1,ok,0.4,24,1,,no,,0
+https://github.com/kevinyou77/Swordfish,8fa939317889400e19782252ff83f6d0dfbb8ec4,ok,0.5,1571,1,,no,,0
+https://github.com/kevinzhangftw/PencilAnnotator,e355e5f32f4c1a162ece62bdc92bc2c2aa872d3e,ok,0.4,18,1,,no,,0
+https://github.com/kevmoo/slide_puzzle,3b45a7cd5982deea15c75e0693d34aa4f8aadb62,ok,0.5,179,2,,no,,0
+https://github.com/kewlbear/OpenClien,12f06d5bc08d6ab6c507107cf7ec18a5d8a130e8,ok,0.5,230,9,en ko,yes,,0
+https://github.com/keyacid/keyacid-iOS,65031da43683ca153350d3a905836c0cbc595c4a,ok,0.5,46,1,,no,,0
+https://github.com/keybase/client,22e5dbbaf3296a385f0aaacd0754a2967b2a89ea,ok,0.6,10204,6,,no,,0
+https://github.com/KeyCoApp/KeyCo,f0a5cb156e750874b12deea83ece385e86eb89b5,ok,0.4,84,1,,no,,0
+https://github.com/kgellci/Area51,557bfe4127b8655da364fa677d7e5245505e76c6,ok,0.4,115,1,,no,,0
+https://github.com/KhaosT/HomeKit-Demo,e66d977cf798806a802231b0a7e4da9f4b4932da,ok,0.4,77,2,,no,,0
+https://github.com/KhaosT/open-apollo,cd50a120196e0589f79a5a04669b54133a838496,ok,0.4,626,2,,no,,0
+https://github.com/khoren93/SwiftHub,5f44f535db8768a930d8703eb67dfec2ae37edf3,ok,0.7,453,1,,no,,1
+https://github.com/khuong291/Flutter-Movie,0aacf2fa88479dc639c2aa8c179b2bb26bac0c1b,ok,0.7,112,1,,no,,0
+https://github.com/kickstarter/ios-oss,0c22209f2c5741fa2bff16f9615d04899d53514c,ok,0.7,5415,10,de en es fr ja,yes,,0
+https://github.com/kiliankoe/ParkenDD,20502ea6ff71954abc31bab5b1d9b9dc409b6544,ok,0.5,416,5,cs de pl,yes,,0
+https://github.com/kimar/TheReservist,f5f852b40510b47cd5364f7ad597d9991db29655,ok,0.4,41,1,,no,,0
+https://github.com/kingreza/SeeFood,bed2cdf5aef0c821b0aac3009d82a55588b15c09,ok,0.4,71,1,,no,,0
+https://github.com/kiokoo/YaleMobile,779162db0369c67b7b212734bbb65e6f0f8dbc37,ok,0.5,1030,2,en,no,,0
+https://github.com/kitasuke/SwiftUI-Flux,63d00f57599f7e51ae233d92d0bd2eed40a8dc80,ok,0.4,35,1,,no,,0
+https://github.com/kitasuke/SwiftUI-MVVM,7b32cfb5e0704034dea445002e3726968b2b7431,ok,0.4,34,1,,no,,0
+https://github.com/kiwix/kiwix-apple,ea620f98f3a1ab584a42daf2fbb00102b150c1cd,ok,1.1,374,40,br da dag de en es fi fr ha he hi ia id ig igl it ja kab ko lb ln mk nl pa pl ps pt qqq ro ru se sk skr sl sq sv tr uk zh,yes,,0
+https://github.com/Kjuly/iPokeMon,6141caa27475a20ec22b75228e7a3b379114c826,ok,0.4,647,5,en zh,yes,,0
+https://github.com/kjwamlex/SpatialDock,7d49321020b5e41290a42c3803c7bebd6f113aa1,ok,0.4,119,0,,no,,0
+https://github.com/KMindeguia/movies,790b71fb762000e87780ed757237769387439fec,ok,0.6,315,1,en,no,,0
+https://github.com/knorthfield/nano-buddha,faac5fe2a68bc1f38a96e7f8b0dc1c217925caf2,ok,0.5,110,0,,no,,0
+https://github.com/KnuffApp/Knuff-iOS,3af886a3fb9db499bd4604615645cc2e629e22a6,ok,0.5,189,1,,no,,0
+https://github.com/kodecocodes/RWDevCon-App,09aa80d7f35ed398ff83b3e8b0317a36b1f60093,ok,0.5,296,3,,no,,0
+https://github.com/kodecocodes/swiftui-example-app-koober,8b64661b37aaf34a879d61e2ce46b2565788e6e8,ok,0.4,339,2,,no,,0
+https://github.com/kolplattformen/skolplattformen,a4a5325786b4f801262183b074c3db12613d4446,ok,0.5,541,0,,no,,0
+https://github.com/korchasa/bg-trainer,30ab954a8d251d48d674642d0b59c36b4bc6f13a,ok,0.4,171,3,ru uk,yes,,0
+https://github.com/korchasa/craftify-byok-ai-shortcuts,aabed321689ddf1c695333953d9b2a8951e4adff,ok,0.4,358,33,bg de en es fr it ja pt ru uk zh,yes,,0
+https://github.com/kostiakoval/WatchKit-Apps,54f5a26211a4a853827d6d31dabb8684d0591e77,ok,0.4,322,14,,no,,0
+https://github.com/KrauseFx/MajorKey,11407511645d7598a4fddc6bb240946a2f377ce8,ok,0.4,171,1,,no,,0
+https://github.com/krazywarez/domain-dig,8cf9349f6b5ad035a8e77101b5d3fa35c774446d,ok,0.4,198,0,,no,,0
+https://github.com/krazywarez/hutch,325f398a24e44998695ee8b30c6fd089eaac9b9a,ok,0.5,270,0,,no,,0
+https://github.com/krille-chan/fluffychat,7dbd1c01fa8dfed1a8a4bf5b53240462b8782d94,ok,0.7,696,29,ar ca cs de eo es et eu fr gl hr hu hy it ja nb pl pt ru sk sv tr uk vi zh,yes,,1
+https://github.com/krishkumar/BlockParty,b7c2b642cde5ddc414ed231295a96c7b86eed1bf,ok,0.5,55,1,,no,,0
+https://github.com/KrisYu/LivelyGIFs,5fca1880d7e41050acbd7997b11de6bae4ba3880,ok,0.6,18,1,,no,,0
+https://github.com/kryptco/krypton-ios,c2c33c1fc9bfaac27a5a9bc3fb54db2f86206d06,ok,0.6,512,3,,no,,0
+https://github.com/kserko/CineReel,8ea3ed23bb796afb894e4ff5af140b20480f3250,ok,0.5,193,1,,no,,0
+https://github.com/ktanaka117/MVPTwitterSample,8373dd1545b52b50c8d75288fc4b6b5d3eded7ed,ok,0.4,112,1,,no,,0
+https://github.com/kudoleh/iOS-Clean-Architecture-MVVM,a68da3e3faad7b221c4015e8aea92ba784666278,ok,0.5,116,3,en es,yes,,0
+https://github.com/kudoleh/iOS-Modular-Architecture,0802d7c8b67c1b61802b36c8c8b7444da1979428,ok,0.6,330,6,en es,yes,,0
+https://github.com/kuglee/TermiWatch,d7ab1fba99e4e4b8a07e9f9e5be2e58c7049dcce,ok,0.4,79,2,,no,,0
+https://github.com/kurozora/kurozora-app,2d5490381cdaa82636855e4c1749287a50625d32,ok,2.8,2205,2,en,no,,8
+https://github.com/kvnbautista/Grinnell-Events-iOS,76b930dac3423bae1238752eaf886d5fb965c365,ok,0.5,245,1,en,no,,0
+https://github.com/kwkhaw/Layer-Parse-iOS-Swift-Example,a7d44ac20b07ea4a3598fca7a1cd3aacab85bc9e,ok,0.7,32,1,,no,,0
+https://github.com/kwonye/calcupad,e6e3c95a9fd1e79b5f320aa5bc555aa7fa508310,ok,0.5,67,1,,no,,0
+https://github.com/kxvn-lx/Ghibliii,324b633e098f57cb6a686eaf8e096ff3bc0e086e,ok,0.6,92,1,,no,,0
+https://github.com/kxvn-lx/Kontax-Cam,55365c0cfcd00f10078f00f948da373cd1f87ce4,ok,0.6,1122,11,en id,yes,,0
+https://github.com/kylebshr/grove-ios,87551f622cd80a98ae7070da497ca657d589fe9a,ok,0.5,1012,47,en,no,,0
+https://github.com/kylebshr/zerostore-ios,62669353fb47b1224f4ca916be9fc6dda5e7cdb9,ok,0.4,166,2,,no,,0
+https://github.com/kyledold/WordOfTheDay,e7409b3d40acee4faf3b790b59b4abc8702f8daa,ok,0.4,148,2,en,no,,0
+https://github.com/kylef-archive/Starship,da9e025d8d0ffe4c8e7bc0e180d32b391cb2a5b9,ok,0.4,201,13,,no,,0
+https://github.com/kylejm/Jim,25cd047958f00cc3fb59ecc2083d185d6e5c9a1b,ok,0.4,100,2,,no,,0
+https://github.com/kyleweiner/Sentiments,3b0f2d52755aa9dce139c04e9c814e906f1ae441,ok,0.4,122,1,,no,,0
+https://github.com/laevandus/OnDemandAPIKeyExample,898a6d79239a7a0beeea8bcefe38f29e416c8214,ok,0.4,13,0,,no,,0
+https://github.com/lanceylai/TSWeChat,a1d371a7b25e8e8eea8747e37289cd3386516602,ok,0.5,1538,0,,no,,0
+https://github.com/LASER-Yi/SwiftUI-APOD,91ef398887a956aebfb5b7d92bffe8606b5a074b,ok,0.5,36,1,,no,,0
+https://github.com/lastfm/lastfm-iphone,24bf13541d92979c2e8f0efd52e7b6093e78c6e9,ok,0.4,517,2,en,no,,0
+https://github.com/latelunchapps/github-contributions-ios,1162077da0ff3df6f3509166640a196abc961175,ok,0.7,155,3,es ja,yes,,3
+https://github.com/latifatcii/DailyNews,cb4817a7b76540a4fc373236e136eb3bcfc97cc3,ok,0.5,312,1,,no,,0
+https://github.com/laurent22/joplin,39cc8a932e07017492bb08bbdcb06ad859c2a6b1,ok,0.6,8655,1,,no,,0
+https://github.com/Lax/Learn-iOS-Swift-by-Examples,b4b52dd94aaa018a1429a042afadd467f46df4c3,ok,0.8,15455,136,en ja,yes,,0
+https://github.com/lazerwalker/cortado,50d937411668e2e7870b1c1f80b9ae3ff11e928e,ok,0.4,215,3,en,no,,0
+https://github.com/lazerwalker/Theseus,7b3fe45d2949b6bea6016b1ba56a25a19074c611,ok,0.5,1473,12,en,no,,0
+https://github.com/ldakhoa/GistHub,05c63a4b9f98401891d0c09a18d9b1547f94199b,ok,0.5,732,1,,no,,0
+https://github.com/leathalman/Jotify,219ed7ee020558cf505494a345ef7c82d3f1f441,ok,0.7,4451,14,,no,,0
+https://github.com/leavenstee/InstaFake-Swift-UI,3769bdab94a8bbc4cb882c4a31f19fab08868edf,ok,0.6,31,1,,no,,0
+https://github.com/leepokai/Codync,b1f2b53ca7e2c31b66c531338013a7ef7210491a,ok,0.6,3915,0,,no,,0
+https://github.com/leichunfeng/MVVMReactiveCocoa,6719fa07a58ad03c6b5b293d83d09b060e80a13e,ok,0.6,2850,172,,no,,0
+https://github.com/LemonPepperSeasoning/Hasher,64d39e46f4f1f2d79a074f8e2dc14ca8323e3af2,ok,0.5,54,0,,no,,0
+https://github.com/leonhandreke/fosdem,39eaf9efbaec7ae4cc4c7ac9c8357b51bc4bb494,ok,0.4,104,0,,no,,0
+https://github.com/lexrus/Huahui,f667f0a48c6fe2e802e00df44728d2afdeeea840,ok,0.6,36,1,,no,,0
+https://github.com/lexrus/VPNOn,147bf6774ef086ebce45db3b7ae36893f85cf229,ok,0.6,238,18,ar de en es fr it ja ko nl pl pt ru tr vi zh,yes,,0
+https://github.com/libretro/RetroArch,10df72e5407c1d7525fef6e1b673b93342be82c0,ok,0.8,7595,4,en,no,,0
+https://github.com/LIJI32/SameBoy,ea667ad79aa28409f034b1fd6da7304e1844750d,ok,0.6,637,0,,no,,0
+https://github.com/lijuncode/SimpleMemo,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/lijuncode/SimpleMemo/'"")",0.4,0,0,,no,,0
+https://github.com/linagora/twake-drive,f5843a8cabf62cf018eab519017416489254ef80,ok,0.7,1221,0,,no,,0
+https://github.com/linagora/Twake-Mobile,f1b612010f02b602932f9b4a73c3b71585ab581c,ok,0.6,822,2,,no,,0
+https://github.com/lionheart/Pushpin,6947a88276f8fc208b4adbb91d832d1d4ce076f0,ok,0.8,1025,9,da de en fr it nl pt zh,yes,,0
+https://github.com/litchie/dospad,2e329c69913a1e3e58a9e12a089d079469521749,ok,0.5,1352,1,en,no,,0
+https://github.com/liu044100/SmileWeather,812658fa82e8ee33727df8962043fedaf88259d2,ok,0.5,228,10,de es fr it ja ko pt zh,yes,,0
+https://github.com/Livinglist/Gem,011842763f06c2bfa4ed43ad936556a714f6d128,ok,0.6,283,2,,no,,0
+https://github.com/Livinglist/Hacki,7cdb8e6b3299ceaed77a0ae55a8409f53a2fae3a,ok,0.7,855,3,,no,,0
+https://github.com/localsend/localsend,8476c091c5a107e4507b6b3ec0cb15a069e857b5,ok,0.5,1037,3,,no,,0
+https://github.com/LocativeHQ/Locative-iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/LocativeHQ/Locative-iOS/'"")",0.3,0,0,,no,,0
+https://github.com/logicalparadox/apnagent-ios,39c6ca16f7d724b47c128ce9358ef8a7d8428dba,ok,1.0,25,2,en,no,,0
+https://github.com/logseq/logseq,cdfe1147e41e7176ac4274e1c9a996268e622250,ok,0.6,2206,2,,no,,0
+https://github.com/lojals/AirCheck,4536fb1412892a0e553dd5c6634d5eca7d54dc7d,ok,0.5,375,1,,no,,0
+https://github.com/lojals/QRGen,452274fec4591632bb67e6d1293767aac22cf1f3,ok,0.4,151,1,,no,,0
+https://github.com/lokii49/mirror,cdf472454c73d99db7a971405b374866e185f597,ok,1.3,896,0,,no,,5
+https://github.com/londonappbrewery/bmi-calculator-flutter,b7f6f4666411b721f6d454eff049ae24742538da,ok,0.4,53,1,,no,,0
+https://github.com/loomax-labs/InferrLM,258261f7fd2e7f54e3772a6f577441de7dec26d9,ok,0.5,648,0,,no,,0
+https://github.com/Loriage/Beszel-Swift-App,99dd60ad6cd828b2a64e31ff55fb7e7cb4e1e63e,ok,0.8,171,0,,no,,1
+https://github.com/Loriage/Mealie-Swift-App,a444acd7cba6e3a3c1f421bf9f72802345fa9e66,ok,0.7,82,0,,no,,1
+https://github.com/Loriage/Minidisc,09789242135b6f63a51cab1f3f6207986bb72c3d,ok,1.0,622,10,de el en es fr it ja zh,yes,,4
+https://github.com/Loriage/Symptile,ef67825acc6e3cc29a2aa2aeed11281a338242b7,ok,0.7,69,0,,no,,1
+https://github.com/louisdh/openterm,cb7f60bbd0e20f3954aad333c9d4f3483e12b779,ok,0.6,1289,1,,no,,0
+https://github.com/louisdh/savanna,56048a14794411de154d586c672fffc8d28fb24d,ok,0.4,402,2,,no,,0
+https://github.com/louisdh/textor,98d6d06b0c9d07f612abc6aad6526b48f38fbdd7,ok,0.7,114,1,,no,,0
+https://github.com/louiskl/Earnote,93306fc55d41b2ad44196c32e1632f286eba5e6b,ok,0.5,419,4,en,no,,0
+https://github.com/ltebean/Live,1fb1680b974acf748ebde6051deec981bc2bd4f8,ok,0.5,69,1,,no,,0
+https://github.com/lucaslimapoa/NewsAPISwift,61450c58abe2260aabff00d0d9af1e6ea4af01a3,ok,0.5,256,1,,no,,0
+https://github.com/lucasqiu/Adler-Mobile-App,c14e3b6032b4c273a7e6021207d3ea8d0d6e6470,ok,0.6,142,2,en,no,,0
+https://github.com/LUGM/TechTatva-15,3699e487f8b258f04a216ec33d1bce8c49c1c2f1,ok,0.6,345,2,,no,,0
+https://github.com/lukeswitz/DragonSync-iOS,79ef33e798c36a109535619aaa72cf34e976f1ae,ok,0.4,200,0,,no,,0
+https://github.com/lukhnos/roundandsplit,d46e3a85015582903b8500bea53f1155ede847b9,ok,0.4,118,1,,no,,0
+https://github.com/LumingYin/PDFToKeynote-iOS,d342a5380d722c961429211557bc299a5f58e74e,ok,0.5,197,2,,no,,0
+https://github.com/LunarFlash/Chaty,4460ce144501952b676aa36b45a3fe8e5a404677,ok,0.5,671,55,,no,,0
+https://github.com/lurado/MovieDict,409e6c37bdc412b5ac848bf1c72f8cc61f355ea3,ok,0.5,114,2,en,no,,0
+https://github.com/Lyndir/Gorillas,796dbf48e48305790b2e73eb727a23b00ecc535f,ok,0.5,453,2,en,no,,0
+https://github.com/Lyndir/MasterPassword,c38f713f059f8cdd091402e3fffb294113216509,ok,0.5,1290,6,en,no,,0
+https://github.com/mackuba/SafariAutoLoginTest,d7b1eb9d3f08258e02e5ba75dedadd32483d1168,ok,0.5,12,1,,no,,0
+https://github.com/macoscope/GrandCentralBoard,6a295b30e65cd155e4e8fd3b5e4dc68ae257e581,ok,0.6,825,1,,no,,0
+https://github.com/MaikCL/PKDex-iOS,824284bb837a2a8f8755f48cff437ade0c62cf60,ok,0.5,101,0,,no,,0
+https://github.com/mainframecomputer/fullmoon-ios,cbc3c8206921afaa7fc4fe3dcdf790a18843226f,ok,0.5,59,0,,no,,0
+https://github.com/MaisaMilena/MyAnimeList,6ba4b855d38e878c805c5b803f499ea9470a71ac,ok,0.5,847,2,,no,,0
+https://github.com/mamaral/xkcd-Open-Source,c23cb9db60a714a3c7d9ca3899d5a610868a24be,ok,0.5,354,39,de es ru zh,yes,,0
+https://github.com/manolosavi/xFonts,06605fd3cc4aedb500656830c3d467add4656090,ok,0.5,156,2,,no,,0
+https://github.com/manosim/gitify-mobile,15fb8bc1181efa82fba20f7df5e8de0962e12266,ok,1.0,97,1,,no,,0
+https://github.com/mapbox/mapbox-earth,fb8037c4928724f4c68453a8f23720afe7962087,ok,0.5,31,1,en,no,,0
+https://github.com/mapsme/omim,1892903b63f2c85b16ed4966d21fe76aba06b9ba,ok,0.9,21670,139,ar ca cs da de el en es fa fi fr he hr hu id it ja ko ms nb nl pl pt ro ru sk sv th tr uk vi zh,yes,,0
+https://github.com/MarcinusX/flutter_ui_challenge_flight_search,2a624d449ee5fcc2190a13cb63ac9b3bcc1284a3,ok,0.4,83,1,,no,,0
+https://github.com/marcusraitner/pulse,bb4c8a14bc7e26eb2bf80b59d94d74584b67adbc,ok,0.9,220,0,,no,,2
+https://github.com/marlon360/grade-calc,1beb423f4dcf956b13245de032c0a8a677a26538,ok,0.4,61,3,de en,yes,,0
+https://github.com/MartinStamenkovski/LibraryGenesis,3125a3729ec137b501560b5e254831e214163895,ok,0.4,69,1,,no,,0
+https://github.com/marty-suzuki/ArtShredder,90a1892a32deecb6bd5e62e0b537de8386e28ed8,ok,0.5,110,3,en ja,yes,,0
+https://github.com/marty-suzuki/GitHubSearchWithSwiftUI,73b5b0a08a27aef3618070a57f8c985be0f68ae5,ok,0.5,24,1,,no,,0
+https://github.com/marty-suzuki/iOSDesignPatternSamples,685847b5f9dbdbb87fc0738ece4b5e4d2ec4eb5f,ok,0.4,54,1,,no,,0
+https://github.com/mastodon/mastodon-ios,0dd671674e157dc36ad7c061ced2c4c819d3760f,ok,3.5,1350,204,an ar be ca ckb cs cy da de el en es et eu fi fr gd gl he hi hu hy id is it ja kab kmr ko ku lt lv my nl pl pt ro ru si sl sv th tr uk vi zh,yes,,14
+https://github.com/materialofair/ZeroNet_Redact,e1fd0365c2293dc5218fe3aa2e90ae20182ba287,ok,0.6,344,10,de en es fr id ja pl pt zh,yes,,0
+https://github.com/mateusz-bak/openreads,f0a99d46b9796f0d1bb7abf1bbb725eb8036e91f,ok,0.6,422,1,,no,,0
+https://github.com/MatheusCavalca/Knock,20b66e48bb068f55959c7ac2bc9cc32d3acbe105,ok,0.5,81,1,,no,,0
+https://github.com/MatheusCavalca/RenovaLivrosUFRGS,e08261abe8b7d5484f3f718c3f7850d0616e6387,ok,0.6,105,1,,no,,0
+https://github.com/mathieudutour/TimeLines,53c5ab05aecd9d04941c4bb79dd28bc6864b711c,ok,0.6,181,4,,no,,0
+https://github.com/matiasvillaverde/mobile-ios-vipergame,7f1f457927fe0b87452bc1e523ed5f2f00d7830a,ok,0.8,166,2,de en,yes,,0
+https://github.com/matomo-org/matomo-mobile-2,b686d3023e498c262598f613ea1e5df9dc579e0b,ok,0.6,557,0,,no,,0
+https://github.com/Mattbusel/chain,b16901d09014edcca65884cf82f4af1de0186516,ok,0.5,248,0,,no,,0
+https://github.com/Mattbusel/ironbook,012bac5d910e70fe8f07c61d635618f5ee811125,ok,0.6,245,0,,no,,0
+https://github.com/Mattbusel/minder,abf2928ce4f05b2daa9c3fe014320ee3dbc21b39,ok,0.6,242,0,,no,,0
+https://github.com/matteocelani/quock,c7d4ab053a1f8f106a998a2e1ea3a6c144569039,ok,0.5,266,0,,no,,0
+https://github.com/matteocrippa/awesome-swift-ios,2962662cdec4a2511419ca2a3dc1bda26e38f603,ok,0.6,80,2,,no,,0
+https://github.com/mattermost/mattermost-mobile,06d6c199f73f6d0f0092c40c3bf857e073fd4011,ok,0.8,4378,23,ar bg de en es fa fr hu it ja ko nl pl pt ro ru sv tr uk zh,yes,,0
+https://github.com/matthewpalmer/Charter,c60fd2eff876ffe6709ea5c544bb054970e8842f,ok,0.6,179,7,es pt,yes,,0
+https://github.com/matthewpalmer/Dictum,99cc11aa96290e0843652dd99c7a96223fd62758,ok,0.5,77,3,en,no,,0
+https://github.com/MatthewWaller/MarkyMarkdown,66c1c75ba976cf734f89f1a30e887eb66d8d7515,ok,0.5,12,0,,no,,0
+https://github.com/mattlawer/FaceLandmarksDetection,87f29d7266ec1b336ab78c62b22521e5ed28788e,ok,0.5,20,1,,no,,0
+https://github.com/mattrubin/authenticator,0c6cdf41e06b52a25e349fe3f52ee304268cd72f,ok,0.6,148,0,,no,,0
+https://github.com/MauriceArikoglu/stocks-ios,0aea4333fee5799f4c19c857a234c4ff6d048fbb,ok,0.5,26,1,,no,,0
+https://github.com/maurovc/aMenjar,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/maurovc/aMenjar/'"")",0.4,0,0,,no,,0
+https://github.com/MaximeHeckel/sunshine-weather-app,ef851f2bd87d6fd8111a13bf6b28e9aee921351e,ok,0.7,83,0,,no,,0
+https://github.com/mbcrump/TasksForSwiftWithPersistingData,a6610d1eda88c9105999371ff40fa211e0f661ba,ok,0.6,47,1,,no,,0
+https://github.com/MCJack123/craftos2,2844cba6184e7e2590910d6c2c33697b9b5ff9fd,ok,0.6,184,0,,no,,0
+https://github.com/mdanics/fluttergram,d372cfd8e34994af5f774a25b3d4ae147d3965aa,ok,0.8,93,1,,no,,0
+https://github.com/Mdavoigneau/Unreeled,6405ddd0bff6df4e27e08632cf31c87c944bab7c,ok,0.8,77,0,,no,,0
+https://github.com/MDSADABWASIM/Toughest,9dbe81cb0980af9474faccb68e0463fe48957571,ok,0.7,115,1,,no,,0
+https://github.com/mecid/swiftui-recipes-app,e5a08e8c48fb59cc5884b66eba09d48bee2b86bb,ok,0.7,70,1,,no,,0
+https://github.com/meditohq/medito-app,ce0ef3336452c85198c6ba70be082b1426a16e01,ok,1.0,1446,1,,no,,0
+https://github.com/MeetPoint-App/meetpoint-ios,0c148d100ba33636b646b821e319827aae467fe0,ok,1.1,13616,302,,no,,0
+https://github.com/megabyte0x/healthysync,def7f82b2f50115b126a7deb413c22ca21957fde,ok,0.8,186,0,,no,,0
+https://github.com/meggsila/EmployeeCheckin,53809a38d33e095cff67d8621cbe688f48424a31,ok,0.8,31,1,,no,,0
+https://github.com/mehrankmlf/EasyCrypto,befca355402723af02d7ba250edc37c85b3dcf72,ok,0.8,163,0,,no,,0
+https://github.com/MemeMaker/Meme-Maker-iOS,ebabce0ac772161352a9193bbd46cb65fd8dc7e8,ok,0.8,445,6,,no,,0
+https://github.com/MengTo/DesignerNewsApp,a3eb81efe2d559e2d60fb5dcfbde765938516066,ok,1.2,401,15,,no,,0
+https://github.com/Merlin1A/resecta,d5ebb0da126569371807da8b856d231a989b0624,ok,1.6,1189,0,,no,,1
+https://github.com/metabolist/metatext,96d2ff3a2bc124ead9eae49099d75280611cabba,ok,0.7,565,20,ca cs de el en es eu fr gd he ja ko pl pt ru sv uk zh,yes,,0
+https://github.com/metal-by-example/learn-metal-cpp-ios,d966e516631f42bac8febdb44d955a545fac4661,ok,0.7,197,1,,no,,0
+https://github.com/metal-by-example/metal-spatial-dynamic-mesh,8b04589f51bae9b64d7f4356c14d5a544437c4a8,ok,0.6,30,0,,no,,0
+https://github.com/meteochu/Blurry,bccb0aeb413acce4c203123acc40625cda3594ad,ok,0.7,78,1,,no,,0
+https://github.com/mgiuditta/sbu-apps,4b8e41317ea84f781ca0b6ace9ff33149791d4a8,ok,1.5,4596,0,,no,,20
+https://github.com/MhdHejazi/CoronaTracker,9add7608522b498dc5bfa617867ceab9722bf946,ok,0.7,168,26,ar da de el es fr hr hu id it ja ko ku nb nl pl pt ro ru sq sv tr uk zh,yes,,0
+https://github.com/miataru/miataru-ios-client,fabea3ed3d2f1f7120c21aba055c0612a3851177,ok,1.6,2793,30,da de en es fi fr it ja nl zh,yes,,19
+https://github.com/michaello/Aloha,cb7143b91e9a0597c9107cbd86be650595989263,ok,0.5,173,2,en,no,,0
+https://github.com/michaelvillar/remote,5a4ba451fe9e954dda44508dc1d0ba1fda287de8,ok,0.6,68,2,,no,,0
+https://github.com/MichMich/SwiftTextClock,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/MichMich/SwiftTextClock/'"")",0.4,0,0,,no,,0
+https://github.com/mick-schroeder/PotatoGame,060c45bfe867d57ea4255bebafd3aafbf62c0b1a,ok,1.1,475,0,,no,,1
+https://github.com/microdotblog/microblog-ios,18ee225c72fc3951a8bcaa64b76071629f558579,ok,0.6,1052,21,da de en es fi fr it ja ko nl no pl pt ru sv tr zh,yes,,0
+https://github.com/microdotblog/strata,e4ae798d951788525a1382070d01ee7b387697ce,ok,0.5,176,0,,no,,0
+https://github.com/migueldeicaza/SwiftTerm,faf7ce8d757343fbacc7e165f40c6751b8229a78,ok,0.5,601,2,,no,,0
+https://github.com/migueldeicaza/SwiftTermApp,38c3269d934473a52e3e5270b5a17130b18f603e,ok,0.4,215,2,es,yes,,0
+https://github.com/mikaelacaron/Basic-Car-Maintenance,f42a49b6196122337f9f9469f4cebe2f66f74d76,ok,0.8,183,0,,no,,1
+https://github.com/mikaelacaron/brain-marks,025cbbb20df75c958df426bb63866cfce757b5e1,ok,0.5,131,5,de en es fr id,yes,,0
+https://github.com/mikelikesdesign/SwiftUI-experiments,8deaa990341aca40ce75395cf7821151294c044b,ok,0.7,706,0,,no,,0
+https://github.com/mikkoj/NortalTechDay,3c3edb7d280197572a31843da1ab00ca6957a42f,ok,0.6,226,59,,no,,0
+https://github.com/millenomi/diceshaker,5c99c8a8ce3044eabc7281b0dcfc965d11b5af27,ok,0.5,191,2,en,no,,0
+https://github.com/minchopm/chess-trainer,edc11eb6c6adc0e1249fd5284146548429933452,ok,1.4,1047,0,,no,,2
+https://github.com/Minds/mobile,fc8c37b75c3dde1b0233e1b8ad0dcc00589b953f,ok,0.6,11,0,,no,,0
+https://github.com/ming1016/RSSRead,2a50b090d3401aad08bd29438c913419c73afb3b,ok,0.4,157,2,en,no,,0
+https://github.com/minh-ton/reynard-browser,8ded3486821e6c922b5f2985274aefdc86752344,ok,2.0,1139,0,,no,,4
+https://github.com/minhealthnz/nzcovidtracer-app,bd0c96af2f3c6945b7a1cb666acc4b7c32624810,ok,0.5,1487,0,,no,,0
+https://github.com/MiniKeePass/MiniKeePass,9b42e000a0925a40c7fbf11454316784703065cb,ok,0.5,517,11,de en fr it ja nl pt ru sv tr zh,yes,,0
+https://github.com/minvws/nl-covid19-notification-app-ios,30825841c4336d2523c041f051b105950ebf1de6,ok,0.8,5099,59,ar bg de en es fr nl pl ro tr,yes,,0
+https://github.com/misteu/VocabularyTraining,3cad2de293f7bbc17ebed3d6043ce89d54589aa1,ok,0.9,106,6,de en hi nl pt,yes,,1
+https://github.com/mitchtabian/Food2Fork-KMM,cba23853684f21ce5d81e9ffb272ec5f9d8790a0,ok,0.5,170,0,,no,,0
+https://github.com/mizadi/iOSImageGenerator,3bfbdb11df8275caba8c4469c02711c26a6d5ca7,ok,0.5,11,0,,no,,0
+https://github.com/mjcuva/Chess,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/mjcuva/Chess/'"")",0.3,0,0,,no,,0
+https://github.com/mjcuva/Hidrate,92559e1868e29dbd15008d81e516be26e89a0260,ok,0.5,315,3,en,no,,0
+https://github.com/mkhrapov/tictactoe-ultimatum,fa317b913c6829d93a3aa845107194deb910b729,ok,0.5,54,1,,no,,0
+https://github.com/ml-explore/mlx-swift-examples,ef1084dd5692611a8758b24b07efdad5404ac3ce,ok,0.5,194,0,,no,,0
+https://github.com/mlemgroup/mlem,0a12cd3b5c4d16e77736bd5d263e9ce5e279a84c,ok,1.5,1347,1,en,no,,3
+https://github.com/MohGovIL/hamagen-react-native,0dcfcebc3f54d1e279afa2ab44ebaeaf87979bb3,ok,1.2,292,1,,no,,0
+https://github.com/molcik/swiftui-elements,58dd23f86c2735bfc24c62309cc406011949e341,ok,1.0,202,1,,no,,0
+https://github.com/monal-im/Monal,23225aa3c36f412cde3f50bdb1a33acf9010d041,ok,1.0,539,2,,no,,0
+https://github.com/mongodb-developer/BlackJackTrainer,849f39cd99ee546aa2cb25274f5c1d7a72fa44a0,ok,1.0,85,0,,no,,0
+https://github.com/moonlight-stream/moonlight-ios,02dc9780496eeeac6d01c8bbdccb8b6fe71ef28a,ok,0.9,558,3,en,no,,0
+https://github.com/moowahaha/Chuck,e31786fde8d4b2dc3c64764608445671be649597,ok,0.9,33,1,,no,,0
+https://github.com/MoralCode/MetricTime,b033ea7c3b7836ff15cf04d55c5bcbc9a30666da,ok,0.4,44,1,,no,,0
+https://github.com/MoralCode/MiamiSunglasses,8704aee4cf3db392855925d00c767d4231f13823,ok,0.5,21,1,,no,,0
+https://github.com/MotionMobs/Sandwhich,8266b1fce4e8b30c41779a835b090af386b88ce8,ok,0.4,123,1,,no,,0
+https://github.com/movingparts-io/Pow-Examples,ee435c56efaa03e03a04ded00b757af4b7f53011,ok,0.9,114,0,,no,,0
+https://github.com/MoZhouqi/PhotoBrowser,616b506025c508c923bba196dbd2d6ad86356449,ok,0.5,119,1,,no,,0
+https://github.com/MoZhouqi/VoiceMemos,872c9a0916794bd0ed17fd5704d3527d2e9f65af,ok,0.4,70,1,,no,,0
+https://github.com/mozilla-mobile/firefox-ios,13c95cb20e4c9570af2175529802f597cf010f40,ok,18.6,14103,864,ab af am an anp ar ast az be bg bn bo br bs ca co cs cy da de dsb el en eo es et eu fa fi fil fr ga gd gl gu he hi hr hsb hu hy ia id is it ja jv ka kab kk km kn ko lo lt lv ml mr ms my nb ne nl nn nv ny oc or pa pl pt rm ro ru sat scn ses si sk sl sq sr su sv ta te tg th tr tt tzm ug uk ur uz vi zh,yes,,0
+https://github.com/mozilla-mobile/focus-ios,a2832521c1daa0c23419c73705ae043ed60c9791,ok,1.9,1537,358,af am an ar ast az be bg bn br bs ca co cs cy da de dsb el en eo es et eu fa fi fil fr ga gd gl gu he hi hsb hu hy ia id is it ja ka kab kk kn ko lo lt lv mr ms my nb ne nl nn pa pl pt ro ru ses si sk sl sq sv ta te th tr tt uk ur uz vi zh,yes,,0
+https://github.com/mozilla-mobile/prox,31afae1f06984004f52e1d3261f737b8e6ad99ac,ok,0.5,315,1,,no,,0
+https://github.com/mpak/Workdays,dbab231610ab0eabf98c9fa0d7de29a1bf844c09,ok,0.4,87,8,en ru,yes,,0
+https://github.com/mperovic/my41,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/mperovic/my41/'"")",0.2,0,0,,no,,0
+https://github.com/MrAdamBoyd/DownTube,f4f0e0970f5e23d7ed5847e0d43585a61c34824f,ok,0.4,146,2,,no,,0
+https://github.com/MrAdamBoyd/Pictograph,fb4eca8a4b45d50d0e1c82ac1b8e442e1a7121f3,ok,0.5,642,124,,no,,0
+https://github.com/MrKai77/Binary-Clock-iOS,ef1a40300b52411b5a72926dae6ab989d424d0b5,ok,0.4,47,0,,no,,0
+https://github.com/mrzmyr/pixy-mood-tracker-app,b3d1e24bc8656f3d1449c0838d2d890444dd9aed,ok,0.6,1435,0,,no,,0
+https://github.com/msal4/royal_news,6240d7835caf07774b304026fa39d593a0318e23,ok,0.5,54,1,,no,,0
+https://github.com/msasikanth/twine,15d06cbe86dbe385ecd4d87f6f43b5d2a0564899,ok,0.9,998,0,,no,,1
+https://github.com/mshll/Color-Way,28722eed6558fd360bf73caec664c7b9238bb42e,ok,0.5,171,1,,no,,0
+https://github.com/mslathrop/SwiftNote,fa509afc71527fa5261fc9d23d1e90d78222adc9,ok,0.4,28,1,,no,,0
+https://github.com/mssun/passforios,cb836aaeda1828fd9aff55773c3d355d049dc426,ok,0.5,382,6,de en it,yes,,0
+https://github.com/MSzalek-Mobile/weight_tracker,bd00186f3ba7d6a8b675d283143a182651df8d67,ok,0.4,88,1,,no,,0
+https://github.com/mullvad/mullvadvpn-app,b8e8e546761906599e153a0feffe4d410aea5ab3,ok,1.9,7030,19,da de es fi fr it ja ko my nb nl pl pt ru sv th tr zh,yes,,3
+https://github.com/mumble-voip/mumble-iphoneos,d390cf28b759bfb40ebf2ff0a40f2700e0f5bcb7,ok,0.5,265,3,da en,yes,,0
+https://github.com/music4kid/TKeyboard,429f955199caad24a8c6e3fc6311f3f735b7f568,ok,0.5,288,7,en zh,yes,,0
+https://github.com/mutualmobile/Counter,e242750875dab5869744e102f4faa3faa3ecd942,ok,0.5,337,2,en,no,,0
+https://github.com/mutualmobile/VIPER-SWIFT,ccf1d62fa9d99e6490134faf1b70b6ae70b5d3fe,ok,0.4,78,1,,no,,0
+https://github.com/mxcl/SelfieAssist,8619c1669781d32f1cfb6965648820d84c63b57a,ok,0.4,37,1,,no,,0
+https://github.com/Mynigma/M,4af86e29e182408aecfe82c9f044bfefba534591,ok,0.7,3807,111,de en fr,yes,,0
+https://github.com/mythxn/DesignCode-SwiftUI,24084573ea8d3fae6b831fe45edf3a0c74ae0bdf,ok,0.6,93,1,,no,,0
+https://github.com/mzabriskie/PocketNode,e609aeb0bf7cb60a7e1eb3bf49dd6be87fd6903b,ok,0.6,47,1,,no,,0
+https://github.com/Naituw/CutTheNotch,4954cd9151d307d8dd7a27b26d0887cb48c3ecf7,ok,0.6,48,2,en,no,,0
+https://github.com/nalexn/clean-architecture-swiftui,9eca97b8cfff96a14084b564b1fefd949c93d232,ok,1.0,76,0,,no,,1
+https://github.com/naoyashiga/Dunk,49445e6d21cfa7af11e56ea714aa0d942d9f56a7,ok,0.6,47,1,,no,,0
+https://github.com/nate-parrott/tortellini,33945acfe851f0acb00c1b60f911f8ac8b43834b,ok,0.5,70,0,,no,,0
+https://github.com/nate-parrott/uhohlingo,1dafd54bca40188ec483f61fa646f6930e33562a,ok,0.5,61,0,,no,,0
+https://github.com/nate-parrott/web98,9b40b3a4f8426696dae3ca4626ddf5da98f6c5a6,ok,0.4,41,0,,no,,0
+https://github.com/nathanborror/logger,ffc0cddd988073236799efbda41f05334e69d62f,ok,0.6,59,1,,no,,0
+https://github.com/NathanFallet/MorpionTPE-iOS,fe87572ecdcd0faa7e54785d17f9be962c120041,ok,0.5,54,6,de en es fr ru,yes,,0
+https://github.com/NathanFallet/OCaml,871ea233cc2f5a07d6c59ac1c225d2c3f27315f3,ok,0.4,182,4,de en fr ja,yes,,0
+https://github.com/nathanmsmith/MirrorPlusPlus,43080e221f044f9a576151e181e9c5da0b12e50e,ok,0.5,114,2,,no,,0
+https://github.com/nathantannar4/Parse-Dashboard-for-iOS,73a11300dad0167f8cb799e2e471744b2d7c0286,ok,0.5,484,24,de en es fr it ja ru zh,yes,,0
+https://github.com/nathfreder/HNNow,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/nathfreder/HNNow/'"")",0.3,0,0,,no,,0
+https://github.com/NavdeepSinghh/RxSwift_MVVM_Finished,97beb027b1e84eda74e671835985d90c85f0bbeb,ok,0.5,314,1,,no,,0
+https://github.com/ndfred/iperf-ios,3df8759081281e6864df3588530cb53d04f3c2f6,ok,0.5,87,0,,no,,0
+https://github.com/nebs/hello-bluetooth,dec9610b2e029b2d119fbcefb5e8bae96c7df57f,ok,0.4,23,1,,no,,0
+https://github.com/Neko3000/Iris.iOS,2a5eedb61820d909f0ec6202379792d16e5cca74,ok,0.5,559,1,,no,,0
+https://github.com/Neko3000/Monotone,8c28256781a51f7c1b15f536b887710f3561e6b2,ok,0.8,633,3,en zh,yes,,0
+https://github.com/nemecek-filip/CompositionalDiffablePlayground.ios,7bbc7612548ffe6d8b11906fdf376ccdd0987153,ok,0.4,162,1,,no,,0
+https://github.com/neodroid/Parallax-Card-SwiftUI,ded1b9967836d3f522d9a4f1f3cc092cfd5a60e7,ok,0.4,27,0,,no,,0
+https://github.com/neonichu/CoolSpot,49cd3b383e89d249d86d77499fddc376c1e75dbe,ok,0.4,44,1,,no,,0
+https://github.com/neonichu/EmojiFireplace,03a6d87da4b093087bb25b888157eefa6c98647f,ok,0.4,29,1,,no,,0
+https://github.com/neonichu/Places,1d67bc56710e27ebae91d81a4d80175f0ef2dd28,ok,0.4,21,0,,no,,0
+https://github.com/NeoTeo/IpfsIosAppExample,ef134886ec2aaf0c97a2ae9f6aa04ebac090fe66,ok,0.4,13,1,,no,,0
+https://github.com/nerdsupremacist/CovidUI,c0301b5ba43e9d08a02d492f62253f5a03922c4b,ok,0.4,66,1,,no,,0
+https://github.com/nerdykidtech/Autheris,469ef0e8c94683b12415ca967632617b5a0d2c01,ok,1.4,338,0,,no,,4
+https://github.com/Netfilter-Com/PopulationClock,0e8e4b60f56a4bd61c371e081a9c9365bf1f9c8a,ok,0.5,702,4,en pt,yes,,0
+https://github.com/netguru/baby-monitor-client-ios,1294b39c688dd3a2c3a421ccad7475f3e50b08c6,ok,0.5,653,2,en,no,,0
+https://github.com/netless-io/flat-ios,18fe31c0c765c9ecf6dfe7d17e9dfd5122a51dce,ok,0.6,1086,9,en zh,yes,,0
+https://github.com/newlinedotco/FlappySwift,28f566e9ae4c7b240ecd4a90f30e0c943564bad8,ok,0.6,31,1,,no,,0
+https://github.com/nextcloud/ios,9b891a76acf936bd00bf53f62970cdba05493b9b,ok,3.9,1191,158,af an ar ast az be bg bn br bs ca cs cy da de el en eo es et eu fa fi fo fr ga gd gl he hi hr hsb hu hy ia id ig is it ja ka kab km kn ko la lb lo lt lv mk mn mr ms my nb ne nl nn oc pl ps pt ro ru sc si sk sl sq sr sv sw ta th tk tr ug uk ur uz vi zh zu,yes,,0
+https://github.com/nextcloud/talk-ios,6c7aeaed466d52ea897a688bfe56e3dd762899d6,ok,3.3,991,108,af an ar ast az be bg bn br bs ca cs cy da de el en eo es et eu fa fi fo fr ga gd gl he hi hr hsb hu hy ia id ig is it ja ka kab km kn ko la lb lo lt lv mk mn mr ms my nb ne nl nn oc pl ps pt ro ru sc si sk sl sq sr sv sw ta th tk tr ug uk ur uz vi zh zu,yes,,0
+https://github.com/ngs/ci2go,a901e6d36d5034a7674916f7d94962e309f0ae75,ok,0.9,888,3,,no,,0
+https://github.com/nhsx/COVID-19-app-iOS-BETA,1f322433ef1567085a8f08530a56c29313c7f21e,ok,0.9,361,2,en,no,,0
+https://github.com/niazoff/Chat,81949c3304dc0975bc57d4035a9bbde4359b70d2,ok,0.7,37,1,,no,,0
+https://github.com/niazoff/Weather,bb70410071f9d7e29a7d4565595167d81b7faa3f,ok,0.7,28,0,,no,,0
+https://github.com/nicedreamzapp/RealTime-Space,81b4ca7db7116ae8884811f28db93f4aefad41e5,ok,0.6,347,0,,no,,0
+https://github.com/nicklockwood/Chess,dce9734320dfb41e396fb44ea66994e8b4efa474,ok,0.8,65,1,,no,,0
+https://github.com/nicklockwood/Swiftenstein,9bb66622f3315c3e90089694c8ef45434cfe4e98,ok,0.5,149,1,,no,,0
+https://github.com/nicklockwood/Swune,d5c900f84e22a2d5d63e65a33be836bad13392d1,ok,0.5,120,1,,no,,0
+https://github.com/nicolapps/4clock,552637a5b6368a2979d6d26eddcb2ca932bfa826,ok,0.5,11,0,,no,,0
+https://github.com/niftycode/ZeitSuche_iOS,daae11ae9b82e5995b42018619870a387d4e692a,ok,0.4,31,1,,no,,0
+https://github.com/NiftyTreeStudios/Bean-Juice,13d4ebb22279883caeed32f11d2a24582c146939,ok,0.6,92,0,,no,,0
+https://github.com/nightscout/nightguard,608be1b5484a177e143a7880040846926bd302fa,ok,0.6,452,12,de fi zh,yes,,0
+https://github.com/NikantVohra/HackerNewsClient-iOS,1e7e2f4605f72d02b2771dbbbb2a4b4eb559f480,ok,0.4,177,1,,no,,0
+https://github.com/nikitamounier/tapit-app,61e3eb4dfc96f4345b4612fbedacfc053ba284c0,ok,0.5,116,0,,no,,0
+https://github.com/niochat/nio,bccc7792f92a605009a3f6069e179300e5176c04,ok,1.9,291,37,ar bg de en es et eu fa fi fr fy hr hu id it ja ko lo lt nb nl nn pl pt ru si sk sq sv ta tr uk vi zh,yes,,0
+https://github.com/noluyorAbi/lyricar,83dca491f3399f3256993ec3ea7390f882c850f9,ok,0.6,160,0,,no,,0
+https://github.com/noodlewerk/Apple_Watch_Calculator,d0dc076be63e9e5c605ecef145d6da4c1fda11d0,ok,0.5,26,1,,no,,0
+https://github.com/noodlewerk/NWPusher,c91a8e08c43c662b08b9f0d816f107bb3b2470a4,ok,1.6,55,0,,no,,0
+https://github.com/noppefoxwolf/DesireKeyboard,f4caba5525cbd1f8a09ec4aa56133d16229bcf7c,ok,0.8,34,1,,no,,0
+https://github.com/Norbert515/BookSearch,6beef4c109a47c6bd6906e6aef38388df740843b,ok,0.6,93,1,,no,,0
+https://github.com/nothingmagical/cheddar-ios,8405892196e5f0df6a7316bb41bdf41833ef9751,ok,0.6,254,1,,no,,0
+https://github.com/nothingmagical/coins,ca0120116f3826f971bf88047f19b6a1c258df28,ok,0.6,70,2,en,no,,0
+https://github.com/nottombrown/HausClock,0685486514d0ada762b69ccc0dca03c52f7f4f49,ok,0.6,43,1,,no,,0
+https://github.com/novinfard/SmartWallet,19acb7366c8c439df2448dcccbf836f78767d4ac,ok,0.6,189,2,,no,,0
+https://github.com/novinfard/TranscriptionHelper,92b73117938c8c62be9825606777a644fb009fe1,ok,0.6,188,1,,no,,0
+https://github.com/NozeIO/NeoIRC,eae6938b2f67788ef6e124b3013d9c8d5a8fd7c8,ok,0.6,56,2,,no,,0
+https://github.com/nploi/corona_tracker,832b94e402897e20bb7595e522af0ca6c3cd52c7,ok,0.8,143,1,,no,,0
+https://github.com/nsoojin/BookStore-iOS,48c6c0fdc9e30ddf99b42d96f57a8920197944d5,ok,0.6,97,1,,no,,0
+https://github.com/nthegedus/ReviewTime,3f1522ea008c1d503d4f91705cf92473a6eed1af,ok,0.8,521,43,en pt,yes,,0
+https://github.com/ntnhon/Random-SwiftUI,5482790ffd1ac73e778f3874e1a26582d94bf898,ok,0.8,57,0,,no,,0
+https://github.com/OathWallet/oath-wallet,235b3c8a3e7501356f5d1c14c01f72d9b17dcb56,ok,2.1,5185,0,,no,,3
+https://github.com/objcio/app-architecture,d6315670bca57f5184266f6f7e380cd1c829ae1a,ok,0.8,334,10,,no,,0
+https://github.com/objcio/issue-13-viper,91fa8d76596cc48a455f06d5f241352293e51f66,ok,0.6,118,3,en,no,,0
+https://github.com/objcio/issue-4-full-core-data-application,3bd5b5a16f5c118b38e96539e8cef740695b07d5,ok,0.6,31,2,en,no,,0
+https://github.com/oblador/hush,2e96f4f7cde66ecf12f27c75b2c4cd5e64708728,ok,0.7,103,0,,no,,0
+https://github.com/obviousjim/ColorCipher,b66392f13fde47ca60732a500ffdbffbc2734500,ok,0.6,122,0,,no,,0
+https://github.com/ogoguel/activegs-ios,dab26a535678e9262f5c3b7436c3930e8ccaab5d,ok,0.8,516,0,,no,,0
+https://github.com/oleksii-demedetskyi/SwiftUI-UDF-Demo,599b1b4c4e0a65c6b0710c8dd531f87850cea3e2,ok,0.6,69,1,,no,,0
+https://github.com/olucurious/awesome-arkit,badeebcc2d5c0fa437bd7514e907877f0ead1685,ok,0.6,6,0,,no,,0
+https://github.com/omichde/Telemat-tvOS,24316bd8943be667e6de3ac3d017dd3dd1f1a345,ok,0.6,68,1,,no,,0
+https://github.com/omz/AppSales-Mobile,ac17736ada11580460e9ce7c0f5c8a43d3a30ba5,ok,0.8,699,0,,no,,0
+https://github.com/OneBusAway/onebusaway-iphone,f1061b8293ac06f018f432fab4e70bf240660859,ok,0.9,6413,50,en es,yes,,0
+https://github.com/onehumanbeing/esp32-iphone-agent,92b472fe0d46e0e8802c67915d20b236d145ab0e,ok,1.2,495,0,,no,,4
+https://github.com/OnionBrowser/OnionBrowser,61bd421a971fc0fe942eaa3156fbe681950961ba,ok,0.6,770,39,ar bn ca cs de el en es fa fi fr ga he hi hr hu id is it ja km ko mk nb nl pl ps pt ro ru sq th tr tt uk vi zh,yes,,0
+https://github.com/onionsapp/Onions-iOS,f34e9d57bef64a084ddbd290259cedaca6c337c7,ok,0.6,66,2,en,no,,0
+https://github.com/onionshare/onionshare,53d496b7fc129085b420e4f2eea96d7b75e408bb,ok,1.0,1283,0,,no,,0
+https://github.com/onl1ner/BarcodeScanner,858fad8682bca149823407c4082a3335e89730ff,ok,0.6,57,1,,no,,0
+https://github.com/onmyway133/Recipes,a20b0ef6077e3ff9be84e74a1676ee0aed3f7e40,ok,0.7,83,1,,no,,0
+https://github.com/ooni/probe-multiplatform,1f67562f889e991c9bdd3f498611435307a385a1,ok,1.0,4131,1,,no,,0
+https://github.com/open-trackers/Gym-Routine-Tracker-Watch-App,a7b48ba38f3660afcd036c632d6745d1523faf63,ok,0.8,27,0,,no,,0
+https://github.com/OpenASL/Fingerspelling-iOS,64f62460a630f9918e98669b66a7d347c05002a2,ok,0.8,179,0,,no,,0
+https://github.com/openclaw/openclaw,f947b3caf5d0fb04c780205dfeff509d87cd2527,ok,3.3,66020,84,ar de es fa fr hi id it ja ko nl pl pt ru sv th tr uk vi zh,yes,,2
+https://github.com/OpenCovidTrace/octrace-ios,0efe94e266176ac3b2ec8c761d8df35937df7ca0,ok,0.9,100,1,,no,,0
+https://github.com/openfoodfacts/openfoodfacts-ios,35cf4ea57788a953b8a2001de0f68beea00ebb9a,ok,5.7,2913,152,aa ach af ak am ar as ast az be ber bg bm bn bo br bs ca ce chr co crs cs cv cy da de el en eo es et eu fa fi fil fo fr ga gd gl gu ha he hi hr ht hu hy id ii is it iu ja jv ka kab kk km kn ko ku kw ky la lb lo lol lt lv mg mi ml mn mr ms mt my nb ne nl nn no nr oc pa pl pt qu rm ro ru sa sat sc sco sd sg sh si sk sl sma sn so son sq sr ss st sv sw ta te tg th ti tl tn tr ts tt tw ty tzl ug uk ur uz val ve vec vi vls wa wo xh yi yo zea zh zu,yes,,0
+https://github.com/openfoodfacts/smooth-app,82fe7a57c70e02625470cb38112dadc936b2e69e,ok,2.4,2065,131,aa af ak am ar as az be bg bm bn bo br bs ca ce co cs cv cy da de el en eo es et eu fa fi fo fr ga gd gl gu ha he hi hr ht hu hy id ii is it iu ja jv ka kaa kk km kn ko ku kw ky la lb lo lt lv mg mi ml mn mr ms mt my nb ne nl nn no nr oc or pa pl pt qu rm ro ru sa sc sd sg si sk sl sn so sq sr ss st sv sw ta te tg th ti tl tn tr ts tt tw ty ug uk ur uz ve vi wa wo xh yi yo zh zu,yes,,0
+https://github.com/openhab/openhab-ios,8a46916730ade9f8623e9c7d499a954c7c4e12a2,ok,1.7,680,9,de en es fi fr it nb nl ru,yes,,2
+https://github.com/openopus-org/concertmaster_ios,9669dd5c16107970470022f8a94b695dd6fd46be,ok,1.0,247,1,,no,,0
+https://github.com/OpenSesameManager/OpenSesame,ce308669e9cfc17a28f243480d4b1ecf58b82e56,ok,0.6,204,2,,no,,0
+https://github.com/openshopio/openshop.io-ios,cd342de0e5e257ce090710c8c04147c4a5d71c87,ok,1.2,3253,9,cs,yes,,0
+https://github.com/opensourceios/AccountBook,5c908d57d01230a3882bdce369156937d07a65d9,ok,0.9,83,3,en zh,yes,,0
+https://github.com/opensourceios/AirBnb,987aeaacbe1ec481bce844a45d3340aadf246163,ok,0.9,110,1,,no,,0
+https://github.com/opensourceios/AmericanChronicle,ad8f938af67e02b71a0e17dbe683a130c0630b8e,ok,0.7,405,1,,no,,0
+https://github.com/opensourceios/Anypic,a9e87fd6c3878439f78d0286c02b3e40c11eae2f,ok,0.8,328,1,en,no,,0
+https://github.com/opensourceios/AnyWall,10dcbbad1530907c00b2a39ff11e893006bce106,ok,0.7,377,1,en,no,,0
+https://github.com/opensourceios/Aozora,9936f6d44d1752a6ee38e1ee5d67fa9ecf40049c,ok,0.7,629,47,af ar bn cs da de el en es fi fil fr gu he hi hr hu id it ja kn ko ml mr ms nb nl pa pl pt ru sk sv ta te th tr vi zh,yes,,0
+https://github.com/opensourceios/AppleWatchFaces,a393d72f2f0302919e629751bb3a0cb996bc7cef,ok,0.8,281,3,,no,,0
+https://github.com/opensourceios/ARArtAttractors,56af960ede7c363f60f1d1e76574e7c5fc57fe09,ok,0.6,37,0,,no,,0
+https://github.com/opensourceios/ARPlasticOcean,75a0ec8953f7b77ea6e174370f1feff51f921383,ok,0.7,149,11,de en es fr id it ja ko my pl zh,yes,,0
+https://github.com/opensourceios/ARStickers,16fc1bfdf857b30283f33d73e96b2628365362af,ok,0.6,27,0,,no,,0
+https://github.com/opensourceios/AvoKeepr,595152ffbe2ea2b47f027e4f0ce1a359723fe63d,ok,0.6,62,2,,no,,0
+https://github.com/opensourceios/bandit-hat-budget,c332196e3de367ca9e408cc4641fe82c2b282a1a,ok,0.7,137,1,,no,,0
+https://github.com/opensourceios/BaseConverter-iOS,189431a91960b881b36033abaf22af08f6df9a82,ok,0.9,39,1,,no,,0
+https://github.com/opensourceios/BasicChatGPT,73b225b952f4f849d8c8fb168f24c07d0a1a144b,ok,0.6,37,0,,no,,0
+https://github.com/opensourceios/bemyeyes-ios,cde86e2792afa9fff4f329a61c8d8980d809fe29,ok,0.8,2486,133,af ar az ca cs da de el en es et fi fr he hi hr hu it ja ko lt nb nl pl pt ro ru sk sr sv th tr uk ur vi zh,yes,,0
+https://github.com/opensourceios/bitprice-ios,e0e0aff555e1331b6ef5bc713165ddd9b011dae7,ok,1.2,192,5,en pt,yes,,0
+https://github.com/opensourceios/Bombus,01c96fa82125a1a60bd89aea4a77dc7308cc679e,ok,0.5,63,0,,no,,0
+https://github.com/opensourceios/Calculator,7e325cd7988de0ecd9c9cfef51d5c3b72459845e,ok,0.6,20,1,,no,,0
+https://github.com/opensourceios/Closebox,0cf6e310f9151dd7a227c3912e71d38cdc4b8e18,ok,0.4,101,0,,no,,0
+https://github.com/opensourceios/ColorBlur,cd43e1c309bd975a4980fcd310fed0efb9032dee,ok,0.5,99,8,ca de en es fr it pt,yes,,0
+https://github.com/opensourceios/concertino_ios,0732cc6523f7bf16f5b99a765243fc8b8bf0c6b5,ok,0.6,231,1,,no,,0
+https://github.com/opensourceios/Concurrency,fbf14d2fa27d90d025a89a3eee1f399d20a8b8d1,ok,0.6,140,48,ar bn cs da de el en es fa fr he hi id it ja ko nl no pa pl pt ru sk sl sv th tr uk ur vi zh,yes,,0
+https://github.com/opensourceios/CZInstagram,29295eb3574a0236bb9ca55c393fb72502878a5f,ok,0.7,354,1,,no,,0
+https://github.com/opensourceios/Delta-iOS,1f3fe188e34f3ac660c6e7eb30a06130614cc962,ok,0.5,162,11,bs de en es fr hr ru sr,yes,,0
+https://github.com/opensourceios/DevSwitch,ba6d53ee0a10601ff8a5ea22e9b9368f64b9d0c4,ok,0.7,1386,1,,no,,0
+https://github.com/opensourceios/DiscoverRandomQuotes,9dbf1ef89764ee3239bffdf37c9b4ede95a97600,ok,0.6,132,0,,no,,0
+https://github.com/opensourceios/dono-ios,95548359a76389764707c7fa28523f1fc3b20333,ok,0.6,422,7,en,no,,0
+https://github.com/opensourceios/Eleven,8d792eba006b587818c742e8530010fd34812a5b,ok,0.5,235,3,en zh,yes,,0
+https://github.com/opensourceios/ello-ios,d234f8518332d3ec67e4f1602f09603bf3a98fd5,ok,0.8,997,1,,no,,0
+https://github.com/opensourceios/FCBarca,2264fe5be641d3d7c37efa0598e3d06c8cde39b0,ok,0.6,83,1,,no,,0
+https://github.com/opensourceios/free42,bae30167892f0da3c8ffead92113538585dd780e,ok,0.6,404,2,en,no,,0
+https://github.com/opensourceios/furni-ios,6e9b8f24d7c3190888883803c37667bb3c878bde,ok,0.6,909,87,,no,,0
+https://github.com/opensourceios/Google-Feud-iOS,3b952dcd1c4df164e7274c3b307846f67358deb6,ok,0.5,201,1,,no,,0
+https://github.com/opensourceios/iGrades,c0668fdbb3de15fa7e43af3a379358ee2c767dd3,ok,0.5,241,2,en,no,,0
+https://github.com/opensourceios/iOS-OctoPodium,013572db86f366a1610ee83c9be0bee7d7b7509c,ok,0.5,329,1,,no,,0
+https://github.com/opensourceios/Keinex-iOS,3638449b4521379fedf51ba2eda2acacb386eb88,ok,0.6,123,2,ru,yes,,0
+https://github.com/opensourceios/LidderbuchApp,0102e07ecc489677b3c89caa8bb353b38b96ebf1,ok,0.5,69,2,en,no,,0
+https://github.com/opensourceios/lockd,dc5d43749b2ce46d46c2026c3b679d44487dd7bb,ok,0.5,57,4,en fr,yes,,0
+https://github.com/opensourceios/LunarCore,db76e06b5fb7e8074971e7e7336ba33a95a62e4c,ok,0.6,16,0,,no,,0
+https://github.com/opensourceios/mathee,b7c867ec3b279816db12acb3313f8c723813fcfb,ok,0.6,40,1,,no,,0
+https://github.com/opensourceios/Means,5ef835beb4bf6c20ae2525244112496ee8195972,ok,0.6,17,0,,no,,0
+https://github.com/opensourceios/Messenger,2b1906fef4535a0284104a70e6593d9dea6cc576,ok,0.6,603,1,,no,,0
+https://github.com/opensourceios/MeWeather,b0a3169f0fffc858061772df8eb857f7eee12c7e,ok,0.6,105,1,,no,,0
+https://github.com/opensourceios/mobileapp,85f5e3d047b72ee28d55f832207e040aa4ee2142,ok,0.8,254,0,,no,,0
+https://github.com/opensourceios/multi,1194e38447011beceadcc69cdebf0ed50dc4d699,ok,0.5,33,1,,no,,0
+https://github.com/opensourceios/Mume,cba474eca7f0b2cf749ea95b2b8d406224cca8c0,ok,0.5,80,1,,no,,0
+https://github.com/opensourceios/Munch,3930b4c2b4977d18e72bd7f626742bd501341e10,ok,0.5,237,1,,no,,0
+https://github.com/opensourceios/MVI-SingleState,728b236db0c515fc754cb4897b108bcb5b08b97e,ok,0.5,22,1,,no,,0
+https://github.com/opensourceios/MVI-SwiftUI,b40fb3bd109d9968d1af2ab7e62367a2fe828372,ok,0.6,20,1,,no,,0
+https://github.com/opensourceios/notGIF,22b0eb9423f3bc75fa0e03bfc4e346fc0bd8fff8,ok,0.6,202,3,en zh,yes,,0
+https://github.com/opensourceios/OpenCB,2599fc490398c0889a30111cc8a8be03af9bfdb8,ok,0.6,929,32,ar ca cs da de el en es fi fr he hu id it ja ko ms nb nl pl pt ro ru sk sv th tr uk vi zh,yes,,0
+https://github.com/opensourceios/ParseStore,6087adb53e851f02636fd6128044345841e17231,ok,0.6,200,1,en,no,,0
+https://github.com/opensourceios/PGPro,58bd7cff09ba25b314d515caa7b41abb2f00270c,ok,0.5,267,2,en,no,,0
+https://github.com/opensourceios/PhoneBattery,80be2ce81b4f8ba1f04a7df164369b9dc3e09d0d,ok,0.7,303,14,de en es fr it zh,yes,,0
+https://github.com/opensourceios/Pi,46e3fa3a60715e95ae5552a2b64224f175ce6e29,ok,0.4,455,2,,no,,0
+https://github.com/opensourceios/pickerfull,99cf1b0ba9b31928b3c0f094c84cf16690538d33,ok,0.5,65,1,,no,,0
+https://github.com/opensourceios/Picsum,61f05c84402b6f1e7fd9102c2c34a174fcd3db69,ok,0.4,24,1,,no,,0
+https://github.com/opensourceios/Podcasts-SwiftUI,74cce0b1ce067b53a8ce6e5b7462629a005ec135,ok,0.4,20,0,,no,,0
+https://github.com/opensourceios/Potatso,b4cdf3573575437e2310c4bdeb1082fac4f0627e,ok,0.5,1219,7,zh,yes,,0
+https://github.com/opensourceios/prefacto,d11ee6581c6417e1e9586e6f89b77a62c3be8c42,ok,0.4,49,1,,no,,0
+https://github.com/opensourceios/privacyblur,00c4d13b57d5c2d382323917324dfb9d77ef1d10,ok,0.5,295,4,de en,yes,,0
+https://github.com/opensourceios/RedditWatch,15e67127f56d253d4d097af516d0b6ace60ae454,ok,0.4,172,2,,no,,0
+https://github.com/opensourceios/Retriever,3f4453611c58359f89a0ec09c8401b26a75a44b5,ok,0.4,80,0,,no,,0
+https://github.com/opensourceios/SafePeople,7cfec7225e69c125e141d4f6febf8201306c5cf4,ok,0.7,98,0,,no,,0
+https://github.com/opensourceios/sansumoku,cdbe6ff848b561ba416bb498fa0d928aaa964dff,ok,0.5,70,1,,no,,0
+https://github.com/opensourceios/Shadertweak,3b21487f099a2fd0ae10068d5e0650b3d74441ed,ok,0.4,111,1,,no,,0
+https://github.com/opensourceios/showio-app,f9d5a8615e79826ab30c5cb1897e17aef1f713f8,ok,0.5,138,3,en ru,yes,,0
+https://github.com/opensourceios/SnapChat,2a4e0763b142a896be9da00e27afa92f0844ffae,ok,0.4,124,1,,no,,0
+https://github.com/opensourceios/SoundCloudSwift,b548527880c560dad1d35f431181dc369e4df195,ok,0.4,138,0,,no,,0
+https://github.com/opensourceios/speakability,7132469ac668e4ae108d0fd6f187d9d5b21ff973,ok,0.5,1558,3,en,no,,0
+https://github.com/opensourceios/Spin-Zone,ef264ace0e22941e0b4c0b70cc5717b58c96714a,ok,0.4,43,1,,no,,0
+https://github.com/opensourceios/superday,598abc446fcf68ed855b6f9acd42c75dcab90bfb,ok,0.4,454,3,en,no,,0
+https://github.com/opensourceios/surespot-ios,2e56451a94e9f56adfac28f28a9c92f2a111a736,ok,0.6,2406,13,de en es fr it,yes,,0
+https://github.com/opensourceios/swift-off-todo,b5e0cd7f3983d04bb68514a2329a7357c21e600a,ok,0.4,75,1,,no,,0
+https://github.com/opensourceios/Swift-Reusable-Code,cf316c77b87883602425f1ad33d1991bbc31bc48,ok,0.5,1220,64,,no,,0
+https://github.com/opensourceios/timeismoney,5f73cb77c3b74f6dd31c7209f99fe9f6827a6ae3,ok,0.4,32,1,,no,,0
+https://github.com/opensourceios/Tinder,97b0ac6864379b3f1d7b5f1989945615fcba5e28,ok,0.5,70,1,,no,,0
+https://github.com/opensourceios/toggle-mobile,8da7d19e21034499bfe7822b45b6a40b73273c00,ok,0.5,1168,2,en,no,,0
+https://github.com/opensourceios/trySwiftApp,e5019665b961ac72ba93db7a04af9097592b8482,ok,0.4,482,14,,no,,0
+https://github.com/opensourceios/Twitter,5b5b3f97a0ff596efb000cd8dacdd0a42c5e5d30,ok,0.4,126,1,,no,,0
+https://github.com/opensourceios/ultimate-peg-solitaire,681b55bbbf2ad389cef928b5dc0991a8aded2382,ok,0.3,67,1,,no,,0
+https://github.com/opensourceios/VIES,41e99c24b63b245261b8fa9d972c8e283bddf414,ok,0.4,63,0,,no,,0
+https://github.com/opensourceios/visitBCN,bc4588b86895427808237d09fa1974a233aed9f9,ok,0.5,1509,3,en,no,,0
+https://github.com/opensourceios/whatsapp,5377126625b265a5f6962d31fd8f8aa5112b476b,ok,0.4,76,1,,no,,0
+https://github.com/opensourceios/wordflick-ios,43814f981a71df33ba977529f114984f6fa0aac4,ok,0.5,463,11,en es fr it nl,yes,,0
+https://github.com/opensourceios/YorkieApp,0298c5939141a1699c8dfb9bca0bbd8d1f0e6f5f,ok,0.4,192,3,en es,yes,,0
+https://github.com/opensourceios2/Cuisiner,6b98e302ef80e698e73fc7ce4bba764f0089fa20,ok,0.5,206,1,,no,,0
+https://github.com/OpenStack-mobile/summit-app-ios,8b1136d52f2207b4c69f3dc5ee8e5f74ec763baf,ok,0.5,854,3,,no,,0
+https://github.com/openstates/legacy-openstates-ios,9c621faab664dc7a4c4edaed19594a58797e4dbb,ok,0.5,2906,31,en es,yes,,0
+https://github.com/organicmaps/organicmaps,c8a22075d302fd6ab2dea47dd90ec35a4cb9b33e,ok,1.0,13490,57,af ar ast az be bg ca cs cy da de el en es et eu fa fi fr gl he hi hr hu hy id is it ja ko lo lt lv mr mt nb nl pl pt ro ru sk sl sq sr sv sw th tr uk vi zh,yes,,0
+https://github.com/orta/Relay-Artist-Example,6288e9c18cd606414fac2ad14053a9a15f7a18c4,ok,0.4,75,1,,no,,0
+https://github.com/osmandapp/Osmand,55e2985b116b363ede9c538bc56dce224e1fd8e0,ok,0.5,9694,0,,no,,0
+https://github.com/ossappscollective/oss-weather,7c042b3f2b7e2298b0dbe533ebca5ff0b3de659a,ok,0.5,1696,0,,no,,0
+https://github.com/OutlineFoundation/outline-apps,99cdcdc4c0431ec1e71a8e8fa96e6022ed5e67de,ok,1.8,1109,67,af am ar az bg bn bs ca cs da de el en es et fa fi fil fr he hi hr hu hy id is it ja ka kk km ko lo lt lv mk mn mr ms my ne nl no pl pt ro ru si sk sl sq sr sv sw ta th tr uk ur vi zh,yes,,0
+https://github.com/owncloud/ios-app,a1b1f10f05ec4cfe3813a31be82c6561f4a93111,ok,1.4,1651,35,ar bg cs de el en es et eu fr gl he id is ko mk nb nl nn pt ru sq th tr zh,yes,,6
+https://github.com/owntracks/ios,bbb7b76220ff5e62b46ddaf76ac47b72cfd21c95,ok,0.5,337,27,da de en fr gl nl pl ro ru sv tr zh,yes,,0
+https://github.com/oxen-io/session-ios,5bddc10f1ec3359ff6b9c25603e88e85509181e1,ok,1.6,1387,1,,no,,2
+https://github.com/Oztechan/iosCCC,744a8ef6cc2c274a395c6963c07b324dd042c298,ok,0.5,411,0,,no,,0
+https://github.com/padloc/padloc,90dda7c6f417b28bee86ec60eff532eb18870125,ok,0.4,678,0,,no,,0
+https://github.com/PallavAg/Apple-Intelligence-Chat,6444c7d96d3fc2ce8bdff9a406f2f44724cf556e,ok,0.5,12,0,,no,,0
+https://github.com/Palleas/NaughtyKeyboard,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/Palleas/NaughtyKeyboard/'"")",0.2,0,0,,no,,0
+https://github.com/Palleas/Rewatch,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/Palleas/Rewatch/'"")",0.2,0,0,,no,,0
+https://github.com/PangMo5/AniTime,46e837813b5fe5acbc1251c014ff771e6e7d12c1,ok,0.4,39,1,,no,,0
+https://github.com/PankajGaikar/Instagram-Clone-SwiftUI,973b14f34bb3177d8eb4527e67a1c045f60546bd,ok,0.5,155,0,,no,,0
+https://github.com/paranoida/IcelandEarthquakes,e7719e3aad11c6fb8524c660cb0e0f6097ba2283,ok,0.4,33,1,,no,,0
+https://github.com/ParsePlatform/ParseDeveloperDay,3c047a9ca506b700951615daaf7cef5ae6e765da,ok,0.5,351,1,en,no,,0
+https://github.com/partout-io/passepartout,1e5a834917d505907a449e3960549fe98acc9f28,ok,0.7,1428,27,de el en es fr it nl pl pt ru sv uk zh,yes,,0
+https://github.com/Path-Check/safeplaces-dct-app,d5461a6d39f654854362932f5c3050ca33e0459d,ok,0.6,675,32,ar da en es fr ht id it ml nl pl pt ro ru sk tl vi zh,yes,,0
+https://github.com/PaulaScholz/ApnsSample,60053d591b53618e20aff11d3103be03073ae3de,ok,0.6,45,1,,no,,0
+https://github.com/paulrehkugler/xkcd,5d5e5bfd8da7693d68a09e9df1d4af2cfe7c2849,ok,0.8,104,1,en,no,,0
+https://github.com/paulsumit1993/DailyFeed,403ce3778fdd590186efe7db76dbeebaf9409894,ok,0.5,138,2,en,no,,0
+https://github.com/pcqpcq/open-source-android-apps,ba7f2f612cab3c5cd923552bd2226ad2e946c668,ok,0.5,34,0,,no,,0
+https://github.com/pedrohperalta/Articles-iOS-VIPER,4f880855870120fe2cfa39c3c09be3a2a0223e53,ok,0.4,64,2,,no,,0
+https://github.com/pedrommcarrasco/ARbusters,4ff8cdf55b911821c4f6b89820c1bd6b2ced9025,ok,0.8,188,2,en,no,,0
+https://github.com/penk/terrarium-app,564aec92ad5bf41e846e4e78faad64dd1349d492,ok,0.5,68,0,,no,,0
+https://github.com/peralmq/ForeignExchangeApp,ea381cbb7cfb71f03b23768e017b2f593d01f244,ok,0.5,19,1,,no,,0
+https://github.com/Performador/Pickery,e171618b204765ab8c52af7ddee061d1115904d0,ok,0.5,185,3,,no,,0
+https://github.com/peritus/doughwallet,7dca34b40c1def4743fda342f1b1d5605850e572,ok,0.6,182,3,en,no,,0
+https://github.com/Person2099/HTTPS-Responses,be21b5bfcadb74a9e59ec63fd2990f00cd023095,ok,0.5,54,0,,no,,0
+https://github.com/peterfriese/MakeItSo,1e089b47b52adc33551eac948bd8c4ff55298632,ok,0.5,148,0,,no,,0
+https://github.com/peterfriese/SwiftUI-Concurrency-Essentials,432ac28ef82e65d6f48a8b783d8281c9d1a54f92,ok,0.5,92,0,,no,,0
+https://github.com/peterzhang0216/lexa,0d0037b3a018a326efbb92a177d9257e692e56c3,ok,0.5,96,0,,no,,0
+https://github.com/philipcdavis/VariableType,e26d9aa438c4168d15da0052dba1ec38565bf095,ok,0.5,12,0,,no,,0
+https://github.com/philipturner/ar-multipendulum,10bbb129e8bbb9e9495cfe0828a67cbbe0066856,ok,0.5,67,0,,no,,0
+https://github.com/phillfarrugia/appstore-clone,04cfcdfd7889199ce2bc96edf29215bdaa7efabf,ok,0.5,81,1,,no,,0
+https://github.com/photokandyStudios/gbible,7cf85935ec527897d4bed78e4a509c3cd9d48a4a,ok,0.6,333,21,da de en es fr he it ja ko nl pl pt ru sv tr uk zh,yes,,0
+https://github.com/phpmaple/Stick-Hero-Swift,1ca4f1195fe0d7ad575e7b8ca0fef2e85c351abf,ok,0.4,43,1,,no,,0
+https://github.com/pia-foss/mobile-ios,a0ae8a1c3d29a8797cbc9cbd0aa77f277caf366b,ok,0.7,2420,55,ar da de en es fr it ja ko nb nl pl pt ru th tr zh,yes,,0
+https://github.com/Piecelet/neodb-app,9158e3276656b1c9388304e0b3b236fe4abc0c4f,ok,0.9,339,0,,no,,5
+https://github.com/pietbrauer/RealmToDo,7ac7a48b8ab88e7d4cfd4fc87cb5f85b0873b015,ok,0.4,18,0,,no,,0
+https://github.com/pietbrauer/wildcats,2548871a42cbe922a202fb049553596ff7c2513e,ok,0.4,159,2,de en,yes,,0
+https://github.com/pietrocaselani/CouchTracker,01e21f689b17f9a7ef17e1d2d1f35c3c5e3ca583,ok,0.6,652,3,en pt,yes,,0
+https://github.com/pinto-notes/pinto-notes,b5848e7bf779aa624a2df67a5e33ef47d0b552d4,ok,0.6,3395,0,,no,,0
+https://github.com/pitt500/OnlineStoreTCA,89a5e4eaab96803e039a3805466cb87769532e55,ok,0.5,58,0,,no,,0
+https://github.com/PiXeL16/CountItApp,7755d7399fce4c4f5817fd5a88e2c9cd3a5ce67e,ok,0.4,164,2,,no,,0
+https://github.com/PiXeL16/SendToMe,376818077cf95f1cc1d8e32b633dee625001e208,ok,0.4,120,2,,no,,0
+https://github.com/PiXeL16/SnakeClassic,7ad2b88ee20df62206b0fb521a9d096b66687add,ok,0.4,129,2,,no,,0
+https://github.com/pixelfed/pixelfed-rn,da4bcf7dc811673cba622f199fe9ec6ca7e493d5,ok,0.5,160,0,,no,,0
+https://github.com/pj4533/OpenPics,7c005731b2972455b8b9b981a40f26aba2d35de0,ok,0.4,190,1,,no,,0
+https://github.com/pjchavarria/Swift-Gif,ae12dd54269545596001abdddf4f03063d3c1477,ok,0.4,57,1,,no,,0
+https://github.com/pkamb/swab,c418be91ca34842debe2e1b8f5e425a24f0fcb0d,ok,0.4,36,1,,no,,0
+https://github.com/PndaMan/Currents,069567ec3dc756498fc63c5b717796fad04ce552,ok,0.8,3777,0,,no,,0
+https://github.com/podverse/podverse-rn,84155643c2a881584874357411d1262ac688fc67,ok,0.6,699,0,,no,,0
+https://github.com/pointfreeco/isowords,c727d3a7c49cf0c98f2fa4f24c562f81e30165f7,ok,0.4,764,0,,no,,0
+https://github.com/pointfreeco/swift-composable-architecture,bf66bd83f3165fe4f5fdb9a6c99249276505723e,ok,0.4,1112,1,,no,,0
+https://github.com/pointspy/shlist,26eaf5aa60d7f0aef48097695f8d3b0f4e733886,ok,0.4,2174,6,en ru,yes,,0
+https://github.com/polydice/iCook-tvOS,fef935cc289405bffb5f65838f6f52f7a5f97136,ok,0.5,139,4,en zh,yes,,0
+https://github.com/Pondorasti/StonkScorer,e67fed382aaa0999dca0b840ee2210031b7fdeef,ok,0.4,331,1,,no,,0
+https://github.com/popei69/SudokuBreaker,c4b6a8d5e1efaf587b7cb980e93f349bb8991e8b,ok,0.4,23,1,,no,,0
+https://github.com/popshootjapan/WeiWallet-iOS,8ab53cee0308b6ae48a9c2e42ec0e8aff7205226,ok,0.5,366,57,en ja,yes,,0
+https://github.com/ppy/osu,3f39cfce35f238c7d1a87abcca3ff5f405a91abb,ok,0.5,5647,0,,no,,0
+https://github.com/premnirmal/TodayStocks,5ae63ab080ab6b3561977e625c014c4895fe892b,ok,0.5,110,1,,no,,0
+https://github.com/prey/prey-ios-client,3297224e156e5b5dfc8e193e132ae4eee4a602e5,ok,0.5,235,5,en es,yes,,0
+https://github.com/prey/prey-swift-client,d8918fdab60af4c082febb7a4f2667a7969c6204,ok,0.5,386,3,en es,yes,,0
+https://github.com/prof18/feed-flow,6d076cd3291e705812b9ee6bd89f06088ce33efb,ok,0.9,3038,0,,no,,1
+https://github.com/project-violet/violet,a565842a9ffbc1d69d31cdebc1d6658877de1ca7,ok,0.5,455,0,,no,,0
+https://github.com/ProteGO-Safe/ios,7931f11d5293855ba2f1f98950e8df97f834bf8e,ok,0.5,316,4,de pl uk,yes,,0
+https://github.com/ProtonDriveApps/ios-drive,d8966b7922ee12931a33e767407a02d7d634eb10,ok,1.4,3408,27,be ca cs da el en es fi fr hu id it ja ko nb nl pl pt ro sk sv tr zh,yes,,4
+https://github.com/ProtonMail/ios-mail,701463fe4542945c49ac5d326b0c27e91441e02f,ok,1.5,2619,0,,no,,8
+https://github.com/ProtonVPN/ios-mac-app,d851e0fd1bad01a103d65bf816f2acc99115ff35,ok,1.1,5070,78,ar be ca cs da de el en es fa fi fil fr hu id it ja ka ko nb nl pl pt ro ru sk sl sv th tr uk vi zh,yes,,4
+https://github.com/Provenance-Emu/Provenance,f009aad13eece2c68ba4d7c7e43e2bf76eb6593a,ok,1.4,18450,37,ar de en es fr it ja ko nl pt ru zh,yes,,1
+https://github.com/ptsochantaris/trailer,c3c442a3d282a051324412bed17ea9e6779e4c9d,ok,0.4,311,4,,no,,0
+https://github.com/Q-Mobile/Model2App,c838df76e02ad53efafe2cc1739aedf48000eb08,ok,1.3,776,1,,no,,0
+https://github.com/qh-work/RAYN,a40665e08be739c38e812734bf904ab0e1a8ea6a,ok,0.9,107,0,,no,,2
+https://github.com/qnoid/windmill-ios,2af97af588ecfad9a1b1c1ad3730f3bb190f2a34,ok,0.5,152,3,en,no,,0
+https://github.com/ra1028/SwiftUI-Combine,7a20076ae08b77ef71776db8fad8014670cbefbc,ok,1.0,21,1,,no,,0
+https://github.com/raaxis/nds4ios,ccc7633344ded00679282814e43e1d559b1c8fbf,ok,0.5,2255,9,de en es fr ja ko vi zh,yes,,0
+https://github.com/RadarCOVID/radar-covid-ios,c5f58f559cfb618486a9c2951cdd67d9528ae027,ok,0.5,867,8,ca en es eu fr gl ro va,yes,,0
+https://github.com/rafsoh/dimeApp,0463cb8caba237de781ae02e70a2ec82ae900c67,ok,0.7,485,9,en fr ru,yes,,0
+https://github.com/rainbow-me/rainbow,325ce5252b859f2fd5cdadbc1f54199e1cb2921d,ok,0.6,5510,6,en,no,,0
+https://github.com/raivo-otp/ios-application,8ea4901b49996b9237d8e937aa2fa14890f2d43d,ok,0.5,443,1,,no,,0
+https://github.com/rajdeep/proton,30c0f87c48ccba6f89935d16096b6c01c204a82d,ok,0.5,847,1,,no,,0
+https://github.com/rambler-digital-solutions/rambler-it-ios,533a76d8dd8e6d77585087dba72b0683e6211f30,ok,0.7,3395,29,ru,yes,,0
+https://github.com/Ranchero-Software/NetNewsWire,38ff16dfcc0e7a71ae1783757a9aef33c802266d,ok,1.0,1366,33,mul,yes,,18
+https://github.com/raulriera/Bike-Compass,30fa6a075f5808eeb6223eab88a2bb71e3f2aec8,ok,0.6,301,2,,no,,0
+https://github.com/rayliverified/FlutterGames,535d4d88eed082458420293bcfbbc9bf439e71fb,ok,0.5,147,0,,no,,0
+https://github.com/razeware/emitron-iOS,00a07223f8330acb90d6a8141c6c10e2ecf29d5d,ok,0.5,531,1,,no,,0
+https://github.com/rblalock/dragon_shout_app_open_source,7b8698d78fb2d66e49830eb4095586fc680d5b27,ok,0.5,126,0,,no,,0
+https://github.com/rcaos/TVToday,54ca3f572c94bde041e90df6975d3b225ec93540,ok,0.5,530,2,en es,yes,,0
+https://github.com/react/react-native,546c71ca7ecdf43f203a09a2171f1baf64ec8c55,ok,0.7,8243,37,ar cs da de el en es fi fr he hi hr hu id it ja ko ms nb nl pl pt ro ru sk sv th tr uk vi zh zu,yes,,0
+https://github.com/ReactKit/ReactKitCalculator,54d5d49696292f385f22fa9fd722da5af3548974,ok,0.5,32,1,,no,,0
+https://github.com/readest/readest,3ee24ebd668fbcb047718c8bd630e71afa76b096,ok,1.2,4750,0,,no,,0
+https://github.com/realm/realm-tasks,ad3ecce7d696d20951709d8793bc07c5561ba997,ok,0.6,307,2,,no,,0
+https://github.com/realm/RealmPop,70d95dce0168396d9fbd6ede4536499e0c23cb6c,ok,0.4,109,1,,no,,0
+https://github.com/RedBrogdon/flutterflip,13993d6375b225cc3f24fbb67dda237df0d83b59,ok,0.8,180,2,,no,,0
+https://github.com/RedGridTactical/RedGridMGRS,e17020c9a3fded0b1f67975483655f4340626beb,ok,0.4,313,0,,no,,0
+https://github.com/relatedcode/Messenger,d33d7e971148ab2e25a77df4c21143af60e0b9f2,ok,0.4,2,0,,no,,0
+https://github.com/remirobert/Facemotion,fd8deada3d560f7432159feb09fbba122a971932,ok,0.4,92,1,,no,,0
+https://github.com/remirobert/Gifzat,e7b8d82f14915ef72710330cdd37fe8eec95fac3,ok,0.4,668,24,,no,,0
+https://github.com/remirobert/Github-contributions,97a560223d191ea6c7f87cf837d1b04e195e8f67,ok,0.4,432,6,en,no,,0
+https://github.com/renatomcamilio/CookieCrunch,67d82c56a81303a47ed95c771b7f0653cfff1ebd,ok,0.7,68,1,,no,,0
+https://github.com/renaudjenny/telltime,43ab01c380dcfc0c5daa15ddbdd880001b6feb06,ok,0.4,93,0,,no,,0
+https://github.com/ResearchKit/AsthmaHealth,8c59917aeeae3bc3faab9cfdc37b49e211d7f6d2,ok,0.4,436,0,,no,,0
+https://github.com/ResearchKit/GlucoSuccess,291fd61a5b6375179aaf615550f947d99171ec0d,ok,0.4,348,0,,no,,0
+https://github.com/ResearchKit/mPower,a6afce541a0b228aad19fa6c11d39599d151a1fd,ok,0.8,316,0,,no,,0
+https://github.com/ResearchKit/MyHeartCounts,de2575879a5fe31d1b7d4b46d1cd09504297a749,ok,0.5,374,0,,no,,0
+https://github.com/ResearchKit/ShareTheJourney,a66fe3a707f381eca0a5f2c1af7bb0274eca87b1,ok,0.4,467,0,,no,,0
+https://github.com/RestKit/RKGist,2806b6873a7919025597a250d3dfcf44e8d13551,ok,0.9,41,2,en,no,,0
+https://github.com/ReticentJohn/Amaroq,559fc7c1e507e62c80b48378b2a128be2d24de84,ok,0.4,1535,95,ca da de en es ja ko nb nl pl sv zh,yes,,0
+https://github.com/RF-Nelson/open-source-selfie-stick,75e31ee9d862229aa67d16d1d66e98d1ef55d6f2,ok,0.4,90,0,,no,,0
+https://github.com/rfielding/Mugician,bb96f0fd038a42269d0df38cc236e147a2ee7aa6,ok,0.5,38,0,,no,,0
+https://github.com/rhysforyou/LobsterApp,324816f695442f3e0ebe89790a87dd058991cc34,ok,0.4,79,1,en,no,,0
+https://github.com/ricburton/Repo,65906e7f7e0f5ce48fa6745e8716ce809a47757e,ok,0.4,58,1,en,no,,0
+https://github.com/Rich86man/Dollar-Bets,cf1028e0c51f340dcc65ce3b9cc2b0e28c01513a,ok,0.4,150,1,en,no,,0
+https://github.com/richardneitzke/BoardBank,b06ddff6ed49f45f0f28d5e99a8a58a43d2c351e,ok,0.7,92,1,,no,,0
+https://github.com/richardtop/CalendarApp,b4903ce323c07f525bb076e24116c270d8cc8d09,ok,0.4,20,1,,no,,0
+https://github.com/richardtop/CalendarKit,99a4a05c641d70c3f735ef4256f60dc86580cf20,ok,0.5,101,42,ar ca cs da de el en es fi fr he hi hr hu id it ja ko ms nl no pl pt ro ru sk sv th tr uk vi zh,yes,,0
+https://github.com/richardxyx/Forecast,59c6d301e51df35ef75f53497491b7d92468a82e,ok,0.5,31,1,,no,,0
+https://github.com/rickwierenga/heartbeat-tutorials,d3874a3a09aab4ef533aa4a1dbce749ce013aa5d,ok,0.5,103,4,,no,,0
+https://github.com/riley-usagi/SwiftAdvance,d54569d0f0edb748504dcee53a9ada573d360ff8,ok,0.6,692,1,,no,,0
+https://github.com/rileytestut/Clip,fc0c861b82e100656de174a283ce0a649262a034,ok,0.3,67,2,,no,,0
+https://github.com/rileytestut/Delta,8d768919b1fb6bf99ec2899b6e8e0146a8268637,ok,0.6,1445,39,,no,,0
+https://github.com/RishabhTayal/Unofficial-iTC,bf7ed4930e8d32224b8212fdba7f41b9dbbc8a40,ok,0.6,1345,1,,no,,0
+https://github.com/ritwiktakkar/shorten_my_URL,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ritwiktakkar/shorten_my_URL/'"")",0.3,0,0,,no,,0
+https://github.com/ritwiktakkar/WordDefiner,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ritwiktakkar/WordDefiner/'"")",0.3,0,0,,no,,0
+https://github.com/rizal72/iContactU,7c648e875481a3b460ce2ee6c0a59ef6f92ac220,ok,0.5,57,3,en it,yes,,0
+https://github.com/rkho/product-kitty,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/rkho/product-kitty/'"")",0.3,0,0,,no,,0
+https://github.com/rldaulton/queued-music,b432302dcdc14998c2e12198209f0bf43c46ab9f,ok,0.5,524,2,,no,,0
+https://github.com/rlwimi/major-input,7f8ad1cd87e37ed4ca5fe60aadc5dbcf383812f7,ok,0.5,97,2,en,no,,0
+https://github.com/rm335/dumpert-apple-tv,216cfda2ec0591d2da273a776434da935d12157a,ok,0.8,221,0,,no,,2
+https://github.com/RMizin/FalconMessenger,a80c33885a943a71028bcd6706723095b3132423,ok,0.6,448,0,,no,,0
+https://github.com/rnystrom/HackerNewsReader,76b2aec212e66814378f39ed64abe274b1b267ea,ok,0.7,450,53,,no,,0
+https://github.com/rnystrom/SimpleWeather,2138788038358ffabb01fd6bda6a0b1277cedcc1,ok,0.5,379,0,,no,,0
+https://github.com/rob-miller/rTracker,16324a4447993fb9959e26aa175f3b5a105ca003,ok,0.6,214,1,en,no,,0
+https://github.com/robbiehanson/AlarmClock,64219e341430db5fae92561ae6ef31bd1a8f6926,ok,0.6,733,35,bg cs da de el en es fi fr he hu it ja nl pl pt ru sv zh,yes,,0
+https://github.com/robertwtucker/kfinderapp-ios,5d2d441f502a6e8a6e28f9934eede07f83024e8a,ok,1.2,121,0,,no,,1
+https://github.com/RocketChat/Rocket.Chat.iOS,3172a098afd86d6b2bbd04802fdfc308c6ea8cda,ok,0.6,2977,89,cs de el en es fr it ja pl pt ru zh,yes,,0
+https://github.com/rocketshipapps/adblockfast,4b9d5c345c25d5e5f2e5089d2851e1b0f129df88,ok,0.8,460,1,,no,,0
+https://github.com/rodydavis/gmail_clone,d3cb88efb92eaf4d116e76e4a94743595571801d,ok,0.4,91,1,,no,,0
+https://github.com/roger-wetzel/Octopus,504f3f4753fc6f94fa049bce80c8515eec89eed7,ok,0.4,41,1,,no,,0
+https://github.com/rokrokss/recly,245d36964936510fd32f4f28080d55a899848456,ok,1.3,1454,0,,no,,14
+https://github.com/RolandasRazma/Heredox,dc52e12d72b2c6e152f854d354b97e2b426c65aa,ok,0.5,246,0,,no,,0
+https://github.com/RolandasRazma/iLabyrinth,be74a68bea25bc569d7cad8e971ad0fce1969c9d,ok,0.5,467,2,en,no,,0
+https://github.com/roryclear/clearcam,553be39ba6f20ce055a7418ed54636b32059b4ad,ok,0.5,207,8,en es hi ja ko pt zh,yes,,0
+https://github.com/roughike/inKino,d406a23c3b57a0348a13de0cc6fc680b376cab35,ok,0.5,307,1,,no,,0
+https://github.com/roymckenzie/Go-Flashcards,fab9a26984e929d3e5d5e102a9ca5ce48fdc1e33,ok,0.5,377,17,de en es fr ja ko zh,yes,,0
+https://github.com/rrroyal/Harbour,e56c10cb376baaa3ada49b29b8396e1ab9293942,ok,0.8,283,0,,no,,3
+https://github.com/rsattar/screenshotter,864390e2fec071d676c6433c17cf71427661704d,ok,0.5,734,17,en,no,,0
+https://github.com/rudrankriyam/Foundation-Models-Framework-Lab,e4e3d932c5429c102094fc630835ba1b7ad4d755,ok,1.8,539,0,,no,,4
+https://github.com/rudrankriyam/SF-Symbols-Game,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/rudrankriyam/SF-Symbols-Game/'"")",0.3,0,0,,no,,0
+https://github.com/rursache/ToDoList,79d82dfac703b31f0b86537e38371996fa599948,ok,0.9,79,0,,no,,1
+https://github.com/rwema3/FindSeat-App,447284bc041fac91efebc7d2913c0e5a1654ef2b,ok,0.5,374,1,,no,,0
+https://github.com/rwema3/Math-Matrix-App,193db0e654535035e1620dad0ae0eff5226a1174,ok,0.5,187,1,,no,,0
+https://github.com/rwema3/Space_Empires,4bc861a644c0c06b386a1c801c33520c181c81a7,ok,0.5,186,1,,no,,0
+https://github.com/RxSwiftCommunity/RxMarbles,319a5f4bd40f77edfed51e7e0440d420570f7d45,ok,0.6,616,3,en ru,yes,,0
+https://github.com/ryanlintott/DefibHeart,75972ec8ffb8d88894da1456171ccea3940ec8ae,ok,0.5,22,0,,no,,0
+https://github.com/ryanlintott/OvercastDrawer,a66c125cf1f640debae2be23eaf8ed2e9295f6db,ok,0.5,16,0,,no,,0
+https://github.com/s-s/dnscloak,6a7a3bbf91969ab8a93b089f1ffe28da99fa1e36,ok,0.5,885,0,,no,,0
+https://github.com/saber-notes/saber,c85af406e6d954402cc7c6d718a8f240f54408b2,ok,0.7,2661,2,,no,,0
+https://github.com/Saffsanity/sill,f224323d65d93a43adbf981943c150d1617de63e,ok,0.4,543,0,,no,,0
+https://github.com/Sage-Bionetworks/CardiorespiratoryFitness-iOS,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/Sage-Bionetworks/CardiorespiratoryFitness-iOS/'"")",0.3,0,0,,no,,0
+https://github.com/sahandnayebaziz/StateView-Samples-SwiftHub,5734b35ce928e4ba1124540773ec76f202f2ab3f,ok,0.5,260,1,,no,,0
+https://github.com/sahilsatralkar/ContextComposer,c088da8ec449590fb14fe6a8259df816443f362f,ok,0.4,25,0,,no,,0
+https://github.com/SaiBalaji-PSS/Quote-Today,7f6a906614a6730a4c73e2d8f033fecd15d3147d,ok,0.4,28,1,,no,,0
+https://github.com/SaiBalaji-PSS/Scoop,9d84578a2914aa5aa3c8f217bd16de34b67c2201,ok,0.5,301,1,,no,,0
+https://github.com/Sajjon/SwiftIntro,ad8d2f4ced0da8bd2a3ef978bdb33ad99aecc251,ok,0.9,119,0,,no,,4
+https://github.com/sallar/lunchify-swift,ea38197213a7458e41eb751dbcd01619791f927a,ok,0.5,81,4,en fi sv,yes,,0
+https://github.com/Samaritan1011001/Trovami,7a4f572b4fdfd6cf0e4d560e613d6ddacf874f8e,ok,0.6,292,1,,no,,0
+https://github.com/sandofsky/soon,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/sandofsky/soon/'"")",0.3,0,0,,no,,0
+https://github.com/satishbabariya/Danbooru-Lite,6a59556643857ad4d41040899797ad4893a87904,ok,0.5,1225,8,de en ja ko ru zh,yes,,0
+https://github.com/satishbabariya/WhatsUp,083caafa9b4857861a6ac4d3f16dc9d7348f8d04,ok,0.6,505,1,,no,,0
+https://github.com/satya164/PocketGear,493f44b0e584b9c4e6d569f31a070cd198894c76,ok,0.6,349,0,,no,,0
+https://github.com/saulsharma/netflix-ui,f0bc3631b2e1679f12169c3d0b16c557afd76fdc,ok,0.5,88,0,,no,,0
+https://github.com/saxobroko/SaxWeather,a746c4f164cbc59c7cfe4951f80b6596f1437611,ok,1.2,293,1,en,no,,1
+https://github.com/Say-Their-Name/say-their-names-ios,e9d9f7a4c529ca3769a0f3bce4b16c4f33145321,ok,0.6,695,11,ar de en es fr he ko nl pt ru,yes,,0
+https://github.com/sbertix/Swiftagram,de8a5d840a81b3d0dd66f0dc45304c54f29d0fda,ok,0.4,176,1,,no,,0
+https://github.com/scalefocus/virusafe-ios,e22a01767151907acb52b12ef5a604b91f402e72,ok,0.5,309,6,bg en mk sq,yes,,0
+https://github.com/schmidtwmark/BetterBlue,17eb0459abf54e7b5fc7a3a5f80bda7e95ea140d,ok,0.5,155,0,,no,,0
+https://github.com/SchwiftyUI/NewsApiApp,a2e7544f3afbfbfbf9ee053b7ad480d84020b1cc,ok,0.5,20,1,,no,,0
+https://github.com/sciencemanx/Calvin-and-Hobbes-Viewer,74ff2e090e040517e2b445432a5ea6c0f87df49b,ok,0.4,191,1,,no,,0
+https://github.com/scotteg/LayerPlayer,15b59abafa7fbd5b3941490b94553c276ea9983b,ok,0.5,117,0,,no,,0
+https://github.com/scribblemaniac/Fibonacc-iClock,368945c601905f991499253ebd99af9e4291201b,ok,0.5,22,0,,no,,0
+https://github.com/scribe-org/Scribe-iOS,b3a40e807e3b546138bc44cc70acb4a58300be93,ok,0.5,491,1,,no,,0
+https://github.com/seanhess/wizardwar,43cfa4a9fddc29f17838ebd32247c9b21c4bae3d,ok,0.6,1790,5,en,no,,0
+https://github.com/sebastianwr/VIPER-Persons,4c40a1989727722e5432ffed4f57723ac4743bab,ok,0.6,565,1,,no,,0
+https://github.com/sebcode/FinalFighter-iphone,8beec3f8d464778e7825da7abc51ff5047620312,ok,0.6,809,0,,no,,0
+https://github.com/sebjvidal/Apple-Music-UI-Demo,9d7a0276ed9fd44e7bd261eac5bb3c22fe53ca76,ok,0.5,56,1,,no,,0
+https://github.com/sebjvidal/UICollectionView-Collapsible-Section-Demo,445dba44e07ecf8a41bb7b1f9d7f7ae3883d1409,ok,0.4,15,1,,no,,0
+https://github.com/securityfirst/Umbrella_ios,23f55c86da1cbfa3e660ea7c0a52565e1f8fbc10,ok,0.5,1110,13,ar en es fa fr ru zh,yes,,0
+https://github.com/SeekingMini/MoneyPlus,ab6ad878a50d4db7acefd91c66626343c02a0fac,ok,0.5,62,1,,no,,0
+https://github.com/semweb/GreatReader,41d5f7ee00d40a2f68a111f3a68851fb092f0335,ok,1.2,228,5,en ja,yes,,0
+https://github.com/Sendeky/weatherkit-weather-app,d969f592fcc11b42e8db4abc90b27625adc83045,ok,0.4,129,1,,no,,0
+https://github.com/sephine/lumio,cf4a831ce3b0e71a96071d309b97d52733fe3ba7,ok,0.4,208,0,,no,,0
+https://github.com/sgl0v/WWDCast,388c1fff1b5714f4374e3c71957fb084fe382c04,ok,0.6,695,123,,no,,0
+https://github.com/sgr-ksmt/FireTodo,ed6f2d646184f21bc1f91e5760b06588dcc6d30c,ok,0.4,74,1,,no,,0
+https://github.com/Shabang-Systems/Condution,9af086419e8b45cd133d34961141a8327bb7d4ff,ok,1.0,845,1,,no,,0
+https://github.com/shagedorn/StateRestorationDemo,6f1348e675d0de2d2b75897d8dd5d12159159138,ok,0.4,31,0,,no,,0
+https://github.com/shameemreza/critterclan,84c7a3f2ba7d1be750893266eb662a91ad2b1468,ok,0.4,308,0,,no,,0
+https://github.com/shankarmadeshvaran/SwiftUI_Tasks,c9175091f616a7e2a69adbb2d2bdecb75a10ecd1,ok,0.4,25,1,,no,,0
+https://github.com/shankqr/4xMobileGame,85e7bac624a99af57529876252a204f85089f1c2,ok,0.5,2318,3,de en fr,yes,,0
+https://github.com/shaunlebron/PterodactylAttack,96e5535221cde3453955eaca1140c3cac293e932,ok,0.5,1217,0,,no,,0
+https://github.com/shelly/mosaix,b67311b807c3a6a62703fd000de82809542f172e,ok,0.7,34,1,,no,,0
+https://github.com/shenruisi/Stay,9b78d761d307234d4ed5ea72ac423804ea0c4301,ok,0.5,478,4,en ja zh,yes,,0
+https://github.com/SherlockQi/HeavenMemoirs,6400b8fb94998c1b7a939b4d3d3f93adf53ec11d,ok,0.5,439,10,en zh,yes,,0
+https://github.com/ShihabMe/Mast2,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ShihabMe/Mast2/'"")",0.2,0,0,,no,,0
+https://github.com/shihongzhi/CamShift-on-iOS,05ab212064c697a96b77c0a3a313ec48f94d6a2c,ok,0.7,89,1,en,no,,0
+https://github.com/ShinobiControls/iOS10-day-by-day,2ef2643b0b7f2053d4cf820d27c1100e798eaa07,ok,0.4,209,10,,no,,0
+https://github.com/shu223/iOS-9-Sampler,76a0e40e73b8c3813cffd8dfee8c9db3b40b6235,ok,0.4,144,1,,no,,0
+https://github.com/shu223/iOS-Depth-Sampler,ed5c96f9d753fce86a633f069defd3458e90a8c5,ok,0.5,242,3,,no,,0
+https://github.com/shu223/iOS8-Sampler,e7cbfc7acc2731e5667b15445dddfc62be17dd62,ok,0.4,244,1,,no,,0
+https://github.com/shu223/watchOS-2-Sampler,8efb69d6148a7518b4223a6295546d51482d36b7,ok,0.4,197,2,,no,,0
+https://github.com/sigfault-byte/LegitURL,a51c19e2e8fa190890dee3439ae3a4efdff39cd0,ok,0.5,246,1,,no,,0
+https://github.com/Sigil-Wen/Dream-with-Vision-Pro,febd77e8bad6874fee6291a388d2a46aedc6816b,ok,0.4,51,0,,no,,0
+https://github.com/Sigil-Wen/VisionCraft,890974e35a0f9e833efe76123732b689c144d25f,ok,0.4,60,0,,no,,0
+https://github.com/signalapp/Signal-iOS,32b101abe2c8b6b5ac3a941ba6729a1fc40a1f19,ok,0.6,4562,48,ar be bg bn ca cs da de el en es fa fi fr ga gu he hi hr hu id it ja ko lt mr ms nb nl pl pt ro ru sk sr sv th tr ug uk ur vi yue zh,yes,,0
+https://github.com/Significant-Hobbies/anchor,be4067ac868bd4bd3bf1cea2771a57073146ee40,ok,0.6,519,0,,no,,0
+https://github.com/Significant-Hobbies/calorie,029613771fcdbf6e38b521adf4cbfc955b2cf2b2,ok,0.5,326,0,,no,,0
+https://github.com/Significant-Hobbies/kith,571b897f36ff35deedba9197d79dbf021d974faa,ok,0.5,95,0,,no,,0
+https://github.com/Significant-Hobbies/motion,204a9369ac89b472a1beca9616de86b49bdbfb9d,ok,0.5,154,0,,no,,0
+https://github.com/Significant-Hobbies/setline,ce7289e7e12ca407618d08b086636ac370154bfc,ok,0.6,200,0,,no,,0
+https://github.com/simonbengtsson/airdash,ef2f08691771f53e3fa7150d1f02e2d0835c694c,ok,0.5,235,2,,no,,0
+https://github.com/simonbs/SBSAnimoji,0374f748d9aa3428fcb0d42c40a9d3520b36981d,ok,0.5,74,1,,no,,0
+https://github.com/simonoppowa/OpenNutriTracker,5048a9b57f4ab08b17699af556c280f7f058e07c,ok,0.5,1256,1,,no,,0
+https://github.com/simple-login/Simple-Login-iOS,b18f6db8b3f4dc8c609455fd25707f15fbf85f67,ok,0.5,203,1,,no,,0
+https://github.com/simpledotorg/bp-passport,8491f273d1325d2dd506dbd024f43acd11c8c967,ok,0.6,294,0,,no,,0
+https://github.com/simplex-chat/simplex-chat,79d91e716dbb8aae80327f580aac9a6b42426466,ok,0.7,3837,102,bg cs de en es fi fr hu it ja nl pl ru th tr uk zh,yes,,0
+https://github.com/sindresorhus/Actions,e2688bb446d6d90fbc10c32b972df7f6d6053ea3,ok,0.5,8,0,,no,,0
+https://github.com/sindresorhus/blear,2cf4083bf6c79aff11e8b723e39fbb7addb30c4a,ok,1.1,73,0,,no,,0
+https://github.com/singro/v2ex,c8ffba334555e7c60060eba1aae45bcce4a6f8f2,ok,0.5,508,4,en pt zh,yes,,0
+https://github.com/skiff-org/skiff-apps,c869e6b76c17d870cf0c3a4f88280906fa4dfb34,ok,0.6,5847,0,,no,,0
+https://github.com/SlayterDev/RadiumBrowser,1a1d68e69210044791295f8678157cf87de35bf3,ok,0.4,117,1,,no,,0
+https://github.com/smalam119/live-news-viper,bbfd6ab14aa8994162d85a32f8de0fe5028ab10f,ok,0.5,80,1,,no,,0
+https://github.com/snazzware/Mergel,3513eef6856463861d094f88f011a27e22770386,ok,0.5,169,1,,no,,0
+https://github.com/snowhaze/SnowHaze-iOS,e434f8aa0952d6f07e8e29a722728af73f235e9d,ok,0.5,786,20,de en es fr gsw it ja pt,yes,,0
+https://github.com/snowpunch/AppLove,6a2451301fa87a24dd5002ade400e9af7b71ecf8,ok,0.7,930,0,,no,,0
+https://github.com/soapyigu/Swift-30-Projects,70fa254298352558220fc250c268b1b9e5128321,ok,0.6,1349,29,,no,,0
+https://github.com/sobri909/ArcMini,acdb5ca083aa554e0c864fcd1517b2b013dc9f26,ok,0.5,375,1,,no,,0
+https://github.com/soffes/bar,84055edcbef7ef881894ff08d5ef08a9be396401,ok,0.4,33,0,,no,,0
+https://github.com/soffes/Pugs,20b06c8cb2e0623be93c75b9d3fe6b3435f6df0b,ok,0.4,12,1,,no,,0
+https://github.com/soffes/valio,450ae1dbd7748acfdc4cec41bfc00585190c5ac6,ok,0.4,16,0,,no,,0
+https://github.com/soffes/words,e4c0662630760ac8acaa5ddbd3256eb0412f3451,ok,0.5,18,0,,no,,0
+https://github.com/softdevstory/OhMyPlane,c54541c98465fff75f583c045d98a7b7ad4027c0,ok,0.5,197,2,,no,,0
+https://github.com/SoldoApp/SCRAMApp,576a484ebe06e6d28f30b9cf9f00049a276025c8,ok,0.5,27,1,,no,,0
+https://github.com/soma-intelligence/prism,25ca07f5c9bbfc1b13d1094027a3f0c653a3fab3,ok,0.7,1395,0,,no,,0
+https://github.com/sonsongithub/AAKeyboard,1a52bea94efc554e094a104453ca88fae21c6ca6,ok,0.5,613,6,ja,yes,,0
+https://github.com/sonsongithub/reddift,d93320dc35ad81e7bce9e5b76a87654a5bc84d7b,ok,0.6,374,1,,no,,0
+https://github.com/Sophiestication/Articles,9e4ac12a4cc75b7a96b8d0c7e78091138f1bcdb5,ok,0.7,3758,54,da de en es fr it ja nl pt ru sv,yes,,0
+https://github.com/Sophiestication/Groceries,736838ba0c20748ad62128e9ba2b3732c644d263,ok,0.6,731,13,de en fr,yes,,0
+https://github.com/Sophiestication/Tipulator,319f07aec579aea724498021368f43681c5dcc29,ok,0.5,192,4,en,no,,0
+https://github.com/soramitsu/fearless-iOS,dce8790cde9730689a8a9d37b03e0c269a3e4f9b,ok,0.9,6549,13,en id ja pt ru tr vi zh,yes,,0
+https://github.com/soroushchehresa/iran-coronavirus,4f87045b739870b9d36c01658d51e51486acdb5e,ok,0.5,121,1,,no,,0
+https://github.com/sozialhelden/wheelmap-iphone2,0e4e696bcd3290cee0ba89e609f717b0467765d8,ok,0.5,485,24,ar bg da de el en es fi fr he hu it ja nl pl pt ro ru sk sv tr uk,yes,,0
+https://github.com/SpiderOak/Encryptr,e18624e203cb35d9561de26707c4808de308cec4,ok,0.4,164,0,,no,,0
+https://github.com/spiffcode/hostile-takeover,363c8f7f02c25f90255b28a5e2eaea784b2a502f,ok,0.5,2907,1,en,no,,0
+https://github.com/splinesoft/Bequest,ae18aa7c851b5f000e829e1bc73232afad713e12,ok,1.0,549,0,,no,,0
+https://github.com/splinesoft/MUDRammer,645ceb89944c8fe4024de6a467b5fc0c2fe69402,ok,1.0,2537,71,en fr it,yes,,0
+https://github.com/SpongeBobSun/Prodigal-iOS,3f0659872e605e6d932cdfb7a7850e0066dbe946,ok,0.5,199,5,en zh,yes,,0
+https://github.com/sprang/Inkpad,fea84e3f69324211cf666faa804165912ea28763,ok,0.4,650,12,ar de en es fr it ja pt tr zh,yes,,0
+https://github.com/spritlesoftware/railscasts-on-appletv,1cf3d790a91d3eb712250a2b7d2f23c14f4f3aa9,ok,0.5,348,2,,no,,0
+https://github.com/squallstar/bancha-ios-app,9d1716736b1e826bc17b7c365baaa386c780ba4a,ok,0.4,198,1,en,no,,0
+https://github.com/stakes/Frameless,0b070583c09b614d0e5cb8dbcc7b57ee40333ca3,ok,0.4,103,1,,no,,0
+https://github.com/standardnotes/app,f64d5a4a1991d0e5d1c326c6131673ab4b72684c,ok,1.0,6243,1,,no,,0
+https://github.com/standardnotes/mobile,f9208145333f3fc6217475c093a66164a85680b2,ok,0.5,319,0,,no,,0
+https://github.com/status-im/status-mobile,e0da660e053ae9058e6f4523292407fac21ef945,ok,0.7,5365,0,,no,,0
+https://github.com/steadicat/pytorch-coreml-example,1808b7b7e225215c2033586cf801443693f9c6eb,ok,0.4,17,0,,no,,0
+https://github.com/StephenMcMillan/Dub-Dub-Do,1110dcbe6010278f26c1774e44280b8781698844,ok,0.4,16,1,,no,,0
+https://github.com/StepicOrg/stepik-ios,5fc20cc066d85916ffb7126e3b918a31b80afdb0,ok,0.6,3262,12,en ru,yes,,0
+https://github.com/stevemoser/richtexture,a63fd62a3960e26144db6472ef52703889745b3d,ok,0.4,112,1,,no,,0
+https://github.com/stevenselcuk/Pomosh-iOS-watchOS,434a295409034899d229b50a5fba31c493ae6a0a,ok,0.5,191,2,,no,,0
+https://github.com/steventroughtonsmith/files-ios,117f99c5b89390b6ccf36b71944a666627d64f4e,ok,0.5,53,2,,no,,0
+https://github.com/steventroughtonsmith/MobileTerminal,6b468dd6ac73dde36cfe42d0e39bc38727200f65,ok,0.6,2131,2,,no,,0
+https://github.com/steventroughtonsmith/SpriteKitWatchFace,7e90daa210e773e8ad88e8fcee3bb82dd23e099d,ok,0.4,95,4,en,no,,0
+https://github.com/StewartLynch/Homescreen-Quick-Actions,4681a48c669ddfc57139b1d7c20a4de4ebdc3367,ok,0.4,49,0,,no,,0
+https://github.com/StewartLynch/iOS-14-Widget,09febbf04a51de38b18ed7d2277832dddcad6b08,ok,0.4,60,1,,no,,0
+https://github.com/StewartLynch/UbiquitousKeyValue-Storage,067885e00931455bd6179f381665bc69da3a37ab,ok,0.5,48,0,,no,,0
+https://github.com/stig/Tack,d34ecd92812ba84a2d7005db20df6e28ae014a34,ok,0.5,30,0,,no,,0
+https://github.com/Stmol/vkphotos,3fe6efb9ffc0ab68272e49cc6443dcdb91439ade,ok,0.5,222,3,en ru,yes,,0
+https://github.com/Stop-COVID-19-Croatia/stopcovid19-ios,2ee48e04f81e2e11f869ed64fd24ad330b60537f,ok,0.5,288,8,en hr,yes,,0
+https://github.com/streetwriters/notesnook,af701e991d39230abe82232eef63db20ad1cd3b8,ok,0.7,2856,2,,no,,0
+https://github.com/strongbox-password-safe/Strongbox,c70fc7b021d9dfa2b18a6d7e13406e717dd5251a,ok,0.6,1488,0,,no,,0
+https://github.com/strumswell/oscar-weather,5ea816a28b3471c8cf9536aad4bb72093a97a788,ok,1.1,956,0,,no,,7
+https://github.com/subconcept-labs/ulangi,916243e14d0d4cf3c69e58ef2e7bedfaebf04b43,ok,0.5,3560,1,,no,,0
+https://github.com/sugarso/MappedInIsrael,4048a6809b60aa3adc1bb09f8950ca7061ff4962,ok,0.6,141,3,en,no,,0
+https://github.com/suicidesafetyplan/safetyplan-ios,dcc67ef10a2069383a5ae6f0a5ee6d5c3b1253ae,ok,1.7,924,0,,no,,0
+https://github.com/super-productivity/super-productivity,3d2cdcf2b36bdd696697742220f05ea7bcc94e57,ok,0.5,6088,1,,no,,0
+https://github.com/superarcswift/SwiftCommunity,066ce02322bf9708b03022c7b6009d0d38596830,ok,0.5,624,7,ar de en vi,yes,,0
+https://github.com/surayashivji/potter-pics,ae306faf0e2846138e48ad3836b8ca5a2acaefef,ok,0.5,670,45,,no,,0
+https://github.com/surfstudio/StackOv,12af4af5a7fd968a2a9ef0bf5ed3ed1c4622295e,ok,0.5,320,0,,no,,0
+https://github.com/svkaiser/strife-ve,ac2381d3d6cf32f52acb1506d5ba47a856813098,ok,0.6,4475,30,en,no,,0
+https://github.com/SwiftAnyPic/SwiftAnyPic,74275282d4895dda56c6df42fdf4e97d422c66a6,ok,0.4,160,0,,no,,0
+https://github.com/Swiftgram/Telegram-iOS,c7972b52fd25efe1fc40a9cc098238e1b5c93489,ok,21.2,33840,95,af ar be ca cs da de el en es fa fi fr he hi hu id it ja km ko ku ms nl no pl pt ro ru si sk sr sv tr uk uz vi zh,yes,,0
+https://github.com/SwiftyAlex/Samples,df54cbc8a1bf0448060f6e8ea46c384d18615e1f,ok,0.5,562,0,,no,,0
+https://github.com/swilliams/watchkit-connectivity-demo,4bed52f9e6d8749ad9e689dabd9e3a21f37dd33a,ok,0.6,29,2,,no,,0
+https://github.com/SwissCovid/swisscovid-app-ios,25194212ff8ccafc8cc98bdf0d8f7174c7d5170e,ok,0.5,1309,14,bs de en es fr hr it pt rm sq sr ti tr,yes,,0
+https://github.com/swisspol/ComicFlow,05a30aea4ea757a5b82c81292e7f9fe27c5cb146,ok,0.6,236,1,eng,yes,,0
+https://github.com/swwol/CrimeMapper,62249356f67fd94d7d05b063e390e07399b8bff4,ok,0.4,174,1,,no,,0
+https://github.com/syky27/LunchGuy,049072a7ccc60e441af509d175b6f86bb6b573db,ok,0.4,128,4,cs en,yes,,0
+https://github.com/synboo/SwiftFlickrApp,556ab6634057ea4f7b27fab48c4821860addc027,ok,0.4,17,1,,no,,0
+https://github.com/syshen/ReactiveHackerNews,183543fe937f39f96b97284c97bc15ad507fd76f,ok,0.6,127,2,,no,,0
+https://github.com/Taehan-Kim/AppSlate,677aabed367eb8b958e2896841719bf3d6fa5394,ok,0.8,1620,27,bg ca cs de en es fr he id it ja ko lt lv nl pl pt ru vi zh,yes,,0
+https://github.com/tailec/boilerplate,44a188a3527c380815ad9f06fe09ba38e791de5d,ok,0.6,52,1,,no,,0
+https://github.com/TakefiveInteractive/WeatherMap,5114e12b605d3a28d905a4dc95bd39c06c1f3c7b,ok,0.6,679,5,en ja zh,yes,,0
+https://github.com/takuma104/ntlniph,aeecaa177136d8b541d3e176a6ec05dc2965cc72,ok,0.6,612,5,en,no,,0
+https://github.com/tapmoko/typestyle,91f0fa067a96072e745f3ef1ac31487560388493,ok,0.7,64,1,,no,,0
+https://github.com/tastejs/PropertyCross,7bd2c27b3a43aca88b82a1139cf8f0e3aabd29fc,ok,1.2,5143,5,de en es se,yes,,0
+https://github.com/TCNCoalition/tcn-client-ios,ea25cb026c977a75c6a0898317a35918618fdb1b,ok,0.5,24,0,,no,,0
+https://github.com/tderouin/wikiHow-iPhone-Application,0b587be7ff639781757c0b1c16594b01521714b4,ok,0.4,293,0,,no,,0
+https://github.com/TelegramMessenger/Telegram-iOS,24638bc69bd083981b178dd1e7f921eebbf7fc46,ok,0.9,37327,56,ar be ca de en es fa fr id it ko ms nl pl pt ru tr uk uz,yes,,0
+https://github.com/TelemetryDeck/TelemetryViewer,010e8bb43b77a3edff1260c118788b2fb1e40161,ok,0.5,251,0,,no,,0
+https://github.com/terrychou/iVim,d09cbb5f47e9088bbbcc32bb2f43834f4a0cf880,ok,0.4,3527,3,en,no,,0
+https://github.com/ThasianX/DivRise,e0e5133e4f89f3e0493082ebcdb36da72129ed50,ok,0.4,189,1,,no,,0
+https://github.com/ThasianX/SpotifyRadar,f80d9bbcf3828c77d58fde9579aa8166d9d8c981,ok,0.4,639,1,,no,,0
+https://github.com/theankurkedia/NewsBuzz,d78a8089543c247a4861d7fea869c414a79383e8,ok,0.4,78,1,,no,,0
+https://github.com/TheCodeMonks/NYTimes-iOS,7a60237c47a744133b28a225c53b66cff37952fa,ok,0.5,84,1,,no,,0
+https://github.com/TheCodeTraveler/GitTrends,4c6ac20666385f4e05f35a37e8c7e8500be58cd2,ok,0.5,1028,0,,no,,0
+https://github.com/thedillonb/CodeBucket,d04d3d88e79c1a1a11221dbbad83d043f56e660a,ok,0.4,486,0,,no,,0
+https://github.com/theindianappguy/FlutterNewsApp,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/theindianappguy/FlutterNewsApp/'"")",0.3,0,0,,no,,0
+https://github.com/themoji/ios,7e5a113716ad9e0c345da5c3bcfc4a6250d52db8,ok,0.4,168,1,,no,,0
+https://github.com/thestoneage/IDResistors,8677e3b76ecf6a06bbca883cee9260d370b1ed60,ok,0.4,61,4,de en es fr,yes,,0
+https://github.com/TheSwiftAlps/GameJam,8272e1a56b9705f2552380d36852e06ba1f04528,ok,0.4,159,1,,no,,0
+https://github.com/thiagolioy/marvelapp,ad1af1f5cb77ce57742a6b9716ca2217eaebf782,ok,0.5,85,1,,no,,0
+https://github.com/thiagoricieri/Mojilist,7723c910e52be6a28665796dd5fe1392ddec8c28,ok,0.4,220,12,de en es fr it ja ko pt ru zh,yes,,0
+https://github.com/thii/TextEthan,77b91d437117bacc5a4ff7bf3e5478f37020923e,ok,0.4,72,3,,no,,0
+https://github.com/THLfi/koronavilkku-ios,b9bef04964aef7157da452b436a05e34a6d3d1dc,ok,0.4,330,4,en fi sv,yes,,0
+https://github.com/thomasdegry/Facebook-Pop-Introduction,dc991b8c74ea75e38f81959cace32f95d6476b7a,ok,0.5,92,1,,no,,0
+https://github.com/thomasfinch/GammaThingy,d31771f91d77e721d35e093c3416de3dcc76479e,ok,0.4,55,0,,no,,0
+https://github.com/thomaspaulmann/HeartControl,020c823194e7305ead60ff57dae4d1b77b35d831,ok,0.4,51,2,,no,,0
+https://github.com/Thomvis/Construct,65db2bb055985933cf6121043b6eb01b79f1bd48,ok,0.4,507,1,,no,,0
+https://github.com/thoughtbot/poppins,119a4035934f8dc1fcf2f5c0815d722dc6773775,ok,0.4,191,0,,no,,0
+https://github.com/thoughtbot/Tropos,0e1c06c28f6546da7e3930f60a82fc797a687086,ok,0.4,282,13,en it pl sv,yes,,0
+https://github.com/threema-ch/threema-ios,2228e5311331eb4a3b75ac807dcd69c6552b4ad2,ok,1.8,4072,61,bg cs cy de en es fr gsw id it ja ko nl pl pt ru sk tr uk zh,yes,,20
+https://github.com/thunderbird/thunderbird-ios,066963992e569c101907d0129d32178b2a23c692,ok,1.1,493,74,am ar ast az be bg bn br brh bs ca co cs cy da de el en enm eo es et eu fa fi fr fy ga gd gl gu he hi hr ht hu hy id is it ja ka kab kk kn ko lt lv ml mnw nb nl nn pl ps pt ro ru sk sl sq sr sv sw ta th tr uk vi zh,yes,,0
+https://github.com/tiagomartinho/Reminders,fd68e1544ddb90e83ee826ec522d74b3b5859324,ok,0.5,73,1,,no,,0
+https://github.com/TICESoftware/tice-ios,8ba0392447d33cba693c98083697e985d763a654,ok,0.5,910,12,da de en es fr pt,yes,,0
+https://github.com/timfraedrich/OutRun,367540dca1cbaadafc12525da284e56d9182bfe9,ok,0.8,357,9,de en es fr nl,yes,,3
+https://github.com/tinode/ios,a4db1251549c40b7aa4f269cd79234eb4c07baff,ok,0.4,445,95,en es ru uk zh,yes,,0
+https://github.com/tirupati17/contacts-mvp-swift,f75552397136fc8e4ead376077f52df449038661,ok,0.4,110,1,,no,,0
+https://github.com/tirupati17/currency-converter-swift3.0-viper,4b06fb8d5d987757f1c0c48dc6bc595e3e7fdfde,ok,0.4,271,1,,no,,0
+https://github.com/tirupati17/giphy-mvvm-swift,1815d40d5440f6458b88d2e7c13c2bf4dbb8de30,ok,0.4,83,1,,no,,0
+https://github.com/tirupati17/loan-emi-calculator-clean-swift,cce691ededc804dc9bec7e98417722ae56f16af8,ok,0.5,45,1,,no,,0
+https://github.com/tirupati17/sip-calculator-swift,e030f65ceaaf832d60ac1574eb3d34aa75c257e2,ok,0.4,52,0,,no,,0
+https://github.com/tirupati17/tip-calculator-auto-layout-viper-objective-c,be9a1296c620d5c81fa170c011ccdcfcb516ea28,ok,0.4,67,1,,no,,0
+https://github.com/tkzic/audiograph,599321b4c205092ba4be356ae3bad1ed4bb4ee5e,ok,0.4,69,2,en,no,,0
+https://github.com/tls-inspector/tls-inspector,0eb4952fec2aa079e17efa58ae886dfa92329234,ok,0.7,341,1,,no,,0
+https://github.com/tnantoka/edhita,7a56507585544f9fc787b2bc905d9a5175c64772,ok,0.4,54,2,en ja,yes,,0
+https://github.com/TNT-Likely/BeeCount,9d06cb0e18bf9042cb80c293769a2cda7f8d62dd,ok,0.5,1140,4,en zh,yes,,0
+https://github.com/todotxt/todo.txt-ios,0626c7ccc3341bc531376deadb7a03cac82f4fec,ok,0.4,295,2,en,no,,0
+https://github.com/toggl/stopwatch,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/toggl/stopwatch/'"")",0.3,0,0,,no,,0
+https://github.com/tombaranowicz/PostManager,8e2824a0b935de39e27d5c397c1921f58a4da4e0,ok,0.4,455,4,,no,,0
+https://github.com/TomekB/iBeaconTasks,438f7fcf93e000fb94a73c2ecd09c6dcf5bd69b3,ok,0.4,206,5,en,no,,0
+https://github.com/TomekB/Parse-Challenge-App,ba04f603eee9a58e2966076a9bff3a417f3319c5,ok,0.5,545,31,,no,,0
+https://github.com/tommyxchow/frosty,3ea6ccd43508fd162b045c7b0a4760716d6bcfd1,ok,0.5,450,1,,no,,0
+https://github.com/tootbot/tootbot,92e3d9c8156070cda74f5934c6753c51b7312908,ok,0.5,373,2,,no,,0
+https://github.com/TortugaPower/BookPlayer,2913c8ee7ade45dae0e6649a64d5bfad9f4a524f,ok,0.5,1266,27,ar ca cs da de el en es fi fr hu it ja nb nl pl pt ro ru sk sv tr uk zh,yes,,0
+https://github.com/toshi0383/Bitrise-iOS,b76e66905f01df35298ed0525da62198b1134d4c,ok,0.4,195,0,,no,,0
+https://github.com/TosinAF/HopperBus-iOS,8a0891013e93e223b7b8476c16aa7b7c421aad36,ok,0.5,1027,1,,no,,0
+https://github.com/TosinAF/thenews-objc,bd99ae6f24494846475b0f5e9b9687e5db989400,ok,0.4,202,2,en,no,,0
+https://github.com/touchlab/DroidconKotlin,27f3e87c12f7fa76f74002a8443605c2ff16dabc,ok,0.5,344,3,en,no,,0
+https://github.com/tpgoffline/tpg-offline-iOS,da848659bdb876bfb5779d5f66efb1464fd45474,ok,0.5,953,10,en fr,yes,,0
+https://github.com/traccar/traccar-client-ios,4517f8b80dda324b13ee6fbb9bd80e64f64611a0,ok,0.4,98,27,de en es fr it ja ko nl pl pt ru zh,yes,,0
+https://github.com/traccar/traccar-manager-ios,0057f8d9451c3bdae7adf91c920a24e55a75c5c0,ok,0.4,42,1,,no,,0
+https://github.com/trentbrooks/AntiMap,f27ae5f2192d9cd3fc2973b858130af0405d8a33,ok,0.4,110,0,,no,,0
+https://github.com/trentpiercy/trace,862e2ef7ae29ec76290c643a2bcea7da5031d45f,ok,0.5,551,1,,no,,0
+https://github.com/Trevorrwarduk/warpedAR-Open-Source,3c1a2f85c9aea65b27ad516ac12eb60c94ba1d2c,ok,0.4,71,0,,no,,0
+https://github.com/triangledraw/TriangleDraw-iOS,25bc87c479cd10b461a17834b67d99d911f7cc34,ok,0.5,452,10,da de en es fr ja pt ru zh,yes,,0
+https://github.com/triceam/Fresh-Food-Finder,87fbcf65a7bd356cb0beb7188ab6bd83b74a1431,ok,0.7,98,0,,no,,0
+https://github.com/TrustWallet/trust-wallet-ios,b673b977122f235cdd00f6dde8257d10391fe67e,ok,0.5,655,16,ar de en es fr it ja pt ru th tr uk vi wo zh,yes,,0
+https://github.com/TryFetch/Fetch,0e686a9ff19c20f6f1e6ead307f4784e46954f6a,ok,0.5,1063,63,en,no,,0
+https://github.com/tryswift/try-swift-tokyo,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/tryswift/try-swift-tokyo/'"")",0.3,0,0,,no,,0
+https://github.com/tryswift/trySwiftNYC,0dc02aad5217f0615310c950e917ca7d0a856862,ok,0.8,893,15,,no,,0
+https://github.com/tt1k/FakeGithub,95a0c195477a92845527bea630b07ba012d7274a,ok,0.4,139,0,,no,,0
+https://github.com/tt1k/money-mate,99f7913cfd47865da43b1a42a192ab18cc1da0fb,ok,0.4,43,1,,no,,0
+https://github.com/tucan9389/ObjectDetection-CoreML,6738c8297d70d486752ff184c0af0db00d455cf8,ok,0.8,29,1,,no,,0
+https://github.com/TUM-Dev/Campus-iOS,deb8254182fd714bf3404d7702edff94cf9982fd,ok,0.5,498,4,de,yes,,0
+https://github.com/tutao/tutanota,e34b68f44f261667188e864309e7188d431e3c90,ok,1.8,3988,69,af ar be bg bn br bs ca ceb cs cy da de el en eo es et fa fi fil fr gl he hi hr hu hy id is it ja ko ku lt lv mk ml ms nl no oc pl pt ro ru si sk sl sq sr sv sw ta tg tl tr uk vi zh,yes,,0
+https://github.com/twocentstudios/vinylogue,2d0af51d081f6493d40d05c5c18b272ba29560a6,ok,0.4,143,0,,no,,0
+https://github.com/twostraws/simple-swiftui,e24d0442acf4a1ad7d624e4653bca75485296a10,ok,0.4,165,5,de en es fr nl,yes,,0
+https://github.com/twostraws/Unwrap,44886cb39a537dc4637f3f33c8d5a6638ff398c7,ok,0.4,854,1,,no,,0
+https://github.com/twtstudio/WePeiYang-iOS-Everest,7cb7805498d4b1c0ab6b40c8921ed67a6bf8aee6,ok,0.5,845,0,,no,,0
+https://github.com/txaiwieser/FityIt,d13ec1f8a934a582e9c6f371c4f92eb8c61ac59c,ok,0.5,343,4,en pt,yes,,0
+https://github.com/uiheros/react-native-redux-todo-list,c56842b423355853a484bf3750a4f1ad2502f2a2,ok,0.4,69,1,,no,,0
+https://github.com/ukhsa-collaboration/covid-19-app-ios-ag-public,8d7a64bc5e10c0dc89889bad3558bcf648f97378,ok,0.7,2033,27,ar bn cy en gu pa pl ro so tr ur zh,yes,,0
+https://github.com/ulritter/FrozenPengu,262a7b96526a4e5695530256219945c885a3eaff,ok,0.8,285,1,,no,,0
+https://github.com/ultralytics/yolo-ios-app,547d4e9c1f5200d1d56f1256de267f7310157525,ok,0.4,145,2,,no,,0
+https://github.com/UniversalSDK/FoodVisionAI-iOS,e282ca26057594ff51593f277b6123ae27e25de4,ok,0.4,4,0,,no,,0
+https://github.com/unixzii/SwiftUI-2048,34f315a4103527eac366403b9e4632326cc2f257,ok,0.4,32,2,,no,,0
+https://github.com/USDepartmentofLabor/Swift-Sample-App,19c28dcb094a7c4328fd8da8910d8554f283f7fb,ok,0.4,18,1,,no,,0
+https://github.com/usecanvas/ios-v1,c740206a294c775ebc48894b8b36ce477c5cec82,ok,0.5,313,2,en,no,,0
+https://github.com/usemobile/promonster-ios,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/usemobile/promonster-ios/'"")",0.3,0,0,,no,,0
+https://github.com/utmapp/UTM,cfbfe2ad36c632a72e60b7995cd7ab557eb7d930,ok,0.5,792,80,ar de en es fi fr it ja ko pl ru zh,yes,,0
+https://github.com/V8tr/InfiniteListSwiftUI,f064cab5f400911fd9602cd21490c3662889d749,ok,0.5,19,1,,no,,0
+https://github.com/vadymmarkov/reviewery-mobile,f4b5df08e9a139a0f6a64c64b729f60583fd08ad,ok,0.5,95,1,,no,,0
+https://github.com/VamshiIITBHU14/AppStoreClone,de0e06a92cdcad3f9b5e5a10a76375f8023f7e15,ok,0.5,80,1,,no,,0
+https://github.com/VamshiIITBHU14/FakeFBWall,c48c9d0063bdfd0b0c9626447cfe5c91d4b2fc84,ok,0.4,113,1,,no,,0
+https://github.com/VamshiIITBHU14/YouTubeClone,0510d8c5f60785da09289f9a570b619836d33ce1,ok,0.5,33,1,,no,,0
+https://github.com/VAnsimov/MVI-SwiftUI,b17180b72be1820adf952832d2af16171e2f8e20,ok,0.5,89,0,,no,,0
+https://github.com/vapor-community/chat-ios-example,6bdf735015d6fbac0d17a290875ec65e821edfec,ok,0.5,55,1,,no,,0
+https://github.com/venkatasg/DeTeXt,04bd063e59534bf994d8de1206c48ec659fd2419,ok,0.6,2263,0,,no,,0
+https://github.com/verback2308/Opaline,26622322ddaccd1e6b9e27fc9988786b8aa8abb6,ok,0.6,648,27,de en es fr it ja pt ru tr uk vi zh,yes,,0
+https://github.com/vermont42/Conjugar,0f59319ea68597b4cb6ae35905a926340966d8fa,ok,1.2,667,2,es,yes,,2
+https://github.com/vermont42/RaceRunner,73483eb42549d86e1b316150a6b1870ed466174f,ok,0.6,312,1,,no,,0
+https://github.com/vetri02/HackerNews,484f143ae3ce0df1c953a6a2e270172918d71025,ok,0.5,207,3,en,no,,0
+https://github.com/victorpanitz/iOS-SortingAlgorithmsApp,c6eda88f43ce94cf65d25f1a87a8434798c8da6c,ok,0.5,73,1,,no,,0
+https://github.com/videolan/vlc,6c35899343e5b67e6bf5cafcd996b6beb56de8a0,ok,0.7,5738,25,ar bg ca cs de el es fr gl he hu it ja lv nl pl pt sk sl sv tr uk zh,yes,,0
+https://github.com/vijaywargiya/Translate-SwiftUI,1507b0de0d77e24dd3ae84340c36e1dc33e2ddc2,ok,0.5,28,0,,no,,0
+https://github.com/viktor-svirsky/tether,17702a5372e951ac8a19198bb322803ebdf1fdda,ok,0.5,150,0,,no,,0
+https://github.com/vincezzh/doctornearby-ios,21fd08b8029eb5f5b7795032c1069cff322368a8,ok,1.0,290,1,,no,,0
+https://github.com/vincode-io/Humboldt,e9ca039287e19415474e7760bd6821a7e365497d,ok,0.4,53,1,,no,,0
+https://github.com/vincode-io/Zavala,8573d2ad22b57c082f25844aa90ceffb4140abf9,ok,1.1,545,13,de en ja mul zh,yes,,11
+https://github.com/vinhnx/Clendar,883c2ddbf5032de8384eeaa85794778cb258b1c1,ok,1.2,552,14,de en es fr it ja ko th vi zh,yes,,2
+https://github.com/ViniciusDeep/InvestIQ,532e8b792807bfd1686d8e34b62f34471bf00252,ok,0.4,17,0,,no,,0
+https://github.com/ViniciusDeep/Revill,46a2f2eb84707e2bb9510925defb3b52c2907d30,ok,0.6,41,1,,no,,0
+https://github.com/viniciusvieir/EconoApp,b0c32b109a3b8212ca7dd5e515d67ad8abbdf2d4,ok,0.5,822,7,de es fr it pt,yes,,0
+https://github.com/VintusS/Inpenso,27e04f8633d59ccbcc5c77dbf9b07535101ee773,ok,0.7,88,0,,no,,0
+https://github.com/VishwaiOSDev/Loadify-iOS,64a0934c5040007d79927241045ddf672b65bd45,ok,0.8,155,0,,no,,0
+https://github.com/Visual-Studio-Coder/QR-Share-Pro,0cac1d2d71ef3c0598c3f1861bd978ee6d81ed24,ok,1.2,86,2,en,no,,0
+https://github.com/Visual-Studio-Coder/Recap,e3662892950733a0c03faf8fafd48700d06218e2,ok,1.4,57,0,,no,,1
+https://github.com/vkoser/PlainNote,268050ae11ce2eaa2bfbfe6bacb8aecce8caaec0,ok,0.8,41,1,en,no,,0
+https://github.com/vladimir-kaltyrin/exchanger,71a1a010b653e569045a6f5b1f14669c015065f9,ok,0.8,341,0,,no,,0
+https://github.com/VladimirBrejcha/Rise,326ac72a07d1cf02e3bb0d92e44dd91a00069e0b,ok,0.7,348,4,,no,,0
+https://github.com/walktalkmeditate/pilgrim-ios,b76e640eb72f62dd99ec29bd5fb14cc7b9f26bb1,ok,0.9,1392,2,en,no,,0
+https://github.com/wallabag/ios-app,1cff1471a8c6e23c34c0520a5b518886262a3ee7,ok,0.6,237,29,ar cs da de en es fa fr gl hi hr hu it ja ko nb nl oc pl pt ro ru sv th tr uk zh,yes,,0
+https://github.com/weiran/Hackers,d18b53422be643d806f74d68393a771f964ba18e,ok,0.7,216,1,,no,,0
+https://github.com/WelkinXie/FiveInARow,6fecf3d4fb1c6ef6969942c63255183d157a17bd,ok,0.7,49,5,en zh,yes,,0
+https://github.com/WezSieTato/ScanNow,b2312304483b4f0d548ea35cd07a4eee33e8c1c9,ok,0.9,195,9,en fr pl ro,yes,,0
+https://github.com/WhiteHouse/wh-app-ios,7d3bec311ef21a493ec1283ad838ab85fe5b9ea1,ok,0.7,416,1,,no,,0
+https://github.com/whunmr/Mission999,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/whunmr/Mission999/'"")",0.5,0,0,,no,,0
+https://github.com/whymani005/cortex,f88966d2d4f93a75e9b2aed9de7726e998e982dd,ok,0.7,403,1,,no,,0
+https://github.com/widle-ai/Grocery-App,c7aaa22bb2b8e61d3b5ab88b8d68b8c4a8a7928a,ok,0.7,562,1,,no,,0
+https://github.com/wikimedia/wikipedia-ios,ea44638427ce038428a9d1e4984dc9d4db93e176,ok,9.5,4703,403,ab af ar as ast av az azb ba ban bcl be bg bgn bik blk bn br bs bto bug ca ce ckb cnh cs cy da de dga diq dsb dty dz el en eo es eu fa fi fil fit fo fr frp fy ga gl gom gu haw he hi hr hrx hsb hu hy hyw ia id inh is it ja jv ka kaa kab kcg kjp km kn ko krc ksh ksw ku ky lb li lkt lmo lt lv mad mai mg mhr mk ml mni mns mnw mr ms mt my nah nap nb ne nl no nqo oc olo om or pa pl pnb ps pt qqq rki rm ro ru rue sa sah scn sco sd se shi shn si sk skr sl smn sms sq sr sro su sv sw szl ta tcy te tg th ti tl tok tr tt uk ur uz vec vi wuu xmf yi yue zgh zh zza,yes,,0
+https://github.com/willhains/Kotoba,6a1b5a9ee7ed44263a7930f0002484bf2dd9e088,ok,0.6,173,6,en,no,,0
+https://github.com/willowtreeapps/vocable-ios,58ba45a978e1ebaeae71d9e88509703a9bd67bd6,ok,1.2,410,5,de en mul,yes,,4
+https://github.com/wireapp/wire-ios,5b0d65042625bb9cb46f15d6fc42d9136238d2d5,ok,2.0,12967,238,ar be bg bn ca cs da de el en es et eu fa fi fr he hr hu id is it ja ka ko lt lv ms my nl no pl pt ro ru sk sl sr sv th tr uk ur vi zh,yes,,9
+https://github.com/WireGuard/wireguard-apple,2fec12a6e1f6e3460b6ee483aa00ad29cddadab1,ok,0.6,228,20,ca de es fa fi fr id it ja ko pa pl ro ru sl tr zh,yes,,0
+https://github.com/woguan/Legend-Wings,ae191f601c0755f0cb65cf2309b3995e6a7664fd,ok,0.8,345,1,,no,,0
+https://github.com/wongzigii/Colo,631925a12c24dc22ec326f1b25606519e4f649e4,ok,0.6,203,1,,no,,0
+https://github.com/woocommerce/woocommerce-ios,b23b34b7d3e2b7dc6d0fe519eb3fd44241d69ed4,ok,0.9,9405,18,ar de en es fr he id it ja ko nl pt ru sv tr zh,yes,,0
+https://github.com/wordpress-mobile/WordPress-iOS,de949f3fdf8d8501f2535778360c48051357587d,ok,1.6,6427,136,ar bg cs cy da de en es fr he hr hu id is it ja ko nb nl pl pt ro ru sk sq sv th tr zh,yes,,4
+https://github.com/woxtu/SwiftUI-HackerNews,954386bf7555b466f2e9725be4d164dec2b49852,ok,0.6,22,1,,no,,0
+https://github.com/writingmate/aidictation,c2fce22a21b25dba2f602345416dccb43cb22156,ok,0.6,1534,0,,no,,0
+https://github.com/wrutkowski/Lucid-Weather-Clock,08f9a3394e975b79afe4eb0431a5dcb3ec6388ab,ok,0.9,229,1,,no,,0
+https://github.com/wujianguo/iOSAppsInfo,6bca63947e54c80f731f9e623dd799f3a95d967b,ok,0.6,28,1,,no,,0
+https://github.com/wvabrinskas/PokePal,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/wvabrinskas/PokePal/'"")",0.2,0,0,,no,,0
+https://github.com/wwayne/react-native-nba-app,f0cdfcadca396b9b2e306fc8023fce4b9677d5ea,ok,0.5,184,1,,no,,0
+https://github.com/wwdc-family/app,1dfd1ab3224ef3a65d7e7c39dc9740f89e99d0c2,ok,0.6,726,78,,no,,0
+https://github.com/WWDCScholars/iOS-app,84bb9439a9e8e2713b81f9b13b9108119ac085ec,ok,0.5,433,1,,no,,0
+https://github.com/xbmc/xbmc,8a00f51c2e35487581418690e586c6e69013aae6,ok,0.8,10698,0,,no,,0
+https://github.com/xcoo/upupu,ab3b26ac2fdad38c62fb8d46e4a26f834cb47acb,ok,0.5,102,1,en,no,,0
+https://github.com/XKCDY/app,ee31b0670af2f7c33388deaa340bd86e3b7af067,ok,0.6,128,1,,no,,0
+https://github.com/xpavle00/Habo,1ddf4c43075f0f13121a44ae91a01ca8185cedb9,ok,0.4,416,2,,no,,0
+https://github.com/xsxs18-dev/FileManager,a4f66321e9fa3306cd231d5068ab1576dc4edc8d,ok,0.9,56,0,,no,,1
+https://github.com/XunMengWinter/PetNote-oss,ed28632f49470b05c40a291edd8323b495946b66,ok,0.9,185,4,en ja zh,yes,,1
+https://github.com/XVXVXXX/DoubanFM,9962269b57538ea654ef296b6d0b20a70b95c4ac,ok,0.6,939,1,,no,,0
+https://github.com/xyclos/BatLovesBugs,957504a447fd33b952f46599b0a79fc2a3df8aa8,ok,0.5,2094,4,en,no,,0
+https://github.com/xyclos/space_squared,114961752c48341f85376800d7f51fb569b68087,ok,0.7,54,1,,no,,0
+https://github.com/xYello/ThePost,2b9b44d7340b6cbdfd791a963bb6cc2af7b2dacf,ok,0.8,4541,671,,no,,0
+https://github.com/Yalantis/CloudKit-Demo.Objective-C,a9dbbdb52f30ce36667fe57209da8c4a3fd324d3,ok,0.5,52,0,,no,,0
+https://github.com/Yalantis/CloudKit-Demo.Swift,de03b2ea7544c4a7455df6a01f55cfa2769a6a74,ok,0.5,42,0,,no,,0
+https://github.com/Yalantis/PixPic,d9f54dfc1078c0f4db9698cf0ea08a5a3c3d5a90,ok,0.5,265,0,,no,,0
+https://github.com/yattee/yattee,10ea2798eee437b70cb4670a0d1ec2763d52596b,ok,1.2,746,0,,no,,1
+https://github.com/yavuz/Tenere,6c7dd019e89f44bf384f288e80b580f09d2d947a,ok,0.7,393,17,da de en es fr ja nl pt tr zh,yes,,0
+https://github.com/yichengchen/ATV-Bilibili-demo,31981fa6a5e43036839df6875d62d91587c572fe,ok,1.5,186,4,zh,yes,,1
+https://github.com/ynagatomo/ARDiffMuseum,6b614d24b901aeb69ec687aa4f02e8233e984753,ok,0.6,45,0,,no,,0
+https://github.com/ynagatomo/ARWallPicture,1d617ba96f2326627b542a621e43fa0024bb620e,ok,0.7,50,0,,no,,0
+https://github.com/ynagatomo/HeyChatGPT,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/ynagatomo/HeyChatGPT/'"")",0.5,0,0,,no,,0
+https://github.com/ynagatomo/ImgGenSD2,9b0e170f6b842acfcff97bd9ce437bc54a23b67f,ok,0.7,31,0,,no,,0
+https://github.com/Yogayu/EmotionNote,afbfea4b2ca76d71f606fa3984c2cb2f4b79ab0d,ok,0.6,84,1,,no,,0
+https://github.com/yoha/Pokedex,0a190b22397ed260be710fd093d7704e502e60c4,ok,0.8,39,1,,no,,0
+https://github.com/yohannes/Thoughtless,ad5e48bc6705947a1e19acc096ac6c4376e8751c,ok,0.8,181,5,,no,,0
+https://github.com/yonbergman/swift-gameoflife,fd31c2cea76d54312b4c4c42cebb3de318223881,ok,0.7,23,1,,no,,0
+https://github.com/yoshiokatsuneo/camlingual_iphone,4c62e8db943c65b126dd9948dab6d82a0dd2f98f,ok,0.7,109,4,en,no,,0
+https://github.com/yoshisuga/MAME4iOS,9c0f4c918444f47701840702e55e64851bdc3128,ok,1.3,4567,2,en,no,,1
+https://github.com/youstanzr/YouTag,f0077608406dfef8d1861270e9f7c50cd2f0514d,ok,0.7,129,1,,no,,0
+https://github.com/YouXianMing/YoCelsius,e78c438579ede49005547c18a522bead2c99a429,ok,0.7,403,0,,no,,0
+https://github.com/yuri-val/GeneratorTracker,7dc79f90610d80817f15e40d245f1377cff68421,ok,0.7,338,0,,no,,0
+https://github.com/yuripetrosyan/Controllers,0cd8366af4b0d0b058d70e94378f3b625042531b,ok,0.7,36,0,,no,,0
+https://github.com/YusuFKaan48/NeuCalc,4344c335626d9fb17eddeed5ccbd048674ad167b,ok,0.6,26,0,,no,,0
+https://github.com/YusuFKaan48/News,b41ed3eb60b18423c63be05aa8f38e40c7e30081,ok,1.0,43,1,,no,,0
+https://github.com/YusuFKaan48/PixelWeather,1dcb14c8d77512c003adf20ffa377780bb85ad28,ok,1.1,70,1,,no,,0
+https://github.com/YusukeHosonuma/SwiftUI-LifeGame,8bce03b7e0a050a1c975d3391d673a03ae4fd6aa,ok,0.9,181,0,,no,,0
+https://github.com/Yvsleyen00941/Cockpit,da93a83c3cb76153e8c3e404f3c058f54369b1c9,ok,0.8,137,0,,no,,0
+https://github.com/Yvsleyen00941/Waybill,22c557f71d49ad63bb480e111db52c3be3cb1baf,ok,0.8,84,0,,no,,0
+https://github.com/zackshapiro/SwiftUIAirtableDemo,0e35a628d05d0c36c2812d248f466c3d1bfa48f2,ok,0.8,55,1,,no,,0
+https://github.com/zadr/8mph,2b6bae761d5f0573fa765513431ca92f680941d6,ok,0.7,327,3,en,no,,0
+https://github.com/zadr/Communique,,"error: RuntimeError(""fetch failed: fatal: Authentication failed for 'https://github.com/zadr/Communique/'"")",0.5,0,0,,no,,0
+https://github.com/zaiqltd/palm,d6ed8fdcc2e0c430b48a7fb9c1b08de819aca3c1,ok,0.7,228,0,,no,,0
+https://github.com/zamai/open-habit,c1db8351b2cf8c6cbee2deb230d15a177a0bd0d9,ok,0.7,150,0,,no,,0
+https://github.com/zehfernandes/wordnote,63ba12e02f72d8945841ab53404d265797b1c118,ok,0.9,56,0,,no,,0
+https://github.com/zgrossbart/bridges,65cd0bbc33d26b2f2e65ebcf83fdda354ae58469,ok,0.9,1021,0,,no,,0
+https://github.com/zizicici/Off-Day,e2ce1b4938d7e86928f925d89f153439908b091d,ok,1.2,183,1,,no,,3
+https://github.com/zntfdr/Compass,14c69b3dda5d36e568f4e6ffff97bd2a0c2b3455,ok,0.6,37,1,,no,,0
+https://github.com/zpz1237/NirZhihuDaily2.0,13c5e823854a7f9502f76893c3c14ce059229081,ok,0.9,271,1,,no,,0
+https://github.com/zulip/zulip-mobile,d7cf6da79b4b9467e240b42f24330e97390a8aff,ok,0.8,1174,1,,no,,0
+https://github.com/zxing/zxing,56b8a9a7b53392097891463023a26c406b422225,ok,0.6,3803,0,,no,,0
+https://github.com/zydeco/minivmac4ios,f747cbcb2f4554fb199d8eed1d87d2405bf0277b,ok,0.6,302,1,,no,,0
+https://github.com/zzanehip/The-OldOS-Project,7792e45f2c2bf12d9b2112b68b526072794627e2,ok,1.0,3601,3,en,no,,0
