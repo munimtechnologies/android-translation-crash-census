@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Tests for pyhdr_census.py: the pure-Python rule py_load_problem() and, when GNU msgfmt is
-installed, its agreement with CPython's gettext.GNUTranslations on the same synthetic files.
+"""Tests for pyhdr_census.py (v2): the pure-Python rule py_load_problem() in legacy and modern
+mode and, when GNU msgfmt is installed, its agreement with CPython's
+gettext.GNUTranslations on the same synthetic files, compiled with msgfmt --no-convert
+(legacy, as gettext <= 0.21) and with plain msgfmt (modern, gettext >= 0.22).
 
 Licensed under the Apache License, Version 2.0 (Apache-2.0).
 Made by MV2 of Munim, Inc. with AI agents.
@@ -68,6 +70,10 @@ EXPECTED = {
     "ascii-text": "text-not-in-charset",
 }
 
+# gettext >= 0.22 msgfmt converts to UTF-8 and rewrites charset= in the header.
+EXPECTED_MODERN = dict(EXPECTED)
+EXPECTED_MODERN.update({"charset-placeholder": None, "latin1-header": None})
+
 
 class ParseTest(unittest.TestCase):
     def test_entries(self):
@@ -92,10 +98,20 @@ class RuleTest(unittest.TestCase):
             got = c.py_load_problem(data)
             self.assertEqual(got[0] if got else None, EXPECTED[name], name)
 
+    def test_cases_modern(self):
+        for name, data in sorted(CASES.items()):
+            got = c.py_load_problem(data, modern=True)
+            self.assertEqual(got[0] if got else None, EXPECTED_MODERN[name], name)
+
     def test_detail_quotes_the_header(self):
         code, detail = c.py_load_problem(CASES["karbi-style"])
         self.assertEqual(code, "plural-forms-syntax")
         self.assertIn("n=2 ; ( n != 1 )", detail)
+
+    def test_declared_utf8(self):
+        self.assertTrue(c._declared_is_utf8(b"Content-Type: text/plain; charset=utf8\n"))
+        self.assertFalse(c._declared_is_utf8(b"Content-Type: text/plain; charset=CHARSET\n"))
+        self.assertFalse(c._declared_is_utf8(b"Content-Type: text/plain\n"))
 
 
 @unittest.skipUnless(shutil.which("msgfmt"), "needs GNU msgfmt")
@@ -114,9 +130,10 @@ class GroundTruthTest(unittest.TestCase):
 
     def test_valid_file_compiles_and_loads(self):
         gt = self.truth("valid")
-        self.assertEqual((gt["msgfmt"], gt["load"]), ("ok", "ok"), gt)
+        self.assertEqual((gt["msgfmt"], gt["load"], gt["msgfmt_modern"], gt["load_modern"]),
+                         ("ok", "ok", "ok", "ok"), gt)
 
-    def test_rule_agrees_with_cpython(self):
+    def test_rule_agrees_with_cpython_legacy(self):
         compiled = 0
         for name in sorted(CASES):
             gt = self.truth(name)
@@ -125,6 +142,17 @@ class GroundTruthTest(unittest.TestCase):
             compiled += 1
             rule = c.py_load_problem(CASES[name])
             self.assertEqual(rule is None, gt["load"] == "ok", (name, rule, gt))
+        self.assertGreaterEqual(compiled, 6)
+
+    def test_rule_agrees_with_cpython_modern(self):
+        compiled = 0
+        for name in sorted(CASES):
+            gt = self.truth(name)
+            if gt["msgfmt_modern"] != "ok":
+                continue
+            compiled += 1
+            rule = c.py_load_problem(CASES[name], modern=True)
+            self.assertEqual(rule is None, gt["load_modern"] == "ok", (name, rule, gt))
         self.assertGreaterEqual(compiled, 6)
 
 

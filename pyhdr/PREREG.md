@@ -6,6 +6,9 @@ Written 2026-11-10 by AI agents working for MV2 of Munim, Inc., before the job r
 repository. Code: [pyhdr_census.py](pyhdr_census.py) and [test_pyhdr.py](test_pyhdr.py) in this
 folder. Text CC BY 4.0, code Apache-2.0.
 
+**Amended 2026-11-12 (v2), still before any repository was read: see "Amendment v2" at the end.
+The v1 text below is unchanged.**
+
 ## Why
 
 CPython's `gettext.GNUTranslations` reads a compiled catalog's header with unguarded string
@@ -96,3 +99,50 @@ msgfmt cannot compile.
 If G, A1 and A2 hold, the rule goes into l10n-guard's `po` kind (pre-registered separately).
 If H holds, confirmed cases in active projects get one-line header fixes, offered upstream at
 one a day, each with the project's AI policy read first.
+
+## Amendment v2 (2026-11-12, before any repository was read)
+
+Marker: pyhdr census PREREG v2
+
+**What happened.** Job `pyhdr-census-v1` ran on 2026-11-12 and stopped at its own gate: the
+unit test that compares the rule with real msgfmt and CPython failed on the synthetic file
+with `charset=CHARSET`. The rule said "crash" (LookupError), but CPython loaded the compiled
+file without error. As pre-registered, the census did not run, so no repository was read.
+
+**Why.** The test assumed msgfmt copies the header into the `.mo` file unchanged. Current GNU
+gettext does not. Its `write-mo.c` calls `iconv_message_list` to convert every message to
+UTF-8 unless `--no-convert` is given. In `msgl-iconv.c` that conversion rewrites the header's
+`charset=` value to the target, and it accepts the placeholder `CHARSET` (and a missing
+charset) when every message is ASCII. GNU gettext 0.22 (June 2023) began this conversion on
+musl systems; the image's glibc msgfmt evidently does it too (the job records its version). So
+with a recent msgfmt, a placeholder charset with ASCII text and a non-UTF-8 header no longer
+crash Python, while a Content-Type without `charset=` (nothing to rewrite) and a bad
+Plural-Forms still do. Catalogs built by older gettext (0.21 and earlier) behave as v1
+assumed. The red test was the gate working as designed.
+
+**Changes in v2 (code and tests only; population, thresholds, sample key unchanged):**
+
+1. Ground truth is measured twice per file. **Legacy:** `msgfmt --no-convert`, which writes
+   the catalog in its own charset as gettext up to 0.21 did. This is the ground truth for G,
+   A1, A2, P1 and H, because it is what v1's rule models. **Modern:** plain `msgfmt`, recorded
+   for every file.
+2. `py_load_problem(data, modern=True)` is the rule for modern msgfmt: it does not report
+   `unknown-charset`, and reports `header-not-utf8` only when the declared charset is UTF-8.
+3. The unit tests check both rules against both ground truths on the same 12 synthetic files
+   (each mode at least 6 compiled), plus the expected codes for each mode. If any fails, the
+   census does not run.
+
+**New predictions for modern msgfmt (same thresholds):**
+
+- **A1m:** among files plain msgfmt compiles that the modern rule flags, at least 95% crash.
+  NOT TESTABLE with fewer than 5 flagged.
+- **A2m:** among files plain msgfmt compiles that crash, the modern rule flags at least 95%.
+  NOT TESTABLE with fewer than 5 crashing.
+
+If the image's msgfmt has no `--no-convert`, legacy and modern are the same build and A1m/A2m
+are NOT TESTABLE.
+
+**Reported, not predicted (added):** listed catalogs that crash with modern msgfmt; listed
+catalogs that crash only with legacy msgfmt (a hazard for builds on older gettext); both by
+Flathub and platform source. Which gettext a given distribution or Flatpak SDK ships is not
+measured here.

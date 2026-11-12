@@ -1,15 +1,22 @@
-# pyhdr census v1: gettext catalogs that CPython's gettext module cannot load.
+# pyhdr census v2: gettext catalogs that CPython's gettext module cannot load.
 #
 # For every .po file in the po folders whose Meson or autotools build reads LINGUAS (the 526
 # Flathub app repositories of the linguas census and the 291 GNOME, GNOME World, elementary and
 # Xfce repositories of the l10n-guard 0.21.0 check, each cloned again at HEAD), this job
-#   1. compiles the file with GNU msgfmt (plain, as Meson and gettext's autotools rules do),
-#   2. loads the compiled catalog with CPython's gettext.GNUTranslations (ground truth: does a
-#      Python program, or itstool, crash when it opens this language?),
+#   1. compiles the file with GNU msgfmt twice:
+#        legacy: `msgfmt --no-convert`, which writes the catalog in its own charset, as every
+#                gettext up to 0.21 did (primary ground truth, as pre-registered in v1);
+#        modern: plain `msgfmt`, which since gettext 0.22 converts the catalog to UTF-8 and
+#                rewrites the header's charset= value (reported and predicted separately);
+#   2. loads each compiled catalog with CPython's gettext.GNUTranslations (does a Python
+#      program, or itstool, crash when it opens this language?),
 #   3. runs `msgfmt --check` on it (does the usual gettext check catch it?), and
 #   4. runs py_load_problem(), a pure-Python reading of the .po file that mirrors
-#      GNUTranslations._parse (CPython 3.12), to test whether a linter can predict step 2.
-# Nothing is published from here. Predictions: PREREG.md in the same folder.
+#      GNUTranslations._parse (CPython 3.12), in legacy and modern mode, to test whether a
+#      linter can predict step 2.
+# v2 exists because v1's own ground-truth unit test failed before any repository was read:
+# the image's msgfmt (gettext >= 0.22) rewrote charset=CHARSET to UTF-8. See PREREG.md,
+# "Amendment v2". Nothing is published from here.
 # Usage: python -B pyhdr_census.py <out folder>
 # Made with AI agents by MV2 of Munim, Inc. Apache-2.0.
 import codecs
@@ -40,7 +47,7 @@ FLATHUB_DIRS = CENSUS + "linguas/v1/dirs.csv"
 PLATFORM_REPOS = CENSUS + "l10n-guard-0210/repos.csv"
 GUARD_URL = "https://raw.githubusercontent.com/munimtechnologies/l10n-guard/v0.21.0/l10n_guard.py"
 PREREG_URL = CENSUS + "pyhdr/PREREG.md"
-PREREG_MARK = "pyhdr census PREREG v1"
+PREREG_MARK = "pyhdr census PREREG v2"
 KEY = "pyhdr census v1"
 UA = {"User-Agent": "pyhdr-census (MV2, Munim, Inc.; mv2@munimtech.com)"}
 WAIT_SECONDS = 8 * 3600
@@ -57,6 +64,7 @@ NOT_APP = frozenset(["po", "build-aux", "help", "doc", "docs", "test", "tests", 
 
 SUMMARY = {"verdicts": {}}
 LOG = []
+_NO_CONVERT = []
 
 
 # ------------------------------------------------------------------ the rule (pure)
@@ -135,13 +143,30 @@ def _is_header(e):
     return e["id"] == "" and e["ctxt"] is None
 
 
-def py_load_problem(data):
+def _declared_is_utf8(header_bytes):
+    """True when the header's charset= value (read as msgfmt reads it) names UTF-8."""
+    m = re.search(rb"charset=([^ \t\n]+)", header_bytes)
+    if not m:
+        return False
+    try:
+        return codecs.lookup(m.group(1).decode("latin-1")).name == "utf-8"
+    except LookupError:
+        return False
+
+
+def py_load_problem(data, modern=False):
     """(code, detail) when CPython's gettext.GNUTranslations would raise on the catalog that
     msgfmt builds from this .po file (data: its bytes), else None. Mirrors
     GNUTranslations._parse in CPython 3.12: msgfmt keeps only translated entries and drops
     fuzzy ones except the header; Python decodes each header line as UTF-8, takes the charset
     with v.split('charset=')[1] and the plural rule with v.split(';')[1].split('plural=')[1],
-    compiles it with gettext.c2py, then decodes every kept message in that charset."""
+    compiles it with gettext.c2py, then decodes every kept message in that charset.
+
+    modern=False: the catalog as msgfmt --no-convert (and every gettext up to 0.21) writes it.
+    modern=True: the catalog as plain msgfmt of gettext >= 0.22 writes it. That msgfmt
+    converts every message to UTF-8 and rewrites the header's charset= value to UTF-8, so a
+    non-UTF-8 header and a placeholder charset (CHARSET, with ASCII-only text) no longer
+    crash; a Content-Type without charset= and bad Plural-Forms still do."""
     entries = [e for e in parse_po(data.decode("latin-1")) if not e["obsolete"]
                and e["id"] is not None]
     kept = [e for e in entries if e["strs"].get(0, "") != ""
@@ -153,12 +178,16 @@ def py_load_problem(data):
             break
     charset = None
     if header is not None:
+        hb = header["strs"][0].encode("latin-1")
+        strict_utf8 = (not modern) or _declared_is_utf8(hb)
         lastk = None
-        for b_item in header["strs"][0].encode("latin-1").split(b"\n"):
+        for b_item in hb.split(b"\n"):
             try:
                 item = b_item.decode().strip()
             except UnicodeDecodeError:
-                return ("header-not-utf8", "header line is not UTF-8: %r" % (b_item[:60],))
+                if strict_utf8:
+                    return ("header-not-utf8", "header line is not UTF-8: %r" % (b_item[:60],))
+                item = b_item.decode("latin-1").strip()
             if not item:
                 continue
             if item.startswith("#-#-#-#-#") and item.endswith("#-#-#-#-#"):
@@ -189,6 +218,9 @@ def py_load_problem(data):
     try:
         codecs.lookup(cs)
     except LookupError:
+        if modern:
+            # msgfmt >= 0.22 rewrites the value to UTF-8 (ASCII-only text) or refuses the file.
+            return None
         return ("unknown-charset", "charset %r" % (cs[:40],))
     for e in kept:
         texts = [e["ctxt"] or "", e["id"]] + [e["strs"][k] for k in sorted(e["strs"])]
@@ -212,24 +244,39 @@ def _first_line(text, pattern=None):
     return lines[0][:240] if lines else ""
 
 
-def ground_truth(po_path, mo_path):
-    """msgfmt the file, load the result with gettext.GNUTranslations, and run msgfmt --check."""
-    res = {"msgfmt": "", "msgfmt_err": "", "load": "", "check": "", "check_err": ""}
+def no_convert_supported():
+    """True when this msgfmt has --no-convert (gettext >= 0.22)."""
+    if not _NO_CONVERT:
+        p = subprocess.run(["msgfmt", "--help"], capture_output=True, text=True,
+                           errors="replace")
+        _NO_CONVERT.append("--no-convert" in (p.stdout or ""))
+    return _NO_CONVERT[0]
+
+
+def _compile_load(po_path, mo_path, extra):
     if os.path.exists(mo_path):
         os.remove(mo_path)
-    p = subprocess.run(["msgfmt", "-o", mo_path, po_path], capture_output=True, text=True,
-                       errors="replace", timeout=180)
+    p = subprocess.run(["msgfmt"] + extra + ["-o", mo_path, po_path], capture_output=True,
+                       text=True, errors="replace", timeout=180)
     if p.returncode != 0 or not os.path.exists(mo_path):
-        res["msgfmt"] = "fail"
-        res["msgfmt_err"] = _first_line(p.stderr, r"error|fatal")
-    else:
-        res["msgfmt"] = "ok"
-        try:
-            with open(mo_path, "rb") as fh:
-                gettext.GNUTranslations(fh)
-            res["load"] = "ok"
-        except Exception as exc:
-            res["load"] = ("%s: %s" % (type(exc).__name__, exc))[:240]
+        return "fail", _first_line(p.stderr, r"error|fatal"), ""
+    try:
+        with open(mo_path, "rb") as fh:
+            gettext.GNUTranslations(fh)
+        load = "ok"
+    except Exception as exc:
+        load = ("%s: %s" % (type(exc).__name__, exc))[:240]
+    return "ok", "", load
+
+
+def ground_truth(po_path, mo_path):
+    """Legacy (msgfmt --no-convert) and modern (plain msgfmt) compile + CPython load, and
+    msgfmt --check."""
+    res = {"msgfmt": "", "msgfmt_err": "", "load": "", "check": "", "check_err": "",
+           "msgfmt_modern": "", "load_modern": ""}
+    legacy = ["--no-convert"] if no_convert_supported() else []
+    res["msgfmt"], res["msgfmt_err"], res["load"] = _compile_load(po_path, mo_path, legacy)
+    res["msgfmt_modern"], _, res["load_modern"] = _compile_load(po_path, mo_path, [])
     c = subprocess.run(["msgfmt", "--check", "-o", os.devnull, po_path], capture_output=True,
                        text=True, errors="replace", timeout=180)
     res["check"] = "pass" if c.returncode == 0 else "fail"
@@ -430,7 +477,8 @@ def analyse(g, entry, tmp_root):
                 row = {"repo": repo, "src": src, "commit": res["commit"], "dir": dn,
                        "build": build, "stem": stem, "listed": "yes" if stem in listed else "no",
                        "translated": "", "total": "", "rule_code": "", "rule_detail": "",
-                       "msgfmt": "unread", "msgfmt_err": "", "load": "", "check": "",
+                       "rule_code_modern": "", "msgfmt": "unread", "msgfmt_err": "",
+                       "load": "", "msgfmt_modern": "", "load_modern": "", "check": "",
                        "check_err": ""}
                 data = read(prefix + n)
                 if data is not None:
@@ -441,6 +489,12 @@ def analyse(g, entry, tmp_root):
                         rule = ("rule-error", repr(exc)[:200])
                     if rule:
                         row["rule_code"], row["rule_detail"] = rule
+                    try:
+                        rule_m = py_load_problem(data, modern=True)
+                    except Exception as exc:  # record, keep going
+                        rule_m = ("rule-error", repr(exc)[:200])
+                    if rule_m:
+                        row["rule_code_modern"] = rule_m[0]
                     row.update(ground_truth(local(prefix + n), mo))
                 res["files"].append(row)
     except subprocess.TimeoutExpired:
@@ -454,11 +508,13 @@ def analyse(g, entry, tmp_root):
 
 
 FILE_COLS = ["repo", "src", "commit", "dir", "build", "stem", "listed", "translated", "total",
-             "rule_code", "rule_detail", "msgfmt", "msgfmt_err", "load", "check", "check_err"]
+             "rule_code", "rule_detail", "rule_code_modern", "msgfmt", "msgfmt_err", "load",
+             "msgfmt_modern", "load_modern", "check", "check_err"]
 REPO_COLS = ["repo", "src", "group", "commit", "status", "seconds", "n_paths", "py_files", "dirs",
-             "files", "listed_crash", "unlisted_crash", "listed_msgfmt_fail"]
-SAMPLE_COLS = ["sample", "repo", "src", "commit", "dir", "po_file", "rule_code", "load", "check",
-               "py_files"]
+             "files", "listed_crash", "unlisted_crash", "listed_crash_modern",
+             "listed_msgfmt_fail"]
+SAMPLE_COLS = ["sample", "repo", "src", "commit", "dir", "po_file", "rule_code", "load",
+               "load_modern", "check", "py_files"]
 
 
 def csv_text(cols, rows):
@@ -471,7 +527,31 @@ def csv_text(cols, rows):
 
 
 def crashes(f):
+    """Legacy ground truth (msgfmt --no-convert, as gettext <= 0.21 builds)."""
     return f["msgfmt"] == "ok" and f["load"] != "ok"
+
+
+def crashes_modern(f):
+    """Modern ground truth (plain msgfmt of gettext >= 0.22)."""
+    return f["msgfmt_modern"] == "ok" and f["load_modern"] != "ok"
+
+
+def _agreement(compiled, code_key, crash_fn, label):
+    flagged = [f for f in compiled if f[code_key]]
+    crash = [f for f in compiled if crash_fn(f)]
+    tp = [f for f in flagged if crash_fn(f)]
+    v = {}
+    if len(flagged) < 5:
+        v["A1" + label] = "NOT TESTABLE (%d flagged)" % len(flagged)
+    else:
+        v["A1" + label] = ("HELD" if 20 * len(tp) >= 19 * len(flagged) else "FAILED") + (
+            " (%d of %d flagged files crash)" % (len(tp), len(flagged)))
+    if len(crash) < 5:
+        v["A2" + label] = "NOT TESTABLE (%d crashing files)" % len(crash)
+    else:
+        v["A2" + label] = ("HELD" if 20 * len(tp) >= 19 * len(crash) else "FAILED") + (
+            " (%d of %d crashing files flagged)" % (len(tp), len(crash)))
+    return v, {"flagged": len(flagged), "crash": len(crash), "both": len(tp)}
 
 
 def grade(results):
@@ -479,32 +559,28 @@ def grade(results):
     ok = [r for r in results if r["status"] == "ok"]
     files = [f for r in ok for f in r["files"]]
     compiled = [f for f in files if f["msgfmt"] == "ok"]
+    compiled_m = [f for f in files if f["msgfmt_modern"] == "ok"]
     SUMMARY["counts"] = {"repos": len(results), "repos_ok": len(ok),
                          "repos_with_governed_dir": sum(1 for r in ok if r["dirs"]),
                          "po_files": len(files), "compiled": len(compiled),
+                         "compiled_modern": len(compiled_m),
                          "msgfmt_fail": sum(1 for f in files if f["msgfmt"] == "fail"),
                          "unread": sum(1 for f in files if f["msgfmt"] == "unread")}
     gate = len(ok) >= GATE_REPOS and len(compiled) >= GATE_FILES
     v["G"] = ("HELD (%d repositories, %d compiled files)" % (len(ok), len(compiled)) if gate
               else "FAILED (%d repositories, %d compiled files)" % (len(ok), len(compiled)))
-    flagged = [f for f in compiled if f["rule_code"]]
-    crash = [f for f in compiled if crashes(f)]
-    tp = [f for f in flagged if crashes(f)]
-    SUMMARY["agreement"] = {"flagged": len(flagged), "crash": len(crash), "both": len(tp)}
     if not gate:
-        for k in ("A1", "A2", "P1"):
+        for k in ("A1", "A2", "P1", "A1m", "A2m"):
             v[k] = "NOT TESTABLE (gate G failed)"
         return v
-    if len(flagged) < 5:
-        v["A1"] = "NOT TESTABLE (%d flagged)" % len(flagged)
+    va, SUMMARY["agreement"] = _agreement(compiled, "rule_code", crashes, "")
+    v.update(va)
+    if SUMMARY.get("msgfmt_no_convert"):
+        vm, SUMMARY["agreement_modern"] = _agreement(compiled_m, "rule_code_modern",
+                                                     crashes_modern, "m")
+        v.update(vm)
     else:
-        v["A1"] = ("HELD" if 20 * len(tp) >= 19 * len(flagged) else "FAILED") + (
-            " (%d of %d flagged files crash)" % (len(tp), len(flagged)))
-    if len(crash) < 5:
-        v["A2"] = "NOT TESTABLE (%d crashing files)" % len(crash)
-    else:
-        v["A2"] = ("HELD" if 20 * len(tp) >= 19 * len(crash) else "FAILED") + (
-            " (%d of %d crashing files flagged)" % (len(tp), len(crash)))
+        v["A1m"] = v["A2m"] = "NOT TESTABLE (msgfmt has no --no-convert)"
     k = [r for r in ok if any(f["listed"] == "yes" and crashes(f) for f in r["files"])]
     v["P1"] = ("HELD" if len(k) >= 1 and 20 * len(k) <= len(ok) else "FAILED") + (
         " (%d of %d repositories ship a crashing catalog)" % (len(k), len(ok)))
@@ -515,15 +591,23 @@ def exploratory(results):
     ok = [r for r in results if r["status"] == "ok"]
     files = [f for r in ok for f in r["files"]]
     crash = [f for f in files if crashes(f)]
-    by_type, by_code = {}, {}
+    crash_m = [f for f in files if crashes_modern(f)]
+    by_type, by_code, by_code_m = {}, {}, {}
     for f in crash:
         t = f["load"].split(":", 1)[0]
         by_type[t] = by_type.get(t, 0) + 1
         c = f["rule_code"] or "(not flagged)"
         by_code[c] = by_code.get(c, 0) + 1
+    for f in crash_m:
+        c = f["rule_code_modern"] or "(not flagged)"
+        by_code_m[c] = by_code_m.get(c, 0) + 1
     ex = {"crash_by_exception": by_type, "crash_by_rule_code": by_code,
+          "crash_modern_by_rule_code": by_code_m,
           "crash_listed": sum(1 for f in crash if f["listed"] == "yes"),
           "crash_unlisted": sum(1 for f in crash if f["listed"] == "no"),
+          "crash_modern_listed": sum(1 for f in crash_m if f["listed"] == "yes"),
+          "crash_legacy_only_listed": sum(1 for f in crash if f["listed"] == "yes"
+                                          and not crashes_modern(f)),
           "crash_passing_msgfmt_check": sum(1 for f in crash if f["check"] == "pass"),
           "listed_msgfmt_fail": sum(1 for f in files if f["listed"] == "yes"
                                     and f["msgfmt"] == "fail")}
@@ -532,6 +616,9 @@ def exploratory(results):
         ex["repos_shipping_crash_" + src] = "%d of %d" % (
             sum(1 for r in rs if any(f["listed"] == "yes" and crashes(f) for f in r["files"])),
             len(rs))
+        ex["repos_shipping_crash_modern_" + src] = "%d of %d" % (
+            sum(1 for r in rs if any(f["listed"] == "yes" and crashes_modern(f)
+                                     for f in r["files"])), len(rs))
     ex["repos_shipping_crash_with_py_files"] = sum(
         1 for r in ok if r["py_files"] and any(f["listed"] == "yes" and crashes(f)
                                                for f in r["files"]))
@@ -551,7 +638,8 @@ def sample(results):
         rows.append({"sample": i, "repo": r["repo"], "src": r["src"], "commit": r["commit"],
                      "dir": f["dir"], "po_file": (f["dir"] + "/" if f["dir"] else "")
                      + f["stem"] + ".po", "rule_code": f["rule_code"], "load": f["load"],
-                     "check": f["check"], "py_files": r["py_files"]})
+                     "load_modern": f["load_modern"], "check": f["check"],
+                     "py_files": r["py_files"]})
     return rows
 
 
@@ -570,7 +658,9 @@ def _run(out):
     SUMMARY["python"] = sys.version.split()[0]
     p = subprocess.run(["msgfmt", "--version"], capture_output=True, text=True)
     SUMMARY["msgfmt"] = _first_line(p.stdout)
-    say("python %s, %s" % (SUMMARY["python"], SUMMARY["msgfmt"]))
+    SUMMARY["msgfmt_no_convert"] = no_convert_supported()
+    say("python %s, %s, --no-convert %s" % (SUMMARY["python"], SUMMARY["msgfmt"],
+                                            SUMMARY["msgfmt_no_convert"]))
     prereg = wait_for(PREREG_URL, PREREG_MARK, "PREREG.md")
     SUMMARY["prereg_sha256"] = hashlib.sha256(prereg).hexdigest()
     say("prereg sha256 %s" % SUMMARY["prereg_sha256"])
@@ -589,12 +679,15 @@ def _run(out):
     files = [f for r in results for f in r["files"]]
     write(os.path.join(out, "files.csv"), csv_text(FILE_COLS, files))
     write(os.path.join(out, "flagged.csv"), csv_text(
-        FILE_COLS, [f for f in files if f["rule_code"] or f["msgfmt"] == "fail"
-                    or (f["load"] and f["load"] != "ok")]))
+        FILE_COLS, [f for f in files if f["rule_code"] or f["rule_code_modern"]
+                    or f["msgfmt"] == "fail" or (f["load"] and f["load"] != "ok")
+                    or (f["load_modern"] and f["load_modern"] != "ok")]))
     for r in results:
         r["files_n"] = len(r["files"])
         r["listed_crash"] = sum(1 for f in r["files"] if f["listed"] == "yes" and crashes(f))
         r["unlisted_crash"] = sum(1 for f in r["files"] if f["listed"] == "no" and crashes(f))
+        r["listed_crash_modern"] = sum(1 for f in r["files"] if f["listed"] == "yes"
+                                       and crashes_modern(f))
         r["listed_msgfmt_fail"] = sum(1 for f in r["files"] if f["listed"] == "yes"
                                       and f["msgfmt"] == "fail")
     rows = [dict(r, files=r["files_n"]) for r in results]
