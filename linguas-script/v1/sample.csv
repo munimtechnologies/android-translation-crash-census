@@ -1,0 +1,13 @@
+sample,repo,commit,group,dir,build,po_file,code,entries,translated,remap_hint,label,note
+1,https://codeberg.org/elly-code/cherrypick,907b296ad3272f9baf56ddd772d7ad11d19e1c31,other,po,meson,po/zh_Hans.po,zh_Hans,41,0,no,,
+2,https://codeberg.org/elly-code/jorts,6f63257bcb2aa812080d94a6dc322eedd8e3ad35,other,po,meson,po/zh_Hans.po,zh_Hans,168,0,no,,
+3,https://github.com/aleiepure/devtoolbox,de7d6f2c0198730651660b3618ec9da4a04b49cc,weblate,po,meson,po/zh_Hant.po,zh_Hant,639,252,no,,
+4,https://gitlab.com/daikhan/daikhan,b6fe8d9ee31e3dbb9d67b1fd8f442fa131836715,weblate,po,meson,po/zh_Hans.po,zh_Hans,74,74,no,,
+5,https://codeberg.org/elly-code/inscriptions,6d9a71aa355d44dea10effa875a017eaf16af1cc,other,po,meson,po/zh_Hans.po,zh_Hans,319,0,no,,
+6,https://gitlab.com/schmiddi-on-mobile/flare,4c73e3cc47eb7ef83db96affe60ad9edadc504d7,weblate,po,meson,po/zh_Hans.po,zh_Hans,215,166,no,,
+7,https://codeberg.org/dudenix/escritoire,c5e1f219f5fa199464a58be3678c4a021549ac3a,other,po,meson,po/zh_Hans.po,zh_Hans,81,70,no,,
+8,https://codeberg.org/naev/naev,acb43f0f56580cdb26fd1425ea934795c44f0461,weblate,po,meson,po/zh_Hans.po,zh_Hans,,,no,,
+9,https://github.com/SeaDve/Delineate,8a0b4b69f0be8b4975e2151d7245e25598a0efdc,weblate,po,meson,po/zh_Hans.po,zh_Hans,98,31,no,,
+10,https://codeberg.org/bjawebos/filmbook,f51cc3146ed7df833bd19370c370017b42919eb7,other,po,meson,po/zh_Hans.po,zh_Hans,115,115,no,,
+11,https://github.com/SeaDve/Mousai,98f3c33a790f1f51bb2fced97d55cb05a0e1c13b,weblate,po,meson,po/zh_Hant.po,zh_Hant,131,35,no,,
+12,https://github.com/tenderowl/frog,40ea293327fc574e9a5be9e6010c5fa7e9d842a6,weblate,po,meson,po/be_Latn.po,be_Latn,201,201,no,,

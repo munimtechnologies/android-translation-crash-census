@@ -1,0 +1,56 @@
+{
+ "counts": {
+  "codes": {
+   "be_Latn": 2,
+   "sr_Latn": 4,
+   "zh_Hans": 39,
+   "zh_Hant": 23
+  },
+  "content_known": 52,
+  "content_substantive": 36,
+  "flagged_repos": 50,
+  "flagged_share_pct": 9.49,
+  "governed_repos": 527,
+  "hyphen_codes_exploratory": {
+   "en-us": 1,
+   "pt-BR": 2,
+   "pt-br": 1
+  },
+  "lost_files_read": 53,
+  "lost_repos": 40,
+  "lost_translated_messages": 6434,
+  "other_flagged": 19,
+  "other_governed": 465,
+  "read": 2245,
+  "remap_hint_repos": 0,
+  "script_codes": 68,
+  "weblate_flagged": 31,
+  "weblate_governed": 62,
+  "zh_script_codes": 62
+ },
+ "flathub_list_apps": 3398,
+ "flathub_list_sha256": "fe023017be6e58dc6a82e4b20b7f4b97bf83a584726dcc867da918bd3a5c6a79",
+ "minutes": 9.1,
+ "population": {
+  "apps_fetched": 3398,
+  "apps_listed": 3398,
+  "apps_with_repo": 2281
+ },
+ "prereg_sha256": "5fe068bf9eff6c4cffa8072627d793cf225c205cd74bb99a495a91398c05d497",
+ "repositories": 2249,
+ "status": {
+  "error": 4,
+  "ok": 2245
+ },
+ "verdicts": {
+  "G": "PASSED",
+  "H": "PENDING HAND CHECK (12 catalogs)",
+  "M1": "HELD",
+  "M2": "HELD",
+  "P1": "HELD",
+  "P2": "HELD",
+  "P3": "HELD",
+  "P4": "HELD",
+  "P5": "FAILED"
+ }
+}

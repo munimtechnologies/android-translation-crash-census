@@ -1,0 +1,67 @@
+{
+ "detail": {
+  "c": {
+   "pt_BR.UTF-8": [
+    "pt_BR"
+   ],
+   "sr_RS.UTF-8@latin": [
+    "sr@latin"
+   ],
+   "zh_CN.UTF-8": [
+    "zh_CN"
+   ],
+   "zh_HK.UTF-8": [],
+   "zh_SG.UTF-8": [],
+   "zh_TW.UTF-8": [
+    "zh_TW"
+   ]
+  },
+  "c_language": {
+   "sr_Latn": true,
+   "zh_Hans": true,
+   "zh_Hant": true
+  },
+  "errors": [],
+  "localedef": [
+   "zh_CN.UTF-8 exit 0 ",
+   "zh_TW.UTF-8 exit 0 ",
+   "zh_HK.UTF-8 exit 0 ",
+   "zh_SG.UTF-8 exit 0 ",
+   "sr_RS.UTF-8@latin exit 0 ",
+   "pt_BR.UTF-8 exit 0 "
+  ],
+  "locales": {
+   "pt_BR.UTF-8": true,
+   "sr_RS.UTF-8@latin": true,
+   "zh_CN.UTF-8": true,
+   "zh_HK.UTF-8": true,
+   "zh_SG.UTF-8": true,
+   "zh_TW.UTF-8": true
+  },
+  "py": {
+   "pt_BR.UTF-8": [
+    "pt_BR"
+   ],
+   "sr_RS.UTF-8@latin": [
+    "sr@latin"
+   ],
+   "zh_CN.UTF-8": [
+    "zh_CN"
+   ],
+   "zh_HK.UTF-8": [],
+   "zh_SG.UTF-8": [],
+   "zh_TW.UTF-8": [
+    "zh_TW"
+   ]
+  },
+  "py_language": {
+   "sr_Latn": true,
+   "zh_Hans": true,
+   "zh_Hant": true
+  }
+ },
+ "verdicts": {
+  "M1": "HELD",
+  "M2": "HELD"
+ }
+}
