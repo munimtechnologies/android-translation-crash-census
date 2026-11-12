@@ -1,0 +1,39 @@
+{
+ "control": "https://gitlab.gnome.org/GNOME/gnome-calculator",
+ "counts": {
+  "flagged_entries": 5,
+  "flagged_hyphen": 4,
+  "flagged_repos": 4,
+  "flagged_share_pct": 0.76,
+  "flagged_tokens": {
+   "en-us": 1,
+   "pt-BR": 2,
+   "pt-br": 1,
+   "pt_br": 1
+  },
+  "flagged_with_proposed_po": 0,
+  "flagged_zh_pt": 4,
+  "gnome_flagged": 0,
+  "gnome_governed": 111,
+  "governed_repos": 526,
+  "non_ok_entries_by_class": {
+   "misspelled": 5,
+   "script": 68
+  },
+  "read": 526
+ },
+ "minutes": 2.1,
+ "population": 526,
+ "prereg_sha256": "95e372f024d11b62289cbf858fdf72c3731409d9390b3a6f1984a21665b9b805",
+ "repos_csv_sha256": "420b4f15407b8cc95b1888c4cebd9eeaf9f7c200d658cfedc3f27108aac47c38",
+ "status": {
+  "ok": 526
+ },
+ "verdicts": {
+  "G": "PASSED",
+  "H": "PENDING HAND CHECK (4 repositories)",
+  "P1": "HELD",
+  "P2": "HELD",
+  "P3": "HELD"
+ }
+}

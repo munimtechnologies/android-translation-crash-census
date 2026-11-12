@@ -1,0 +1,5 @@
+sample,repo,commit,group,dir,token,proposed,label,note
+1,https://github.com/childishgiant/mixer,86045cacc60dc7302e6e81c4f455bc0ce1eb6cf7,other,po,en-us,en_US,,
+2,https://github.com/yeKcim/warmux,b7935f3d6662af821e372e913ddbbe8e2f2b064b,none,old/wormux-0.8beta1/po,pt-BR,pt_BR,,
+3,https://codeberg.org/elly-code/jorts,6f63257bcb2aa812080d94a6dc322eedd8e3ad35,other,po,pt_br,pt_BR,,
+4,https://github.com/Diegovsky/riff,37bb80be6398b64d26dbfa71e15dd6c9e1e67eb3,none,po,pt-br,pt_BR,,
