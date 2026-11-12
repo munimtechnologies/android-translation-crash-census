@@ -1,0 +1,37 @@
+repo,components
+https://gerrit.collaboraoffice.com/online,collabora-online/ios-app
+https://github.com/Aidoku/Aidoku,aidoku/strings
+https://github.com/App-Fair/App,appfair/app-fair
+https://github.com/AtiinLabs/Ito,ito/app-plurals ito/app-strings ito/file-types
+https://github.com/CrankBoyHQ/crankboy-app,crankboy/crankboy-app
+https://github.com/LiveTL/ios,livetl/ios
+https://github.com/OpenPrinting/libcups,libcups/libcups
+https://github.com/OpenVK/OpenVK,openvk/openvk
+https://github.com/PlayCover/PlayCover,playcover/playcover
+https://github.com/PlayCover/PlayTools,playcover/playtools
+https://github.com/SwiftcordApp/swiftcord-devel,swiftcord/swiftcord
+https://github.com/Zoxcore/Antidote,antidote/antidote-ios-app
+https://github.com/emirhan-duman/Crisis-Connect,crisis-connect/ios crisis-connect/ios-breadcrumb crisis-connect/ios-cpr crisis-connect/ios-flashlight crisis-connect/ios-metadata crisis-connect/ios-widgets
+https://github.com/istopwg/ippregistry,ippregistry/ippregistry
+https://github.com/jhass/insporation,insporation/ios
+https://github.com/johannes-schliephake/nextcloud-passwords-ios,nextcloud-passwords-ios/app nextcloud-passwords-ios/extension nextcloud-passwords-ios/provider nextcloud-passwords-ios/shared
+https://github.com/jokyme/Deskset,deskset/interface deskset/permission-prompts deskset/plurals
+https://github.com/jonjomckay/fritter,fritter/ios-strings fritter/other-ios-strings
+https://github.com/leits/MeetingBar,meetingbar/app
+https://github.com/mangerlahn/Latest,latest/app latest/app-name latest/main latest/plurals
+https://github.com/michaelrsweet/pappl,pappl/pappl
+https://github.com/monal-im/Monal-localization-main,monal/code monal/main monal/settings
+https://github.com/monal-im/Monal-localization-shareSheet,monal/sharesheet
+https://github.com/ncosgray/Cuppa,cuppa/cuppa-macos-app-help
+https://github.com/onionshare/onionshare-ios,onionshare/onionshare-ios onionshare/onionshare-ios-permissions onionshare/onionshare-ios-plurals
+https://github.com/osmandapp/OsmAnd-ios,osmand/ios
+https://github.com/p0deje/Maccy,maccy/app maccy/preview-popup maccy/settings-advanced maccy/settings-appearance maccy/settings-general maccy/settings-ignore maccy/settings-pins maccy/settings-storage
+https://github.com/soundscape-community/soundscape,soundscape/ios-app
+https://github.com/stonerl/nova-prettier-extension,prettier-for-nova/extension-strings prettier-for-nova/notification-strings
+https://github.com/strongbox-password-safe/babel,strongbox/auditdrilldown strongbox/backups strongbox/browse strongbox/createdatabaseorsetcredentials strongbox/databaseoperations strongbox/export strongbox/faviconbulk strongbox/freemiumonboarding strongbox/iconscollectionviewcontroller strongbox/infoplist strongbox/itemdetails strongbox/keepasshistory strongbox/launchscreen strongbox/localizable strongbox/main strongbox/masterdetail strongbox/passwordgenerationpreferences strongbox/passwordsafehistory strongbox/pinentry strongbox/preferences strongbox/privacyviewcontroller strongbox/qrcodescannerviewcontroller strongbox/rmstore strongbox/selectitem strongbox/selectkeyfile strongbox/selectstorage strongbox/sftpsessionconfigurationviewcontroller strongbox/strings strongbox/synclog strongbox/upgrade strongbox/webdavconfigurationviewcontroller strongbox/welcome
+https://github.com/syncthing/syncthing-macos,syncthing/localizable syncthing/staboutwindow syncthing/stapplication syncthing/stpreferenceswindow syncthing/stpreferenceswindowgeneralview
+https://github.com/thunderbird/thunderbird-ios,tb-android/ios-localization
+https://github.com/yattee/yattee,yattee/localizable-strings
+https://gitlab.com/ceno-app/ceno-ios,ceno-app/ceno-for-ios
+https://guardianproject.dev/sr2/cloud-dns-ios,sr2/cloud-dns-ios
+local:,simplelogin/glossary

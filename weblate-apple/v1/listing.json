@@ -1,0 +1,24 @@
+{
+ "stop": "done",
+ "pages": 12,
+ "api_count": 11363,
+ "components_read": 11363,
+ "apple_components": 99,
+ "apple_repos": 36,
+ "apple_formats": {
+  "strings": 92,
+  "html": 1,
+  "stringsdict": 3,
+  "json": 2,
+  "go-i18n-json-v2": 1
+ },
+ "apple_repo_hosts": {
+  "github.com": 32,
+  "gerrit.collaboraoffice.com": 1,
+  "other": 1,
+  "gitlab.com": 1,
+  "guardianproject.dev": 1
+ },
+ "retries_and_errors": [],
+ "complete": true
+}
