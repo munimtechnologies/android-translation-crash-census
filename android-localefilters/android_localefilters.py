@@ -1,5 +1,6 @@
 # android_localefilters: translated values-* folders that an Android app's own
-# resConfigs / resourceConfigurations / localeFilters list keeps out of the build.
+# resConfigs / resourceConfigurations / localeFilters list keeps out of the build,
+# and moko-resources locale folders whose script is lost on Android.
 # Standard library only, no network. Source reading, not a build test.
 # Made with AI agents by MV2 of Munim, Inc. Licence: Apache-2.0.
 """Find Android translations that the app's locale filter drops.
@@ -14,6 +15,12 @@ folder only if:
     script is computed from language + region; unknown -> match).
 So a filter of "pt" drops values-pt-rBR, "zh" drops values-zh-rTW and
 values-b+zh+Hant, and "sr" drops values-b+sr+Latn.
+
+moko-resources (dev.icerock.mobile.multiplatform-resources, LanguageType.kt)
+turns a locale folder such as moko-resources/zh-Hant into the Android folder
+values-<language>[-r<COUNTRY>] built from java.util.Locale.forLanguageTag, so
+the script is dropped: zh-Hant becomes values-zh, and zh-Hans + zh-Hant in one
+source set both write values-zh/multiplatform_strings.xml.
 """
 import argparse
 import json
@@ -21,12 +28,17 @@ import os
 import re
 import sys
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 KEY_RE = re.compile(r"\b(resConfigs|resConfig|resourceConfigurations|localeFilters)\b")
 GEN_RE = re.compile(r"\bgenerateLocaleConfig\s*(?:=\s*)?true\b")
 APP_RE = re.compile(r"android[.-]application")
 PROJ_RE = re.compile(r"project\(\s*(?:path\s*[:=]\s*)?[\"'](:[^\"']*)[\"']")
+PROJECTS_RE = re.compile(r"\bprojects((?:\.[A-Za-z_][A-Za-z0-9_]*)+)")
+MOKO_RE = re.compile(r"moko|multiplatform-resources", re.I)
+MOKO_NAME_RE = re.compile(r"[A-Za-z]{2,3}(?:[-_+].*)?|b\+.*")
+MOKO_ROOTS = (("moko-resources",), ("resources", "MR"))
+MOKO_LEGACY = {"he": "iw", "yi": "ji", "id": "in"}
 LC_RE = re.compile(r"android:localeConfig\s*=\s*\"@xml/([A-Za-z0-9_]+)\"")
 LOCALE_TAG_RE = re.compile(r"<locale\s[^>]*?android:name\s*=\s*\"([^\"]+)\"")
 DENSITY_RE = re.compile(r"ldpi|mdpi|tvdpi|hdpi|xhdpi|xxhdpi|xxxhdpi|nodpi|anydpi|\d+dpi")
@@ -380,6 +392,114 @@ def analyse_variant(entries, locales):
     return out
 
 
+# ------------------------------------------------------------- moko-resources
+
+def java_locale(tag):
+    """(language, script, country) as java.util.Locale.forLanguageTag reads tag.
+
+    The first ill-formed subtag and everything after it are ignored, so an
+    ill-formed first subtag (pt_BR, b+zh+Hant) gives ('', '', '').
+    Extlang subtags are not modelled.
+    """
+    subs = tag.split("-")
+    if not re.fullmatch(r"[A-Za-z]{2,8}", subs[0]):
+        return "", "", ""
+    lang, script, country, i = subs[0].lower(), "", "", 1
+    if i < len(subs) and re.fullmatch(r"[A-Za-z]{4}", subs[i]):
+        script = subs[i].title()
+        i += 1
+    if i < len(subs) and re.fullmatch(r"[A-Za-z]{2}|\d{3}", subs[i]):
+        country = subs[i].upper()
+    return lang, script, country
+
+
+def moko_android(name):
+    """For a moko locale folder name: (Android values folder, locale tuple, java locale).
+
+    None for the base folder. Mirrors LanguageType.fromFileName (replace "-r"
+    with "-") and Locale.androidResourcesDir (language, then -r + country).
+    """
+    if name == "base":
+        return None
+    jl = java_locale(name.replace("-r", "-"))
+    lang = MOKO_LEGACY.get(jl[0], jl[0])
+    folder = "values-" + lang + ("-r" + jl[2] if jl[2] else "")
+    return folder, (lang, "", jl[2], ""), jl
+
+
+def moko_dirs(mod_dir, text):
+    """moko-resources roots of a module whose build file mentions moko."""
+    if not MOKO_RE.search(strip_comments(text)):
+        return []
+    src = os.path.join(mod_dir, "src")
+    out = []
+    if os.path.isdir(src):
+        for ss in sorted(os.listdir(src)):
+            for parts in MOKO_ROOTS:
+                d = os.path.join(src, ss, *parts)
+                if os.path.isdir(d):
+                    out.append(d)
+    return out
+
+
+def _has_moko_strings(d):
+    for fn in sorted(os.listdir(d)):
+        p = os.path.join(d, fn)
+        if fn.endswith(".xml") and os.path.isfile(p):
+            t = _read(p)
+            if "<string" in t or "<plural" in t:
+                return True
+    return False
+
+
+def moko_locales(dirs, root):
+    """Translations moko generates for Android, and what happens to each folder.
+
+    Returns (translations {locale: [folder]}, entries [dict]) where each entry
+    is one translated moko folder with the Android folder it becomes.
+    """
+    trans, entries = {}, []
+    for r in dirs:
+        for name in sorted(os.listdir(r)):
+            d = os.path.join(r, name)
+            if not os.path.isdir(d) or not MOKO_NAME_RE.fullmatch(name):
+                continue
+            m = moko_android(name)
+            if m is None or not _has_moko_strings(d):
+                continue
+            folder, loc, jl = m
+            entries.append({"root": _rel(r, root), "folder": _rel(d, root), "name": name,
+                            "android": folder, "java": jl})
+            if loc[0]:
+                trans.setdefault(loc, []).append(_rel(d, root))
+    return trans, entries
+
+
+def moko_findings(entries):
+    """script_dropped, collision and unparsable cases among moko folders."""
+    out, groups = [], {}
+    for e in entries:
+        groups.setdefault((e["root"], e["android"]), []).append(e)
+    for e in entries:
+        lang, script, country = e["java"]
+        if not lang:
+            out.append({"kind": "moko_unparsable", "folder": e["folder"],
+                        "android_folder": e["android"]})
+            continue
+        if script and likely_script(lang, country) != script:
+            # zh-Hans -> values-zh or zh-Hant-TW -> values-zh-rTW loses nothing:
+            # Android infers that same script from language + region.
+            out.append({"kind": "moko_script_dropped", "folder": e["folder"],
+                        "script": script, "android_folder": e["android"]})
+    for (root, android), group in sorted(groups.items()):
+        if android == "values-":
+            continue
+        if len({tuple(e["java"]) for e in group}) > 1:
+            out.append({"kind": "moko_collision", "android_folder": android, "root": root,
+                        "folders": [e["folder"] for e in group]})
+    return out
+
+
 # ------------------------------------------------------------------ the tree
 
 def _read(path):
@@ -409,12 +529,54 @@ def _build_file(d):
     return None
 
 
+def gradle_root(mod_dir, root):
+    """Nearest folder at or above mod_dir (up to root) holding a settings file."""
+    d, root = os.path.normpath(mod_dir), os.path.normpath(root)
+    while True:
+        for fn in ("settings.gradle.kts", "settings.gradle"):
+            if os.path.isfile(os.path.join(d, fn)):
+                return d
+        if d == root or os.path.dirname(d) == d:
+            return root
+        d = os.path.dirname(d)
+
+
+def _accessor_key(name):
+    """Gradle's type-safe accessor turns some-lib and some_lib into someLib."""
+    return re.sub(r"[-_.]", "", name).lower()
+
+
+def resolve_accessor(groot, segments):
+    """Folder of projects.a.bC (a/b-c), or None. The deepest folder with a build file wins."""
+    cur, best = groot, None
+    for seg in segments:
+        nxt = None
+        try:
+            names = sorted(os.listdir(cur))
+        except OSError:
+            break
+        for n in names:
+            p = os.path.join(cur, n)
+            if (n not in SKIP_DIRS and not n.startswith(".") and os.path.isdir(p)
+                    and _accessor_key(n) == seg.lower()):
+                nxt = p
+                break
+        if nxt is None:
+            break
+        cur = nxt
+        if _build_file(cur):
+            best = cur
+    return best
+
+
 def dep_modules(mod_dir, root, text):
-    """Project modules reached through project(":a:b") in build files (transitively)."""
-    bases = [os.path.dirname(mod_dir), root]
+    """Project modules reached through project(":a:b") or projects.a.b (transitively)."""
+    groot = gradle_root(mod_dir, root)
+    bases = [os.path.dirname(mod_dir), groot, os.path.normpath(root)]
     seen, queue = [], [text]
     while queue:
         t = strip_comments(queue.pop(0))
+        cands = []
         for m in PROJ_RE.finditer(t):
             parts = [p for p in m.group(1).split(":") if p]
             if not parts:
@@ -422,9 +584,13 @@ def dep_modules(mod_dir, root, text):
             for base in bases:
                 d = os.path.normpath(os.path.join(base, *parts))
                 if os.path.isdir(d):
+                    cands.append(d)
                     break
-            else:
-                continue
+        for m in PROJECTS_RE.finditer(t):
+            d = resolve_accessor(groot, m.group(1).split(".")[1:])
+            if d:
+                cands.append(os.path.normpath(d))
+        for d in cands:
             if d in seen or d == os.path.normpath(mod_dir):
                 continue
             seen.append(d)
@@ -490,6 +656,7 @@ def check(root):
     root = os.path.abspath(root)
     rep = {"tool": "android_localefilters " + __version__, "modules": [],
            "findings": [], "notes": []}
+    moko_seen = set()
     for bf in find_build_files(root):
         text = _read(bf)
         if not is_app_module(text):
@@ -500,13 +667,27 @@ def check(root):
         deps = dep_modules(mod_dir, root, text)
         res_dirs = module_res_dirs(mod_dir) + [r for d in deps for r in module_res_dirs(d)]
         trans = translated_locales(res_dirs, root)
+        mdirs = moko_dirs(mod_dir, text)
+        for d in deps:
+            dbf = _build_file(d)
+            if dbf:
+                mdirs += moko_dirs(d, _read(dbf))
+        mtrans, mentries = moko_locales(mdirs, root)
+        for loc, folders in mtrans.items():
+            trans.setdefault(loc, []).extend(folders)
         mod = {"module": mrel, "build_file": _rel(bf, root),
                "filters": {"global": filters["global"], "flavors": filters["flavors"]},
                "generate_locale_config": filters["generate_locale_config"],
                "dependency_modules": [_rel(d, root) for d in deps],
                "translations": {fmt(k): v for k, v in sorted(trans.items())},
+               "moko": {e["folder"]: e["android"] for e in mentries},
                "variants": {}}
         rep["modules"].append(mod)
+        for f in moko_findings(mentries):
+            key = json.dumps(f, sort_keys=True)
+            if key not in moko_seen:
+                moko_seen.add(key)
+                rep["findings"].append(dict(f, module=mrel))
         if filters["dynamic"]:
             rep["notes"].append({"kind": "dynamic_filter", "module": mrel,
                                  "statements": filters["dynamic"]})
@@ -552,13 +733,23 @@ def render(rep):
         for v, d in m["variants"].items():
             lines.append("  %s: %s" % (v, ", ".join(d["entries"])))
     for f in rep["findings"]:
-        if f["kind"] == "filtered_out":
+        k = f["kind"]
+        if k == "filtered_out":
             lines.append("FILTERED OUT %s [%s] %s: %s (%s)" % (
                 f["locale"], f["variant"], f["module"], ", ".join(f["folders"]), f["reason"]))
-        else:
+        elif k == "declared_but_filtered":
             lines.append("DECLARED BUT FILTERED %s [%s] %s: listed in %s, no folder of "
                          "that language survives" % (f["locale"], f["variant"], f["module"],
                                                      f["locale_config"]))
+        elif k == "moko_script_dropped":
+            lines.append("MOKO SCRIPT DROPPED %s: becomes %s on Android, without %s" % (
+                f["folder"], f["android_folder"], f["script"]))
+        elif k == "moko_collision":
+            lines.append("MOKO COLLISION %s: %s all write it; only one survives" % (
+                f["android_folder"], ", ".join(f["folders"])))
+        else:
+            lines.append("MOKO UNPARSABLE %s: becomes %s, which aapt2 rejects" % (
+                f["folder"], f["android_folder"]))
     for n in rep["notes"]:
         lines.append("note: " + json.dumps(n, sort_keys=True))
     lines.append("findings: %d" % len(rep["findings"]))

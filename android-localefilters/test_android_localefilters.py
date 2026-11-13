@@ -78,6 +78,29 @@ LOCALES_CONFIG = (
     '  <!-- <locale android:name="fr" /> -->\n'
     '</locale-config>\n')
 
+KMP_APP_KTS = (
+    "plugins {\n"
+    "    id(\"com.android.application\")\n"
+    "}\n"
+    "android {\n"
+    "    defaultConfig {\n"
+    "        resourceConfigurations += listOf(\"en\", \"zh-rTW\", \"sr\")\n"
+    "    }\n"
+    "}\n"
+    "dependencies {\n"
+    "    implementation(projects.shared)\n"
+    "}\n")
+
+SHARED_KTS = (
+    "plugins {\n"
+    "    kotlin(\"multiplatform\")\n"
+    "    id(\"com.android.library\")\n"
+    "    id(\"dev.icerock.mobile.multiplatform-resources\")\n"
+    "}\n"
+    "dependencies {\n"
+    "    commonMainApi(projects.coreUi)\n"
+    "}\n")
+
 
 def loc(lang, script="", region="", variant=""):
     return (lang, script, region, variant)
@@ -148,6 +171,47 @@ class MatchTest(unittest.TestCase):
         self.assertEqual(a["dropped"], {loc("pt"): "language_not_listed"})
 
 
+class MokoTest(unittest.TestCase):
+    def test_java_locale(self):
+        j = al.java_locale
+        self.assertEqual(j("zh-Hant"), ("zh", "Hant", ""))
+        self.assertEqual(j("zh-hant-tw"), ("zh", "Hant", "TW"))
+        self.assertEqual(j("pt-BR"), ("pt", "", "BR"))
+        self.assertEqual(j("es-419"), ("es", "", "419"))
+        self.assertEqual(j("pt_BR"), ("", "", ""))
+        self.assertEqual(j("b+zh+Hant"), ("", "", ""))
+
+    def test_moko_android(self):
+        m = al.moko_android
+        self.assertIsNone(m("base"))
+        self.assertEqual(m("zh-rTW")[0], "values-zh-rTW")
+        self.assertEqual(m("pt-rBR")[1], loc("pt", region="BR"))
+        self.assertEqual(m("zh-Hant")[0], "values-zh")
+        self.assertEqual(m("zh-Hant")[1], loc("zh"))
+        self.assertEqual(m("zh-Hant-TW")[0], "values-zh-rTW")
+        self.assertEqual(m("he")[0], "values-iw")
+        self.assertEqual(m("pt_BR")[0], "values-")
+
+    def test_findings(self):
+        def e(name, android, java):
+            return {"root": "r", "folder": "r/" + name, "name": name,
+                    "android": android, "java": java}
+        entries = [e("zh-Hans", "values-zh", ("zh", "Hans", "")),
+                   e("zh-Hant", "values-zh", ("zh", "Hant", "")),
+                   e("zh-Hant-TW", "values-zh-rTW", ("zh", "Hant", "TW")),
+                   e("sr-Latn", "values-sr", ("sr", "Latn", "")),
+                   e("pt_BR", "values-", ("", "", ""))]
+        got = [(f["kind"], f.get("folder", f["android_folder"]))
+               for f in al.moko_findings(entries)]
+        self.assertEqual(got, [("moko_script_dropped", "r/zh-Hant"),
+                               ("moko_script_dropped", "r/sr-Latn"),
+                               ("moko_unparsable", "r/pt_BR"),
+                               ("moko_collision", "values-zh")])
+        same = [e("pt-rBR", "values-pt-rBR", ("pt", "", "BR")),
+                e("pt-BR", "values-pt-rBR", ("pt", "", "BR"))]
+        self.assertEqual(al.moko_findings(same), [])
+
+
 class GradleTest(unittest.TestCase):
     def test_groovy(self):
         f = al.extract_filters(GROOVY)
@@ -174,7 +238,7 @@ class GradleTest(unittest.TestCase):
             "plugins {\n    alias(libs.plugins.android.application) apply false\n}\n"))
 
 
-class ProjectTest(unittest.TestCase):
+class TreeCase(unittest.TestCase):
     def setUp(self):
         self.root = tempfile.mkdtemp()
 
@@ -187,6 +251,31 @@ class ProjectTest(unittest.TestCase):
         with open(p, "w", encoding="utf-8") as fh:
             fh.write(text)
 
+
+class AccessorTest(TreeCase):
+    def test_resolve(self):
+        self.put("settings.gradle.kts", 'include(":core:ui", ":feature:some_lib")\n')
+        self.put("core/ui/build.gradle.kts", LIB_KTS)
+        self.put("feature/some_lib/build.gradle", "plugins { id 'com.android.library' }\n")
+        r = al.resolve_accessor
+        self.assertEqual(r(self.root, ["core", "ui"]), os.path.join(self.root, "core", "ui"))
+        self.assertEqual(r(self.root, ["feature", "someLib"]),
+                         os.path.join(self.root, "feature", "some_lib"))
+        self.assertEqual(r(self.root, ["core", "ui", "dependencyProject"]),
+                         os.path.join(self.root, "core", "ui"))
+        self.assertIsNone(r(self.root, ["missing"]))
+        self.assertIsNone(r(self.root, ["core"]))
+
+    def test_gradle_root(self):
+        self.put("android/settings.gradle", "include ':app'\n")
+        self.put("android/app/build.gradle", "plugins { id 'com.android.application' }\n")
+        app = os.path.join(self.root, "android", "app")
+        self.assertEqual(al.gradle_root(app, self.root),
+                         os.path.normpath(os.path.join(self.root, "android")))
+        self.assertEqual(al.gradle_root(self.root, self.root), os.path.normpath(self.root))
+
+
+class ProjectTest(TreeCase):
     def build(self):
         self.put("settings.gradle.kts", 'include(":app", ":core:ui")\n')
         self.put("app/build.gradle.kts", APP_KTS)
@@ -212,6 +301,7 @@ class ProjectTest(unittest.TestCase):
         self.assertEqual(mod["dependency_modules"], ["core/ui"])
         self.assertEqual(sorted(mod["translations"]),
                          ["b+zh+Hant", "de", "ja", "pt", "pt-rBR"])
+        self.assertEqual(mod["moko"], {})
         got = [(f["kind"], f["locale"], f.get("reason")) for f in rep["findings"]]
         self.assertEqual(got, [
             ("filtered_out", "de", "language_not_listed"),
@@ -243,6 +333,56 @@ class ProjectTest(unittest.TestCase):
         rep = al.check(self.root)
         self.assertEqual(rep["findings"], [])
         self.assertEqual([n["kind"] for n in rep["notes"]], ["dynamic_filter"])
+
+
+class KmpProjectTest(TreeCase):
+    MR = "shared/src/commonMain/moko-resources/"
+
+    def build(self):
+        self.put("settings.gradle.kts", 'include(":androidApp", ":shared", ":core-ui")\n')
+        self.put("androidApp/build.gradle.kts", KMP_APP_KTS)
+        self.put("androidApp/src/main/res/values/strings.xml", STRINGS % "Hello")
+        self.put("shared/build.gradle.kts", SHARED_KTS)
+        self.put(self.MR + "base/strings.xml", STRINGS % "Hello")
+        self.put(self.MR + "fr-rCA/strings.xml", STRINGS % "Allo")
+        self.put(self.MR + "sr-Latn/strings.xml", STRINGS % "Zdravo")
+        self.put(self.MR + "zh-Hans/strings.xml", STRINGS % "Ni hao S")
+        self.put(self.MR + "zh-Hant/strings.xml", STRINGS % "Ni hao T")
+        self.put(self.MR + "images/logo.svg", "<svg><string/></svg>\n")
+        self.put("core-ui/build.gradle.kts", LIB_KTS)
+        self.put("core-ui/src/main/res/values-ja/strings.xml", STRINGS % "Konnichiwa")
+
+    def test_moko_and_accessors(self):
+        self.build()
+        rep = al.check(self.root)
+        self.assertEqual([m["module"] for m in rep["modules"]], ["androidApp"])
+        mod = rep["modules"][0]
+        self.assertEqual(mod["dependency_modules"], ["shared", "core-ui"])
+        self.assertEqual(sorted(mod["translations"]), ["fr-rCA", "ja", "sr", "zh"])
+        self.assertEqual(mod["translations"]["zh"],
+                         [self.MR + "zh-Hans", self.MR + "zh-Hant"])
+        self.assertEqual(mod["moko"][self.MR + "zh-Hant"], "values-zh")
+        self.assertEqual(len(mod["moko"]), 4)
+        got = [(f["kind"], f.get("locale", f.get("android_folder"))) for f in rep["findings"]]
+        self.assertEqual(got, [
+            ("moko_script_dropped", "values-sr"),
+            ("moko_script_dropped", "values-zh"),
+            ("moko_collision", "values-zh"),
+            ("filtered_out", "fr-rCA"),
+            ("filtered_out", "ja"),
+        ])
+        self.assertEqual(rep["findings"][2]["folders"],
+                         [self.MR + "zh-Hans", self.MR + "zh-Hant"])
+        self.assertEqual(rep["findings"][3]["folders"], [self.MR + "fr-rCA"])
+        self.assertEqual(rep["findings"][0]["module"], "androidApp")
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(al.main([self.root, "--strict"]), 1)
+        self.assertIn("MOKO COLLISION values-zh", out.getvalue())
+        self.assertIn("MOKO SCRIPT DROPPED " + self.MR + "sr-Latn", out.getvalue())
+
+    def test_moko_needs_plugin(self):
+        self.build()
+        self.assertEqual(al.moko_dirs(os.path.join(self.root, "shared"), LIB_KTS), [])
 
 
 if __name__ == "__main__":
