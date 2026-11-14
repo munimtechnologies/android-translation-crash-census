@@ -1,0 +1,224 @@
+{
+ "installed": {
+  "mkdocs": "1.6.1",
+  "mkdocs-static-i18n": "1.3.1"
+ },
+ "log": [
+  "PREREG.md is live"
+ ],
+ "pinned": {
+  "mkdocs": "1.6.1",
+  "mkdocs-static-i18n": "1.3.1"
+ },
+ "prereg_sha256": "c0885babd2f72ecb6a190224ea9fc8cae06079f7872744aa27a3910008d37386",
+ "site_f": {
+  "exit": 0,
+  "files": [
+   "404.html",
+   "css/base.css",
+   "css/bootstrap.min.css",
+   "css/bootstrap.min.css.map",
+   "css/brands.min.css",
+   "css/fontawesome.min.css",
+   "css/solid.min.css",
+   "css/v4-font-face.min.css",
+   "fr/index.html",
+   "img/favicon.ico",
+   "img/grid.png",
+   "index.html",
+   "javascripts/extra.js",
+   "js/base.js",
+   "js/bootstrap.bundle.min.js",
+   "js/bootstrap.bundle.min.js.map",
+   "js/darkmode.js",
+   "sitemap.xml",
+   "sitemap.xml.gz",
+   "webfonts/fa-brands-400.ttf",
+   "webfonts/fa-brands-400.woff2",
+   "webfonts/fa-regular-400.ttf",
+   "webfonts/fa-regular-400.woff2",
+   "webfonts/fa-solid-900.ttf",
+   "webfonts/fa-solid-900.woff2",
+   "webfonts/fa-v4compatibility.ttf",
+   "webfonts/fa-v4compatibility.woff2"
+  ],
+  "hits": {
+   "MARKFEN": [
+    "index.html"
+   ],
+   "MARKFFR": [
+    "fr/index.html"
+   ],
+   "MARKFJS": [],
+   "MARKFXTRA": [
+    "javascripts/extra.js"
+   ]
+  },
+  "log": "INFO    -  mkdocs_static_i18n: Building 'en' documentation to directory: /tmp/mkdocs-mech-htduxts2/site-f-site\nINFO    -  Cleaning site directory\nINFO    -  Building documentation to directory: /tmp/mkdocs-mech-htduxts2/site-f-site\nINFO    -  mkdocs_static_i18n: Building 'fr' documentation to directory: /tmp/mkdocs-mech-htduxts2/site-f-site/fr\nINFO    -  Documentation built in 0.15 seconds",
+  "texts": {
+   "fr/index.html": "<!DOCTYPE html>\n<html lang=\"fr\" data-bs-theme=\"light\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        \n        \n        \n        <link rel=\"shortcut icon\" href=\"../img/favicon.ico\">\n        <title>Accueil - mech f</title>\n        <link href=\"../css/bootstrap.min.css\" rel=\"stylesheet\">\n        <link href=\"../css/fontawesome.min.css\" rel=\"stylesheet\">\n        <link href=\"../css/brands.min.css\" rel=\"stylesheet\">\n        <link href=\"../css/solid.min.css\" rel=\"stylesheet\">\n        <link href=\"../css/v4-font-face.min.css\" rel=\"stylesheet\">\n        <link href=\"../css/base.css\" rel=\"stylesheet\">\n        <link id=\"hljs-light\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css\" >\n        <link id=\"hljs-dark\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css\" disabled>\n        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js\"></script>\n        <script>hljs.highlightAll();</script> \n    </head>\n\n    <body>\n        <div class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-primary\">\n            <div class=\"container\">\n                <a class=\"navbar-brand\" href=\"./\">mech f</a>\n\n                <!-- Expanded navigation -->\n                <div id=\"navbar-collapse\" class=\"navbar-collapse collapse\">\n\n                    <ul class=\"nav navbar-nav ms-md-auto\">\n                    </ul>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"container\">\n            <div class=\"row\">\n                    <div class=\"col-md-3\"><div class=\"navbar-expand-md bs-sidebar hidden-print affix\" role=\"complementary\">\n    <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggler collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#toc-collapse\" title=\"Table of Contents\">\n            <span class=\"fa fa-angle-down\"></span>\n        </button>\n    </div>\n\n    \n    <div id=\"toc-collapse\" class=\"navbar-collapse collapse card bg-body-tertiary\">\n        <ul class=\"nav flex-column\">\n            \n            <li class=\"nav-item\" data-bs-level=\"1\"><a href=\"#accueil\" class=\"nav-link\">Accueil</a>\n              <ul class=\"nav flex-column\">\n              </ul>\n            </li>\n        </ul>\n    </div>\n</div></div>\n                    <div class=\"col-md-9\" role=\"main\">\n\n<h1 id=\"accueil\">Accueil</h1>\n<p>MARKFFR</p></div>\n            </div>\n        </div>\n\n        <footer class=\"col-md-12\">\n            <hr>\n            <p>Documentation built with <a href=\"https://www.mkdocs.org/\">MkDocs</a>.</p>\n        </footer>\n        <script src=\"../js/bootstrap.bundle.min.js\"></script>\n        <script>\n            var base_url = \"..\",\n                shortcuts = {\"help\": 191, \"next\": 78, \"previous\": 80, \"search\": 83};\n        </script>\n        <script src=\"../js/base.js\"></script>\n        <script src=\"../js/custom.js\"></script>\n        <script src=\"../javascripts/extra.js\"></script>\n\n        <div class=\"modal\" id=\"mkdocs_keyboard_modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"keyboardModalLabel\" aria-hidden=\"true\">\n    <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <h4 class=\"modal-title\" id=\"keyboardModalLabel\">Keyboard Shortcuts</h4>\n                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n            </div>\n            <div class=\"modal-body\">\n              <table class=\"table\">\n                <thead>\n                  <tr>\n                    <th style=\"width: 20%;\">Keys</th>\n                    <th>Action</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td class=\"help shortcut\"><kbd>?</kbd></td>\n                    <td>Open this help</td>\n                  </tr>\n                  <tr>\n                    <td class=\"next shortcut\"><kbd>n</kbd></td>\n                    <td>Next page</td>\n                  </tr>\n                  <tr>\n                    <td class=\"prev shortcut\"><kbd>p</kbd></td>\n                    <td>Previous page</td>\n                  </tr>\n                  <tr>\n                    <td class=\"search shortcut\"><kbd>s</kbd></td>\n                    <td>Search</td>\n                  </tr>\n                </tbody>\n              </table>\n            </div>\n            <div class=\"modal-footer\">\n            </div>\n        </div>\n    </div>\n</div>\n\n    </body>\n</html>\n",
+   "index.html": "<!DOCTYPE html>\n<html lang=\"en\" data-bs-theme=\"light\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        \n        \n        \n        <link rel=\"shortcut icon\" href=\"img/favicon.ico\">\n        <title>Home - mech f</title>\n        <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\">\n        <link href=\"css/fontawesome.min.css\" rel=\"stylesheet\">\n        <link href=\"css/brands.min.css\" rel=\"stylesheet\">\n        <link href=\"css/solid.min.css\" rel=\"stylesheet\">\n        <link href=\"css/v4-font-face.min.css\" rel=\"stylesheet\">\n        <link href=\"css/base.css\" rel=\"stylesheet\">\n        <link id=\"hljs-light\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css\" >\n        <link id=\"hljs-dark\" rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css\" disabled>\n        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js\"></script>\n        <script>hljs.highlightAll();</script> \n    </head>\n\n    <body>\n        <div class=\"navbar fixed-top navbar-expand-lg navbar-dark bg-primary\">\n            <div class=\"container\">\n                <a class=\"navbar-brand\" href=\".\">mech f</a>\n\n                <!-- Expanded navigation -->\n                <div id=\"navbar-collapse\" class=\"navbar-collapse collapse\">\n\n                    <ul class=\"nav navbar-nav ms-md-auto\">\n                    </ul>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"container\">\n            <div class=\"row\">\n                    <div class=\"col-md-3\"><div class=\"navbar-expand-md bs-sidebar hidden-print affix\" role=\"complementary\">\n    <div class=\"navbar-header\">\n        <button type=\"button\" class=\"navbar-toggler collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#toc-collapse\" title=\"Table of Contents\">\n            <span class=\"fa fa-angle-down\"></span>\n        </button>\n    </div>\n\n    \n    <div id=\"toc-collapse\" class=\"navbar-collapse collapse card bg-body-tertiary\">\n        <ul class=\"nav flex-column\">\n            \n            <li class=\"nav-item\" data-bs-level=\"1\"><a href=\"#home\" class=\"nav-link\">Home</a>\n              <ul class=\"nav flex-column\">\n              </ul>\n            </li>\n        </ul>\n    </div>\n</div></div>\n                    <div class=\"col-md-9\" role=\"main\">\n\n<h1 id=\"home\">Home</h1>\n<p>MARKFEN</p></div>\n            </div>\n        </div>\n\n        <footer class=\"col-md-12\">\n            <hr>\n            <p>Documentation built with <a href=\"https://www.mkdocs.org/\">MkDocs</a>.</p>\n        </footer>\n        <script src=\"js/bootstrap.bundle.min.js\"></script>\n        <script>\n            var base_url = \".\",\n                shortcuts = {\"help\": 191, \"next\": 78, \"previous\": 80, \"search\": 83};\n        </script>\n        <script src=\"js/base.js\"></script>\n        <script src=\"js/custom.js\"></script>\n        <script src=\"javascripts/extra.js\"></script>\n\n        <div class=\"modal\" id=\"mkdocs_keyboard_modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"keyboardModalLabel\" aria-hidden=\"true\">\n    <div class=\"modal-dialog\">\n        <div class=\"modal-content\">\n            <div class=\"modal-header\">\n                <h4 class=\"modal-title\" id=\"keyboardModalLabel\">Keyboard Shortcuts</h4>\n                <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n            </div>\n            <div class=\"modal-body\">\n              <table class=\"table\">\n                <thead>\n                  <tr>\n                    <th style=\"width: 20%;\">Keys</th>\n                    <th>Action</th>\n                  </tr>\n                </thead>\n                <tbody>\n                  <tr>\n                    <td class=\"help shortcut\"><kbd>?</kbd></td>\n                    <td>Open this help</td>\n                  </tr>\n                  <tr>\n                    <td class=\"next shortcut\"><kbd>n</kbd></td>\n                    <td>Next page</td>\n                  </tr>\n                  <tr>\n                    <td class=\"prev shortcut\"><kbd>p</kbd></td>\n                    <td>Previous page</td>\n                  </tr>\n                  <tr>\n                    <td class=\"search shortcut\"><kbd>s</kbd></td>\n                    <td>Search</td>\n                  </tr>\n                </tbody>\n              </table>\n            </div>\n            <div class=\"modal-footer\">\n            </div>\n        </div>\n    </div>\n</div>\n\n    </body>\n</html>\n"
+  }
+ },
+ "site_n": {
+  "exit": 0,
+  "files": [
+   "404.html",
+   "assets/widget.es.js",
+   "css/base.css",
+   "css/bootstrap.min.css",
+   "css/bootstrap.min.css.map",
+   "css/brands.min.css",
+   "css/fontawesome.min.css",
+   "css/solid.min.css",
+   "css/v4-font-face.min.css",
+   "guide.de/index.html",
+   "guide.pt-BR/index.html",
+   "guide.pt_br/index.html",
+   "guide/index.html",
+   "img/favicon.ico",
+   "img/grid.png",
+   "index.fr/index.html",
+   "index.html",
+   "js/base.js",
+   "js/bootstrap.bundle.min.js",
+   "js/bootstrap.bundle.min.js.map",
+   "js/darkmode.js",
+   "node.js/index.html",
+   "node.jsx/index.html",
+   "release_17.1/index.html",
+   "sitemap.xml",
+   "sitemap.xml.gz",
+   "socket.io/index.html",
+   "webfonts/fa-brands-400.ttf",
+   "webfonts/fa-brands-400.woff2",
+   "webfonts/fa-regular-400.ttf",
+   "webfonts/fa-regular-400.woff2",
+   "webfonts/fa-solid-900.ttf",
+   "webfonts/fa-solid-900.woff2",
+   "webfonts/fa-v4compatibility.ttf",
+   "webfonts/fa-v4compatibility.woff2"
+  ],
+  "hits": {
+   "MARKDE": [
+    "guide.de/index.html"
+   ],
+   "MARKESJS": [
+    "assets/widget.es.js"
+   ],
+   "MARKGUIDE": [
+    "guide/index.html"
+   ],
+   "MARKJSX": [
+    "node.jsx/index.html"
+   ],
+   "MARKNODEJS": [
+    "node.js/index.html"
+   ],
+   "MARKPTDASH": [
+    "guide.pt-BR/index.html"
+   ],
+   "MARKPTUNDER": [
+    "guide.pt_br/index.html"
+   ],
+   "MARKREL": [
+    "release_17.1/index.html"
+   ],
+   "MARKSEN": [
+    "index.html"
+   ],
+   "MARKSFR": [
+    "index.fr/index.html"
+   ],
+   "MARKSOCKETIO": [
+    "socket.io/index.html"
+   ]
+  },
+  "log": "INFO    -  Cleaning site directory\nINFO    -  Building documentation to directory: /tmp/mkdocs-mech-htduxts2/site-n-site\nINFO    -  Documentation built in 0.08 seconds"
+ },
+ "site_s": {
+  "exit": 0,
+  "files": [
+   "404.html",
+   "css/base.css",
+   "css/bootstrap.min.css",
+   "css/bootstrap.min.css.map",
+   "css/brands.min.css",
+   "css/fontawesome.min.css",
+   "css/solid.min.css",
+   "css/v4-font-face.min.css",
+   "fr/guide.pt_br/index.html",
+   "fr/guide/index.html",
+   "fr/index.html",
+   "fr/node.jsx/index.html",
+   "fr/release_17.1/index.html",
+   "guide.pt_br/index.html",
+   "guide/index.html",
+   "img/favicon.ico",
+   "img/grid.png",
+   "index.html",
+   "js/base.js",
+   "js/bootstrap.bundle.min.js",
+   "js/bootstrap.bundle.min.js.map",
+   "js/darkmode.js",
+   "node.jsx/index.html",
+   "release_17.1/index.html",
+   "sitemap.xml",
+   "sitemap.xml.gz",
+   "webfonts/fa-brands-400.ttf",
+   "webfonts/fa-brands-400.woff2",
+   "webfonts/fa-regular-400.ttf",
+   "webfonts/fa-regular-400.woff2",
+   "webfonts/fa-solid-900.ttf",
+   "webfonts/fa-solid-900.woff2",
+   "webfonts/fa-v4compatibility.ttf",
+   "webfonts/fa-v4compatibility.woff2"
+  ],
+  "hits": {
+   "MARKDE": [],
+   "MARKESJS": [],
+   "MARKGUIDE": [
+    "fr/guide/index.html",
+    "guide/index.html"
+   ],
+   "MARKJSX": [
+    "fr/node.jsx/index.html",
+    "node.jsx/index.html"
+   ],
+   "MARKNODEJS": [],
+   "MARKPTDASH": [],
+   "MARKPTUNDER": [
+    "fr/guide.pt_br/index.html",
+    "guide.pt_br/index.html"
+   ],
+   "MARKREL": [
+    "fr/release_17.1/index.html",
+    "release_17.1/index.html"
+   ],
+   "MARKSEN": [
+    "index.html"
+   ],
+   "MARKSFR": [
+    "fr/index.html"
+   ],
+   "MARKSOCKETIO": []
+  },
+  "log": "INFO    -  mkdocs_static_i18n: Building 'en' documentation to directory: /tmp/mkdocs-mech-htduxts2/site-s-site\nINFO    -  Cleaning site directory\nINFO    -  Building documentation to directory: /tmp/mkdocs-mech-htduxts2/site-s-site\nWARNING -  Doc file 'guide.md' contains a link 'socket.io.md', but the target is not found among documentation files.\nINFO    -  mkdocs_static_i18n: Building 'fr' documentation to directory: /tmp/mkdocs-mech-htduxts2/site-s-site/fr\nWARNING -  Doc file 'guide.md' contains a link 'socket.io.md', but the target is not found among documentation files.\nINFO    -  Documentation built in 0.15 seconds"
+ },
+ "verdicts": {
+  "A1": "HELD",
+  "D1": "HELD",
+  "D2": "HELD",
+  "D3": "HELD",
+  "D4": "HELD",
+  "F1": "HELD",
+  "F2": "HELD",
+  "K": "HELD",
+  "K0": "HELD",
+  "KF": "HELD",
+  "KX": "HELD",
+  "L1": "HELD",
+  "S": "HELD",
+  "W": "HELD"
+ }
+}
