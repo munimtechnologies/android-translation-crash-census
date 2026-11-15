@@ -1,0 +1,9 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+const codes = ['en', 'pt-BR', 'fr_CA', 'de', 'es'];
+---
+<html lang={Astro.currentLocale}>
+  <body>
+    {codes.map((c) => <a class="loc" data-code={c} href={getRelativeLocaleUrl(c)}>{c}</a>)}
+  </body>
+</html>
