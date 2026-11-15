@@ -1,0 +1,200 @@
+{
+ "hugo_version": "0.169.0",
+ "hugo_version_output": "hugo v0.169.0-1da10fc44701c566b1669cdb2d12638f155138bd linux/amd64 BuildDate=2026-10-27T14:52:20Z VendorInfo=gohugoio",
+ "log": [
+  "PREREG.md is live"
+ ],
+ "prereg_sha256": "6fad54e4bb0f4395cf32dc873c8b78e44c0dd9515c30dc1683670e33f40630c0",
+ "site_a": {
+  "any_hits": {
+   "MARKADE": [
+    "index.xml",
+    "posts/hello.de/index.html",
+    "posts/index.xml"
+   ],
+   "MARKAEN": [
+    "index.xml",
+    "posts/hello/index.html",
+    "posts/index.xml"
+   ],
+   "MARKAES": [],
+   "MARKAFR": [
+    "fr/index.xml",
+    "fr/posts/hello/index.html",
+    "fr/posts/index.xml"
+   ],
+   "MARKAPTDASH": [
+    "pt-br/index.xml",
+    "pt-br/posts/hello/index.html",
+    "pt-br/posts/index.xml"
+   ],
+   "MARKAPTUNDER": [
+    "index.xml",
+    "posts/hello.pt_br/index.html",
+    "posts/index.xml"
+   ],
+   "MARKCDE": [],
+   "MARKCEN": [
+    "index.xml",
+    "notes/hello/index.html",
+    "notes/index.xml"
+   ],
+   "MARKCFR": [
+    "fr/index.xml",
+    "fr/notes/hello/index.html",
+    "fr/notes/index.xml"
+   ],
+   "TITLEADE": [
+    "index.xml",
+    "posts/hello.de/index.html",
+    "posts/index.html",
+    "posts/index.xml"
+   ],
+   "TITLEAPTUNDER": [
+    "index.xml",
+    "posts/hello.pt_br/index.html",
+    "posts/index.html",
+    "posts/index.xml"
+   ]
+  },
+  "exit": 0,
+  "html_hits": {
+   "MARKADE": [
+    [
+     "posts/hello.de/index.html",
+     "en"
+    ]
+   ],
+   "MARKAEN": [
+    [
+     "posts/hello/index.html",
+     "en"
+    ]
+   ],
+   "MARKAES": [],
+   "MARKAFR": [
+    [
+     "fr/posts/hello/index.html",
+     "fr"
+    ]
+   ],
+   "MARKAPTDASH": [
+    [
+     "pt-br/posts/hello/index.html",
+     "pt-br"
+    ]
+   ],
+   "MARKAPTUNDER": [
+    [
+     "posts/hello.pt_br/index.html",
+     "en"
+    ]
+   ],
+   "MARKCDE": [],
+   "MARKCEN": [
+    [
+     "notes/hello/index.html",
+     "en"
+    ]
+   ],
+   "MARKCFR": [
+    [
+     "fr/notes/hello/index.html",
+     "fr"
+    ]
+   ],
+   "TITLEADE": [
+    [
+     "posts/hello.de/index.html",
+     "en"
+    ],
+    [
+     "posts/index.html",
+     "en"
+    ]
+   ],
+   "TITLEAPTUNDER": [
+    [
+     "posts/hello.pt_br/index.html",
+     "en"
+    ],
+    [
+     "posts/index.html",
+     "en"
+    ]
+   ]
+  },
+  "log": "Start building sites \u2026 \nhugo v0.169.0-1da10fc44701c566b1669cdb2d12638f155138bd linux/amd64 BuildDate=2026-10-27T14:52:20Z VendorInfo=gohugoio\n\n\n                 \u2502 EN \u2502 FR \u2502 PT - BR \n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n Pages           \u2502 18 \u2502 13 \u2502      10 \n Paginator pages \u2502  0 \u2502  0 \u2502       0 \n Non-page files  \u2502  0 \u2502  0 \u2502       0 \n Static files    \u2502  0 \u2502  0 \u2502       0 \n Processed       \u2502  0 \u2502  0 \u2502       0 \n images          \u2502    \u2502    \u2502         \n Aliases         \u2502  1 \u2502  0 \u2502       0 \n Cleaned         \u2502  0 \u2502  0 \u2502       0 \n\nTotal in 181 ms",
+  "top": [
+   "categories",
+   "en",
+   "fr",
+   "index.html",
+   "index.xml",
+   "notes",
+   "posts",
+   "pt-br",
+   "sitemap.xml",
+   "tags"
+  ]
+ },
+ "site_b": {
+  "any_hits": {
+   "MARKBDE": [],
+   "MARKBEN": [
+    "index.xml",
+    "posts/hello/index.html",
+    "posts/index.xml"
+   ],
+   "MARKBFR": [
+    "fr/index.xml",
+    "fr/posts/hello/index.html",
+    "fr/posts/index.xml"
+   ],
+   "TITLEBDE": []
+  },
+  "exit": 0,
+  "html_hits": {
+   "MARKBDE": [],
+   "MARKBEN": [
+    [
+     "posts/hello/index.html",
+     "en"
+    ]
+   ],
+   "MARKBFR": [
+    [
+     "fr/posts/hello/index.html",
+     "fr"
+    ]
+   ],
+   "TITLEBDE": []
+  },
+  "log": "Start building sites \u2026 \nhugo v0.169.0-1da10fc44701c566b1669cdb2d12638f155138bd linux/amd64 BuildDate=2026-10-27T14:52:20Z VendorInfo=gohugoio\n\n\n                  \u2502 EN \u2502 FR \n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\n Pages            \u2502 11 \u2502 10 \n Paginator pages  \u2502  0 \u2502  0 \n Non-page files   \u2502  0 \u2502  0 \n Static files     \u2502  0 \u2502  0 \n Processed images \u2502  0 \u2502  0 \n Aliases          \u2502  1 \u2502  0 \n Cleaned          \u2502  0 \u2502  0 \n\nTotal in 59 ms",
+  "top": [
+   "categories",
+   "en",
+   "fr",
+   "index.html",
+   "index.xml",
+   "posts",
+   "sitemap.xml",
+   "tags"
+  ]
+ },
+ "tarball": "hugo_0.169.0_linux-amd64.tar.gz",
+ "tarball_sha256": "2d2f0bfe357d8cb4cec02f6bb28a3bff34978c8dda44b618029c5eb9d66765a7",
+ "verdicts": {
+  "C1": "HELD",
+  "D": "HELD",
+  "K": "HELD",
+  "K3": "HELD",
+  "KB": "HELD",
+  "KC": "HELD",
+  "L1": "HELD",
+  "L2": "HELD",
+  "L3": "HELD",
+  "O1": "HELD",
+  "S": "HELD"
+ }
+}
