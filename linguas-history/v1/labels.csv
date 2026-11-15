@@ -1,0 +1,11 @@
+repo,dir,stem,removed_sha,kind,in_first_parent,absent_after,confirmed,how_checked,note
+https://github.com/GustavoPeredo/font-downloader,po,fr,6d98958773fcdc5c1791600e213c07dfe0d2fb26,other,yes,yes,yes,GitHub commit API patch,"one line -fr removed; subject 'Update LINGUAS'"
+https://github.com/alainm23/byte,po,tr,b9f48381d2999ab4dff88cec166460cbdda6aeb1,replace,yes,yes,yes,GitHub commit API patch,"-tr +it in 'Add Italian Translation'"
+https://github.com/alainm23/planify,po/extra,pt,d2fe5c5afe41c080ee7ddf2c8fe957640eb13273,replace,yes,yes,yes,GitHub commit API patch,"-pt +pt_BR (and +kk) in 'update extra po files'; may be a deliberate rename"
+https://github.com/alainm23/planify,po/extra,kw,e4847079ff71589352d014f401730e7986264b2c,branch:bulk,yes,yes,yes,raw LINGUAS at first parent 05674a1 and at the merge,"first parent lists kw (198 lines); after the merge the file holds only es"
+https://github.com/focustimerhq/FocusTimer,po,ca,1979128054cd0ec708c32502065b770e6cf285f9,bulk,yes,yes,yes,GitHub commit API patch,"20 codes removed, 5 kept, in 'Review Flatpak manifest'"
+https://github.com/leolost2605/Gradebook,po,de,a338a491d12282ce3f41146609e83ca2263d6eec,subject-removal,yes,yes,yes,GitHub commit API patch,"'it de ru' -> 'it ru'; 'Temporarily removed german translation'"
+https://github.com/mijorus/collector,po,tr,f64926a8b6f4992a684606d818b9016fcf3eee98,merge-resolution,yes,yes,yes,GitHub commit API patch (vs first parent),"merge of 'sabriunal-add-turkish' drops tr and moves uk_UA"
+https://github.com/muriloventuroso/pdftricks,po,zh_CN,816188c277c849d1965f7697114aab6476483226,other,yes,yes,yes,GitHub commit API patch,"one line -zh_CN removed in 'Add more categories. Close #4'"
+https://gitlab.com/bilheps/lifeograph,po,ar,93f85adfccd00ee11d4948d08491ea129b52d67e,bulk,yes,yes,yes,GitLab commit diff API,"ar and most codes commented out with '# '; looks deliberate (incomplete translations)"
+https://gitlab.gnome.org/GNOME/gnumeric,po,ka,7f2b8de7797921f667e0660a8bf7377f52a40da8,subject-removal,yes,yes,yes,GitLab commit diff API,"ka replaced by a comment saying it can come back with a po-functions translation"

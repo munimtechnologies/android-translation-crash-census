@@ -1,0 +1,53 @@
+{
+ "H": {
+  "events_to_check": 10,
+  "rule": "hand check of hand_check.csv: >= 90% of events confirmed (stem in the first parent's LINGUAS, absent after the commit)",
+  "verdict": "PENDING HAND CHECK"
+ },
+ "P1": {
+  "lost": 5,
+  "rule": "0.05 <= lost / substantive rows <= 0.35",
+  "share": 0.0746,
+  "substantive_rows": 67,
+  "verdict": "HOLDS"
+ },
+ "P2": {
+  "collateral": 3,
+  "events": 10,
+  "rule": "2 * collateral events >= removal events",
+  "verdict": "FAILS"
+ },
+ "P3": {
+  "deliberate": 2,
+  "events": 10,
+  "rule": "3 * deliberate events <= removal events",
+  "verdict": "HOLDS"
+ },
+ "descriptive": {
+  "classes": {
+   "lost": 28,
+   "never": 92
+  },
+  "event_kinds": {
+   "branch:bulk": 1,
+   "bulk": 2,
+   "merge-resolution": 1,
+   "other": 2,
+   "replace": 2,
+   "subject-removal": 2
+  },
+  "lost_now_listed_at_head": 0,
+  "never_now_listed_at_head": 1,
+  "nonsubstantive_lost": 23,
+  "nonsubstantive_rows": 53,
+  "repos_with_substantive_lost": 5
+ },
+ "gate": {
+  "repos_analysed": 51,
+  "repos_total": 51,
+  "rows_classified": 120,
+  "rows_total": 120,
+  "rule": "repos_analysed >= 45 and rows_classified (never or lost) >= 105",
+  "verdict": "HOLDS"
+ }
+}
