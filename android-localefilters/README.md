@@ -78,11 +78,21 @@ What follows on Android:
 | `zh-Hans`, `zh-Hant-TW` | `values-zh`, `values-zh-rTW` | Fine: Android works out the same script from the language and region. |
 | `b+zh+Hant`, `pt_BR` | `values-` | Not a valid folder, so the build fails. This is moko issue [#644](https://github.com/icerockdev/moko-resources/issues/644) (open since February 2024). |
 
-Prior art: #644 covers the `b+` form, which breaks the build. We found no report of the
-dashed script form (`zh-Hant`, `sr-Latn`), which builds without a warning. Two large
-moko-resources apps we looked at, Mihon and Animetail, use region folders (`zh-rCN`, `zh-rTW`)
-and are not affected. We have not found an affected project yet, and no real build has been
-run.
+Prior art: #644 covers the `b+` form, which breaks the build. When this section was first
+published (13 November 2026) we had found no report of the dashed script form (`zh-Hant`,
+`sr-Latn`), which builds without a warning. Two large moko-resources apps we looked at, Mihon
+and Animetail, use region folders (`zh-rCN`, `zh-rTW`) and are not affected. We have not found
+an affected project yet, and no real build has been run.
+
+**Update, 15 November 2026.** On 14 November another contributor opened moko-resources pull
+request [#901](https://github.com/icerockdev/moko-resources/pull/901), "Support script subtags
+on Android and JVM". It describes the same behaviour independently ("`zh-Hans` and `zh-Hant`
+both ended up in `values-zh`") and proposes writing script folders as `values-b+zh+Hans` on
+Android and `_zh_Hans` bundles on the JVM. It was open and not merged when we read it. If it is
+merged, moko versions that include it no longer lose the script, and the `moko_script_dropped`
+and `moko_collision` findings apply only to projects on earlier moko versions. This checker
+does not read the moko version yet, so check which version a project uses before acting on
+those two findings.
 
 The generated folders are merged into the app like any other library resources, so the app's
 locale filter applies to them too. The checker counts them as translations of the module that
@@ -108,8 +118,8 @@ moko folders are read only in modules whose build file mentions `moko` or
 |---|---|
 | `filtered_out` | A translated folder that the filter drops, with the reason: `language_not_listed`, `region_not_listed` or `script_mismatch`. |
 | `declared_but_filtered` | A language listed in the manifest's `android:localeConfig` file for which no translated folder survives the filter. Android 13+ offers it in Settings, and the app then shows its default strings. |
-| `moko_script_dropped` | A moko folder whose script differs from the one Android works out for the folder it becomes (`zh-Hant` to `values-zh`, `sr-Latn` to `values-sr`). |
-| `moko_collision` | Two or more moko folders in one source set that become the same Android folder for different locales. Only one reaches the app. |
+| `moko_script_dropped` | A moko folder whose script differs from the one Android works out for the folder it becomes (`zh-Hant` to `values-zh`, `sr-Latn` to `values-sr`). Moko versions without the fix proposed in moko #901 only. |
+| `moko_collision` | Two or more moko folders in one source set that become the same Android folder for different locales. Only one reaches the app. Moko versions without the fix proposed in moko #901 only. |
 | `moko_unparsable` | A moko folder that becomes `values-` (`b+zh+Hant`, `pt_BR`); the build fails (#644). |
 
 Notes (not findings):
@@ -136,7 +146,7 @@ own entries are added to them, and each such flavor is checked separately.
 - moko: the Java locale parser is modelled for language, script and country only (no extlang
   subtags, no grandfathered tags). A custom moko `resourcesSourceSets` folder is not read.
   Which group wins a collision depends on the order moko reads the files, so the checker
-  does not name it.
+  does not name it. The moko version is not read (see the update on moko #901 above).
 - The likely-script table covers about 90 languages and their common regional exceptions
   (`zh-TW`, `sr-ME` and so on). For any other language with an explicit script folder the
   scripts count as matching, which can only hide a `filtered_out` finding.
