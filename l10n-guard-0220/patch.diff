@@ -1,0 +1,409 @@
+--- a/README.md
++++ b/README.md
+@@ -231,6 +231,15 @@
+   `LINGUAS` left translations out
+   ([census](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/linguas/RESULTS.md),
+   [0.21.0 check](https://github.com/munimtechnologies/android-translation-crash-census/blob/main/l10n-guard-0210/RESULTS.md)).
++- **gettext spellings** (0.22.0, code `linguas-spelling`): glibc and Python's `gettext`
++  look a catalog up under the user's locale name, such as `zh_CN` or `pt_BR`, and compare
++  it exactly, so a language listed in `LINGUAS` as `zh_cn` or `pt-BR` is compiled and
++  installed under that name but never loaded on Linux. `linguas-spelling` names the file
++  to rename and the entry to list, and `linguas-unlisted` now gives the same spelling in
++  its advice (rename `po/zh_cn.po` to `po/zh_CN.po`, rather than add `zh_cn`). Script
++  codes (`sr-Latn`, `zh_Hant`) are left to a later check. On macOS and Windows file
++  systems, which ignore case, a `zh_cn` folder may still be found.
++  ([0.22.0 check](https://github.com/munimtechnologies/android-translation-crash-census/tree/main/l10n-guard-0220))
+ - **Apple `.strings` and String Catalogs**: `.strings` files in UTF-8 or UTF-16, with `/* */`
+   and `//` comments, and Xcode `.xcstrings` catalogs, where every language's values, plural and
+   device variations and substitutions are checked against the source language. `%@`, `%lld`
+@@ -331,7 +340,7 @@
+ 
+ ```yaml
+ - uses: actions/checkout@v4
+-- uses: munimtechnologies/l10n-guard@v0.21.1
++- uses: munimtechnologies/l10n-guard@v0.22.0
+   with:
+     kind: json
+     source: locales/en.json
+@@ -342,17 +351,17 @@
+ only `target`):
+ 
+ ```yaml
+-- uses: munimtechnologies/l10n-guard@v0.21.1
++- uses: munimtechnologies/l10n-guard@v0.22.0
+   with:
+     kind: properties
+     source: src/main/resources/messages.properties
+     target: src/main/resources/messages_fr.properties
+-- uses: munimtechnologies/l10n-guard@v0.21.1
++- uses: munimtechnologies/l10n-guard@v0.22.0
+   with:
+     kind: android
+     source: app/src/main/res/values/strings.xml
+     target: app/src/main/res/values-fr/strings.xml
+-- uses: munimtechnologies/l10n-guard@v0.21.1
++- uses: munimtechnologies/l10n-guard@v0.22.0
+   with:
+     kind: xcstrings
+     target: App/Localizable.xcstrings
+@@ -361,7 +370,7 @@
+ A whole translated folder:
+ 
+ ```yaml
+-- uses: munimtechnologies/l10n-guard@v0.21.1
++- uses: munimtechnologies/l10n-guard@v0.22.0
+   with:
+     kind: dir
+     source: docs
+@@ -372,7 +381,7 @@
+ 
+ ```yaml
+ - uses: actions/checkout@v4
+-- uses: munimtechnologies/l10n-guard@v0.21.1
++- uses: munimtechnologies/l10n-guard@v0.22.0
+   with:
+     kind: linguas
+     target: .
+@@ -384,7 +393,7 @@
+ ```yaml
+ - uses: actions/checkout@v4
+ - run: |
+-    pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"
++    pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.22.0"
+     l10n-guard --strict locale-config .
+     l10n-guard --strict linguas .
+ ```
+@@ -395,7 +404,7 @@
+ `l10n-guard` command (pip needs Python 3.9 or newer for this; the file itself still runs on 3.8):
+ 
+ ```sh
+-pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"
++pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.22.0"
+ l10n-guard android values/strings.xml values-fr/strings.xml
+ ```
+ 
+@@ -408,7 +417,7 @@
+ ```yaml
+ repos:
+   - repo: https://github.com/munimtechnologies/l10n-guard
+-    rev: v0.21.1
++    rev: v0.22.0
+     hooks:
+       - id: l10n-guard
+         name: l10n-guard (de)
+--- a/l10n_guard.py
++++ b/l10n_guard.py
+@@ -42,7 +42,7 @@
+ from collections import Counter
+ from html.parser import HTMLParser
+ 
+-__version__ = "0.21.1"
++__version__ = "0.22.0"
+ 
+ ERROR = "error"
+ WARNING = "warning"
+@@ -3710,12 +3710,49 @@
+     return any(x.lower() in _LG_SKIP or x.startswith(".") for x in folder.split("/") if x)
+ 
+ 
++# --- 0.22.0: gettext spellings ---------------------------------------------------------
++# glibc and Python's gettext look a catalog up under the user's locale name (zh_CN, pt_BR,
++# nb_NO): '_' before the territory and the territory in capitals, compared exactly on a
++# case-sensitive file system. A catalog installed as zh_cn or pt-BR is never looked up.
++# Script codes (sr-Latn, zh_Hant) are left to a later check.
++
++
++def _lg_gettext_name(stem):
++    """The name gettext looks up for a .po file name: '_' between the parts and a two-letter
++    territory in capitals (zh_cn -> zh_CN, nb-no -> nb_NO). Script parts, UN M.49 numbers and
++    an @modifier are kept as written (sr-Latn -> sr_Latn, es_419, sr@latin)."""
++    base, at, mod = stem.partition("@")
++    parts = re.split(r"[_-]", base)
++    out = [parts[0]]
++    for p in parts[1:]:
++        out.append(p.upper() if len(p) == 2 and p.isalpha() else p)
++    return "_".join(out) + at + mod
++
++
++def _lg_has_script(stem):
++    """True when a .po file name has a four-letter script part (zh_Hant, sr-Latn)."""
++    parts = re.split(r"[_-]", stem.partition("@")[0])[1:]
++    return any(len(p) == 4 and p.isalpha() for p in parts)
++
++
++def _lg_why(stem, gt):
++    """Why a .po file name is not the name gettext looks up (gt)."""
++    parts = []
++    if "-" in stem:
++        parts.append("use '_'")
++    if gt != stem.replace("-", "_"):
++        parts.append("write the territory in capitals")
++    return "gettext locale names " + " and ".join(parts)
++
++
+ def check_linguas(paths, read):
+     """Warnings for gettext po folders whose LINGUAS file decides which languages are built
+     (Meson's i18n.gettext() without languages:, or gettext's autotools rules):
+     linguas-unlisted (a <lang>.po file with translated messages that LINGUAS leaves out, so
+-    it is never compiled or installed) and linguas-missing (a listed language with no .po
+-    file beside LINGUAS). paths: every file of a project, relative and '/'-separated;
++    it is never compiled or installed), linguas-missing (a listed language with no .po
++    file beside LINGUAS) and linguas-spelling (a listed language installed under a name
++    gettext never looks up, such as zh_cn or pt-BR). paths: every file of a project,
++    relative and '/'-separated;
+     read(path) returns its bytes or None. Returns (problems, stats)."""
+     paths = sorted(p.replace("\\", "/") for p in paths)
+     pset = set(paths)
+@@ -3775,11 +3812,11 @@
+             if same:
+                 fix = ("%s lists '%s', and the name must match the file name exactly"
+                        % (rel, same))
+-            elif "-" in stem:
+-                gt = stem.replace("-", "_")
+-                fix = ("gettext locale names use '_', so a catalog installed as '%s' is never "
+-                       "looked up; rename %s%s to %s%s.po and add '%s' to %s if the "
+-                       "translation is ready" % (stem, prefix, po[stem], prefix, gt, gt, rel))
++            elif _lg_gettext_name(stem) != stem:
++                gt = _lg_gettext_name(stem)
++                fix = ("%s, so a catalog installed as '%s' is never looked up; rename %s%s to "
++                       "%s%s.po and add '%s' to %s if the translation is ready"
++                       % (_lg_why(stem, gt), stem, prefix, po[stem], prefix, gt, gt, rel))
+             else:
+                 fix = "add '%s' to %s if the translation is ready" % (stem, rel)
+             problems.append(issue(
+@@ -3792,6 +3829,17 @@
+                     WARNING, "linguas-missing",
+                     "%s lists '%s', but there is no %s%s.po beside it" % (rel, lang, prefix, lang),
+                     lang))
++                continue
++            gt = _lg_gettext_name(lang)
++            if (_lg_language(lang) is None or _lg_has_script(lang) or gt == lang
++                    or gt in listed_set):
++                continue
++            problems.append(issue(
++                WARNING, "linguas-spelling",
++                "%s lists '%s', so %s%s is installed as '%s', but %s, so it is never looked up "
++                "for a '%s' locale; rename %s%s to %s%s.po and list '%s' instead"
++                % (rel, lang, prefix, po[lang], lang, _lg_why(lang, gt), gt, prefix, po[lang],
++                   prefix, gt, gt), lang))
+     return problems, stats
+ 
+ 
+--- a/skills/l10n-guard/SKILL.md
++++ b/skills/l10n-guard/SKILL.md
+@@ -4,7 +4,7 @@
+ license: Apache-2.0
+ metadata:
+   author: MV2 of Munim, Inc.
+-  version: "0.21.1"
++  version: "0.22.0"
+   source: https://github.com/munimtechnologies/l10n-guard
+ ---
+ 
+@@ -22,7 +22,7 @@
+ ## Steps
+ 
+ 1. **Get the tool** (pinned release; pick one):
+-   - `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"` gives an
++   - `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.22.0"` gives an
+      `l10n-guard` command (Python 3.9+).
+    - Or use the single file `l10n_guard.py` from that release with `python3 l10n_guard.py ...`
+      (Python 3.8+). If the project already vendors `l10n_guard.py` or runs the GitHub Action or
+@@ -91,6 +91,10 @@
+      `msgfmt --check` and that the language was not left out on purpose (a comment in
+      `LINGUAS`, an unfinished translation). `linguas-missing`: add the `.po` file or remove the
+      line.
++   - `linguas-spelling` (a listed `zh_cn` or `pt-BR`, installed under a name gettext never
++     looks up): rename the `.po` file to the spelling it names and change the `LINGUAS` line
++     to match; on Weblate or Crowdin projects ask first, because the platform may recreate
++     the old file name.
+    - `antonym-collision`, `reading-leak`, `java-format-type`, `qt-arg-renumbered`,
+      `qt-count-missing`, `untranslated`, `missing-key`, `extra-key`: report.
+    - In `dir` mode a `no-source` warning means a translated file has no source file next to it.
+@@ -102,12 +106,12 @@
+ 
+ ## CI options (when the user wants it enforced)
+ 
+-- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.21.1` with `kind`, `source`, `target`
++- GitHub Action: `uses: munimtechnologies/l10n-guard@v0.22.0` with `kind`, `source`, `target`
+   (single-file kinds `po`, `xliff`, `xcstrings`, `qt` and the project-folder kinds
+   `locale-config` and `linguas` take only `target`). Or use a plain step:
+-  `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.21.1"`
++  `pip install "git+https://github.com/munimtechnologies/l10n-guard@v0.22.0"`
+   then `l10n-guard --strict locale-config .` (the `linguas` kind runs the same way).
+-- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.21.1`, hook id
++- pre-commit: repo `https://github.com/munimtechnologies/l10n-guard`, `rev: v0.22.0`, hook id
+   `l10n-guard`, `args: [json, locales/en.json, locales/de.json]`, one hook entry per pair (or the
+   `dir` kind for a folder).
+ 
+--- a/test_0220.py
++++ b/test_0220.py
+@@ -0,0 +1,168 @@
++#!/usr/bin/env python3
++"""Tests for l10n-guard 0.22.0: gettext spellings. linguas-unlisted names the spelling glibc
++looks up when a file's territory is in lower case (zh_cn.po -> zh_CN.po), and the new
++linguas-spelling warning reports a listed language that is installed under a name glibc never
++looks up (zh_cn, pt-BR).
++
++Licensed under the Apache License, Version 2.0 (Apache-2.0).
++Made by MV2 of Munim, Inc. with AI agents.
++"""
++
++import unittest
++
++import l10n_guard as g
++
++MESON = "i18n.gettext(meson.project_name(), preset: 'glib')\n"
++AUTOTOOLS = "AC_INIT([x], [1])\nAM_GNU_GETTEXT([external])\n"
++HEADER = 'msgid ""\nmsgstr ""\n"Content-Type: text/plain; charset=UTF-8\\n"\n\n'
++
++
++def po_text(done=1):
++    return HEADER + "".join('msgid "a%d"\nmsgstr "b%d"\n\n' % (i, i) for i in range(done))
++
++
++def check(files):
++    data = dict((k, v.encode("utf-8")) for k, v in files.items())
++    return g.check_linguas(sorted(data), data.get)
++
++
++def codes(problems):
++    return [(p["code"], p["key"]) for p in problems]
++
++
++class GettextNameTest(unittest.TestCase):
++    def test_version(self):
++        self.assertGreaterEqual(tuple(int(x) for x in g.__version__.split(".")), (0, 22, 0))
++
++    def test_gettext_name(self):
++        cases = {"zh_cn": "zh_CN", "pt-br": "pt_BR", "nb-NO": "nb_NO", "pt_BR": "pt_BR",
++                 "de": "de", "ast": "ast", "es_419": "es_419", "sr@latin": "sr@latin",
++                 "ca@valencia": "ca@valencia", "de_ch@euro": "de_CH@euro",
++                 "sr-Latn": "sr_Latn", "zh_Hant": "zh_Hant"}
++        for stem, want in cases.items():
++            self.assertEqual(g._lg_gettext_name(stem), want, stem)
++
++    def test_has_script(self):
++        self.assertTrue(g._lg_has_script("zh_Hant"))
++        self.assertTrue(g._lg_has_script("sr-Latn"))
++        self.assertTrue(g._lg_has_script("uz_Cyrl@x"))
++        for stem in ("zh_CN", "zh_cn", "sr@latin", "es_419", "ast", "de"):
++            self.assertFalse(g._lg_has_script(stem), stem)
++
++    def test_why(self):
++        self.assertEqual(g._lg_why("nb-NO", "nb_NO"), "gettext locale names use '_'")
++        self.assertEqual(g._lg_why("zh_cn", "zh_CN"),
++                         "gettext locale names write the territory in capitals")
++        self.assertEqual(g._lg_why("nb-no", "nb_NO"),
++                         "gettext locale names use '_' and write the territory in capitals")
++
++
++class UnlistedTest(unittest.TestCase):
++    def test_lowercase_territory_gets_the_gettext_spelling(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++            "po/zh_cn.po": po_text(2)})
++        self.assertEqual(codes(problems), [("linguas-unlisted", "zh_cn")])
++        msg = problems[0]["message"]
++        self.assertEqual(
++            msg,
++            "po/zh_cn.po has 2 of 2 messages translated, but po/LINGUAS does not list 'zh_cn', "
++            "so Meson never compiles or installs it; gettext locale names write the territory "
++            "in capitals, so a catalog installed as 'zh_cn' is never looked up; rename "
++            "po/zh_cn.po to po/zh_CN.po and add 'zh_CN' to po/LINGUAS if the translation is "
++            "ready")
++        self.assertNotIn("add 'zh_cn'", msg)
++
++    def test_hyphen_and_lowercase(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++            "po/nb-no.po": po_text()})
++        self.assertEqual(codes(problems), [("linguas-unlisted", "nb-no")])
++        self.assertIn("gettext locale names use '_' and write the territory in capitals, so a "
++                      "catalog installed as 'nb-no' is never looked up; rename po/nb-no.po to "
++                      "po/nb_NO.po and add 'nb_NO' to po/LINGUAS", problems[0]["message"])
++
++    def test_hyphen_message_is_unchanged(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++            "po/nb-NO.po": po_text(3)})
++        self.assertEqual(
++            problems[0]["message"],
++            "po/nb-NO.po has 3 of 3 messages translated, but po/LINGUAS does not list 'nb-NO', "
++            "so Meson never compiles or installs it; gettext locale names use '_', so a catalog "
++            "installed as 'nb-NO' is never looked up; rename po/nb-NO.po to po/nb_NO.po and add "
++            "'nb_NO' to po/LINGUAS if the translation is ready")
++
++    def test_listed_other_case_still_wins(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "zh_CN\n", "po/zh_cn.po": po_text()})
++        unlisted = [p for p in problems if p["code"] == "linguas-unlisted"]
++        self.assertEqual(len(unlisted), 1)
++        self.assertIn("po/LINGUAS lists 'zh_CN', and the name must match the file name exactly",
++                      unlisted[0]["message"])
++        self.assertNotIn("rename", unlisted[0]["message"])
++
++    def test_plain_name_message_is_unchanged(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\n", "po/de.po": po_text(),
++            "po/pt_BR.po": po_text()})
++        self.assertEqual(codes(problems), [("linguas-unlisted", "pt_BR")])
++        self.assertTrue(problems[0]["message"].endswith(
++            "; add 'pt_BR' to po/LINGUAS if the translation is ready"))
++
++
++class SpellingTest(unittest.TestCase):
++    def test_listed_lowercase_territory(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\nzh_cn\n", "po/de.po": po_text(),
++            "po/zh_cn.po": po_text()})
++        self.assertEqual(codes(problems), [("linguas-spelling", "zh_cn")])
++        self.assertEqual(problems[0]["level"], g.WARNING)
++        self.assertEqual(
++            problems[0]["message"],
++            "po/LINGUAS lists 'zh_cn', so po/zh_cn.po is installed as 'zh_cn', but gettext "
++            "locale names write the territory in capitals, so it is never looked up for a "
++            "'zh_CN' locale; rename po/zh_cn.po to po/zh_CN.po and list 'zh_CN' instead")
++
++    def test_listed_hyphen(self):
++        problems, _ = check({
++            "configure.ac": AUTOTOOLS, "po/LINGUAS": "de pt-BR\n", "po/de.po": po_text(),
++            "po/pt-BR.po": po_text()})
++        self.assertEqual(codes(problems), [("linguas-spelling", "pt-BR")])
++        self.assertIn("but gettext locale names use '_', so it is never looked up for a 'pt_BR' "
++                      "locale; rename po/pt-BR.po to po/pt_BR.po and list 'pt_BR' instead",
++                      problems[0]["message"])
++
++    def test_good_names_are_quiet(self):
++        names = ["de", "pt_BR", "es_419", "sr@latin", "ca@valencia", "zh_Hant", "ast", "en_GB"]
++        files = {"po/meson.build": MESON, "po/LINGUAS": " ".join(names) + "\n"}
++        for n in names:
++            files["po/%s.po" % n] = po_text()
++        problems, _ = check(files)
++        self.assertEqual(problems, [])
++
++    def test_script_codes_are_left_alone(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "sr-Latn\n", "po/sr-Latn.po": po_text()})
++        self.assertEqual(problems, [])
++
++    def test_both_spellings_listed(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "zh_CN\nzh_cn\n", "po/zh_CN.po": po_text(),
++            "po/zh_cn.po": po_text()})
++        self.assertEqual(problems, [])
++
++    def test_missing_file_is_still_linguas_missing(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\nzh_cn\n", "po/de.po": po_text()})
++        self.assertEqual(codes(problems), [("linguas-missing", "zh_cn")])
++
++    def test_not_a_locale_is_left_alone(self):
++        problems, _ = check({
++            "po/meson.build": MESON, "po/LINGUAS": "de\nit_complete\n", "po/de.po": po_text(),
++            "po/it_complete.po": po_text()})
++        self.assertEqual(problems, [])
++
++
++if __name__ == "__main__":
++    unittest.main()

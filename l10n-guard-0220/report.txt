@@ -1,0 +1,87 @@
+08:03:34 l10n-guard 0.21.1 on main is live
+08:03:34 repo files: 65
+08:03:35 before test_0100 exit=0 ran=26 skipped=0
+08:03:35 before test_0110 exit=0 ran=13 skipped=0
+08:03:36 before test_0120 exit=0 ran=11 skipped=0
+08:03:36 before test_0130 exit=0 ran=7 skipped=0
+08:03:37 before test_0140 exit=0 ran=10 skipped=0
+08:03:37 before test_0150 exit=0 ran=13 skipped=0
+08:03:38 before test_0160 exit=0 ran=7 skipped=0
+08:03:38 before test_0170 exit=0 ran=17 skipped=0
+08:03:38 before test_0180 exit=0 ran=19 skipped=0
+08:03:39 before test_0190 exit=0 ran=25 skipped=0
+08:03:39 before test_0200 exit=0 ran=11 skipped=0
+08:03:40 before test_0201 exit=0 ran=6 skipped=0
+08:03:40 before test_0210 exit=0 ran=14 skipped=0
+08:03:41 before test_0211 exit=0 ran=7 skipped=0
+08:03:42 before test_071 exit=0 ran=13 skipped=0
+08:03:42 before test_072 exit=0 ran=7 skipped=0
+08:03:43 before test_080 exit=0 ran=14 skipped=0
+08:03:43 before test_090 exit=0 ran=15 skipped=0
+08:03:44 before test_android_text_052 exit=0 ran=6 skipped=0
+08:03:44 before test_java_060 exit=0 ran=14 skipped=0
+08:03:45 before test_l10n_guard exit=0 ran=55 skipped=0
+08:03:45 before test_packaging exit=0 ran=10 skipped=0
+08:03:45 before test_qt_070 exit=0 ran=21 skipped=0
+08:03:45 replaced: l10n_guard.py version
+08:03:45 replaced: l10n_guard.py helpers
+08:03:45 replaced: l10n_guard.py docstring
+08:03:45 replaced: l10n_guard.py unlisted advice
+08:03:45 replaced: l10n_guard.py spelling check
+08:03:45 version: README.md: 8 x '@v0.21.1' -> '@v0.22.0'
+08:03:45 version: README.md: 1 x 'rev: v0.21.1' -> 'rev: v0.22.0'
+08:03:45 replaced: README.md spelling bullet
+08:03:45 version: skills/l10n-guard/SKILL.md: 1 x 'version: "0.21.1"' -> 'version: "0.22.0"'
+08:03:45 version: skills/l10n-guard/SKILL.md: 3 x '@v0.21.1' -> '@v0.22.0'
+08:03:45 version: skills/l10n-guard/SKILL.md: 1 x 'rev: v0.21.1' -> 'rev: v0.22.0'
+08:03:45 replaced: skills/l10n-guard/SKILL.md spelling advice
+08:03:45 lines still mentioning 0.21.1: 1 (see still-0211.txt)
+08:03:46 after test_0100 exit=0 ran=26 skipped=0
+08:03:46 after test_0110 exit=0 ran=13 skipped=0
+08:03:46 after test_0120 exit=0 ran=11 skipped=0
+08:03:47 after test_0130 exit=0 ran=7 skipped=0
+08:03:47 after test_0140 exit=0 ran=10 skipped=0
+08:03:48 after test_0150 exit=0 ran=13 skipped=0
+08:03:48 after test_0160 exit=0 ran=7 skipped=0
+08:03:48 after test_0170 exit=0 ran=17 skipped=0
+08:03:49 after test_0180 exit=0 ran=19 skipped=0
+08:03:49 after test_0190 exit=0 ran=25 skipped=0
+08:03:49 after test_0200 exit=0 ran=11 skipped=0
+08:03:50 after test_0201 exit=0 ran=6 skipped=0
+08:03:50 after test_0210 exit=0 ran=14 skipped=0
+08:03:51 after test_0211 exit=0 ran=7 skipped=0
+08:03:52 after test_0220 exit=0 ran=16 skipped=0
+08:03:52 after test_071 exit=0 ran=13 skipped=0
+08:03:52 after test_072 exit=0 ran=7 skipped=0
+08:03:53 after test_080 exit=0 ran=14 skipped=0
+08:03:53 after test_090 exit=0 ran=15 skipped=0
+08:03:54 after test_android_text_052 exit=0 ran=6 skipped=0
+08:03:54 after test_java_060 exit=0 ran=14 skipped=0
+08:03:55 after test_l10n_guard exit=0 ran=55 skipped=0
+08:03:55 after test_packaging exit=0 ran=10 skipped=0
+08:03:56 after test_qt_070 exit=0 ran=21 skipped=0
+08:03:56 T: HELD; failing after: []
+08:03:56 PREREG.md is live
+08:03:56 prereg sha256 fc956d0ee78165c8209227d2458e7063ca980451e966a1772248a1837bcb1e14
+08:04:02 mechanism: {"c": {"nb_NO.UTF-8": ["nb_NO"], "pt_BR.UTF-8": ["pt_BR"], "zh_CN.UTF-8": ["zh_CN"]}, "errors": [], "localedef": ["zh_CN.UTF-8 exit 0 ", "pt_BR.UTF-8 exit 0 ", "nb_NO.UTF-8 exit 0 "], "locales": {"nb_NO.UTF-8": true, "pt_BR.UTF-8": true, "zh_CN.UTF-8": true}, "py": {"nb_NO.UTF-8": ["nb_NO"], "pt_BR.UTF-8": ["pt_BR"], "zh_CN.UTF-8": ["zh_CN"]}}
+08:04:03 compare https://gitlab.gnome.org/GNOME/NetworkManager-openconnect po: 0.21.1 [('linguas-unlisted', 'en_US')], 0.22.0 [('linguas-unlisted', 'en_US')]
+08:04:04 compare https://gitlab.gnome.org/GNOME/gnome-terminal po: 0.21.1 [('linguas-unlisted', 'mjw')], 0.22.0 [('linguas-unlisted', 'mjw')]
+08:04:06 compare https://gitlab.gnome.org/World/ShellExtensions/desktop-icons po: 0.21.1 [('linguas-unlisted', 'ko')], 0.22.0 [('linguas-unlisted', 'ko')]
+08:04:07 compare https://gitlab.gnome.org/GNOME/Incubator/resources po: 0.21.1 [('linguas-unlisted', 'af_ZA')], 0.22.0 [('linguas-unlisted', 'af_ZA')]
+08:04:09 compare https://github.com/elementary/flatpak-platform platform-data/po: 0.21.1 [('linguas-unlisted', 'sco')], 0.22.0 [('linguas-unlisted', 'sco')]
+08:04:09 compare https://gitlab.gnome.org/World/tootle po: 0.21.1 [('linguas-unlisted', 'nb-NO')], 0.22.0 [('linguas-unlisted', 'nb-NO')]
+08:04:10 compare https://github.com/Jeffser/Pigment po: 0.21.1 [], 0.22.0 []
+08:04:11 compare https://github.com/yeKcim/warmux old/wormux-0.8.1/po: 0.21.1 [], 0.22.0 []
+08:04:13 compare https://github.com/Nokse22/mini-text po: 0.21.1 [('linguas-unlisted', 'de'), ('linguas-unlisted', 'fr'), ('linguas-unlisted', 'pt_BR')], 0.22.0 [('linguas-unlisted', 'de'), ('linguas-unlisted', 'fr'), ('linguas-unlisted', 'pt_BR')]
+08:04:14 compare https://github.com/sheep-farm/merkato po: 0.21.1 [('linguas-unlisted', 'el'), ('linguas-unlisted', 'fa')], 0.22.0 [('linguas-unlisted', 'el'), ('linguas-unlisted', 'fa')]
+08:04:15 compare https://github.com/tobagin/tempo po: 0.21.1 [], 0.22.0 []
+08:04:16 compare https://github.com/dubstar-04/Design po: 0.21.1 [('linguas-unlisted', 'ko')], 0.22.0 [('linguas-unlisted', 'ko')]
+08:04:17 compare https://github.com/tobagin/Draughts po: 0.21.1 [('linguas-unlisted', 'en_US')], 0.22.0 [('linguas-unlisted', 'en_US')]
+08:04:19 compare https://github.com/phase1geo/minder po: 0.21.1 [('linguas-unlisted', 'eu'), ('linguas-unlisted', 'fa')], 0.22.0 [('linguas-unlisted', 'eu'), ('linguas-unlisted', 'fa')]
+08:04:20 compare https://github.com/mijorus/whisper po: 0.21.1 [('linguas-unlisted', 'pt_BR')], 0.22.0 [('linguas-unlisted', 'pt_BR')]
+08:04:22 compare https://github.com/marhkb/pods po: 0.21.1 [('linguas-unlisted', 'cs'), ('linguas-unlisted', 'ko'), ('linguas-unlisted', 'vi'), ('linguas-unlisted', 'zh_Hant')], 0.22.0 [('linguas-unlisted', 'cs'), ('linguas-unlisted', 'ko'), ('linguas-unlisted', 'vi'), ('linguas-unlisted', 'zh_Hant')]
+08:04:22 compare https://github.com/donadigo/appeditor po: 0.21.1 [('linguas-unlisted', 'cs')], 0.22.0 [('linguas-unlisted', 'cs')]
+08:04:24 compare https://github.com/amit9838/mousam po: 0.21.1 [('linguas-unlisted', 'fi_FI')], 0.22.0 [('linguas-unlisted', 'fi_FI')]
+08:04:26 compare https://github.com/DeimosHall/Metamorphosis po: 0.21.1 [('linguas-unlisted', 'zh_cn')], 0.22.0 [('linguas-unlisted', 'zh_cn')]
+08:04:28 compare https://gitlab.com/adhami3310/Switcheroo po: 0.21.1 [('linguas-unlisted', 'zh_cn')], 0.22.0 [('linguas-unlisted', 'zh_cn')]
+08:04:28 {"M1": "HELD", "M2": "HELD", "R": "HELD (Metamorphosis HELD, Switcheroo HELD)", "S": "HELD (18 of 18 folders read; 22 findings, none differ)", "T": "HELD"}

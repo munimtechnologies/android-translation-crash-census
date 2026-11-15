@@ -1,0 +1,258 @@
+{
+ "after": {
+  "test_0100": {
+   "exit": 0,
+   "ran": 26,
+   "skipped": 0
+  },
+  "test_0110": {
+   "exit": 0,
+   "ran": 13,
+   "skipped": 0
+  },
+  "test_0120": {
+   "exit": 0,
+   "ran": 11,
+   "skipped": 0
+  },
+  "test_0130": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_0140": {
+   "exit": 0,
+   "ran": 10,
+   "skipped": 0
+  },
+  "test_0150": {
+   "exit": 0,
+   "ran": 13,
+   "skipped": 0
+  },
+  "test_0160": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_0170": {
+   "exit": 0,
+   "ran": 17,
+   "skipped": 0
+  },
+  "test_0180": {
+   "exit": 0,
+   "ran": 19,
+   "skipped": 0
+  },
+  "test_0190": {
+   "exit": 0,
+   "ran": 25,
+   "skipped": 0
+  },
+  "test_0200": {
+   "exit": 0,
+   "ran": 11,
+   "skipped": 0
+  },
+  "test_0201": {
+   "exit": 0,
+   "ran": 6,
+   "skipped": 0
+  },
+  "test_0210": {
+   "exit": 0,
+   "ran": 14,
+   "skipped": 0
+  },
+  "test_0211": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_0220": {
+   "exit": 0,
+   "ran": 16,
+   "skipped": 0
+  },
+  "test_071": {
+   "exit": 0,
+   "ran": 13,
+   "skipped": 0
+  },
+  "test_072": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_080": {
+   "exit": 0,
+   "ran": 14,
+   "skipped": 0
+  },
+  "test_090": {
+   "exit": 0,
+   "ran": 15,
+   "skipped": 0
+  },
+  "test_android_text_052": {
+   "exit": 0,
+   "ran": 6,
+   "skipped": 0
+  },
+  "test_java_060": {
+   "exit": 0,
+   "ran": 14,
+   "skipped": 0
+  },
+  "test_l10n_guard": {
+   "exit": 0,
+   "ran": 55,
+   "skipped": 0
+  },
+  "test_packaging": {
+   "exit": 0,
+   "ran": 10,
+   "skipped": 0
+  },
+  "test_qt_070": {
+   "exit": 0,
+   "ran": 21,
+   "skipped": 0
+  }
+ },
+ "before": {
+  "test_0100": {
+   "exit": 0,
+   "ran": 26,
+   "skipped": 0
+  },
+  "test_0110": {
+   "exit": 0,
+   "ran": 13,
+   "skipped": 0
+  },
+  "test_0120": {
+   "exit": 0,
+   "ran": 11,
+   "skipped": 0
+  },
+  "test_0130": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_0140": {
+   "exit": 0,
+   "ran": 10,
+   "skipped": 0
+  },
+  "test_0150": {
+   "exit": 0,
+   "ran": 13,
+   "skipped": 0
+  },
+  "test_0160": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_0170": {
+   "exit": 0,
+   "ran": 17,
+   "skipped": 0
+  },
+  "test_0180": {
+   "exit": 0,
+   "ran": 19,
+   "skipped": 0
+  },
+  "test_0190": {
+   "exit": 0,
+   "ran": 25,
+   "skipped": 0
+  },
+  "test_0200": {
+   "exit": 0,
+   "ran": 11,
+   "skipped": 0
+  },
+  "test_0201": {
+   "exit": 0,
+   "ran": 6,
+   "skipped": 0
+  },
+  "test_0210": {
+   "exit": 0,
+   "ran": 14,
+   "skipped": 0
+  },
+  "test_0211": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_071": {
+   "exit": 0,
+   "ran": 13,
+   "skipped": 0
+  },
+  "test_072": {
+   "exit": 0,
+   "ran": 7,
+   "skipped": 0
+  },
+  "test_080": {
+   "exit": 0,
+   "ran": 14,
+   "skipped": 0
+  },
+  "test_090": {
+   "exit": 0,
+   "ran": 15,
+   "skipped": 0
+  },
+  "test_android_text_052": {
+   "exit": 0,
+   "ran": 6,
+   "skipped": 0
+  },
+  "test_java_060": {
+   "exit": 0,
+   "ran": 14,
+   "skipped": 0
+  },
+  "test_l10n_guard": {
+   "exit": 0,
+   "ran": 55,
+   "skipped": 0
+  },
+  "test_packaging": {
+   "exit": 0,
+   "ran": 10,
+   "skipped": 0
+  },
+  "test_qt_070": {
+   "exit": 0,
+   "ran": 21,
+   "skipped": 0
+  }
+ },
+ "changed": [
+  "README.md",
+  "l10n_guard.py",
+  "skills/l10n-guard/SKILL.md",
+  "test_0220.py"
+ ],
+ "failing_after": [],
+ "linguas_spelling_hits": [],
+ "prereg_sha256": "fc956d0ee78165c8209227d2458e7063ca980451e966a1772248a1837bcb1e14",
+ "repo_tar_sha256": "2ad3ee3a268dac77b89ecac25e7f489c25e3bf97760eb1db28b38f7eb3e26815",
+ "verdicts": {
+  "M1": "HELD",
+  "M2": "HELD",
+  "R": "HELD (Metamorphosis HELD, Switcheroo HELD)",
+  "S": "HELD (18 of 18 folders read; 22 findings, none differ)",
+  "T": "HELD"
+ }
+}

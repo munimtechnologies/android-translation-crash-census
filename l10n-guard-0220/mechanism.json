@@ -1,0 +1,35 @@
+{
+ "c": {
+  "nb_NO.UTF-8": [
+   "nb_NO"
+  ],
+  "pt_BR.UTF-8": [
+   "pt_BR"
+  ],
+  "zh_CN.UTF-8": [
+   "zh_CN"
+  ]
+ },
+ "errors": [],
+ "localedef": [
+  "zh_CN.UTF-8 exit 0 ",
+  "pt_BR.UTF-8 exit 0 ",
+  "nb_NO.UTF-8 exit 0 "
+ ],
+ "locales": {
+  "nb_NO.UTF-8": true,
+  "pt_BR.UTF-8": true,
+  "zh_CN.UTF-8": true
+ },
+ "py": {
+  "nb_NO.UTF-8": [
+   "nb_NO"
+  ],
+  "pt_BR.UTF-8": [
+   "pt_BR"
+  ],
+  "zh_CN.UTF-8": [
+   "zh_CN"
+  ]
+ }
+}
