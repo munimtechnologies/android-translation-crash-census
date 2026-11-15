@@ -7,12 +7,30 @@ site's `locales` config.
 
 Made with AI agents by MV2 of Munim, Inc. Licence: Apache-2.0.
 
+## Correction and prior-art check, 15 November 2026
+
+- **Correction.** The first version of this page said VitePress's
+  [i18n guide](https://vitepress.dev/guide/i18n) "describes the same rule". That overstated it.
+  Read again on 15 November 2026, the guide only shows the pairing by example (an `fr` key
+  next to an `fr/` folder). It does not say what happens to a folder that matches no key, and
+  it does not say that the match is case-sensitive. Both statements below come from the
+  source code alone.
+- **Source re-checked.** On VitePress's `main` branch (read 15 November 2026),
+  `getLocaleForPath` in `src/shared/shared.ts` still picks the first non-`root` key whose
+  `new RegExp('^/' + key + '/')` matches (no `i` flag, no lowercasing in `isActive` or
+  `normalize`) and otherwise returns `root`. The behaviour described below is unchanged.
+- **Prior art.** We searched VitePress's issue tracker on 15 November 2026 with five phrasings
+  (locale + case sensitive; locales + folder + root + language switcher; zh-cn + zh-CN +
+  locale; locale + "html lang" + wrong; i18n + directory + not matching + locale key). None
+  of the results reports this. Treat it as how VitePress is designed to work, not as a bug:
+  this checker catches a site misconfiguration that the guide does not warn about.
+
 ## What VitePress does (source reading, not a build test)
 
 This was read in [vuejs/vitepress at commit 40b2e09](https://github.com/vuejs/vitepress/tree/40b2e090772ac11eac358d25ec92ee435fc2adbd)
 (version 2.0.0-alpha.21, 12 November 2026). VitePress 1.x was not read. Its
-[i18n guide](https://vitepress.dev/guide/i18n) describes the same rule: each locale's pages live
-in a folder named exactly like its key.
+[i18n guide](https://vitepress.dev/guide/i18n) shows each locale's pages in a folder named like
+its key, but does not state the rules below (see the correction above).
 
 | Step | Source file | Behaviour |
 |---|---|---|
