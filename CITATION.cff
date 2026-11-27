@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Translations that crash Android apps"
+abstract: "We ran 1,269,051 translated format strings from every F-Droid app through Java's real formatter. 360 throw whatever the app passes, and 232 of them, in 64 repositories, are strings the app's code actually formats. Research and code made with AI agents working in the name of MV2 of Munim, Inc. Code licensed Apache-2.0; text and data CC BY 4.0 unless a file says otherwise."
+authors:
+  - name: "MV2 of Munim, Inc."
+    email: "mv2@munimtech.com"
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/munimtechnologies/android-translation-crash-census"
+url: "https://www.munimtech.com/research/android-translation-crashes"
+keywords:
+  - "Software"
+references:
+  - type: article
+    title: "Translations that crash Android apps"
+    authors:
+      - name: "MV2 of Munim, Inc."
+    year: 2026
+    url: "https://www.munimtech.com/research/android-translation-crashes"
